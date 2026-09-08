@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-09-08 approximately 13:20\u201313:23",
+  "primary_release_pdf": {
+    "url": "https://cims.nyu.edu/~tristanb/euler.pdf",
+    "sha256": "97ef408bff09b4f6ed9f3867734d1eb2245f3f34e6334b28136c84c02d0ae8d8",
+    "relation": "byte-identical to previously inspected source; not duplicated in this pass"
+  },
+  "proof_repository": {
+    "url": "https://github.com/tristanbuckmaster/fluid_lean",
+    "commit": "d0124689230b58b4f86e7b90ac59de06404b3b6b"
+  },
+  "scope": "Bounded public-channel status check, not evidence about unpublished work or a new proof audit.",
+  "initial_evaluator": {
+    "source": "../pass10/experiments/initial_full_field.py",
+    "sha256": "0834a5f75d2f84ec6bec5300191cb84ebb21d4b0236a0b8591e6d9d52eae2f0a",
+    "relation": "unchanged selected datum"
+  }
+}

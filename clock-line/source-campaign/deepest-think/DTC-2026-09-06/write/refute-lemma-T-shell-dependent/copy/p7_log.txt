@@ -1,0 +1,10 @@
+5-D Monte-Carlo, N = 8000000 per L, no meridian reduction
+L=   8.3178
+   a[eta0 o Lambda^-1](0) MC = 5.326003 +- 0.010264   Gauss-Legendre = 5.307374   z = +1.81
+   a_ref                  MC = 5.110606 +- 0.009357   exact (M/2)L*sqrt(3/2) = 5.093571   z = +1.82
+   Step-3 integral        MC = 316.3973 +- 0.2833   exact pi^3 M A = 315.8653   z = +1.88
+L=  50.0000
+   a[eta0 o Lambda^-1](0) MC = 30.829647 +- 0.055639   Gauss-Legendre = 30.832425   z = -0.05
+   a_ref                  MC = 30.615847 +- 0.054760   exact (M/2)L*sqrt(3/2) = 30.618622   z = -0.05
+   Step-3 integral        MC = 1898.4750 +- 1.6668   exact pi^3 M A = 1898.7389   z = -0.16
+max |z| = 1.87769321107895

@@ -1,0 +1,38 @@
+=== F1 : the 'dimensionally impossible' claim ===
+  sqrt(nu)/(E^{1/5}M^{1/10}) - Re_E^{-1/2} = 0
+  its physical dimension = 1   (1 means DIMENSIONLESS = a pure number)
+  dimension of  M*T = 1  ; dimension of Re_E^{-1/2} = 1
+  => a law  M T >= c Re_E^{-1/2}  is dimensionally ADMISSIBLE.  What is true is only
+     that THIS route's t_* obeys M t_* = c_div Re_E^{-1}, a strictly weaker window
+     than c Re_E^{-1/2} whenever Re_E > (c/c_div)^2.
+     Re_E=1e+02    :  c_div/Re = 3.622974e-05   vs   c_div/sqrt(Re) = 3.622974e-04
+     Re_E=1e+06    :  c_div/Re = 3.622974e-09   vs   c_div/sqrt(Re) = 3.622974e-06
+     Re_E=1e+17    :  c_div/Re = 3.622974e-20   vs   c_div/sqrt(Re) = 1.145685e-11
+
+=== F2 : s7's 'third way' cannot fail, and drops c_div ===
+  s7's t          = nu/(E**(2/5)*M**(6/5))
+  Theorem C's t_* = 3*3**(1/5)*pi**(11/5)*nu/(12800*E**(2/5)*M**(6/5))
+  ratio t_*/t_s7  = 3*3**(1/5)*pi**(11/5)/12800 = 0.0036229743218317728
+  s7 prints 'M t_* = Re_E^{-1} identically'; the true statement is
+  M t_* = c_div Re_E^{-1} with c_div = 3.622974321832e-03  (a factor 276.0)
+
+=== F3a : sec.9's 'cross-seat consistency check' contains no input from this note ===
+   L=8.3178      (2ln2/L)(1+logRe) = 2.8220608543      [c_div does not appear]
+   L=20          (2ln2/L)(1+logRe) = 2.7931636873      [c_div does not appear]
+   L=50          (2ln2/L)(1+logRe) = 2.7808187082      [c_div does not appear]
+   L=100         (2ln2/L)(1+logRe) = 2.7767037152      [c_div does not appear]
+   L=1e+06       (2ln2/L)(1+logRe) = 2.7725891337      [c_div does not appear]
+   limit = 4 ln 2 = 2.7725887222 ; and sharp/exact-first-order DEFINES c1 := M t_d log Re_E,
+   so the 'agreement' is that definition evaluated on the same two quoted numbers.
+   perturbing c_div by 1e6x changes model/(a) by: 0 (it is not a function of c_div)
+
+=== F3b : 'C_u cancels identically' is structural ===
+  with an ARBITRARY velocity constant X:  c_div(X)/c_GIM(X) = 2**(4/5)*pi/(1024*c_G)  -> independent of X for every X
+
+=== END-TO-END closure of Theorem C at the note's own test point ===
+  Re_E = 69.9536750335
+  t_* = 1.3997581237509200e-05     Duhamel(t_*) = 1.8500000000000001e+00   M/2 = 1.8500000000000001e+00
+  M Re_E t_* = 3.6229743218317728e-03   c_div = 3.6229743218317728e-03
+
+r3: F1 CONFIRMED (false claim), F2 CONFIRMED (control cannot fail + dropped constant),
+    F3 CONFIRMED (two controls that cannot fail); Theorem C itself closes numerically.

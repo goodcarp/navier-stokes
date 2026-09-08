@@ -1,0 +1,2510 @@
+                                             A REVIEW OF RESULTS ON AXIALLY SYMMETRIC NAVIER-STOKES
+                                                EQUATIONS, WITH ADDENDUM BY X. PAN AND Q. S. ZHANG
+
+
+
+
+arXiv:2101.04905v2 [math.AP] 2 Aug 2024
+                                                                                         QI S. ZHANG
+
+
+                                                    Abstract. In this paper, we give a brief survey of recent results on axially symmetric
+                                                    Navier-Stokes equations (ASNS) in the following categories: regularity criterion, Liou-
+                                                    ville property for ancient solutions, decay and vanishing of stationary solutions. Some
+                                                    discussions also touch on the full 3 dimensional equations. Two results, closing of the
+                                                    scaling gap for ASNS and vanishing of homogeneous D solutions in 3 dimensional slabs
+                                                    will be described in more detail.
+                                                        In the addendum, two new results in the 3rd category will also be presented, which are
+                                                    generalizations of recently published results by the author and coauthors.
+
+
+
+
+                                                                                           Contents
+                                             1. Introduction                                                                                      1
+                                             2. Regularity Criterion                                                                              5
+                                             2.1. Critical and slightly super critical regularity conditions                                      5
+                                             2.2. Criticality of ASNS and closing of the scaling gap                                              8
+                                             3. Ancient Solutions                                                                                11
+                                             4. Stationary Solutions                                                                             17
+                                             4.1. D solutions                                                                                    17
+                                             4.2. Self-similar solutions                                                                         27
+                                             4.3. Addendum: Extra results on D solutions, by Xinghong Pan and Q. S. Zhang                        30
+                                             Acknowledgments                                                                                     37
+                                             References                                                                                          37
+
+
+
+                                                                                      1. Introduction
+                                             The Cauchy problem of Navier-Stokes equations (NS) describing the motion of viscous
+                                          incompressible fluids in R3 is
+                                                            
+                                                             µ∆v − (v · ∇)v − ∇P − ∂t v = 0, on R3 × (0, ∞)
+                                                            
+                                                            
+                                                                                                                           (1.1)
+                                                             div v = 0, v(x, 0) = v0 (x).
+                                                            
+
+                                          Here v is the velocity field, P is the pressure, both of which are the unknowns; v0 is the
+                                          given initial velocity; µ > 0 is the viscosity constant, which will be taken as 1 unless
+
+                                             2020 Mathematics Subject Classification. 35Q30, 76N10.
+                                             Key words and phrases. Regularity, Liouville theorem; ancient solutions, D-solutions; Axially symmetric
+                                          Navier-Stokes equations.
+                                             Xinghong Pan is supported by Natural Science Foundation of Jiangsu Province (No. BK20180414), Double
+                                          Innovation Scheme of Jiangsu Province and National Natural Science Foundation of China (No. 11801268).
+                                                                                                1
+2                                            Q. S. ZHANG
+
+
+stated otherwise. One can also add a forcing term on the righthand side, then it becomes a
+nonhomogeneous problem.
+   Thanks to Leray’s work [62] in 1934, we know the above problem has a weak solution
+v ∈ L∞ ((0, ∞), L2(R3 )) such that |∇v| ∈ L2 ((0, ∞), L2 (R3 )) provided that the initial condi-
+tion has finite kinetic energy. Moreover, kv(·, t) − v0 (·)kL2 (R3 ) → 0 as t → 0 and ∀ T > 0,
+                Z                    Z TZ                       Z
+                   |v(x, T )|2dx + 2      |∇v(x, t)|2 dxdt ≤         |v0 (x)|2 dx < ∞.      (1.2)
+                                      0
+See Theorem 3.10 in Tsai’s book [110] for a modern and concise proof e.g. Solutions satis-
+fying (1.2) are often referred to as Leray-Hopf solutions, in order to distinguish them from
+even weaker solutions. In general, one does not know if a Leray-Hopf solution is smooth,
+except for a few special cases, usually as a perturbation of a special smooth solution. Sta-
+bility of NS under small perturbation is well studied. A general result of such kind can
+be found in [94] e.g. Over the years several sufficient conditions under which Leray-Hopf
+solutions are smooth have been obtained. For example the Ladyzhenskaya-Prodi-Serrin
+                   p,q
+condition: |v| ∈ L x,t with 3p + 2q ≤ 1 and 3 < p < ∞ and the end point result p = 3, q = ∞
+by Escauriaza, Seregin and Sverak [33]. See also [31] by Dong and Wang in higher dimen-
+sional cases, including both interior and boundary regularity. Here and later, a measurable
+                                                              R R            q/p 1/q
+                                           p,q                  ∞
+function f = f (x, t) is said to be in L x,t if k f kLx,tp,q ≡ 0 R3 | f | p dx     dt    < ∞. If
+3   2
+p + q = 1, these conditions are scaling invariant or critical under the natural scaling of the
+Navier Stokes equations: for λ > 0, if (v, P) solves (1.1), then (vλ , Pλ ) defined by
+                      vλ (x, t) ≡ λv(λx, λ2 t),     Pλ (x, t) ≡ λ2 P(λx, λ2 t)                 (1.3)
+also solves (1.1). It is easy to see that kvkLx,tp,q = kvλ kLx,tp,q for the above p, q. Sometimes
+these conditions can be improved logarithmically, even for endpoint cases. See the articles
+X.H. Pan [88], T. Tao [106], Barker and Prange [9], e.g. A partial regularity result for
+the so-called ”suitable weak solutions” was found by Caffarelli, Kohn and Nirenberg [17],
+building on earlier work of Scheffer [95, 96]. These solutions are Leray-Hopf solutions
+with an extra integrability condition on the pressure term P. It is proven that the singular set
+of suitable weak solutions, if exists, has one dimensional parabolic Hausdorff measure 0.
+The proof utilizes a blow up argument to deduce an ǫ regularity result: smallness of certain
+scaling invariant integral quantities involving the velocity or vorticity implies boundedness
+of solutions. Then the size estimate of the possible singular set follows from a covering
+argument. See also the papers of F. H. Lin [65], A. Vasseur [113], J. Wolf [117] for similar
+results and shorter proofs, some of which employ a De Giogi type (refined energy) method
+instead of blow up method. In [117], using the decomposition (v · ∇)v = 12 ∇|v|2 −(∇×v)×v,
+it is observed that one can also use a scaling invariant quantity involving (∇ × v) × |v|v . One
+consequence is that small perturbations of Beltrami flows are regular. Recall that a flow
+or a vector field v is called a Beltrami flow if the vorticity ∇ × v is parallel to v. These
+conditional regularity results are consistent with the standard linear theory for second order
+parabolic equations with lower order coefficients, coming from the De Giorgi-Nash-Moser
+theory. As far as the regularity conditions are concerned, the nonlinearity of the NSE only
+induces a marginal improvement over the linear case. One can see the difficulty in proving
+regularity by observing that the energy inequality (1.2) only tells us, after using Sobolev
+inequality and interpolation, that v ∈ L10/3,10/3
+                                          x,t       . In a local space time domain, this a priori
+bound is much weaker than the regularity conditions mentioned above, such as L5,5         x,t . If we
+hope to prove regularity of the solution, we need to study the behavior of v at micro or
+infinitesimal scale. This is amount to studying the behavior of vλ at a fixed scale while
+                                      REVIEW ON AXIALLY SYMMETRIC NS                                   3
+
+
+letting λ → 0. Notice that
+
+                             kvλ kL10/3,10/3
+                                   x,t
+                                             = λ−1/2 kvkL10/3,10/3
+                                                         x,t
+                                                                   → ∞,           λ → 0.
+
+So the energy inequality does not furnish any information on micro scale. For this reason
+NSE is considered as a super critical equation, i.e. a priori estimate is weaker than regu-
+larity condition at small scale. Another way to see the super criticality is to consider the
+vorticity ω = ∇ × v which satisfies the equation
+
+                                    ∆ω − (v · ∇)ω + (ω · ∇)v − ∂t ω = 0.                           (1.4)
+
+The energy inequality (1.2) tells us |∇v| ∈ L2,2  x,t . This again is much weaker than the reg-
+                         p,q
+ularity condition of L x,t   with 3p + 2q < 2, if ∇v are regarded as potential functions for the
+vorticity equation. We note that the drift term v∇ω, can be handled even locally by an
+integral argument since div v = 0, c.f. [120]. So the most dangerous and mysterious term
+in the vorticity equation is the so-called vortex stretching term ω∇v. An avenue of attack
+on the regularity problem is to exploit the structure on the sets where the vorticity has high
+value, such as angles, intermittency and sparseness. See [18], [32], [42] and a recent [7]
+e.g. In [7] Bradshaw, Farhat and Grujic reduce the scaling gap by using sparseness of the
+super level sets of the positive and negative parts of the vorticity components at a scale
+comparable to the sup of 1/|ω| nearby. There are also many activities on one component
+regularity conditions and regularity conditions on directional derivatives of the velocity:
+[83], [124], [21], [30], [46]; [90], [57], [15] e.g. One-sided conditions can also be imposed
+on the eigenvalues of ∇v or the middle eigenvalue of the strain tensor [∇v + (∇v)T ]/2. See
+[121] and [78] e.g. However, unless something dramatic happens, such as the discovery of
+a critical a priori estimate, a magic cancellation, or an ingenious construction of a blow up
+solution, the regularity problem for the 3 dimensional NSE (1.1) will remain open. Even
+if some Leray-Hopf solutions are found to blow up in finite time, it is still interesting to
+characterize the set of initial values that give rise to Leray-Hopf solutions that stay smooth
+all time, which is nonempty.
+    In this paper, we will focus on a special case of (1.1), namely when v and P are indepen-
+          q angle in a cylindrical coordinate system (r, θ, x3 ). That is, for x = (x1 , x2 , x3 ) ∈
+dent of the
+R3 , r =   x21 + x22 ,       θ = arctan(x2 /x1 ), and the basis vectors er , eθ , e3 :
+
+                  er = (x1 /r, x2 /r, 0),         eθ = (−x2 /r, x1 /r, 0),       e3 = (0, 0, 1);
+
+and solutions are given by
+
+                              v = vr (r, x3 , t)er + vθ (r, x3 , t)eθ + v3 (r, x3 , t)e3 .
+
+   By direct computation, vr , v3 and vθ satisfy the axially symmetric Navier-Stokes equa-
+tions
+                                                       θ 2
+                
+                
+                
+                  ∆ − r12 vr − (vr ∂r + v3 ∂ x3 )vr + (vr) − ∂r P − ∂t vr = 0,
+                
+                                                      θ r
+                 ∆ − r12 vθ − (vr ∂r + v3 ∂ x3 )vθ − v rv − ∂t vθ = 0,
+                
+                
+                                                                                     (1.5)
+                
+                
+                
+                
+                ∆v3 − (vr ∂r + v3 ∂ x3 )v3 − ∂ x3 P − ∂t v3 = 0,
+                
+                 1 ∂r (rvr ) + ∂ x v3 = 0,
+                
+                         r               3
+
+
+which will be abbreviated as ASNS. It looks more complicated than the full 3 dimensional
+equation. But simplifications happen in the 2nd equation where the pressure term disap-
+peared. A tip in carrying out vector calculations under the cylindrical system is to use
+4                                              Q. S. ZHANG
+
+
+tensor notations. For example
+                                   1
+                   ∇v = ∂r v ⊗ er + ∂θ v ⊗ eθ + ∂ x3 v ⊗ e3
+                                   r
+                                                                     1
+                       = (∂r vr er + ∂r vθ eθ + ∂r v3 e3 ) ⊗ er + (vr eθ − vθ er ) ⊗ eθ
+                                                                     r
+                                   + (∂ x3 vr er + ∂ x3 vθ eθ + ∂ x3 v3 e3 ) ⊗ e3 .
+Taking the inner product with the second entry, the convection terms become
+     − (v · ∇)v = −(vr er + vθ eθ + v3 e3 ) · (∂r vr er + ∂r vθ eθ + ∂r v3 e3 ) ⊗ er
+                                        1
+           − (vr er + vθ eθ + v3 e3 ) · (vr eθ − vθ er ) ⊗ eθ
+                                         r
+           − (vr er + vθ eθ + v3 e3 ) · (∂ x3 vr er + ∂ x3 vθ eθ + ∂ x3 v3 e3 ) ⊗ e3
+                               (vθ )2                               vθ vr
+     = [−(vr ∂r + v3 ∂ x3 )vr +       ]er − [(vr ∂r + v3 ∂ x3 )vθ +       ]eθ − (vr ∂r + v3 ∂ x3 )v3 e3 .
+                                  r                                  r
+This gives rise to the most complicated terms in (1.5).
+    In 2015, it was observed by Lei-Zhang [73] that ASNS is essentially critical under the
+standard scaling. So the aforementioned scaling gap is 0. This observation has the ef-
+fect of making ASNS looks less formidable than the full 3 dimensional case which has a
+positive scaling gap. Nevertheless all major open problems for the latter are still open for
+the former. In the next three sections, we will describe some recent research results on
+the following topics: regularity conditions (Section 2), ancient solutions (Section 3) and
+stationary solutions (Section 4). These topics are closely related. The study of possible
+singularity of solutions leads to the study of ancient solutions, i.e. solutions whose exis-
+tence time extends to −∞. Stationary solutions are ancient solutions but are even more
+special. The aforementioned topics have an apparently decreasing order in terms of level
+of difficulties:
+    regularity problem > classification of ancient solutions > classification of homogeneous
+stationary solutions > classification of homogeneous D solutions.
+    The last Rtype of solutions are defined as stationary solutions to (1.1) with finite Dirich-
+let energy: R3 |∇v|2 dx < ∞, which also vanish at infinity. See Definition 4.1. They were
+studied in Leray’s first paper [61]. However as we shall see, even our understanding of sta-
+tionary solutions are still very primitive. For example, we still do not know if homogeneous
+D solutions in R3 are zero, even in the axially symmetric case.
+    Due to the large number of papers in the literature, we need to make a selection on what
+to present. This selection only reflects personal interest and knowledge. Some important
+results may be missed. For example, we will not address any papers on boundary value
+problems seriously, which as well known, have their own complications and complexity.
+Nor will we touch non-uniquess of very weak solutions. Over the decades, in conjunction
+with the development of research on NS, many books have been written, and it is safe to
+say that the trend will continue. Let us list a few of them for comprehensive information
+and the history of the field: [59, 107, 27, 80, 56, 14, 100, 39, 63, 64, 10, 99, 108, 93, 110].
+    Any suggestions on missing information or improvement are very welcome.
+    We end the introduction by listing a number of notations and conventions to be used
+throughout, which are more or less standard. The velocity field is usually called v and the
+vorticity ∇ × v is called ω. We use superscripts to denote their components in coordinates.
+Given a point x = (x1 , x2 , x3 ) ∈ R3 , we write x′ = (x1 , x2 , 0), xh = (x1 , x2 ), r = (x21 + x22 )1/2
+and θ = arctan(x2 /x1 ). L p (D), p ≥ 1, denotes the usual Lebesgue space on a domain
+                                 REVIEW ON AXIALLY SYMMETRIC NS                                        5
+
+
+D which may be a spatial, temporal or space-time domain. Let X be a Banach space
+defined for functions on D ⊂ R3 . L p (0, T ; X) is the Banach space of space-time functions
+                                                          R            1/p
+                                                             T       p
+f on the space time domain D × [0, T ] with the norm 0 k f (·, t)kX dt . If no confusion
+arises, we will also use L p X to abbreviate L p (0, T ; X). Sometimes we will also use L xp Lqt
+     q
+or Lt L xp to denote the mixed p, q norm in space time. Let D ⊂ R3 be an open domain,
+then H 1 (D) = W 1,2 (D) = { f | f, |∇ f | ∈ L2 (D)} and H 2 (D) = W 2,2 (D) = { f | f, |∇ f |, |∇2 f | ∈
+L2 (D)}, the standard Sobolev spaces on D. Also, interchangeable notations div v = ∇ · v,
+         P
+v∇v = vi ∂ xi v = v · ∇v will be used. If there is no confusion, the vertical variable x3 may
+be replaced with z. Also Br (x) denotes the ball of radius r centered at x in a Euclidean
+space. If s is a number, then s− means any number which is close but strictly less than s.
+
+                                     2. Regularity Criterion
+2.1. Critical and slightly super critical regularity conditions. If the swirl vθ = 0, then
+it is known for long time ( O. A. Ladyzhenskaya [58], M. R. Uchoviskii and B. I. Yudovich
+[112]), that finite energy solutions to (1.5) are smooth for all time. See also the paper by S.
+Leonardi, J. Malek, J. Necas, and M. Pokorny [75]. By finite energy, we mean (1.2) holds,
+i.e., the solution is a Leray-Hopf solution.
+     In the presence of swirl, it is still not known in general if finite energy solutions blow
+up in finite time.
+     However a lower bound for the possible blow up rate is known by the results of C.-C.
+Chen, R. M. Strain, T.-P.Tsai, and H.-T. Yau in [28], [29], G. Koch, N. Nadirashvili, G.
+Seregin, and V. Sverak in [51], which appeared around 2008. See also the work by G.
+Seregin and V. Sverak [102] for a localized version. These authors prove that if
+                                                       C
+                                            |v(x, t)| ≤ ,                                  (2.1)
+                                                       r
+then solutions are smooth for all time. Here C is any positive constant.
+     The proof is based on the fact that the scaling invariant quantity Γ = rvθ : satisfies the
+equation
+                                                     2
+                                ∆Γ − (b · ∇)Γ − ∂r Γ − ∂t Γ = 0,                           (2.2)
+                                                     r
+where b = vr er +v3 e3 . The bound (2.1) says that the equation is essentially scaling invariant
+and the classical linear regularity theory can be applied after some nontrivial modification.
+In [29], the authors use this approach to prove that Γ is Hölder continuous first. This implies
+|vθ | is bounded by r−1+α near the z axis, which makes vθ subcritical under the standard
+scaling. Here α is a small positive constant. Thus vθ is small in micro scale. The smallness
+enters into the equation for ωθ in (2.5) after a scaling argument. The authors then manage
+to prove that ωθ is bounded which in turn proves the whole velocity field v is bounded
+by the Biot-Savart law. In contrast, a blow up method is used in [51]. The first step is to
+show that if a solution of the ASNS blows up in finite time, then after a suitable scaling
+and limiting procedure, one obtains a nonzero bounded, mild solution of the ASNS, which
+exists in the time interval (−∞, 0]. Such a solution, denoted by v∞ , is called a mild ancient
+solution. Here the word ”mild” means that a solution, in addition to being a pointwise
+or weak solution of the Navier-Stokes equation, must also satisfy an integral equation
+involving the Stokes kernel. See (3.1) or [51] for a precise definition e.g. The purpose
+is to rule out solutions of the form a(t)∇h(x) where a = a(t) is a differentiable function
+and h is a harmonic function. The equation for Γ = rvθ∞ again plays an essential role.
+Using the bound (2.1), which survives the scaling, and an integration argument involving
+6                                          Q. S. ZHANG
+
+
+the maximum principle for equation (2.2), it is shown that vθ∞ = Γ/r = 0. Therefore v∞ is a
+swirl free, bounded, mild, ancient solution. Now the equation for ωθ /r (see (2.4)) satisfies
+the maximum principle. Using the aforementioned integration argument for the equation
+of ωθ /r, exploiting the interplay between the velocity and vorticity, one can show that v∞
+is a constant. The bound (2.1) then forces v∞ = 0. But we already know that v∞ , 0 from
+the first step. This contradiction shows that the original solution can not blow up.
+    Solutions satisfying the bound (2.1) are often referred to as type I solutions. One rea-
+son for this name is that the bound is scaling invariant so one can study the solution at
+micro scales using available linear theory. The above result can be summarized as: type I
+solutions of ASNS are regular.
+    Two years later, in the paper [71] by Lei and Zhang, it is proven that if vr , v3 are in
+the space of L∞ ([0, ∞), BMO−1(R3 )) and rvθ (·, 0) ∈ L∞ , then the solution is regular. Here
+BMO is the space of functions with bounded mean oscillation, c.f. [47], and BMO−1 is
+the space of tempered distributions which can be written as partial derivatives of BMO
+functions. Well-posedness and other properties of solutions to NS have been studied by
+Koch-Tataru [52], Miura [79] and Germain-Pavlovic-Staffilani [40]. Note the function
+C/r is contained in BMO−1 . Hence this result extends the one described in the previous
+paragraph. See also [97], [118]. At the first glance, it seems that the main improvement is
+just the relaxation of a pointwise condition to an integral type condition. However, there is
+an additional feature in that one only needs to impose a condition on the vertical velocity
+v3 to gain regularity. See Theorem 2.5 below. The precise statement is:
+Theorem 2.1. ([71]) Let v = v(x, t) be a Leray-Hopf solution to (1.5) in the space time
+region R3 × [0, T ]. Assume that the initial value satisfies, |rvθ (x, 0)| < C. Suppose also
+v(·, t) = ∇ × B(·, t) with sup0<t<T kB(·, t)kBMO ≤ C∗ . Then v is smooth in R3 × (0, T ]. Here
+C and C∗ are arbitrary positive constants.
+   In the original paper, the pertinent solutions are stated as suitable weak solutions ex-
+plained in Section 1. However, no such restriction is actually needed in the proof. Another
+regularity condition proposed in [71] only involves a region outside a paraboloid with the
+vertex at a given space-time point. This suggests that regularity of a solution at a space-
+time point only depends on the behavior of the solution in a small part of a space-time
+cube with vertex at the same point. Such a phenomenon was later proven for the full 3
+dimensional NS by Neustupa in [82].
+   Recently Seregin and Zhou [105] have relaxed the L∞ BMO−1 assumption further to
+L∞ Ḃ−1                                 −1
+     ∞,∞ assumption. Let us recall Ḃ∞,∞ is the Besov space consisted of tempered distribu-
+tions f such that the norm
+                                                    Z
+                                            1/2
+                         k f kḂ−1
+                                ∞,∞
+                                    = sup t     sup   G(x, t, y) f (y)dy
+                                     t>0      x     R3
+
+is finite. Here G(x, t, y) = (1/(4πt)3/2) exp(−|x − y|2 /(4t)) is the standard heat kernel on R3 .
+Theorem 2.2. ([105]) Any axially symmetric suitable weak solution of (1.5), belonging to
+L∞ Ḃ−1
+     ∞,∞, is smooth.
+
+   Using localized energy inequalities coupled with interpolation of L4 between Ḃ−1∞,∞ and
+the homogeneous Sobolev space Ḣ 1 (R3 ), they prove the following. If v is a suitable weak
+solution to the three dimensional NS from the space L∞ (0, T ; Ḃ−1
+                                                                  ∞,∞), then a number of
+scaled energy quantities of v are bounded. Consequently only type I blow up can occur. In
+the axially symmetric case, this has been ruled out in [97]. Therefore these solutions are
+                                REVIEW ON AXIALLY SYMMETRIC NS                                    7
+
+
+smooth. We mention that although BMO−1 ⊂ Ḃ−1           ∞,∞, the result in [71] goes beyond suitable
+weak solutions since there is no need for the local energy inequality.
+    Without knowing if blow up happens in general, it is desirable to find an upper bound
+for the growth of velocity. It is expected that the solutions are smooth away from the axis,
+with certain growing bound when approaching the axis. The next theorem confirms this
+intuitive idea. Although it did not give the bound (2.1) which is required for smoothness,
+it reveals the exact gap between what we have and what we need.
+    This seems to be the first pointwise bound for the speed (velocity) for the axially sym-
+metric Navier-Stokes equation. We mention that a less accurate a priori upper bound for
+the vorticity has been found in Burke-Zhang [12] a few years earlier. Also, in the paper
+[72], Lei-Zhang proved that if the scaling invariant quantity r|v(x, t)| is sufficiently large at
+a point (x0 , t0 ), then the solution is close, in C 2,1 sense, to a nonzero constant vector after a
+suitable scaling.
+Theorem 2.3. (Lei-Navas-Zhang [76]) (velocity bound). Suppose v is a smooth, axi-
+ally symmetric solution of the three-dimensional Navier-Stokes equations in R3 × (−T, 0)
+with initial data v0 = v(·, −T ) ∈ L2 (R3 ). Assume further rvθ0 ∈ L∞ (R3 ) and let R =
+       √
+min{1, T/2}.
+   Then for all (x, t) ∈ R3 × (−R2 , 0), it holds
+                                               √
+                                              C | ln r|
+                  |vr (x, t)| + |v3 (x, t)| ≤           , 0 < r ≤ min{1/2, R}.
+                                                r2
+Here r is the distance from x to the z axis, and C is a constant depending only on the initial
+data.
+   In the same paper, the following results are also proven.
+Theorem 2.4. Under the same assumption as the previous theorem, there exists a constant
+C, depending only on the initial data, such that,
+                                   C| ln r|1/2
+                         |Lθ (x, t)| ≤         ,   r ≤ min{1/2, R}.
+                                      r1/2
+   Here Lθ is the angular part of the stream function, which gives rise to vr and v3 by the
+following relations
+                                    1
+                              v3 = ∂r (rLθ ), vr = −∂ x3 Lθ .
+                                    r
+So it is the most important component of the stream function (vector).
+Theorem 2.5. Let v be a Leray-Hopf solution to (1.5) in R3 × (0, ∞) such that rvθ (·, 0) ∈
+L∞ (R3 ). Suppose, for a given constant C > 0, and all x ∈ R3 and t ≥ 0,
+                                                    C
+                                       |v3 (x, t)| ≤ .
+                                                    r
+Then v is regular for all time.
+Proof.
+                                                                        q
+   From the relation v3 = 1r ∂r (rLθ ), using the notation |x′ | = r = x21 + x22 , we have,
+                                  Z |x′ |               Z |x′ |
+                 |x′ |Lθ (x, t) =         ∂r (rLθ )dr ≤         rv3 dr ≤ C|x′ |.
+                                     0                   0
+
+Here we just used the assumption on v . Therefore Lθ is a bounded function. Then from
+                                           3
+
+the main result in [71], we know that v is regular for all time.                    
+8                                            Q. S. ZHANG
+
+
+   Comparing with the previously mentioned results of Chen, Strain, Tsai and Yau[29] and
+Koch, Nadirashvilli, Sverak and Seregin [51], there is no restriction on vr in our case. See
+also the paper by Chen, Fang, T.Zhang [16].
+   There are also regularity condition on one component of the velocity and/or vorticity.
+J. Neustupa and M. Pokorny [84] proved that the regularity of one component (either vr
+or vθ ) implies regularity of the other components of the solution. See more refined results
+in P. Zhang and T. Zhang [123]. Also proving regularity is the work of Q. Jiu and Z. Xin
+[50] under an assumption of sufficiently small zero-dimension scaled norms. D. Chae and
+J. Lee [22] also proved regularity results assuming finiteness of another zero-dimensional
+integral. A pointwise critical blow up criterion: |ωθ | ≤ rC2 was also given in Z. Li and X.
+Pan [77].
+   As mentioned earlier, X. H. Pan [88] recently obtained a loglog improvement of the
+main result in Chen-Strain-Tsai-Yau and Koch, Nadirashvili, Seregin, and V. Sverak. Al-
+though it looks like a small improvement, it is a slightly super critical result based on the
+argument in [71]. The proof replies on the robustness of De Giorgi-Nash-Moser method to
+prove the function Γ = rvθ has a modulus of continuity at the z axis, under the slightly su-
+percritical condition on b = vr er + v3 e3 . The vector b controls the drift term in the equation
+for Γ: (2.2).
+   There are also global regularity result in special cases. G. Tian and Z. Xin [111] con-
+structed a family of singular axially symmetric solutions with singular initial data. T. Hou
+and C. Li [43] found a special class of global smooth solutions. See also a recent extension:
+T. Hou, Z. Lei and C. Li [45].
+
+
+2.2. Criticality of ASNS and closing of the scaling gap. Despite these efforts, there is
+still a finite scaling gap between the regularity condition and a priori bounds. In almost
+all the literature, the regularity conditions are critical and hence are scaling invariant under
+standard scaling. Improvements are at most logarithmic in nature, except for resorting to
+further requirements such as sparseness of the sets where the vorticity is high. We have
+mentioned the Ladyzhenskaya-Prodi-Serrin condition for regularity requires the velocity
+to be bounded in suitable function space whose norm is invariant under standard scaling,
+such as L p,q with 3p + q2 = 1. However the energy bound scales as −1/2. So there is a finite
+gap which makes the equation supercritical.
+    However in a recent paper [73], Lei and Zhang made the following observation.
+    The vortex stretching term of the ASNS is critical.
+    Previously it was believed to be super-critical, which means in micro scales the equation
+becomes chaotic and intractable by current method. Critical equations are still very difficult
+but more tools are available to study them. In the next few pages we describe the result in
+more details.
+    Let ω = ∇ × v = ωr er + ωθ eθ + ω3 e3 be the vorticity. Define
+
+                                            ωr             ωθ
+                                       J=      ,    Ω=        .                            (2.3)
+                                            r              r
+
+Then the triple J, Ω, ω3 satisfy the system: for b = vr er + v3 e3 ,
+                                                                  r
+                  
+                  
+                  
+                   ∆J − (b · ∇)J + 2r ∂r J + (ωr ∂r + ω3 ∂ x3 ) vr − ∂t J = 0,
+                  
+                                                 θ
+                  
+                   ∆Ω − (b · ∇)Ω + 2r ∂r Ω − 2vr J − ∂t Ω = 0,                            (2.4)
+                  
+                  
+                  ∆ω3 − (b · ∇)ω3 + ωr ∂r v3 + ω3 ∂ x3 v3 − ∂t ω3 = 0.
+                  
+                                 REVIEW ON AXIALLY SYMMETRIC NS                                        9
+
+
+These follow from direct computation based on the vorticity equation
+                       
+               
+               
+               
+                ∆ − r12 ωr − (b · ∇)ωr + ωr ∂r vr + ω3 ∂ x3 vr − ∂t ωr = 0,
+               
+                                            θ               r
+               
+                ∆ − r12 ωθ − (b · ∇)ωθ + 2 vr ∂ x3 vθ + ωθ vr − ∂t ωθ = 0,                        (2.5)
+               
+               
+               ∆ω3 − (b · ∇)ω3 + ω3 ∂ x3 v3 + ωr ∂r v3 − ∂t ω3 = 0,
+               
+
+and the relations
+                                                                                  vθ
+                     ωr = −∂ x3 vθ ,    ωθ = ∂ x3 vr − ∂r v3 ,   ω3 = ∂r vθ +        .              (2.6)
+                                                                                  r
+    We mention that the function J was introduced in the recent paper by H. Chen-D.Y.Fang-
+T. Zhang [16]. By carrying out an energy estimate on the first two equations, they proved
+the following result: if
+                                                            C
+                                          |vθ (x, t)| ≤ 1−ǫ ,
+                                                          r
+for all x and t > 0, then solutions are regular everywhere. Here ǫ > 0 and C are positive
+constants. This result gives a hint that the ASNS is a little super-critical. The reason is that
+vθ has the well known a priori bound
+                                                   1
+                                    |vθ (x, t)| ≤ krvθ (·, 0)k∞,                                    (2.7)
+                                                    r
+which comes from equation (2.2) via the maximum principle.
+    Now we observe that the vortex stretching terms in all three equations in (2.4) are critical
+when viewed in a suitable way. The key is to treat (2.4) as a closed system. Therefore the
+vorticity equation of 3 dimensional axially symmetric Navier-Stokes equations are critical
+instead of supercritical as commonly believed.
+    Here are the details. From its a priori bound, we know that vθ at worst scales as −1 power
+of the distance. Using the relation (2.6), we see that ωr and ω3 in the vortex stretching terms
+in (2.4) at worst scale as −2. The key observation is to treat ωr and ω3 as potential functions
+rather than unknowns. It is well known that in a second order reaction diffusion equation,
+potentials which scale as −2 power of the distance are critical instead of supercritical.
+                                            r        r
+    But how to treat the other terms ∂r vr , ∂ x3 vr , ∂r v3 and ∂ x3 v3 ? It turns out that they can all
+                              3
+be converted to J, Ω and ω which are treated as unknown functions in (2.4).
+    In fact one has the following inequalities
+                                vr                           vr
+                            k∇ k2 ≤ kΩk2 ,              k∇2 k2 ≤ k∂3 Ωk2 .                          (2.8)
+                                 r                           r
+These can be seen from the identities
+                                                          2 Lθ
+                               vr = −∂ x3 Lθ , (∆ + ∂r ) = −Ω
+                                                           r    r
+which imply
+                                              2 vr
+                                      (∆ + ∂r ) = ∂ x3 Ω.
+                                              r        r
+                     r         r
+Then one can use vr and ∆ vr as test functions respectively to deduce (2.8).
+    Moreover from the relation
+                                         ∆∂i v = −∇ × ∂i ω
+and integration by parts, we know that
+                                 k∇∂r v3 k2 + k∇∂ x3 v3 k2 ≤ Ck∇ωk2 .
+By direct computation, we also have the pointwise relation
+                       |∇ω|2 ≤ 2r2 (|∇J|2 + |∇Ω|2 ) + |∇ω3 |2 + 2(J 2 + Ω2 ).
+10                                           Q. S. ZHANG
+
+
+Therefore, even though ωr and ω3 are viewed as potential functions generated by vθ , the
+system (2.4) is still a closed system of J, Ω and ω3 .
+   Note that in carrying out energy bound for equation (2.4) the drift terms (first order
+terms) can be integrated out if functions decay sufficiently fast near infinity. One can also
+carry out a localized argument to take care of the drift term as in the paper [120]. We
+take the liberty to correct one misstatement in the text on p246 in that paper, where it was
+stated that weak solutions are Lipschitz in the spatial direction. It should have been ”weak
+solutions are locally bounded”.
+   Now let us introduce the main result in [73].
+Definition 2.6. We say that the angular velocity vθ (r, z, t) is in (δ∗ , C∗ )-critical class if
+                    Z θ                     Z                 Z
+                        |v | 2
+                             | f | dx ≤ C∗ |∂r f |2 dx + C0          | f |2 dx,                 (2.9)
+                         r                                      r≥r0
+                    Z                       Z                 Z
+                       |vθ |2 | f |2 dx ≤ δ∗ |∂r f |2 dx + C0        | f |2 dx,               (2.10)
+                                                                    r≥r0
+holds for some r0 > 0, some C0 > 0 and for all t ≥ 0 and all axially symmetric scalar and
+vector functions f ∈ H 1 .
+     Clearly, under the natural scaling of the Navier-Stokes equations:
+                        vλ (t, x) = λv(λ2 t, λx),    pλ (t, x) = λ2 p(λ2 t, λx),
+the above definition is invariant: (vλ )θ also satisfies (2.9)-(2.10) if vθ does.
+Theorem 2.7. For arbitrary C∗ > 1, there exists a constant δ∗ > 0 such that for all Leray-
+Hopf solutions v to the axially symmetric Navier-Stokes equations with initial value v0
+satisfying kv0 k 21 < ∞ and krvθ0 kL∞ < ∞, the following conclusion is true. If the angular
+                H
+velocity field vθ is in (δ∗ , C∗ )-critical class, i.e. vθ satisfies the critical Form Boundedness
+Condition in (2.9)-(2.10), then v is regular globally in time.
+     An immediate corollary of the theorem is:
+Corollary 2.8. Let δ0 ∈ (0, 21 ) and C1 > 1. Let v be a Leray-Hopf solution to the axially
+symmetric Navier-Stokes equations with initial data v0 ∈ H 1/2 and krvθ0 kL∞ < ∞. If
+                             sup |rvθ (r, x3 , t)| ≤ C1 | ln r|−2 , r ≤ δ0 ,                  (2.11)
+                             0≤t<T
+
+then v is regular globally in time.
+   We mention that C∗ in the theorem and C1 in the Corollary 2.8 are independent of neither
+the profile nor the norm of the given initial data. The point is that if (2.11) is satisfied, then
+(2.9)-(2.10) is true. Therefore one can apply the theorem to get the desired conclusion.
+   After [73] was posted on the arxiv, in the paper by Dongyi Wei [115], the power in the
+log term has been improved to −3/2. Namely, he proved
+Theorem 2.9. ([115]) Let v be a Leray-Hopf solution to the axially symmetric Navier-
+Stokes equations with initial data v0 ∈ H 2 and krvθ0 kL∞ < ∞. If, for some δ0 ∈ (0, 1/2),
+                            sup |rvθ (r, x3 , t)| ≤ C1 | ln r|−3/2 , r ≤ δ0 ,                 (2.12)
+                            0≤t<T
+
+then v is regular.
+                               REVIEW ON AXIALLY SYMMETRIC NS                                   11
+
+
+   The improvement is achieved by decomposing the space time in a dynamic way when
+carrying out the energy estimate for the system of Ω and J in (2.4). More specifically,
+in (2.4), one multiplies the first equation by J and the second one by Ω and integrate in
+space time. One can justify the integration by using a cut off function φ2 before a potential
+singular time t. After integration by parts, one deduces
+     Z                  t  Z tZ 
+   1       2     2
+                   
+                      2
+                                                  
+          J + Ω φ dy +               |∇J|2 + |∇Ω|2 φ2 dyds
+   2                     0    0
+        Z tZ                     Z tZ
+               2vθ      2                     vr        vr
+    ≤−               JΩφ dyds +        (ωr ∂r + ω3 ∂ x3 )Jφ2 dyds +less singular terms.
+                 r                            r          r
+      | 0        {z          } |0                {z                }
+                 T1                                 T2
+                                                                                            (2.13)
+If we can absorb T 1 and T 2 by the left hand side, then, we would know that ∇J and ∇Ω are
+L2loc in space time. Since J = ωr /r and Ω = ωθ /r, we then know that ∇ωθ and ∇ωr are L2loc
+in space time around the x3 axis. One can also argue, using the first term on the left hand
+side that ωθ and ωr are in the space L∞ (0, t; L2loc ). With these information, it is well known
+by Sobolev imbedding and bootstrapping that regularity of solutions follow. The term T 1
+is the most singular one on the right hand side. The term T 2 , after using (2.6), (2.8) and
+integration by parts, can be shown to be logarithmically less singular than T 1 . So the main
+task is to control T 1 . Using Cauchy-Schwarz inequality, it is sufficient to use the left hand
+side of (2.13) to bound the terms
+                         Z tZ θ                      Z tZ θ
+                                |v | 2 2                     |v | 2 2
+                                    J φ dyds,                    Ω φ dyds
+                          0      r                      0     r
+Let us chose a positive function r1 = r1 (t) ≤ ǫK(ǫ)a(t)−1 , where K isR some exponential
+                                                                               r
+function and ǫ is a small number to be chosen suitably; a(t) = kr−1 0 |vθ (ρ, z, t)|dρkL∞ .
+Splitting the spatial domain along r = r1 (t) and using cut-off and integration by parts, one
+shows that
+        Z θ                     Z                                   Z
+            |v | 2 2       −1/3                 −2           −1/3
+                J φ dy ≤ ǫ              2
+                                  |∂r J| dy + Cr1 (kΓkL∞ + ǫ      )          J 2 dy,   (2.14)
+             r                                                       r≥r1 /2
+
+provided that kΓkL∞ (r≤r1 ) < ǫ < 1. The same bound holds when J is replaced by Ω. Now
+using the extra condition (2.12), one can substitute (2.14) into (2.13) and turn it into an
+ordinary differential inequality. Then the claimed bound for ωθ and ωr in L∞ (0, t; L2loc )
+space follows, giving us regularity.
+    The appearance of the log term is due to the special property of the axially symmetric
+Hardy’s inequality : for all ψ ∈ C02 (R2 ), there is one positive constant C such that
+                Z Z                                        Z Z
+                            1       2
+                                   ψ  (r, x 3 )rdrdx 3 ≤ C     |∂r ψ|2 (r, x3 )rdrdx3
+                       r2 | ln r|2
+It would be interesting if one can lower the power on | ln r| even further in the regularity
+criteria. However the drift term, which is almost harmless in the vortex equation so far,
+is the main obstacle. For instance, there is a dimension expansion trick in removing the
+log term in the Hardy inequality. However the drift term no longer has the divergence free
+structure viewing in high dimensions.
+
+                                     3. Ancient Solutions
+   Next we talk about another common way to study the Navier-Stokes equations and many
+other nonlinear equations: blow up analysis.
+12                                             Q. S. ZHANG
+
+
+    Let v be a Leray-Hopf solution to the NS. Suppose a singularity happens in finite time
+T , we would like to know what is it? So we blow down the solution v or blow up the
+space time near maximal points of |v| in the time interval [0, ti ] ⊂ [0, T ) where ti is a
+sequence times approaching the singular time (like using a microscope). More specifically,
+let λi = supt∈[0,ti ] |v| and pick points (xi , si ) with si ≤ ti such that |v(xi , si )| ≥ λi /2. Consider
+the sequence of functions
+        vi (x, t) ≡ λ−1   −1          −2
+                     i v(λi x + xi , λi t + ti ),        Pi (x, t) ≡ λ−2   −1          −2
+                                                                      i P(λi x + xi , λi t + ti ).
+
+They are bounded solutions of the NS in a increasingly larger time interval. By standard
+                                             2,1
+regularity theory, vi sub-converges in Cloc      topology to a limit function v∞ . The resulting
+function is still a solution of NS. But it is a bounded solution existing on the time interval
+(−∞, 0). We call such solutions ancient solutions. In general there is no reason that ancient
+solutions are bounded, even when they arise as blow up limits from possible finite time
+singularities of Leray-Hopf solutions. Of course we do not know if such singularities exist
+for NS. But this is still the case for other parabolic equations where singularities occur in
+finite time. The reason is that one can choose a different set of blow up points (zi , si ) where
+|v(zi , si )| is large but is not comparable to the maximum of |v| before si . However, since
+they have existed for a long time, they must be special. In other words, ancient solutions
+are rigid. Even if it turns out that no finite time blow up occurs, ancient solutions still serve
+as approximation of the behavior of solutions in regions of high velocity.
+    Can one classify all ancient solutions?
+    The answer is not so easy in general without further assumptions, even for positive solu-
+tions to the heat equation. For example v = e x+t is a nonconstant, positive ancient solution
+to the 1 dimensional heat equation in R1 . It is also not hard to see that v = (0, e x1+t ) is an
+ancient solution to the 2 dimensional NS. Note this example shows a difference between
+stationary and non-stationary Liouville property since it is well known that positive solu-
+tions to the Laplacian, namely, positive harmonic functions in Rn are constants. However
+there are also similarities between the two. It is well known that harmonic functions on Rn
+of sublinear growth are constants. The same conclusion was proven for ancient solutions to
+the heat equation in Souplet-Zhang [104] in 2006, which can be extended to some noncom-
+pact manifold cases. For the NS, there is an additional twist. For any harmonic function
+h = h(x) on R3 and a = a(t) a C 1 function of time, the function v = a(t)∇h(x) is an ancient
+solution of NS. To rule out this kind of solutions, we usually consider the so-called mild
+solutions only. For simplicity, we confine ourselves to solutions with locally finite energy,
+although the notation of mild solutions can be defined for other, more singular solutions.
+
+Definition 3.1. A function v ∈ L∞                2     3      2            1     3
+                                    loc (0, T ; Lloc (R )) ∩ Lloc (0, T ; Hloc (R )) is called a mild
+solution to the 3 dimensional NS if
+                       Z                         Z tZ
+             v(x, t) =   G(x, t, y)v0 (y)dy +             K(x, t − s, y)v∇v(y, s)dyds,
+                          R3                         0    R3
+
+where G = G(x, t, y) is the standard heat kernel on R3 and K = K(x, t − s, y) is the Stokes
+heat kernel on R3 .
+
+   By direct calculation, it can be shown that a mild solution in L∞ (0, T ; R3 ) is Hölder
+continuous in R3 × [δ, T ] for any δ > 0. This fact is useful in proving convergence results
+involving bounded mild solutions.
+   See [101] for an earlier treatise and Chapter 5 of [110] for a recent discussion of the
+Stokes heat kernel and mild solutions. The latter is often called the Oseen kernel [87]. The
+                                REVIEW ON AXIALLY SYMMETRIC NS                                     13
+
+
+explicit formula is K(x, t, y) = K(x − y, t, 0) ≡ (Ki j (z, t, 0)) with z = x − y, i, j = 1, 2, 3 and
+                                                                Z
+                                                     1               G(w, t, 0)
+                   Ki j (z, t, 0) = G(z, t, 0)δi j + ∂ xi ∂ x j                 dw.              (3.1)
+                                                    4π           R 3  |z − w|
+   So, a more reasonable question to ask would be:
+
+            Are sublinear, mild ancient solutions of 3 dimensional NS constants?         (3.2)
+   We comment that this question is quite challenging without further restriction on the
+growth or decay of the ancient solutions. See a brief discussion at the end of the section. If
+the answer to the above question is yes for certain class of ancient solutions, then we say
+that the Liouville property or theorem holds for that class.
+   Of course for the NS, there is the result of [51], which we have seen a little in the
+previous section. Their results can be summarized as the following theorem. Note that a
+different proof for statement (b) in the stationary case was found in [53] later.
+Theorem 3.2. ([51] Koch-Nadirashvili-Seregin-Sverak)
+   (a). If v is a bounded, mild ancient solutions of the 2 dimensional NS, then v is constant.
+   (b). If v is a bounded, mild ancient solutions of the 3 dimensional ASNS, then v is
+constant if also vθ = 0.
+   (c). If v is a bounded, mild ancient solutions of the 3 dimensional ASNS, then v is 0 if
+also |v(x)| ≤ C/r.
+    In the same paper, the authors also made the following conjecture:
+    The Liouville property is true for bounded, mild ancient solutions of the 3 dimensional
+ASNS.
+    Next we describe further results from a recent paper by Lei, Zhang and Zhao [74]. It
+is proven, in 2D and the 3D axially symmetric swirl free case, that the Liouville property
+holds for mild ancient solutions if the velocity fields are sublinear with respect to the spa-
+tial variable and the vorticity fields satisfy certain decay condition (see Theorem 3.3 and
+Theorem 3.4). We remark that, unlike the Liouville theorems in [51], there is no need
+for the condition that solutions are bounded. Moreover, counterexamples are given when
+the velocity fields are linear with respect to the spatial variable. This shows that, under
+the condition that solutions are sublinear with respect to the spatial variable, the Liouville
+theorems are sharp.
+    The other main result in that paper is a Liouville property, under an extra decaying
+assumption, for bounded ancient solutions of the ASNS with general nontrivial swirl (see
+Theorem 3.5). Let v be the bounded ancient mild solutions of the axially symmetric Navier-
+                                                                           p
+Stokes equations with vθ , 0 and let Γ = rvθ . We prove that if Γ ∈ L∞ t L x where 1 ≤ p < ∞,
+then v must be constants.
+    Actually, in the 3D axially symmetric case, on the above conjecture, one can add the
+                                 ∞
+extra condition that Γ ∈ L∞  t L x without losing much generality. The reason is that Γ is
+scaling invariant and it also satisfies the maximum principle. So if the initial value of a
+solution satisfies the bound, then it will persist over time. Therefore, any ancient solution
+from blow up process will still satisfy this bound. As mentioned, when vθ , 0, the Liouville
+property was proved in [51] under the condition |v| ≤ Cr . In comparison, in [74], one only
+needs the condition on one component vθ of the velocity v while no additional conditions
+are added on the other two components. Moreover, even though they haven’t totally proved
+the conjecture in [51], the result can still be considered as a step forward in understanding
+                                                             p
+the conjecture. That is because the condition Γ ∈ L∞     t L x with p being any finite number
+                               ∞
+seems not too far from Γ ∈ L .
+14                                          Q. S. ZHANG
+
+
+   The following are the main results in [74]. We mention that solution v in the next two
+theorems are also assumed to be locally bounded in space. Namely, if x is in a compact
+set, then |v(x, t)| is uniformly bounded for all t. This assumption was not stated in the
+corresponding theorems in [74] although it was implicitly stated in the text. See also a
+                                                                       −
+related result by Pan and Li [89] where v is allowed to grow at (−t)0.5 rate near −∞.
+Theorem 3.3. Let v be a smooth, locally bounded ancient solution of the 2D incompress-
+ible Navier-Stokes equations and let ω = ∇ × v be the vorticity. If lim |ω(x, t)| = 0,
+                                                                          |x|→+∞
+uniformly for all t ∈ (−∞, 0), then ω ≡ 0 and v is harmonic.
+   If, in addition, v satisfies
+                                     lim |v(x, t)|/|x| = 0,                              (3.3)
+                                    |x|→+∞
+uniformly for all t ∈ (−∞, 0), then v must be a constant.
+Theorem 3.4. Let v be a smooth, locally bounded ancient solution of the 3D axially sym-
+metric Navier-Stokes equations without swirl and let ω = ∇ × v = ωθ eθ be the vorticity.
+             θ
+Define Ω = ωr , if
+                                     lim |Ω| = 0,                                  (3.4)
+                                           r→+∞
+                                       θ
+uniformly for all t ∈ (−∞, 0), then ω ≡ 0 and v is harmonic.
+   If, in addition, v satisfies
+                                     lim |v(x, t)|/|x| = 0,                              (3.5)
+                                    |x|→+∞
+uniformly for all t ∈ (−∞, 0), then v must be a constant.
+Theorem 3.5. Let v be a bounded ancient mild solution of the 3D axially symmetric
+                                                               p
+Navier-Stokes equations with vθ , 0 and let Γ = rvθ . If Γ ∈ L x L∞   3
+                                                                  t (R × (−∞, 0)) where
+1 ≤ p < ∞, then v must be a constant.
+  The condition v being sublinear (the condition (3.3)) in Theorem 3.3 can not be re-
+moved, even when ω ≡ 0. Hence, the above 2 dimensional Liouville theorem is sharp.
+Here is a counterexample. Let
+                                                            1     1
+                            v = (x1 , −x2 ),          p = − x21 − x22 ,
+                                                            2     2
+then ω = ∂1 u2 − ∂2 u1 = 0, and (v, p) satisfies the 2D stationary Navier-Stokes equations.
+However, v is not a constant solution.
+   The first conclusion in Theorem 3.4, the axially symmetric, swirl free case, shows that
+if ωθ is sublinear with respect to r, then ωθ ≡ 0. Here is a counterexample to show that
+the conclusion will be wrong if ωθ is linear with respect to r, and consequently one cannot
+prove v is harmonic. This infers that condition (3.4) is also important. Let
+                                                                1
+                        v = (−x1 x3 , −x2 x3 , x23 ),      p = − x43 + 2x3 ,
+                                                                2
+then vθ = v · eθ = 0 and (v, p) satisfies the stationary ASNS However ωθ = −r . 0,
+∆v = (0, 0, 2) , 0.
+   In addition, the condition v being sublinear to x ( condition (3.5)) is also necessary, even
+when ωθ = 0. Moreover, one can give a counterexample to show that if v is linear in the
+spatial variable, then there exists a nontrivial ancient solution of ASNS without swirl. It
+then follows that Theorem 3.4 is sharp. For example, let
+                            1       1                       1     1      1
+                     v = (− x1 , − x2 , x3 ),           p = x21 + x22 + x23 ,
+                            2       2                       8     8      2
+                                 REVIEW ON AXIALLY SYMMETRIC NS                                      15
+
+
+then we have
+                                                          1
+                      vθ = v · eθ = 0,    vr = v · er = − r,        v3 = x3 .
+                                                          2
+   These imply that ωθ = ∂ x3 vr −∂r v3 = 0 and (v, p) satisfies the stationary ASNS equations
+without swirl. However, v is not a constant solution.
+   So the remaining case for the Liouville property, which is also the most difficult one, is
+when Γ = rvθ (x, t) does not decay near infinity. There are some partial results in the paper
+[69] by Lei-Ren-Zhang.
+Theorem 3.6. Let v = vθ eθ + vr er + v3 e3 be a bounded mild ancient solution to the ASNS
+such that Γ = rvθ is bounded. Suppose v is periodic in the x3 variable. Then v = ce3 where
+c is a constant.
+    Let us describe the general idea of the proof of this theorem. One will prove, by the
+De Giorgi-Nash-Moser method that Γ satisfies a partially scaling invariant Hölder esti-
+mate which forces Γ ≡ 0. Then the problem is reduced to the swirl free case that is
+solved in [51]. In general this method will break down in large scale, unless one im-
+poses scaling invariant decay conditions on vr and v3 . Although no decay conditions on
+vr or v3 are assumed in the theorem, one can demonstrate that the classical Nash-Moser
+iteration method can be carefully adapted to this situation. The key observation is the
+following: the incompressibility condition ∇ · b = 0 with b = vr er + v3 e3 , along with
+the periodicity in x3 gives one extra information on vr . In fact one will essentially use
+vr (r, θ, x3 ) = −∂ x3 (Lθ (r, θ, x3 ) − Lθ (r, θ, 0)) ∈ (L∞ )−1 , where Lθ is the angular stream func-
+tion. Another helpful factor is that the spatial domain R2 × S 1 behaves like a 2 dimensional
+Euclidean space in large scale, even though it really behaves 3 dimensionally near the axis.
+This shows that vr scales by the critical order −1, which is quite helpful. But the same can
+not be said for v3 . Fortunately, the role of v3 is not as important as vr in the x3 periodic
+case.
+    In contrast to the absence of nontrivial partially periodic ancient solutions for ASNS, in
+another 3 dimensional parabolic flow, the Ricci flow, such a solution exists and represents
+a typical singularity: (S2 × R) × (−∞, 0). This important fact is proven by Perelman [91].
+    Next, we present a theorem that deals with non-periodic case, under an extra condition
+that Γ converges to its maximum at certain speed. Even though the result cannot yet reach
+the full conjecture in [51], its proof utilizes a method of constructing a weight function by
+solving an adapted PDE, which is then used in an energy estimate. It may be of independent
+value and use elsewhere. This result and the ones in [69] all were posted in the preprint
+[68]. In a review process, it was suggested by a reviewer to split that paper.
+    Let
+                                    lim sup Γ = lim sup sup Γ(r, x3 , t).                          (3.6)
+                                    r→∞           r→∞ x3 ,t
+
+It can be shown that if v is any bounded ancient solution such that Γ is bounded, then
+lim supr→∞ Γ = sup Γ.
+Theorem 3.7. ([70]) Let v = vθ eθ + vr er + v3 e3 be a bounded mild ancient solution to the
+ASNS such that Γ = rvθ is bounded. There exists a small number ǫ0 ∈ (0, 1), depending
+only on kvk∞ , such that if
+                                                          ǫ0
+                          |Γ2 (r, x3 , t) − lim sup Γ2 | ≤ lim sup Γ2                 (3.7)
+                                                r→∞       r    r→∞
+
+holds uniformly for x3 , t, and large r, then v = ce3 where c is a constant.
+16                                               Q. S. ZHANG
+
+
+    Let us mention that to study the equation of Γ in an isolated manner is likely to fail. For
+example without the divergence free condition on the vector field b. There is no Liouville
+property for the equation
+                             2
+                     ∆ f − ∂r f − (b · ∇) f = 0, f (0) = 0, lim f = c in R3 ,
+                             r                                     r→∞
+even when
+       R     f  =   f (r) is a  one variable   function.   One   can  just take b = a(r)er with a(r) ≤ 0,
+r exp( a(r)dr) being integrable on [0, ∞). Then solve the ODE f ′′ − ( 1r + a(r)) f ′ = 0 .
+    We remark that Question (3.2) is very difficult even in the bounded, axially symmetric
+case, especially without the extra assumption Γ = rvθ ∈ L∞ . The reason is that it con-
+tains another long standing question for the stationary NS as a special case. Namely, is a
+homogeneous D solution zero? We will discuss the latter in detail in the following section.
+    At the end of this section, we introduce a local representation formula for smooth solu-
+tions of NS, which is a useful tool in proving convergence results in NS during and after
+blow up or scaling, including ancient solutions. It is largely due to O’Leary [86] and has
+been used in several papers including [121]. However, as pointed out by H. J. Dong, there
+is a missing term in that formula. A corrected one is given in the addendum of [121], which
+is given below. As one application, we can prove that for a local smooth solution v of NS, v
+and ∇v is controlled by a local integral of v or |∇v| without any assumption on the pressure.
+The smoothness assumption can be relaxed. We refer to [121] addendum for details.
+    Given r > 0 and (x, t) in the space time. Let Qr (x, t) = {(y, s) | |x − y| < r, t − r2 < s < t}
+be a standard parabolic cube. Denote by Γ = Γ(x, y) = 1/(4π|x − y|) the Green’s function on
+R3 , G = G(x, t, y) the standard heat kernel, K = K(x, t, y) the Oseen kernel given in (3.1).
+Fixing (x, t), we construct a standard cut-off function η such that η(y, s) = 1 in Qr/2 (x, t),
+η(y, s) = 0 outside of Qr (x, t), 0 ≤ η ≤ 1. Denote by K j the j − th column of the Oseen
+kernel. The following vector was introduced in [86].
+                                                                             Z
+                                                              1                  curlK j (x, t − s, z)
+     Φ j = Φ j (x, t − s, y) = η(y, s)K j (x, t − s, y) + ∇η(y, s) ×                                   dz
+                                                            4π                R3      |z − y|
+                                                     →−
+                               ≡ ηK j (x, t − s, y) + Z j (x, t − s, y).
+Proposition 3.8 ([121], Addendum). Suppose v = (v1 , v2 , v3 ) is a smooth solution of the
+NS (1.1) in Qr (x, t) and K j be the j − th column of the Oseen kernel K. Then
+               Z                    h                                                                   i
+ v j (x, t) =              v(y, s) · K j (x, t − s, y)(∆η + ∂ s η)(y, s) + 2∇η(y, s)∇y K j (x, t − s, y) dyds
+                  Qr (x,t)
+         Z                                                                                 
+                                    →
+                                    −         →
+                                              −
+      +             v(y, s) · (∆y Z j + ∂ s Z j )(x, t − s, y) + v(y, s)∇y Φ j (x, t − s, y) dyds
+           Qr (x,t)
+            Z         h                                                   i
+          +            (∇η · ∇y Γ)v j − ∂y j Γ(∇η · v) − ∂y j η(∇y Γ · v) (y, t)dy.
+               B (x)
+            | r                                  {z                                }
+                                                                                                          (3.8)
+                                                                           P
+    In the above, if X, Y are two vector fields. Then X∇Y ≡ j X j ∂ j Y. The last term in (3.8)
+was the missing one. Since all integrands vanish on the lateral boundary of Qr (x, t), one
+can apply ∇ x freely into the integrals on the right sides of (3.8). Also it is not hard to see
+that the formula also works if one replaces (x, t) by any points in Qr/2 (x, t) while keeping
+the cube Qr (x, t) unchanged.
+    Using the explicit formula above, one deduces
+Proposition 3.9 (mean value inequalities for (NS), [121], Addendum). Let v be a smooth
+solution of the NS (1.1) in Q2r (x, t). Then there exists an absolute constant λ > 0 such that
+                                       REVIEW ON AXIALLY SYMMETRIC NS                                  17
+
+
+   (a).
+                                Z                                        Z
+                          λ                                          λ
+              |v(x, t)| ≤ 5                         |v(y, s)|dyds + 3                  |v(y, t)|dy
+                         r      Qr (x,t)−Qr/2 (x,t)                  r Br (x)−Br/2 (x)
+                                  Z
+                               +λ            K1 (x, t; y, s) |v(y, s)|2 dyds,
+                                         Qr (x,t)
+                                       √
+where K1 (x, t; y, s) = 1/(|x − y| + t − s)4 , if t ≥ s and 0 if t < s.
+  (b).
+                         Z                                           Z
+                      λ                                          λ
+       |∇v(x, t)| ≤ 5                       |∇v(y, s)|dyds + 6                         |v(y, s)|dyds
+                      r Qr (x,t)−Qr/2 (x,t)                      r Qr (x,t)−Qr/2 (x,t)
+                  Z                              Z
+               λ
+          + 4                   |v(y, t)|dy + λ             K1 (x, t; y, s)|v(y, s)| |∇v(y, s)|dyds.
+              r Br (x)−Br/2 (x)                    Qr (x,t)
+
+   Using an iteration, one can also remove the kernel function K1 from the above mean
+value inequality, assuming v is in a parabolic type Kato class. The latter contains the
+standard L xp Lqt regularity class alluded in Section 1 for q < ∞.
+Definition 3.10 ([121]). A vector valued function b = b(x, t) in L1loc (Rn+1 ) is in class K1 if
+it satisfies the following condition:
+                         Z t Z
+             lim sup             [K1 (x, t; y, s) + K1 (x, s; y, t − h)]|b(y, s)|dyds = 0.
+             h→0 (x,t)∈Rn+1   t−h     Rn
+
+   The parabolic Kato norm of b on a time interval [t1 , t2 ] and scale h is
+                              Z t Z
+     B(b, t1, t2 , h) ≡ sup            [K1 (x, t; y, s) + K1 (x, s; y, t − h)]|b(y, s)|dyds.
+                         (x,t)∈Rn ×[t1 ,t2 ]   t−h   Rn
+
+Proposition 3.11 ( [121], Addendum). Let v be a local solution of the NS (1.1) in Q4r (x, t) ⊂
+R3 × R, satisfying the energy inequality (1.2) localized in Q4r (x, t). Suppose also that
+v|Q4r (x,t) is in class K1 . Then both v and |∇v| are bounded functions in Q2r = Q2r (x, t).
+   Moreover, for some positive constants C = C(v) and r0 , depending only on the size of
+the Kato norm of v in the time interval [t − 16r02 , t] with scale 16r02 such that the following
+hold. When 0 < r < r0 ,
+                                                   Z
+                                    C
+                        |v(x, t)| ≤ 3 sup                  |v(y, s)|dy,
+                                   r s∈[t−(2r)2 ,t] Br (x)
+                                                                       Z
+                                    C                   C
+                      |∇v(x, t)| ≤ 5 k∇vkL1 (Q2r ) + 4 sup                     |v(y, s)|dy.
+                                   r                   r s∈[t−(2r)2 ,t] Br (x)
+
+                                               4. Stationary Solutions
+4.1. D solutions. In this section we discuss the stationary Navier-Stokes equations
+                       
+                       (v · ∇)v + ∇p − ∆v = f,
+                       
+                                                      in Ω ⊂ R3 ,
+                                                                                   (4.1)
+                       ∇ · v = 0.
+                       
+
+Here Ω is an open domain and f is a forcing term. Boundary conditions will vary case by
+case.
+   We will focus on the decay and vanishing properties of the so-called homogeneous D
+solutions to (4.1) in certain unbounded domain Ω ⊂ R3 with various boundary conditions
+18                                       Q. S. ZHANG
+
+
+and requirements of the behavior of v at infinity. Here the name “D solutions” arises from
+the condition that solutions v have finite Dirichlet integrals (energy)
+                                    Z
+                                        |∇v(x)|2dx < +∞.                              (4.2)
+                                     Ω
+
+Definition 4.1. A smooth solution to (4.1) is called a D solution on Ω if (4.2) holds. It is
+referred to as DS.
+   A homogenous D solution on Ω is a D solution v on Ω such that v = 0 on ∂Ω, f = 0 and
+|v(x)| → 0 as |x| → ∞. It is referred to as HDS.
+   An axially symmetric homogenous D solution on Ω is referred to as ASHDS.
+   If no confusion arises, we will drop the reference to the domain Ω from D solutions.
+   Existence of D solutions with several boundary conditions were studied in the pioneer
+work of Leray [61] (p24) by variational method. The following uniqueness problem has
+been open since then:
+                          Is a homogeneous D solution equal to 0 ?
+   This is also part of the very difficult uniqueness problem for the steady Navier-Stokes
+equation, which states that if the right hand of (4.1)1 is a nontrivial smooth function, de-
+caying sufficiently fast, do we have the uniqueness of D solutions. For axially symmetric
+compact domains with a hole at the axis, the uniqueness fails, as pointed out by Yudovich
+[119] over 50 years ago. However for general domains, the problem is wide open. Let us
+explain Yudovich’s construction of 2 solutions. Let Ω be the above compact domain. For
+a divergence free vector field A, find a nontrivial solution φ of the following ”eigenvalue
+problem” for vector fields.
+                      (
+                        ∆φ − (A · ∇)φ − (φ · ∇)A − ∇τ = 0,      in Ω,
+                                                                                       (4.3)
+                        ∇ · φ = 0 in Ω; φ = 0, on ∂Ω.
+Then A + φ and A − φ will be two distinct solutions of the stationary NS with the same
+forcing term, the same boundary value, but different pressure terms. But there is a problem.
+How to find a nontrivial solution to (4.3). Yudovich found a special A so that (4.3) has a
+variational structure and found a nontrivial solution by solving a constrained maximum
+problem. His choice of A is
+                                        A = −r−3 eθ
+in the polar coordinates.
+    Now let us focus on the decay and vanishing problems for DS. In the 2 dimensions,
+the corresponding vanishing property in the full space case is solved by Gilbarg and Wein-
+berger [41], using the line integral method.
+Theorem 4.2. ([41] Let velocity v and pressure
+                                          R     p be a solution of the Navier-Stokes equa-
+tion defined over the entire R2 and assume R2 |∇v(x)|2 dx < +∞. Then v and p are constant.
+   They also proved a number of asymptotic properties of 2 dimensional D solutions in
+general. For example, they proved that the pressure p from Leray’s D solution in 2 D
+exterior domains with f = 0 must converge to a constant at infinity.
+   However, for the 3 dimensional problem, it is not even known if a general D-solution
+has any definite decay rate comparing with the distance function near infinity, even when
+the domain is R3 . The situation is akin to the regularity problem. This time the scaling gap
+happens at infinity. Namely, to prove vanishing, one always needs to impose a condition
+that the solution decays in some sense near infinity sufficiently fast. However, no decay rate
+has been proven a priori for HDS (homogeneous D solutions) in R3 , making the situation
+                              REVIEW ON AXIALLY SYMMETRIC NS                                  19
+
+
+looks bleaker than the regularity problem. Another eerie similarity with the regularity
+problem occurs in that some partial a priori decay can be proven quickly outside a small
+set. In fact R. Finn [35] (page229), already observed the following partial decay property
+for any 3 dimensional vector field v having a finite Dirichlet integral and tending to a
+constant vector v∞ as |x| → ∞. For any δ > 0, there exists a measurable set Eδ ⊂ S2 , such
+that |Eδ | ≤ δ and
+                                        C
+                         |v − v∞ | ≤ 1/2 1/2 , ∀x = |x|ω, ω ∈ S2 \Eδ .                     (4.4)
+                                    δ |x|
+So the current situation is, in order to prove vanishing, one needs to establish a priori decay
+of sufficiently fast order, such as |v(x)| ≤ c/|x|2/3 , c.f. Theorem 4.5. However the only a
+priori decay is a slow and partial one, except for solutions which are small in suitable sense.
+    Perhaps it is also not a surprise that just the decay and convergence property itself
+for general D solutions is an intricate matter in both 2 and 3 dimensions. In [34, 35],
+Finn proved that any D solution in 3 dimensional exterior domains converges pointwise
+uniformly to a constant vector v∞ at infinity. Furthermore, in case v∞ , 0, he showed that
+if |v(x) − v∞ | ≤ C|x|−α for some α > 1/2 as x → ∞, then α can be replaced by 1. He also
+introduced a concept called ”physically reasonable (PR) solutions” to the stationary NS in
+3 dimensional exterior domains, which are those satisfying v(x) = O(|x|−1 ) if v∞ = 0 or
+|v(x) − v∞ | = O(|x|−α ) for some α > 1/2, if v∞ , 0. Finn [36] then proved the existence and
+uniqueness of a PR solution in a 3 dimensional exterior domain when the boundary data
+are small enough. It is straight forward to show a PR solution is a D solution. However,
+in case v∞ = 0, whether the converse is true has remained open till now. As mentioned, if
+v∞ = 0, we can not prove any decay rate at infinity for v so far, not to mention the expected
+decay rate of |x|−1 . One exception is when the solution is small in a suitable sense. Then
+the decay can be proven as a linear Stokes problem in exterior domains. See Galdi [38]
+where the viscosity constant ν is large and therefore a fixed Dirichlet integral is relatively
+small. Note that one will not run into the Stokes paradox which happens when v∞ , 0
+and v = 0 on the boundary of the exterior domain Ω. In the case of v∞ , 0, Babenko [3]
+showed that every D solution is a PR solution if the forcing term is of bounded support.
+    One would be tempted to think that the 2 dimensional situation is simpler, which is the
+case for the regularity problem. But this is not true. Finiteness of the Dirichlet integral
+(4.2) does not entail any decay of v in 2 dimensions. Only recently, Korobkov, Pileckas,
+and Russo [54] managed to prove the following convergence result.
+Theorem 4.3. Let v be a D-solution to NS in an exterior domain Ω ⊂ R2 without forcing
+term. Then v converges pointwise uniformly at infinity to a constant vector v∞ ∈ R2 .
+    The proof builds on earlier work in Gilbarg and Weinberger [41], Amick [1, 2]. Fine
+analysis of the level sets of the vorticity plays an important role. These are curves in
+R2 . There is still a problem on whether v∞ agrees with the one from Leray’s original
+construction [61]. The interested reader may consult the introduction of [54] for a detailed
+account of related and expanded results.
+    Let’s recall some of vanishing results with extra integral or decay assumptions for the
+solution v in 3 dimensions. If the domain Ω = R3 , Galdi [39] Theorem X.9.5 proved that
+if v ∈ L9/2 (R3 ) is a homogeneous D-solution, then v = 0. A log factor improvement was
+shown in Chae and Wolf [26]. In [25], Chae proved that homogeneous D solutions are 0
+by assuming ∆v ∈ L6/5 (R3 ), which scales the same as k∇vk2 .
+Theorem 4.4. ([25]) Let v be a homogeneous D solution in R3 . Suppose k∆vkL6/5 (R3 ) < ∞,
+then v = 0.
+20                                        Q. S. ZHANG
+
+
+    Chae’s proof uses the property that the head pressure Q = 21 |v|2 + p is non-positive if
+                                                                                             δ
+p(x) → 0 at infinity. This fact follows from the maximum principle. Then he    R uses v(Q−ǫ)−
+                                                                                      2
+as a test function in the stationary NS. Letting ǫ, δ → 0, one concludes that R3 |∇v| dx = 0,
+and hence v = 0.
+    Seregin [98] proved vanishing of homogeneous D solutions under the condition that v ∈
+L6 (R3 ) ∩ BMO−1 . In a recent paper [55], Kozono-Terasawa-Wakasugi showed vanishing
+of homogeneous D solutions if either the vorticity ω = ω(x) decays faster than c/|x|5/3 at
+infinity, or the velocity v decays like c/|x|2/3 with c being a small number. i.e. They proved
+Theorem 4.5. ([55]) Let v be a homogeneous D solution in R3 and ω = ∇ × v be the
+vorticity. If either |ω(x)| = o(|x|−5/3 ) or |v(x)| ≤ c|x|−2/3 for a small positive constant and
+all large |x|, then v = 0.
+    Afterwards, W. D. Wang [114] and N. Zhao [122] proved a similar result for the axially
+symmetric D solutions independently. Note that no decay condition is imposed in the e3
+direction on one hand, but no improvement on the decay exponent is made on the other.
+However the result is still encouraging since we now have a priori estimates on v and ω,
+c.f. Theorems 4.9 and 4.10.
+Theorem 4.6. ([114] and [122]) Let v be an axially symmetric homogeneous D solution
+in R3 and ω = ∇ × v be the vorticity. If either |ω(x)| = o(r−5/3 ) or |v(x)| = o(r−2/3 ) for all
+large |x|, then v = 0.
+   The results in [55] has also been extended to D solutions in some Lebesgue and Morrey
+spaces in [20].
+   Under certain smallness assumption, vanishing result for homogeneous 3 dimensional
+solutions in a slab R2 × [0, 1] was also obtained in the book [39], Chapter XII.
+   As mentioned, D solutions in general noncompact domains have been studied in [61].
+Besides the whole space, the next simplest noncompact domains are the half space and
+slabs. Let us present a vanishing result for D solutions in a slab in R3 .
+Theorem 4.7 ([24] vanishing of HDS in a slab). Let v be a smooth solution to the problem
+                                                           2
+                (v · ∇)v + ∇p − ∆v = 0, ∇ · v = 0 in R × [0, 1],
+                
+                
+                                                                                   (4.5)
+                v(x)| x3 =0 = v(x)| x3 =1 = 0,
+                
+
+such that the Dirichlet integral satisfies the condition:
+                                  Z 1Z
+                                            |∇v(x)|2 dx < ∞.                              (4.6)
+                                    0    R2
+Then, v ≡ 0.
+   Comparing with the full space case, one can show by Poincaré inequality, with the help
+of Dirichlet boundary and the finite integral condition (4.6), that the velocity v belongs
+to L2 , which indicates that the decay rate of v = v(x) is like 1/|x| in the integral sense.
+However one does not have a good knowledge of the pressure p. The Dirichlet boundary
+condition is known to induce complications on the vorticity and pressure. The main diffi-
+culty is to deal with the pressure term. Earlier, Pileckas and Specovius-Neugebauer [92]
+studied the asymptotic decay of solutions of the Navier-Stokes equation in a slab. They
+prove, under certain weighted integral assumption on the velocity v = v(x) and 3rd order
+derivatives, v = v(x) decays like 1/|x| or 1/|x|3 . See Theorem 3.1 in [92]. Then the van-
+ishing of v in the homogeneous case follows easily. However, these authors required that
+                                  REVIEW ON AXIALLY SYMMETRIC NS                                     21
+
+
+(1 + |x|)2+β|v3 (x)| + (1 + |x|)3+β|∂ x1 v3 (x)| with β ∈ (−2, −1) is in L2 in addition to further inte-
+gral decay conditions of the first, second and third order derivatives of v, and consequently
+restriction on the pressure. These conditions are not available to us. Furthermore in the
+periodic case, which will be dealt with later, it is not even known that v is L2 .
+   Besides if the Dirichlet energy is infinite, the vanishing property may be false. An
+example is v = (x3 (1 − x3 ), 0, 0), p = −2x1 .
+   In the paper [24], there is an extra assumption that v is bounded, which turns out to be
+unnecessary. Also it seems interesting to study the decay property of nonhomogeneous
+solutions in a slab.
+   Now if the domain is the whole R3 , one can show that if the positive part of the radial
+component of D solutions decays at order −1 of the distance in spherical coordinates, then
+the D-solution vanishes.
+Theorem 4.8 ([24]). Let vρ = vρ (x) be the radial component of 3 dimensional D-solutions
+in spherical coordinates. If
+                                          C
+                                 vρ (x) ≤ ,       x ∈ R3 ,                         (4.7)
+                                          |x|
+for some positive constant C, then v ≡ 0.
+   We should compare with the result in [55] where the authors prove, if the weak L9/2
+norm of v is small, then v vanishes. This includes the case |v(x)| ≤ c|x|−2/3 for certain small
+constant c. In contrast, our assumption here is worse on the order of the distance function.
+However we only impose the condition on the positive part of the radial component of the
+solution and there is no restriction on the other two components.
+   Next we concentrate on axially symmetric homogeneous D solutions, for which the
+vanishing problem is also wide open. However as we shall see, a priori decay of the
+solutions v and vorticity ω in the er direction is available, albeit insufficient for vanishing
+result in the whole space case. The set up of equations have been given in (1.5) for the
+velocity and (2.5) for the vorticity, except that we are happy to drop the time variable all
+together. The relation between v and ω are given in (2.6).
+   For the decay of v and ω, the combined results of Chae-Jin and S. K. Weng spanning 8
+years can be condensed into:
+Theorem 4.9. ([19] and [116]) Let v be a homogeneous D solution of ASNS in R3 . For
+x ∈ R3 ,
+                                                −                                  −
+   |v(x)| ≤ C log r/r 1/2 , |ωθ (x)| ≤ Cr−(19/16) , |ωr (x)| + |ω3 (x)| ≤ Cr−(67/64) . (4.8)
+Here C is a positive constant and for a positive number a, a− represents a number which
+is smaller than but close to a.
+   Their proof is based on line integral techniques from Gilbarg and Weinberger [41]. In
+our recent work [23], the decay estimate on the vorticity ω is improved and a short proof
+for the decay of the velocity v is found under a slightly more general condition. Let us
+mention that in both the previous and following theorems, one can add a fast decaying
+forcing term and still obtain the decay estimates. The proof is the same.
+Theorem 4.10 ([23] a priori decay v and ω). Let u be a smooth axially symmetric solution
+to the problem
+                                                                3
+                   (v · ∇)v + ∇p − ∆v = 0, ∇ · v = 0, in R ,
+                   
+                   
+                   
+                                                                                   (4.9)
+                    lim v(x) = 0,
+                   
+                   
+                   
+                          |x|→∞
+22                                                 Q. S. ZHANG
+
+
+such that the Dirichlet integral satisfies the condition: for a constant C, and all R ≥ 1,
+                   Z ∞Z
+                                                         
+                                    |∇v(x)|2 dx + |v(x)|6 dx′ dx3 < C < ∞.              (4.10)
+                        −∞     R≤|x′ |≤2R
+
+Then the velocity and vorticity satisfy the following a priori bound. For a constant C0 > 0,
+depending only on the constant C in (4.10) such that
+                                                            (ln r)1/2
+                                            |v(x)| ≤ C0        √ ;
+                                                                 r
+
+                              (ln r)3/4                                       (ln r)11/8
+             |ωθ (x)| ≤ C0              ,     |ωr (x)| + |ω3 (x)| ≤ C                    ,      r ≥ e.
+                                r5/4                                             r9/8
+    Now we outline the proof of the decay result in Theorem 4.10 briefly. We start with the
+observation that in a large dyadic ball, far away from the x3 axis, after scaling, the axially
+symmetric Navier-Stokes equation resembles a 2 dimensional one. Then the 2 dimensional
+Brezis-Gallouet inequality introduced in [8] implies that a smooth vector field with finite
+Dirichlet energy is almost bounded. After returning to the original scale, one can show that
+v is bounded by C lnr r 1/2 for large r. It is curious that the ASNS hardly plays a role in the
+                       
+proof, except for guaranteeing ∆v is bounded.
+    Next by combining the energy estimates of the equations for ω in the stationary (2.5) ,
+Brezis-Gallouet inequality and scaling technique, we will show that, with x3 taken as 0 for
+convenience,
+                       |ωθ (r, 0)| ≤ Cr−1 (ln r)1/2 k(vr , vθ , v3 )k1/2
+                                                                     L∞ ([ 3 r, 5 r]×[−r,r])
+                                                                                             ,           (4.11)
+                                                                                4   4
+
+and
+         |ωr (r, 0)| + |ω3 (r, 0)| ≤ Cr−1 (ln r)1/2 k(vr , v3 )k1/2
+                                                                L∞ ([ 3 r, 5 r]×[−r,r])
+                                                                          4     4
+                                                                                                         (4.12)
+                                        + Cr−1/2 (ln r)1/2 k(∇vr , ∇v3 )k1/2
+                                                                         L∞ ([ 3 r, 5 r]×[−r,r])
+                                                                                                 .
+                                                                                        4   4
+
+The details can be founded in [23]. Then using the decay of v and (4.11), we can deduce
+that the decay rate of ωθ is r−5/4 (ln r)3/4 .
+   In order to obtain decay of ωr and ω3 from (4.12), we need the decay of ∇vr , ∇v3 which
+can be connected with ωθ by the Biot-Savart law
+
+                                     −∆(vr er + v3 e3 ) = ∇ × (ωθ eθ ).
+                                                                                  R
+Then ∇vr , ∇v3 can be written as integral representations of ωθ in the form of R3 K(x, y)ωθ (y)dy,
+where K(x, y) are Calderon-Zygmund kernels. The decay relations between ∇vr , ∇v3 and
+ωθ are shown in Lemma 3.2 of [23]. At last, a combination of (4.12), decay of v and
+∇vr , ∇v3 imply the decay of ωr , ω3 in Theorem 4.10.
+    Clearly, if the Dirichlet integral is finite i.e. k∇vkL2 (R3 ) < ∞, then (4.10) is satisfied. In
+[23], we also proved a vanishing result when D solutions are periodic in x3 variable under
+the additional assumption that vθ and v3 have zero mean in the x3 direction. With some
+extra work, one can also reach the vanishing result assuming the integral in (4.10) grows
+at a certain positive power of R.
+    In a subsequent paper [24], the extra condition that vθ , v3 have zero mean in the x3
+direction has been removed, under the stronger assumption that the Dirichlet integral is
+finite. We state it as the following theorem, with ASHDS standing for axially symmetric
+homogeneous D solutions.
+                                REVIEW ON AXIALLY SYMMETRIC NS                                     23
+
+
+Theorem 4.11. (Vanishing of Periodic ASHDS) Let v be a smooth axially symmetric solu-
+tion to the problem
+
+                                                           in R2 × S = R2 × [−π, π],
+        
+        
+        
+         (v · ∇)v + ∇p − ∆v = 0, ∇ · v = 0,
+        
+        
+        v(x1 , x2 , x3 ) = v(x1 , x2 , x3 + 2π),
+        
+                                                                                              (4.13)
+        
+        
+         lim
+        
+            ′
+                 v(x) = 0,
+          |x |→∞
+
+                               Rπ R
+with finite Dirichlet integral: −π R2 |∇v(x)|2 dx < +∞. Then v = 0.
+
+    We outline the proof of the above results briefly. We start with the observation that
+                                        2
+in x3 −periodicR π case with Ω = R × S, the horizontal radial component of the solution
+ r                  r
+v satisfies −π v dx3 = 0. Poincaré inequality and the finite Dirichlet integral condition
+indicate that vr ∈ L2 (Ω). Then using of x3 -periodicity again, we can actually prove that
+the L∞ oscillation of the pressure p is bounded in a dyadic annulus. The method is similar
+to the line integral technique in [41] except it is carried out in a 3 dimensional domain.
+At last by testing the vector equation (4.13) with vφ2 (|x′ |), where φ(x′ ) is supported in
+{x′ | |x′ | < 2R} and equal to 1 in {x′ | |x′ | < R}, and making R approach ∞, we can prove that
+v ≡ 0. This result seems to add an extra weight in the belief that ASHDS in R3 is 0. The
+reason is that in the periodic case, finiteness of the Dirichlet integral of v does not imply
+any decay of v. For example the function f = ln ln(2 + r) has finite Dirichlet integral. Yet
+v still vanishes.
+    The next theorem treats the case with Dirichlet boundary condition (DBC) in a slab,
+even allowing the Dirichlet integral to be log divergent. Recall from Theorem 4.7 that 3
+dimensional D solutions in a slab with DBC is 0. Why do we come back to the slab case?
+One reason is that infinite Dirichlet energy may induce non-uniqueness/non-vanishing as
+shown in the example after Theorem 4.7. So one would like to know, under what rate of
+divergence of the energy, vanishing of D solutions and especially ASHDS is preserved.
+In addition, solutions with infinite Dirichlet energy is also of interest in turbulence theory.
+These include the study of Kolmogorov flows such as flows in a channel with periodic
+forcing terms. See [37] e.g.
+
+Theorem 4.12. ([24] ) Let v be a smooth, axially symmetric solution to the problem
+                   
+                   (v · ∇)v + ∇p − ∆v = 0, ∇ · v = 0, in
+                   
+                   
+                                                                               R2 × [0, 1],
+                                                                                               (4.14)
+                    |xlim   v = 0, v(x)| x3 =0 = v(x)| x3=1 = 0,
+                   
+                   
+                      ′ |→∞
+
+
+
+
+such that the Dirichlet integral satisfies the condition: for a constant C, and all R ≥ 1,
+                              Z 1Z
+                                                     |∇v(x)|2 dx < C < ∞.                      (4.15)
+                                0       R≤|x′ |≤2R
+
+
+Then vθ = 0. Moreover, there exists a positive constant C0 , depending only on the constant
+C in (4.15) such that
+                                                                     !1/2
+                                    r           3             ln r
+                                 |v (x)| + |v (x)| ≤ C0                     .                  (4.16)
+                                                               r
+24                                           Q. S. ZHANG
+
+
+     Since vθ = 0 i.e. the flow is swirl free, the Navier-Stokes system reduces to
+                           r
+                          
+                          
+                            (v ∂r + v3 ∂ x3 )vr + ∂r p = (∆ − r−2 )vr ,
+                          
+                          
+                          
+                              r       3       3              3
+                          (v ∂r + v ∂ x3 )v + ∂ x3 p = ∆v ,
+                          
+                          
+                          
+                                                                                        (4.17)
+                             ∂r vr + r−1 vr + ∂ x3 v3 = 0,
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                           lim (vr , v3 ) = 0, (vr , v3 )(r, x3 )| x3 =0,1 = 0.
+                          
+                          
+                           r→∞
+                                                                                          
+   So our vanishing problem now is much like a two dimensional problem. But we do not
+know any vanishing result for swirl free case in a slab with Dirichlet boundary condition
+and (4.15).
+   The decay estimate in the er direction still holds if there is an inhomogeneous term of
+sufficiently fast decay. However, we are not aware any decay estimate in the e3 direction,
+except in the swirl free case, c.f. Theorem 1.2 [116]. If one works a little harder, then
+one can reach the same conclusion as the theorem assuming the integral in (4.15) grows at
+certain power of R.
+   Let us give a description of the proof of Theorem 4.12. From (2.2), the quantity Γ := rvθ
+satisfies
+                                                       2
+                             (vr ∂r + v3 ∂ x3 )Γ − (∆ − ∂r )Γ = 0.                    (4.18)
+                                                       r
+                                                                              3
+So Γ enjoys maximum principle, which means, for bounded open sets Ω ⊂ R ,
+                                         sup |Γ| ≤ sup |Γ|.                             (4.19)
+                                         x∈Ω         x∈∂Ω
+                                                               3 −
+We will show that the decay rate of vθ is at least r−( 2 ) for large r. Take this decay for
+granted at the moment. By using the above maximum principle and a sliding argument
+along the x3 axis together with the fact that Γ(x) → 0 as r → ∞, one can prove vθ ≡ 0.
+   We are left to prove the above decay property of vθ , which take three steps.
+   In step one: the Laplace Green’s function G on R2 × [0, 1] with homogeneous Dirichlet
+boundary condition will be introduced and a number of properties of G explained. The
+point is that G has fast decay near infinity. See [81] e.g.
+   In step two: we obtain the following decay of ωr , ω3 by using a refined Brezis-Gallouet
+inequality, energy methods and scaling techniques:
+                                   |(ωr (x), ω3 (x))| . r−1 ln r,
+for large r. Furthermore, by the same procedure, we can show that
+                             |(∂ x3 ωr (x), ∂r ω3 (x))| . r−3/2 (ln r)3/2 .             (4.20)
+                                                                                θ
+    In step three, we use the Biot-Savart law to get the representation of v by integrals
+involving G and (∂ x3 ωr , ∂r ω3 ) which implies that vθ decays in the same rate as ∂ x3 ωr and
+∂r ω3 . Now that we know vθ decays faster than order 1, as mentioned one can apply the
+maximum principle on the function Γ = rvθ to conclude vθ = 0.
+    When deriving the results in [23, 24], one uses the standard tools such as energy es-
+timate, vorticity equation and inter-play of velocity and vorticity. The new input is di-
+mension reduction and the use of two additional tools: Brezis-Gallouet inequality and
+Bogovskii’s estimate, which are given a brief overview here. Some refinements of them
+are also given for a class of domains.
+    The Brezis-Gallouet inequality is a limiting case of the Sobolev inequality in 2 dimen-
+sions for H 2 extension domains. An analogous inequality also holds in higher dimensions
+by Brezis-Wainger [11]. Recall that a domain Ω ⊂ Rn is called a H 2 extension domain if
+                                  REVIEW ON AXIALLY SYMMETRIC NS                                      25
+
+
+the following properties hold. There exists an extension operator P : H 2 (Ω) → H 2 (Rn )
+such that P is a bounded operator from H i (Ω) to H i (Rn ), i = 1, 2 and P f |Ω = f for all
+ f ∈ H 2 (Ω). For instance, Lipschitz domains are H 2 extension domains. See [13] e.g.
+Lemma 4.13 ([8]). Let Ω ⊂ R2 be a bounded open domain with H 2 extension property, its
+complement or R2 . Let f ∈ H 2 (Ω). Then there exists a constant CΩ , depending only on Ω,
+such that
+                                                              k∆ f kL2 (Ω) 
+                     k f kL∞ (Ω) ≤ CΩ k f kH 1 (Ω) log1/2 e +               .       (4.21)
+                                                               k f kH 1 (Ω)
+   The proof uses extension properties of H 2 functions and Fourier transform. A variant
+of it can be found in [44] with a proof using the Green’s function.
+   It is easy to see that the above inequality implies the next one, which was used in
+[23, 24].
+                                                                                 
+                     k f kL∞ (Ω) ≤ CΩ (1 + k f kH 1 (Ω) ) log1/2 e + k∆ f kL2 (Ω) . (4.22)
+The constant CΩ depends on the domain in an implicit way. In applications, it is convenient
+to have an estimate on CΩ . Next we prove the following refined Brezis−Gallouet inequality
+for a class of domains in the (r, x3 ) plane, whose constant is independent of the thinness of
+the domains. A price to pay is that the functions need to have zero boundary value in the
+x3 direction or mean zero in the x3 direction.
+Lemma 4.14. For R ≫ 1 and 0 ≤ α ≤ 1, set
+                                  1                     1
+               D̄0 = (r, x3 ) : 1 − Rα−1 ≤ r ≤ 1 + Rα−1 , |x3 | ≤ Rα−1 rα .
+                                   2                     2
+             2
+Then if f ∈ H (D̄0 ) satisfies
+                                     f ||x3 |=Rα−1 rα = 0,                                        (4.23)
+we have
+                 k f kL∞ (D̄0 ) ≤ C0 (1 + k∇ f kL2 (D̄0 ) ) log1/2 (e + Rα−1 k∆ f kL2 (D̄0 ) ),   (4.24)
+where C0 is independent of R. Here ∇ = er ∂r + e3 ∂ x3 and ∆ = ∂2r + ∂2x3 are the two
+dimensional gradient and Laplacian in the (r, x3 ) plane, respectively.
+Proof. Note that we can not simply make zero extension for f outside of the domain and
+apply the regular Brezis-Gallouet inequality. The reason is that the extended function may
+not be in H 2 .
+   Define with scaled function f˜(r̃, x˜3 ) = f (Rα−1 r̃, Rα−1 x˜3 ) where (r̃, x˜3 ) ∈ Ũ0 and
+                     
+                Ũ0 = (r̃, x˜3 ) : R1−α − 1/2 < r̃ < R1−α + 1/2, | x˜3 | ≤ |Rα−1 r̃|α .
+Observe that Ũ0 is almost a square for large R.
+  Using (4.22), we know
+                    k f (r, x3 )kL∞ (D̄0 ) = k f˜(r̃, x˜3 )kL∞ (Ũ0 )
+                                                                       
+                   ≤C0 (1 + k f˜kH 1 (Ũ ) ) log1/2 e + k∆ f˜kL2 (Ũ )
+                                         0                             0
+                                                                                                  (4.25)
+                                                                                         
+                   =C0 (1 + k∇ f˜kL2 (Ũ0 ) + k f˜kL2 (Ũ0 ) ) log1/2 e + k∆ f˜kL2 (Ũ0 ) .
+   The point is that the constant C0 is independent of R. This is because we can first extend
+the function f˜ to be a H 2 function in the whole (r̃, x˜3 ) plane. From the proof of the original
+Brezis-Gallouet inequality, we know the constant relies only on the H 2 extension property
+of functions in a domain. The extension property only depends on the thickness of the
+original domain, which is scaled to 1.
+26                                                        Q. S. ZHANG
+
+
+     By the change of variables and relationship between f and f˜, we deduce
+       k∇ f˜kL2 (Ũ0 ) = k∇ f kL2 (D̄0 ) , k f˜kL2 (Ũ0 ) = R1−α k f kL2 (D̄0 ) , k∆ f˜kL2 (Ũ0 ) = Rα−1 k∆ f kL2 (D̄0 ) .
+Inserting the above equalities into (4.25), we find
+                                                                                                             
+     k f (r, x3 )kL∞ (D̄0 ) ≤ C0 (1 + k∇ f kL2 (D̄0 ) + R1−α k f kL2 (D̄0 ) ) log1/2 e + Rα−1 k∆ f kL2 (D̄0 ) .
+                                                                                                               (4.26)
+     Now if f satisfies (4.23), the Poincaré inequality implies
+                                            R1−α k f kL2 (D̄0 ) ≤ Ck∇ f kL2 (D̄0 ) ,
+where C is independent of R. At last, combination of the above inequality and (4.26) infers
+(4.24).                                                                                  
+   Now let us introduce Bogovskiĭ’s [4, 5] work on solving the divergence equation on
+                          1,p
+a bounded domain with W0 functions (4.27). We only present a special case written as
+Lemma III.3.1 of [39]. More general results can be found in Chapter III of the same book.
+See also a later paper by Brezis and Bourgain [6] for further results in the special case
+p = n on torus.
+Lemma 4.15. Let O ⊂ Rn , n ≥ 2, be a bounded domain which is star shaped with respect
+to every point in a ball B(x0 , R) ⊂ O. Then for any f ∈ L2 (O), satisfying
+                                                             Z
+                            p
+                      f ∈ L (O), 1 < p < ∞,        with           f = 0,
+                                                                                         O
+
+there exists a constant C = C(O, p, n) and at least one vector field V : O → Rn such that
+                            ∇ · V = f,          V ∈ W01,p (O),              k∇VkL p ≤ Ck f kL p .                       (4.27)
+Furthermore, let diam(O) be the diameter of O, there is a positive constant c0 (n, p), de-
+pending only on n, p such that the following estimate holds:
+                                C ≤ c0 (n, p) [diam(O)/R]n (1 + diam(O)/R) .
+   The proof is based on an explicit integral formula found by Bogovskiĭ.
+             Z                                            Z ∞
+                                                x−y                       x − y n−1
+      V(x) =     N(x, y) f (y)dy,  N(x,  y)  =          n
+                                                                 φ(y + r         )r dr, (4.28)
+               O                               |x −  y|    |x−y|         |x − y|
+                              R
+where φ ∈ C0∞ (BR(x0 )) with φ = 1 is a fixed function.
+   Sometimes the constant C in (4.27) can be improved for some domains, as indicated in
+the following:
+                                                   
+Proposition 4.16. Consider the domains OR = R x | R ≤ |xh | ≤ 2R, |x3 | ≤ |xh |α ⊂ R3 , where
+α ∈ [0, 1] and R ≥ 1. For any f ∈ L2 (OR ) with O f = 0, Problem (4.27) with p = 2 has a
+                                                      R
+solution such that
+                                k∇VkL2 (OR ) ≤ Cα R1−α k f kL2 (OR ) ,                  (4.29)
+where Cα is independent of R.
+Proof. The existence of V is already known by Lemma 4.15. So we just need to prove
+(4.29). For x̄ = ( x̄1 , x̄2 , x̄3 ) ∈ O, define
+                              f¯( x̄1 , x̄2 , x̄3 ) := f (R x̄1 , R x̄2 , Rα x̄3 ) = f (x1 , x2 , x3 ).
+Note x1 = R x̄1 , x2 = R x̄2 but x3 = Rα x̄3 .
+                                                   REVIEW ON AXIALLY SYMMETRIC NS                                                        27
+
+
+   It is easy to see that f¯ satisfies the assumption in Lemma 4.15. So by Lemma 4.15, there
+exists a vector function V̄ : O → R3 satisfying (4.27). Then for x ∈ OR , define
+                            V(x1 , x2 , x3 ) = (V 1 (x1 , x2 , x3 ), V 2 (x1 , x2 , x3 ), V 3 (x1 , x2 , x3 ))
+                                       x1 x2 x3                       x1 x2 x3                        x1 x1 x3
+                           = (RV̄ 1 ( , , α ), RV̄ 2 ( , , α ), Rα V̄ 3 ( , , α ))                                               (4.30)
+                                       R R R                          R R R                            R R R
+                           = (RV̄ 1 ( x̄1 , x̄2 , x̄3 ), RV̄ 2 ( x̄1 , x̄2 , x̄3 ), Rα V̄ 3 ( x̄1 , x̄2 , x̄3 )).
+By a direct computation, we have
+                                    ∇ · V = f,             V ∈ W01,2 (OR ),           in       x   variables
+                                    ∇ · V̄ = f¯,               V̄ ∈ W01,2 (O),      in     x̄      variables,
+                       1            2         3                                            2
+where V̄ = (V̄ ( x̄), V̄ ( x̄), V̄ ( x̄)). Now we estimate the L norm of ∇V. We use α, β to take
+values only on 1, 2 and i, j to take values on 1, 2, 3. So we have
+                            3 Z               Z
+              2
+                          X                                ∂V j 2
+        k∇VkL2 (OR ) =                                   |     | dxh dx3
+                         i, j=1 |x3 |≤|xh |
+                                            α  R≤|xh |≤2R ∂xi
+             Z                  Z                   2              2             2
+                                                   X      ∂V β 2 X ∂V β 2 X ∂V 3 2 ∂V 3 2 
+         =                                              |     | +     |     | +     |     | +|     | dxh dx3
+                 |x3 |≤|xh |α   R≤|xh |≤2R        α,β=1
+                                                          ∂xα     β=1
+                                                                        ∂x3     α=1
+                                                                                      ∂xα      ∂x3
+             Z                  Z            2                            2
+                                          X      ∂V̄ β 2 xh x3          X    ∂V̄ β xh x3
+         =                                      |      | ( , α ) + R2−2α     | 3 |2 ( , α )
+                 |x3 |≤|xh |α   R≤|xh |≤2R α,β=1 ∂ x̄α    R R            β=1
+                                                                              ∂ x̄   R R
+                            2
+                       1   X    ∂V̄ 3 xh x3       ∂V̄ 3 2 xh x3 
+             +                 | α |2 ( , α ) + |      | ( , ) dxh dx3 .
+                  R 2(1−α)
+                           α=1
+                                ∂ x̄   R R        ∂ x̄3 R Rα
+Therefore
+                                        Z                  Z             2                                  2
+                                                                      X     ∂V̄ β                         X     ∂V̄ β 2
+    k∇Vk2L2 (OR ) = R2+α                                                    | α |2 ( x̄h , x̄3 ) + R2(1−α)     |       | ( x̄h , x̄3 )
+                                        | x¯3 |≤| x̄h |α   1≤| x̄h |≤2 α,β=1 ∂ x̄                          β=1
+                                                                                                                 ∂ x̄3
+                   2
+             1    X    ∂V̄ 3                   ∂V̄ 3 2              
+     +     2(1−α)
+                      | α |2 ( x̄h , x̄3 ) + |       | ( x̄h , x̄3 ) d x̄h d x̄3
+         R        α=1
+                       ∂ x̄                    ∂ x̄3
+  ≤CR4−α k∇V̄k2L2 (O) .
+                                                                                                                                 (4.31)
+Also it is easy to see
+                                k f k2L2 (OR ) = R2+α k f¯k2L2 (O) .                                                             (4.32)
+Combining (4.31), (4.32) and (4.27), we have
+         k∇Vk2 2      ≤ CR4−α k∇V̄k2 2 ≤ CR4−α k f¯k2 2 = CR2(1−α) k f k2 2
+                             L (OR )                              L (O)                L (O)                     L (OR ) .
+This finishes the proof of Proposition 4.16.                                         
+   In Section 4.3, we will see some applications of Lemma 4.15 and Proposition 4.16 to
+flows in a slab (channels of fixed finite depth) or aperture domains.
+4.2. Self-similar solutions. Another useful class of special solutions to the NS are self-
+similar solutions and their variants such as discretely self-similar solutions etc. A solution
+v to the NS is called self-similar if it is invariant under the natural scaling (1.3) for all
+parameters λ > 0, namely v(x, t) = vλ (x, t) ≡ λv(λx, λ2 t), ∀λ > 0, x ∈ R3 and all t > 0
+or all t < 0. In general, if v = vλ for one particular λ, then v is called a discretely self-
+similar solution with factor λ. Given a self-similar v, if it is independent of time, it is called
+28                                           Q. S. ZHANG
+
+
+stationary self-similar; otherwise, if v is defined for t < 0, then it is called backward self-
+similar; if v is defined for t > 0, then it is called forward self-similar. Stationary self-similar
+solutions can serve as one model of stationary solutions of NS near a singularity or spatial
+infinity. A backward one serves as a model of possible type I singularity of solutions of NS;
+and a forward self-similar solution can be used to describe long time behavior of solutions
+of the NS. Detailed study can be found in [110] Chapter 8.
+   Self-similar solutions are determined by their profile U. In the stationary case
+                             v(x) = |x|−1 U(x),        U(x) ≡ v(x/|x|).
+Here U can be regarded as a vector defined on the unit sphere or a homogeneous vector
+field on R3 − {0} of degree 0. In the time dependent case
+            v(x, t) = λ(t)U(λ(t)x),         U(x) = v(x, sgn t),      λ(t) = (t sgn t)−1/2 .
+Let the number m = 0, 1, −1 for the stationary, forward and backward cases respectively.
+Then the profiles U satisfy the following stationary equations in R3 if m , 0 and in R3 −{0}
+if m = 0.
+                                             m          m
+               −∆U + (U · ∇U) + ∇P − U − x∇U = 0,                       div U = 0,        (4.33)
+                                              2          2
+                                                                      P
+where, as usual x = (x1 , x2 , x3 ), U = (U 1 , U 2 , U 3 ) and x∇U = 3i=1 xi ∂i U.
+   There is a family of stationary self-similar solutions, called Landau solutions [60],
+which, in the spherical coordinates, are explicitly given by
+                            1                         1
+     U b = curl(L eθ ) =          ∂φ (L sin φ)eρ − ∂ρ (ρL)eφ ,
+                         ρ sin φ                      ρ
+                                                                          !               (4.34)
+                 2 sin φ                         a2 a − 1           4a
+          L=                , b = 16π a +             ln        +           e 3 ,  a > 1.
+               (a − cos φ)                       2       a + 1 3(a2 − 1)
+With the parameter b, U b actually solves the nonhomogeneous problem in R3 :
+                      −∆U b + (U b · ∇)U b + ∇Pb = bδ,             div U b = 0,
+where δ = δ(x) is the Dirac delta function centered at 0. The spherical system we take is
+the standard one
+                     x = (x1 , x2 , x3 ) = (ρ sin φ cos θ, ρ sin φ sin θ, ρ cos φ).
+Here ρ = |x|, φ is the polar angle between x and e3 , θ is the azimuthal angle. This system
+is a convenient one for studying self-similar solutions.
+    The Landau solutions are axially symmetric without swirl. The following result due to
+Sverak [103] shows that they are the only (-1)-homogenous ones. Earlier Tian and Xin
+proved in [111] that all (-1)-homogeneous, axially symmetric solutions in C 2 (R3 \{0}) are
+Landau solutions. Here we are using the notion of ”(-m)-homogeneous” interchangeably
+with ”homogeneous of degree −m”.
+Theorem 4.17. If a homogeneous vector field v of degree −1 is a solution to the stationary
+NS in R3 \0, then v = U b for some b ∈ R3 .
+   Extension of the theorem to (-1)-homogenous solutions with singularities at the poles
+of S2 can be found in recent papers by Li, Li and Yan [66, 67].
+   Backward self-similar solutions of the form
+                                                    !
+                                   1           x
+                    v(x, t) = √          U √          , t ∈ [t0 , T ), x ∈ R3 ,           (4.35)
+                                  T −t        T −t
+was proposed by Leray as a candidate for possible type I singularity of the time dependent
+NS at time T . Here t0 is the initial time. Leray asked whether there is a self-similar solution
+                                      REVIEW ON AXIALLY SYMMETRIC NS                           29
+
+
+of the NS in above form with finite energy, i.e. (1.2) holds. For such solutions U ∈ L2 (R3 ).
+In 1996, Necas, Ruzicka and Sverak [85] proved that the only such solution is 0. In [109],
+T. P. Tsai generalized the result to very weak self-similar solutions satisfying the local finite
+energy condition. For a definition of very weak solutions, see [110] p53 e.g.
+Theorem 4.18. Suppose v is a self-similar very weak solution of the NS with zero force in
+the cylinder B1 × (−1, 0) ⊂ R3 × (−1, 0). It is zero if it has finite local energy
+                          Z                    Z 0Z
+                    sup      |v(x, t)|2 dx + 2        |∇v(x, t)|2 dxdt < ∞,
+                    −1<t<0       B1                  −1
+
+or if the profile U ∈ L (R ) for some q ∈ [3, ∞). Also U is constant if U ∈ L∞ (R3 ).
+                       q     3
+
+
+   The proof is based on the fact that the total head pressure
+                                  1                   1
+                            Q = |U(x)|2 + P(x) + x · U(x)
+                                  2                   2
+satisfies the equation
+                                         1
+                      −∆Q + (U(x) +         x) · ∇Q(x) = −|curl U(x)|2 ≤ 0.
+                                          2
+If one can prove that Q behaves well at infinity, then the maximum principle and finite
+energy assumption will force U = 0.
+   In the forward self-similar case, Jia and Sverak proved the first existence result for large
+self-similar initial values in C α (R3 \{0}).
+Theorem 4.19 ([48]). Assume v0 is scale-invariant and locally Hölder continuous in
+R3 \{0} with div v0 = 0 in R3 . Then the Cauchy problem (1.1) has at least one scale-
+invariant solution v which is smooth in R3 × (0, ∞) and locally Hölder continuous in
+(R3 × ([0, ∞))\{(0, 0)}.
+   The proof uses Leray-Schrauder fixed point theoremR       to solve equation (4.33) with m = 1
+in a weighted neighborhood around µe∆ v0 = µ R3 G(x, 1, y)v0(y)dy. Here µ ∈ (0, 1] is a
+parameter and G is the standard heat kernel on R3 . More specifically, one looks for Uµ
+solving (4.33) such that
+                                                 C(α, v0 )
+                    ∇α Uµ (x) − µe∆ v0 (x) ≤                   ,     α = 0, 1.
+                                                  (1 + |x|)2+α
+One can convert this to a fixed point problem of an integral operator involving the Stokes
+kernel, which is easy to solve if µ is small. If one has compactness for the integral operator,
+then Leray Schauder theorem ensures the solution exists for µ = 1. The compactness is
+based on a priori Hölder estimates near the initial time for the local Leray solutions from
+the book [63]. Then v = t−1/2 U1 (t−1/2 x) is a solution in the above theorem.
+   These solutions potentially have application in searching non-unique Leray Hopf solu-
+tions of NS. Denote by vµ = t−1/2 Uµ (t−1/2 x) the unique scale-invariant solution with initial
+data µv0 and µ sufficiently close to 0. Note for large µ the uniqueness is unknown. In the
+paper [49], Jia and Sverak consider solutions of NS in the form vµ (x, t) + t−1/2 φ(t−1/2 x, t).
+The linearization of the equation for φ takes the form t∂t φ = Lµ φ. For small enough µ the
+eigenvalues of Lµ are away from the imaginary axis with real part less than zero. They
+suggest two potential scenarios under which the solution curve can be continued as a reg-
+ular function of µ and the eigenvalues of Lµ can cross the imaginary axis. Under these
+hypotheses two solutions of the NS are obtained with initial data µv0 ; Although these have
+infinite energy but by analysis on certain critical singularities in some lower order terms,
+30                                           Q. S. ZHANG
+
+
+the authors are then able to localize these solutions to obtain possible non-uniqueness for
+Leray-Hopf solutions.
+
+4.3. Addendum: Extra results on D solutions, by Xinghong Pan and Q. S. Zhang.
+
+
+   In this subsection, we present some new vanishing results on D solutions which extend
+those in [24]. The improvements are on wider domains and relaxation of symmetry or
+growth condition on the solutions. These results seem to be new and are not presented
+elsewhere in the literature. The general idea of the proof is similar to that of the previous
+results.
+   For Theorem 4.11, we can weaken the axially symmetric assumption on the three com-
+ponents of vr , vθ , v3 to the case that only vθ is axially symmetric. Denote xh = (x1 , x2 ) and
+S the 1 dimensional periodic domain with period being 1. We have the following result.
+Theorem 4.20 (vanishing of periodic HDS with just axial symmetry of vθ ). Let (v, P) be a
+bounded smooth solution to the problem
+               (
+                  (v · ∇)v + ∇P − ∆v = 0, ∇ · v = 0, in R2 × S,
+                                                                                   (4.36)
+                  v(xh , x3 ) = v(xh , x3 + 1),          in R2 × S,
+with finite Dirichlet integral     Z
+                                             |∇v(x)|2 dx < +∞.                              (4.37)
+                                     R2 ×S
+If just vθ is axially symmetric (independent of θ), then we have v ≡ ce3 .
+  The next theorem deals with ASHDS in an aperture domain Ω := {x|xh ∈ R2 , |x3 | ≤
+(max(1, r))α } for some α ≥ 0. Study of flows in aperture domains is also of usefulness, as
+mentioned in [39] Chapter XIII.
+Theorem 4.21 (ASHDS on aperture domains). Let (v, P) be an axially symmetric bounded
+smooth solution to the problem
+             (v · ∇)v + ∇P − ∆v = 0,         ∇ · v = 0 in Ω;     v(x) = 0   on ∂Ω           (4.38)
+                                                                                        θ
+with finite Dirichlet integral (4.2). Then we have (i) v ≡ 0 if 0 ≤ α < 1/2; (ii) v ≡ 0 if
+0 ≤ α < 3/4.
+   When α = 0, we can remove the axial symmetry assumption of the solution, which goes
+back to Theorem 4.7.
+
+4.3.1. Proof of Theorem 4.20, one component axially symmetric periodic solutions.
+
+   The proof is divided into two steps.
+Step 1. L2 boundedness of vr and L2 mean oscillation of P.
+Lemma 4.22. For n ∈ N/{0}, denote Cn = {xh | n ≤ |xh | ≤ 2n}. Let (v, P) be the solution of
+(4.36). Under the assumptions of Theorem 4.20, we have
+                                       kvr kL2 (R2 ×S) < C∗ ,                               (4.39)
+and
+                                 kP − Pn kL2 (Cn ×S) ≤ C∗ n,                         (4.40)
+                                           1
+                                               R
+where C∗ = C(kvkL∞ , k∇vkL2 ) and Pn := |Cn ×S| C ×S Pdx is the average of P on Cn × S.
+                                                     n
+                                     REVIEW ON AXIALLY SYMMETRIC NS                                                      31
+
+
+Proof. In cylindrical coordinates, if vθ is independent of θ, the divergence free condition
+(4.36)2 is translated as
+                                1            1                 1
+                 ∇·v=             ∂r (rvr ) + ∂θ vθ + ∂ x3 v3 = ∂r (rvr ) + ∂ x3 v3 = 0.
+                                r            r                 r
+Integrating the above
+                   R     inequality in S about x3 and by using the periodic boundary condition,
+we can deduce S vr dx3 = 0.
+   Then the one dimensional Poincaré inequality indicates that
+     Z                   Z                Z       2          Z Z 1
+                                       1
+             |vr |2 dx =         vr −       vr dx3 dx3 dxh .          |∂ x3 vr |2 dx3 dxh < ∞.
+       R2 ×S               R2 ×S      |S|                       R2 0
+
+This proves (4.39).
+                                                                                
+   In Proposition 4.16, if α = 1 and the domain OR is replaced by ΩR = x|R ≤ |xh | ≤
+2R, |x3 | ≤ 2R , it is not hard to see the proof is still valid. Now set R = n with n ∈ N\{0}.
+From Proposition 4.16, there exists a V ∈ H01 (Ωn ) satisfying ∇ · V = f and (4.29) with
+f = P − Pn and OR replaced by Ωn .
+   Now multiplying (4.36)1 with V and integration on Ωn , we get
+                       Z                       Z
+                            ∇(P − Pn ) · Vdx =      (∆v − v · ∇v) · Vdx.
+                           Ωn                              Ωn
+
+Integration by parts and (4.29) indicate that
+  Z                  Z                        Z
+                                                                             
+     (P − Pn )2 dx =    (P − Pn )∇ · Vdx = −                      ∆v − v · ∇v · Vdx
+   Ωn                  Ωn                                    Ωn
+                       Z        3
+                                X                                          Z        3
+                                                                                    X                      
+                   =                ∂i v j ∂i V j + ∂i (vi v j )V j dx =                    ∂i v j − vi v j ∂i V j dx (4.41)
+                       Ωn i, j=1                                               Ωn i, j=1
+                                                                                
+                   ≤k∇VkL2 (Ωn ) k∇vkL2 (Ωn ) + kvk2L∞ k1kL2 (Ωn )
+                                                                                        
+                   ≤CkP − Pn kL2 (Ωn ) k∇vkL2 (Ωn ) + kvk2L∞ k1kL2 (Ωn )
+Then we can obtain
+                                                                                 
+                           kP − Pn kL2 (Ωn ) ≤ C k∇vkL2 (Ωn ) + kvk2L∞ (Ωn ) n3/2 .
+Remembering that (v, P) is periodic in the x3 direction, the above inequality can be rewrit-
+ten as
+                                                                                   
+             n1/2 kP − Pn kL2 (Cn ×S) ≤ C n1/2 k∇vkL2 (Cn ×S) + kvk2L∞ (Cn ×S) n3/2 .
+This implies (4.40).                                                                                                     
+
+Step 2. Trivialness of v
+   Let φ(s) be a smooth cut-off function satisfying
+                                φ(s) = 1      s ∈ [0, 1];       φ(s) = 0            s ≥ 2,                          (4.42)
+
+with the usual property that φ, φ′ and φ′′ are bounded. Set φn (yh ) = φ( |ynh | ). Testing the NS
+in (4.36) with vφn , we find that
+      Z                      3 Z                    Z                             !
+               2
+                           X
+                                     i  i                  1 2
+           |∇v| φn dx = −           v ∇v · ∇φn dx +         |v| + (P − Pn ) v · ∇φn dx.
+       Ω×S                  i=1 Ω×S                  Ω×S 2
+32                                                        Q. S. ZHANG
+
+
+Here Ω is the 2 dimensional ball {xh | |xh | < 2n}. It follows that
+  Z                  Z                        Z                           Z
+       |∇v|2 φn dx .      |v||∇v||∇φn|dx +           |v · ∇φn | |v|2 dx +                               |P − Pn | |v · ∇φn |dx
+      Ω×S                         Cn ×S                         Cn ×S                           Cn ×S
+:=I1 + I2 + I3 .
+                                                                                                                      (4.43)
+Observe that, as n → ∞,
+                        kvkL∞ (Cn ×S)
+                I1 .                  k∇vkL2 (Cn ×S) k1kL2 ((Cn ×S) . kvkL∞ (Cn ×S) k∇vkL2 (Cn ×S) → 0;
+                             n
+
+                        Z                           kvk2L∞ (Cn ×S)
+I2 . kvk2L∞ (Cn ×S)               |vr ∂r φn |dx .                    kvr kL2 (Cn ×S) k1kL2 (Cn ×S) . kvk2L∞ (Cn ×S) kvr kL2 (Cn ×S) → 0;
+                          Cn ×S                           n
+
+            Z
+                                                    1
+     I3 .              |P − Pn | |vr ∂r φn |dx .      kP − Pn kL2 (Cn ×S) kvr kL2 (Cn ×S) . C0 kvr kL2 (Cn ×S) → 0.
+            Cn ×S                                   n
+     Here we have applied Cauchy-Schwarz inequality, the boundedness of the oscillation of
+P in dyadic annulus from RLemma 4.22 and vr ∈ L2 (Ω × S). Combining those estimates of
+I1 , I2 and I3 , (4.43) yields Ω×S |∇v|2 dx = 0, which means v is a constant vector. The vr = 0
+by Lemma 4.22 and vθ = 0 by axial symmetry. So actually we have v ≡ ce3 .                                                  
+
+4.3.2. Proof of Theorem 4.21, axially symmetric solutions on aperture domains.
+     First we show an a priori decay of v.
+Proposition 4.23. Under the assumption of Theorem 4.21, we have
+                                                      ln1/2 r 
+                                            v=O                       as r → +∞.                                      (4.44)
+                                                        r1/2
+Proof.
+
+     The proof is based on Brezis − Gallouet inequality [8] and its refinement, together with
+scaling and dimension reduction techniques, which is similar to [24, part 5.2, p. 1403-
+1406].
+     Fixing x0 ∈ Ω := {x||xh | ∈ Ω, |x3 | ≤ max{1, rα } such that |x′0 | = r0 is large. Without
+loss of generality, we can assume, in the cylindrical coordinates, that x0 = (r0 , 0, 0), i.e.
+(x3 )0 = 0, θ0 = 0. Consider the scaled solution ṽ( x̃) = r0 v(r0 x̃) which is also axially
+symmetric. Hence ṽ can be regarded as a two variable function of the scaled variables
+r̃, x˜3 . Consider the two dimensional domain
+                                            1                    1
+                     D̄0 = (r̃, x˜3 ) : 1 − r0α−1 ≤ r̃ ≤ 1 + r0α−1 , | x˜3 | ≤ r0α−1 r̃α .
+                                             2                    2
+   Then for ṽ = ṽ(r̃, x˜3 ), we have ṽ(1, 0) = r0 v(x0 ). Recall that ṽ satisfies the Dirichlet
+boundary condition. Applying the refined Brezis-Gallouet inequality (Lemma 4.14) on
+D̄0 , after a simple adjustment on constants, we can find an absolute constant C such that
+                         Z                   !1/2                                          !1/2       
+                                                              α−1 Z                             
+        |ṽ(1, 0)| ≤ C      |˜    2
+                                ∇ṽ| dr̃d x˜3                  1/2
+                                                   + 1 × log r0        | ˜∆ṽ| dr̃d x˜3
+                                                                                    2
+                                                                                                   + e ,
+                                  D̄0                                                   D̄0
+                                         REVIEW ON AXIALLY SYMMETRIC NS                                       33
+
+
+where ∇  ˜ = (∂r̃ , ∂ x˜3 ) and ∆˜ = ∂2 + ∂2 . From this and the assumption that 1/2 ≤ r̃ ≤ 2, we
+                                        r̃      x˜3
+see that
+                        Z                      !1/2                                        !1/2       
+                                                               α−1 Z                             
+      |ṽ(1, 0)| ≤ C          ˜  2
+                               |∇ṽ| r̃dr̃d x˜3                 1/2 
+                                                     + 1 × log r0
+                                                                            ˜   2
+                                                                             |∆ṽ| r̃dr̃d x˜3      + e .
+                            D̄0                                                     D̄0
+
+Now we can scale this inequality back to the original solution u and variables r = r0 r̃ and
+z = r0 x˜3 to get
+                                    !1/2                                                    !1/2       
+                  √ Z     2
+                                                       α+1/2 Z
+                                                     1/2              2 2      2 2
+                                                                                                          
+r0 |v(x0 )| ≤ C  r0
+                        |∇v| rdrdx3      + 1 × log r0
+                                                                  (|∂r v| + |∂ x3 v| )rdrdx3      + e ,
+                            D0                                                        D0
+               
+where D0 =         (r, x3 ) : r0 − 12 r0α ≤ r ≤ r0 + 21 r0α , |x3 | ≤ rα . By condition (4.2), this proves
+the claimed decay of velocity. Note that by our assumption in the theorem, the solution u
+is globally bounded and then it is not hard to prove that the first and second derivative of v
+are also bounded.                                                                           
+    The rest of the proof of Theorem 4.21 is divided into two subsections.
+4.3.3. Proof of case (i): 0 ≤ α < 1/2. First we will give a L2 estimate of v and mean
+oscillation of the pressure P by using the preceding Proposition 4.16.
+                                                            
+Lemma 4.24. Let (v, P) be the solution of (4.38) and OR = x | R ≤ |xh | ≤ 2R, |x3 | ≤ |xh |α ,
+then we have                        Z
+                                         |v|2 dx ≤ o(R2α ),                           (4.45)
+                                                      OR
+
+                   kP − PR kL2 (OR ) ≤ o(1)R(1−α) (1 + Rα−1/2 ln1/2 R),                                   (4.46)
+                           R
+as R → ∞. Here PR := |O1R | O Pdx is the average of P on OR .
+                                             R
+
+Proof. Since we have zero boundary, the one dimensional Poincaré inequality indicates
+that
+Z             Z    Z                          Z     Z
+        2
+     |v| dx =                 2
+                           |v| dx3 dxh . R 2α
+                                                           |∂ x3 v|2 dx3 dxh . o(R2α ).
+  OR                R≤|xh |≤2R    |x3 |≤rα                         R≤|xh |≤2R   |x3 |≤rα
+by the definition of D solutions. This proves (4.45).
+   From Proposition 4.16, there exists a V ∈ H01 (OR ) satisfying ∇ · V = f and (4.29) with
+f = P − PR . Now multiplying (4.38)1 with V and integrating on OR , we get
+                      Z                       Z
+                           ∇(P − PR ) · Vdx =     (∆v − v · ∇v) · Vdx.
+                                 OR                              OR
+The same derivation as (4.41) indicates that
+        Z                   Z
+                     2
+            (P − PR ) dx =      (P − PR )∇ · Vdx
+             OR                              OR
+                                                                                             
+                                      ≤k∇VkL2 (OR ) k∇vkL2 (OR ) + kvkL∞ (OR ) kvkL2 (OR )
+                                                                                                     
+                                      ≤CR1−α kP − PR kL2 (OR ) k∇vkL2 (OR ) + kvkL∞ (OR ) kvkL2 (OR ) .
+Here to reach the last line, we used (4.29). Then we can obtain
+                                                                                                 
+                       kP − PR kL2 (OR ) ≤CR(1−α) k∇vkL2 (ΩR ) + kvkL∞ (ΩR ) kvkL2 (ΩR )
+                                                  =o(1)R(1−α) (1 + Rα−1/2 ln1/2 R),
+which is (4.46).                                                                                              
+Vanishing of v
+34                                              Q. S. ZHANG
+
+
+   Now we are in a position to complete the proof of case (i) of Theorem 4.21. Let φ(s)
+                                                                       ′
+be the smooth cut-off function defined in (4.42). Set φR (y′ ) = φ( |yR | ) where R is a large
+positive number. Now testing the NS in (4.38) with vφR , we obtain
+                 Z                 Z
+                    −∆v(vφR )dx =     − ((v · ∇)v + ∇(P − PR )) (vφR )dx.
+                      Ω                     Ω
+
+Integration by parts yields that
+      Z                   Z                  Z                  Z
+                        1                  1
+          |∇v|2 φR dx −      |v|2 ∆φR dx =     |v|2 v · ∇φR dx + (P − PR )v · ∇φR dx.
+        Ω               2 Ω                2 Ω                   Ω
+
+Then we have, since φR depends only on r, that
+         Z
+             |∇v|2 φR dx
+           Ω
+             Z                Z                       Z
+          1                 1                      1
+       . 2        |v|2 dx +        |vr | |v|2 dx +        |P − PR | |vr |dx
+          R OR              R OR                   R OR
+             Z                     Z                    Z           !1/2 Z                  !1/2
+          1          2      kvr k∞           2      1        r 2                        2
+       . 2        |v| dx +                |v| dx +         (v ) dx             |P − PR | dx
+          R OR                R      OR            R OR                     OR
+                                                               
+       . R2α−2 + R2α−3/2 ln1/2 R + o(1) + Rα−1/2 ln1/2 R .
+                                                        R
+When 0 ≤ α < 1/2, let R → +∞, we arrive at Ω |∇v|2 dx = 0, which shows that v ≡ c.
+Besides, recall v = 0 at the boundary, then at last we deduce v ≡ 0. This completes the
+proof of case (i) of Theorem 4.21.
+
+
+4.3.4. Proof of case (ii): 1/2 ≤ α < 3/4. The proof is divided into 2 steps.
+Step 1. Caccioppoli inequality for Γ = rvθ
+    First for R > 2, pick the domains D(R) = Ω∩(BR ×R), and D(R1 , R2 ) = D(R1 )\D(R2 ), R1 >
+R2 > 2. Here BR is the 2 dimensional ball centered at the origin in R2 , with radius R. We
+first derive a Caccioppoli type energy estimates of Γ by equation (2.2). Consider a standard
+test function ψ(r) satisfying supp ψ ⊂ Bσ1 , ψ = 1 in Bσ2 , 0 ≤ ψ ≤ 1; 0 < σ2 < σ1 ≤ 1;
+             C
+|∇k ψ| ≤ (σ1 −σ2)
+                 k for k = 1, 2.
+
+
+
+
+Lemma 4.25. Let 12 ≤ σ2 < σ1 ≤ 1, R ≥ 2 and ψR (x) = ψ( Rr ). Denote f := |Γ|q for q > 1.
+Then we have
+                 Z                                           Z
+                                          (1 + kvr kL∞ Rα )2
+                           |∇( f ψR )|2 .                              f 2,
+                   D(σ1 R)                 (σ1 − σ2 )2 R2 D(σ1 R,σ2 R)
+here and in the proof kvr kL∞ = kvr kL∞ (D(σ1 R,σ2 R)) .
+
+Proof. Recall (2.2) without time variable is:
+                                                 2
+                                       ∆Γ − b∇Γ − ∂r Γ = 0.
+                                                 r
+with b = vr er + v3 e3 . Testing this by q|Γ|2q−2 Γψ2R in Ω gives
+                         Z                                 Z
+                      1                 2
+                                    2         2 2
+                            (b · ∇ f + ∂r f )ψR dx = q        ∆Γ|Γ|2q−2 Γψ2R dx.         (4.47)
+                      2 Ω               r                   Ω
+                                      REVIEW ON AXIALLY SYMMETRIC NS                                                     35
+
+
+Later the integral variables dx will not be written out for simplicity unless there is confu-
+sion. Using Cauchy-Schwartz’s inequality and integration by parts, we have
+            Z                        Z
+          q     ∆Γ|Γ|2q−2 Γψ2R = q             ∆|Γ||Γ|2q−1 ψ2R
+              Ω                        D(σ1 R)
+               Z
+        =−q              (2q − 1)|∇|Γ||2 Γ2q−2 ψ2R + ∇|Γ||Γ|2q−1 · ∇ψ2R
+                 D(σ1 R)
+             Z                                                                         (4.48)
+                            1                        2                  1
+        =−            (2 − )|∇( f ψR )|2 − (2 − ) f ∇ψR · ∇( f ψR ) − f 2 |∇ψR |2
+               D(σ R)       q                        q                  q
+             Z 1                       Z
+        .−            |∇( f ψR )|2 + C           f 2 |∇ψR |2 .
+                   D(σ1 R)                          D(σ1 R)
+
+Also we have
+                   Z                          Z σ1 R Z
+                     1
+               −       ∂r f 2 ψ2R = −2π                                       ∂r f 2 ψ2R dx3 dr
+                    Ωr                          0         |x3 |≤(max{1,r})α
+                        Z σ1 R Z                                                 Z                                   (4.49)
+                    ≤2π                                  f 2 ∂r ψ2R dx3 dr .                        f 2 (|∇ψR |2 )
+                             0       |x3 |≤(max{1,r})α                               D(σ1 R,σ2 R)
+
+Consequently, using (4.47) and combining (4.48) and (4.49), we get
+         Z                         Z                             Z
+                              2                    2      2   1
+                   |∇( f ψR )| ≤ C                f |∇ψR | −            b · ∇ f 2 ψ2R
+           D(σ1 R)                   D(σ1 R,σ2 R)             2 D(σ1 R)
+                          Z                     Z                                                                    (4.50)
+                C                            1
+       ≤                              f 2
+                                          −            b · ∇ f 2 ψ2R .
+         (σ1 − σ2 )2 R2 D(σ1 R,σ2 R)         2 D(σ1 R)
+By the divergence-free property of the drift term b, we have
+             Z                     Z                               Z
+           1              2 2                    2
+        −         b · ∇ f ψR =                 f ψR b · ∇ψR =                      ( f ψR ) f vr ∂r ψR
+           2 Ω                        D(σ1 R)                         D(σ1 R,σ2 R)
+             kvr kL∞
+      ≤C                k f ψR kL2 (D(σ1 R,σ2 R)) k f kL2 (D(σ1 R,σ2 R))
+          (σ1 − σ2 )R
+                                                                                                                     (4.51)
+             kvr k2L∞ R2α
+      ≤Cε                   k f k2L2 (D(σ1 R,σ2 R)) + εR−2α k f ψR k2L2 (D(σ1 R,σ2 R))
+           (σ1 − σ2 )2 R2
+             kvr k2L∞ R2α
+      ≤Cε                   k f k2L2 (D(σ1 R,σ2 R)) + Cεk∇( f ψR )k2L2 (D(σ1 R,σ2 R)) ;
+           (σ1 − σ2 )2 R2
+where at the third line of (4.51), we have used the fact f = 0 on the boundary of Ω, and
+the following 1-dimensional Poincaré inequality.
+                                      Z 2π Z σ1 R Z rα
+         k f ψR k2L2 (D(σ1 R,σ2 R)) =                   | f ψR |2 dx3 rdrdθ
+                                       0    σ2 R   −r α
+                 Z 2π Z σ R Z rα                                                  (4.52)
+                                 1
+        ≤ CR2α                             |∂ x3 ( f ψR )|2 dx3 rdrdθ ≤ CR2α k∇( f ψR )k2L2 (D(σ1 R)) .
+                       0     0       −rα
+
+Combining (4.50) and (4.51), by choosing small ε, we get
+                  Z                                           Z
+                                           (1 + kvr kL∞ Rα )2
+                            |∇( f ψR )|2 .                              f 2.                                         (4.53)
+                    D(σ1 R)                 (σ1 − σ2 )2 R2 D(σ1 R,σ2 R)
+                                                                                                                         
+36                                                                       Q. S. ZHANG
+
+
+Step 2. Vanishing of vθ
+   We will show that Γ decays to 0 as r → ∞. Then the maximum principle implies Γ and
+hence vθ = 0. We use Moser’s iteration.
+   By Hölder inequality and Sobolev imbedding theorem, for any 0 < β < 4, we have
+                              Z                         Z
+                                                                             β          3
+            2+β
+    k f ψR kL2+β (D(σ R)) =                     2+β
+                                        | f ψR | =                | f ψR |2− 2 | f ψR | 2 β
+                      1
+                                D(σ1 R)                   D(σ1 R)
+      Z                           Z
+                            1− β                         β/4             2− β2                      3
+                                                                                                      2β
+  .             | f ψR |2 dy 4               | f ψR |6 dy      . k f ψR kL2 (D(σ          k∇( f ψR )k             (4.54)
+                                                                                     R))              L2 (D(σ R))
+                                                                                                              1                           1
+         D(σ1 R)                                D(σ1 R)
+            α(2− 2β )                    2− β2                            3
+                                                                          2β                   α(2− 2β )
+      .R                k∇( f ψR )k      L2 (D(σ1 R))
+                                                        k∇( f ψR )k       L2 (D(σ1 R))
+                                                                                         ≤R                k∇( f ψR )k2+β
+                                                                                                                      L2 (D(σ R))
+                                                                                                                                  ,
+                                                                                                                                      1
+
+where at the last line we have used (4.52). Using (4.53) and (4.54), we deduce
+                        Z                                            h (1 + kvr kL∞ Rα )2                                i1+ β2
+                                                             β
+                                        f 2+β . Rα(2− 2 )                             k f k2L2 (D(σ1 R,σ2 R))                     .
+                            D(σ2 R)                                    (σ1 − σ2 )2 R2
+     Remember f = |Γ|q and set κ = 1 + β2 , then we obtain
+              Z                                 r     αi Z
+                                α(2− β2 ) 1 + kv kL∞ R 2κ
+                                         h                                    κ
+                           2qκ
+                        |Γ| . R                                          |Γ|2q .
+                D(σ2 R)                    (σ1 − σ2 )R      D(σ1 R,σ2 R)
+
+For integer j ≥ 0 and a constant σ = 21 , set σ2 = 21 (1 + σ j+1 ) and σ1 = 12 (1 + σ j ). Let
+q = κ j , then we arrive at
+Z                                 21 ( 1κ ) j+1                            r     α 1 j Z
+                                                                                                                                   12 ( 1κ ) j
+                                                    β    1 j+1 h 1 + kv kL∞ R i( κ )                                        
+                     Γ2κ j+1
+                               dy               .R α(1− 4 )( κ )                         
+                                                                                           
+                                                                                                                            2κ j
+                                                                                                                             Γ dy             .
+                                                                            j+2
+                                                                          σ R
+     D( R2 (1+σ j+1 ))                                                                        D( R2 (1+σ j ), R2 (1+σ j+1 ))
+
+By iterating j, the above inequality gives
+ Z                           21 ( 1κ ) j+1              Pj                         P j 1 i Z                    12
+                                                α(1− β4 ) ( 1κ ) (1 + kvr kL∞ Rα ) i=0 ( κ ) 
+                                                                i+1
+                 2κ j+1
+                                                                                                       2 
+                                                                                                                  
+                 Γ       dy              .R          i=0
+                                                                     Pj          1 i Pj   1 i 
+                                                                                                            Γ dy .
+         R                                                                (i+2)(  )     (  )           3
+               j+1
+      D( 2 (1+σ ))                                                  σ i=0        κ R i=0 κ        D(R, 4 R)
+
+Letting j → ∞ yields that
+                                                                           r     α β
+                                                                                          2+β        Z                     ! 12
+                                                       α( 2β − 21 ) (1 + kv kL∞ R )                                  2
+                                sup |Γ| .          R                            2+β
+                                                                                                                    Γ dy          .           (4.55)
+                            x∈D( R2 )                                         R β                        D(R,R/2)
+
+Next we use the 1-dimensional Poincaré inequality to see that
+   Z                Z 2π Z R Z rα                         Z 2π Z R Z rα
+                                   2 θ 2
+              2
+            Γ dy =                r (v ) dx3 rdrdθ ≤ R  2
+                                                                        (vθ )2 dx3 rdrdθ
+         D(R,R/2)                       0     R/2       −rα                                               0       R/2    −rα
+                         Z 2π Z R Z rα
+      ≤ CR2+2α                                    (∂ x3 vθ )2 dx3 rdrdθ ≤ CR2+2α k∇vk2L2 (Ω∩{R/2≤|x′ |≤R}) .
+                            0       R/2     −rα
+                                                                                                                                              (4.56)
+Inserting (4.56) into (4.55), we can get
+                                                         2       α                       2+β
+                             sup |Γ| . R(α−1) β + 2 (1 + kvr kL∞ Rα ) β k∇vkL2 (Ω∩{R/2≤|x′ |≤R}) .
+                           x∈D( R2 )
+
+     Using the decay estimates for vr , we have
+                                                    2    α                                     2+β
+                         sup |Γ| . R(α−1) β + 2 (1 + Rα−1/2 ln1/2 R) β k∇vkL2 (Ω∩{R/2≤|x′ |≤R}) .                                             (4.57)
+                        x∈D( R2 )
+                                     REVIEW ON AXIALLY SYMMETRIC NS                                             37
+
+
+   When 1/2 ≤ α < 3/4, from (4.57), we find
+                                               2    α                  2+β
+                        sup |Γ| ≤ CR(α−1) β + 2 (Rα−1/2 ln1/2 R) β
+                      x∈D( R2 )
+                                              3 2       3   1    2+β
+                                  ≤ CR(2α− 2 ) β + 2 α− 2 (ln R) 2β → 0,       as R → ∞
+by choosing sufficiently small β such that (2α − 32 ) β2 + 32 α − 21 < 0, since 2α − 32 < 0. This
+indicates that Γ ≡ 0 in Ω.
+   So at last we have proved that Γ ≡ 0 when 0 ≤ α < 3/4, which shows that vθ ≡ 0.             
+
+                                             Acknowledgments
+   We wish to thank the following people and organizations for their supports. Prof.
+Yanyan Li for the invitation to write the review paper and for his encouragement; Prof.
+Hongjie Dong and Prof. Zhen Lei for the discussion and collaboration over the years; Pro-
+fessors B. Carrillo, Zijin Li and Dr. Na Zhao for the recent collaboration ; Prof. Xin Yang
+and Mr. Chulan Zeng for going over the paper and making suggestions; Natural Science
+Foundation of Jiangsu Province for grant No. BK20180414; National Natural Science
+Foundation of China for grant No. 11801268; Simons Foundation for grant 710364.
+
+                                                    References
+ [1] Amick, C.J., On Leray’s problem of steady Navier-Stokes flow past a body in the plane. Acta Math. 161,
+     71-130, 1988.
+ [2] Amick, C.J., On the asymptotic form of Navier-Stokes flow past a body in the plane. J.Differ. Equ. 91,
+     149-167, 1991
+ [3] K. I. Babenko, On the stationary solutions of the problem of flow past a body of a viscous in-compressible
+     fluid, Math. Sbornik 91 (133) No. 1 (1973); English Transl.: Math. USSR Sbornik 20 1 (1973), 1-25
+ [4] M. E. Bogovskiĭ, Solution of the first boundary value problem for an equation of continuity of an incom-
+     pressible medium, (Russian) Dokl. Akad. Nauk SSSR 248 (1979), no. 5, 1037-1040.
+ [5] M. E. Bogovskiĭ, Solutions of some problems of vector analysis, associated with the operators div and
+     grad, (Russian) Theory of cubature formulas and the application of functional analysis to problems of
+     mathematical physics, pp. 5C40, 149, Trudy Sem. S. L. Soboleva, No. 1, 1980, Akad. Nauk SSSR Sibirsk.
+     Otdel., Inst. Mat., Novosibirsk, 1980.
+ [6] Brezis, H.; Bourgain, J. On the equation divY = f and application to control of phases, JOURNAL OF
+     AMS, Vol. 16, No 2, Pages 393-426, 2003.
+ [7] Bradshaw, Z.; Farhat, A.; Grujic, Z., An algebraic reduction of the ‘scaling gap’ in the Navier-Stokes
+     regularity problem, Arch. Ration. Mech. Anal. 231 (2019), no. 3, 1983-2005.
+ [8] H. Brezis and T. Gallouet, Nonlinear Schrödinger evolution equations, Nonlinear Anal. 4 (1980), no. 4,
+     677-681.
+ [9] Tobias Barker, Christophe Prange, Quantitative regularity for the Navier-Stokes equations via spatial con-
+     centration, arXiv:2003.06717.
+[10] Boyer, Franck; Fabrie, Pierre, Mathematical tools for the study of the incompressible Navier-Stokes equa-
+     tions and related models. Applied Mathematical Sciences, 183. Springer, New York, 2013.
+[11] H. Brezis and S. Wainger, A note on limiting cases of Sobolev embeddings and convolution inequalities,
+     Comm. Partial Differential Equations 5 (1980), 773-779.
+[12] Burke Loftus, Jennifer; Zhang, Qi S. A priori bounds for the vorticity of axially symmetric solutions to the
+     Navier-Stokes equations. Adv. Differential Equations 15 (2010), no. 5-6, 531-560
+[13] A.P. Calderon, Lebesgue spaces of differentiable functions and distributions, Proc. Sympos. Pure Math. IV
+     (1961) 33-49.
+[14] Cannone, Marco, Ondelettes, paraproduits et Navier-Stokes. (French) [Wavelets, paraproducts and Navier-
+     Stokes], With a preface by Yves Meyer. Diderot Editeur, Paris, 1995.
+[15] Cao,C., Titi, E. S., Global regularity criterion for the 3D Navier-Stokes equations involving one entry of the
+     velocity gradient tensor, Arch. Ration. Mech. Anal. 202, 919-932 2011.
+[16] H. Chen, D. Fang and T. Zhang, Regularity of 3 D axisymmetric Navier-Stokes equations, Discrete Contin.
+     Dyn. Syst. 37 (2017), no. 4, 1923-1939.
+38                                                Q. S. ZHANG
+
+
+[17] L. Caffarelli, R. Kohn, and L. Nirenberg, Partial regularity of suitable weak solutions of the Navier-Stokes
+     equations, Comm. Pure Appl. Math., 35 (1982), 771–831.
+[18] Constantin, Peter; Fefferman, Charles, Direction of vorticity and the problem of global regularity for the
+     Navier-Stokes equations. Indiana Univ. Math. J. 42 (1993), no. 3, 775-789.
+[19] H. J. Choe, and B. J. Jin, Asymptotic properties of axis-symmetric D-solutions of the Navier-Stokes equa-
+     tions, J. Math. Fluid Mech. 11 (2009), no. 2, 208-232.
+[20] D. Chamorro, O. Jarrin, G. Lemarie-Rieusseta, Some Liouville theorems for stationary Navier-Stokes equa-
+     tions in Lebesgue and Morrey spaces, Annales de l’Institut Henri Poincaré C, Analyse non lineaire, Avail-
+     able online 14 September 2020.
+[21] Chemin,J.Y., Zhang, P.: On the critical one component regularity for 3-D Navier-Stokes system. Ann. Sci.
+     Ec. Norm. Super.49, 131-167 2016.
+[22] Dongho Chae and Jihoon Lee, On the regularity of the axisymmetric solutions of the Navier-Stokes equa-
+     tions, Math. Z., 239 (2002), 645–671.
+[23] Bryan Carrillo, Xinghong Pan and Qi S. Zhang, Decay and vanishing of some axially symmetric D-solutions
+     of the Navier-Stokes equations, J. Funct. Anal. 279 (2020), no. 1, 108504, 49 pp.
+[24] Bryan Carrillo, Xinghong Pan, Qi S. Zhang and Na Zhao, Decay and vanishing of some D-solutions of the
+     Navier-Stokes equations, Arch. Ration. Mech. Anal. 237 (2020), no. 3, 1383-1419.
+[25] D. Chae, Liouville-type theorem for the forced Euler equations and the Navier-Stokes equations, Comm.
+     Math. Phys., 326:37–48, 2014.
+[26] D. Chae and J. Wolf, On the Liouville type theorems for the steady Navier-Stokes equations in R3 , J.
+     Differential Equations, 261:5541–5560, 2016.
+[27] Constantin, Peter; Foias, Ciprian, Navier-Stokes equations. Chicago Lectures in Mathematics. University of
+     Chicago Press, Chicago, IL, 1988.
+[28] Chiun-Chuan Chen, Robert M. Strain, Tai-Peng Tsai, and Horng-Tzer Yau, Lower bound on the blow-up
+     rate of the axisymmetric Navier-Stokes equations, Int. Math Res. Notices (2008), vol. 8, artical ID rnn016,
+     31 pp.
+[29] Chiun-Chuan Chen, Robert M. Strain, Tai-Peng Tsai, and Horng-Tzer Yau, Lower bound on th blow-up rate
+     of the axisymmetric Navier-Stokes equations II, Comm. P.D.E., 34(2009), no. 1–3, 203–232.
+[30] J. Y. Chemin, P. Zhang and Z. Zhang, On the critical one component regularity for 3-D Navier-Stokes
+     system: general case. Arch. Ration. Mech. Ana. 224(3): 871-905 (2017)
+[31] Dong, Hongjie; Wang, Kunrui, Interior and boundary regularity for the Navier-Stokes equations in the
+     critical Lebesgue spaces. Discrete Contin. Dyn. Syst. 40 (2020), no. 9, 5289-5323.
+[32] da Veiga, H.B., Berselli, L.C. On the regularizing effect of the vorticity direction inincompressible viscous
+     flows. Differ. Integral Eqs. 15, 345-356, 2002
+[33] L. Escauriaza, G.A. Seregin, and V. S̆verák. L3,∞ -solutions of the Navier-Stokes equations and backward
+     uniqueness.” Russian Mathematical Surveys 58.2 (2003): 211-250.
+[34] R. Finn, On Steady-State Solutions of the Navier-Stokes Partial Differential Equations. Arch.Rational Mech.
+     Anal., Vol. 3, 1959, 381-396
+[35] Finn, Robert, On the steady-state solutions of the Navier-Stokes equations, III. Acta Math. 105 (1961),
+     197-244.
+[36] Finn, Robert, On the exterior stationary problem for the Navier-Stokes equations, and associated perturba-
+     tion problems. Arch. Rational Mech. Anal. 19 (1965), 363–06.
+[37] Frisch, U. . Turbulence: The Legacy of A. N. Kolmogorov. Cambridge University Press 1995.
+[38] G. P. Galdi, On the Asymptotic Properties of Leary’s Solutions to the Exterior Stationary Three-Dimensional
+     Navier-Stokes Equations with Zero Velocity at Infinity, Degenerate Diffusions, IMA Volumes in Mathematics
+     and Its Applications Vol 47, Ni, W. M., Peletier, L. A. and Vasquez, J. L., Eds. Springer-Verlag, 95-103,
+     1993.
+[39] G. P. Galdi, An Introducion to the Mathematical Theory of the Navier-Stokes Equations, Springer, 2011.
+[40] P. Germain, N. Pavlovic and G. Staffilani, Regularity of solutions to the Navier-Stokes equations evolving
+     from small data in BMO−1 . Int. Math. Res. Not. IMRN2007, no. 21, Art. ID rnm087, 35 pp.
+[41] D. Gilbarg and H. F. Weinberger, Asymptotic properties of steady plane solutions of the Navier-Stokes
+     equations with bounded Dirichlet integral, Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4) 5 (1978), no. 2, 381-
+     404.
+[42] Grujic, Z.; Zhang, Qi S. Space-time localization of a class of geometric criteria for preventing blow-up in
+     the 3D NSE. Comm. Math. Phys. 262 (2006), no. 3, 555-564.
+[43] Thomas Y. Hou and Congming Li, Dynamic stability of the 3D axi-symmetric Navier-Stokes equations with
+     swirl, Comm. Pure Appl. Math., 61 (2008) 661–697.
+                                     REVIEW ON AXIALLY SYMMETRIC NS                                               39
+
+
+[44] Thomas Y. Hou and Congming Li, Global Well-Posedness of the Viscous Boussinesq Equations, Discrete
+     and Continuous Dynamical Systems, Series A , 12(1), , 1-12, 2005.
+[45] Thomas Y. Hou, Zhen Lei, and Congming Li, Global reuglarity of the 3D axi-symmetric Navier-Stokes
+     equations with anisotropic data, Comm. P.D.E., 33 (2008), 1622–1637.
+[46] Bin Han, Zhen Lei, Dong Li and Na Zhao, Sharp One Component Regularity for Navier-Stokes, Arch.
+     Rational Mech. Anal. 231 (2019) 939-970.
+[47] John, F.; Nirenberg, L., On functions of bounded mean oscillation, Communications on Pure and Applied
+     Mathematics, 14 (3) (1961): 415-426,
+[48] Jia, H. and Sverak, V. Local-in-space estimates near initial time for weak solutions of Navier-Stokes equa-
+     tions and forward self-similar solutions, Invent. Math. 196 (2014), no.1, 233-265.
+[49] Jia, Hao; Sverak, Vladimir, Are the incompressible 3d Navier-Stokes equations locally ill-posed in the
+     natural energy space? J. Funct. Anal. 268 (2015), no. 12, 3734-3766.
+[50] Quansen Jiu and Zhouping Xin, Some regularity criteria on suitable weak solutions of the 3-D incom-
+     pressible axisymmetric Navier-Stokes equations, Lectures on partial differential equations, New Stud. Adv.
+     Math., vol. 2, Int. Press, Somerville, MA, 2003, pp. 119–139.
+[51] Gabriel Koch, Nikolai Nadirashvili, Gregory A. Seregin and Vladimir Sverak, Liouville theorem for the
+     Navier-Stokes equations and applications, Acta Math., 203:83–105, 2009.
+[52] H. Koch and D. Tataru, Well-posedness for the Navier-Stokes equations. Adv. Math. 157 (2001), no. 1, 22-35
+[53] M. Korobkov, K.Pileckas and R. Russo, The Liouville-type theorems for the stationary Navier-Stokes prob-
+     lem for axially symmetric 3D solutions in absecce of swirl, J. Math. Fluid Mech., 17(2):287–293, 2015.
+[54] M. Korobkov, K. Pileckas and R. Russo, On Convergence of Arbitrary D-Solution of Steady Navier-Stokes
+     System in 2D Exterior Domains, Arch.Rational Mech. Anal. vol. 233, pages 385-407 (2019).
+[55] H.Kozono, Y.Terasawa and Y.Wakasugi, A remark on Liouville-type theorems for the stationary Navier-
+     Stokes equations in three space dimensions, J. Func. Anal., 272:804–818, 2017.
+[56] Kreiss, Heinz-Otto; Lorenz, Jens, Initial-boundary value problems and the Navier-Stokes equations. Pure
+     and Applied Mathematics, 136. Academic Press, Inc., Boston, MA, 1989.
+[57] Igor Kukavica and Mohammed Ziane, Navier-Stokes equations with regularity in one direction, Journal of
+     Mathematical Physics 48, 065203 (2007).
+[58] O. A. Ladyzhenskaya, Unique global solvability of the three-dimensional Cauchy problem for the Navier-
+     Stokes equations in the presence of axial symmetry, Zap. Naucn. Sem. Leningrad. Otdel. Math. Inst. Steklov.
+     (LOMI) 7 (1968), 155–177 (Russian).
+[59] Ladyzhenskaya, O. A. The mathematical theory of viscous incompressible flow. Second English edition,
+     revised and enlarged. Translated from the Russian by Richard A. Silverman and John Chu. Mathematics
+     and its Applications, Vol. 2 Gordon and Breach, Science Publishers, New York-London-Paris 1969
+[60] L. D. Landau, A new exact solution of the Navier-Stokes equations, Dokl. Akad. Nauk SSSR, 44, 311-314
+     (1944).
+[61] Leray, Jean, Étude de diverses équations intégrales non lin eaires et de quelques probl emes que pose
+     l’hydrodynamique. J. Math. Pure Appl. (French) no. 9 (1933). 1-82.
+[62] J. Leray, Sur le mouvement d’un liquide visqueux emplissant l’espace. Acta Math. 63 (1934), 193–248.
+[63] Lemarie-Rieusset, P. G., Recent developments in the Navier-Stokes problem, Chapman Hall/CRCresearch
+     Notes in Mathematics, 431 Chapman Hall/CRC, Boca Raton, FL, 2002.
+[64] Lemarie-Rieusset, P. G., The Navier-Stokes Problem in the 21st Century, CRC Press, Boca Raton, FL, 2002.
+[65] Lin, Fanghua, A new proof of the Caffarelli-Kohn-Nirenberg theorem. Comm. Pure Appl. Math. 51 (1998),
+     no. 3, 241-257.
+[66] Li Li, Yanyan Li and Xukai Yan Homogeneous Solutions of Stationary Navier-Stokes Equations with Iso-
+     lated Singularities on the Unit Sphere. I. One Singularity, Arch. Ration. Mech. Anal, vol. 227, 1091-1163
+     (2018).
+[67] Li Li, Yanyan Li and Xukai Yan Homogeneous solutions of stationary Navier-Stokes equations with isolated
+     singularities on the unit sphere. II. Classification of axisymmetric no-swirl solutions, J. Diff. Equations Vol.
+     264, Issue 10, 2018, Pages 6082-6108.
+[68] Z. Lei, X. Ren and Q. S. Zhang, On ancient periodic solutions to Axially-Symmetric Navier-Stokes Equa-
+     tions, arXiv:1902.11229, unpublished.
+[69] Z. Lei, X. Ren and Q. S. Zhang, A Liouville Theorem for Axi-symmetric Navier-Stokes Equations on R2 ×T 1 ,
+     arXiv:1911.01571, Math. Annalen, to appear.
+[70] Z. Lei, X. Ren and Q. S. Zhang, Another Liouville type theorem to Axially-Symmetric Navier-Stokes Equa-
+     tions, Science China Mathematics, in Chinese, to appear.
+[71] Z. Lei, and Q. S. Zhang, A Liouville Theorem for the Axially-symmetric Navier-Stokes Equations. Journal
+     of Functional Analysis, 261 (2011), 2323–2345.
+40                                                 Q. S. ZHANG
+
+
+[72] Z. Lei, and Q. S. Zhang, Structure of solutions of 3D Axi-symmetric Navier-Stokes Equations near Maximal
+     Points. Pacific Journal of Mathematics, 254 (2011), no. 2, 335-344.
+[73] Z. Lei, and Q. S. Zhang, Criticality of the axially symmetric Navier-tokes equations, Pacific Journal of
+     Mathematics 289 (2017) no.1, 169-187; arXiv:1505.02628.
+[74] Z. Lei, Q. S. Zhang and Na Zhao, Improved Liouville theorems for axially symmetric Navier-Stokes equa-
+     tions, arXiv:1701.00868 (in English), Science China Mathematics, Vol. 47, no. 10, 2017, 1-17 (in Chinese).
+[75] S. Leonardi, J. Malek, J. Necas, and M. Porkorny, On axially symmetric flows in R3 , Z. Anal. Anwendungen,
+     18 (1999), 639–649.
+[76] Lei, Zhen; Navas, Esteban A.; Zhang, Qi S. A priori bound on the velocity in axially symmetric Navier-
+     Stokes equations. Comm. Math. Phys. 341 (2016), no. 1, 289-307
+[77] Z. Li and X. Pan: Some remarks on regularity criteria of axially symmetric Navier-Stokes equations. Com-
+     mun. Pure Appl. Anal. 18 (2019), no. 3, 1333-1350.
+[78] Miller, Evan, A regularity criterion for the Navier-Stokes equation involving only the middle eigenvalue of
+     the strain tensor. Arch. Ration. Mech. Anal. 235, No. 1, 99-139 (2020); erratum ibid. 237, No. 3, 1173-1175
+     (2020). M
+[79] H. Miura, Remark on uniqueness of mild solutions to the Navier-Stokes equations. J. Funct. Anal. 218
+     (2005), no. 1, 110-129.
+[80] Majda, Andrew J.; Bertozzi, Andrea L., Vorticity and incompressible flow. Cambridge Texts in Applied
+     Mathematics, 27. Cambridge University Press, Cambridge, 2002.
+[81] Y. A. Melnikov and M. Y. Melnikov, Green’s functions: Construction and applications, De Gruyter Studies
+     in Mathematics, 42. Walter de Gruyter & Co., Berlin, 2012. xii+435 pp. ISBN: 978-3-11-025302-3
+[82] Neustupa, Jiri, A refinement of the local Serrin-type regularity criterion for a suitable weak solution to the
+     Navier-Stokes equations. Arch. Ration. Mech. Anal. 214 (2014), no. 2, 525-544.
+[83] Neustupa, J., Novotny, A., and Penel, P., An interior regularity of a weak solution to the Navier-Stokes
+     equations in dependence on one component of velocity, Topics in Mathematical Fluid Mechanics, Quaderni
+     di Matematica, Dept. Math., Seconda University, Napoli, Caserta, Vol. 10, pp. 163-183 (2002); See also, A
+     remark to interior regularity of a suitable weak solution to the Navier-Stokes equations.CIM Preprint No.
+     25 (1999).
+[84] Jiri Neustupa and Milan Pokorny, An interior regularity criterion for an axially symmetric suitable weak
+     solution to the Navier-Stokes equations, J. Math. Fluid Mech., 2 (2000), 381–399.
+[85] Necas, J.; Ruzicka, M.; Sverak, V. On Leray’s self-similar solutions of the Navier-Stokes equations. Acta
+     Math. 176 (1996), no. 2, 283-294.
+[86] O’Leary, Mike, Conditions for the local boundedness of solutions of the Navier-Stokes system in three
+     dimensions. Comm. Partial Differential Equations 28 (2003), no. 3-4, 617-636.
+[87] Oseen, C. W. Neuere methoden und Ergebnisse In Der Hydrodynamik, Leipzig: Akademische Verlagsge-
+     sellschaft m. b. h., 1927.
+[88] Pan, Xinghong, Regularity of solutions to axisymmetric Navier-Stokes equations with a slightly supercritical
+     condition, J. Differential Equations 260 (2016), no. 12, 8485-8529.
+[89] Pan, Xinghong, Li, Zijin, Liouville theorem of axially symmetric Navier-Stokes equations with growing
+     velocity at infinity, arXiv:1908.11591.
+[90] Patrick Penel; Milan Pokorny, Some new regularity criteria for the Navier-Stokes equations containing
+     gradient of the velocity, Applications of Mathematics, Vol. 49 (2004), No. 5, 483-493
+[91] Perelman, G., The entropy formula for the Ricci flow and its geometric applications, arXiv:math/0211159.
+[92] Pileckas, K.; Specovius-Neugebauer, M. Asymptotics of solutions to the Navier-Stokes system with nonzero
+     flux in a layer-like domain. Asymptot. Anal. 69 (2010), no. 3-4, 219-231.
+[93] James C. Robinson , Jose L. Rodrigo and Witold Sadowski, The Three-Dimensional Navier-Stokes Equa-
+     tions : Classical Theory. CAMBRIDGE UNIVERSITY PRESS, 2016.
+[94] Ponce, G.; Racke, R.; Sideris, T. C.; Titi, E. S. Global stability of large solutions to the 3D Navier-Stokes
+     equations. Comm. Math. Phys. 159 (1994), no. 2, 329-341
+[95] Scheffer, Vladimir, Partial regularity of solutions to the Navier-Stokes equations. Pacific J. Math. 66 (1976),
+     no. 2, 535-552.
+[96] Scheffer, Vladimir, Hausdorff measure and the Navier-Stokes equations. Comm. Math. Phys. 55 (1977), no.
+     2, 97-112.
+[97] G. Seregin,A note on bounded scale-invariant quantities for the Navier-Stokes equations, J. Math. Sci. (N.Y.)
+     185 (5) (2012) 742-745
+[98] G. Seregin, Liouville type theorem for stationary Navier-Stokes equations, Nonlinearity, 29:2191–2195,
+     2016.
+                                    REVIEW ON AXIALLY SYMMETRIC NS                                             41
+
+
+[99] Seregin, Gregory, Lecture notes on regularity theory for the Navier-Stokes equations. World Scientific Pub-
+     lishing Co. Pte. Ltd., Hackensack, NJ, 2015.
+[100] Sohr, Hermann, The Navier-Stokes equations. An elementary functional analytic approach. [2013 reprint
+     of the 2001 original] [MR1928881]. Modern Birkhäuser Classics. Birkhäuser/Springer Basel AG, Basel,
+     2001
+[101] V. A. Solonnikov, A priori estimates for solutions of second-order equations of parabolic type, Trudy Mat.
+     Inst. Steklov. 70 (1964), 133-212. In Russian; translated in Amer. Math. Soc. Transl. 75 (1968), 1-116.
+[102] G. Seregin and V. Sverak, On type I singularities of the local axi-symmetric solutions of the Navier-Stokes
+     equations, Comm. P.D.E., 34(2009), no. 1–3, 171–201.
+[103] V. Sverak, On Landau’s solutions of the Navier-Stokes equations, Journal of Mathematical Sciences vol-
+     ume 179, (2011), no. 1, 208-228.
+[104] P. Souplet, Q. S. Zhang, Sharp gradient estimate and Yau’s Liouville theorem for the heat equation on
+     noncompact manifolds, Bulletin of the London Mathematical Society 38 (6) 2006, 1045-1053
+[105] G. Seregin and D. G. Zhou, Regularity of solutions to the Navier-Stokes equations in Ḃ−1∞,∞ Zap. Nauchn.
+     Sem. S.-Peterburg. Otdel. Mat. Inst. Steklov. (POMI) 477 (2018), 119-128.
+[106] Tao, T. Quantitative bounds for critically bounded solutions to the Navier-Stokes equations,
+     arXiv:1908.0495
+[107] Temam, Roger, Navier-Stokes equations. Theory and numerical analysis. Revised edition. With an ap-
+     pendix by F. Thomasset. Studies in Mathematics and its Applications, 2. North-Holland Publishing Co.,
+     Amsterdam-New York, 1979.
+[108] Triebel, Hans, Local function spaces, heat and Navier-Stokes equations. EMS Tracts in Mathematics, 20.
+     European Mathematical Society (EMS), Zürich, 2013.
+[109] Tsai, Tai-Peng, On Leray’s Self-Similar Solutions of the Navier-Stokes Equations Satisfying Local Energy
+     Estimates, Arch. Rational Mech. Anal. 143 (1998) 29-51.
+[110] Tsai, Tai-Peng, Lectures on Navier-Stokes equations. Graduate Studies in Mathematics, 192. American
+     Mathematical Society, Providence, RI, 2018. xii+224 pp. ISBN: 978-1-4704-3096-2.
+[111] Gang Tian and Zhouping Xin, One-point singular solutions to the Navier-Stokes equations, Topol. Methods
+     Nonlinear Anal., 11 (1998), 135–145.
+[112] M. R. Ukhovskii and V. I. Yudovich, Axially symmetric flows of ideal and viscous fluids filling the whole
+     space, J. Appl. Math. Mech., 32 (1968), 52–61.
+[113] Vasseur, Alexis F. A new proof of partial regularity of solutions to Navier-Stokes equations., NoDEA
+     Nonlinear Differential Equations Appl. 14 (2007), no. 5-6, 753-785.
+[114] Wang, W. D., Remarks on Liouville type theorems for the 3D steady axially symmetric Navier-Stokes
+     equations, Journal of Differential Equations Volume 266, Issue 10, 5 May 2019, Pages 6507-6524.
+[115] Wei, Dongyi, Regularity criterion to the axially symmetric Navier-Stokes equations. J. Math. Anal. Appl.
+     435 (2016), no. 1, 402-413.
+[116] S. Weng, Decay properties of smooth axially symmetric D-solutions to the steady Navier-Stokes equations,
+     arXiv:1511.00752, J. Math. Fluid Mech. (2017).
+[117] Wolf, Jörg, A direct proof of the Caffarelli-Kohn-Nirenberg theorem, Parabolic and Navier-Stokes equa-
+     tions. Part 2, 533-552, Banach Center Publ., 81, Part 2, Polish Acad. Sci. Inst. Math., Warsaw, 2008.
+[118] W. Wang, Z. Zhang, Regularity of weak solutions for the Navier-Stokes equations in the class L∞ (BMO−1 ),
+     Commun. Contemp. Math. 14 (3) (2012) 1250020, 24 p.
+[119] V. I. Yudovich, An example of loss of stability and generation of a secondary flow in a closed vessel, Mat.
+     Sb. (N.S.), 1967, Volume 74(116), Number 4, Pages 565-579.
+[120] Qi S. Zhang, A strong regularity result for parabolic equations, Comm. Math. Phys., 244 (2004), 245–260.
+[121] Qi S. Zhang, Local estimates on two linear parabolic equations with singular coefficients, Pacific J. Math.,
+     223(2):367–396, 2006. Addendum, arXiv:1905.13329.
+[122] Zhao, Na, A Liouville type theorem for axially symmetric -solutions to steady Navier-Stokes equations,
+     Nonlinear Analysis Volume 187, October 2019, Pages 247-258.
+[123] Zhang, Ping; Zhang, Ting, Global axisymmetric solutions to three-dimensional Navier-Stokes system. Int.
+     Math. Res. Not. IMRN 2014, no. 3, 610-642.
+[124] Zhou, Yong, A new regularity result for the Navier-Stokes equations in terms of the gradient of one velocity
+     component, Methods Appl. Anal. 9, 563-578, (2002).
+
+
+
+   (Xinghong Pan) Department of Mathematics, Nanjing University of Aeronautics and Astronautics, Nanjing
+211106, China.
+   Email address: xinghong 87@nuaa.edu.cn
+42                                             Q. S. ZHANG
+
+
+     (Q. S. Zhang) Department of mathematics, University of California, Riverside, CA 92521, USA
+     Email address: qizhang@math.ucr.edu
+

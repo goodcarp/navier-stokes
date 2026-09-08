@@ -1,0 +1,74 @@
+CHECK: derive_affine_core_pressure.py
+PASS: vector-potential extension, divergence, symmetry, no b*Omega pressure source.
+PASS: exact spherical pressure-source average and both radial cancellations.
+Core p_zz = 2*Om**2/5 - 18*b**2/7
+Core p_xx = p_yy = 4*Om**2/5 - 12*b**2/7
+Initial b' = A**2*Cv/2 - Om**2/5 - 5*b**2/7 ; Omega' = 2*Om*b
+PASS: full matrix jet, anisotropy remainder and normalized-strain threshold.
+PASS: pressure-kernel azimuthal/poloidal cross contraction vanishes.
+All symbolic checks passed. No time evolution or cone invariance was verified.
+CHECK: verify_affine_pressure_independent.py
+PASS: poloidal divergence
+PASS: independent cylindrical strain angular average
+PASS: cutoff-dependent integral cancels
+PASS: full axial strain pressure including contact
+PASS: tuned pressure-source time derivative at origin
+PASS: tuned contact term
+PASS: full tuned normalized-strain second derivative
+PASS: exterior cone derivative needs pressure-profile defect
+All checks passed. The full cubic pressure integral remains unevaluated; no sign for beta second derivative is asserted.
+CHECK: verify_outer_reservoir.py
+PASS: exact swirl transport factor, cone lower bound, divergence-free pump, pressure-limit coefficient and tuned initial core ratios
+PASS: full-pressure neutral ratio condition and distributional contact coefficient
+SCOPE: initial identities only; full meridional-pressure response and cone invariance are unproved
+CHECK: verify_iteration_audit.py
+PASS: exact two-step Reynolds telescoping
+PASS: exact matched velocity power
+PASS: velocity time exponent exceeds one half
+PASS: normalized central rotation loses potential-energy fraction
+PASS: two-by-two skew square identity
+PASS: exact strain-to-rotation evolution
+PASS: lower ratio boundary condition
+PASS: isotropic normalization cannot change strain ratio
+PASS: matched RMS normalization exponent
+All identities passed. A scalar radius rule is not a proved profile-class return.
+CHECK: verify_full_feedback_gate.py
+PASS: actual normalized-strain derivative and vanishing-curvature neutral jet.
+PASS: beta''=-(p_zz'+32b^3)/(2Omega), including the contact coefficient.
+PASS: exterior-cone derivative minus profile defect recovers the full gate.
+No PDE evolution or long-time feedback closure was verified.
+CHECK: verify_coefficient_expansion.py
+PASS: all ordered terms reproduce eight cubic and four viscous coefficients.
+PASS: mixed-swirl support cancellations do not discard poloidal Leray tails.
+PASS: poloidal/azimuthal pressure cross source vanishes identically.
+PASS: strain and swirl Laplacian identities supporting dS=dW=0.
+PASS: neutral normalized gate polynomial and the chosen-core simplification.
+All checks passed. No profile integral or remaining gate sign was evaluated.
+CHECK: derive_core_pressure_derivative.py
+A300local = -304*p0**2*p1*s/5 - 1184*p0**2*p2*s**2/35 - 128*p0**2*p3*s**3/35 - 10432*p0*p1**2*s**2/105 - 2176*p0*p1*p2*s**3/105 + 256*p0*p1*p3*s**4/105 + 256*p0*p2**2*s**4/105 - 704*p1**3*s**3/35 + 128*p1**2*p2*s**4/105
+A300pressure = h0pp*(-32*p0*s/5 - 64*p1*s**2/5) + h2*(-16*p1*s/5 - 32*p2*s**2/35) + h2p*(-32*p0*s/5 - 416*p1*s**2/35 - 64*p2*s**3/35) + h2pp*(-64*p0*s**2/35 - 128*p1*s**3/35) + h4*(-144*p0*s/5 - 1536*p1*s**2/35 - 64*p2*s**3/7) + h4p*(-576*p0*s**2/35 - 448*p1*s**3/15 - 128*p2*s**4/21) + h4pp*(-64*p0*s**3/35 - 128*p1*s**4/35)
+AWblocal = -16*f0**2*p1*s/5 - 32*f0**2*p2*s**2/35 + 224*f0*f1*p0*s/15 + 128*f0*f1*p1*s**2/15 + 64*f0*f2*p0*s**2/21 + 64*f1**2*p0*s**2/21
+AWbpressure = a0pp*(-32*p0*s/5 - 64*p1*s**2/5) + a2*(-16*p1*s/5 - 32*p2*s**2/35) + a2p*(-32*p0*s/5 - 416*p1*s**2/35 - 64*p2*s**3/35) + a2pp*(-64*p0*s**2/35 - 128*p1*s**3/35)
+cvw/r= -2*(-f0*p0 - 2*f0*p1*z**2 - f1*p0*r**2 + 2*f1*p0*z**2)
+g300(0)= -12*h2 - 12
+gWb(0)= -12*a2 - 12
+Exact polynomial proxy n = 4 : t300,tWb = (51414292252/11712375675, 9188/4725) decimal = (4.389740704931752, 1.9445502645502646)
+Exact polynomial proxy n = 5 : t300,tWb = (16529009732/3720401685, 23908/12285) decimal = (4.442802452929219, 1.946113146113146)
+Exact polynomial proxy n = 6 : t300,tWb = (3142719467852/701961715455, 3476/1785) decimal = (4.477052521040896, 1.9473389355742297)
+PASS: general radial Poisson ODEs, full angular cubic-source reduction,
+      exact integration-by-parts arithmetic, and independent rational proxy checks.
+No PDE evolution, interval sign bound, or inherited profile closure was verified.
+CHECK: verify_pressure_viscosity.py
+{"symbolic_checks": "PASS", "assertions": ["divergence-free generic six-parameter axisymmetric polynomial", "h_nu = Laplacian(g) - 2 S2", "Cartesian S2 equals cylindrical derivatives plus commutator", "angular commutator is nonzero in this test"]}
+CHECK: verify_pressure_quadrature.py
+Core control nr=800: t300=-6.734827516735, t300+tWb=-4.171593043050, max error=0.000364206
+Core control nr=1600: t300=-6.734553125174, t300+tWb=-4.171402839866, max error=8.9814e-05
+PASS: analytic core pressure coefficients, divergence, full-harmonic trace, and convergence to an independent one-dimensional cubic reduction.
+No interval certification of the outer-pump pressure gate.
+CHECK: verify_angular_residual_certificate.py
+PASS: exact three core weights, boundary cancellation and degree-four cutoff.
+PASS: high-degree regular pressure modes have no central Hessian contact.
+PASS: general and even-mode angular Poincare eigenvalues.
+PASS: high-mode outer factor2R/sqrt(lambda) and low-mode outer factor4R.
+All algebraic checks passed. Energy estimates are proved in the note; no numerical residual was certified.
+All ten packaged checks passed. See VERIFICATION.md for exact scope.

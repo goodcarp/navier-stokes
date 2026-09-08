@@ -1,0 +1,70 @@
+REPRODUCTION CHECK -- runs I re-ran that the parent seat also ran:
+   N=6 Re0=100     mine 0.2716311454  parent 0.2716311454   rel diff 0.00e+00
+   N=5 Re0=100     mine 0.3379224932  parent 0.3379224932   rel diff 0.00e+00
+   N=5 Re0=100     mine 0.3379224932  parent 0.3379224932   rel diff 0.00e+00
+   N=7 Re0=100     mine 0.2271825730  parent 0.2271825730   rel diff 0.00e+00
+   combined dataset: 19 runs (10 mine, 9 parent-only)
+
+1. H_oct  (PRE-REGISTERED constants: s* = max(1.7433, 8.68 sqrt(nu/M)), Q' = 0.98 pinned / 1.10 viscous)
+   N=5 Re0=100     meas 0.3379  H_oct 0.3368  resid  +0.34%   s* pred 1.743  meas 1.743
+   N=6 Re0=1       meas 0.5385  H_oct 0.5506  resid  -2.19%   s* pred 8.680  meas 7.871
+   N=6 Re0=4       meas 0.3812  H_oct 0.4088  resid  -6.76%   s* pred 4.340  meas 3.654
+   N=6 Re0=16      meas 0.3011  H_oct 0.3250  resid  -7.35%   s* pred 2.170  meas 2.259
+   N=6 Re0=25      meas 0.2896  H_oct 0.2720  resid  +6.47%   s* pred 1.743  meas 2.138
+   N=6 Re0=100     meas 0.2716  H_oct 0.2720  resid  -0.13%   s* pred 1.743  meas 1.743
+   N=6 Re0=400     meas 0.2659  H_oct 0.2720  resid  -2.23%   s* pred 1.743  meas 1.743
+   N=7 Re0=6.25    meas 0.2753  H_oct 0.3049  resid  -9.73%   s* pred 3.472  meas 2.895
+   N=7 Re0=100     meas 0.2272  H_oct 0.2281  resid  -0.40%   s* pred 1.743  meas 1.743
+   N=7 Re0=400     meas 0.2232  H_oct 0.2281  resid  -2.13%   s* pred 1.743  meas 1.743
+   H_oct: max |resid| = 9.73%,  rms = 5.01%
+   H_log (same runs, same frozen-constant discipline): max |resid| = 32.66%,  rms = 17.56%
+
+2. IS M T_d A FUNCTION OF log Re_E ALONE?  (no fit involved -- pure iso-Re_E spread)
+   log Re_E =   7.406 : (N=6,Re0=1,log(R/rho0)=4.159) 0.5385  (N=5,Re0=4,log(R/rho0)=3.466) 0.5405   spread 0.36%
+   log Re_E =   8.793 : (N=6,Re0=4,log(R/rho0)=4.159) 0.3812  (N=5,Re0=16,log(R/rho0)=3.466) 0.3911   spread 2.58%
+   log Re_E =  10.625 : (N=6,Re0=25,log(R/rho0)=4.159) 0.2896  (N=5,Re0=100,log(R/rho0)=3.466) 0.3379  (N=7,Re0=6.25,log(R/rho0)=4.852) 0.2753   spread 20.82%
+   log Re_E =  12.011 : (N=6,Re0=100,log(R/rho0)=4.159) 0.2716  (N=5,Re0=400,log(R/rho0)=3.466) 0.3289   spread 19.06%
+   log Re_E =  13.398 : (N=6,Re0=400,log(R/rho0)=4.159) 0.2659  (N=7,Re0=100,log(R/rho0)=4.852) 0.2272  (N=5,Re0=1600,log(R/rho0)=3.466) 0.3268   spread 36.45%
+   worst iso-Re_E spread = 36.45%  vs grid uncertainty 2.25%  ->  M T_d is NOT a function of log Re_E alone
+
+3. WHICH SINGLE ABSCISSA?  (free 1- or 2-parameter fits over all 19 runs)
+   M T_d = c/(logReE   - d)   c= 2.1272  d=+4.1080  rms=0.12557  (27.11% of mean T_d)
+   M T_d = c/(logR     - d)   c= 1.3653  d=+0.3500  rms=0.15838  (34.19% of mean T_d)
+   M T_d = c/(logRs    - d)   c= 1.0555  d=-0.0020  rms=0.04056  (8.76% of mean T_d)
+   M T_d = c/(halfReE  - d)   c= 1.0636  d=+2.0540  rms=0.12557  (27.11% of mean T_d)
+   M T_d = c/log(R/s*)  (one parameter, d=0)   c=1.0538  rms=0.04056 (8.76%)
+   M T_d = c/(w logRe_E + (1-w) log(R/rho0) - d):  w=0.62 c=1.4620 d=+3.4460 rms=0.03583
+   [w = 0 means the octave count alone; w = 1 means log Re_E alone]
+
+4. THE VISCOUS FLOOR the maximum self-selects
+   N=2 Re0=100    sqrt(nu/M)=0.1000  s*= 1.865  s*/sqrt(nu/M)=  18.65  VISCOUS-LIMITED
+   N=3 Re0=100    sqrt(nu/M)=0.1000  s*= 1.865  s*/sqrt(nu/M)=  18.65  VISCOUS-LIMITED
+   N=4 Re0=100    sqrt(nu/M)=0.1000  s*= 1.743  s*/sqrt(nu/M)=  17.43  pinned to the datum cut
+   N=5 Re0=1      sqrt(nu/M)=1.0000  s*= 9.119  s*/sqrt(nu/M)=   9.12  VISCOUS-LIMITED
+   N=5 Re0=2      sqrt(nu/M)=0.7071  s*= 5.810  s*/sqrt(nu/M)=   8.22  VISCOUS-LIMITED
+   N=5 Re0=4      sqrt(nu/M)=0.5000  s*= 4.169  s*/sqrt(nu/M)=   8.34  VISCOUS-LIMITED
+   N=5 Re0=16     sqrt(nu/M)=0.2500  s*= 2.259  s*/sqrt(nu/M)=   9.03  VISCOUS-LIMITED
+   N=5 Re0=100    sqrt(nu/M)=0.1000  s*= 1.743  s*/sqrt(nu/M)=  17.43  pinned to the datum cut
+   N=5 Re0=400    sqrt(nu/M)=0.0500  s*= 1.743  s*/sqrt(nu/M)=  34.87  pinned to the datum cut
+   N=5 Re0=1600   sqrt(nu/M)=0.0250  s*= 1.743  s*/sqrt(nu/M)=  69.73  pinned to the datum cut
+   N=6 Re0=1      sqrt(nu/M)=1.0000  s*= 7.871  s*/sqrt(nu/M)=   7.87  VISCOUS-LIMITED
+   N=6 Re0=4      sqrt(nu/M)=0.5000  s*= 3.654  s*/sqrt(nu/M)=   7.31  VISCOUS-LIMITED
+   N=6 Re0=16     sqrt(nu/M)=0.2500  s*= 2.259  s*/sqrt(nu/M)=   9.03  VISCOUS-LIMITED
+   N=6 Re0=25     sqrt(nu/M)=0.2000  s*= 2.138  s*/sqrt(nu/M)=  10.69  VISCOUS-LIMITED
+   N=6 Re0=100    sqrt(nu/M)=0.1000  s*= 1.743  s*/sqrt(nu/M)=  17.43  pinned to the datum cut
+   N=6 Re0=400    sqrt(nu/M)=0.0500  s*= 1.743  s*/sqrt(nu/M)=  34.87  pinned to the datum cut
+   N=7 Re0=6.25   sqrt(nu/M)=0.4000  s*= 2.895  s*/sqrt(nu/M)=   7.24  VISCOUS-LIMITED
+   N=7 Re0=100    sqrt(nu/M)=0.1000  s*= 1.743  s*/sqrt(nu/M)=  17.43  pinned to the datum cut
+   N=7 Re0=400    sqrt(nu/M)=0.0500  s*= 1.743  s*/sqrt(nu/M)=  34.87  pinned to the datum cut
+   on the viscous branch (11 runs): s*/sqrt(nu/M) = 10.38 +- 4.00
+   Q' = M T_d log(R/s*)  : viscous branch 1.0692 +- 0.0719 ; pinned branch 0.9695 +- 0.0141 ; all 1.0272 +- 0.0742
+
+5. HOW FAR OUT OF REACH WAS THE PRE-REGISTERED FLOOR TEST?
+   to see M T_d = 0.020 under M T_d = 1.0538/log(R/s*) you need log(R/s*) = 52.7, i.e. R/s* = e^53
+      and since s* >= ~10.4 sqrt(nu/M) on the viscous branch, log Re_E >= 2 log(R/s*) + O(1) = 105, i.e. Re_E >= 10^46
+   to see M T_d = 0.015 under M T_d = 1.0538/log(R/s*) you need log(R/s*) = 70.3, i.e. R/s* = e^70
+      and since s* >= ~10.4 sqrt(nu/M) on the viscous branch, log Re_E >= 2 log(R/s*) + O(1) = 141, i.e. Re_E >= 10^61
+   largest Re_E anywhere in this seat or the parent seat: 2.63e+06 (log 14.78)
+   => the KILL-FLOOR clause as pre-registered CANNOT fire at any reachable resolution. It has no power.
+
+SCRIPT-SHA256 0b74b038a6ba7007c73d7115aa949ce3ba0fbeae73fe34806ec058226095c388

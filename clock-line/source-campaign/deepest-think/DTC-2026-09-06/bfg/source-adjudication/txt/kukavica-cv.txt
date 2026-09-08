@@ -1,0 +1,680 @@
+                                                                                                      August 14, 2026
+
+
+                                                Igor Kukavica
+                                                  Curriculum Vitae
+
+    Department of Mathematics                                          e-mail: kukavica@usc.edu
+    University of Southern California                                  telephone: (213) 740-3781
+    3620 South Vermont Ave.                                            web page: https://dornsife.usc.edu/igor-kukavica
+    Los Angeles, CA 90089-2532
+
+
+Education:
+
+  Ph.D. Mathematics, Indiana University, August 1993; thesis advisor: Ciprian Foias
+  Performer Diploma in Guitar, Indiana University, May 1992; studio of: Ernesto Bitetti
+  M.S. Mathematics, University of Ljubljana, Slovenia, July 1988; thesis advisor: Matjaž Omladič
+  B.S. Mathematics, University of Ljubljana, Slovenia, August 1986; thesis advisor: Matjaž Omladič
+
+
+Research Interests:
+
+  Partial differential equations (deterministic and stochastic), mathematical fluid dynamics
+
+
+Positions Held:
+
+  September 2004–Present, Professor, University of Southern California
+  January 2012–May 2012, Visiting Associate, Caltech
+  September 1998–August 2004, Associate Professor, University of Southern California
+  September 1997–August 1998, Assistant Professor, University of Southern California
+  October 1995–August 1997, Assistant Professor, The University of Chicago
+  October 1993–September 1995, Dickson Instructor, The University of Chicago
+
+
+Editorial Boards:
+
+  August 2015–Present, AIMS Mathematics
+  January 2013–Present, Applied Mathematics and Optimization
+  March 2012–Present, Asymptotic Analysis
+  November 2005–Present, Communications in Pure and Applied Analysis
+  August 2016–Present, Lecture Notes in Mathematical Fluid Dynamics
+  August 2012–July 2018, Nonlinear Analysis: Real World Applications
+
+
+Awards:
+
+  USC Mentoring award, 2019
+  AMS Fellow, 2018
+  NSF grant, DMS-2205493, July 2022–June 2026,
+  NSF grant, DMS-1907992, July 2019–June 2022,
+  NSF grant, DMS-1615239, July 2016–June 2019,
+  NSF grant, DMS-1311943, July 2013–June 2016
+  NSF grant, DMS-1009769, July 2010–June 2013
+  NSF grant, DMS-0604886, July 2006–June 2010
+  NSF grant, DMS-0306586, July 2003–June 2006
+  NSF grant DMS-0072662, July 2000–June 2003
+  NSF grant DMS-9623161, July 1996–June 1999
+  Alfred P. Sloan Fellowship, 2000
+  Alfred P. Sloan doctoral dissertation fellowship, 1991
+  Weber Award, Indiana University, 1990
+  Prešeren Award, University of Ljubljana, 1987
+Ph.D. students with current affiliations:
+
+  Mehmet Malcok, Ph.D., 2001, Nationwide insurance
+  Juan J. Torres, Ph.D., 2006, Orange Coast College
+  Vlad Vicol, Ph.D., 2010, Courant Institute, NYU
+  Mihaela Ignatova, Ph.D., 2011, Temple University
+  Ednei Reis, Ph.D., 2011, Universidade Tecnológica Federal do Paraná UTFPR, Brazil
+  Yuan Pei, Ph.D., 2014, Western Washington University
+  Fei Wang, Ph.D., 2016, Shanghai Jiao Tong University
+  Guher Camliyurt, Ph.D., 2018, Virginia Tech
+  Weinan Wang, Ph.D., 2019, University of Oklahoma
+  David Massatt, Ph.D., 2022, Aerospace Corporation
+  Linfeng Li Ph.D., 2023 (joint with Juhi Jang), Hedrick Assistant Adjunct Professor, UCLA
+  Quinn Le Ph.D., 2024, Chase Bank
+  Mustafa Aydın Ph.D., 2026, Stony Brook University
+  Benjamin Ingimarson (current)
+  Qi Xu (current)
+  Bingyuan Wang (current)
+
+
+Postdoctoral Associates:
+
+  Seok Huang, Amjad Tuffaha, Walter Rusin, Weiwei Hu, Wojciech Ożański, Trinh Nguyen, Pranava Jayanti, Abhishek
+  Balakrishna, Felix Brandt
+
+
+Publications:
+  195. (with M. Bukal, L. Li, and B. Muha), Exponential decay of solutions to a fluid-plate model with small initial data.
+  arXiv:2607.23756 .
+  194. (with W. Ożański and Q. Xu), Gevrey instability in the inviscid inflow-outflow problem, arXiv:2607.04604.
+  193. (with A. Tuffaha and Q. Xu), Euler immersion, (submitted); arXiv:2606.06654.
+  192. (with B. Ingimarson), Blowup rate of vorticity for the Euler equations, Applied Math. Letters (to appear); arXiv:2604.21299.
+
+  191. (with Q. Xu), Analyticity up to the boundary for the divergence equation, (submitted); arXiv:2604.01665.
+  190. (with B. Ingimarson), Lower bounds on the blowup rate of vorticity in the Euler equations, (submitted); arXiv:2603.17431v2.
+  189. (with B. Ingimarson and W. Ożański), Stabilization of an incompressible fluid-elastic structure system using a vacuum
+  bubble, (submitted); arXiv:2601.13430.
+  188. (with M. Hieber, A. Tuffaha, and Q. Xu) On a geophysical flow model modeling an ice-sheet interacting with an ocean
+  (submitted), arXiv:2512.06202 (submitted).
+  187. (with M. Bukal, L. Li, and B. Muha), A global existence result on weak solutions for the 3D Navier-Stokes-plate system
+  with no contact, Journal of Nonlinear Science 36 (2026), 12pp. (submitted), arXiv:2511.22754.
+  186. (with W. Ożański), The analytic method of constructing local-in-time solutions of the incompressible Euler equations in
+  Sobolev spaces (submitted), arXiv:2511.01117.
+  185. (with A. Balakrishna and W. Ożański), A unified theory of existence of suitable weak solutions to the 3D incompressible
+  Navier-Stokes equations for non-decaying initial data (submitted), arXiv:2510.17107.
+  184. (with M. Bukal, L. Li, and B. Muha), A no-contact result for a plate-fluid interaction system in dimension three (sub-
+  mitted), arXiv:2510.09992.
+  183. (with B. Ingimarson and A. Tuffaha), The Euler equations with variable coefficients, SIAM J. Math. Anal. (to appear),
+  arXiv:2509.01067.
+  182. (with L. Li), Nodal set for the Schrödinger equation under a local growth condition (submitted), arXiv:2507.19600.
+  181. (with Z. Bradshaw), The structure of weak solutions to the Navier-Stokes equations (submitted), arXiv:2508.01009.
+  180. (with M. Aydın and F. Xu), The stochastic Navier-Stokes equations with general L3 data, Stochastic Professes and their
+  Applications (to appear); arXiv:2504.05648.
+179. (with M.C. Lombardo and M. Sammartino), On the local analyticity for the Euler equations (submitted), arXiv:2502.00427.
+178. (with M. Aydın and A. Tuffaha), A sharp local existence result for hydroelastic waves, Pure and Applied Functional
+Analysis (to appear), arXiv:2501.10331.
+177. (with M. Aydın and F. Xu), Almost global existence for the stochastic Navier-Stokes equations with small H 1/2 data
+(submitted), arXiv:2501.10331.
+176. (with W. Ożański), Exact boundary controllability of the 3D and 2D incompressible ideal MHD system, Annals of PDE
+(to appear), arXiv:2410.02588.
+175. (with G. Camliyurt and L. Li), Upper bounds of nodal sets for Gevrey regular parabolic equations, Proceedings of AMS
+(to appear). arXiv:2409.09879.
+174. (with F. Wang and Y. Zhu), On Green’s function of the vorticity formulation for the 3D Navier-Stokes equations (sub-
+mitted), arXiv:2407.10751.
+173. (with F. Xu), On the almost global existence of the stochastic Navier-Stokes equations in L3 with small data J. Differential
+Equations (to appear), arXiv:2410.02919.
+172. (with L. Li), Observability from a measurable set for functions in a Gevrey class, Proceedings of London Mathematical
+Society (to appear), arXiv:2411.00342.
+171. (with M.S. Aydın), Euler Equations in Sobolev conormal spaces, Research in the Mathematical Sciences (to appear),
+arXiv:2407.18149.
+170. (with M.S. Aydın), Uniform bounds and the inviscid limit for the Navier-Stokes equations with Navier boundary conditions,
+SIAM J. Math. Anal. 57 (2025), 4165–4190.
+169. (with T. Alazard and A. Tuffaha), Global-in-time weak solutions for an inviscid free surface fluid-structure problem without
+damping, Annals of PDE 11 (2025), Article 15.
+168. (with A. Balakrishna, B. Muha, and A. Tuffaha), Inviscid fluid interacting with a nonlinear two-dimensional plate,
+Interfaces and Free Boundaries (to appear), arXiv:2411.00115.
+167. (with L. Li and A. Tuffaha), On the local existence of solutions to the Navier-Stokes-wave system with a free interface
+Applied Mathematics and Optimization (to appear), arXiv:2202.02707.
+166. (with Šárka Nečasová and Amjad Tuffaha), Compressible Euler Equations in an elastic domain, Indiana Univ. Math. J.
+(to appear), arXiv:2311.08731.
+165. (with W. Ożański and M. Sammartino), The inviscid inflow-outflow problem via analyticity, Archive Rational Mech. Anal-
+ysis 249 (2025), art. no. 27; arXiv:2310.20439.
+164. (with F. Wang and F. Xu), Local existence of the stochastic Navier-Stokes equations in the whole space, Stochastics and
+PDE (to appear), arXiv:2301.12877.
+163. (with A. Tuffaha), A free boundary inviscid model of flow-structure interaction, J. Differential Equations 413 (2024),
+851–912.
+162. (with M. Aydın and M. Ziane), On asymptotic properties of the Boussinesq equations, Discrete Contin. Dynam. Sys-
+tems B 30 (2025), no. 1, 26–43.
+161. (with Q. Le), On the pointwise Schauder estimates for elliptic equations, Discrete Contin. Dynam. Systems 44 (2024),
+No. 12, 3734–3759.
+160. (with J. Jang and P. Jayanti), On the mass transfer in the 3D Pitaevskii model, J. Math. Fluid Mech. 26, 43 (2024).
+159. (with J. Jang and P. Jayanti), Small-data global existence of solutions for the Pitaevskii model of superfluidity, Nonlinearity
+37 (2024) 39pp.
+158. (with L. Li and A. Tuffaha), On the local existence of solutions to the compressible Navier-Stokes-wave system with a free
+interface, J. Math. Fluid Mech. 26 (2024), no. 2, Paper No. 25, 37 pp.
+157. (with M.S. Aydın, W. Ożański, and A. Tuffaha), Construction of the free-boundary 3D incompressible Euler flow under
+limited regularity, J. Differential Equations 394 (2024), 209–236.
+156. (with W. Ożański), On a model of an elastic body fully immersed in a viscous incompressible fluid with small data, SIAM
+J. Math. Anal. 56 (2024), no. 1, 746–761.
+155. (with W. Ożański), Global well-posedness and exponential decay for a fluid-structure model with small data, Indiana
+University Math. J. 72 (2023), no. 6, 2701–2731.
+154. (with L. Li and A. Tuffaha), Maximal regularity for the Neumann-Stokes problem in H r/2,r spaces, C. R. Math. Rep.
+Acad. Sci. Canada 45 (2023), 56–63.
+153. (with D. Massatt and M. Ziane), Asymptotic properties of the Boussinesq equations with Dirichlet boundary conditions,
+Discrete Contin. Dynam. Systems 43 (2023), 3060–3081.
+152. (with A. Tuffaha), An inviscid free boundary fluid-wave model, Journal of Evolution Equations 23 (2023) Article 41.
+151. (with F. Xu), Local existence of strong solutions to the stochastic Navier-Stokes equations with Lp data, J. Diff. Eq. 359
+(2023), 183–210.
+150. (with D. Massatt), On the global existence for the Kuramoto-Sivashinsky equation, J. Dynam. Diff. Eq. 35 (2023), 69–85.
+149. (with W. Ożański), Local-in-time existence of free-surface 3D Euler flow with H 2+δ initial vorticity in a neighborhood of
+the free boundary, Nonlinearity 36 (2023), 636–652.
+148. (with Q. Le), On quantitative uniqueness for parabolic equations, J. Diff. Eq. 341 (2022), 438–480.
+147. (with J. Jang and L. Li), Mach limits in analytic spaces on exterior domains, Discrete Contin. Dynam. Systems 42 (2022),
+3629–3659.
+146. (with Z. Bradshaw and W. Ożański), Global existence for the Navier-Stokes equations for intermittent initial data in
+half-space, Arch. Ration. Mech. Anal. 245 (2022), 321–371.
+145. (with T. Nguyen, V. Vicol, and F. Wang), On the Euler+Prandtl expansion for the Navier-Stokes equations, J. Math. Fluid
+Mechanics 24 (2022), 46 pp.
+144. (with V. Vicol and F. Wang), Remarks on the inviscid limit problem for the Navier-Stokes equations, Pure and Applied
+Functional Analysis 7 (2022), 283–306.
+143. (with Z. Bradshaw and T.-P. Tsai), Existence of global weak solutions to the Navier-Stokes equations in weighted spaces,
+Indiana University Math. J. 71 (2022), 191–212.
+142. (with M. Novack and V. Vicol), Exact boundary controllability for the ideal Magneto-Hydrodynamic Equations, J. Diff. Eq. 318
+(2022), 94-112.
+141. (with F. Xu and M. Ziane), Global existence for the stochastic Navier-Stokes equations with small Lp data, Stochastics
+and PDE: Analysis and Computation 10 (2021), 160–189.
+140. (with W. Ożański), An anisotropic regularity condition for the 3D incompressible Navier-Stokes equations for the entire
+exponent range, Applied Mathematics Letters 122 (2021), 9 pp.
+139. (with J. Jang and L. Li), Mach limits in analytic spaces, Journal of Differential Equations 299 (2021), 284–332.
+138. (with W. Wang), Long time behavior of solutions to the 2D Boussinesq equations with zero diffusivity, J. Dynam.
+Diff. Eq. 32 (2020), 2061–2077.
+137. (with V. Vicol and F. Wang), The inviscid limit for the Navier-Stokes equations with data analytic only near the boundary,
+Arch. Ration. Mech. Anal. 237 (2020), 779–827.
+136. (with G. Camliyurt and V. Vicol), Analyticity up to the boundary for the Stokes and the Navier-Stokes systems, Trans-
+actions of AMS 373 (2020), 3375–3422.
+135. (with W. Wang), Global Sobolev persistence for the fractional Boussinesq equation with zero diffusivity, Pure and Applied
+Functional Analysis 5 (2020), 27–45.
+134. (with Z. Bradshaw), Existence of suitable weak solutions to the Navier-Stokes equations for intermittent data, J. Math. Fluid
+Mechanics 22 (2020), paper no. 3, 20pp.
+133. (with M. Disconzi and A. Tuffaha), A Lagrangian interior regularity result for the incompressible free boundary Euler
+equation with surface tension, SIAM J. Math. Anal. 51 (2019), 3982–4022.
+132. (with M. Disconzi), A priori estimates for the free-boundary Euler equations with surface tension in three dimensions,
+Nonlinearity 32 (2019), 3369–3405.
+131. (with M. Disconzi), A priori estimates for the 3D compressible free-boundary Euler equations with surface tension in the
+case of a liquid, Evolution Equations and Control Theory 8 (2019), 503–542.
+130. (with F. Xu), Local existence for the stochastic Euler equations with Lévy noise, Asymptotic Analysis 113 (2019), 1–27.
+129. (with W. Rusin and M. Ziane), On local regularity conditions for the Navier-Stokes equations, Nonlinearity 32 (2019)
+1905–1928.
+128. (with G. Camliyurt and F. Wang), On quantitative uniqueness for elliptic equations, Math. Z. 1–2 (2019), 227–244.
+127. (with G. Camliyurt and V. Vicol), Gevrey regularity of the Navier-Stokes in a half-space, J. Diff. Eq. 265 (2018),
+4052–4075.
+126. (with G. Camliyurt and F. Wang), On localization and quantitative uniqueness for the elliptic partial differential equations,
+Partial differential equations in fluid mechanics, 68—96, London Math. Soc. Lecture Note Ser., 452, Cambridge Univ. Press,
+Cambridge, 2018.
+125. (with V. Vicol), A direct approach to Gevrey regularity on the half-space, Partial differential equations in fluid mechanics,
+268—288, London Math. Soc. Lecture Note Ser., 452, Cambridge Univ. Press, Cambridge, 2018.
+124. (with B. Kaltenbacher, I. Lasiecka, R. Triggiani, A. Tuffaha, and J.T. Webster), Mathematical theory of evolutionary fluid-
+flow structure interactions, Birkhäuser, 2018 (book); with A. Tuffaha, An introduction to a fluid-structure model, pp. 1–52.
+on report2/2016
+123. (with I. Ekren and M. Ziane), Existence of invariant measures for the stochastic damped KdV equation, Indiana Univ.
+Math. J. 67 (2018), 1221–1254.
+122. (with G. Camliyurt), On the Lagrangian and Eulerian analyticity for the Euler equations, Physica D 376–377 (2018),
+121–130.
+121. (with F. Wang), Far field regularity for the supercritical quasi-geostrophic equation, Communications in Mathematical
+Sciences 16 (2018), 393–410.
+120. (with G. Camliyurt), Quantitative unique continuation for a parabolic equation, Indiana Univ. Math. J. 67 (2018),
+657–678.
+119. (with M. Disconzi), On the local existence for the Euler equations with free boundary for compressible and incompressible
+fluids, C. R. Math. Acad. Sci. Paris 356 (2018), 306–311.
+118. (with A. Tuffaha), A sharp regularity result for the Euler equation with a free interface, Asymptotic Analysis 106 (2018),
+121–145.
+117. (with K. Ugurlu and M. Ziane), On the Galerkin approximation and strong norm bounds for the stochastic Navier-Stokes
+equations with multiplicative noise, Differential Integral Equations 31 (2018), 173—186.
+116. (with A. Tuffaha and V. Vicol), On the local existence for the 3D Euler equation with a free interface, Appl. Math.
+Optim. 76 (2017), 535–563.
+115. (with W. Rusin and M. Ziane), Localized anisotropic regularity conditions for the Navier-Stokes equations, Journal of
+Nonlinear Science 27 (2017), 1725–1742.
+114. (with I. Ekren and M. Ziane), Existence of invariant measures for the stochastic damped Schrödinger equation, Stochastics
+and PDE: Analysis and Computation 5 (2017), 343–367.
+113. (with I. Ekren and M. Ziane), Existence of invariant measures for some damped stochastic dispersive equations, C. R.
+Math. Acad. Sci. Paris 355 (2017), 676–679.
+112. (with W. Rusin and M. Ziane), An anisotropic partial regularity criterion for the Navier-Stokes equations, J. Math. Fluid
+Mech. 19 (2017), 123-133.
+111. (with M. Ignatova, I. Lasiecka, and A. Tuffaha), Small data global existence for a fluid-structure model, Nonlinearity 30
+(2017), 848–898.
+110. (with V. Vicol and F. Wang), The van Dommelen and Shen singularity in the Prandtl equations, Advances in Mathemat-
+ics 307 (2017), 288–311.
+109. (with G. Camliyurt), A local asymptotic expansion for a solution of the Stokes system, Evol. Equ. Control Theory 5
+(2016), 647–659.
+108. (with V. Vicol and F. Wang), On the ill-posedness of active scalar equations with odd singular kernels, Proceedings of
+the Eighth Congress of Romanian Mathematicians, New Trends in Differential Equations, Control Theory and Optimization
+(2016), 185–200.
+107. (with M. Ignatova), On the local existence of the free-surface Euler equation with surface tension, Asymptotic Analysis 100
+(2016), 63–86.
+106. (with P. Constantin and V. Vicol), Contrast between Lagrangian and Eulerian analytic regularity properties of Euler
+equations, Ann. I. Poincaré 33 (2016), 1569–1588.
+105. (with M. Sammartino and M.C. Lombardo), Zero viscosity limit for analytic solutions of the primitive equations, Arch.
+Rational Mech. Anal. 222 (2016), 14–45.
+104. (with A. Tuffaha, V. Vicol, and F. Wang), On the existence for the free interface 2D Euler equation with a localized
+vorticity condition, Appl. Math. Optim. 73 (2016), 523–544.
+103. (with A. Bensoussan, I. Lasiecka, S. Mitter, R. Temam, and R. Triggiani), Preface: In memory of A.V. Balakrishnan,
+Appl. Math. Optim. 73 (2016), 391–392.
+102. (with W. Hu, F. Wang, and M. Ziane), Review for Boussinesq equations with zero viscosity or zero diffusivity, Recent
+Progress in the Theory of the Euler and Navier-Stokes equations, J.C. Robinson, J.L. Rodrigo, W. Sadowski, and A. Vidal-
+López editors, London Mathematical Society Lecture Note Series (2016), 77-95.
+101. (with Z. Bradshaw and Z. Grujić), Analyticity radii and the Navier-Stokes equations: recent results and applications,
+Recent Progress in the Theory of the Euler and Navier-Stokes equations, J.C. Robinson, J.L. Rodrigo, W. Sadowski, and
+A. Vidal-López editors, London Mathematical Society Lecture Note Series (2016), 22–36.
+100. (with M. Ignatova and L. Ryzhik), The Harnack inequality for second-order parabolic equations with divergence-free drifts
+of low regularity, Comm. PDE 41 (2016), 208–226.
+99. (with F. Wang and M. Ziane), Persistence of regularity for solutions of the Boussinesq equations in Sobolev spaces, Adv.
+Diff. Eq. 21 (2016), 85–108.
+98. (with Z. Bradshaw and Z. Grujić), Local analyticity radii of solutions to the 3D Navier-Stokes equations with analytic
+forcing, J. Diff. Eq. 259 (2015), 3955-3975.
+97. (with F. Wang), Weighted decay for the surface quasi-geostrophic equation, Commun. Math. Sci. 13 (2015), 1599–1614.
+96. (with P. Constantin and V. Vicol), On the inviscid limit of the Navier-Stokes equations, Proceedings of AMS 143 (2015),
+3075–3090.
+95. (with M. Coti Zelati, A. Huang, R. Temam, and M. Ziane), The primitive equations of the atmosphere in presence of vapor
+saturation, Nonlinearity 28 (2015), 625–668.
+94. (with W. Hu and M. Ziane), Sur l’existence locale pour une équation de scalaire actif, C. R. Math. Acad. Sci. Paris 353
+(2015), 241–245.
+93. (with W. Hu and M. Ziane), Persistence of regularity for a viscous Boussinesq equations with zero diffusivity, Asymptotic
+Analysis 91 (2015), 111-124.
+92. (with N. Glatt-Holtz, V. Vicol, and M. Ziane), Existence and regularity of invariant measures for the three dimensional
+stochastic primitive equations, J. Math. Phys. 55 (2014), 34 pp.
+91. (with V. Vicol), Moments for strong solutions of the 2D stochastic Navier-Stokes equations in a bounded domain, Asymp-
+totic Analysis 90 (2014), 189–206.
+90. (with N. Masmoudi, V. Vicol, and T. Wong), On the local well-posedness of the Prandtl and the hydrostatic Euler equations
+with multiple monotonicity regions, SIAM J. Math. Anal. 46 (2014), 3865–3890.
+89. (with S. Benachour, W. Rusin, and M. Ziane), Anisotropic estimates for the two-dimensional Kuramoto-Sivashinsky
+equation, J. Dynamics Diff. Eq. 26 (2014), 461–476.
+88. (with W. Rusin and M. Ziane), A class of large BM O−1 non-oscillatory data for the Navier-Stokes equations, J. Math. Fluid
+Mechanics 16 (2014), 293–305.
+87. (with Y. Pei, W. Rusin, and M. Ziane), Primitive equations with continuous initial data, Nonlinearity 27 (2014), 1135–1155.
+86. (with A. Tuffaha), A regularity result for the incompressible Euler equation with a free interface, Applied Mathematics and
+Optimization, Appl. Math. Optim. 69 (2014), 337–358.
+85. (with M. Ignatova, I. Lasiecka, and A. Tuffaha), On well-posedness and small data global existence for an interface damped
+free boundary fluid-structure model, Nonlinearity 27 (2014), 467–499.
+84. (with M. Ignatova and L. Ryzhik), The Harnack inequality for second-order elliptic equations with divergence-free drifts,
+Commun. Math. Sci. 12 (2014), 681–694.
+83. (with W. Hu and M. Ziane), On the regularity for the Boussinesq equations in a bounded domain, J. Math. Phys. 54
+(2013), 10 pp.
+82. (with W. Rusin and M. Ziane), A class of solutions of the Navier-Stokes equations with large data, J. Diff Eq. 255 (2013),
+1492–1514.
+81. (with W. Rusin and M. Ziane), Solutions of the Navier-Stokes equations for large oscillatory data, Adv. Differential
+Equations 18 (2013), 549–586.
+80. (with A. Mazzucato and A. Tuffaha), Sharp trace regularity for an anisotropic elasticity system, Proc. Amer. Math.
+Soc. 141 (2013), 2673–2682.
+79. (with M. Ignatova), Strong unique continuation for the Navier-Stokes equation with non-analytic forcing, J. Dynam.
+Diff. Eq 25 (2013), 1-15.
+78. (with V. Vicol), On the local existence of analytic solutions to the Prandtl boundary layer equations, Commun. Math.
+Sci 11 (2013), 269–292.
+77. (with A. Tuffaha), Regularity of solutions of a free boundary problem of fluid-structure interaction, Indiana Univ. Math. J. 61
+(2012), 1817–1859.
+76. (with A. Tuffaha), On the 2D free boundary Euler equation, Evolution Equations and Control Theory 1 (2012), 297–314.
+75. (with M. Ignatova and M. Ziane), Local existence of solutions to the free boundary value problem for the primitive equations
+of the ocean, Journal of Mathematical Physics 53 (2012), 17pp.
+74. On the decay of solutions of the Navier-Stokes system with potential forces, Mathematical Aspects of Fluid Mechanics,
+J.C. Robinson, J.L. Rodrigo, and W. Sadowski Editors, London Mathematical Society Lecture Note Series: 402, Cambridge
+University press, 2012, 235–250.
+73. (with M. Ignatova, I. Lasiecka, and A. Tuffaha), On well-posedness for a free boundary fluid-structure model, J. Math.
+Phys. 53 (2012), 13 pp.
+72. (with C. Doering and E.S. Titi), Introduction to special issue: Incompressible fluids, turbulence and mixing, J. Math.
+Phys. 11 (2012), 3 pp.
+71. (with A. Tuffaha), Well-posedness for the compressible Navier-Stokes-Lamé system with a free interface, Nonlinearity 25
+(2012), 3111-3137.
+70. (with Y. Pei), An estimate on the parabolic fractal dimension of the singular set for solutions of the Navier-Stokes system,
+Nonlinearity 25 (2012), 2775–2783.
+69. (with M. Ignatova), Strong unique continuation for higher order elliptic equations with Gevrey coefficients, J. Diff. Eq. 252
+(2012), 2983–3000.
+68. (with A. Tuffaha), Solutions to a fluid-structure interaction free boundary problem, Discrete Contin. Dynam. Systems 32
+(2012), 1355–1389.
+67. (with V. Vicol), On the analyticity and Gevrey-class regularity up to the boundary for the Euler equations, Nonlinearity 24
+(2011), 765–796.
+66. (with A. Tuffaha and M. Ziane), Strong solutions to a Navier-Stokes-Lamé system on a domain with a non-flat boundary,
+Nonlinearity 24 (2011), 159–176.
+65. (with E. Reis), Asymptotic expansion for solutions of the Navier-Stokes equations with potential forces, J. Diff. Eq. 250
+(2011), 607–622.
+64. (with R. Temam, V. Vicol, and M. Ziane), Local existence and uniqueness for the hydrostatic Euler equations on a bounded
+domain J. Diff. Eq. 250 (2011), 1719–1746.
+63. Partial regularity for the Navier-Stokes equations with a force in a Morrey space, J. Math. Anal. Appl. 374 (2011), 573–584.
+62. (with V. Vicol), Domain of analyticity for solutions of the three-dimensional Euler equations in half space, Discrete Contin.
+Dynam. Systems 29 (2011), 285–303.
+61. (with R. Temam, V. Vicol, and M. Ziane), Local existence and uniqueness for the hydrostatic Euler equations on a bounded
+domain, C. R. Math. Acad. Sci. Paris 348 (2010), 639–645.
+60. (with M. Ignatova), Unique continuation and complexity of solutions to parabolic partial differential equations with Gevrey
+coefficients Adv. Diff. Eq. 15 (2010), 953–975.
+59. On regularity for the Navier-Stokes equations in Morrey spaces, Discrete Contin. Dynam. Systems 26 (2010), 1319–1328.
+58. (with A. Tuffaha and M. Ziane), Strong solutions to a fluid structure interaction system, Adv. Diff. Eq 15 (2010), 231–254.
+57. Partial regularity results for solutions of the Navier-Stokes system, J. Rodrigo and J.C. Robinson editors, Proceedings of
+the workshop on “Partial differential equations and fluid mechanics,” Warwick, 2009.
+56. The fractal dimension of the singular set for solutions of the Navier-Stokes system, Nonlinearity 22 (2009), 2889–2900.
+55. (with A. Tuffaha and M. Ziane), Strong solutions to a nonlinear fluid structure interaction system, J. Diff. Eq. 247 (2009),
+1452–1478.
+54. On the weighted decay for solutions of the Navier-Stokes system, Nonlinear Anal. 70 (2009), 2466–2470.
+53. (with V. Vicol), On the radius of analyticity of solutions to the three-dimensional Euler equations, Proc. Amer. Math.
+Soc. 137 (2008), 669–677.
+52. (with M. Ziane), Uniform gradient bounds for the primitive equations of the ocean, Differential Integral Equations 21
+(2008), 837–849.
+51. Regularity for the Navier-Stokes equations with a solution in a Morrey space, Indiana Univ. Math. J. 57 (2008), 2843–2860.
+50. (with V. Vicol), On local uniqueness of weak solutions to the Navier-Stokes system with BM O−1 initial datum, J. Dy-
+nam. Differential Equations 20 (2008), 719–732.
+49. On partial regularity for the Navier-Stokes equations, Discrete Contin. Dynam. Systems 21 (2008), 717–728.
+48. (with M. Ziane), On the regularity of the primitive equations of the ocean, Nonlinearity 20 (2007), 2739–2753.
+47. (with M. Ziane), The regularity of solutions of the primitive equations of the ocean in space dimension three, C. R. Math.
+Acad. Sci. Paris 345 (2007), 257–260.
+46. (with M. Ziane), Navier-Stokes equation with regularity in one direction, J. Math. Phys. 48 (2007), 10 pp.
+45. (with J.J. Torres), Weighted Lp decay for solutions of the Navier-Stokes equations, Comm. PDE 32 (2007), 819–831.
+44. Log-log convexity and backward uniqueness, Proc. Amer. Math. Soc. 135 (2007), 2415–2421.
+43. (with M. Ziane), On the regularity of the Navier-Stokes equation in a thin periodic domain, J. Diff. Eq. 234 (2007), 485–506.
+42. (with M. Ziane), Sur la régularité des solutions des équations de Navier-Stokes dans un domaine mince pérydice de faible
+épaisseur, C. R. Math. Acad. Sci. Paris 344 (2007), 97–102.
+41. (with M. Ziane), Régularité conditionnelle des équations de Navier-Stokes, C. R. Math. Acad. Sci. Paris 343 (2006), 31–36.
+40. Role of the pressure for validity of the energy equality for solutions of the Navier-Stokes equation, J. Dynam. Diff. Eq. 18
+(2006), 461–482.
+39. (with M. Ziane), Regularity of the Navier-Stokes equation in a thin periodic domain with large data, Discrete Contin.
+Dynam. Systems 16 (2006), 67–86.
+38. Pressure integrability conditions for uniqueness of mild solutions, J. Diff. Eq. 223 (2005), 427–441.
+37. (with M. Ziane), One component regularity for the Navier-Stokes equation, Nonlinearity 19 (2006), 453–469.
+36. (with J.J. Torres), Weighted bounds for the velocity and the vorticity for the Navier-Stokes equations, Nonlinearity 19
+(2006), 293–303.
+35. On Fourier Parametrization of Global Attractors for Equations in One Space Dimension, Discrete Contin. Dynam. Sys-
+tems 13 (2005), 553–560.
+34. (with M. Malcok), Backward behavior of solutions of the Kuramoto-Sivashinsky equation, J. Math. Anal. Appl. 307 (2005),
+455–464.
+33. (with J.C. Robinson), Distinguishing smooth functions by a finite number of point values, and a version of the Takens
+embedding theorem, Physica D 196 (2004), 45–66.
+32. Backward uniqueness for solutions of linear parabolic equations, Proc. Amer. Math. Soc. 132 (2004), 1755–1760.
+31. Spatial complexity of solutions of higher order partial differential equations, Nonlinearity 7 (2004), 459–476.
+30. Fourier parametrization of attractors for dissipative equations in one space dimension, J. Dynam. Diff. Eq. 15 (2003),
+473–484.
+29. On local uniqueness of solutions of the Navier-Stokes equations with bounded initial data, J. Diff. Eq. 194 (2003), 39–50.
+28. Length of vorticity nodal sets for solutions of the Navier-Stokes system, Comm. PDE 28 (2003), 771–793.
+27. (with Z. Grujić), A remark on time-analyticity for the Kuramoto-Sivashinsky equation, Nonlinear Analysis 52 (2003),
+69–78.
+26. Space-time decay for solutions of the Navier-Stokes equations, Indiana Univ. Math. J. 50 (2001), 205–222.
+25. Interior gradient bounds for the 2D Navier-Stokes system, Discrete Contin. Dynam. Systems 7 (2000), 873–882.
+24. (with P.K. Friz and J.C. Robinson), Nodal parametrisation of analytic attractors, Discrete Contin. Dynam. Systems 7
+(2000), 643–657.
+23. (with C. Foias, M.S. Jolly, and E.S. Titi), The Lorenz equation as a metaphor for the Navier-Stokes equations, Discrete
+Contin. Dynam. Systems 7 (2001), 403–429.
+22. Quantitative uniqueness and vortex degree estimates for solutions of the Ginzburg-Landau equation, Electron. J. Differential
+Equations 2000 (2000), 1–15 (electronic).
+21. A ladder inequality for the Navier-Stokes equation, Nonlinearity 13 (2000), 639–652.
+20. On the dissipative scale for the Navier-Stokes equation, Indiana Univ. Math. J. 48 (1999), 1057–1081.
+19. (with Z. Grujić), Space analyticity for the nonlinear heat equation in a bounded domain, J. Diff. Eq. 154 (1999), 42–54.
+18. Self-similar variables and the complex Ginzburg-Landau equation, Comm. PDE 24 (1999), 545–562.
+17. (with Z. Grujić), The space analyticity for the Navier-Stokes and related equations with initial data in Lp , J. Funct.
+Anal. 152 (1998), 447–466.
+16. Quantitative uniqueness for second order elliptic operators, Duke Math. J. 91 (1998), 225–240.
+15. (with K. Nyström), Unique continuation on the boundary for Dini domains, Proceedings of AMS 126 (1998), 441–446.
+14. Level sets for the stationary Ginzburg-Landau equation, Calc. Var. 5 (1997), 511–521.
+13. (with P. Constantin, C. Foias, and A.J. Majda), Dirichlet quotients for periodic 2 dimensional Navier-Stokes equations,
+J. Math Pures Appl. 76 (1997), 125–153.
+12. (with C. Foias and M.S. Jolly), Localization of attractors by their analytic properties, Nonlinearity 9 (1996), 1565–1581.
+11. Level sets of the vorticity and the stream function for the 2D periodic Navier-Stokes equations with potential forces,
+J. Diff. Eq. 126 (1995), 374–388.
+10. Hausdorff measure of level sets for solutions of parabolic equations, International Mathematics Research Notices No. 13
+(1995), 671–682.
+9. Nodal volumes for eigenfunctions of analytic regular elliptic problems, J. d’Analyse Mathématique 67 (1995), 269–280.
+8. (with C. Foias), Determining nodes for the Kuramoto-Sivashinsky equation, J. Dynam. Diff. Eq. 7 (1995), 365–373.
+7. Hausdorff length of level sets for solutions of the Ginzburg-Landau equation, Nonlinearity 8 (1995), 113–129.
+6. Oscillations of solutions of the Kuramoto-Sivashinsky equation, Physica D 76 (1994), 369–374.
+5. An absence of certain class of periodic solutions in the Navier-Stokes equations, J. Dynam. Diff. Eq. 6 (1994), 175–183.
+4. An upper bound for the winding number for solutions of the Ginzburg-Landau equation, Indiana Univ. Math. J. 41 (1992),
+825–836.
+3. On the number of determining nodes for the Ginzburg-Landau equation, Nonlinearity 5 (1992), 997–1006.
+2. On the behavior of the solutions of the Kuramoto-Sivashinsky equations for negative time, J. Math. Anal. Appl. 166 (1992),
+601–606.
+  1. On the time analyticity radius of the solutions of the 2 dimensional Navier-Stokes equations, J. Dynam. Diff. Eq. 3 (1991),
+  611–618.
+
+
+Invited Lectures:
+
+  Feb. 3, 1993, Colloquium, Brown University
+  Feb. 8, 1993, Colloquium, University of Tennessee
+  Jul. 14, 1993, special session, SIAM conference, Philadelphia
+  Nov. 12, 1993, Conference Dynamics Days in Columbia, MO
+  Jan. 26, 1995, Colloquium, Michigan State University
+  Jan. 30, 1995, Colloquium, University of Texas, Austin
+  Feb. 10, 1995, Colloquium, UC Riverside
+  Apr. 12, 1995, Applied Mathematics seminar, University of Chicago
+  May 4, 1995, Analysis seminar, University of Notre Dame
+  May 17, 1995, Analysis seminar, Northwestern University
+  Jun. 1, 1995, contributed talk at the conference Approximation Dynamics with Applications to Numerical Analysis, Columbia,
+  Missouri
+  Jun. 15, 1995, Applied Mathematics seminar, University of Geneva
+  Jul. 6, 1995, Conference ICIAM 95, Hamburg, Germany (mini-symposium Dynamics of Partial Differential Equations)
+  Aug. 28, 1995, Cambridge, UK; workshop Singularities in PDEs
+  Dec. 13, 1995, analysis seminar, Universidad de Chile
+  Dec. 20, 1995, analysis seminar, Universidad Catolica
+  Jun. 17, 1996, seminar, Beijing Normal University
+  Jun. 24, 1996, US-Chinese Conference on Recent Developments in Diff. Eq. and Applications, Hangzhou, China
+  Jan. 15, 1997, applied mathematics seminar, UC Irvine
+  Jan. 21, 1997, Colloquium, University of Texas, Austin
+  Feb. 3, 1997, Colloquium, University of Illinois, Chicago
+  Feb. 26, 1997, Colloquium, UC Davis
+  Mar. 4, 1997, Colloquium, University of Southern California
+  May 8, 1998, analysis seminar, UC Los Angeles
+  May 15 and 20, 1998, analysis seminar, Université de Nice
+  Jun. 9, 1998, University of Minnesota, Conference in honor of John Ball
+  Jun. 19, 1998, Colloquium, Université de Nice
+  Aug. 12, 1998, analysis seminar, Universidad de Chile
+  Oct. 6, 1999, analysis seminar, UC Irvine
+  Apr. 10, 1999, Southern California Analysis and PDE meeting, Santa Barbara
+  Oct. 10, 1999, special session “The diverse mathematical legacy of Jean Leray” on the AMS meeting, Austin, TX
+  Mar. 12, 2000, AMS sectional meeting, UC Santa Barbara
+  Apr. 2, 2000, “Irvine days in Applied and Computational Mathematics,” UC Irvine
+  May 15, 2000, applied mathematics seminar, California Institute of Technology
+  May 20, 2000, special session, AIMS meeting, Kennesaw State University
+  Sep. 15, 2000, Conference in honor of C. Foias and R. Temam, Indiana University
+  Oct. 21, 2000, special session on the AMS sectional meeting, San Francisco State University
+  Oct. 24, 2000, Analysis Seminar, UC Irvine
+  Nov. 3, 2000, Analysis Seminar, UC Davis
+  Apr. 2, 2001, Applied Mathematics Seminar, Texas A&M Univ.
+  Apr. 27, 2001, Analysis Seminar,UC Santa Barbara
+  Nov. 10, 2001, AMS sectional meeting at UC Irvine, special session “Harmonic Analysis and PDE”
+  Nov. 11, 2001, AMS sectional meeting at UC Irvine, special session “Partial Differential Equations and Applications”
+  May 26, 2002, special session “Invariant Manifolds and Applications” on International Conference on Dynamical Systems and
+  Differential Equations in Wilmington, NC.
+  Nov. 3, 2002, SCAPDE conference.
+  Feb. 26, 2003, Colloquium, UC Riverside
+  Mar. 13, 2003, Colloquium, University of Nevada, Reno
+  Apr. 5, 2003, AMS sectional meeting at Indiana University
+  Jun. 19, 2003, Colloquium, University of Ljubljana
+  Oct. 17, 2003, Colloquium, Oklahoma State University
+  Apr. 4, 2004, AMS sectional meeting at USC
+  May 20, 2004, workshop Analytical and Computational Challenges of Incompressible Flows at High Reynolds Number,
+  CSCAMM, Univ. of Maryland
+  Jun. 19, 2004, special session, AIMS meeting, Pomona
+Apr. 25, 2005, SIAM Chapter Colloquium, USC
+Oct. 12, 2005, MSRI, Fluid Dynamics Workshop
+Apr. 1, 2006, AMS sectional meeting, Miami, FL
+Nov. 17, 2005, Colloquium, UC Irvine
+Oct. 10, 2006, PDE seminar, Univ. of Notre Dame
+Oct. 11, 2006, PDE seminar, Indiana University
+Nov. 3, 2006, AMS sectional meeting, Univ. of Arkansas, Fayetteville
+Jan. 11, 2007, PDE seminar, UC San Diego
+Mar. 14, 2007, PDE seminar, University of Virginia
+Mar. 17, 2007, special session, AMS sectional meeting, Miami University
+May 21, 2007, invited speaker, workshop Partial differential equations and fluid mechanics, University of Warwick
+Oct. 6, 2007, AMS sectional meeting, DePaul University, Chicago, IL
+Nov. 19, 2007, 2007 Nonlinear dynamics and PDE mini-conference, Tempe, AZ
+Dec. 10, 2007, Recent Advances in Navier-Stokes and Geophysical Fluid Dynamics, SIAM Conference on Analysis of Partial
+Differential Equations, Mesa, AZ
+Apr. 5, 2008, special session on Recent Advances in Classical and Geophysical Fluid Dynamics, AMS sectional meeting,
+Bloomington IN
+Apr. 10, 2008, Colloquium, University of Virginia
+Apr. 11, 2008, graduate student seminar, Pennsylvania State University
+Apr. 11, 2008, Applied Mathematics Colloquium, Pennsylvania State University
+May 21, 2008, special session at the 7th AIMS conference in on Dynamical Systems and Differential Equations, Arlington, TX
+Mar 7, 2009, 2nd conference on Mathematics of Fluids, UC Santa Barbara
+Mar 25, 2009, special session at the IMACS world congress, Athens, GA
+Mar 30, 2009, PDE seminar, Univ. of Illinois, Chicago
+Oct 16, 2009, special session at an AMS sectional meeting at Baylor Univ.
+Oct 17, 2009, special session at an AMS sectional meeting at Baylor Univ.
+Nov 8, 2009, special session “Fluid dynamics” at an AMS sectional meeting in UC, Riverside
+Dec 9, 2009, special session “PDE and fluid dynamics” at a SIAM conference on Analysis of PDEs in Miami, FL
+Feb 24, 2010, plenary talk at the conference Analysis and Computation of Incompressible Fluid Flow, IMA, Univ. of Minnesota
+Jun 8, 2010, Analytical and Numerical Problems in Fluid Dynamics with Applications, Catania, Italy, Jun. 7–11, 2010
+Jun 24, 2010, special session on the “International Congress in Mathematical Fluid Dynamics and its Applications,” Rennes,
+France
+Jul 5, 2010, Partial Differential Equations and Fluid Mechanics 2010, Univ. of Warwick, UK
+Sep 23, 2010, Workshop on dissipative PDEs in bounded and unbounded domains and related attractors
+Sep 28, 2010, Complex analysis seminar, University of Ljubljana
+Nov 4, 2010, Colloquium, Texas Tech University
+Nov 6, 2010, special session “Interdisciplinary session on deterministic and stochastic Partial Differential Equations” at an
+AMS sectional meeting in Notre Dame, IN.
+Mar 21–24, 2011, Universidad de Chile (mini-tutorial)
+May 1, 2011, special session “PDEs modeling fluids” on the AMS meeting, Las Vegas, NV
+May 1, 2011, special session “Recent developments in stochastic PDEs” on the AMS meeting, Las Vegas, NV
+May 10, 2011, PDE seminar at the Mathematical Institute of Czech Academy of Sciences
+Jun. 14, 2011, International conference on PDEs modeling fluids and complex fluids (in honor of Peter Constantin’s 60th
+birthday)
+Jun 20, 2011, Analysis seminar, Peking University
+Oct 14, 2011, conference Incompressible fluids, turbulence, and mixing, Carnegie Mellon University
+Oct 29, 2011, conference Mathematics of fluids, UC Riverside
+Nov 15, 2011, minisymposium “Fluid structure and flow-structure interactions” at the SIAM conference on Analysis of PDEs,
+San Diego, CA
+Nov 16, 2011, minisymposium “Analysis of PDEs arising in fluid dynamics” at the SIAM conference on Analysis of PDEs,
+San Diego, CA
+Jan 26, 2012, PDE seminar, UC Irvine
+Feb 3, 2012, Analysis seminar, UCLA
+Feb 8, 2012, Mathematical physics seminar, Caltech
+Feb 15, 2012, CAMP/Nonlinear PDEs seminar, University of Chicago
+Feb 29, 2012, PDE seminar, Stanford University
+Apr 27, 2012, PDE seminar, University of Houston
+Apr 10, 2013, Navier-Stokes equations in Venice, Venice, Italy
+Aug 18, 2013, Workshop “Recent Advances in PDEs and Fluids, Stanford University
+Jun 26, 2013, Mathematics Research Communities, Snowbird, UT
+Oct 19, 2013, AMS sectional meeting (special session), Washington University
+Oct 26, 2013, 13th Red-Raider Mini-Symposium, Aspects of Fluid Dynamics
+Nov 2, 2013, AMS sectional meeting (special session), UC Riverside
+Jan 17, 2014, AMS annual national meeting (special session), Baltimore, MD
+Feb 4, 2014, Analysis seminar, Courant Institute
+Feb 6, 2014, Analysis of Fluids seminar, Princeton University
+Mar 4, 2014, Nonlinear PDE seminar, University of California, Irvine
+May 30, 2014, IC Workshop on fluids and PDE, IMPA, Rio de Janeiro, 2014
+Oct 2, 2014, Workshop I: Mathematical Analysis of turbulence, IPAM, UCLA
+Oct 17, 2014, Joint Caltech-UCLA Analysis seminar
+Oct 26, 2014, AMS sectional meeting (special session), San Francisco State University
+Nov 17, 2014, Analysis seminar, University of Trieste
+Feb 28, 2015, Oklahoma State PDE Workshop, Oklahoma State University
+Apr 19, 2015, AMS Sectional Meeting, Las Vegas, NV
+Aug 13, 2015, Mathematical Aspects of Hydrodynamics, Oberwolfach
+Sep 14, 2015, CAMS Colloquium, USC
+Dec 7, 2015, Mini-Symposium ”Fluid models, turbulence, and data assimilation,” Scottsdale, AZ
+Dec 7, 2015, Mini-Symposium ”Deterministic and stochastic aspects of fluid dynamics,” Scottsdale, AZ
+Dec 16, 2016, Workshop on “Euler and Navier-Stokes equations and connected topics,” Vienna, Austria
+Mar 3, 2016, PDE seminar, UC Davis
+Apr 12, 2016, Nonlinear PDE seminar, Texas A&M University
+Jun 7, 2016, Workshop “Recent progress in hydrodynamics,” Banff
+Jul 11–15, 2016, International Summer School on Evolution Equations EVEQ, Prague (3 lectures)
+Sep 9, 2016, PDE seminar, Vanderbilt University
+Sep 30, 2016, Warwick Symposium: PDEs in Fluid Mechanics, Warwick, UK
+Oct 21, 2016, Mathematics Colloquium, Oklahoma State University
+Nov 21–25, 2016, Oberwolfach seminar: Mathematical Theory of Evolutionary Fluid-Flow Structure Interactions (4 lectures)
+Apr 3, 2017, CAM Colloquium, Pennsylvania State University
+May 11, 2017, Oberwolfach workshop “Geophysical Fluid Dynamics”
+Oct 3, 2017, Analysis and Control of Fluid-Structure Interaction Systems, Bordeaux, (plenary speaker)
+Nov 4, 2017, AMS sectional meeting (special session), UC Riverside
+Nov 21, 2017, PDE Seminar, University of Southern California, San Diego,
+Jan 10, 2018, special session “Mathematical Fluid Mechanics: Analysis and Applications,” AMS national meeting, San Diego,
+CA
+Jan 11, 2018, special session “Mathematical analysis and nonlinear partial differential equations,” AMS national meeting, San
+Diego, CA
+Mar 25, 2018, Shanks colloquium, Vanderbilt University
+Nov 30, 2018, Caltech-UCLA Joint Analysis Seminar, UCLA
+Jan 23, 2019, Applied Math Seminar, Stanford University
+Mar 22, 2019, AMS sectional meeting (special session), University of Hawaii
+Nov 9, 2019, AMS sectional meeting (special session), UC Riverside
+Dec 12, 2019, SIAM minisymposium “Recent Progress in Fluid Mechanics: Classical Flows, Geophysical Models and Complex
+Fluids,” La Quinta, CA
+Dec 15, 2019, SIAM minisymposium “Recent Progress in Incompressible Fluid Dynamics,” La Quinta, CA
+Feb 28, 2020, Colloquium, Indiana University
+Feb 9, 2021, MSRI, introductory presentation for the MSRI program “Mathematical problems in fluid dynamics” (virtual)
+Mar 23, 2021, Analysis seminar, Arizona State University (virtual)
+Mar 26, 2021, Analysis seminar, Vanderbilt University (virtual)
+May 4, 2021, Water waves and other interface problems, MSRI (virtual)
+Nov 15–17, 2021, Three graduate lectures, Duke University (in person)
+Dec 7, 2021, One World PDE seminar (virtual)
+Dec 10, 2021, Colloquium, University of Maryland, Baltimore County (virtual)
+Jan 5, 2022, University of California, Riverside (virtual)
+Feb 14, 2022, workshop Turbulence: where do we stand and where are we heading, Cambridge, UK (virtual)
+Mar 3, 2022, Academy of Mathematics and Systems, Science Chinese Academy of Sciences, PDE seminar (virtual)
+Apr 12, 2022, Analysis of Fluid and Elastic Bodies Interactions, University of Regensburg (in person)
+May 9, 2022, Conference Nonlinear PDEs in Fluid Dynamics, CIRM (virtual)
+May 14, 2022, Conference at the Isaac Newton Institute for Mathematical Sciences (virtual)
+Sep 5, 2022, Eleventh Conference on Applied Mathematics and Scientific Computing, Brijuni, Croatia (plenary)
+Oct 1, 2022, SIAM minisymposium ”PDEs and dynamical systems,” Oklahoma State University Nov 16, 2022, Workshop
+“Mathematical Advances in Geophysical Fluid Dynamics,” at Oberwolfach
+Dec 1, 2022, PDE seminar, Florida State University
+Dec 2, 2022, Mathematics Colloquium, Florida State University
+Jul 7, 2023, Analysis seminar, University of Zagreb
+  Nov 28, 2023, Applied math seminar, UC Berkeley
+  Dec 4, 2023, workshop “Recent progress in deterministic and stochastic fluid-structure interaction”
+  Jan 5, 2024, minisymposium “Recent Developments in the Analysis and Control of Partial Differential Equations arising in
+  fluid and fluid-structure interactive dynamics,” JMM
+  Feb 7, 2024, Analysis seminar, Caltech
+  Mar 1, 2024, Oberwolfach workshop “Hyperbolic Balance Laws: Interplay between Scales and Randomness,”
+  Mar 23, 2024, special session “PDEs in Incompressible Fluid Mechanics,” AMS 2024 Spring Southeastern Sectional Meeting
+  Mar 23, 2024, special session “Fluids: Analysis, Applications, and Beyond,” AMS 2024 Spring Southeastern Sectional Meeting
+  Apr 6, 2024, special session “Recent Advances in Harmonic Analysis and Their Applications to Partial Differential Equations,”
+  2024 Spring Eastern Sectional Meeting Howard University, Washington, DC
+  Apr 9, 2024, PDE, Complex Analysis and Differential Geometry Seminar, University of Notre Dame
+  May 19, 2024, Second Joint Alabama-Florida Conference on Differential Equations, Dynamical Systems and Applications
+  Florida State University, Tallahassee, FL
+  Jun 11, 2024, Minisymposium “Fluid-structure interactions,” at Equadiff 2024
+  Sep 19, 2024, Analysis of Fluids and related Topics seminar, Princeton University,
+  Sep 23, 2024, Analysis seminar, Temple University,
+  Oct 18, 2024, Analysis/PDE seminar, CUNY
+  Oct 19, 2024, special session “Regularity of Nonlinear Equations and Free Boundary Problems,” Fall 2024 AMS Eastern
+  Sectional Meeting in Albany
+  Feb 16, 2025, PDE seminar, University of Notre Dame
+  Mar 21, 2025, PDE seminar, Brown University
+  Apr 6, 2025, AMS Spring Eastern Sectional Meeting in Hartford, CT
+  Apr 15–17, 2025, Foias Lectures, Texas A&M University (three lectures)
+  May 4, 2025, AMS Spring Western Sectional Meeting in San Luis Obispo
+  June 24, 2025, Brijuni Applied Mathematics Workshop, Brijuni, Croatia
+  Oct 4, 2025, AMS 2025 Fall Southeastern Sectional Meeting in New Orleans, LA
+  Oct 5, 2025, AMS 2025 Fall Southeastern Sectional Meeting in New Orleans, LA
+  Nov 18, 2025, minisymposium at the SIAM Conference on Analysis of Partial Differential Equations in Pittsburgh, PA
+  Dec 4, 2025, Analysis of Fluids and related Topics seminar, Princeton University,
+  Mar 5, 2026, AMS Spring Western Sectional Meeting, Boise State University, Boise, ID,
+  Mar 10, 2026, Real Analysis Seminar, UC San Diego,
+  Apr 24, 2026, Colloquium, University of Nebraska,
+  Apr 26, 2026, Workshop for Research and Workforce Development in Fluid Mechanics II, University of Nebraska,
+  Jul 7, 2026, Analysis Seminar, University of Zagreb,
+  Aug 17, 2026, Recent Breakthroughs and New Perspectives on the Interplay between Fluid Mechanics and Kinetic Theory,
+  Banff 2026
+
+
+Conferences co-organized:
+
+  “Southwestern Workshop on Dynamical Systems, USC,” Nov. 17–19, 2000,
+  “Mathematics of Fluids,” Los Angeles, CA, Mar. 29–30, 2008,
+  “International Conference on Partial Differential Equations Modeling Fluids and Complex Fluids” in Xian, China, Jun. 13–17,
+  2010,
+  SIAM conference on “Analysis of Partial Differential Equations”, San Diego, CA, Nov. 14–17, 2011,
+  Mathematics Research Communities, Regularity Problems for Nonlinear Partial Differential Equations Modeling Fluids and
+  Complex Fluids, June 25–July 1, 2013,
+  2 special sessions at AIMS meetings, 3 SIAM mini-symposia,
+  Oberwolfach workshop “Mathematical Theory of Evolutionary Fluid-Flow Structure Interactions”, Nov. 2016,
+  Summer School on Recent Advances in Mathematical Fluid Dynamics, May 20–24, 2019,
+  MSRI semester program “Mathematical problems in fluid dynamics,” January 2021–May 2021,
+  Euler and Navier-Stokes equations seminar at the MSRI semester program, January 2021–May 2021,
+  Recent Advances in Mathematical Fluid Dynamics, Duke University, May 16–24, 2023,
+  Mathematical Problems in Fluid Dynamics, part 2, July 17–August 11, 2023,
+  Special session “New Developments in Mathematical Fluid Dynamics,” Mathematical Congress of the Americas, July 2025,
+  Brijuni Applied Mathematics Workshop, Brijuni, Croatia, June 23–27, 2025,
+  Minisymposium “Control and Stability of Fluids and Structures” at SIAM Central States Section Annual Meeting 2025,
+  University of Arkansas, Oct. 11–12, 2025,
+  ICERM Hot Topics workshop “Fluid Dynamics and Turbulence,” November 22–23, 2025,
+  Oberwolfach Workshop No. 2717, “Mathematical Analysis of Fluid Dynamics Models,” April 25–30, 2027
+  15 special sessions at AMS meetings (USC, San Francisco State, UCLA, UNLV, Univ. of Illinois, San Francisco State (virtual),
+  Fresno, University of South Alabama, San Francisco State, Palermo, Auckland, Savannah, Kennesaw, Tempe)
+

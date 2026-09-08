@@ -1,0 +1,19 @@
+[shell N=6 h=1/8 Re0=400 lam=1.5 sign=+1] grid 768x768  R=64  E=1.1e+08 l=40.57 ReE=6.585e+05 logReE=13.398
+    T32=0.265915219595114  T2=0.43087967557069606  ommax_final=2.0044 at t=0.4324  sup|eta| ratio=0.89876  steps=217  436.2s
+    at T32: s*=1.743 (octave 0.80)  a*=1.7796   T32*M*logReE=3.5627   T32*M*log(R)=1.1059
+[shell N=6 h=1/8 Re0=100 lam=1.5 sign=+1] grid 768x768  R=64  E=1.1e+08 l=40.57 ReE=1.646e+05 logReE=12.011
+    T32=0.2716311454043369  T2=0.44327412027022184  ommax_final=2.0043 at t=0.4447  sup|eta| ratio=0.85863  steps=223  561.6s
+    at T32: s*=1.743 (octave 0.80)  a*=1.7798   T32*M*logReE=3.2627   T32*M*log(R)=1.1297
+[shell N=6 h=1/8 Re0=16 lam=1.5 sign=+1] grid 768x768  R=64  E=1.1e+08 l=40.57 ReE=2.634e+04 logReE=10.179
+    T32=0.30114476950563795  T2=0.5301766021119354  ommax_final=2.0033 at t=0.5316  sup|eta| ratio=0.64039  steps=265  417.1s
+    at T32: s*=2.259 (octave 1.18)  a*=1.6533   T32*M*logReE=3.0653   T32*M*log(R)=1.2524
+[shell N=6 h=1/8 Re0=4 lam=1.5 sign=+1] grid 768x768  R=64  E=1.1e+08 l=40.57 ReE=6585 logReE=8.793
+    T32=0.38115117987235014  T2=0.6928324234415816  ommax_final=2.0022 at t=0.6942  sup|eta| ratio=0.34479  steps=342  666.5s
+    at T32: s*=3.654 (octave 1.87)  a*=1.4524   T32*M*logReE=3.3513   T32*M*log(R)=1.5852
+[shell N=6 h=1/8 Re0=25 lam=1.5 sign=+1] grid 768x768  R=64  E=1.1e+08 l=40.57 ReE=4.116e+04 logReE=10.625
+    T32=0.28959237759999945  T2=0.4924492402262888  ommax_final=2.0045 at t=0.4942  sup|eta| ratio=0.72091  steps=247  956.1s
+    at T32: s*=2.138 (octave 1.10)  a*=1.6636   T32*M*logReE=3.0770   T32*M*log(R)=1.2044
+[shell N=5 h=1/8 Re0=100 lam=1.5 sign=+1] grid 384x384  R=32  E=3.436e+06 l=20.29 ReE=4.116e+04 logReE=10.625
+    T32=0.3379224932306428  T2=0.554790091607954  ommax_final=2.0089 at t=0.5587  sup|eta| ratio=0.83947  steps=139  102.8s
+    at T32: s*=1.743 (octave 0.80)  a*=1.4504   T32*M*logReE=3.5905   T32*M*log(R)=1.1712
+wrote ~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/bfg/corner-numerics/results_a_rest.json

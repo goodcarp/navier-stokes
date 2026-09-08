@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "scope": "actual initial mean maximum and net fluctuation-energy gain; exact central pressure neutrality; this subcertificate does not assess the full pressure derivative; companion leading-pressure certificate does",
+  "parameters": {
+    "radial_center": "7/50",
+    "radial_width": "1/10",
+    "m": 4,
+    "k": -20,
+    "seed_amplitude_interval": [
+      "1/8",
+      "1/4"
+    ],
+    "nu": "1/1000"
+  },
+  "root_interval": [
+    "1077377876667/5000000000000",
+    "269344469167/1250000000000"
+  ],
+  "root_certificate_dependency": "fixed-circle-acceleration-certificate.json",
+  "cutoff_derivative_certificate_dependency": "../../pass6/checks/outer-mean-maximum-certificate.json",
+  "seed_value": {
+    "display": "[0.6464515259224868868281496235673302194175, 0.6464515259303458545921043920684730163398]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "859281466174047833751820086135435311",
+        "exponent": -120
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "107410183273061774215204993110433243",
+        "exponent": -117
+      }
+    }
+  },
+  "seed_derivative": {
+    "display": "[-39.29483882083868323597495331331924872371, -39.29483881870900177547770769507748250375]",
+    "exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "816121872664292341404189041331737281",
+        "exponent": -114
+      },
+      "upper": {
+        "sign": 1,
+        "mantissa": "816121872620060587976110193226560897",
+        "exponent": -114
+      }
+    }
+  },
+  "unit_mean_torque": {
+    "display": "[1954.599521999362422509283385653581911783, 1954.599522139793306975354810144738709359]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "634303809860685325717248830788730345",
+        "exponent": -108
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "634303809906257753233151954657508269",
+        "exponent": -108
+      }
+    }
+  },
+  "R1": {
+    "interval": "[154278.6422641070164361793701028804422644, 175257.3100341986565244852148553171403894]",
+    "exact_dyadic_bounds": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "782285653873966160148775058053216031",
+        "exponent": -102
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "444330068518473636878969827711243139",
+        "exponent": -101
+      }
+    },
+    "panels": 1024,
+    "strictly_positive": true,
+    "strictly_negative": false,
+    "width_display": 20978.667770091637
+  },
+  "radial_extraction": {
+    "interval": "[0.02196178344685765685795724681084006528738, 0.02438365289314620584089211100546093441205]",
+    "exact_dyadic_bounds": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "934150956637726230413285417672042519",
+        "exponent": -125
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "129645736260287186507814417377809551",
+        "exponent": -122
+      }
+    },
+    "panels": 122,
+    "strictly_positive": true,
+    "strictly_negative": false,
+    "width_display": 0.0024218694462885488
+  },
+  "R1_coarse_upper": 200000,
+  "extraction_coarse_lower": "1/50",
+  "R0_upper": "392/5",
+  "Cw_upper": "1764000/1419857",
+  "retuned_A_bounds": [
+    "900",
+    "1020"
+  ],
+  "mean_derivative_lower": "8871/800",
+  "fluctuation_energy_derivative_lower_over_pi_lambda_squared": "205648/375",
+  "fluctuation_energy_fractional_derivative_lower": "12853/2205",
+  "trust_base": "existing certified root interval and cutoff-jet ranges; new one-dimensional outward-rounded range quadratures"
+}

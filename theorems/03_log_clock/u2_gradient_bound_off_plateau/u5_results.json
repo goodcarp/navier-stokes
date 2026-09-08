@@ -1,0 +1,32 @@
+{
+ "a_closed_form_max_abs_rel_err": 1.023743022700939e-15,
+ "b_envelope_violations": 0,
+ "b_envelope_worst_ratio": 0.9984150986286499,
+ "c_strain_lam1.25": {
+  "c_G": 0.44628710262841953,
+  "P1_maxprinciple": 1.25,
+  "P1_exact": 1.25,
+  "P1_rel": 0.0,
+  "P2_maxprinciple": 2.44140625,
+  "P2_exact": 2.44140625,
+  "P2_rel": 0.0,
+  "crude_P1_eGamma": 1.5625,
+  "crude_P2_e3Gamma": 3.8146972656250004
+ },
+ "c_strain_Gamma_rad_over_Gamma": 0.5,
+ "c_strain_lam1.5": {
+  "c_G": 0.8109302162163288,
+  "P1_maxprinciple": 1.5,
+  "P1_exact": 1.5,
+  "P1_rel": 0.0,
+  "P2_maxprinciple": 5.0625,
+  "P2_exact": 5.0625,
+  "P2_rel": 0.0,
+  "crude_P1_eGamma": 2.25,
+  "crude_P2_e3Gamma": 11.390625
+ },
+ "d_Tlam_inv_op_lam1.25": 1.5625,
+ "d_Tlam_op_lam1.25": 1.25,
+ "d_Tlam_inv_op_lam1.5": 2.25,
+ "d_Tlam_op_lam1.5": 1.5
+}

@@ -1,0 +1,43 @@
+(a) CLASSIFICATION by whether the viscous floor sits above the datum's inner cut
+    (datum cut = the shell's inner edge; the discrete argmax sits at s = 1.743--1.865 rho0)
+    viscosity-limited (Re0 <= 25, sqrt(nu/M) >= 0.2 rho0): 9 runs, s*/sqrt(nu/M) = 8.54 +- 1.01, range [7.24, 10.69]
+    datum-limited     (Re0 >  25): 10 runs, s* = [1.743, 1.865] (all pinned)
+    Q' = M T_d log(R/s*) : viscous 1.0849 +- 0.0693   datum-limited 0.9753 +- 0.0212   all 1.0272 +- 0.0742
+
+(b) THE ASSIGNED SWEEP, stated as the pre-registration asked
+    Re0 1 -> 400 at fixed N = 6 : log Re_E 7.4063 -> 13.3977 (a factor 400 in Re_E)
+    M T_d 0.5385 -> 0.2659, a factor 2.0253.   H_log demands a factor 3.5678.
+    For comparison, the parent seat's N-sweep covers log Re_E 6.462 -> 13.398 (a factor 1.0000 in log-range)
+    and moves M T_d 1.3446 -> 0.2272, a factor 5.918, over Delta log Re_E = 6.936.
+    The corner moves Delta log Re_E = 5.991 and gets only a factor 2.025.
+    Same log-Re_E budget, different currency: octaves buy ~2.18x more speed per unit log Re_E than viscosity.
+
+(c) THE SURVIVING SHAPE: log Re_E is a CEILING on the octave count, not the clock's abscissa
+    s* >= 8.54 sqrt(nu/M)  =>  log(R/s*) <= (1/2) log(M R^2/nu) - log 8.54
+    and M R^2/nu = Re_E / (ell/R)^2, with ell/R measured = 0.63389
+    =>  log(R/s*) <= (1/2) log Re_E - 1.6888  =: L_max(Re_E)
+    with M T_d = 1.0538 / log(R/s*)  this gives the lower envelope
+        M T_d >= 1.0538 / ((1/2) log Re_E - 1.6888) = 2.1076 / (log Re_E - 3.3775)
+    check: does any run fall BELOW that envelope?
+      N=2 Re0=100     log(R/s*)=0.7633  L_max=1.5420  M T_d=1.3446  envelope=0.6834  
+      N=3 Re0=100     log(R/s*)=1.4564  L_max=2.2374  M T_d=0.6667  envelope=0.4710  
+      N=4 Re0=100     log(R/s*)=2.2168  L_max=2.9307  M T_d=0.4477  envelope=0.3596  
+      N=5 Re0=1       log(R/s*)=1.2553  L_max=1.3212  M T_d=0.9567  envelope=0.7976  
+      N=5 Re0=2       log(R/s*)=1.7061  L_max=1.6678  M T_d=0.6859  envelope=0.6318  
+      N=5 Re0=4       log(R/s*)=2.0380  L_max=2.0144  M T_d=0.5405  envelope=0.5231  
+      N=5 Re0=16      log(R/s*)=2.6510  L_max=2.7075  M T_d=0.3911  envelope=0.3892  
+      N=5 Re0=100     log(R/s*)=2.9100  L_max=3.6238  M T_d=0.3379  envelope=0.2908  
+      N=5 Re0=400     log(R/s*)=2.9100  L_max=4.3170  M T_d=0.3289  envelope=0.2441  
+      N=5 Re0=1600    log(R/s*)=2.9100  L_max=5.0101  M T_d=0.3268  envelope=0.2103  
+      N=6 Re0=1       log(R/s*)=2.0958  L_max=2.0144  M T_d=0.5385  envelope=0.5231  
+      N=6 Re0=4       log(R/s*)=2.8631  L_max=2.7075  M T_d=0.3812  envelope=0.3892  
+      N=6 Re0=16      log(R/s*)=3.3441  L_max=3.4007  M T_d=0.3011  envelope=0.3099  
+      N=6 Re0=25      log(R/s*)=3.3991  L_max=3.6238  M T_d=0.2896  envelope=0.2908  
+      N=6 Re0=100     log(R/s*)=3.6031  L_max=4.3170  M T_d=0.2716  envelope=0.2441  
+      N=6 Re0=400     log(R/s*)=3.6031  L_max=5.0101  M T_d=0.2659  envelope=0.2103  
+      N=7 Re0=6.25    log(R/s*)=3.7889  L_max=3.6238  M T_d=0.2753  envelope=0.2908  
+      N=7 Re0=100     log(R/s*)=4.2963  L_max=5.0101  M T_d=0.2272  envelope=0.2103  
+      N=7 Re0=400     log(R/s*)=4.2963  L_max=5.7033  M T_d=0.2232  envelope=0.1848  
+    runs below the envelope by more than 3 sigma_rel: 0 / 19
+
+SCRIPT-SHA256 da428dae2305e7a12549f0b4237d4c0f21e540576c1aac7757973cc62ae80af8

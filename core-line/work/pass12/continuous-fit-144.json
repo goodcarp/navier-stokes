@@ -1,0 +1,86 @@
+{
+  "status": "COMPLETED H7 WHOLE-SPACE ENDPOINT RECONSTRUCTION; NOT NS VALIDATION",
+  "input_checkpoint": "work/pass11/resolved-192-2049-dt50.npz",
+  "input_sha256": "603663cf57011ece8f13028fc6175f74a4dfd9cb867fb90e3b791c72aacd1940",
+  "source_sha256": "ff0fb5252f1ef217fd37af5c4782fe4d6f7d41ab64b656bdf0cfef20a2f39619",
+  "parameters": {
+    "nr": 192,
+    "nz": 2049,
+    "R": 8.0,
+    "L": 16.0,
+    "mapping": 4.0,
+    "J": 4,
+    "nu": 0.001,
+    "T": 0.001,
+    "dt": 5e-05,
+    "steps": 20,
+    "dealias": "padding",
+    "backend": "fast",
+    "fft_workers": 4
+  },
+  "radial_intervals": 144,
+  "radial_degree": 9,
+  "regularity": "Compact C8/H9 potentials induce C6/H7 velocity; not C-infinity.",
+  "base": "Exact unchanged analytic initial datum u0; no fit of u0 is substituted.",
+  "increment": "Fit of U(T)-U_discrete(0); all stored complex axial/angular phases retained.",
+  "potential_output": "work/pass12/continuous-fit-144.npz",
+  "potential_sha256": "b0677820d8aecf9fa34cb030ad5bed69fc6d3e863401bede0b01df70f651a294",
+  "modal_results": [
+    {
+      "mode": 0,
+      "delta_L2": 25.804024252606997,
+      "fit_error_L2_unwindowed": 0.37297033566856586,
+      "fit_error_L2_windowed": 0.45489973471135575,
+      "axial_collar_change_L2": 0.2604359275283262,
+      "max_sampled_normal_equation_relative_residual": 1.096510399502908e-11
+    },
+    {
+      "mode": 4,
+      "delta_L2": 6.231071277586984,
+      "fit_error_L2_unwindowed": 0.12889085178800724,
+      "fit_error_L2_windowed": 0.12889085178835405,
+      "axial_collar_change_L2": 3.009159500439769e-07,
+      "max_sampled_normal_equation_relative_residual": 1.5692344285982492e-15
+    },
+    {
+      "mode": 8,
+      "delta_L2": 0.27161760017735953,
+      "fit_error_L2_unwindowed": 0.013790063260016352,
+      "fit_error_L2_windowed": 0.013790063260060279,
+      "axial_collar_change_L2": 3.640707677696758e-08,
+      "max_sampled_normal_equation_relative_residual": 1.2601416936215031e-15
+    },
+    {
+      "mode": 12,
+      "delta_L2": 0.04027722002053852,
+      "fit_error_L2_unwindowed": 0.0021390389256393063,
+      "fit_error_L2_windowed": 0.002139038925647891,
+      "axial_collar_change_L2": 6.2773971675993484e-09,
+      "max_sampled_normal_equation_relative_residual": 5.944060306651101e-16
+    },
+    {
+      "mode": 16,
+      "delta_L2": 0.007306084115631576,
+      "fit_error_L2_unwindowed": 0.00035247727373841824,
+      "fit_error_L2_windowed": 0.00035247727374240496,
+      "axial_collar_change_L2": 1.7610136317643307e-09,
+      "max_sampled_normal_equation_relative_residual": 1.3303721208577628e-15
+    }
+  ],
+  "total_sampled_windowed_fit_error_L2": 0.4730131984286059,
+  "axial_collar_change_L2": 0.2604359275285027,
+  "sampled_discrete_increment_L2": 26.547116013788454,
+  "elapsed_seconds": 22.98501118,
+  "uncertified": [
+    "sampled norm versus continuous norm",
+    "radial/axial derivative errors",
+    "time-slab evolution and time derivatives",
+    "pressure and full projected residual",
+    "difference between whole-space NS and finite-cylinder data",
+    "endpoint gain and successor class"
+  ],
+  "fit_metric": "Continuous L2 of the specified radial parity cubic interpolant before axial localization.",
+  "driver_sha256": "62fc8b90f6832bec425c8d27417e2cd971ec3d618b6542006968502dd5fd97bf",
+  "radial_quadrature": "Gauss order m+18 on union of potential and target knots; polynomial Gram and RHS.",
+  "executed_source_file": "work/pass12/provenance/compact_potential_reconstruction-ff0fb5252f1e.py"
+}

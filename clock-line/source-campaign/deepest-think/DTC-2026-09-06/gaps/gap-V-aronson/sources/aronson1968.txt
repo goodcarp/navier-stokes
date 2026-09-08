@@ -1,0 +1,3923 @@
+                                A NNALI DELLA
+S CUOLA N ORMALE S UPERIORE DI P ISA
+          Classe di Scienze
+
+
+
+
+ D. G. A RONSON
+ Non-negative solutions of linear parabolic equations
+ Annali della Scuola Normale Superiore di Pisa, Classe di Scienze 3e série, tome 22,
+ no 4 (1968), p. 607-694
+ <http://www.numdam.org/item?id=ASNSP_1968_3_22_4_607_0>
+
+
+
+
+     © Scuola Normale Superiore, Pisa, 1968, tous droits réservés.
+     L’accès aux archives de la revue « Annali della Scuola Normale Superiore di Pisa, Classe
+     di Scienze » (http://www.sns.it/it/edizioni/riviste/annaliscienze/) implique l’accord avec
+     les conditions générales d’utilisation (http://www.numdam.org/conditions). Toute utilisa-
+     tion commerciale ou impression systématique est constitutive d’une infraction pénale.
+     Toute copie ou impression de ce fichier doit contenir la présente mention de copyright.
+
+
+
+
+                              Article numérisé dans le cadre du programme
+                            Numérisation de documents anciens mathématiques
+                                         http://www.numdam.org/
+          NON-NEGATIVE SOLUTIONS OF LINEAR
+                      PARABOLIC EQUATIONS
+
+                               by D. G. ARONSON
+
+
+
+Introduction.
+
+      The main results of this paper are several theorems concerning the prop-
+erties of non-negative solutions of second order linear divergence structure
+differential equations of parabolic type. One of the main results is the fact
+that every non-negative solution of the Cauchy problem is uniquely deter-
+mined by its initial data. Solutions of the Cauchy problem are functions
+which correspond to a given initial function in some well defined way. There
+are also solution of the differential equations in question which are non-
+
+negative but which do not have initial values in any ordinary sense, for exam-
+ple, the Green’s function in a bounded domain or the fundamental solution
+in an infinite strip. The properties of the Green)s function and the funda-
+mental solution are developed in detail, and another of the main results is
+the fact that these functions are bounded above and below by multiples
+of the fundamental solution of an equation of the form ad 1c = ut, where a
+is a positive constant. In addition, we prove that the Widder rapresentation
+theorem is valid for the class of equations under consideration. Throughout
+this paper we work with weak solutions of a very general class of parabolic
+equations. When specialized to classical solutions of equations with smooth
+coefficients our results are either new or generalizations of earlier results.
+All of our results depend ultimately upon the work of Serrin and the author
+on the local behavior of solutions of general divergence structure equations
+
+and upon certain energy type estimates which are derived here.
+      Let x = (xy .... , x’,~~ denote points in the n-dimensional Euclidian space
+     with it &#x3E; 1 and t denote points on the real line. Let Z denote an open
+
+
+
+     Pervenuto in Redazione il 29 Gennaio 1968.
+
+
+II     ddlll
+608
+
+domain in En. It is not necessary that 4 be bounded         == En  is not
+excluded. Let T be a fixed positive number and consider the domain D              =
+
+
+
+. I X (0, TJ. For (x, t) E D we treat the second order linear differential
+operator
+
+
+where ut = aulat, u.,i =       and we employ the convention of summation
+over repeated Latin indices. The coefficients of I~ are assumed to be defined
+and measurable in D. Before describing the remaining assumptions on L we
+introduce some notation.
+     Let ’i3i (~) denote a Banach space of functions defined on ~ with the
+norm -11, and        (I) denote 3 Banach space of functions defined on an in-
+terval I with the norm [ . [z. A function ’Ui = W (x, t) defined and measurable
+                              "
+
+
+
+
+on D = I x I is said to belong to the class 932 [I ; ~1 (Z)] if w (., t) E 931 (1:)
+for almost all t E I and         It (t) 12 00.When the sets E and I are clear
+from the context we will write 932 [C’311 in place of 932 [1;         (~)]. In re-
+ference [6] the classes Lq [I ;           are denoted by           and we shall
+also use this notation here. Morever, for                 with 1 --- p, q    oo we
+
+define
+
+
+
+
+In case either p or q is infinite, II Ui II p, q is defined in a similar fashion
+using L° norms rather than integrals. Let cS denote the set of cylinders
+of the form R (a) X I, contained = En x I, where R (0) denotes an open
+cube in Eft of edge length a and o = min                   A function w = w (x, t)
+defined and measurable on S is said to belong to the class LP,q (cS) if
+                oo,y where the norms are taken over cylinders in the
+family c5.
+      The operator L is defined in a basic domain D which is either a bounded
+cylinder S~ x (0, ~’) or an infinite strip En X (0, T]. It will be convenient
+in many instances to regard L as being defined throughout the (n + 1)-
+dimensional (x, t) space. We therefore adopt the convention that Lu == ut   A -
+
+
+
+
+for all (x,         Throughout the paper it will be assumed that there
+constants v, M, Mo and Ro such that 0               oo, 0         oo and 0 ~
+
+S Ra S oo, and such that the coefficients of L satisfy the following con-
+ditions which will be referred to collectively as (H).
+
+       (11.1) For          and for a l1nost all (x, t)
+                                                                               609
+
+    (H.2) .Let Qo   =
+                        (I r )    Ro) x (0, T]. Each of the coefficients A j and Bj
+is contianed i,1         space        (Qo), where p and q are 8uok that              ,
+
+
+
+
+and/                                     almo8t all           andi
+
+
+                                   p and q a1’e such that
+
+
+
+
+und C (x, t) ~ Mo for almost all I x I ~ Ro and t E (0, T].
+      Note that (H.2) implies that the Aj and Bj each belong to some space
+LP, " (cS), where p and q satisfy (*), If Ro --- oo then Qo is the strip 8 = Es x
+X (0, T]] and condition (H.2) simply requires that the coefficients Aj and Bj
+belong to the appropriate spaces Lp, q (8). On the other hand, (H) clearly
+holds if L is uniformly parabolic and all of its coefficients are bounded in
+S. Let L be an operator defined in a bounded cylinder Q = D x (0, T),
+such that (i)                  and        -~ M, almost everywhere in Q, (ii) A"
+]3j E LP, q (Q) where p and q satisfy (~)~ and (iii)               where p and q
+satisfy (**). Then the extension of L according to the convention adopted
+above satisfies (H) with v = min (1,         M = max (1, Ml), ~ = 0, and any
+Ro such that 0 c (r ;x Ro) .
+      Without further hypotheses on L it is not possible, in general, to speak
+of a classical solution of a differential equation involving the operator L,
+and it is correspondingly necessary to introduce the notion of a generalized
+Solution. Before doing so, however, we will need several additional defini-
+tions. Let f2 denote a bounded open domain in              A function w = w (x)
+defined and measurable           is said to belong to               if w possesses
+a distribution derivative ’lCx and
+
+
+
+
+The space              is the    completion
+                                         of the G’~ (~) functions in this norm.
+The space H’’ ~ ( L’’~) is the completion of the          functions in the norm
+610
+
+      For                            consider the differential equation
+
+
+
+
+where the Fj and (~ are given functions defined and measurable in D. A
+function u = u (x, t) is said to be a ioeak solution, of equation (1) in D if
+
+
+
+
+for all 6 E (0, T) and u satisfies
+
+
+
+
+for        E   (D). Clearly every classical solution of equation (1) in D is
+also a weak solution. We will use the terms weak solution and solution
+interchangably throughout this paper.
+     Various known properties of weak solution of equation (1) are summa-
+rized for convenient reference in section 1. These results, which are used
+extensively in the remainder of the paper, include the maximum principle
+and theorems on local behavior proved by Serrin and the author in refer
+ence [6], and theorems on regularity at the boundary due to Trudinger [21].
+
+Moreover, we establish a simple but useful extension principle which
+permits us, in some cases, to use the local results of reference [6] in the
+neighborhood of the boundary.
+     Section 2 is primarily devoted to the derivation of weighted energy type
+estimates for weak solution of equation (1). In particular, if u is a solution
+of (1) we derive estimates for the L2, ° norm of eh u and the L~~ 2 norm
+of eA ux. Here 1~ = h (x, t) has the form
+
+
+
+
+where ~ E En and 8 E [0, T) are arbitrary, and a, fJ, P, are positive constants
+determined by L and the data. These estimates are related to those obtained
+by Aronson and Besala in reference [5], and include as special cases esti-
+mates due to Il’in, Kalashinikov and Oleinik [121, and Aronson [3].
+                                                                                      611
+
+
+           be a bounded open domain in En and Q = !J x (0, Z’ J, Consider
+the boundary value problem
+
+
+
+
+where           are given functions each belonging to a space Lp, q (Q) with
+p, q satisfying (*), G is a given function in Lp, q (Q) with p, q satisfyng (~:~),
+and Mo is a given function in L2 (~). In section 2 we define the notion of
+a veak solution of problem (3) and prove that this problem possesses exactly
+
+one weak solution. Moreover, we establish various properties of the solu-
+tion. Except for certain details, this material is fairly standard. It is
+included in detail here for the sake of completeness and since we will have
+occasion to refer to some of the intermediate steps in the proof. Alternate
+                                                                v
+
+treatments can be found in the work of Ivanov, Ladyzenskaja, Treshkunov
+                                    v
+
+and Ural’ceva [13], and Ladyzenskaja, Solonnikov and Ural’ceva [15].
+    The Cauchy problem
+
+
+
+
+where 8 = En X (0, T], is treated in section 4. Again the Fj, G and tto are
+given functions, and it is assumed that for some constant y - 0 we have
+      It Fj E Lp, q (8) with p, q satisfyng (~), e-Y 1111’ G E LP, q (~S) with p, q satis-
+
+fying (**), and                         The notion of a weak solution of prob-
+lem (4) is defined and it is shown that the problem possesses exactly one
+weak solution in the appropriate class of functions. Various properties of
+the solution are also established. For example, let u denote the solution of
+problem (4), where ito = 0 and where the Fj and Q~ satisfy the hypotheses
+given above with y = 0. Then there exisists a constant                        depending
+only on T and the quantities in the conditions (H), such that
+
+
+
+
+for all (x, t) E S. For other work      on   weak solutions of the      Cauchy problem
+see   references [ 12j and [15].
+       In section 5 we consider         a   non-negative solution   u   of the   Cauchy
+problem
+612
+
+
+where uo is a given non-negative function which belongs to              (En). The
+main result is that u is uniquely determined by           Specifically, for each
+(x, t) E S we have             1Gk (x, t), where the uk   are   the   unique weak
+                            k - oo
+solutions of certain boundary value problems involving L and               A spe-
+cial case of this result, with
+
+
+
+
+was   obtained by the author in reference [3]. The first theorem of this type
+was   given in the case it =1 by Serrin [19] for equation
+
+
+
+with Holder continuous coefficient. Our result extends but does not include
+Serrin’s result. In the proof of the main result we use the following gener-
+alization of a theorem first proved by Widder [22] for the equation of heat
+conduction. If It is a non-negative weak solution of the Cauchy problem (6)
+with uo .= 0, then u = 0 in S. This result includes earlier results for clas-
+sical solutions of equations with smooth coefficients due to Friedman [9],
+                .   ,
+
+[10] and Krzyzanski [14].
+     The estimate (5) implies that the value at a point of the solution of
+the Cauchy problem is a bounded linear functional on a certain Banach
+space. We use this observation in section 6 to establish the existence of
+the weak fundamental solution r (x, t ; ~, T) of        in S. In particular,
+we estimate certain norms of 1’ and its derivatives, and show that the
+solution of the Cauchy problem
+
+
+
+
+with the                for p, q satisfyng (*) is given by the formula
+
+
+
+
+In a similar manner, using the maximum principle for solutions of the
+boundary value problem. we prove the existence of the weak Green’s function
+for Lu = 0 in any bounded cylinder Q i S~ ~ (0, T] and derive a represen-
+tation formnla similar to (8) for solutions of the boundary value problem.
+The existence and properties of the Green’s function for the special case in
+which L is given by (7) were obtained by the author in reference [1].
+                                                                                    613
+
+     The next two sections are devoted to deriving various properties of the
+weak Green’s functions and fundamental solutions. In section 7 we make
+the temporary assumption that the coefficients of L are smooth and show
+that the weak Green’s functions and fundamental solution coincide with
+their classical counterparts. Several of the known properties of these func-
+tions are described. The main results of this section are upper and lower
+bounds for these functions which are independent of the smoothness of the
+coefficients of L. Specifically, we prove that there exist positive constants
+atI a2 and C’ such that
+
+
+
+for all (x, t), (~, r) E S with t &#x3E; 1:, where gi (x, t) is the fundamental solution
+of o:, JM = ut for i = 17 2. The constants depend only on T and the quan-
+tities in condition (H). In the appendix to reference [16] Nash gives some-
+what weaker bounds for r in case L is given by (7). A similar result holds
+for the Green’s function y for L in a bounded cylinder Q. Here, however,
+for the lower bound x and ~ must be restricted to a convex subdomain
+Q’ of S2 and the constants depend on the distance from {J’ to                     These
+bounds were announced by the author in reference [4]. In section 8 we re-
+move the assumption of smoothness of the coefficients of .L and prove that
+the function y and .~ are limits of the corresponding functions for operator
+obtained from b by regularizing the coefficients. From these considerations
+it follows that y and 1’ inherit the principal properties of their classical
+counterparts including the bounds described above.
+      In section 9 we combine the results obtained in sections 5 and 8 to
+prove that if u is the non-negative weak solution of the Cauchy problem (6)
+then
+
+
+
+
+This representation theorem includes as special cases earlier results for
+classical solutions of equations with smooth coefficients due to Friedman
+                    ,   ,
+
+
+[9], [10] and Krzyzanski [14]. We also obtain a necessary and sufficient
+condition for a function defined by a formula such as (9) to be a non-
+negative solution of the Cauchy problem. Using (9) and the bounds for T
+derived in section 8 we show that if u is a non-negative weak solution
+of Lu = 0 in S then there exist a unique non-negative Borel measure g
+such that
+                                       -
+614
+
+
+Moreover, we give a necessary and sufficient condition for a function de-
+fined by a formula such as (10) to be a non-negative weak solution of
+Lu    0 in S. Taken together these two results constitute a generalization
+      =
+
+
+of Widder’s representation theorem for non-negative solutions of the equa-
+tion of heat conduction [22]. The representation formula (10) for classical
+                                                                     .   I
+
+solutions of equations with smooth coefficients was derived by Krzyzanski
+in reference [14]. The uniqueness of the measure p has not been consider-
+                    .   ,
+
+ed by either   Krzyzanski  or Widder. As a corollary to this result we also
+
+obtain the following result of Rôcher type concerning non-negative solutions
+of Lu = 0 with an isolated singular point on the hyperplane t = 0. Let u
+be a non-negative weak solution of Lu      0 in S and suppose that
+                                           =
+
+
+
+
+for all                 I where uo ~ 0 is in         Then there exists a con-
+stant ’1J h o such that
+
+
+
+
+The special case in which "0 = 0 and u is a classical solution of an equa-
+                                                 .     ,
+
+tion with smooth coefficients is treated by Krzyzanski in [14]. A weaker
+result when L~ is given by (7) and 1to    0 was obtained by the author in
+                                           =
+
+
+reference [2].
+     Results quoted from references [6] and [21] are designated by Theorem
+A, Theorem B, etc. Theorems and lemmas proved in this paper are nun-
+bered consecutively without regard to the sections in which they occur,
+and we use Corollary n . m to designate the m-th corollary to Theorem n.
+     The results reported here are a partial summation of research which
+has spanned several years. Througout this period the author has benefited
+greatly from countless discussions (and arguments) with Professor James
+Serrin, and it is a pleasure to thank him here for his interest, encourange-
+ment and aid. We also wish to thank Professors Jiirgen Moser and
+Hans Weinberger for their interest in this work and for many stimulating
+discussions.
+                                                                                 615
+
+
+
+1.   Preliminary Results.
+      For (x, t) E ,S consider the linear equation
+
+
+
+
+where it is assumed that L satisfies (H), each                   q (cS) for some p, q
+satisfying (*), and G E LP, q (c5) for 1’, q satisfying (**). Under these hypothe~
+ses, equation (1.1) belongs to the class of equations treated in references
+[6] and [21]. What follows is an annotated list of the specific results from
+these references which are used in this paper. The statements given below
+are not necessarily in their most general forms but are tailored to the ap-
+
+plications which we will make here. Theorem D is from reference [21] and
+the remaining results are from reference [6].
+     In this section will always denote a bounded domain in ~E" and
+Q  = {J X (0, TJ. The parabolic boundary of Q is the set (~ x (t = 0)) u (aD x
+x [0, T]l When the nature of the basic domain is irrelevant we will denote
+it by D = I x: (0, T], where E is either Q or Ell. If IV is one of the
+functions                or G,           I, means ~) W ~I p, q if the basic domain
+is Q or sup 11       ’
+                       if the basic domain is S = En X (0, T]. With this con-
+          c5
+vention we define
+
+
+
+
+All constant will be denoted by e. The statement e depends on the
+structure of (1.1) » means that e is determined by the quantities v,M,
+it, 1!      B~ ~~, (~ CI and 0, where 9 is a positive constant which is deter-
+mined by the values of p and q occuring in (B ) and in the hypotheses
+on the F~ and
+
+       In reference [6] it is shown that every weak solution u of (1.1) in D
+has a representative which is continuous in D. We will therefore always
+assume that u denotes the continuous representative of a given weak solution.
+Hence there is no difficulty in talking about the value of u at any point
+of its domain of’ definition.
+
+     THEOREM A.              Principle) Let u be rr. weak solution of equa-
+tion (1.1 ) in  M6 (,10 (Q) and     S u       on the pa1’abolio bouiadary of
+
+Q, then                                 ,
+616
+
+
+in    Q, ivhere e depends only on T, Q and the             of’ (1.1), ivhile
+
+
+                             B7=’I             /
+for i = 1, 2.
+      Let (x, t), be an arbitrary fixed point in the basic set D. BtVe denote
+by R (g) the ball in En of radius p/2 centered at x and define                 x
+ x (t  --
+
+         L02t~. The symbol 1:-llp, q e will be used to denote the Lp, q norm com-
+puted over the
+     THEOREM B. (Local Boundedness). Let u be if. 1ceak solution of equation
+(1.1) in D. Assume that e eo      that Q (3g) c D. Then         (e)
+
+
+
+where e depends only o~i eo and the structure of (1.1).
+    To state the next result it is convenient to use the following notation.
+    write x’ = (x~ t)~ y’ = (y, s), etc. to denote points in space time and in-
+troduce a pseudo-distance according to the definition
+
+
+
+
+Thus, for example, the set           ~e for fixed x’ is the cylinder
+
+
+     THEOREM C. (Interior Hdlder Continuity) Let u be a zoeak solution of
+equation (1.1) in Q such thatu I ~ 1lt i~i Q. If x’, y’ are points of Q 2aith
+
+
+
+
+where         a are positive           depending only on the           of (1.1),
+and B is equal to either the pseudo-distance      x’ to the parabolic boundary
+of Q or 1, whichever is
+     In order that a solution of (1.1) in (j be continuous tip to the para-
+bolic boundary of Q it is clearly necessary that ôQ have some regularity
+                                                                               v
+
+
+properties. The following very weak condition was introduced by Ladyzen-
+skaja and Ural’ceva (cf. reference [15]). The bonndary 00 of S will be said
+to have property (~.) if there exist constants ao and 90, 0 ~ (10 , 90
+                                                               7         1,
+such that for any ball l~ (e) with center on FQ and radius ~/,‘~~ (to tlle
+                                                                                      617
+
+
+inequality
+
+holds.
+
+     THEOREM D. (Continuity up to the                  Let u be a weak solution
+of equation (1.1) in Q and suppose that aS~ h08 propet-ty (A).
+        (i) If It is continuous in Q X (0, 2’1 and bounded in Q then it laas a
+modulus of continuity in Q X [, TI fot- a1fY 6 E (0, 1’) which is completely
+detertmined by ð, the structure of (1.1), k,      u I, the constants involved in
+                                                  Q
+           (A), and the modulus of continuity of 1£ on aS x [6/2, T].
+       (ii) If 1£ is continuous in Q then the modulus of continuity of u in !
+is completely determitted by the structure of (1.1), k, max1 u I, , the constants
+                                                                              ’
+
+
+
+                                                         Q
+involved in property (A) and the tnodul?18 of contin1£ity 0..1" u on the parabolic
+            of Q. In particulat., if u is H61der continuous on the parabolie
+bounda1’y of Q then it is also golder continuous in Q.
+     The remaining results concern non-negative solutions of (1.1). Since
+we apply them only in cases where k       = 0 we will state them onl y for the
+equation
+
+
+      THEOREM E.              Pt"inciple) Let it be a non-negative solution            of
+equation (1.2) in S. Then ,for ,atl points (x, t), (y, 8) in S with 0 s  t             T
+we   have
+                                           i~         19     . ,
+                                                               I
+
+
+
+
+where e depends only on T and the            of (1.2).
+     The next two theorems are concerned with the behavior of a non-neg-
+ative solution in the neighborhood of t = 0.
+
+    THEOREM F. Let u be a non-negative solution             of equations (1.2) in S.
+Suppose that fot, sotne x &#x3E; 0 we have
+
+
+
+
+Here e1 and C’2 both depend         T           the structure of (1.2), and       et also
+depends ora x.
+618
+
+             THEOREM G. Let 1t be a non-negative solution of equation (1.2) in S.    If
+
+
+
+then
+
+
+
+where e depends          onl y on the structure of (1.2).
+             Finally, we have the somewhat more complicated versions of Theorems
+E and F which hold when the basic domain is bounded. If ê1 and ê2 are
+two point sets we will write d ((f 1 l(f2) for the distance from ê1 to ê2.
+
+
+            THEOREM H.                             Let it be a non-negative solittion of
+equation (1.2) in         Q. Suppose  Q’   is a couvex subdomain 0..( Q such that b  =
+
+
+
+                            Then    all x, y in ’ and all 8, t satisfyiitgI
+we        have
+
+
+
+
+where e deends only on the structure of (1.2), and R = min (1, s, 2).
+
+    THEOREM I. Let u be a non-negative 80lution of equation (1.2) in
+Let ~ be a fixed point of Q and suppose that ,for 8onae X &#x3E; 0
+
+
+
+
+If S’ is          a   covex   subdomain   of Q 8i(ch      E Q’ a)td
+then
+
+
+
+fot- all       and                           whei-e ðt = d (~, aD’). Here C’1 aud
+ C~2 depend on d, T and the            of (1.2). ltnd e, also depends On x.
+      Theorems B, C, E and H are local results. In particular, they are ap-
+plicable only in subdomains where t is bounded away from zero. If, however,
+u (x, t) has a limit in an appropriate sense ast --+ 0 and if the limit satisfies
+
+certain additional conditions, then this restriction can be avoided. A spe-
+cial case of this remark will be used on several occasions in what follows
+and we conclude this section with a precise formulation of that special
+case.
+                                                                                         619
+
+     Let u be a weak solution of equation (1.1) in D and let                 be such
+that                T. For each e ;&#x3E; 0 so small that                          T
+there exists a smooth function 1,, = ’YJE (t) such that (i) ti, = 1 for a c t S z,
+(ii)   = 0  for t ~ - ~ and t ~ z + E, (iii) 0 ~           ~ 1, and (iv) 0 ~E S
+const./£ for  0 - E   t S a and  const/E q§          0 for T    t ~ z -E- e.       is
+a C’ (D) function with compact support in Z then                      C’o (D). Thus
+it follows from (2) that
+
+
+
+
+Since        dx is       a     continuous function of t on the interval    (0, T] we can
+
+let e - 0 to obtain (1)
+
+
+
+
+for         E 01 ( I)) with
+                          compact support in -v, where 0    a  ~    Z’. By
+continuity,y it follows that (1.3) also holds     = T.
+
+
+     A weak solution u of equation (1.1) in D will
+                                                    be said to have initial
+values "0 on t=O, where
+and
+
+
+
+
+for all                      If u has initial values "0 on t = 0 and 92 is a        I   fune-
+
+
+
+       (i) According to Lemma 2 (given in 8section 2),1
+                     -   ,         -   .
+
+
+
+
+implies that                          for all exponents p’, q’ whose Holder conjngates p, q
+satisfy (**). It follows that  (                     is dominated by an integrable function,
+and, using the dominated convergence theorem one obtains (1,3) A similar remark jus-
+tifies the limit prooess which leads to (1.4).
+620
+
+
+tion with compact support in E, then since
+
+
+
+
+as o -~ 0, Therefore, letting      in (1.3) we obtain the following result.
+If u is a weak solution of equation (1.1) in Il with initial values uo on
+t = 0 then
+
+
+
+
+for          TJ and for all q E C’ (Ð) with compact support in Z.
+     Let u be a weak solution (1.1) in D with initial values ~y = constant
+on t = b. Extend the domain of definition of the Fj and G by setting them
+
+equal to zero in CD. Let D~ _ ,~ ~ (- oo, T]] and define the function
+
+
+
+
+We assert that 1~~ is a weak solution of’ equation (1.1) in D*, where L is
+defined for t ~ 0 according to the convention adopted in the Introduction
+           Q’   0 for t
+                =          0. It is clear that
+                        Thus it remains to be shown that
+
+
+
+
+for arbitrary          .   For any
+                                                                           621
+
+
+Hence, letting
+
+
+
+
+On the other hand, if we              in (1.4) it follows that
+
+
+
+
+Combining the last two expression we obtain (1.6) and the assertion is proved.
+     Since the extension of equation (1.1) for t   0 does not alter its struc-
+ture, the results of reference [6] apply to u* in D*. In particular, the weak
+solution u* defined by (1.5) has a representative which is continuous in D~‘.
+Henceforth u* will denote this continuous representative. Note that with
+this convertion u- (x, 0)
+                        =
+                            uo for x E ~. To summarize these considerations
+we have the following result.
+
+
+     EXTENSION PRINCIPLE. Let u be a weak solution of equation (1.1) in
+D with initial values !to = constant on t = 0. Then               B holds for
+u. in D*.            if           C, E or H holds for -it in I), then the same
+         holds for u- in D*.
+
+      The operator adjoint to L is
+
+
+
+and it is clear that if L satisfies (H) then the same is true for L. Thus all
+of the results given above also hold for the equation
+
+
+
+
+Indeed, any result which is stated for equation (1.1) can be reformulated
+to apply to equation (1.7) by replacing t with -t, and interchanging Aj
+and - Bj.
+
+
+2.   Energy Estimate.
+      In this section we consider a certain class of weak solutions of the
+equation
+    622
+
+    and derive estimates for a weighted L2,°° norm of u and a weighted L2,2
+    norm    of      These estimates will be used frequently in various contexts in
+    the remainder of the paper and they will be given here in a form which is
+    sufficiently general to cover all applications which occur.
+          Let 0 be a fixed bounded open domain in En and Q = S~ &#x3E;C (o, TJ. We
+    assume that L satisfies (H), F? E L2’ 2 (Q), and              with p, q satisfying
+    (**).  If  1a is  a  weak   solution of  (2.1 ) in Q  and
+    n L 2 [0, T ; HI, 2 (Q)] then u is said to be a global weak volution of (2.1) in Q.
+    For arbitrary T E (0, T] let R = S , (0 ).           is a global weak solution
+    of (2.1) in Q with initial values uo on t = 0 then it follows from (1.4) that
+
+
+
+
+    for all g E C~     with compact support in fd. Sote that if’ u is a weak so-
+    lution of (2.1) in D then 1t is a global weak solution of (2.1)       X (~, T]
+    with initial values u (x, 6) on t = 8 for any bounded open domain such
+    that Q c and any             T). 1n the proof of the main result of this sec-
+    tion we will need two properties of global weak solutions. Before formulating
+    the main result we derive these properties.
+         If u is a global weak solution of (2.1) in Q with initial values uo on
+    t = 0 then
+
+
+
+    and
+
+
+
+
+    for all t E [0, TI and 1p E L2 (fj), where it (x, 0) is interpreted as Uo (x). Let
+
+
+
+
+    Since u E L2t 00 (Q) we know that   = 0. Suppose that E =t= 0. Then given
+I        there exists a sequence of points      in C E such that t; - s. If this
+    were not the case then E would contain a neighborhood of s in contradic-
+    tion to     = 0. The weak compactness of bounded sets in L2 (~3) and
+                               imply the existence of a function
+    and a subsequence, which we again denote by          such tlmt
+    weahly in L2 (5~~, Moreover,                                in (2.2) and fake
+                                                                                          623
+
+
+                        Then letting tj - s we obtain ,
+
+
+
+
+On the other hand, (2.2) also holds for T = s and it follows that
+
+
+
+
+for                             Since    Co (~) is dense in              this   implies   that
+               I as functions in L2 (0) and, in particular, that
+                        Hence the assumption that              leads to a contra-
+diction and (2.3) holds. Now let a and T be any two points of [0, TJ with
+a    T. It follows from (2.2) that
+
+
+
+
+for any                  Thus
+
+
+
+
+for all 6[(), T]J and cp E       In view of (2.3) and the density of
+in 7~(~), (2.4) follows easily.
+     The main result of this section is the following lemma concerning
+global weak solutions of (2.1) in Q.
+                  1. Let 2c be cr global ’weak   solutaon of (2.1)
+zoitle                      and                   be a non-negative smooth          function
+Buch that
+
+
+
+l’Ite)-e exist positive constantR a, f, 0          t1tt,,t
+aoid p ] 0
+
+
+
+
+;         della                  l’isa
+624
+
+        the norms at-e taken over the Bet          with                      and
+
+
+
+
+1.’he constants 0153 and f3 depend only on the             of -L, while e depends
+only  on  the structure   of L, T,     the  exponents p, q for G
+      By  the  structure   of L  we mean   it and the  quantities which occur in
+the hypotheses (H). In particular, a depends only on n, M and v, while fl
+depends only on ~~, Mo and v. The explicit forms of a, f3 and C are given in
+the proof of Lemma 1.
+      In the proof of Lemma, 1 and elsewhere in the paper we will need the
+following interpolation lemma.
+
+     LEMMA 2. If                                           then a
+for all values of p’ at¡d q’ whose Holder conjugates p and q satisfy
+
+
+
+Moreover
+
+
+
+where                      and K is a positive corzstant which depends only oaz n
+           I and only on p
+     This lemma is a slightly improved version of Lemma 3 of reference [6].
+Specifically, in reference [6J the constant K depends on ~ I in the case ~i=2,
+while here g is independent of ~ I for all 9~ ~ 1. We shall prove Lemma 1
+only for the case it = 2 and refer the reader to [6] for the remaining cases.
+    PROOF or LEMMA 2 FOR THE CASE M = 2.             By Nirenberg’s form of the
+                                ..
+
+
+Sobolev theorem [20]
+
+
+
+
+for p &#x3E; 1 and almost all               were                   Hence
+                                                                          625
+
+               "
+
+
+
+
+provided that :                    Thus it follows from   Young’s inequality
+that
+
+
+
+
+     PROOF OF LEMMA 1. Without loss of generality we may set 8 ~ 0. To
+derive the required estimate it is necessary to take ~2 e2h u as the test
+function in (2.2). It is obvious that this cannot be done directly since
+~2 e2h u is not a 01 (QT) function with compact support in 0, and in par.
+ticular, it does not have a derivate with respect to t even in the dis-
+tribution sense. Thus the proof is divided into two parts. In the first
+part we show that the equation obtained by formally substituting 99 = ~2
+e2h It in (2.2) is in fact valid. That is, if u is a global weak solution of
+(2.1) in Q then u satisfies
+
+
+
+
+for all 1" E [0, T’~. To accomplish this we use a regularization technique as
+in reference [3]. The second part of the proof consists of the actual deri-
+vation of the required estimate from (2.5).
+     In view of the choice of ~,
+
+
+
+
+Thus, in particular, there exists a sequence                  functions with
+compact support in 0 such that
+
+
+
+where the norms are computed over the set QT for fixed r E (0, T"]. Let (t)
+be an even averaging kernel with support int( 1/ l, where l is a posi-
+626
+
+tive integer. Let   wi denote the convolution of wk with Kl on (0, T), that is,
+
+
+
+and define w,   similarly. For each value of k and I it is clear that
+
+
+
+is a C, (Q,) function with compact support in ~. It is therefore an admis-
+sible test function in (2.2) and we may set 99 = qf to obtain
+
+
+
+
+      We assert that if we hold I fixed and let k --~ oo in (2.6) the result is
+that (2.6) is valid with k deleted. By Minkowski’s and Schwarz’s inequal-
+ities together with the standard properties of averaging kernels [20]
+
+
+
+
+whence
+                                                                             62.7
+
+
+Similarly, since
+
+
+
+
+and
+
+
+
+
+for every          Thus
+
+
+
+
+and, by Lemma 2,
+
+
+
+
+for all exponents p’, q’ such that                Note that w itself also be-
+                                             ’1
+
+longs to .L2p’,2q’ (9,) for the same range of exponenents. Using these facts
+together with the hypotheses eatieflerl by           and u. it is not difficult
+to check that each term in (2.6) tends as k --~ oo to the corresponding term
+ii’ith k deleted. We omit further details.
+      Consider the integral
+
+
+
+
+By Fubini’s theorem and the definition of zal this can be written
+
+
+
+
+Th us, since K, (t) is an even function of t, it follows that V = 0. Using the
+translation continuity of the norm 11IIp, q one shows, in a standard fashion
+            ’I                 and )I                    as l --~ oo for all ap-
+628
+
+
+propriate p, q. Consider
+
+
+
+
+for 1/~ ~ ~. Sincei                and (2.4) holds we have
+
+
+
+
+Thus given             0 there exists 6 ~ 0 such that
+
+
+
+
+for all 101I   6. In particular,      ~ b then
+
+
+
+
+that is,
+
+
+
+Similarly,
+
+
+
+Using these observations it is not difficult to verify that if we first let
+k --~ oo in (2.6) for fixed I and then let I --~ oo ill the resulting equation
+we obtain precisely the equation (2.5). This completes the first part of the
+
+proof of Lemma 1.
+     For the integrands of the second and third terms on the left in (2.5)
+we have the estimates
+                                                                        629
+
+
+and
+
+
+
+
+where
+
+
+
+
+Let 1’1 ,z2 be such that            T’. Write (2.6) for t = rti and r = r2,
+form the difference between these expressions, and apply the estimates
+given above to obtain
+
+
+
+
+Here
+
+
+
+
+and the double integrals are computed on the set
+    Set
+
+
+
+and define
+630
+
+Since L satisfies (H) it is easily seen that
+
+
+
+
+      The functions i         C and a each belong to some space    with
+
+p and q satisfying (**). Let 0 denote the minimum value of
+for the   2M-J-2 pairs (p, q) involved. Note that 0~0~1. Assume
+             where        By H61der’s inequality and Lemma 2
+
+
+
+where
+
+
+
+
+with the norms computed on the set Qo. Similarly, using the inequalities
+of Holder and Young together with Lemma 2, we have
+
+
+
+
+Finally we note that
+
+
+
+In view of these estimates,
+
+
+
+
+Choose
+                                                                             631
+
+
+and a such that
+
+
+
+
+Note that                        min (i, v). rhus using (2.8) and   (2.9) it fol-
+                             ’
+
+lows from      (2.7 ) that
+
+
+
+
+where
+    Let
+
+
+
+and
+
+
+
+
+where the norms are computed on the set Q x (0, T’). Then      (2.10) implies
+
+
+
+
+for x, S z ~ a, + o. Here the integral is taken over the sets
+and the norm is computed over the set                    If we ignore the
+second term on the left in (2.11) it is easily seen that
+
+
+
+for                                          it follows by iteration that
+
+
+
+
+On the other hand, if we ignore the first term on the left in (2.11), set
+T1 = ( j   -
+              and apply (2.12) we obtain the estimate
+632
+
+
+Suppose   that                       for   some   integer       Then   (2.12)
+implies
+
+
+and summing the estimates (2.13) on j from 1 to1 yields
+
+
+
+
+Combining these two estimates, we obtain the assertion of Lemma 1.
+    [The conditions (H ) which are imposed on L are sufficient but not
+necessary to guarantee the simultaneous applicability of the results enu-
+merated in section 1 and of Lemma 1. To use theorems of section1 in the
+strip S one needs, in addition to uniform parabolicity, only that each of
+the functions          and C belong to some space           However, to ob-
+tain Lemma 1 it is necessary to have some further restriction on the be-
+havior of the coefficients of L for large values of x 1. An examination of
+the proof of Lemma 1 reveals that the essential use of (g) is in obtaining
+a lower bound for the expression
+
+
+
+
+where’ ¿ 0 and
+
+
+
+and that the proof can be carried through under less restrictive conditions
+on L. For example, we can assume that : (i) Each of the functions       and
+C belong to some space             with p and q satisfying (**),  and (11.1)
+holds. (ii) There exist positive constants n, b c, fl and a
+which is the sum of a finite number of non-negative functions each belong-
+ing to some space           with     satisfying. (**) such that
+
+
+
+
+holds for all                              and
+    In proving the existence of weak solutions we use Lemma 1 to obtain
+a sequence of functions   (v"+) such that                     uniformly
+bounded. From such a sequence we then extract a subsequence which con-
+verges to the eventual weak solution by means of Lemma 2 and the fol-
+loving lemma.
+                                                                                  633
+
+
+    LEMMA 3. Let lvlnI be a sequence of functions in L           (.) which converges
+weakly to a limit function v w                                     independent of m
+
+     PROOF.   According to the Banach-Saks theorem [17] there exist a sub-
+sequence      ( such that the averages
+
+
+
+strongly in L29 2 ( D). Therefore, there exists a subsequence I of the aver.
+ages which converge to v almost everywhere in D. Let tit (t) denote the
+n.dimensional measure of the set of x E ~ for which ;ki -1-+ v (x, t) and Eo
+denote the set of t E [0, T] for which            0. The measure of Eo is zero,
+                                                      A
+for otherwise we would have a contradiction to          vk-- v
+                                                             almost everywhere
+in D. Let Em denote the set of t E [0, T] for which
+Then for each 1n ~&#x3E; 1 the measure of ~m is zero. Hence the set
+
+also has measure zero. For any      we
+                                               i --~ z~ and henceI
+-~ v2 almost everywhere in 4. By Minkowski’s inequality
+
+
+
+
+Thus, it follows from Fatou’s lemma that 11 V ( ·, ~)                   every t E t E
+Since the measure of E is zero this proves the Lemma.
+
+
+
+2. The Boundary Value Problem.
+
+     Let 0 be a fixed bounded open domain in        and Q = 0 X (0, T]. Given
+functions Fj E 1,2~ 2 ( ~), G E (Q) with p, q satisfying (~~:), and ito E L2 (0) we
+consider the boundary value problem
+
+
+
+
+where L satisfies (B). A function                 is said to be a weak solution
+of probleiii (3.1) if 11, is a global weak solution of equation (3.1) in Q with
+initial values uo on t = 0 and if uE
+634
+
+
+      By the convention adopted in the Introduction, .L is defined for almost
+all (x, t). Extend the domains of definition of the Fj, G and uo by setting
+F,= Q’ = 0 in C ~I and ito = 0     in C S~. Let      A j, ..., Um denote integral
+averages    of     ~4~..., formed
+                           G          with  an  averaging kernel whose support
+lies inx ~2 -~- t2   lit-2 for integer8 ni ~ 1 and define the operators
+
+
+
+
+By the standard properties of integral averages [20] it is easily verified
+that these operators have a uniform structure with respect to ni which is
+completely determined by the structure of L. Let uo denote the integral
+averge of uo formed with a kernel whose support lies inx        ~0-1. If uo
+has compact support, so does u~ for w sufficiently large. Let (Dm) be a
+sequence of open domains with smooth boundaries such that
+            for all 1n ~ 0 and lim Dm = S~. If ito has compact support in
+
+Q set ~’m --_ 1, otherwise for each      let ~,,, = ~... (x) denote     a
+
+function such that Cm = 1     on     and 0 - 1.
+     Consider the sefluence of boundary value problems
+
+
+
+
+Since the coefficients of    and the data are all C°° fonctions, and 8Q’n
+is smooth it follows from the classical existence theory      that for each
+       such that supp              the problem (:3.2) has a unique classical
+solution  I
+
+
+
+
+      THEOREM 1.  Suppose that L satisfies (H), Fj E L2,2 (Q),
+p and q satisfying (**), and Uo E l.2 (S). Then there exists (i unique          so-
+
+lution u of the          value p,’oble1n (3.1). Mo’reove’f, u is the 10eak Unlit in
+L2 [0, T ;   2
+               (S] of the sequence {um}   of cl(lssical solutions of problems (3.2)
+If each Fj belongs to so,nie space Lr, q (Q) 1vith p l’tnd q satisfying (*) then u
+has the following additional
+
+
+
+
+in   Q,       e          only on 1’, Q and the              of L, (Uld the ki are
+the Banle as in            A.
+                                                                                    635
+
+
+          (iii) If uo E       and aD has property (A), then      u   is the   unifoi-tit
+Zitnit of        and ia continuous in ~l.
+
+
+     PROOF. Since u’n E Ot (ijm) and       = 0 for x E aQm it follows that um
+                                                                              (., t) E
+ERolt 2     for each t E [0, 1’], (cf. [20]). Thus, in particular, urn is a weak
+solution of problem (3.2). By Lemma 1,                =1, 8 = 0 ,u = 00,
+
+
+
+
+where fl and e are independent of sii. It is easily verified that
+
+
+
+
+and
+
+
+
+
+Thus
+
+
+
+
+and by Lemma 2,
+
+
+
+
+for all p’, q’ whose Holder conjugates satisfy (* *). Extend the domain of
+definition of urn by setting u’n  0 in
+                                   =              It is clear that the extended
+function belongs to                                          and that the last
+two estimates can be rewritten as
+
+
+
+
+and
+636
+
+
+             ..   -   .
+                          with compact support
+                                    -      -   -
+                                                       and suppose that 99 vanishes
+in    a   neighborhood of t    = T. If i)i is so large that                     and
+8UPP                      then
+
+
+
+
+In view of the weak          compactness of bounded sets in Ll [0, T ; H~’ ~ (Sl)] and
+L2p’, 2q’(Q) it follows from (3.3) and (3.4) that there exists a subsequence of
+the          again denoted         which converges weakly to an element u in
+L2 [H 0 1, 21 and in any finite collection of L2p’. 2q’ (Q) spaces. Moreover, it fol-
+lows from (3.3) and Lemma 3 that it E Ll~ °° (Q). Since the integral averages
+of the coefficients and the data converge strongly in the appropriate spaces,
+the limit as tit - o0 of the integral on the left in (3.5) exists and is equal
+to the corresponding integral with ~n deleted. lkloreover,
+as tit -~ oo. Thus
+
+
+
+
+for all cp E Ct (Q) with compact support in Q which vanish near t = T. In
+particulair,7             then (3.6) holds vith zero on the right hand side,
+and hence u is a global weak solution of equation (3.1) in Q. By an argn-
+ment similar to the one employed in section 1 to derive (1.3) from (2),
+                                                         ’
+
+
+
+it follows from (3.6) that
+
+
+
+
+for all               and for all                  with compact   support       If wre
+take                        then
+                                                                                          637
+
+Thus u is a weak solution of              problem (3.1).   The   uniqueness is a trivial
+consequence of Lemma 1. Note that since u is unique the whole sequence
+      converges to it.
+     If                with p, q satisfying (*), then the results of section 1 are
+applicable. Let K be a compact subset of Q and consider 111 so large that
+          By (3.4) and Theorem B, the sequence              is uniformly bounded,
+and, by Theorem C, it is equicontinuous in g. Therefore, there is a sub-
+sequence which converges uniformly in K. Since any convergent subsequence
+from (u"’) must converge to it it follows that         -~ M uniformly in K. To
+
+prove (ii) we first note that 1111c             implies ’1l1 ~~n M"’    ~rr2. More- z
+
+
+over, if in is sufficiently large                                           for any
+                     .
+                         Thus, by Theorem A, for any (x, t) E ~ and    )It   so   large   that
+
+
+
+
+where e depends only on             and the structure of equation (3.1). Asser-
+tion (ii) follows from (3.6) and (i).
+      If     has property ( A ) then the sequence (Qmj can be chosen so that
+         has property ( ~! ) uniformly whith respect to    Moreover, the integral
+averages um have the same modulus of continuity as. "0. Thus, in view of
+(3.6) and Theorem D (ii), for 111, sufficiently large each um has a bound and
+a modulus of continuity in ~ independent of ni. If we extend the um by
+
+setting     =   0               the resulting sequence is uniformly bounded and
+equicontinuous in Q. Thus the assertion (iii) follows from Arzela’s theorem
+and the uniqueness of it.
+     In various special cases it is possible to simplify the construction of
+the approximating sequence          I in Theorem 1. For example,            is
+smooth and tio has compact support in S~ we can omit the approximation
+of S~ by smoothly bounded domains and take for           the sequence of clas-
+sical solutions of the boundary value problems
+
+
+
+
+with M sufficiently large. If aD is smooth and uo is Holder continuous on
+S~ with uo = 0 on Of2 then            can be taken to be the sequence of
+
+classical solutions of problems (3.7) with the initial values
+instead of  &#x3E;
+638
+
+
+4.   The Cauchy Problem.
+
+      In this section we consider the Cauchy         problem
+
+
+
+where L satisfies (H ), and the F~ G, uo are given functions. The data will be
+required to satisfy certain conditions which will be specified later. A function
+u = u (x, t) is said to be a weak solutioit of problem (4.1) if it is a weak so-
+lution of equation (4.1)        and has initial values uo on t = 0. In partic-
+ular, a weak solution of problem (4.1) is a global weak solution of equation
+(4.1) in Q with initial values Uo on t = 0 for any bounded cylinder Q e S.
+     We are going to prove an existence and a uniqueness theorem for prob-
+lem (4.1). Before doing so however let us recall some of the limitations on
+uniqueness and solvability of the Cauchy problem for the one dimensional
+equation of heat conduction
+
+
+Tihonov has shown that if u is a solution of (4.2) in 8, then it (x, 0) = 0 and
+
+
+
+
+in S for              0 imply u - 0. On the other hand, there are examples
+which show that M(~0)==0 and        ~c = 0 (e~ ~x~Z+‘ )
+                                                  do not imply u = 0. Thus
+one cannot expect to have a unique solution of the Cauchy problem without
+
+excluding solutions which grow too rapidly as -~ oo. The unique solu-
+tion in the class of functions which satisfy (4.3) of equation (4.2) with the
+initial condition it (x, 0) =   is given by
+
+
+
+
+Clearly this solution is valid only for t E [0~1/4~). Thus if’ the data grow
+exponentially for largex ~we cannot expect the solution of the Uauchy
+problem to exist for arbitrary values of t. Analogous restrictions enter into
+the statements of the results given below.
+     A function u = u (x, t) defined and measurable on b’ will be said to
+belong to the class ê2 (8) if there exists a number À ¿ 0 snell that
+
+
+
+It is clear that if u satisfies (4.3) then, &#x3E;
+                                                                                689
+
+     THEOREM 2. There is at tno8t one solution      of the Cauchy problem (4.1)
+in the class (f2 (b~ ).
+
+     PROOF. If there were two solutions of the problem (4.1) in the class
+then their difference tv would also belong to (f2 (8) and be a weak solution
+of the problem
+
+
+
+We will show, using Lemma 1, that this implies ~a == 0. Set
+Then for            we have h                              set
+otherwise set          Thenl                   and hence
+where
+where                            for                                    andI
+is bounded independent of R. By Lemma 1
+
+
+
+
+where 6ii is independent of R. Since                    the integral on the right
+in (4.4) tends to zero as R --~ oo. Hence,
+
+
+
+
+for arbitrary Lo &#x3E; 0 and it follows           0 in 8’. If T’ = T this com-
+pletes the  proof,     otherwise the  proof can be completed  by a finite number
+of applications of the same argument on En X (T’, 2T’), En X (2T’, 3T’), etc.
+
+     THEOREM 3. Let                 fixed and assume T      at/47. Suppose that L
+satisfies  I                                            with p and q satisfying
+                                    thei-e exists a weak solution u of the   Cauchy
+          (4.1 j in b’.
+
+
+
+
+        e is II l)ositit’e coitstant which depends only on T anti the structure of
+equtdion (4.1), a ud                          .,~
+
+
+
+
+                            J’t8a
+640
+
+In  partioular, u belongs to the class ê2 (,S) and hence is the unique solution
+of problem, (4.1) in 4f2 (8).
+    PROOF. Let            X (0, Ti, where Ik =             I    k) for integers
+k ~ 1, and consider the boundary value problems
+
+
+
+
+By Theorem 1, for each value of k there exists a unique weak solution uk
+of problem (4.5). Since uk E L2 [0, T ;Ho’ 2 (} it follows from Lemma 1 with
+                   and ~ == 1 that
+
+
+
+
+where C~ is independent of k and the norms are taken over the set Qk. For
+           we have                             where v = a/4T. Thus
+
+
+
+
+and
+
+
+
+Therefore (4.6) implies that
+
+
+
+
+where e1 depends only on T and the structure of the equation. If we ex-
+tend the domain of definition of the uk by setting uk = 0 forI x] k and
+            then                                               and
+
+
+
+Furthermore
+                                                                            641
+
+       In view of  (4.7) and (4.8) there exists a subsequence of the vectors
+                              ,   ..
+
+
+
+
+                         which we again index by k, and a vector (
+            such that             and e              weakly in L2,2 (8). Let Q
+be any bounded cylinder in 8 and let q be an arbitrary .L~~ 2 ( Q) function.
+
+Let x0 denote the characteristic function of Q and set q;         _       ihen
+clearly 9            Thus
+
+
+
+
+that is, uk -+ u weakly in L2,2 (Q) for any bounded Q c S. Similarly,
+weakly in L2~ 2 (Q) for any bounded Q c S. Since
+
+
+
+
+for        G’~    with compact support in     I it follows that ui is the dis-
+tribution derivative of it with respect to x; and we will write        instead
+of ui. Note that for the limit function we have
+
+
+
+
+                              Moreover,    it follows from    (4.7) and Lemma 3
+that
+
+
+and
+       Let 0 be an arbitrary bounded open set in ’n and let D’ be another
+bounded open set such that                              be a 000 (E") fnnction
+such that                                                    By Lemma 2
+
+
+for all p’ and q’ whose Holder coniugates satisfy (**). Thus
+
+
+
+
+and according to (4.7) and   (4.8) ve have II
+642
+
+                                               Hence
+
+
+
+
+independent of k. Therefore, in any bounded cylinder Q, we can select
+a subsequence of the subsequence selected in the last paragraph which
+
+converges weakly to u in any finite collection of spaces L2p’~ 2q’ (Q) with p’
+and q’ whose Holder conjugates satisfy (**).
+    Let q be an arbitrary C1 (~5) function with compact support in      which
+vanishes near t   T. For all k so large that (supp
+                 ---                                   n S ~ Qk we love
+
+
+
+
+If we let k- oo through the appropriate subsequence it follows from
+the considerations of the two previous paragraphs that (4.10) also holds
+with k deleted. Thus, as in the proof of Theorem 1, we conclude that u
+is a weak solution of the Cauchy problem (4.1). Since
+we have, in view of (4.9),
+
+
+
+
+Hence It belongs to the class (f2 (b‘) and is the unique solution of problem
+(4.1) in (f2 (8). Note that any convergent subsequence of the Uk must con-
+verge to function (f2 (8) and, therefore, to tt. It follows that the whole se-
+quence uk --~ u weakly in the appropriate spaces.
+
+      COROLLARY 3.1     Suppose that L satisfies (B), and tlre functions G and
+tlo satrs f y the hypotheses of’ Theorem 3. If    each j, the function e-Yx   be-
+long8 to 8otne space                 with p and q              (*) then the
+(Ilk) of weak solutions of the                  problems (4.6) conve’fge
+to u in any conlpact subset of S.
+                                                                                    643
+
+wltet’6 e depends ottly        on    T and the structure    of equation (4.1), and h i8
+given iit Theore11l 3.
+     PROOF. Observe that
+
+
+
+
+Thus the proof of Theorem 4 can be carried through without essential change
+in the present case. In view of (4.8), the sequence (Uki is uniformly bound-
+ed in the L2,2 norm in any bounded subset of S. Therefore, since the
+Fj and G are locally in the appropriate                  it follows from The-
+orems B and C that the sequence (Uk) is uniformly bounded and equicon-
+tinuous in any compact subset of S. The uniform convergence of uk to 11
+then follows by Arzela’s theorem and the uniqueness.
+     We now consides the special case of problem (4.1) in which ’1 =~ 0 and
+uo - 0. In this  case, using Theorem B and Lemma 1, we derive a point-
+wise bound foruin terms of the . and Q’-
+
+     COROLLARY 3.2. Let u be the weak solution iti the cla8,s 4f2 (S ) of the
+Caucliy problem
+
+
+
+where L     satisfies (H)                     I   for soine p and q satisfying (*), and
+               with p and q satisfying             Then for all
+
+
+
+
+1vltere e   is a positive constant which depend, on T and the structure of the
+
+equation.            u   is   uniformly             continuous in S.
+
+     PROOF.           be      an    arbitrary fixed point in Bn. By Lemma 1, with
+
+
+
+
+where C’ is independent of k and
+644
+
+Since                           it is easily verified that
+
+
+
+
+for all exponents r, 8 ~ 1, where
+
+
+
+
+Thus, by H61der’s inequality,
+
+
+
+
+where                                           and
+
+
+
+
+where                               Here e* and e’      depend only   on   the
+structure of the equation, It follows that
+
+
+
+
+where C~i depends only on T (or an upper bound for 1’) and the structure
+of the equation. Let                                 If k is so large that
+       ; then
+
+
+
+
+and hence
+
+
+
+where e2 depends only on T and the structure. Since 1tk -+ u weakly in
+           it follows that              Extend the domain of definition
+of 1c by setting it = 0 for t and let .
+Then clearly                  By the Extension Principle and Theorem B,
+                                                                            645
+
+
+for                    I and 0 ~ t ~ ~’ we have
+
+
+
+
+Since ~ is arbitrary this proves the first assertion. The second assertion
+follows immediately from the Extension Principle, Theorem C and (4.12).
+     Consider the sequence of Cauchy problems
+
+
+
+
+for integers tit &#x3E; 1, where
+
+
+
+
+and ~m denotes the integral average of yP formed with a kernel whose sup-
+port lies in I X I’-+t2 ",-2. As we noted in section 3, the equations (4.13)
+have a uniform structures
+
+
+      COROLLARY 3.3.              hypotheses of           3.2, u i8 the
+       in any compact ,ub,et of S of the sequence   (um) of cla,sicn,l solutions
+o.l the Olfuchy probletus (4.13).
+
+     PROOF. For each integer            the problem (4.13) has a unique clas-
+sical solution    in the class E2 (S) (cf. [10]) and it is easily verified that
+um is also the weak solution of problem (4.13) in class ê2 (8). By Corollary
+3.1 and the fact that integral averaging on 8 does not increase norm
+
+
+
+
+where e depends only on T and the uniform structure. It follo,v8, by the
+argument used to prove Theorem 3 and the strong convergence of integral
+averages, that the sequence ( um) converges to u weakly in the appropriate
+space. In view of Corollary 3.2, the sequence (um) is uniformly bounded
+and equicontinuous in ,S. The assertion then follows from Arzela’s theorem
+aiid the uniqueness.
+646
+
+
+
+5.    Non-negative Solutions of the Cauchy Problem.
+     The results obtained in the previous three sections are not restricted
+to non-negative solutions of linear parabolic equations. Beginning with this
+section, however, we shall use these general results together with the re-
+sults quoted in section 1 to study the properties of various non-negative
+solutions. Specifically, in this section we will characterize the non-negative
+weak solutions of the Cauchy problem
+
+
+
+
+where L satisfies (8) and "0 is a given function in              It is easily
+seen that if the problem, (5.1) admits a non negative solution then we must
+have "0 ~ 0 almost everywhere in En. Our first result is a generalization
+of a theorem first proved by Widder [22] for the equation of heat conduction.
+
+     LEMMA 4. Suppose that L                 ( 8 ). If u is a non-negative weak
+solution of the Oa4ch,y problem (5.1) with tto --_ 0 then It == 0 ~~~ S.
+
+    PROOF. Extend the domain of detiniton of u by setting 1t = 0 for t 0.
+The extended function is non-negative, locally bounded and continuous in
+En X (- 00, T]. By the Extension Principle and Theorem .E
+
+
+
+
+for all                                 be arbitrary and set
+Then for
+
+
+
+
+Clearly, if u (0, T) = 0 then u - 0 in S8. On the other hand, if u (0,
+then (5.2) implies that            and it follows, as in the proof of Theorem 2,
+that u = 0 in 8e. Finally, since e is arbitrary and u is continuous we
+conclude that u = 0 in b’.
+     Since the difference between two non-negative functions does not neces-
+sarily have a constant sign, Lemma 4 does not imply uniqueness of a non-
+negative solution of problem (5.1 ). The uniqueness does follow from our
+next result which characterizes a non-negative solution of problem (5.1) as
+the limit of a certain well-defined sequence ot’ functions associated with
+Land "0.
+                                                                                647
+
+
+     Let                   and                    For each integer
+            ) denote a G’o (En) function such that ’It =1 for
+       for                           and I is bounded independent of k.
+Consider the sequence of boundary value problems
+
+
+
+
+According to Theorem 1, for each k there exists a unique weak solution ~ck
+of the boundary value problem ~5.3). Extend the domain of definition of ti k
+by setting Uk = 0 for,x !  k and 0     t --- T.
+
+
+     THEOREM 4. Suppose that L satisfies (H) and uo E L2 (En). Let u be a
+non-negative weak solution of the Cauchy      (51). Then at every point of S,
+
+
+
+where ilgkl is the sequence of         solutions of the bouudary valite problems
+(5.3). Moreover,  the coitvet-genee is          on evet.y conepact sub.et of S.
+
+
+     PROOF. We first show that the sequence            (ull)is non-negative and
+non-decreasing, that is,
+
+
+for all (x, t) E S and all k ~ 3. Acoording to Theorem 1 (i) and the remark
+at the end of section 3, uk is the limit at each point of Qk of the sequence
+Uk, m of classical solutions of the problems
+
+
+
+
+Extend the domain of definition of Uk, m by setting             =   0 for
+and             Clearly              and hence1
+                                                                 then Uk, m = 0 and
+                  .    On the other hand, 10m ~&#x3E; 0 on the parabolic boundary of
+Qk. Since                 in Qk, it follows from the classical maximum prin-
+ciple that wm &#x3E; 0 in Qk. Therefore                    in "8 and we obtain (5.4)
+by letting m -~ 00.
+     We assert that the sequence           is bounded above by tt, that is,
+648
+
+for all         and all Ic ~ 3. Since the inequality (5.5) is trivial forI x Ik
+and 0 t ~ T, it suffices to prove it for points in Qk. Let (xo, to) be a
+fixed point in Qk. For fixed k and integers1 such that to &#x3E; 1/1 consider
+the sequence of boundary value problems
+
+
+
+
+Since a~k is smooth and                                 it follows from Theorem 1
+(iii) and the remark at the end of section 3 that for eachL the problem
+(5.6) has a unique weak solution v",and                Set
+Then                          on the parabolic boundary of      and wk,l
+is a weak solution of L~c = 0 in Qkl. Hence, by Theorem A, ~k, ~~0 in
+Q"l. In particular,
+
+
+for       ,   v
+               It remains to be shown that
+                  ,                                        asi
+      Define the function
+
+
+
+
+Clearly                  Moreover, it is easily verified that
+and satisfies
+
+
+
+
+for all               with compact support in Zk which vanish near t =- 1’. By
+Lemma 1,
+                                                                                      649
+
+
+independent of l. On the other hand,         since   u   is a weak solution of the
+Cauchy problem, we have
+
+
+Therefore
+
+
+
+
+independent of l. In view of Lemma 2, there exists a subsequence                   of the
+A                    A                    1                           2
+;k,which converges weakly to a function vk in L2 [0, T; H’ 2 () and
+L2p’, 2q‘(Qk) for any finite collection of admissible exponents p and q. Moreover,
+                            .
+
+according to Lemma 3,               Note that the second integral on the
+left in (5.8) tends to zero asI- oo. Thus, letting1 -* oo in (5.8), we
+                 A                               A
+
+conclude that uk is the weak solution of problem (5.3). Therefore ;1: = uk.
+                                                         A
+
+Finally, by Theorems B and C, the sequence                       is uniformly bounded
+and equicontinuous in any compact subset of                  Qk. Hence, -,
+         and (5.5) follows from (5.7).
+    According to (5.4) and (5.7), the sequence       is non-decreasing and
+bounded above by u in b‘. Hence there exists a function zv=za (x, t) such that
+
+
+
+
+and uk (X, t) -+ u’ (x, t) as k -+ oo for all (x, t) E S. In view of (5.5) and Theo-
+rem  C, the sequence           starting from a sufficiently large k is bounded
+and equicontinuous in any compact subset of S. Therefore the limit func-
+tion w is continuous in ~S. We assert that w is a weak solution of the
+Cauchy problem (5.1).
+      Let S~ and !J’ be    arbitrary bounded    open domains in En such that
+~
+
+
+                          ’] and                         Let ~              be a
+function such that ~ = 1        on D,,~’ and                          I   Take k so large
+that i2’      By Lemma 1, with s = 0 and
+
+
+
+
+Therefore, since
+650
+
+
+independent of k. Moreover, by Lemma 2,
+
+
+
+independent of k for any admissible exponents p and q. It follows that
+there exists a subsequence of the M which converges weakly to a function
+A
+                                                                ,   ,
+u   in J[0,T;2 2 (0)] and any finite collection of space L2p’ Zq (), where,
+               A
+
+by Lemma 3, M~J°°(). However, Since                pointwise in 8 we have
+      . Thus, in particular, w
+
+     Let q; be an arbitrary 01 (S) function with compact support in En and
+which vanishes near t   =  T. Choose S~ so that (supp q;) n 8 c Q. For k so
+large that Q C Ik we  have                                                        ,
+
+
+
+
+In view of the results of the last   paragraph, if we let               we   obtain
+
+
+
+
+and it follows that w is a weak solution of the Cauchy problem (5.1).
+    The function u - to is a weak solution of the Cauchy problem
+
+
+
+
+and, in view of (5.9), u w &#x3E; 0 in S. We therefore conclude from Lemma 4
+                        -
+
+
+
+
+that w = u in S. Since Uk converges monotonically to u and since it is
+continuous in compact -subsets of 8, ttk -+ u uniformly on compact subsets
+of S by Dini’s monotone convergence theorem.
+     An immediate consequence of Theorem 4 is the uniqueness of a non-
+negative solution of problem (5.1).
+
+     COROLLARY 4.1. 1.( L satisfies (H), ito E     ( En) and                 almost
+everywhere in,     then the Cauchy problem (5.1 ) lfdntits at           one    non-
+
+negative weak solution.
+                                                                                   651
+
+     On the other hand, the proof of 2’heorem 4 can be reinterpreted to
+yield the following criterion for the existence of a non-negative weak solu-
+tion of problems (5.1).
+
+
+      COROLLARY 4.2. Suppose that L satisfies (H), 1’0 E .£foe (En) aud vo --&#x3E; 0
+al1nost everywhere in En. The             probletn (5.1) pos8e88e8 a non-negative
+weak solution 9f      only if there exists a function II (x, t) E L2 [0,    (En)]
+8tich that      U                      in S.
+
+     PROOF. If there exists a non-negative weak solution it of problem (5.1)
+then u E L2 [0, ’1’;          and, in view of (5.5), Itk 1, in S. Thus we may
+take U  =  u.  If  itk.- U almost everywhere in ~5, then, since (uk) is a non-
+decreasing sequence of non-negative functions,
+
+
+
+exists almost everywhere in Sand 0             U. The proof that w is a solu-
+tion of problem (5.1) is identical to the corresponding part of the proof of
+Theorem 4.
+
+
+
+6. Existence of the Fundamental Solution and              Green’s Function.
+
+    Let D = ~ x (0, TJ             is either a bounded open domain contain-
+ed in En or Ell itself, and consider the problem
+
+
+
+
+where L satisfies (H), and the functions Fo,      .~i , .,. ,   all   belong to a sin-
+gle space Lp, q(D) ,vith p, q satisfying (*).       En we take it to be the
+                                                      =
+
+
+weak solution in ~2 (~.f) of the Cauchy problem (6.1), while if Z is bounded
+we  take u to be the weak solution of the boundary value problem consist-
+ing of (6.1) and the condition u = 0 on             In either case, accord-
+ing  to Theorem  1 (ii) or Corollary 3.2, we have
+
+
+
+
+fur ~~11
+652
+
+    Let £P, q denote the Banach space of vectors W            =
+                                                               ( Wo ,    ...,W n)
+such that              for j = 0, 1,... , it with either of the equivalent norms
+
+
+
+
+According to (6.2), the value at a point in D of the solution u of the bound-
+ary value or Cauchy problem (6.1) is a bounded linear functional on
+,I that is, u (x, t) (jx, t (F), where q%1E
+                           =
+                                                      Moreover, 11         e.
+The remainder of this section is devoted to deriving a more precise char-
+acterization of 91,, t .
+      Denote by                collection of vectors            such that
+
+
+
+
+for all q E C~ (D). Let u be the weak solution of the          boundary     value   or
+
+Cauchy problem (6.1) and let u be the weak solution of’ the corresponding
+problem for
+
+
+
+where                              with the   same     p and q as
+Then
+
+
+
+
+in   D, and w   =          is a solution of the corresponding problem for
+
+
+
+
+In particular, w satisfies
+
+
+
+
+for all              Thus, if .               it follows from the uniqueness for
+the boundary value or Cauchy problem tlut zv = 0. Therefore
+                                                                                          653
+
+
+implies that u = u and (6.2) can be replaced by
+
+
+
+     Assume now that p and q satisfy (*) and are finite. Consider
+
+
+
+
+where                SincE       ’   is defined for all                      we   have
+                                      ). Let M denote the        mapping   from
+           given by
+
+For the                   norm         we   take
+
+
+
+Then, using the        norm in .                    M is   an   isometric isomorphism of
+        ] onto a linear subgpace                                Define a linear functional
+    on        by                             Then
+
+
+
+
+By the Hahn-Banach theorem there exists an element                                such that
+                     q’
+          on         andI                  Moreover, since          is isomet-
+rically   isomorphic to Ep, q it follows from a theorem of Bochner and  Taylor
+[8] that there exists a unique E Ep, q such that                                  and
+
+
+
+
+for all                                      then
+
+
+
+
+Since                            it follovs that                   ,   On the other     hand,
+
+
+
+     (2) By definition J
+654
+
+
+Therefore, we conclude from (6.3) that
+
+
+
+where                     that is,                     where                      and
+
+
+
+
+     We now interpret the result derived above for the specific problems of
+interest. Let u denote the weak solution in ~9 (/S) of the Cauchy problem
+
+
+
+
+where L satis6es (H) and F = (Fo, ... , Fn) E .C~p~ 9 for p and q satisfying (*).
+In this case the constant C~ in (6.4) depends only on T, the structure of
+L, and the exponents p and q for F. Suppose first that both p and q are
+finite. Then since                                     and               is reflexive
+it follows from a theorem of Hochuer and            Taylor [81    that there exists
+a unique ~J                    such that (                                     and
+
+
+
+
+In view of (6.4),   we    have
+
+
+
+
+[It should also be shown that r is independent of the exponents p and q.
+However, this is     an      easy consequence of Theorem 2 and
+         T ; Lilo,, (En)], and we omit it.]
+      For integers k ~ 1 let Ek = ~x ; ~x ~        k) and = ~k ~~ (0, T]. Four any
+pair  of  exponents p’ and q’       whose  Holder  conjugates are finite and satisfy
+(-) we have                                  Hence ¡"EL8[O, ’1’;               for all
+exponents r E [1, p’] and 8 E [1, q’j, Let El’ q denote the subset EP’ q      consist-
+ing of vectors which vanish for                   and 0    t   T. If F E j}"oo, q with
+2 q ~ oo then F E                for some finite exponents p and q which satisfy
+(*). Let u be the           solution iu ê2    of the Cauchy problem (6.5) with data
+                                                                                 655
+
+                          where 2         q    oo.   Then the representation formula
+(6.6) holds for u and we have
+
+
+
+
+SinceA                               it follows from (6.2) that
+
+
+
+where e is independent of k.           Thus, if we let k ~ oo~ we obtain
+
+
+In particular then, (6.7) is also valid when p = oo and 2 C q oo.
+    If            let             cvhere xx is the characteristic function of
+Qk, and  consider  the Cauchy problem
+
+
+
+This problem has a unique weak solution uk in ê2 (S), where, according to
+Corollary 3.1,
+
+
+
+On the other hand, if ip is a Ci (~~) function with compact support in En
+which vanishes near t = T and if Ic is so large that (sup q)          then
+
+
+
+
+By the arguments used to prove Theorem 3 and Corollary 3.1,uk converges
+pointwise in 8 to the weak solution it in C2 of the Cauchy problem (6.5)
+with data F. Four each k,           so that
+
+
+
+
+Therefore, in view of (6.8),
+
+
+
+
+                           11
+9        delta        I
+                                ~-
+656
+
+and the representation formula (6.6) also holds when p = oo and 2 q ~ oo.
+     Suppose that F E .~p~ °° with max      2) p oo. Then F E 121’, q for all
+     1
+q h and,     in particular, for some finite  q such that p and q satisfy (*).
+Thus if it is the weak solution in C2 (~f) of the problem (6.5) with data F,
+then
+                                    f8 f8
+
+
+
+
+On the other hand,                  H 1, P’ (En)] for any pair of exponents p’
+and q’ whose Holder conjugates are finite and satisfy (*) implies that
+            H~~p~ (L’~)]. Therefore, it follows from (6.2) and the representa-
+tion formula that
+
+
+for   max     (n, 2)   p    oo.
+
+      Let n            be the weak solutions in ê2 (8) of the Cauchy problem
+(6.6) with data F and F respectively, and let to === ~ 2013 ~. If F F in  =
+
+
+
+So Bn X (0, to] for some to E (0, T) then it follows from Theorem 2 that
+to = 0 in So. Thus the value of the solution of the problem (6.5) at a
+
+point («, t) E 8 is independent of the values of F in En X (t, T]. We there
+fore conclude from the representation formula (6.7) that             r) = 0
+for or &#x3E; t. To summarize, we have proved the following theorem.
+
+      THEOREM 5. Suppose that L                  (H).         each
+            unique function of ($, T)       t;   T)             which has the fol-
+lowing properties.
+        (i) For each pair of exponents p, q satisfyngI
+               and
+
+
+
+where C is a constant which depends only on T, the structure of L, aud the
+                q.
+      (ii) If u is the weak soltttion in ~2 (~S) of the Cauchy               (6.5),
+where the data                        with p, q         (*), then for till (x,t)E S
+
+
+
+
+    The function ’x, t; , z) will be called the weak fundamental solution of
+the equation Lit = 0. Theorem 5 shows that it is analogous in many ways
+                                                                                        657
+
+to the classical fundamental solution. The results which will be proved in
+the next four sections demonstrate that this analogy is quite complete.
+     Now let u denote the weak solution of the boundary value problem
+
+
+
+
+            .En is bounded and 1J’ = (~,... ~    E     with p, q satisfying
+(*). If p and q are finite, then by the same argnment which led to (6.6) and
+(6.7), there exists a unique                      such that
+
+
+
+
+and
+
+
+
+where e depends only on 7’1 1 D I, the structure of L, and the exponents
+1), q. Moreover, the proof that the representation formula (6.10) and the
+estimate (6.11) remain valid when p or q is infinite is somewhat simpler
+in the present case since S~ is bounded. Finally, it is easily seen that
+ y (.e, t ; ~, ~) = 0      &#x3E; t. The function y (x~ t ; r) will be called the weak
+             function for the equation Lu = 0 in .
+     THEUREM 6. Sttppo,e tlurt L satisfies           (H) and that Q x (0, TI,
+2ahere Q zs a bounded open domain in h:n.               for each (x, t) E Q there exists
+a   unique ftUlctiot of (, t), 7, (x, t;   ),          in Q which hall the following
+                                                                 ’
+
+
+
+
+      ,
+          (i~ For each pait’ of expolients p, q satisfying (
+
+
+
+u)here e is a constant which depends only on T,    I, tlae 8tsvcture of L, and
+the exponents p, q,
+       (ii) If u is the 2aenk solution oj. the boundary value problem (6.9),
+wtcere the data      F = (Fo , ... , F,,) E Ep, q with p, q   8ati.Nfyiiig (*), then for all
+658
+
+
+
+      It is clear that    everything      which has been done in this section ap-
+plies, with obvious modifications, to the adjoint operator             Z, and, in par-
+ticular, to the adjoint Cauchy problem
+
+
+
+and the adjoint boundary value problem
+
+
+
+
+                                      N               N
+
+The weak fundamental solution                                  satisfies (i) and (the
+                                                                       N
+
+analogue of) (ii)    of Theorem   5,      while (iii) is replaced by
+                                                           N
+                                                                          r) = 0
+for x    t. Similarly, the weak Green’s function / (x,            z) of Lu 0 in=
+
+
+
+(~ satisfies (i) and (ii) of Theorem 6 together r (x, t ; ~, T) = 0 for T t.
+
+7. Classical Fundamental Solution and Gi-een’s Functions.
+
+
+     We consider the operators Land L in strip S. If L satisfies (H.1)
+and if the coefficients of L are bounded and smooth, then Land               L possess
+classical fundamental solutions in 8 and Green’s functions in smoothly bound-
+ed cylinders Q. In this section we enumerate various known properties
+of these functions and derive bounds for them. This information will be used
+in the next section to show that the weak fundamental solutions and Green’s
+functions are limits of the corresponding classical functions and share many
+of their properties. Since the degree of smoothness beyond that required
+for the construction of classical solutions is irrelevant, we will make the
+usual quantitative assumption that L satisfies (H) and the temporary qual-
+itative assumption that the coefficients of L are 000 (8) functions.
+     Under the assumptions given above, it is well known that there exists
+a classical fundamental solution of Lu         =
+                                                 0, that is, a function r(x, t; ~, ~)
+defined for (x, t, ~, ~) E 8 x 8 except when both x = ~ and t = Ty which is
+continuous for t &#x3E; z, and which has the folloving properties (cf. [10] and [12]).
+                          1
+                                                                              659
+
+                                                                   where
+
+
+
+
+is the fundamental solution of x4 it = tIt, and the positive constants K, x
+depend on the bounds and moduli of continuity of the coefficients of L. ln
+particular, 1’ ( . ~ · ; ~, t) and ;.,.) belong to         (8) for all p’ , q’
+whose Holder conjugates satisfy (* ~).                                  ,
+
+
+
+
+     (F.3) For fixed (~, t) E En X [0, T), ~’ is continuously differentiable with
+respect to t, twice continuously differentiable with respect           and satis.
+fies .LI’ = 0 as function of (x, t) in  X (z, 1’]. For fixed (x~t) En X (0,T ), r
+                                                                  E
+is continuously differentiable with respect to ’1’, twice continuously different-
+tiable with respect            and   satisfies Er = 0 as a function of (, ) in
+
+    (F.4) Suppose     i               ) for some     and
+where p and q                  Then
+
+
+
+
+is a classical solution of .                                         sufficiently
+close to z, and
+
+
+
+
+is a classical solution of           in 1          for          sufficiently
+close to t. If y is sufficiently small then T’ = 0 and T* = T. Moreover, if
+uo is continuous at x = y then
+
+
+
+
+    (F.5)   For all
+
+
+
+
+    According to Theorem 5 there exists a weak fundamental solution of
+Lit~-0.     temporarily denote the weak fundamental solution by ~’’ and
+660
+
+show that we can identify it with the classical fundamental solution 1’. To
+this end, consider the Cauchy problem
+
+
+
+
+where                         for some fixed                 -I- 2. In view of (F.4),
+
+
+
+
+is a classical solution of this problem, which, in view of (F.2), is bounded
+and therefore in class ê,2 (S). Moreover, it follows from the Schauder type
+theory for parabolic equations [10] that u is continuously differentiable with
+respect to t and twice continuously differentiable with respect to x in any
+compact subset of 8 = E n X [0, T]. Thus u is also the weak solution in 4f2 (S)
+of problem (7.1) and, by Theorem 5, we have                              .
+
+
+
+
+for all (x, t) E S. Consequently
+
+
+
+
+for a~ll (x, t) E ~5, According to (F.2) and Theorem 5 (i), both r and 7~ be-
+long to                 as functions of (~, ~c). Since                    is dense in
+            it follows from (7.2) that for every (x, t)        we have
+                      for almost every (~, T) E S. Therefore it is unnecessary to dis-
+tinguish between the weak and classical fundamental solutions of Lu = 0.
+Note that, in view of (F.3),
+
+
+
+
+where r is the fundamental solution of Zu = 0 in the variables (~ r).
+     The upper bound for 1’ given in (F.2) depends on the moduli of con-
+tinuity of the coefficients of L and is therefore not applicable to the study
+of weak solutions of equations whose coefficients are not necessarily contain
+uous. This bound does, however, hold for all parabolic equations with
+                                                                                   661
+
+smooth coefficients regardless of whether the equation has divergence struc-
+ture or not. As the next theorem shows, if we restrict our attention to di-
+vergence structure equations it is then possible to derive upper and lower
+bounds for 1’ which have the same form as the upper bound in (F.2), but
+which are independent of the smoothness of the coefficients of L.
+
+      THEOREM 7. Suppose that L satisfies (9) and the coefficients of’ L a1’6
+stnootlt. Then thet’e exzst po,itive constants i a2 and e depending     on T
+and the structure Of L such Ihtd
+
+
+
+
+.for all                    with t &#x3E; T, where gi x, t) ia the fundamental solution
+~
+     PROOF OF THE LOWER BOUND. Since                t; ~, ~) is a non-negative weak
+solution of Lit = 0 for (x, t) E En X (1’, T) it follows from Theorem F that
+
+
+
+
+if for some
+
+
+
+
+Here e, is a positive constant depending only on x, T and the structure of
+L, and ez is a positive constant depending only on T and the structure of
+L. Ilence in order to establish the lover bound in Theorem 7 it suffices to
+make an appropriate choice of x and estimate 9N from below.
+     Let (~, or) be an arbitrary fixed point in 8 and let t be an arbitrary
+fixed point in the open interval    T). Consider the function
+
+
+
+
+for 8      t, where x = 16/P. In view of (F.1), (F.2) and (F.4), v is non-nega-
+tive and bounded in                           for                       and
+
+
+
+
+for all y such that                       It follows from the 8chauder.ty»e
+theory [10] that v is continuously differentiable with respect to y for (,1/. s)
+662
+
+in any compact subset of                                Hence v is a weak
+solution of          in {                             with  initial values 1
+on 8   =t. Extend the domain of definition of v by setting v =1 for 8 ) t.
+
+Then, by the Extension Principle and Theorem H (for Lu          =
+                                                                    0) with 62   =
+
+
+                            we   have
+
+
+
+
+where e depends only on T and the structure of L. Therefore for ~
+we have                            independent of (~, 1’)  and the assertion
+follows from (7.4).
+     To prove the validity of the upper bound in Theorem 7 we will need two
+lemmas concerning weak solutions of Lu = 0. For both of these lemmas
+the smoothness of the coefficients of L is totally irrelevant. The first re~
+sult can be derived from Corollary 3.2 if the coefficients .A j and C? belong
+to the appropriate            spaces. In any event, the proof is quite simi-
+lar to that of Corollory 3.2.
+
+       LEMMA. 5.      Suppose L satisfies (H) and let                    for any
+                   ~-i the weak solution i~z    of      Cauchy problem
+
+then
+
+
+iit        where C i8 a constant which depends only on T and the structure of L.
+
+     PROOF. It snf6ees to prove the Lemma for ’f} = 0. For integers k ~ 1,
+let                ~) and                  If ux denotes the weak solu-
+tion of the boundary value problem
+
+
+
+
+then, as we have seen in the proof of Theorem 3, uk -~ u weakly in
+for any bounded cylinder Q c S. By lemma 1, with C == 1,
+                                                                             663
+
+where e depends only on T and the structure of L, and
+
+
+
+
+for an arbitrary fixed           Since
+
+
+
+
+it follows that
+
+
+
+where el    depends only   on   T and the structure of L, andA
+Let                                      If k is so   large that          then
+
+
+
+
+and hence                       Extend the domain of definition of u by sets
+ting u =1 for t     0 and let                                    Clearly
+                   where e3 depends only on T and the structure. By the
+Extension Principle and Theorem B we have
+
+
+
+
+forI                 and 0          T. Since ~ is      arbitrary this proves the
+assertion.
+     If u is the solution of the Cauchy problem
+
+
+
+
+and if !to = 0 in some ball Z’ centered at x = y, then it is plausable to
+expect that u (y, t) will be small when t - r~ is small in relation to the
+radius of 1£. The next lemma gives a precise formulation of this observation.
+
+    LEMMA 6. Suppose              satisfies (H) and "0 is a            function
+such that             forx - yI a, lvhe1.e y E Ell and a &#x3E; 0 at’e fixed. If
+            is the zceak solution of the Cauchy problem (7.5), then for any
+       J sucla that 0
+
+
+whe1’e e is a constant which depends only on T attd the structure of L.
+664
+
+
+      PROOF.    It suffices to prove the Lemma for y = t7 = 0. For
+let               be   a   C’ (Ell) function such that ~R =1 for
+for                                           is bounded   independent of R. By
+Lemma 1, with                           and
+
+
+
+
+where the      norms  are computed over the set                            and
+depends only    on   T and the structure of L.        Since             and
+                 )) it follows that                     as R --~ oo, Thus
+
+
+
+
+For               and
+
+
+
+
+while for
+
+
+
+
+We therefore conclude from (7.6) that
+
+
+
+
+Let                                Then
+
+
+
+
+and it follows from Theorem B that
+
+
+
+
+where C’2 depends only on T and the structure of L,
+                                                                                        665
+
+
+     Note that results  analogous to Lemmas 5 and 6 also hold for weak
+solutions of the adjoint equation. Let               for ’1J E (0, T]. Then
+if v is the weak solution in ~ of the Cauchy problem
+
+
+
+
+we   have                           .
+                                        Moreover, if  &#x3E;           is the weak solu-
+tion of the    Cauhy problem
+
+
+
+
+where tto satisfies the conditions of Lemma 6, then for any r E [0, t]) such
+that 0      q 2013 ~ ~ 02
+
+
+
+    PROOF OF THE LTPPER BOUND. We begin                        by establishing the prelimi-
+nary estimate (3)
+
+
+
+
+in S x 8 for t &#x3E; T, where e depends only on T and the structure of L.
+         T ) be fixed and consider the Cauchy problem
+
+
+
+This problem has a unique classical solution 2o in E2 (8,), and w is conti-
+nuons and continuously differentiable in 8, (cf. [10]). Thus w is also the
+weak solution in ~2 (~~’T), In view of the properties of 1’, we have
+
+
+
+
+and it follows from Lemma 5 that
+
+
+
+
+     (3) This estimate ie due to Nash [16] ia the special case in which L is given by (7).
+666
+
+in S, , where ei depends only on T and the structure of L. Now hold
+(x, t) E E" x (0, ~’j fixed. Then, according to (F. 1) and (F. 3), T is a non-
+negative classical solution of .Lu 0 as a function of (~, z) in En x [0, t).
+                                     =
+
+
+It is therefore also a non-negative weak solution of Lu = 0 for (~, ~) E En X [0, t).
+The assertion (7,?) then follows immediately from Theorem G (for Lu              =
+                                                                                  0)
+and (7.8). Note that, by a similar argument, we can supplement (7.8) with
+
+
+
+
+for
+      Let                 and a &#x3E; 0 be fixed. For fixed r such that1
+            consider the function
+
+
+
+
+in 817. We will use Lemma 6 to derive         an   estimate for   1t   (y, ~). In view
+of (7.7) and (7.8),
+
+
+
+in ISFJ’ where e depends only on T and the structure of L. According
+to (F. 4), u is a classical solution of Lu = 0 in and for x such that
+
+
+
+
+where
+
+
+
+
+Therefore u is a weak solution of Lu = 0                   and, by      the bounded
+convergence theorem
+
+
+
+
+for any              For any                     is bounded, continuous           and
+continuously differentiale in s~+, . Thus it is the weak solution in
+of the Cauchy problem
+
+      Lv = 0    for
+                                                                             667
+
+By Theorem 3, with y &#x3E; 0 sufficiently small,
+
+
+
+where e depends only on T and the structure of L. Letting e 2013~ 0 we
+conclude that                                          Therefore
+is the weak solution of the Cauchy problem (7.5) with "0 given by (7.9).
+     Since, by (7.7) and (7.8),         we can apply Lemma 6 to u to
+obtain
+
+
+
+
+Thus
+
+
+
+
+for r E   T]] such that 0 i- - r~ _ o~, where e        depends only   on   T and
+                                                          ’
+
+
+
+
+the structure of L. Similarly,
+
+
+
+
+for r E [0, q) such that 0 fJ - 11 ~ 02.
+     Let (x, t) and ($, r) be arbitrary fixed   points of 8 with t &#x3E; z. Set
+             I and assume that 0~2013T~~.       By the Kolmogorov identity (F.5)
+
+
+
+
+where                 Write
+668
+
+
+By the Schwarz inequality
+
+
+
+
+Using (7.10) to estimate the first factor       on    the     right    and       (7.7), (7.8’) to
+estimate the second, we obtain
+
+
+
+
+where e depends only on T and the structure of L.                      To estimate J2 we
+note that                             implies
+’1’bus
+
+
+
+
+Using now (7.7), (7.8) to estimate the first         factor    on     the right and (7.10’)
+to estimate the second, we find
+
+
+It follows that ,          has the required upper bound in case              I
+
+
+
+
+This completes the proof of Theorem 7.
+      The following result is obtained from Theorem 7 by a simple computa-
+tion.
+
+      COROLLA.RY 7.1. For each pait- of exponents p, q ichich satisfy (**)
+
+
+
+
+where e depends only on T, the 8ti-tictui-e of L, ait(i the exponents ]1, q.
+                                                                                669
+
+     Let S~ be a bounded open domain in En and           Q   =   Q X (0, T]. We as-
+sume  that L satisfies (H), the coefficients of L are in C°° (~S ), and 00 is
+smooth. Then it is well known that there exists a classical Green’s func-
+tion for Lu = (1 in Q, that is, a function y (x, t ; $, r) defined in Q X Q ex-
+cept when both x = ~ and t = T, which is continuous              &#x3E; T and which
+has the following properties (cf. [10] and [12]).
+
+
+
+
+respect to t, twice continuously differentiable with respect to x, and satis-
+fies L y = 0 as a function of (x, t) in D x (1", T]. For fixed (x, t) E S~ x (0, T],
+y is continuously differentiable with respect to 1", twice continuously differ-
+entiable with respect to ~, and satisfies L r      = 0 as a function of (~, T) in
+
+
+     (G.4) Suppose that                                          I   Then
+
+
+
+
+is a classical solution of Lit = G in Q X (T, T] and
+
+
+
+
+is a classical solution of                           Moreover, if U0 is continuous
+at       then
+
+
+
+    According to Theorem 6, there also exists a weak Green’s function for
+Lu = 0 in Q, but, by the argument we used for the fundamental solution,
+we can identify the weak and classical Green’s functions. Thus, in parti-
+
+cular,
+
+
+
+where y is the Green7a function for               in Q in the variables          In
+view of (G.2) and Theorem      7,
+    670
+
+    for all (x, t) and (~, 1’) in f~ with t &#x3E; 1’, where e depends only on T and the
+    structure of L. Note that the bound (7.12) is independent of the domain
+    Q and the smoothness of the coefficients of L. There is also a lower bound
+    of the same form for y, but unlike (7.12) it is a local bound.
+
+        THEOREM 8. Suppose that L tati8fies (H), the coefficient. of L are
+            and 00 is 8niooth. Let          be a convex subset of 12 such that the
+               from  0’  to aSl is positive. Then thei-e exist positive constants el
+    and C~2 depellding only o~i 6, T and the            of L such that
+
+
+    hold8 for all x, ~ E Q’ and
+
+
+
+
+    for arbitrary            M      B
+
+
+
+
+    for arbitrary t
+        PROOF. Let (~, z) be a fixed point of                       Since y is a non-
+    negative weak solution of Lu = 0 for                              it follows from
+    Theorem I that if for some x &#x3E; 0
+
+
+
+
+    where-’                                   then
+
+
+
+
+    for all x E [J’ and
+.
+
+
+
+
+                                                                  Fiere C~; depends only
+                                        1                     I
+
+    on a, x, T and the structure of L. Hence in order to prove the first part of
+    the Theorem it suffices to make a suitable choice of x and estimate 9N
+    from below. If we set x == 16/T then exactly as in the proof of the lower
+    bound in Theorem 7 we find                            independent of (~, ’l).
+    The proof of the second part of the Theorem is completely analogous with
+    the roles of Land L interchanged. We omit the details.
+                                                                             671
+
+
+
+8. Weak    Fundamental Solution and Green’s Function.
+
+      In section 6 we showed that if L satisfies (H ) then there exists a
+weak Green’s function y (x, t ; ~, z) for Lu = 0 in any bounded cylinder Q.
+In particular, y belongs to certain Lq~       ] spaces in Q and gives a rep-
+resentation formula for the solution of the boundary value problem (6.9).
+Here we will derive additional properties of y which are analogous to
+(G. 1-4) for the classical Green’s function. This derivation is based on the
+fact that 7 can be approximated by classical Green’s functions. We will
+also obtain similar resdlts for the weak fundamental solution of Lu = 0.
+              be a bounded open domain jn ~E~ and Q = D x (0, T]. For
+"0 E L2 (S~) and  G (x, t) E  (Q) with p, q satisfyng (* *) we will show, among
+other things, that 7 gi ves a representation for the solution of the boundary
+value problem
+
+
+
+
+and the adjoint problem
+
+
+
+
+In stating our result we use the following notation. If      r   is    arbitrary
+                                                                       an
+
+point in [0, T) we set Q, = SJ x (r, 1’], while if t is an   arbitrary point in
+
+
+      THEOREM 9. Suppose that L satisjïes                        and
+zclcere p, q satisfy (:~~).      the zoeak              7
+       ha8 the followiitg p,.operties.
+
+
+
+
+10.     delta    Norm. Sup. -
+672
+
+where the norm is computed over the set Q,+a, and e depend. only on T and
+the         of L. Moreover, y is a weak solution of Lu = 0 for
+For fixed (                                       I for arbitary     with
+
+
+
+                                               N
+
+where the          is contputed over the set    Qt_8, and e depends only on T
+                                                                          N
+
+
+and the structure    of L. Morevoer,      y   is a weak solution of      0 for=
+
+
+
+
+         (v) For         (             let Z denote an               open domain Buch
+                                                       solution        = 0
+that                         y is a     global  weak            of  Lu      foi*
+              with initial values zero        on t = 1’. For fixed (                de-
+note an             open  domain        such  that ’                     y is  a global
+woak solution of    Ev   =   0   for                )   with initial values   xero   on
+
+
+
+         (vi) The weak solution oJ’ the bouttdary value              (8.1) is givtn by
+
+
+
+
+and the weak solution of the bound(try valite problem (8.2) is given by
+
+
+
+
+If Uo is continuous at a point y in S then
+
+
+
+     Note that using the Extension Principle and Theorem G’ it follows
+from (i), (iii), (iv) and (v) that y is continuous as a function of (x, t) in
+        z)) aud as a function of ($, z)       B ((x, 1)). Thus the behavior of y
+in the interior of Q is independent of whether or not           has property (A),
+and the assertion (ii) is actually only a statement about the boundary be-
+havior of y.
+
+       PROOF. As in Section 3, let
+                                                                                    673
+
+where the superscript m on a function denotes an integral average formed
+with a kernel whose support lie6 inx 2 + t2   m-2 for integers »i h 1, and
+let     denote a sequence of smoothly bounded open domains such that
+                     for all lit7 and lim   = S?, Recall that the operators
+                                      Mt    u     M
+                                      111   -   ’""’"
+
+
+
+L- have a uniform structure which is, in turn, determined by the structure
+of L. Throughout this proof we will use C~ to denote any constant which
+depends only on T and the structure of L.
+     We assert that
+
+
+
+
+weakly in            for any exponents 1)’, c~’ whose Holder conjugates satisfy
+
+
+
+
+where ym is the Green’s function for L’tn u 0 in Qm     =    x (o,T]. Let F
+be an arbitrary Lp. q (Q) function with p, q satisfying (8.4) and consider
+the boundary value problem       =  F in Q, u  0 on the parabolic boundary
+                                                            =
+
+
+of Q. According to Theorem 6, the weak solution of this problem is given by
+
+
+
+
+On the other hand, in view of Theorem 1 (i) and                 (G.4),   for each
+
+
+
+
+where we have set yn’ = i)                  Since F- -+ F strongly in Lp, q (Q)
+the first part of (8.3) follows immediately. The second part of (8.3) is proved
+by applying the same argument to the adjoint equation.
+    Let            be fixed. For arbitrary $~((~T2013r) and tit so large that
+                     is the classical solution of the boundary value problem
+674
+
+
+Since ym is continuously differentiable in I               and
+is also the weak solution of this problem.         By Lemma 1, with
+
+
+where the norms on the left are computed over the set                          In view of
+(7.12) and Theorem 7
+
+Thus we have
+
+
+
+
+                                        C
+where if we set 714 = 0 for x E Dm we can regard the norms as being com-
+puted over the set (~-~’ It follows from (8.5) and Lemma 2 that there
+exists a subsequence of the rm which converges weakly to a limit function
+in    L2 + 6, T; H 0 1,2 (D)j
+                         and any finite collection            of L2p’ 2,1 (Q,+ a)
+                                                                 spaces for
+suitable exponents, and it follows from (8.3) that the limit function is                 7.
+From this we conclude that   ~(~T;~) is                a   weak solution of Lu = 0 for
+                   «~T;.,.)~2~e~-~. If we hold                                 fixed and
+apply the same       argument to       yn considered   as a   function of (~, r)y we find
+that y (x, t ; ~, ~) is a weak    solution of                 for            and
+
+
+    On the other hand, for fixed (~,~) E        QT , it follows from (7.12), Theorem
+7 and Theorem C that the sequence                   is uniformly bounded and equi-
+continuous for (x, t) in any compact subset of Q, . Thus rm --~ y uniformly
+in any compact subset of Q, . Similarly, for each (x, t) E Qo,ym -~ y uniformly
+in any compact subset of        Qt .
+                               Thus, in particular, (i) and (iii) hold. More-
+over, in view of the previous paragraph, (iv) also holds.
+     If a~ has property (A ) then the sequence        can be chosen so that
+
+         has property (A) uniformly with respect to ni. Let ($, r) E            QT be fixed
+and set ym     =0 for x E C Qm, where we assume ot so large that $ E        For
+                          the sequence        is uniformly bounded in
+and in view of Theorem 1), equicontinuous in              Therefore y is contain
+uous for (x, t)     x (r, 7’J and 7 = 0 for x E     The proof of the continuity
+of 7 as function of (~, ~c) is similar and we omit it.
+       For fixed (~, T) E   ’ilT, let ~ be an arbitrary open domain such that
+               and let                         Then for m sufficiently large yl," is a
+                                                                                      675
+
+weak solution of .                                              and t &#x3E;,r then
+
+
+
+
+where gx denotes the fundamental solution of                          Thus it follows
+from (7.12) that
+
+
+
+
+for all                           be a   function with compact support in
+          such that ~ === 1 on v and 0 ~,~ 1. By Lemma 1, with s
+for arbitrary                 and}/
+
+
+
+
+where Z’ = supp ( and norms are computed over the set
+If                  and t ~ 1: then
+      IThus in view of (7.12) the first term on the right in (8.5) tends to
+zero as e -~ 0 and the second is bounded independent of tit or e. Therefore,
+
+               we obtain
+
+
+
+
+independent of m, where the norms are computed over the set Z’ x (~~ T).
+In particular, each y"4 is a global weak solution of Lm u 0 in D= with ini-
+                                                                 =
+
+
+tial values zero on t = 1:. Moreover, we conclude from (8.6), Lemma 2 and
+the pointwise convergence of ym to y that                 converges weakly to y in
+1,2 [1:, T ; Hl 2 (2’)] and in any finite collection of L2p’, 2q’(]),) spaces with suit-
+able exponents. Hence it follows that y is a global weak solution of Lu = 0
+in D, with initial values zero on t = t~. The corresponding result for the
+adjoint equation is proved analogously.
+        According to Theorem 1 (i) and (G.4), if u is the solution of the prob-
+lem (~i.l) then for each                  we have um (x, t) -~ u ~x, t), where for tit
+
+sufficiently large
+676
+
+
+and     we   have set                     In view of (7.12) the sequence
+              is uniformly bounded in .L2 (S~) for t ~ 0 and
+is uniformly bounded in          Hence if p and q are finite there exists
+a   subsequence  which converges weakly to                     in L2 (Q) and to
+            in .           On the other hand                   strongly in
+             I strongly in           It follows that                 ) with finite
+exponents p, q satisfyng  (* *) then
+
+
+
+
+If Q’ E     (Q) with p, q satisfyng (* 1:) and either p or q infinite, then, since
+Q is bounded, we also have                   for some finite exponents p, q sa-
+tisfyng (* *), and hence the representation formula is again valid. The proof
+of the representation formula for problem (8.2) is similar and we omit it.
+      Suppose that uo is continuous at a point y EQ. The function
+
+
+
+
+is the weak solution of problem (8.1) with the initial condition
+for z E Q. Extend the domain of definition of w by setting
+for t     0. By the Extension Principle and Theorem 0, w is continuous in
+any compact subset of 9 x (- T, 1’]. Thus, in particular,             t) --~ (y)
+as (x~ t) -+ (y, 0). Write the solution of’ problem (8.1) in the form
+
+
+
+
+and write J as the sum of an integral Ji taken over the set11
+and an integral J2 taken over the set                                where p
+is smaller than the distance from y to OQ. Thus, in view of ( i.12),
+
+
+
+
+Moreover,      if               then                 implies                 ~ and
+hence
+
+
+wbere x depends only on T and      structure of L. Since uo is continuous
+                                   the
+at y,          0 we can fix a p = ~ (E) ) 0 such that       E/2. Then for
+                                                                                      677
+
+                     there exists an ~)0 depending on Band o (e) such that
+impliesI J2 I E/2. Therefore J - 0 and it (x, t) - u, (y) as (x, t) -+ (y, 0).
+The proof of the corresponding statement for v (~, 1’) is similar and we omit it.
+     We are going to prove a theorem concerning the properties of the weak
+fundamental solution of Lu = 0 which is analogous to Theorems 9. Before
+doing so, however, we pause to prove a lemma which establishes a useful
+relationship between the weak Green’s function for certain domains and the
+weak fundamental solution. In stating this result we use the notation
+                   andi                  for integersJ
+
+         LEMMA 7. Sitppose that L satisfies (H). Then the 8equence
+of weak     G1’een’s functions for Lu = 0 in Qk increases monotonically with k
+                     t ~   ~
+
+                               ,,,    ...-...,...,
+
+
+
+
+?che)-e r is a                             of the fundamental solution which is continuous
+as it    function of (x, t)          iit En X (r, TJ for ,fixed (~,   and as a function of
+(~7 r) in En X [0, t)                fixed (x, t).
+         PROOF. We extend the domain of definition of yk (.t’, t ; ~, t) by setting
+7k   =    0 if either x or ~ are     Let (x, t) and (~, T) be fixed points with
+                    . We assert that
+
+
+
+
+for all k. The assertion is trivial if for a given k, x or ~ are        and
+in view of Theorems 9 (ii), also if x or ~ are on       Hence we may assume
+that x and ~ are in                Let 99 (y) be a non-negative C’o (Zk) function such
+that     ($1   c supp 99   and consider the boundary value problem
+
+
+
+
+Ry Theorem 1 (iii), this problem has a unique solution uk for each k, and
+uk is continuous in               Since               on              and
+                               it follows from Theorem 1 (ii) that
+            Thus, in view of’ ’1’veorem 9 (vi)
+678
+
+
+If we now replace 9? in (8.8) by a sequence of 0000          functions which ap-
+proximates  the  Dirac  distribution concentrated at y =
+                                                            ~, it follows that (8.7)
+holds for x and $ in         According  to Theorem  9  (iii) the sequence (yk) is
+bounded   above.   Therefore, lim yk exists  in 8 x 8 for t &#x3E; r. In view of
+                              k - oo
+Theorems 9 (iv) and C, the sequence          (x, t ; ? )), starting from some suf
+ficiently large k, is bounded and equicontinuous for (x, t) in any compact
+subset of .En x (1’, T] with (E,1’) fixed, and for (~, z) in any compact subset
+of Eft X [0, t) with (x, t) fixed. Hence the limit function is continuous as a
+function of (x, t) and as a function of ($, r) for t ) z.
+     Let F be an arbitrary function in Lp, q (~5‘), where the exponents are
+finite and satisfy (8.4), and consider the Cauchy problem
+
+
+
+
+By Theorem 5 (ii) the weak solution in C2 (8) of this problem is given by
+
+
+
+
+On the other hand, by Corollary 3.1 and Theorem 9 (vi),
+
+
+
+
+for each (x,     8, where    we   have set                        Thus
+               ) weakly in          Since the sequence (yk) converges point-
+wise it follows that the pointwise limit is also 7~.
+     We will now prove the analogue of Theorem 9 for the fundamental
+solution. Suppose that for some y &#x3E; 0 we have                      and
+                         where p and q               We   will 8ho",, among
+other things, that 1’ gives a representation formula for the solution of the
+Oauchy problem
+
+
+
+and for the adjoint problem
+                                                                                                     679
+
+In stating the           result we          use      the following notation. If r is an arbitrary
+point in [0, T)          we  set                        (t, T], while if t is an arbitrary point in
+
+
+      THEOREM 10. Suppose that L satisfies (H), and that for sot)te y ~ 0 zae
+have                   and                       1vhere p, q satisfy (**). The
+weak fundamental solution                            has the following prop-
+erties,
+
+
+
+
+whe’fe the               is cottiputed      ot1et’    the set       and e   depends
+                                                                                  only on T and
+the                of L.                      r is a             solution of Fu = 0 for (x, t) E 8,.
+Forfixed                                                                     for arbitrat-y
+with
+
+
+
+where the                is cottipitted      over     the set      and   e depends       on T and
+the structure of L. Moreovet- r is                    It   weak solution.
+         (v) For fixed                  ST
+                                (~, -r) E    let ~ denote an  at-bitrary bounded open domain
+such that                            Then ~’ is a global zcPnk solutiolt o f Lu = 0 for
+                  with               l value8 zero on t = 1:.        fixed
+note   a?a                    bounded open domain such that1                            Then r is a
+
+global       solutioit of                                             with initial value8     zero   on
+
+
+
+      (vi) Suppose that T 1 /l6azy, zvhere a2 is the constant obtaitted in
+Theorem 7. Then the      Bolutio1t  2 (’) of the Cauchy problem (8.9) is
+given by                    -
+680
+
+llnd the tweak solution in     (f2 (is’) of the Cauchy proble’l1l 18.10) is given by
+
+
+
+
+            continuous at a point y E En then
+
+
+
+
+      PROOF. Let F be an arbitrary                      function for (p, q) satisfying
+(8.4) and consider the Cauchy problem
+
+
+
+According to Theorem .5 (it) the weak solution in (f2(,~) of this problem is
+given by
+
+
+
+On the other hand,       by Corollary 3.3 and Theorem 5 (ii)
+
+
+
+
+where rm is the fundamental solution of’                =   0. Since Fm - F strongly
+in        it follows that                                          weakly in .
+for each (x, t) E       Similarly,                                 weakly in
+for eachi
+                    -
+
+     Let (, 1’) E 8T be fixed. For arbitrary                                       is the
+classical solution in ~2 (S ) of the Cauchy problem
+
+
+
+
+Since rm is continuosly differentiable in               it is also the weak solution
+of this problem. For                                     be   a           function such
+that(                                  forI                           and ~      bound-
+ed independent of’ R.        By      Lemma    1, with                                  and
+                                                                                           681
+
+
+
+
+where the norms are computed over the set       Here and elsewhere in
+this proof e stands for any constant which depends only on T and the
+structure of L.    According to Theorem 7 we have                                      and
+                     Thus                       as   R ---~   oo   and it follows that
+
+
+
+
+The results of the last paragraph together with           (8.11) and Lemma 2 imply
+that .                                 weakly in                               I and any
+finite collection ofL 2p’, 2q’ (Q) spaces, where     ifl is any bounded cylinder            in
+     .
+         Thus, in particular,               is a weak solution of Lu = 0 for
+            and1                                .   By a similar argument, we find
+that for fixed                             is   a    weak solution       of   ZM   =   0   for
+          and1
+     In view of Theorem 7 and Theorem        C, the sequence          is uniformly
+bounded and equicontinuous in any compact subset of 8, for fixed (~, «) E 8T.
+lIence           r uniformly for (x, t) in any compact subset of 81. Similarly,
+          uniformly for (~, r) in any compact subset of       for fixed (x, t) E So.
+Therefore (i), (ii) and (iv) hold. The assertion (ii) follows directly from the
+corresponding result for 1’m using the pointwise convergence of F- to 7B
+Theorem 7 and the dominated convergence theorem. The proof of (v) is
+almost identical to the proof of the Theorem 9 (v) and we omit the details.
+      According to Corollary 3.1 and Theorem 9 (vi), if it is the solution
+C2 (S ) of problem (3.9) then for each                we have 1tk (x, t) -+ u (x, t)
+
+where for lc sufficiently large
+
+
+
+
+Hence yk is the Green’s function for       = 0    in                and we
+have set yk = 0 for           By   Lemma       7,            for almost all
+      and 7           for almost all (~,,r) E S. In view of Theorem 9 (iii),
+682
+
+
+                                       where gx is the        fundamental solution of
+x   d1i = tit and x = a2 is   independent   of lc.    It is    easily verified that if
+                 then
+
+
+
+
+For fixed                               and
+Hence                          and                                             It follows
+from the dominated convergence theorem that
+
+
+
+
+for each (x, t) E ~5~. The proof of the corresponding statement for the adjoint
+equation is similar and we omit it.
+     The proof that u (x, t) -+ uo (y) at points of continuity of Uo is essen-
+tially the same as the proof of the corresponding part of Theorem 9. Here
+we must show that for                      the integral
+
+
+
+
+can   be made small       by taking t sufficiently     small.   However,      in view of
+(8.12) if t    1/32 x y   then
+
+
+
+
+and the assertion      The proof that v (~, z~ --~ ~~o (y) is analogous.
+    We have shown that if uo is continuous at x then
+
+
+
+
+In the next section we will also need the            corresponding   result    when the
+integration is taken with respect to ,~~.
+                                                                              683
+
+      LEMMA 8.    Suppose that L satisfies (B ) aitd                   lot’
+          Then, if uo is contitiuous at
+
+
+
+
+      PROOF. In view of what we have shown in the proofs of Theorems 9
+(vi) and 10 (vi) it suffices to prove that
+
+
+
+
+for               For t E (0, TJ consider the family of Cauchy problems
+
+
+
+
+According to Theorem 3 and Lemma 5, for each t E (o, TI this problem has
+a unique weak solution v (y, s ; t) in the class ê2 (8t) - and
+
+
+                                 ,
+      N
+
+in      where e depends on T and the structure of L. Extend the domain of
+definition of v by setting v =1 for 8 &#x3E; t. Then, by the Extension Principle
+and Theorem C, the extended function is continuous in S and for
+                we have
+
+
+
+
+where C~ depends only on T and the structure of L.            In   particular, if
+          then setting s = t we obtain
+
+
+
+
+Since, by Theorem 10 (vi),
+
+
+
+
+the assertion follows.
+684
+
+
+
+
+9.   Non-negative Weak Solutions.
+
+      In section 5 we characterized         a   non-negative    weak     solution of the
+Cauchy problem
+
+
+as  the limit of a sequence of’ solutions of certain boundary value problems.
+Here we will re-examine this result in the light of the results which we
+have obtained concerning the weak Green’s functions and fundamental
+solution for L. We show that if problem (9.1) admits a non-negative solu-
+tion u then u is given by an integral involving r and u. Moreover, we
+will use this result to derive a representation formula for any non-negative
+weak solution of L1c = 0 in ~f.
+
+     THEOREM 11. Suppose that L B((tisfit8 (H)              uo E      (Ell) is         non-
+
+negative  almost everywhere. IJ’ u is the non negative welt k 8olutio’lt of
+(9.1) then
+
+
+
+for all
+
+      PROOF.   According to Tbeorem 4 and Theorem 9 (vi)
+
+
+
+
+where yk is the Greeny function for Lit = 0 in                     and we
+have set yk = 0 for         Recall that (k is a
+                                  .                                   function
+                                                                  such that
+       for                     for              and 0          1. In view
+of Lemma 7, the sequenceI                          is monotone increasing
+and converges to                   for almost all ~ E En. Tlius it follows
+from the monotone convergence theorems that it is given by (H.2).
+    Corresponding to Corollary 4.2 we have the following corollary to
+Theorem 11.
+
+             COROLLARY 11.1. Suppose that L satisjie8 (H), u 0 E    (E 11), and 1to &#x3E; 0
+almost everywhere       in En.              problent !l.l) possesses a itoit negative
+                                                                              685
+
+weak solution if and only if
+
+
+
+
+The non-negative solution u   if’ it exists is given by (9.2).
+     PROOF. If there is a non-negative weak solution u of problem (9.1) then
+                     By Theorem 11, u is given by (9.2) and hence (9.3)
+holds. On the other Land, by Lemma 7,
+
+
+
+
+Thus9 it follows from Corollary 4.2, that if (9.3) is satisfied then the ~ non-
+negative solution 1t of problem (9.1) exists anct 1t (x, t)        lim ilk (x, t).
+                                                                      =
+
+                                                                  k-co
+Therefore, as was shown in the proof of Theorem 11, it is given by (9.2).
+     THEOREM 12. Suppose thltt L satisfies (H). If it vs a                   weak
+solution of Lu = 0 in 8, theit there exists a unique non-negative Borel
+                                                                  ’
+
+
+
+
+       such that for all (x, t) E 8
+
+
+
+
+     The existence part of Theorem 12 was first proved by Widder [22] for
+classical solutions of tbe equation of heat conduction and subsequently
+extended for classical solutions of general second order parabolic equations
+                                                     .   &#x3E;
+
+with sufficiently smooth               by Krzyzanski [14]. Our existence
+                             coefficients
+                                  .         &#x3E;
+
+
+proof is almost identical to Krzyzanski’s. Widder also gives a sufficient
+condition for a function defined by a formula such as (9.4) to be a solution
+of the equation of heat conduction. Our version of this result is given
+below in Corollary 12.1. The uniqueness proof which we give here is an
+adaptation of Frostman’s proof that if the Newtonian potential due to a
+signed measure is almost everywhere zero then the measure is identically
+zero   [11 ; pp 31-33].
+      PROOF. For any 8 E (0, T], we know that u (x, 8) E Llo, (En) and M (x, t) is
+a   non-negative weak solution of the Cauchy problem
+ 686
+
+
+Thus, by Theorem 11,
+
+
+
+
+for all                  If we restrict s to the                       interval     (0, T/2]   then
+it follows from Theorem 10 (ii) that
+
+
+
+
+where y = 1/2a, T and e depends only                     and the structure of L.               For
+each -o E (0, T/2] define the Borel measure
+
+
+
+
+In view of (9.5)
+
+
+
+for all Borel subsets E of En and
+
+
+
+
+for all s E (0, T/2]. According to the Frostman selection theorem [11; pp 11 ~ 13],
+(9.6) implies that there exists a sequence 8j - 0 such that the corresponding
+              A      A                                         A
+
+measures      p3 = LO.1, converge   to   a   Borel   measure   Q. In      particular,
+
+
+
+
+for any
+     Hold (x, t)         fixed and consider the functions
+
+
+
+
+for sj   t.       By Theorem 10 (ii), if 0                         1    we   have
+                                                                           687
+
+Thus if ~I
+
+
+
+
+Moreover, it is clear that                for each j and
+          uniformly for ! ~!~ R. By Tbeorem 3 of reference [14],        it fol-
+lows from (9.7) and the properties of the sequence     that         .
+
+
+
+
+Set
+
+
+
+
+Then, since for sufficiently large
+
+
+
+
+we    have
+
+
+
+
+for                then by Theorem 10 (iii), Theorem 11 and Fubini7s theorem
+
+
+
+
+and the existence part of the Therein is proved.
+688
+
+    If u is a non-negative solution of     -:~ 0 and g is a Borel measure
+such that u is given by (9.4), then it follows from Theorem 10 (ii) that
+
+
+
+
+where y == ~/4x~ T, and e depends only on T and the structure of L.
+     Now suppose that there are two measqres et and e2 each giving a re-
+presentation of u in the form (9.4) and such that
+Then
+
+
+
+
+for all          where
+
+
+
+
+By the Hahn-Jordan decomposition theorem there is a         Borel set A such
+that A ~ 0 on all Borel measurable subsets of A                  0 on all Borel
+measurable subsets of             Set
+                                   I
+                                                            ~   and  ,
+           Then A+ and l- are mutually singular               ~,+ -1-. Moreover,
+
+
+
+
+In particular, it follows from (9.8) that I* (~1~) S C~ 1t (0, T). Therefore the
+measures   1+ and A- are regular [18 ; Theorem 2.181.
+     Since        we have either A+(A) or 1- (B) positive. Suppose that
+
+~,+ (~) ~ a ~ 0. We   will show that this le4ds to a contradiction. In view of
+the regularity of ~,+ and 1-, there exists a compact set K c A such that
+                         and a bounded open set E » K such thatJ
+                     .               be a continuous function in En with
+                             and 0 ~ C ~ 1. Define
+
+
+
+
+By Lemma 8 we have
+                                                                            699
+
+for all ~ E En. On the other hahd, if 0     t~   1/lGa2 y and
+then by Theorem 10 (ii)
+
+
+
+
+Thus, it follows from (9.8) and (9.11) that
+
+
+
+
+Hence v is integrable with respect to a for each                    and
+
+
+
+
+Since                 we   conclude from   (9.10); (9.11) and the dominated
+convergence theorem that
+
+
+
+
+Therefore
+
+
+
+
+      For fixed                    is the pointwise limit of a Sequence of
+sical fundamental solutions            , 0). The      are jointly continuous in
+
+(x, ). Hence the I’ m are Borel measurable in h:n X En and the same i8
+true for their limit r. Therefore, in view of (9.12), for each t E (0, 1/16a2 7)
+we have
+    690
+
+    and
+
+
+
+
+    in contradiction to (9.13). Thus we cannot have l+ (A) &#x3E; 0. A similar argu-
+    ment shows that l- (B) = 0. Therefore 1 - 0 and the same is true for o.
+
+          COROLLARY 12.1. Suppose that L satis fi es (H) and let
+
+
+
+
+    where e is a non-negative -                      u is a weak solution   of "
+         if and only if ,                      for
+          PROOF. If u is a weak solution of .Lu = 0 in 8 then it clearly has the
+    required properties. To prove the converse note that u E ~L2 [8, T ;    (E-)]
+    for every 8 E (o, T) implies there exists a sequence ltj) of points in (0, T)
+    such that tj--~ 0 and                     Consider the Cauchy problem
+
+
+
+
+    Since                    it follows from Corollary 11.1 that this problem has
+    a   non-negative weak solution if and only if
+
+
+
+
+    By Theorem 10 (iii) we have
+.
+
+
+
+
+             ie a weak solution in       (tj, T]I for any j. Since t~--~ 0 we con-
+    clude that u is a weak solution in ,S.
+                                                                           691
+
+      We now consider a non-negative solution of Lu = 0           which has
+initial values on the hyperplane t = 0 except at an isolated point. Roughly
+speaking, the result is that such a solution is equal to a non-negative mul-
+tiple of the fundamental solution with siflgularity at the point in question
+plus a non-singular solution. Thus) for non-negative solutions, any isolated
+singular point at which the singularity is weaker than that of the funda-
+mental solution is a removable singular point.
+
+    COROLLARY 12.2. Suppose that L               (H), uo E Lloc    and uo ~ 0
+       everywhere i11, .En . Let u be a non-negative wellk solution of Lu = 0
+     such that
+
+
+
+
+    every                          there exist. a constant   0 such that
+
+
+
+
+    Note that if               and
+
+
+
+
+then, in view of Corollary 11.1,
+
+
+       A
+
+where u is the non-negative solution of the Cauchy problem
+
+
+
+
+    PROOF. It suffices to show that
+
+
+
+
+for every Rorel set E c         where 6, denotes the Dirac measure concen
+           t              be a non-negative              function.     by
+692
+
+Theorem   12,
+
+
+
+
+In view of Lemma 8
+
+
+
+
+for all ~ E   Moreover, if 0     t ~   1 /1 G a2 y and supp               then,
+by  Theorem 10 (ii)
+
+
+
+Thus it follows from (9.14) and the dominated convergence theorem that
+
+
+
+
+for any non-negative
+      In view of (9.8), for any compact set 7C we                         Thus
+g  is regular [18 ; Theorem 2.18]. Moreover, since uo ~ 0 and
+the Borel measure
+
+
+
+
+is also regular. Let E be any Borel set with compact closure in              (0)
+Let K be any compact set contained in E, and for given e &#x3E; 0 let G be
+an open set with compact closure in En B (0) such that E c G                and
+e (Q~ B E) ~.    If y is a  C° (En) function   such that 1p  =1   on       = 0
+
+
+        and 0 :::;: 1p 1 then by (9.15), Uo (K) t! (E) -- B. Taking the suprem-
+um over all K c E and noting that E is arbitrary, we obtain
+
+On the other hand, if we choose Q’ such that                  E) ~ and apply
+the same argument we find that Lo (E) uo (.0). Therefore
+
+
+
+
+for all Borel sets E with compact closure in
+                                                                                       693
+
+       Let E be an arbitrary Borel set in                 Then
+
+
+
+
+where
+
+
+
+Each Dj is a Borel set with compaot closure in                       and the Dj        are
+                                                                                °
+
+
+
+
+disjoint. It follows from (9.16) that
+
+
+
+
+Therefore, if e has a singular part it must be concentrated              on   (01 and
+has the form                                       -
+
+
+
+
+for some constant      Suppose that fJ        O. Then there exists an r &#x3E; 0 such
+that for E = Ix;x ~      r)   we   have
+
+
+
+
+Thus                                      which contradicts the non-negativity of g.
+
+    N01’E. 2’his research was partially supported by the United States Air
+Force Office of Scientific Research under Contract No. AF-AFOSR 883-67.
+
+                                                           School of Mathemattca
+                                                           Uttiversity of Mitul6.ota
+                                                           Minneapolid, Minneeota
+694
+
+
+
+                                       REFERENCES
+
+ [1] D. G. ARONSON, On the Green’s function for second order parabolic equations with discon-
+         tinuous  coefficients, Bulletin of the American Mathematical Society, 69 (1963)
+         841-847.
+ [2] D. G. ARONSON, Isolated singularities of solutions of second order parabolic equations,
+         Archive for Rational Mechanics and Analysis 19 (1965), 231-238.
+ [3] D. G. ARONSON, Uniqueness of positive weak solution of second order parabolic equations,
+         Annales Polonici Mathematici, 16 (1965), 285-303.
+ [4] D. G. ARONSON, Bounds for the fundamental solution of a parabolic equation, Bulletin
+         of the American Mathematical Society, 73 (1967), 890-896.
+ [5] D. G.  ARONSON and P. BESALA, Uniqueness of solutions of the Cauchy problem for para-
+         bolic equations, Journal of Mathematical Analysis and Applications, 13 (1966), 516-
+         526; 17 (1967), 194-196.
+ [6] D. G. ARONSON and J. SERIUN, Local behavior of solutions of quasilinear parabolic equa-
+         tions, Arohive for Rational Mechanics and Analysis, 25 (1967), 81-122.
+ [7] L. BERS, Topology, Lecture Notes, Courant Institute of Mathematical Sciences, 1956-1957.
+ [8] S. BOCHNER and A. E. TAYLOR, Linear functionals on certain spaces of abstractly-valued
+         functions, Annals of Mathematics, 39 (1938), 913-944.
+ [9] AVNER FRIEDMAN, On the uniqueness of the Cauchy problem for parabolic equations, Amer-
+         ican Journal of Mathematics, 81 (1959), 503-511.
+[10] AVNER FRIEDMAN, Partial Differential Equations of Parabodic Type, Prentice-Hall, En-
+         glewood Cliffs, N. J., 1964.
+[11] O. FROSTMAN, Potenciel d’equilibre et capacités des ensembles, Meddel. Lunds Univ. Mat.
+         Sem. 3 (1935), 1-118.
+[12] A. M. IL’IN, A. S. KALASHNIKOV and O. A. OLEINIK, Second order linear equations of
+         parabolic type, Russian Mathematical Surveys, 17, no. 3 (1962), 1-143.
+[13] A. V. IVANOV, O. A. LADY017EENSKAJA, A. L. TRESKUNOV and N. N. UREL’CEVA, Gener-
+         alized solutions of parabolic equations of second order, Trudy         Matemati010Deskogo
+         Instituta imeni V. A. Steklova, 92 (1966), 57-92 (Russian).
+[14] M. KRZYZA0144SKI, Sur les solutions non négatives de l’équation linéaire normale parabolique,
+         Revue Ronmaine de Mathématiques Pures et Appliqueés, 9 (1964), 393-408.
+[15] O. A. LADY017EENSKAJA, V. A. SOLONNIKOV and N. N. UREL’CEVA, Linear and Quasilinear
+         Equations of Parabolic Type, Nauka, Moscow, 1967 (Russian).
+[16] J. NASH, Continuity of solutions of parabolic and elliptic equations, American Journal of
+         Mathematics, 80 (1958), 931-954.
+[17] F. RIESZ and B. SZ-NAGY, Functional Analysis, Unger, New York, 1955.
+[18] W. RUDIN, Real and Complex Analysis, McGraw-Hill, New York, 1966.
+[19] J. SERRIN, A uniqueness theorem for the parabolic equation ut a (x) uxx + b (x) ux, +c(x)u,
+                                                                    =
+
+
+         Bulletin of the American Mathematical Society 60 (1954), 344 (Abstract).
+[20] J. SERRIN, Introduction to Differentiation Theory, Lecture notes, University of Miune-
+         sota, School of Mathematics, 1965.
+[21] N. S. TRUDINGER, Pointwise estimates and quasilinear parabolic equations, Communica-
+         tions on Pure and Applied Mathematics, 21 (1968), 206-226.
+[22] D. V. WIDDER, Positive temperature, on the infinite rod, Transactions of the American
+         Mathematical Society, 55 (1944), 85-95.
+

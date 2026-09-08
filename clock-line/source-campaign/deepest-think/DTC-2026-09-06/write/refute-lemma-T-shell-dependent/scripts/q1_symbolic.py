@@ -1,0 +1,102 @@
+"""REFUTER q1: independent symbolic/exact re-derivation of every algebraic claim of Lemma T'.
+Own route throughout: nothing imported from the author's scripts or JSONs.
+"""
+import json, sympy as sp
+
+out = {}
+
+# ---------- 1. the 5-D Newtonian kernel, from scratch ----------
+# -Delta_5 psi = eta ; psi = G * eta ; G(x) = 1/((n-2)|S^{n-1}|) |x|^{2-n}, n=5
+# |S^4| = 8 pi^2 / 3  (surface area of unit 4-sphere in R^5)
+n = 5
+S4 = 2*sp.pi**sp.Rational(n,2)/sp.gamma(sp.Rational(n,2))   # |S^{n-1}| for n=5
+out['S4_area'] = str(sp.simplify(S4))                        # expect 8*pi**2/3
+cG = 1/((n-2)*S4)
+out['G_coeff'] = str(sp.simplify(cG))                        # expect 1/(8 pi^2)
+
+X = sp.symbols('x0:5', real=True)
+R5 = sp.sqrt(sum(v**2 for v in X))
+G = cG/R5**3
+# a = u^r/r = -d_z psi  (z = x4)
+Kfull = sp.simplify(-sp.diff(G, X[4]))
+out['K_of_w'] = str(sp.simplify(Kfull))            # this is K(w) acting as a(x)=int K(x-x')eta(x')
+# a(0) = int K(0-x') eta(x') dx' -> script kernel Kcal(x) = K(-x)
+Kcal = sp.simplify(Kfull.subs({X[i]: -X[i] for i in range(5)}, simultaneous=True))
+out['Kcal_of_x'] = str(sp.simplify(Kcal))
+out['Kcal_equals_minus_3xz_over_8pi2r5'] = bool(sp.simplify(Kcal - (-sp.Rational(3,8)/sp.pi**2*X[4]/R5**5)) == 0)
+
+# sharp constants
+out['sup_r4_Kcal'] = float(sp.Rational(3,8)/sp.pi**2)
+gradK = [sp.simplify(sp.diff(Kcal, v)) for v in X]
+c_ = sp.symbols('c', real=True)
+# |grad Kcal|^2 * |w|^10 -> (3/8pi^2)^2 (1+15 c^2), c = w_z/|w|
+g2 = sp.simplify(sum(gk**2 for gk in gradK)*R5**10)
+g2_target = (sp.Rational(3,8)/sp.pi**2)**2*(1+15*X[4]**2/R5**2)
+out['gradK_norm_residual'] = str(sp.simplify(sp.expand(g2 - g2_target)))
+out['sup_r5_gradKcal'] = float(sp.Rational(3,8)/sp.pi**2*4)   # sqrt(16)=4
+
+# ---------- 2. det D Lambda, hand route on the FULL 5x5 map ----------
+lam, dlam, rho, phi = sp.symbols('lambda dlambda rho phi', positive=True)
+a_, m_ = sp.symbols('a m', positive=True)
+lamf = a_*R5**m_                                  # realises every (lambda, rho lambda'/lambda) = (a rho^m, m)
+Lam = [lamf*X[0], lamf*X[1], lamf*X[2], lamf*X[3], lamf**(-2)*X[4]]
+Jm = sp.Matrix(5,5, lambda i,j: sp.diff(Lam[i], X[j]))
+detJ = sp.simplify(Jm.det())
+# target: lambda^2 (1 + m (sin^2 - 2 cos^2)),  sin^2 = (x0..x3)^2/rho^2, cos^2 = x4^2/rho^2
+r2 = sum(X[i]**2 for i in range(4))
+target = lamf**2*(1 + m_*(r2/R5**2 - 2*X[4]**2/R5**2))
+out['detDLambda_residual_full5x5'] = str(sp.simplify(sp.expand(sp.simplify(detJ - target))))
+out['shear_weight_range'] = [float(sp.Rational(-2)), 1.0]   # 1-3cos^2 in [-2,1]
+
+# ---------- 3. Step-3 identity, own proof ----------
+lam2 = sp.symbols('lam', positive=True)
+gg = lam2**2*sp.sin(phi)**2 + lam2**(-4)*sp.cos(phi)**2
+I1 = sp.integrate(sp.sin(phi)**2/gg**2, (phi, 0, sp.pi))
+out['int_sin2_over_g4'] = str(sp.simplify(I1))
+out['int_sin2_over_g4_equals_pi_over_2lam'] = bool(sp.simplify(I1 - sp.pi/(2*lam2)) == 0)
+
+v = sp.symbols('v', positive=True)
+A_ = lam2**2 - lam2**(-4); B_ = lam2**(-4)
+I2 = sp.integrate(v**2*(A_*v**2+B_)**sp.Rational(-5,2), (v, 0, 1))
+out['int_cos_sin2_over_g5'] = str(sp.simplify(I2))
+out['int_cos_sin2_over_g5_equals_lam_over_3'] = bool(sp.simplify(I2 - lam2/3) == 0)
+
+# ---------- 4. Q(lambda) and Q(1) ----------
+W = v**2 - 2*(1-v**2)
+Q = sp.simplify(sp.integrate(W*v**2*(A_*v**2+B_)**sp.Rational(-5,2), (v,0,1)))
+out['Q_at_1'] = str(sp.nsimplify(sp.limit(Q, lam2, 1)))
+out['Q_at_1_is_minus_1_15'] = bool(sp.simplify(sp.limit(Q, lam2, 1) + sp.Rational(1,15)) == 0)
+out['Q_at_3_2'] = float(Q.subs(lam2, sp.Rational(3,2)))
+
+# ---------- 5. integro-ODE profile constants, exact ----------
+sig, kth = sp.symbols('sigma kappatheta', positive=True)
+kth_val = 2*(1 - sp.sqrt(sp.Rational(2,3)))
+lam_s = (1 - (1-sig)*kth_val/2)**-2
+out['kappatheta'] = float(kth_val)
+out['lam_at_0'] = float(lam_s.subs(sig,0)); out['lam_at_1'] = float(lam_s.subs(sig,1))
+lam_bar = sp.simplify(sp.integrate(lam_s, (sig,0,1)))
+out['lam_bar_exact'] = str(sp.radsimp(sp.simplify(lam_bar))); out['lam_bar'] = float(lam_bar)
+inv = sp.simplify(sp.integrate(1/lam_s, (sig,0,1)))
+out['int_dsigma_over_lam'] = float(inv); out['int_dsigma_over_lam_exact'] = str(sp.nsimplify(inv, [sp.sqrt(6)]))
+dlog = sp.simplify(sp.diff(sp.log(lam_s), sig))
+kappa_s = sp.simplify(sp.Abs(dlog.subs(sig,0)))
+out['kappa_s'] = float(kappa_s); out['kappa_s_exact'] = str(sp.radsimp(sp.simplify(kappa_s)))
+out['kappa_s_is_sqrt6_minus_2'] = bool(sp.simplify(kappa_s - (sp.sqrt(6)-2)) == 0)
+# monotone in sigma? |dlog| = kth/(1-(1-s)kth/2) decreasing in s -> max at 0
+out['dlog_at_1'] = float(sp.Abs(dlog.subs(sig,1)))
+out['muJ_L'] = float(2*kappa_s)
+C_rel = sp.Rational(3,2)*sp.pi*kappa_s
+out['C_rel'] = float(C_rel); out['C_rel_exact'] = str(sp.radsimp(sp.simplify(C_rel)))
+
+# ---------- 6. shape constants ----------
+mu = sp.symbols('mu', nonnegative=True)
+Cfun = sp.pi*(3*(1+mu)/(2*(1-mu)**5) + sp.Rational(3,8))
+out['C_0plus'] = float(Cfun.subs(mu,0)); out['C_0plus_is_15pi_8'] = bool(sp.simplify(Cfun.subs(mu,0)-15*sp.pi/8)==0)
+out['C_table'] = {str(x): float(Cfun.subs(mu, sp.Rational(str(x)))) for x in ['0','0.01','0.05','0.10','0.20','0.25','0.50']}
+out['rel_limit_15pi_4'] = float(15*sp.pi/4)
+out['T_Lambda_limit'] = float(15*sp.pi/8*sp.sqrt(sp.Rational(3,2)))
+out['c_window_2log32'] = float(2*sp.log(sp.Rational(3,2)))
+out['muJL_over_c'] = float(2*kappa_s/(2*sp.log(sp.Rational(3,2))))
+
+print(json.dumps(out, indent=1))
+json.dump(out, open('q1_results.json','w'), indent=1)

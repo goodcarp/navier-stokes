@@ -1,0 +1,267 @@
+{
+ "C_R_variants": {
+  "assembly_convention": 8.697888081698725,
+  "measured": 3.137501080559945,
+  "proved_Gc0": 29.02416532565612,
+  "proved_Gc_5x": 72.51360573414975,
+  "proved_Gc_value": 37.72205340735485
+ },
+ "feedback_exponents": {
+  "L=160": {
+   "assembly_measured_sens": 6.689677064530387,
+   "assembly_proved_C'=119.33": 34.66239160246072,
+   "assembly_proved_C'=151.15": 34.82375531576729,
+   "slaved_conjugated_measured": 0.16499141429986416,
+   "slaved_conjugated_proved": 1.3871449427613887,
+   "slaved_groenwall_C''=11.74": 1.2842158000551769,
+   "slaved_groenwall_C''=151.15": 1.9911835961604216
+  },
+  "L=1e+18": {
+   "assembly_measured_sens": 6.630141866723374,
+   "assembly_proved_C'=119.33": 34.05725232185504,
+   "assembly_proved_C'=151.15": 34.05725232185504,
+   "slaved_conjugated_measured": 2.6398626287978262e-17,
+   "slaved_conjugated_proved": 2.2194319084182222e-16,
+   "slaved_groenwall_C''=11.74": 1.2170738904329585,
+   "slaved_groenwall_C''=151.15": 1.2170738904329588
+  },
+  "L=2560": {
+   "assembly_measured_sens": 6.633862816586313,
+   "assembly_proved_C'=119.33": 34.09507352689289,
+   "assembly_proved_C'=151.15": 34.105158758974554,
+   "slaved_conjugated_measured": 0.01031196339374151,
+   "slaved_conjugated_proved": 0.08669655892258679,
+   "slaved_groenwall_C''=11.74": 1.2212702597843472,
+   "slaved_groenwall_C''=151.15": 1.2654557470409251
+  },
+  "L=40": {
+   "assembly_measured_sens": 6.868282657951423,
+   "assembly_proved_C'=119.33": 36.47780944427779,
+   "assembly_proved_C'=151.15": 37.12326429750407,
+   "slaved_conjugated_measured": 0.6599656571994567,
+   "slaved_conjugated_proved": 5.548579771045555,
+   "slaved_groenwall_C''=11.74": 1.4856415289218314,
+   "slaved_groenwall_C''=151.15": 4.313512713342811
+  },
+  "L=640": {
+   "assembly_measured_sens": 6.645025666175127,
+   "assembly_proved_C'=119.33": 34.20853714200646,
+   "assembly_proved_C'=151.15": 34.2488780703331,
+   "slaved_conjugated_measured": 0.04124785357496604,
+   "slaved_conjugated_proved": 0.34678623569034717,
+   "slaved_groenwall_C''=11.74": 1.2338593678385132,
+   "slaved_groenwall_C''=151.15": 1.4106013168648242
+  }
+ },
+ "grid": {
+  "measured_L=10240": {
+   "conjugated_epsT": 0.0288699753243125,
+   "conjugated_mu": 0.015282529505368195,
+   "conjugated_muJ": 0.0022148234045908932,
+   "conjugated_mu_times_L": 156.49310213497031,
+   "groenwall_epsT": 0.011900920640420453,
+   "groenwall_mu": 0.006278469603795185,
+   "groenwall_muJ": 0.0022149771002344387,
+   "groenwall_mu_times_L": 64.2915287428627,
+   "p_c_conjugated": 0.0025779908484353776,
+   "p_c_groenwall": 1.2181229827708056
+  },
+  "measured_L=160": {
+   "conjugated_epsT": Infinity,
+   "conjugated_mu": 1.0627707676588873,
+   "conjugated_muJ": 0.15287028137843195,
+   "conjugated_mu_times_L": 170.04332282542197,
+   "groenwall_epsT": 12.277729294194708,
+   "groenwall_mu": 0.41812206201126206,
+   "groenwall_muJ": 0.15377749701680732,
+   "groenwall_mu_times_L": 66.89952992180193,
+   "p_c_conjugated": 0.16499141429986416,
+   "p_c_groenwall": 1.2842158000551769
+  },
+  "measured_L=2560": {
+   "conjugated_epsT": 0.1472537285302287,
+   "conjugated_mu": 0.06136735574188876,
+   "conjugated_muJ": 0.008890554002975337,
+   "conjugated_mu_times_L": 157.10043069923523,
+   "groenwall_epsT": 0.0524471128125303,
+   "groenwall_mu": 0.025161284647488943,
+   "groenwall_muJ": 0.008893051677493657,
+   "groenwall_mu_times_L": 64.4128886975717,
+   "p_c_conjugated": 0.01031196339374151,
+   "p_c_groenwall": 1.2212702597843472
+  },
+  "measured_L=40": {
+   "conjugated_epsT": Infinity,
+   "conjugated_mu": 5.673627097535115,
+   "conjugated_muJ": 0.7968854715841314,
+   "conjugated_mu_times_L": 226.9450839014046,
+   "groenwall_epsT": Infinity,
+   "groenwall_mu": Infinity,
+   "groenwall_muJ": Infinity,
+   "groenwall_mu_times_L": Infinity,
+   "p_c_conjugated": 0.6599656571994567,
+   "p_c_groenwall": 1.4856415289218314
+  },
+  "measured_L=640": {
+   "conjugated_epsT": 1.8451327055729148,
+   "conjugated_mu": 0.24932151243506387,
+   "conjugated_muJ": 0.03606936426287466,
+   "conjugated_mu_times_L": 159.5657679584409,
+   "groenwall_epsT": 0.3180874270222283,
+   "groenwall_mu": 0.10140800239111465,
+   "groenwall_muJ": 0.036111955774103865,
+   "groenwall_mu_times_L": 64.90112153031338,
+   "p_c_conjugated": 0.04124785357496604,
+   "p_c_groenwall": 1.2338593678385132
+  },
+  "proved_Ca_measured_L=10240": {
+   "conjugated_epsT": 0.17514931368198078,
+   "conjugated_mu": 0.015282529505368195,
+   "conjugated_muJ": 0.0022148234045908932,
+   "conjugated_mu_times_L": 156.49310213497031,
+   "groenwall_epsT": 0.07265699704613504,
+   "groenwall_mu": 0.006320186410736147,
+   "groenwall_muJ": 0.0022149784542973006,
+   "groenwall_mu_times_L": 64.71870884593814,
+   "p_c_conjugated": 0.0025779908484353776,
+   "p_c_groenwall": 1.22916935458495
+  },
+  "proved_Ca_measured_L=160": {
+   "conjugated_epsT": Infinity,
+   "conjugated_mu": 1.0627707676588873,
+   "conjugated_muJ": 0.15287028137843195,
+   "conjugated_mu_times_L": 170.04332282542197,
+   "groenwall_epsT": 1534.911224327609,
+   "groenwall_mu": 0.6529644952506105,
+   "groenwall_muJ": 0.15462055652910278,
+   "groenwall_mu_times_L": 104.47431924009769,
+   "p_c_conjugated": 0.16499141429986416,
+   "p_c_groenwall": 1.9911835961604216
+  },
+  "proved_Ca_measured_L=2560": {
+   "conjugated_epsT": 0.89336375246093,
+   "conjugated_mu": 0.06136735574188876,
+   "conjugated_muJ": 0.008890554002975337,
+   "conjugated_mu_times_L": 157.10043069923523,
+   "groenwall_epsT": 0.32719431946652716,
+   "groenwall_mu": 0.025838448530415118,
+   "groenwall_muJ": 0.008893141078755606,
+   "groenwall_mu_times_L": 66.14642823786271,
+   "p_c_conjugated": 0.01031196339374151,
+   "p_c_groenwall": 1.2654557470409251
+  },
+  "proved_Ca_measured_L=40": {
+   "conjugated_epsT": Infinity,
+   "conjugated_mu": 5.673627097535115,
+   "conjugated_muJ": 0.7968854715841314,
+   "conjugated_mu_times_L": 226.9450839014046,
+   "groenwall_epsT": Infinity,
+   "groenwall_mu": Infinity,
+   "groenwall_muJ": Infinity,
+   "groenwall_mu_times_L": Infinity,
+   "p_c_conjugated": 0.6599656571994567,
+   "p_c_groenwall": 4.313512713342811
+  },
+  "proved_Ca_measured_L=640": {
+   "conjugated_epsT": 11.194111647234957,
+   "conjugated_mu": 0.24932151243506387,
+   "conjugated_muJ": 0.03606936426287466,
+   "conjugated_mu_times_L": 159.5657679584409,
+   "groenwall_epsT": 2.2738082243068725,
+   "groenwall_mu": 0.11289412286715969,
+   "groenwall_muJ": 0.03611847631485432,
+   "groenwall_mu_times_L": 72.2522386349822,
+   "p_c_conjugated": 0.04124785357496604,
+   "p_c_groenwall": 1.4106013168648242
+  },
+  "proved_L=10240": {
+   "conjugated_epsT": 2.877318763424746,
+   "conjugated_mu": 0.1352452516921301,
+   "conjugated_muJ": 0.0022159793131868444,
+   "conjugated_mu_times_L": 1384.911377327412,
+   "groenwall_epsT": 0.5697336365686833,
+   "groenwall_mu": 0.04389183109959569,
+   "groenwall_muJ": 0.0022167966138548767,
+   "groenwall_mu_times_L": 449.4523504598599,
+   "p_c_conjugated": 0.021674139730646698,
+   "p_c_groenwall": 1.22916935458495
+  },
+  "proved_L=160": {
+   "conjugated_epsT": Infinity,
+   "conjugated_mu": Infinity,
+   "conjugated_muJ": Infinity,
+   "conjugated_mu_times_L": Infinity,
+   "groenwall_epsT": Infinity,
+   "groenwall_mu": Infinity,
+   "groenwall_muJ": Infinity,
+   "groenwall_mu_times_L": Infinity,
+   "p_c_conjugated": 1.3871449427613887,
+   "p_c_groenwall": 1.9911835961604216
+  },
+  "proved_L=2560": {
+   "conjugated_epsT": 346.5807360543697,
+   "conjugated_mu": 0.5590337813385882,
+   "conjugated_muJ": 0.00891013264422913,
+   "conjugated_mu_times_L": 1431.1264802267856,
+   "groenwall_epsT": 5.008718030884532,
+   "groenwall_mu": 0.179440406511757,
+   "groenwall_muJ": 0.008924391249760966,
+   "groenwall_mu_times_L": 459.3674406700979,
+   "p_c_conjugated": 0.08669655892258679,
+   "p_c_groenwall": 1.2654557470409251
+  },
+  "proved_L=40": {
+   "conjugated_epsT": Infinity,
+   "conjugated_mu": Infinity,
+   "conjugated_muJ": Infinity,
+   "conjugated_mu_times_L": Infinity,
+   "groenwall_epsT": Infinity,
+   "groenwall_mu": Infinity,
+   "groenwall_muJ": Infinity,
+   "groenwall_mu_times_L": Infinity,
+   "p_c_conjugated": 5.548579771045555,
+   "p_c_groenwall": 4.313512713342811
+  },
+  "proved_L=640": {
+   "conjugated_epsT": Infinity,
+   "conjugated_mu": 2.559826763546523,
+   "conjugated_muJ": 0.03647738528331268,
+   "conjugated_mu_times_L": 1638.2891286697748,
+   "groenwall_epsT": 17719.814474878527,
+   "groenwall_mu": 0.784016396194431,
+   "groenwall_muJ": 0.036868638938204024,
+   "groenwall_mu_times_L": 501.7704935644358,
+   "p_c_conjugated": 0.34678623569034717,
+   "p_c_groenwall": 1.4106013168648242
+  }
+ },
+ "inputs": {
+  "C_a": 8.697888081698725,
+  "c_star": 0.8113825936219724,
+  "kappa": 0.4997212305210886,
+  "lam_max": 1.8377407156083092,
+  "lam_omega": 1.5,
+  "r_h_assembly": 0.9818223012813015,
+  "r_h_slaved": 0.9199394406311712
+ },
+ "mu_c_over_1_over_L": {
+  "measured": {
+   "conjugated": 156.29144908349303,
+   "conjugated_muJ_L": 22.653214193368854,
+   "groenwall": 64.25113763066389,
+   "groenwall_muJ_L": 22.653214193368854
+  },
+  "proved": {
+   "conjugated": 1369.9555729208257,
+   "conjugated_muJ_L": 22.653214193368854,
+   "groenwall": 446.2052364675315,
+   "groenwall_muJ_L": 22.653214193368854
+  },
+  "proved_Ca_measured": {
+   "conjugated": 156.29144908349303,
+   "conjugated_muJ_L": 22.653214193368854,
+   "groenwall": 64.25114198408055,
+   "groenwall_muJ_L": 22.653214193368854
+  }
+ }
+}

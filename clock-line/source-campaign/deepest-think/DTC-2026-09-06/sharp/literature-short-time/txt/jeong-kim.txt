@@ -1,0 +1,1726 @@
+                                               A simple ill-posedness proof for incompressible Euler equations
+                                                                  in critical Sobolev spaces
+                                                                                    Junha Kim∗                      In-Jee Jeong†
+
+
+
+
+arXiv:2111.14078v2 [math.AP] 17 Jul 2022
+                                                                                                       July 19, 2022
+
+
+                                                                                                         Abstract
+                                                    We provide a simple proof that the Cauchy problem for the incompressible Euler equations in Rd with
+                                                 any d ≥ 3 is ill-posed in critical Sobolev spaces, extending an earlier work of Bourgain–Li (Int. Math.
+                                                 Res. Not. 2021) in the case d = 3. The ill-posedness is shown for certain critical Lorentz spaces as well.
+
+
+                                           1     Introduction
+                                           1.1     Main results
+                                           In this paper, we are concerned with the Cauchy problem for the incompressible Euler equations in Rd with
+                                           d ≥ 3:                                  
+                                                                                   ∂t u + u · ∇u + ∇p = 0,
+                                                                                   
+                                                                                                   ∇ · u = 0,                                   (1.1)
+                                                                                   
+                                                                                                u(t = 0) = u0 .
+                                                                                   
+
+                                           We shall provide a simple proof that (1.1) is ill-posed in the critical Sobolev space H d/2+1 (Rd ), in the strongest
+                                           sense of Hadamard. The space H d/2+1 (Rd ) is critical since one can obtain local well-posedness of (1.1) in
+                                           H s (Rd ) with any s > d/2 + 1 ([15, 16]), while u ∈ H d/2+1 (Rd ) does not guarantee that k∇ukL∞ < ∞,
+                                           which is an essential ingredient in local regularity proof. Our first main result gives the existence of a
+                                           H d/2+1 –regular data without any solutions in the same space.
+                                           Theorem 1.1 (Nonexistence). For any ε > 0, there exists u0 ∈ H d/2+1 (Rd ) satisfying
+
+                                                                                                  ku0 kH d/2+1 (Rd ) < ε
+
+                                           such that there is no corresponding solution to (1.1) belonging to L∞ ([0, δ]; H d/2+1 (Rd )) for any δ > 0.
+                                              Furthermore, we are able to prove that a large growth of the H d/2+1 –norm occurs for certain infinitely
+                                           smooth initial data.
+                                           Theorem 1.2 (Strong norm inflation). For any δ, ε, A > 0, there exists u0 ∈ C ∞ (Rd ) with ku0 kH d/2+1 (Rd ) <
+                                           ε such that the unique local-in-time smooth solution u to (1.1) exists on [0, δ ∗ ] for some 0 < δ ∗ < δ and
+                                           satisfies
+                                                                                            sup ku(t, ·)kH d/2+1 (Rd ) > A.
+                                                                                          t∈[0,δ ∗ ]
+                                              ∗ School of Mathematics, Korea Institute for Advanced Study, 85 Hoegi-ro, Dongdaemun-gu, Seoul 02455.                    E-mail:
+                                           junha02@kias.re.kr
+                                              † Department of Mathematics and RIM, Seoul National University, 1 Gwanak-ro, Gwanak-gu, Seoul 08826, Korea. E-mail:
+
+                                           injee j@snu.ac.kr, Corresponding Author.
+                                                Key words: incompressible Euler; ill-posedness; vortex stretching; critical regularity; non-existence; norm inflation.
+                                           2020 AMS Mathematics Subject Classification: 76B47, 35Q35
+
+
+                                                                                                             1
+     We remark that the above statements for the two and three-dimensional cases have been already proved
+by Bourgain–Li in [4] and [5], respectively. We refer the interested readers to these works for an extensive
+list of literature on the Cauchy problem for the Euler equations. As Bourgain and Li are emphasizing in the
+introduction of [5], the 3D case is much more involved than the 2D case due to the presence of the vortex
+stretching term, lack of Lp conservation of the vorticity, absence of Yudovich theory, and the issues arising
+from dealing with the non-local norm H 5/2 . A short proof for the 2D case was given in [10], and this simplified
+argument became a basis for further developments in the well-posedness theory, including continuous-in-time
+loss of Sobolev regularity ([11]), enstrophy growth in the Navier–Stokes equations ([14, 13]), and strong ill-
+posedness for active scalar equations ([12]). Some further developments in this direction are given in [19, 7].
+Therefore, we believe that the simplified argument presented in the current paper for three and higher
+dimensions will be useful in the further study of well-posedness for the high-dimensional Euler and related
+systems. Indeed, the ill-posed mechanism in critical spaces is closely related with recent groundbreaking
+works on finite-time singularity formation for the 3D Euler equations ([9, 6]). Moreover, our simple proof is
+robust enough to handle all dimensions d ≥ 3 at once. Lastly, we prove strong ill-posedness in critial Lorentz
+spaces which does not seem to follow from the approach of [5], see technical discussion in §2.4 below.
+
+1.2    Axisymmetric Euler without swirl
+The aforementioned ill-posedness results will be obtained by considering a class of solutions referred to as
+axisymmetric without swirl : if the velocity takes the form
+
+                                    u(t, x) = ur (t, r, xd )er + ud (t, r, xd )ed                          (1.2)
+
+where x = (xh , xd ) with r = |xh |, then it can be shown that this ansatz propagates in time for the evolution
+of (1.1), upon having the uniqueness of a solution to (1.1). In this case, introducing the scalar vorticity
+
+                                             ω(t, x) = ∂r ud − ∂d ur                                       (1.3)
+
+which is again a function of r and xd , the Euler equations (1.1) reduce to a simple evolution equation for ω:
+we have
+                                           ω                     ω
+                                      ∂t d−2 + (ur ∂r + ud ∂d ) d−2 = 0.                                 (1.4)
+                                         r                     r
+The components ur and ud can be recovered from ω at each instant of time via the axisymmetric Biot–Savart
+law:
+                                                      (xd − yd ) d−1
+                                                                  P
+                                        1      1                    j=1 xj yj
+                                                  Z
+                       ur (t, x) = −                                          ω(t, y) dy,           (1.5)
+                                      d|Bd | |xh | Rd      |yh ||x − y|d
+                                                 Z Pd−1
+                               d            1          j=1 (xj − yj )yj                             (1.6)
+                             u (t, x) =                                  ω(t, y) dy,
+                                         d|Bd | Rd     |yh ||x − y|d
+where |Bd | denotes the volume of the d-dimensional unit ball. Introducing the flow Φ = Φr er + Φd ed by
+                                                          d
+                              Φ(0, x) = x       and          Φ(t, x) = u(t, Φ(t, x)),                      (1.7)
+                                                          dt
+we see that solutions to (1.4) satisfy
+                                             ω(t, Φ(t, x))  ω0 (x)
+                                               r     d−2
+                                                           = d−2                                           (1.8)
+                                             Φ (t, x)        r
+along the flow. Note that along the flow, ω could either increase or decrease by the factor (Φr /r)d−2 . This
+vortex stretching effect can be alternatively seen from the equation for ω, rather than ω/rd−2 :
+                                                                           ur
+                                     ∂t ω + (ur ∂r + ud ∂d )ω = (d − 2)       ω.
+                                                                           r
+
+                                                         2
+    Regarding the axisymmetric without swirl equation (1.4), we have local well-posedness for any initial data
+satisfying ω0 ∈ L1 ∩ L∞ (Rd ) and r−(d−2) ω0 ∈ Ld,1 (Rd ): there exists a unique corresponding local-in-time
+solution to (1.1) satisfying ω ∈ L1 ∩ L∞ (Rd ) and r−(d−2) ω ∈ Ld,1 (Rd ) for some time interval. The solution
+is global in the case d = 3. This was proved by Danchin ([8]) and can be viewed as a sharp extension of
+the celebrated Yudovich theory [20] in two dimensions. Unlike the two-dimensional case, the extra condition
+r−(d−2) ω0 ∈ Ld,1 (Rd ) is necessary to control vortex stretching, and seems to be sharp (see [9]). Indeed, as a
+byproduct of our analysis, we were able to obtain the following result:
+Theorem 1.3. For each d ≥ 3, there exists 1 < q̄d < ∞ such that the axisymmetric equation (1.4) is
+ill-posed for ω0 ∈ L1 ∩ L∞ with r−(d−2) ω0 ∈ Ld,q (Rd ) with any ∞ ≥ q > q̄d .
+    The precise ill-posedness statement is given in Proposition 4.1 below.
+
+Organization of the paper
+The rest of the paper is organized as follows. In §2, we explicitly show the choice of initial data used to prove
+the main theorems. After stating the Key Lemma which is the main technical tool, we explain the ideas of
+the proof. Then, in §3, we make several key observations on dynamics of the solution associated with the
+initial data chosen in §2. After that, Theorems 1.3, 1.1, 1.2 are proved in §4, 5, 6, respectively. Finally, we
+prove the Key Lemma in §7.
+
+Notation
+We denote B(x; r) be the open ball in Rd of radius r centered at x. The d-dimensional volume of the unit
+ball in Rd is denoted by |Bd |. As it is usual, we write A . B if there exists an absolute constant C > 0 such
+that A ≤ CB. Furthermore, we say A ≃ B if A . B and B . A.
+
+
+2     Preliminaries
+2.1     Choice of initial data
+We demonstrate the choice of initial data that will be used in the proof of main theorems. To begin with,
+let φ : R2 → R≥0 be a smooth bump function with the following properties:
+ • φ is C ∞ -smooth and radial;
+
+ • φ is supported in B(0; 18 ) and φ = 1 in B(0; 32
+                                                 1
+                                                    ).
+For some n0 < m ≤ ∞ and 0 < α < 3/4 to be determined later, we take
+                                                     m
+                                                                  (n)
+                                                     X
+                                             ω0 :=          n−α ω0,loc ,                                   (2.1)
+                                                     n=n0
+
+where
+                   (n)
+                 ω0,loc (r, xd ) := φ(8n (r − 8−n+1 , xd − 8−n )) − φ(8n (r − 8−n+1 , xd + 8−n )).         (2.2)
+
+The precise value of α (which determines the regularity of (2.1)) will be specified in the proofs of each
+theorems. We observe that ω0 is an odd function with respect to xd , and has the form of a weighted sum of
+                                                                  (n)
+normalized bubbles; we shall sometimes (informally) refer to n−α ω0,loc as the n-th bubble.
+
+
+
+
+                                                         3
+2.2    The Key Lemma
+We now state the main technical tool of this paper.
+                                                                       d
+Lemma 2.1. We impose the following assumptions on ω ∈ H 2 ∪ (L∞ ∩ L2 )(Rd ):
+ • Odd with respect to the last coordinate:
+
+                                              ω(yh , yd ) = −ω(yh , −yd );                              (2.3)
+
+ • For any y 6= 0 satisfying either |yh | = 0 or yd = 0, there exists an open neighborhood of y such that ω
+   vanishes.
+Then, there exists a constant C > 0 such that for any x ∈ Rd with r = |xh | ≥ xd > 0, we have
+
+                            ur (x)        1                     |yh |yd
+                                                       Z
+                                   −                                d+2
+                                                                        ω(y) dy ≤ CB1 (x)               (2.4)
+                              r      (d − 1)|Bd |          Q(x) |y|
+
+and
+
+                                ud (x)    1               |yh |yd
+                                                 Z
+                                       +                      d+2
+                                                                  ω(y) dy ≤ CB2 (x),                    (2.5)
+                                 xd      |Bd |       Q(x) |y|
+
+where Q(x) := {y ∈ Rd ; |yh | ≥ 4|xh |} and B1 , B2 are non-negative functions with the upper bound
+                                                 
+                                   B1 (x) ≤ min k∇ωkLd(Rd ) , kωkL∞ (Rd ) ,
+                                (              d−1                                         )
+                                          r       d
+                                                                                r
+                 B2 (x) ≤ min     1 + log               k∇ωkLd (Rd ) , 1 + log      kωkL∞ (Rd ) .
+                                          xd                                   xd
+
+Remark 2.2. Gagliardo–Nirenberg interpolation inequality implies that
+                                                                   d
+                                         k∇ωkLd(Rd ) ≤ CkΛ 2 ωkL2 (Rd ) .
+
+    The “Key Lemma” has first appeared in a celebrated work of Kiselev–Sverak [18] for the two-dimensional
+Euler equations, although Bourgain and Li were using similar formulas in [4]; see also [21, 17, 14]. For the
+three-dimensional Euler equations, a similar result with a different remainder bound was used in [9, 6]. Our
+version of Key Lemma is sharp in that the remainder is bounded using only critical norms of the Euler
+equations. Therefore, we believe that this lemma will be useful for other purposes, for instance in the
+construction of smooth solutions with rapid Sobolev norm growth. While we defer the (somewhat tedious)
+proof later to §7, one may observe from the axi-symmetric Biot–Savart law that in the limit x → 0, we
+exactly have
+
+                ur (x)        1          |yh |yd                          ud (x)     1       |yh |yd
+                                     Z                                                   Z
+     r                                                         d
+ ∂r u (0) = lim        =                         ω(y) dy, ∂d u (0) = lim         =−                  ω(y) dy.
+            x→0    r     (d − 1)|Bd | Rd |y|d+2                       x→0 xd        |Bd | R3 |y|d+2
+
+2.3    Hardy’s inequality
+We now recall the famous Hardy’s inequality. We omit the proof since it can be easily obtained using an
+integration by parts.
+Lemma 2.3 (Hardy’s inequality). Let f be a positive smooth function defined on the interval (0, 1) with
+f (0) = 0. Then for any p > 1, we have
+
+                                     kx−1 f (x)kLp (0,1) ≤ Ck∂x f (x)kLp (0,1) .
+
+
+                                                             4
+2.4    Ideas of the proof
+Let us illustrate the main ideas of the proof, which have been inspired by the previous works [10, 14, 12]. The
+interested reader can find more information there; in the current setup, the main difference is the presence
+of vortex stretching. We consider the case of R3 .
+ • Formal computation and mechanism of illposedness. With a few simple and formal computations, let us
+   explain the reasoning behind the choice of our initial data. To begin with, at the initial time, the velocity
+   is roughly given by
+                                       r           
+                                       u0          r         1 1−α x
+                                            =           (ln     )  ϕ( ),
+                                       uz0       −2z        |x|       |x|
+   when n0 = 1 and m = ∞ in (2.1), which can be seen by the main term of the Key Lemma. Here, ϕ is a
+   bounded function supported in the region r, |z| ≃ |x|. Then, using that the variable ξ := ω/r is simply
+   being transported by the flow, we compute
+                  d           ξ2         −uz0 ξ02                       1 1−3α 1
+                          Z           Z                Z
+                     |t=0        dx =             dx ≃             (ln     )       dx = +∞
+                  dt       R3 z        R3 z    z        {|x|≤1}∩R3     |x|    |x|3
+                                                  1
+   when α < 2/3. That is, the quantity kz − 2 r−1 ωkL2 immediately blows up for t > 0, which implies
+                                                                 1
+   the blow up of the critical norm kωkH 3/2 as it controls kz − 2 r−1 ωkL2 thanks to the Hardy’s inequality.
+   Indeed, when α is slightly larger than 1/2, the initial vorticity “barely” belongs to the space H 3/2 in a
+   way that the corresponding velocity is not Lipschitz continuous in space. Geometrically, the ill-posedness
+   comes from the squeezing of the vorticity in the z-direction by the strong hyperbolic flow. In the case of
+   L∞ , we can similarly compute
+                             d                                          1 1−2α
+                                |t=0 kωkL∞ = kr−1 ur0 ω0 kL∞ ≃ sup (ln     )   = +∞
+                             dt                                |x|≤1   |x|
+
+   when α < 1/2, and one clearly sees that the ill-posedness comes from vortex stretching.
+ • Monotonicity and stability. While the above computation shows that ill-posedness occurs for the linear
+   advection equation obtained by replacing u(t) by u0 , for the nonlinear problem we need to understand
+   the effects on the velocity caused by evolution of the vorticity, and in particular need to make sure that
+   the velocity gradient (given by the main terms in the Key Lemma) remains large enough to create norm
+   inflation. There are two competing effects; while the squeezing of the vorticity weakens the induced
+   velocity gradient, the vortex stretching term strengthens it. As in our previous work [12], we identify a
+   timescale for each of the bubbles during which it essentially remains the same, and obtain a lower bound
+   on the velocity gradient based on such a stability statement. It turns out that, together with the help of
+   the vortex stretching term, such a lower bound is sufficient to prove strong ill-posedness results.
+ • Contradiction hypothesis and Lagrangian property. Throughout the proof, we heavily rely on the La-
+   grangian analysis, and in particular on the fact that the solutions of the axisymmetric Euler equations
+   satisfy the Cauchy formula (1.8). The Lagrangian analysis is not only essential in proving the stabil-
+   ity statement described in the above but also allows us to obtain sharp bounds on the critical norms.
+   Fortunately, existence and uniqueness of the flow map in our case is guaranteed by the contradiction
+   hypothesis that there is a local solution in the critical space.
+Remark 2.4. At this point, let us point out the main difference of our argument with the original proof of
+Bourgain–Li: in [5], to prove ill-posedness in H 3/2 (R3 ), the authors very carefully identify a class of initial
+data such that there is local well-posedness in L∞ (R3 ) (yet escapes H 3/2 ). In their work, a significant
+portion is devoted to proving propagation of the L∞ –norm with such data. After having L∞ , one can then
+try to repeat the strategy developed in the 2D case. On the other hand, we proceed by a direct contradiction
+argument which does not require the hypothetical solution to be bounded in L∞ . Furthermore, we are able
+to prove ill-posedness in L∞ as well: the vortex stretching effect is crucial in Theorem 1.3.
+
+                                                        5
+Remark 2.5. Very recently, An–Chen–Yin [1, 2] proved strong ill-posedness of the compressible Euler equa-
+tions in critical Sobolev spaces for dimensions 2 and 3. The ill-posedness in the compressible Euler case
+seems to be driven by instantaneous shock formation.
+
+
+3      Short time dynamics
+We consider ω0 of the form (2.1) and proceed under the assumption that there exists an associated solution
+to (1.4)
+                                                         d
+                                     ω ∈ L∞ ([0, T ]; H 2 ∪ (L∞ ∩ L2 )(Rd ))                             (3.1)
+
+with
+                                      n d                                 o
+                               sup min kΛ 2 ω(t)kL2 (Rd ) , kω(t)kL∞ (Rd ) ≤ A                           (3.2)
+                              t∈[0,T ]
+
+for some T > 0 and A > 0. By this assumption, we can find a constant B > 0 such that
+
+                            k∇u(t)kBMO(Rd ) + kω(t)kL2 (Rd ) ≤ B,           t ∈ [0, T ].
+
+This follows from the embedding H d/2 ⊂ BM O and the singular integral operator bound L∞ → BM O.
+Moreover, the BM O bound implies that the equation (1.4) possesses at most one solution belonging to the
+class (3.1) and the velocity u(t, ·) is log-Lipschitz (see [12, 3]): there exists a constant C > 0 such that
+                                                                              
+                                                                          1
+                    sup |u(t, x) − u(t, y)| ≤ CB|x − y| log 10 +                 ,    x, y ∈ Rd .
+                   t∈[0,T ]                                            |x − y|
+
+This guarantees that the flow map Φ is well-defined on t ∈ [0, T ] as the unique solution of (1.7). Thus, we
+can verfiy that the unique solution ω is given by (1.8) and in particular Lemma 2.1 applies to ω(t, ·) on the
+time interval [0, T ]. We shall let T be small so that AT ≤ c0 for some absolute constant c0 > 0, which is
+determined at the end of this section. We begin with the simple result.
+
+Lemma 3.1. Assume that ω be a solution to (1.4) satisfying (3.2) with initial data (2.1). Then, we have
+ω(t, x) = 0 for all x ∈ Rd with 0 ≤ |xh | < |xd | and t ∈ [0, T ].
+Proof. We recall Lemma 2.1 with x on the region {(r, xd ) ∈ R>0 × R>0 ; 1/2 ≤ xd /r ≤ 1}
+
+                                     ur (t, x)               ud (t, x)
+                                               ≥ −CA,                  ≤ CA.
+                                         r                      xd
+
+Using these inequalities, we show that Φd (t, x)/Φr (t, x) ≤ 1 for all x with xd /r ≤ 1/2 and t ∈ [0, T ]. We
+don’t need to consider x with xd /r > 1/2 due to the definition of ω0 . Suppose that Φ(t, x) enters the region
+at t = T ∗ ≤ T . Until escaping the area, the trajectory complies with
+
+                                                d     Φd (t, x)
+                                                   log r        ≤ CA.
+                                                dt    Φ (t, x)
+
+Then for CAT ≤ Cc0 ≤ log 2, it follows
+
+                                               Φd (t, x)      1
+                                         log             ≤ log + CAT ≤ 0.
+                                               Φr (t, x)      2
+
+From this, we conclude that Φ(t, x) cannot touch the line r = xd . This completes the proof.
+
+
+
+                                                         6
+   This lemma guarantees that Φ(t, x) with x ∈ supp (ω0 ) can be traced by Lemma 2.1 up to t ∈ [0, T ]. For
+                                                      (n)
+simplicity, let us write n-th bubble as Ωn := supp (ω0,loc ). The next result provides that the bubbles are
+“well-ordered”: each size of bubble and distance of adjacent bubbles in direction r are maintained to some
+extent.
+Lemma 3.2. Assume that ω be a solution to (1.4) satisfying (3.2) with initial data (2.1). Then, we have
+
+                    sup Φr (t, x) ≤ 4 inf Φr (t, x)            and      4 sup Φr (t, x) ≤ inf Φr (t, x)                  (3.3)
+                   x∈Ωn                   x∈Ωn                              x∈Ωn+1                 x∈Ωn
+
+
+for all n ≥ n0 and t ∈ [0, T ].
+Proof. We first show a generic proerty, which works even for ω0 without (2.1): let x, x′ ∈ Rd−1 × R>0 with
+r ≥ r′ > 0. Then, we have
+                                    1 r                       2r
+                                      Φ (t, x′ ) ≤ Φr (t, x) ≤ ′ Φr (t, x′ ),          t ∈ [0, T ].                      (3.4)
+                                    2                          r
+To show it, we make a simple observation
+                                         ur (t, x) ur (t, x′ )
+                                                  −            ≤ CA,          r ≥ r′ > 0.
+                                             r         r′
+This is directly obtained from (2.4) with yd ω(y) ≥ 0. Then, we have
+                                           d                  d
+                                              log Φr (t, x) −    log Φr (t, x′ ) ≤ CA
+                                           dt                 dt
+when Φr (t, x) ≥ Φr (t, x′ ). Integrating it over time and using the smallness of c0 , we can infer the claim.
+   Now, we consider ω0 with (2.1). Then, we clearly have from (3.4) that
+
+                                        sup Φr (t, x) ≤ 4 inf Φr (t, x),             t ∈ [0, T ]                         (3.5)
+                                       x∈Ωn′                 x∈Ωn
+
+
+for all n′ ≥ n ≥ n0 . Thus, it remains to show that
+                                      4 sup Φr (t, x) ≤ inf Φr (t, x),               t ∈ [0, T ]                         (3.6)
+                                        x∈Ωn+1                x∈Ωn
+
+
+for all n ≥ n0 . We prove it inductively. Let x ∈ Ωn0 and x′ ∈ Ωn0 +1 with xd , x′d > 0. We have from (2.4)
+that
+           d                  d                      1                             |yh |yd
+                                                            Z
+                   r     ′            r
+              log Φ (t, x ) −    log Φ (t, x) ≤                                            ω(t, y) dy + CA.
+           dt                 dt                (d − 1)|Bd | Q(Φ(t,x′ ))\Q(Φ(t,x)) |y|d+2
+
+We notice from (3.5) that
+                                                |yh |yd                            |yh ||yd |
+                    Z                                                   Z
+                                                    d+2
+                                                        ω(t, y) dy ≤                   d+2
+                                                                                              |ω(t, y)| dy.
+                          Q(Φ(t,x′ ))\Q(Φ(t,x)) |y|                      Φ(t,Ωn0 ) |y|
+
+Here, we consider n ≥ n0 for a while to give an estimate uniform on n. By the volume preserving property
+of the flow, we can see
+            |yh ||yd |                          |yh |d−1 |yd | |ω(t, y)|          |Φr (t, x)|d−1 |Φd (t, x)| |ω0 (y)|
+  Z                                   Z                                       Z
+                d+2
+                       |ω(t, y)| dy =                                    dy =                                         dy. (3.7)
+   Φ(t,Ωn ) |y|                        Φ(t,Ωn )    |y|d+2 |yh |d−2             Ωn       |Φ(t, x)|d+2         |yh |d−2
+
+Thus, we have
+                                                                                  2 Z
+                                       |yh ||yd |                          r                |ω0 (y)|
+                          Z
+                                           d+2
+                                                  |ω(t, y)| dy ≤    sup r                          d
+                                                                                                     dy.
+                              Φ(t,Ωn ) |y|                         x∈Ωn Φ (t, x)          Ωn |yh |
+
+
+                                                                   7
+Since (2.4) implies
+                                                      ur (t, x)
+                                                                ≥ −CA,
+                                                          r
+we have
+                                                Φr (t, x)
+                                                          ≥ exp (−CAt) .
+                                                    r
+These yield
+                                      |yh ||yd |
+                            Z
+                                          d+2
+                                                 |ω(t, y)| dy ≤ Cn−α exp (CAt) ,       n ≥ n0 .
+                             Φ(t,Ωn ) |y|
+
+Applying this estimate, we deduce
+                                d                    d
+                                   log Φr (t, x′ ) −    log Φr (t, x) ≤ C exp (CAt) + CA.
+                                dt                   dt
+Taking c0 > 0 small enough, we can infer
+                                                     exp (CAT ) − 1
+                 log Φr (t, x′ ) − log Φr (t, x) ≤                  + CAT + log r′ − log r ≤ − log 4.
+                                                           A
+This shows (3.6) in the case of n = n0 . Now, we fix k > n0 and assume that (3.6) be satisfied for all
+n0 ≤ n < k. To show (3.6) for n = k, we let x ∈ Ωk and x′ ∈ Ωk+1 with xd , x′d > 0. From (2.4), it follows
+
+          d                   d                       1                            |yh |yd
+                                                             Z
+            log Φr (t, x′ ) −    log Φr (t, x) ≤                                           ω(t, y) dy + CA.
+         dt                   dt                 (d − 1)|Bd | Q(Φ(t,x′ )\Q(Φ(t,x)) |y|d+2
+
+Since (3.6) with n0 ≤ n < k are assumed, we can see with (3.5) that
+                                            |yh |yd                        |yh ||yd |
+                      Z                                          Z
+                                                d+2
+                                                    ω(t, y) dy ≤               d+2
+                                                                                      |ω(t, y)| dy.
+                       Q(Φ(t,x′ )\Q(Φ(t,x)) |y|                   Φ(t,Ωk ) |y|
+
+Applying the uniform estimate, we have
+                                d                    d
+                                   log Φr (t, x′ ) −    log Φr (t, x) ≤ C exp (CAt) + CA.
+                                dt                   dt
+Therefore, we obtain what we desired. This completes the proof.
+   Let x ∈ Ωk for some k ≥ n0 . Then by the previous lemma, the set Q(Φ(t, x)) can be replaced by the
+union of bubbles ∪n<k Φ(t, Ωn ) on [0, T ]. From now on, we simply use the notation
+                                                          |yh |yd
+                                                Z
+                                      In (t) :=               d+2
+                                                                  ω(t, y) dy.
+                                                 Φ(t,Ωn ) |y|
+
+Lemma 3.3. Assume that ω be a solution to (1.4) satisfying (3.2) with initial data (2.1). Then, there exists
+a sequence {Tn }n≥n0 with
+
+                                            Tn := min{T, c1 (1 − α)n−1+α }
+
+for some absolute constant c1 > 0 such that
+                                 r                                  xd
+                                   ≤ Φr (t, x) ≤ 2r        and         ≤ Φd (t, x) ≤ 2xd                (3.8)
+                                 2                                  2
+for all x ∈ Ωn with n ≥ n0 and t ∈ [0, Tn ].
+
+                                                              8
+Proof. We prove it inductively. Let x ∈ Ωn0 with xd > 0 and assume that Φr (t, x)/Φd (t, x) ≤ 64 for
+t ∈ [0, Tn0 ]. We note that this assumption is actually obsolete by the following estimate. From Lemma 2.1,
+we have
+                                 d                                         d
+                      −CA ≤         log Φr (t, x) ≤ CA,        −CA ≤          log Φd (t, x) ≤ CA
+                                 dt                                        dt
+for all t ∈ [0, T ]. Taking c0 small enough to satisfy CAT ≤ Cc0 ≤ log 2, we can see that the trajectory
+Φ(t, x) cannot attain Φr (t, x)/Φd (t, x) ≥ 64 at any time t ∈ [0, Tn0 ]. Thus, we obtain (3.8) with n = n0 .
+Now we let k > n0 and suppose (3.8) be true for all n0 ≤ n < k. By Lemma 2.1, we have
+
+                                  d                       1       X
+                                     log Φr (t, x) −                In (t) ≤ CA
+                                  dt                 (d − 1)|Bd |
+                                                                     n<k
+
+and
+
+                                     d                   1 X
+                                        log Φd (t, x) +       In (t) ≤ CA.
+                                     dt                 |Bd |
+                                                               n<k
+
+By the assumption, we clearly have
+
+                                     In (t) ≃ In (0) = Cn−α ,         t ∈ [0, Tn ]
+
+for all n0 ≤ n < k. Using it with Tk ≤ Tn , we have
+
+                                                 d                    k 1−α
+                                    −CA ≤           log Φr (t, x) ≤ C       + CA
+                                                 dt                   1−α
+and
+                                         k 1−α        d
+                                    −C         − CA ≤    log Φr (t, x) ≤ CA
+                                         1−α          dt
+for all t ∈ [0, Tk ]. By the definition of Tk , we can see
+
+                             k 1−α                   k 1−α
+                                         
+                                                           c1 (1 − α)k −1+α + CAT ≤ log 2
+                                                                           
+                           C        + CA Tk ≤ C                                                         (3.9)
+                             1−α                    1−α
+for some constant c1 > 0. Thus, we can deduce the claim. This completes the proof.
+   We recall (3.7)
+
+                                               |Φr (t, x)|d−1 |Φd (t, x)| |ω0 (y)|
+                                            Z
+                                 In (t) =                                          dy
+                                            Ωn       |Φ(t, x)|d+2         |yh |d−2
+
+and let ℓ = ℓ(T ) ≥ n0 satisfy c1 (1 − α)ℓ−1+α ≤ T . Then by the above lemma, we can observe that
+                                     Z Tn
+                                                                 1
+                                          In (t) dt & Tn In (0) & , n ≥ ℓ.
+                                      0                          n
+Hence, we can find an absolute constant c2 > 0 and ℓ ≥ n0 such that
+                      n−1 Z Tk
+                                                                                         √
+                                                                     
+                      X                               1        1
+                                 Ik (t) dt ≥ c       √ + ···+              ≥ log nc2 ,    n ≥ ℓ.       (3.10)
+                       √    0                          n      n−1
+                     k= n
+
+For the sake of convenience, we let c2 < 1/4.
+
+                                                           9
+4      L∞ illposedness
+In this section, we prove Theorem 1.3 in the case d = 3. Adapting the argument to d > 3 is straightforward.
+Here, we consider the C ∞ –smooth function ω0 given by (2.1) with some m < ∞. From a direct computation,
+we can verify that
+                                                                 m
+                                       ω0    q                   X
+                                                            ≤C          n−αq ,          q ≥ 1.          (4.1)
+                                       r     L3,q (R3 )
+                                                                 n=n0
+
+Therefore, if q > 1/α, r−1 ω0 is bounded in L3,q uniformly in m. According to [8], we have a unique global
+in time solution to (1.4)
+
+                                            ω ∈ L∞             1   ∞  3
+                                                 loc ([0, ∞); L ∩ L (R )),                              (4.2)
+
+with
+                                 ω(t)            ω0
+                                               =                               < ∞,          t > 0.
+                                  r L3,1 (R3 )   r                L3,1 (R3 )
+
+We now state and prove the following proposition, which is Theorem 1.2 in the case d = 3.
+                                                                                                  (m)
+Proposition 4.1. We consider the sequence of C ∞ –smooth initial data ω0 given by (2.1), where n0 <
+m < ∞ and 0 < α < c2 , with c2 > 0 being the constant from (3.10). Given any ε > 0 and q > 1/α, by taking
+n0 large, we have uniform bounds
+                                 (m)                                            (m)
+                               kω0     kL1 ∩L∞ (R3 ) ≤ ε,             kr−1 ω0         kL3,q (R3 ) ≤ ε
+
+for all m ≥ n0 . Then, there exists M = M (n0 ) > 0 such that for all m > M , the unique global in time
+                                  (m)
+solution ω (m) with initial data ω0 satisfies
+                                                                                  1 c2 −α
+                                         sup        kω (m) (t, ·)kL∞ (R3 ) ≥        m
+                                      t∈[0,T (m)]                                 4
+                         1
+for T (m) := c1 (1 − α)m 2 (−1+α) , where c1 is from (3.9).
+Proof. In the proof, we drop the superscript (m) for simplicity. We set
+                                                                   1 c2 −α
+                                                      A(m) =         m
+                                                                   4
+and observe that
+                                                             1                           1   1
+                                     AT ≤ Cmc2 −α m 2 (−1+α) = Cmc2 − 2 − 2 α .
+
+Since we have c2 − 1/2 − α/2 < 0, we can find M > n20 so that AT ≤ c0 for all m > M . We fix M to satisfy
+the above conditions and assume that there exists m > M with
+                                                  sup kω(t)kL∞ (R3 ) ≤ A.
+                                                 t∈[0,T ]
+
+Since ω satisfies all conditions for §3, we obtain Lemma 3.1, Lemma 3.2, and Lemma 3.3 with the constants
+c1 and c2 , regardless of the choice of m. We notice that T√m = T . Thus, we can have from (3.10) with
+n = m = ℓ2 that
+                                           m−1
+                                           X Z Tk
+                                                     Ik (t) dt ≥ log mc2 .
+                                              √        0
+                                            k= m
+
+
+                                                                 10
+Let x ∈ Ωm . By the use of (2.4), we infer that
+                                                                  Z T
+                          Φr (T, x)        1       X
+                    log             ≥                                   Ik (τ ) dτ − CAT ≥ log mc2 − CAT.
+                              r       (d − 1)|Bd |                 0
+                                                           k<m
+
+Hence, it follows
+
+                                                         |Φr (T, x)|  1
+                                                     inf             ≥ mc 2 .
+                                                    x∈Ωm      r       2
+Since we clearly have
+
+                                                                    |Φr (T, x)|           |Φr (T, x)|
+                    kω(T )kL∞ (R3 ) ≥ kω0 kL∞ (Ωm ) inf                         = m−α inf             ,
+                                                               x∈Ωm      r           x∈Ωm      r
+it follows
+                                                                            1 c2 −α
+                                                    kω(T )kL∞(R3 ) ≥          m     .
+                                                                            2
+This makes a contradiction and we complete the proof.
+
+
+5     Nonexistence
+In this section, to prove Theorem 1.1, we consider ω0 satisfying (2.1) with m = ∞ and 1/2 < α < 3/4. We
+notify that α will be specified later. We first show a proposition about the initial data.
+Proposition 5.1. Let ω0 satisfy (2.1) with m = ∞ and 1/2 < α < 3/4. Then, we have
+
+                                      kω0 k     d               →0          as      n0 → ∞.
+                                              H 2 ∩L∞ (Rd )
+
+Remark 5.2. This is not simply obtained by the triangle inequality, and we need to use the fact that the
+                                          d
+“bubbles” of ω0 are orthogonal in H 2 . Moreover, by the same method, we can prove that the vector field
+    xh                d           x
+ω0 |xh | belongs to H 2 with kω0 |xhh | k d2 → 0 as n0 → ∞. In particular, this implies that the corresponding
+                                         H
+                                  d
+velocity u0 in Rd belongs to H 2 +1 and ku0 k d2 +1 → 0 as n0 → ∞. To see this, we recall that the transform
+                                                 H
+ω0 |xxhh | 7→ ∇u0 is given by a singular integral operator satisfying the L2 -bound, which gives
+
+                                                                              xh
+                                                ku0 k      d      ≤ Ckω0          k d
+                                                        Ḣ 2 +1              |xh | H 2
+
+for some absolute constant C > 0. On the other hand, L2 -smallness follows from
+                                                          1
+                                                Z
+                                  |u0 (x)| ≤ Cd                 |ω0 (y)| dy,
+                                                 R d |x − y|d−1
+
+which gives with some 0 < a = a(d) < 1
+
+                                      ku0 kL2 ≤ Cd kω0 kaL∞ kω0 k1−a
+                                                                 L1 ≤ Cd kω0 kL
+                                                                                ∞
+
+
+
+after using that kω0 kL1 ≤ Ckω0 kL∞ holds uniformly in n0 .
+Proof. As we clearly see kω0 kL2 ∩L∞ (Rd ) → 0 as n0 → ∞, it suffices to show that
+                                           d
+                                       kΛ 2 ω0 kL2 (Rd ) → 0                as    n0 → ∞.                   (5.1)
+
+
+                                                                       11
+We define operators Λh and Λd by
+
+                                           Λh f := F −1 |ξh |F f,                         Λd f := F −1 |ξd |F f,
+
+for f ∈ S (Rd ). Using the notation
+                                  Z                                                                                       Z
+               Fh f (ξh , xd ) :=   e−ixh ·ξh f (x) dxh ,                                    Fd f (xh , ξd ) :=                 e−ixd ξd f (x) dxd ,
+                                              Rd−1                                                                          R
+
+we can verify that Λh f = Fh−1 |ξh |Fh f and Λd f := Fd−1 |ξd |Fd f. We shall first show
+                                                         d
+                                                   kΛd2 ω0 k2L2 (Rd ) → 0                    as         n0 → ∞.                                                       (5.2)
+
+By the Plancherel theorem, we have
+                                                                                          ∞
+                                                                                                                    ! 2
+                                          d                                  d                              (n)
+                                                                                          X
+                                                                                                      −α
+                                    kΛd ω0 k2L2 (Rd ) =
+                                          2
+                                                                       |ξd | Fd
+                                                                             2                    n        ω0,loc                    .
+                                                                                         n=n0                             L2 (Rd )
+
+For each x̄h ∈ Rd−1 , we can find an unique natural number k ≥ n0 with
+                                               ∞
+                                                                 (n)                                  (k)
+                                               X
+                                                         n−α ω0,loc (x̄h , xd ) = k −α ω0,loc (x̄h , xd ).
+                                              n=n0
+
+This implies
+                 ∞
+                                          ! 2                    ∞                                                              ∞
+         d                                                                        d                           2                                  d         2
+                                  (n)                                                               (n)                                              (n)
+                 X                                               X                                                              X
+                            −α
+      |ξd | Fd
+         2              n        ω0,loc                      =           |ξd | 2 n−α Fd ω0,loc                        d
+                                                                                                                        =                n−2α Λd2 ω0,loc              .
+                                                                                                              L2 (R   )                                    L2 (Rd )
+                 n=n0                          L2 (Rd )          n=n0                                                         n=n0
+
+
+Using Gagliardo-Nirenberg interpolation inequality, we can have
+                                     d               2
+                                           (n)                                     (n)                        (n)
+                                  Λd2 ω0,loc                     ≤ C ∂dd ω0,loc                            ω0,loc                ≤C
+                                                     L2 (Rd )                                L2 (Rd )                 L2 (Rd )
+
+for all n ≥ n0 . Thus, we obtain
+                                                   ∞                                     2
+                                                                         d
+                                                                                 (n)
+                                                   X
+                                                             n−2α Λd2 ω0,loc                          ≤ Cn01−2α .
+                                                                                         L2 (Rd )
+                                                   n=n0
+
+By the condition α > 1/2, (5.2) follows. On the other hand, for each x̄d ∈ R, we have
+                                               ∞
+                                                                  (n)                                   (k)
+                                               X
+                                                         n−α ω0,loc (xh , x̄d ) = k −α ω0,loc (xh , x̄d )
+                                               n=n0
+
+for some k ≥ n0 . Repeating the above procedure with this property, we can similarly show that
+                                                         d
+                                                   kΛh2 ω0 k2L2 (Rd ) → 0                    as         n0 → ∞.
+
+Combining the above estimates with
+                                               d                             d                                d
+                                          kΛ 2 ω0 k2L2 (Rd ) ≃ kΛh2 ω0 k2L2 (Rd ) + kΛd2 ω0 k2L2 (Rd ) ,
+
+we deduce (5.1). This completes the proof.
+
+                                                                                   12
+    Now, we let A > 0 and T > 0 satisfy AT ≤ c0 and assume that there exists a solution to (1.4) satisfying
+                                                               d                                        d
+                                      ω ∈ L∞ ([0, T ]; H 2 (Rd )),                      sup kΛ 2 ω(t)kL2 (Rd ) ≤ A.
+                                                                                       t∈[0,T ]
+
+Then, following §3, we obtain the statements of Lemmas 3.1, 3.2, and 3.3 with the same constants c1 and
+c2 . We may write the solution in the form
+                                               ∞
+                                                               (n)                        (n)                           (n)
+                                               X
+                                 ω(t, x) =           n−α ωloc (t, x),                   ωloc (t, Φ(t, x)) = ω0,loc (t, x).
+                                              n=n0
+
+Then, we can observe from (3.3) that the set Dn (t) defined by
+                                                                             (n)
+                                       Dn (t) := {xh ∈ Rd−1 ; ωloc (t, x) 6= 0 for some xd ∈ R}
+
+is disjoint from each other on the time interval [0, T ]. Thus, we have that
+                                                       d
+                                                               (n)
+                                      {xh ∈ Rd−1 ; Λd2 ωloc (t, x) 6= 0 for some xd ∈ R} = Dn (t),
+
+directly obtained by performing the Fourier transform with respect to xd . Using this property, we show a
+                           d
+friendly lower bound of kΛ 2 ω(t)kL2 (Rd ) .
+Proposition 5.3. Assume that ω be a solution to (1.4) satisfying (3.2) with initial data (2.1). Then, we
+have an absolute constant c > 0 such that
+                                         ∞                    2(d−2)                     d
+                                                   |Φr (t, x)|                    |xd |
+                Z
+                        d
+                                         X
+                     |Λ 2 ω(t)|2 dx ≥ c      inf                         inf      d (t, x)|
+                                                                                               n−2α . (5.3)
+                 R d
+                                        n=n
+                                            x∈Ω  n      r               x∈Ω  n |Φ
+                                                           0
+
+
+for all t ∈ [0, T ].
+Proof. The above observation yields
+                    Z                 Z                                                             ∞ Z
+                           d                                             d                                          d
+                                                                                                                        (n)
+                                                                                                    X
+                                 2                                                 2
+                        |Λ ω(t)| dx ≥
+                           2                                         |Λd ω(t)| dx =
+                                                                         2
+                                                                                                                 |Λd2 ωloc (t)|2 dx.
+                                 Rd                            Rd                                 n=n0      Rd
+
+By the Gagliardo–Nirenberg interpolation inequality
+                                                                                   d            2             d−2
+                                                       (n)                              (n)             (n)
+                                                 k∂d ωloc kL2 ≤ CkΛd2 ωloc kLd 2 kωloc kLd2 ,
+
+we have
+                       Z                             ∞ Z                                            d2 Z                       − d2 +1
+                                 d                                            (n)                                    (n)
+                                                     X
+                                         2
+                               |Λ ω(t)| dx ≥ c
+                                 2                                       |∂d ωloc (t)|2 dx                         |ωloc (t)|2 dx            .
+                          Rd                         n=n0           Rd                                        Rd
+
+We can directly estimate
+                                                      (n)
+                                                    |ωloc (t, x)|2            |Φr (t, x)|2(d−2) |ω0 (x)|2
+                Z                               Z                        Z
+                               (n)
+                       |∂d ωloc (t)|2 dx ≥                    2
+                                                                   dx =                                     dx
+                  Rd                             Rd     |xd |             Ωn     |Φd (t, x)|2 |xh |2(d−2)
+                                                                     2(d−2)                   2
+                                                         |Φr (t, x)|
+                                                 
+                                                                                         |xd |
+                                                                                                        Z
+                                                                                                     2n
+                                              ≥ c inf                           inf                8         |ω0 |2 dx
+                                                   x∈Ωn         r              x∈Ωn |Φd (t, x)|           Ωn
+
+and
+                                                                                                                              2(d−2) Z
+                                                                       |ω0 (x)|2                             |Φr (t, x)|
+          Z                             Z                                                           
+                    (n)
+                |ωloc (t)|2 dx =              |Φr (t, x)|2(d−2)                   dx ≤                  sup                                  |ω0 |2 dx.
+           Rd                            Ωn                           |xh |2(d−2)                       x∈Ωn      r                    Ωn
+
+
+
+                                                                               13
+Combining the above estimates with
+                                                  |Φr (t, x)|        |Φr (t, x)|
+                                              inf             ≃ sup              ,
+                                             x∈Ωn      r        x∈Ωn      r
+a direct consequence of (3.3), we obtain
+                                     ∞                    2(d−2)                     d
+                                               |Φr (t, x)|                    |xd |
+           Z                                                                                    Z
+                    d
+                                     X
+                 |Λ 2 ω(t)|2 dx ≥ c      inf                         inf      d (t, x)|
+                                                                                           8 dn
+                                                                                                    |ω0 |2 dx.
+             R d
+                                    n=n
+                                        x∈Ω  n      r               x∈Ω  n |Φ                    Ωn
+                                         0
+
+
+Recalling the definition of ω0 , we obtain (5.3). This completes the proof.
+                 d
+   To make Ḣ 2 norm inflation, it is essential to control the position of each bubble in the direction of xd .
+The following lemma provides a bound.
+Lemma 5.4. Assume that ω be a solution to (1.4) satisfying (3.2) with initial data (2.1). Then, there exists
+an absolute constant C > 0 such that
+                                  Φd (t, x)      1 X t
+                                                       Z
+                              log           ≤−             Ik (τ ) dτ + CAt                            (5.4)
+                                     xd        4|Bd |    0     k<n
+
+for all x ∈ Ωn with n > n0 and t ∈ [0, T ].
+Proof. Let x ∈ Ωn with n > n0 and xd > 0. From (2.4), we clearly have
+                                    d                       1       X
+                                       log Φr (t, x) −                Ik (t) ≤ CA
+                                    dt                 (d − 1)|Bd |
+                                                                             k<n
+
+and
+                                                                  Z t
+                                          Φr (t, x)    X
+                                      log           ≤C                  Ik (τ ) dτ + CAt.
+                                              r                    0
+                                                            k<n
+
+On the other hand, we show from (2.5) that
+                                                                                d−1
+                                                                      Φr (t, x) d
+                                                              
+                           d       d          1 X
+                              log Φ (t, x) +       Ik (t) ≤ CA 1 + log d             ,
+                           dt                |Bd |                    Φ (t, x)
+                                                      k<n
+
+hence,
+                                                                    Φr (t, x)       Φd (t, x)
+                                                                                             
+                     d                     1 X
+                        log Φd (t, x) ≤ −       Ik (t) + CA 1 + log           − log             .                  (5.5)
+                     dt                   |Bd |                         r             xd
+                                                k<n
+
+Suppose that T ∗ ∈ (0, T ] be the first time such that
+                                                                       Z t
+                                         Φd (t, x)      1 X
+                                   log             ≥−                        Ik (τ ) dτ + CAt.
+                                           xd         2|Bd |            0
+                                                               k<n
+
+Note that we can ensure T ∗ 6= 0 by taking the constant C in the above assumption large. Integrating (5.5)
+over time and combining the above, we can have
+                                                                                                                  !
+             Φd (t, x)        Φd (T ∗ , x)     1 X t                                            XZ t
+                                                         Z
+         log           = log               −                  Ik (τ ) dτ + CA(t − T ∗ ) 1 +            Ik (τ ) dτ
+               xd                  xd        |Bd |        T                                     k<n 0
+                                                            ∗
+                                                    k<n
+                     Z ∗                                                                                                !
+           1 X T                                     1 X t                                          XZ t
+                                                              Z
+                                             ∗                                               ∗
+     =−                   Ik (τ ) dτ + CAT −                        Ik (τ ) dτ + CA(t − T ) 1 +              Ik (τ ) dτ
+         2|Bd|                                     |Bd |
+               k<n 0                                     k<n T                                      k<n 0
+                                                                  ∗
+
+
+                                1 X t                                       XZ t
+                                          Z
+                                                                         ∗
+                        ≤−                   Ik (τ ) dτ + CA(t − T )               Ik (τ ) dτ + CAt
+                             2|Bd |        0                                     0
+                                     k<n                                       k<n
+
+
+
+                                                              14
+until the assumption is satisfied. We impose the condition CAT ≤ Cc0 ≤ 1/4|Bd |. Then, we can infer (5.4).
+This completes the proof.
+Proof of Theorem 1.1. Now we are ready to prove Theorem 1.1. For given ε > 0, we take n0 ∈ N sufficiently
+large, so that by Proposition 5.1, we have
+
+                                                         kω0 k       d               < cε
+                                                                   H 2 ∩L∞ (Rd )
+
+                                                                                                                                   d
+for any c > 0. Then, as we have remarked after Proposition 5.1, this implies that√ u0 ∈ H 2 +1 with
+ku0 k d2 +1 < ε by choosing small c > 0. Let ℓ ≥ n0 be given in (3.10) and x ∈ Ωn with n > ℓ. Then, from
+     H
+(2.4) we have
+                                                                     Z T
+                         Φr (T, x)        1       X
+                     log           ≥                                          Ik (τ ) dτ − CAT ≥ log nc2 − CAT,
+                             r       (d − 1)|Bd |                        0
+                                                              k<n
+
+and from Lemma 5.4,
+                                                                   Z T
+                                      |xd |       1 X
+                             log     d
+                                              ≥                              Ik (t) dt − CAT ≥ log nc2 − CAT.
+                                   |Φ (T, x)|   4|Bd |              0
+                                                             k<n
+
+Thus, we have
+                                            |Φr (T, x)|  1                                   |xd |         1 c2
+                                        inf             ≥ nc 2 ,                   inf                 ≥     n .
+                                       x∈Ωn      r       2                        x∈Ωn |Φd (T, x)|         2
+
+Applying them to (5.3), we obtain
+                                                Z
+                                                         d
+                                                                                         X
+                                                       |Λ 2 ω(T )|2 dx ≥ c3                  nc4 −2α
+                                                  Rd                                 n≥ℓ2
+
+for some c3 > 0 and 0 < c4 < 1/4. Here, we take α > 1/2 with c4 − 2α > −1. This clearly leads to a
+contradiction. Taking A large and T small enough with AT ≤ c0 , we can deduce the nonexistence result.
+This completes the proof.
+
+
+6    Norm inflation for smooth data
+In this section, we establish Theorem 1.2. We take α as in §5 and let ω0 satisfy (2.1) with m < ∞. In this
+case with d = 3, we have already shown that there exists a unique global in time solution ω to (1.4) with
+(4.2). We believe that we can similarly extend this result to the d > 3 cases by the use of exterior derivative.
+We prove Theorem 1.2 by providing the following proposition.
+Proposition 6.1 (Quantitative norm inflation). We consider the C ∞ –smooth initial data ω0 given by (2.1)
+with n0 < m < ∞ and 1/2 < α < (1 + c4 )/2. Then, there exists M = M (n0 ) > 0 such that for all m > M ,
+the unique global in time solution ω with (4.2) satisfies
+                                                       m
+                                                    c3 X c4 −2α
+                         Z
+                                   d                                                                                   1
+              sup              |Λ 2 ω(t)|2 dx ≥          n      ,                   for      T (m) := c1 (1 − α)(m/2) 2 (−1+α) .
+           t∈[0,T (m)]   Rd                         2
+                                                        n=m/2
+
+Proof. We set
+                                                                  m
+                                                               c3 X c4 −2α
+                                                       A(m) :=      n
+                                                               2
+                                                                             n=m/2
+
+
+                                                                             15
+and see that
+                                                                    1                 1     3
+                                      AT ≤ Cm1+c4 −2α m 2 (−1+α) = Cm 2 +c4 − 2 α .
+
+By 1/2 + c4 − 3α/2 < 0, we can let M > 2n20 so that AT ≤ c0 for all m > M . Suppose that with
+                                                                d
+                                                       sup kΛ 2 ω(t)kL2 (Rd ) ≤ A
+                                                    t∈[0,T ]
+
+for some m > M . Then, we can show Lemma 3.1, Lemma 3.2, Lemma    p   3.3, and Lemma 5.4 with the same
+constants, regardless of the choice of m. Using Tk ≤ T for all k ≥ m/2, we show
+                                     n−1
+                                     X      Z Tk
+                                                    Ik (t) dt ≥ log nc2 ,       m/2 ≤ n ≤ m
+                                       √     0
+                                    k= n
+
+
+as we obtained (3.10). Since this implies
+
+                                   |Φr (T, x)|  1                                   |xd |        1 c2
+                                inf            ≥ nc 2 ,                   inf               ≥      n
+                              x∈Ωn      r       2                        x∈Ωn |Φd (T, x)|        2
+
+for all m/2 ≤ n ≤ m, we apply them to (5.3) and obtain
+                                        Z                                       m
+                                                   d
+                                                                                X
+                                                 |Λ 2 ω (m) (T )|2 dx ≥ c3           nc4 −2α ,
+                                            Rd                               n=m/2
+
+which makes a contradiction. This completes the proof.
+
+
+7     Proof of the Key Lemma
+We only treat the case d = 3 because the others can be estimated similarly. We first prove (2.4), obtaining
+
+                                    ur (x)    3             |yh |y3
+                                                       Z
+                                           −                     5
+                                                                    ω(y) dy ≤ Ck∇ωkL3 (R3 )                                   (7.1)
+                                      r      8π         Q(x) |y|
+
+
+and
+
+                                    ur (x)    3                |yh |y3
+                                                       Z
+                                           −                        5
+                                                                       ω(y) dy ≤ CkωkL∞ (R3 )                                 (7.2)
+                                      r      8π            Q(x) |y|
+
+
+respectively. We recall (1.5)
+
+                                          1                     (x3 − y3 )(x1 y1 + x2 y2 )
+                                                            Z
+                                r
+                              u (x) = −                                                    ω(y) dy.
+                                        4π|xh |              R3      |yh ||x − y|3
+
+We fix x ∈ R3 with |xh | ≥ x3 > 0 and define the sets R ⊂ R3 and S ⊂ R3 by
+
+        R(x) := {y ∈ R3 ; |yh | ≤ 4|xh |, |y3 | ≥ 4|xh |},               S(x) := {y ∈ R3 ; |yh | ≤ 4|xh |, |y3 | ≤ 4|xh |}.
+
+Using R3 = Q(x) ∪ R(x) ∪ S(x), we write
+                                                                 1
+                                                    ur (x) =       (I1 + I2 + I3 ),                                           (7.3)
+                                                                4π
+
+
+                                                                    16
+where I1 , I2 , I3 refer to the integral over Q(x), R(x), S(x), respectively. Due to |y|2 ≥ 8|x|2 for y ∈ Q(x), we
+can perform the Taylor expansion and obtain
+                                                         − 32
+                                           2(x · y) |x|2
+                                                                                2
+                        1       1                                1  3(x · y)     |x|                                     (7.4)
+                              = 3       1−         + 2         = 3+          +O       .
+                     |x − y|3  |y|           |y|2   |y|         |y|   |y|5       |y|5
+
+Thanks to the following estimate
+
+        1        |(x3 − y3 )(xh · yh )| |x|2                           1 |ω(y)|           ω(y)
+           Z                                                    Z
+                                                              2
+                                             |ω(y)| dy ≤ C|x|                   dy ≤ C|x|                 ,
+      |xh | Q(x)         |yh |          |y|5                     Q(x) |y| 3 |y|           |yh | L3 (Q(x))
+
+we can deduce
+                                                                              ω(y)
+                                     |I1 − (I11 + I12 + I13 )| ≤ C|x|                        ,
+                                                                              |yh | L3 (R3 )
+
+where
+                                                      1   (x3 − y3 )(xh · yh )
+                                                            Z
+                                     I11 := −                                   ω(y) dy,
+                                                    |xh |
+                                                     Q(x)        |yh ||y|3
+                                                3         x3 (xh · yh )(x · y)
+                                                    Z
+                                     I12 := −                                  ω(y) dy,
+                                              |xh | Q(x)        |yh ||y|5
+                                              3         y3 (xh · yh )(x · y)
+                                                  Z
+                                     I13 :=                                  ω(y) dy.
+                                            |xh | Q(x)        |yh ||y|5
+
+To begin with, the property
+
+                                                       ω(yh , y3 ) = ω(−yh , y3 )                                        (7.5)
+
+shows that I11 = 0. Next, writing I12 as
+
+                         3        x3 (xh · yh )2             3        x3 (xh · yh )(x3 y3 )
+                            Z                                   Z
+               I12 = −                           ω(y) dy −                                  ω(y) dy,
+                       |xh | Q(x) |yh ||y|5                |xh | Q(x)      |yh ||y|5
+
+we use (2.3) and (7.5) respectively to get I12 = 0. Similarly, we separate I13 into two parts
+
+                         3        y3 (xh · yh )2             3        y3 (xh · yh )(x3 y3 )
+                            Z                                   Z
+                I13 =                            ω(y) dy +                                  ω(y) dy.
+                       |xh | Q(x) |yh ||y|5                |xh | Q(x)      |yh ||y|5
+
+We clearly have
+
+                                          3              y3 (xh · yh )(x3 y3 )
+                                                Z
+                                                                               ω(y) dy = 0.
+                                        |xh |       Q(x)      |yh ||y|5
+
+By (xh · yh )2 = x21 y12 + x22 y22 + 2x1 y1 x2 y2 and the change of variables (y1 , y2 , y3 ) 7→ (−y2 , y1 , y3 ), it follows
+
+                                                    3|xh |      |yh |y3
+                                                           Z
+                                             I13 =                   5
+                                                                        ω(y) dy.
+                                                      2     Q(x) |y|
+
+Thus, we have with Hardy’s inequality that
+
+                                       3|xh |            |yh |y3
+                                                Z
+                                  I1 −                        5
+                                                                 ω(y) dy ≤ C|x|k∇ωkL3 (R3 ) .
+                                         2           Q(x) |y|
+
+
+
+                                                                  17
+For y ∈ R(x), we can verify that
+                                                  1
+                                                    |y3 | ≤ |x − y| ≤ 4|y3 |.                                                  (7.6)
+                                                  4
+By Hölder’s inequality and Hardy’s inequality, we have
+
+                              |ω(y)|           ω(y)              |yh |
+                        Z
+              |I2 | ≤ C               2
+                                        dy ≤ C                        2
+                                                                                                   ≤ C|x|k∇ωkL3 (R3 ) .
+                         R(x)  |y 3 |          |y h | L3 (R(x)) |y 3|
+                                                                                   3
+                                                                                  L 2 (R(x))
+
+Using integration by parts, we write I3 = I31 + I32 + I33 , where
+                                    1                                 xh · yh
+                                        Z
+                         I31 := −                                                ω(y) dS,
+                                  |xh | {|yh |≤4|xh |}∩{y3 =4|xh |} |yh ||x − y|
+                                  1                                   xh · yh
+                                      Z
+                         I32 :=                                                 ω(y) dS,
+                                |xh | {|yh |≤4|xh |}∩{y3 =−4|xh |} |yh ||x − y|
+                                  1           xh · yh
+                                      Z
+                         I33 :=                          ∂3 ω(y) dy.
+                                |xh | S(x) |yh ||x − y|
+
+From the observation
+
+                         2|xh | ≤ |x − y| ≤ 8|xh |,          y ∈ {|yh | ≤ 4|xh |} ∩ {y3 = 4|xh |},
+
+we can estimate I31 as
+                                              C
+                                                     Z
+                                  |I31 | ≤                                         |ω(y)| dS.
+                                             |xh |   {|yh |≤4|xh |}∩{y3 =4|xh |}
+
+We note that the fundamental theorem of calculus and Hölder’s inequality yield
+                                     Z 4|xh |
+                                                                          2
+                          |ω(y)| ≤              |∂3 ω(y)| dy3 ≤ C|xh | 3 k∂3 ω(yh , ·)kL3 (0,4|xh |)
+                                      0
+
+for almost all y ∈ {|yh | ≤ 4|xh |} ∩ {y3 = 4|xh |}. Thus, using Hölder’s inequality again, we obtain |I31 | ≤
+C|xh |k∂3 ωkL3 (S(x)) and similarly, we can show that |I32 | ≤ C|xh |k∂3 ωkL3 (S(x)) . Next, computing I33 with
+Hölder’s inequality
+                                                                                            ! 23
+                        |∂3 ω(y)|                                             1
+                  Z                                              Z
+          |I33 | ≤                dy ≤ Ck∂3 ωkL3 (S(x))                            3   dy          ≤ C|xh |k∂3 ωkL3 (S(x)) ,
+                   S(x) |x − y|                                      S(x) |x − y| 2
+
+
+we deduce that
+
+                                                  |I3 | ≤ C|x|k∇ωkL3 (R3 ) .
+
+Inserting the estimates for I1 , I2 , and I3 into (7.3), we obtain (7.1). To show (7.2), we slightly modify the
+estimates. By (7.4) and the following estimate
+
+         1        |x3 − y3 ||x1 y1 + x2 y2 | |x|2                           1
+            Z                                                        Z
+                                                                   2
+                                                  |ω(y)| dy ≤ C|x|               |ω(y)| dy ≤ C|x|kωkL∞ (Q(x)) ,
+       |xh | Q(x)            |yh |           |y|5                     Q(x) |y| 4
+
+
+we obtain
+
+                                   |I1 − (I11 + I12 + I13 )| ≤ C|x|kωkL∞ (Q(x)) .
+
+
+                                                               18
+Recalling the estimate for I11 , I12 , and I13 , we arrive at
+
+                                        3|xh |        |yh |y3
+                                                 Z
+                                I1 −                       5
+                                                              ω(y) dy ≤ C|x|kωkL∞ (R3 ) .
+                                          2       Q(x) |y|
+
+
+By (7.6) and Hölder’s inequality, we obtain
+
+                               |ω(y)|                             1
+                         Z                                Z
+               |I2 | ≤ C             2
+                                       dy ≤ CkωkL∞ (R(x))             2
+                                                                        dy ≤ C|x|kωkL∞ (R(x)) .
+                          R(x) |y3 |                       R(x) |y3 |
+
+Using Hölder’s inequality yields
+                                                    1
+                                        Z
+                 |I3 | ≤ kωkL∞ (S(x))                     dy ≤ CkωkL∞ (S(x)) |xh | ≤ C|x|kωkL∞ (S(x)) .
+                                            S(x) |x − y|2
+
+Thus, combining the above with (7.3), we obtain (7.2).
+      Now we aim to show that
+                                                                           2
+                        u3 (x)
+                                                               
+                                  3         |yh |y3                     r 3
+                                        Z
+                               +                 5
+                                                    ω(y) dy ≤ C 1 + log       k∇ωkL3 (R3 )                      (7.7)
+                         x3      4π     Q(x) |y|                        x3
+
+and
+
+                         u3 (x)
+                                                                              
+                                   3            |yh |y3                     r
+                                        Z
+                                +                    5
+                                                        ω(y) dy ≤ C 1 + log      kωkL∞ (R3 ) .                  (7.8)
+                          x3      4π        Q(x) |y|                        x3
+
+From (1.6) we have
+
+                                                      1     (xh − yh ) · yh
+                                                          Z
+                                        u3 (x) =                          3
+                                                                            ω(y) dy.
+                                                     4π   Rd |yh ||x − y|
+
+Using (2.3) and the notation ȳ := (yh , −y3 ), we write
+                                                                                 
+                               1           (xh − yh ) · yh      1          1
+                                  Z
+                      3
+                     u (x) =                                          −             ω(y) dy.
+                              4π {y3 ≥0}         |yh |       |x − y|3   |x − ȳ|3
+
+Let
+                                                               1
+                                                 u3 (x) =        (J1 + J2 + J3 ),                               (7.9)
+                                                              4π
+where J1 , J2 , and J3 refer to the above integral on Q(x), R(x), and S(x), respectively. Using the formula
+
+                                      1    1    (B 2 − A2 )(A2 + AB + B 2 )
+                                         −    =                             ,                                  (7.10)
+                                      A3   B3          A3 B 3 (A + B)
+we have
+                                 4x3 y3 ((xh − yh ) · yh )(|x − y|2 + |x − y||x − ȳ| + |x − ȳ|2 )
+                    Z
+             J1 =                                                                                   ω(y) dy.
+                    Q(x)∩{y3 ≥0}            |yh ||x − y|3 |x − ȳ|3 (|x − y| + |x − ȳ|)
+
+The goal is to prove that
+
+                                                        |yh |y3
+                                        Z
+                            J1 − 6x3                         5
+                                                                ω(y) dy ≤ Cx3 k∇ωkL3 (R3 ) .                   (7.11)
+                                            Q(x)∩{y3 ≥0} |y|
+
+
+
+                                                                 19
+We consider J1 = 4x3 (J11 + J12 ), where
+
+                                     y3 (xh · yh )(|x − y|2 + |x − y||x − ȳ| + |x − ȳ|2 )
+                       Z
+               J11 :=                                                                       ω(y) dy,
+                        Q(x)∩{y3 ≥0}        |yh ||x − y|3 |x − ȳ|3 (|x − y| + |x − ȳ|)
+                                        y3 |yh |(|x − y|2 + |x − y||x − ȳ| + |x − ȳ|2 )
+                         Z
+               J12 := −                                                                   ω(y) dy.
+                          Q(x)∩{y3 ≥0}        |x − y|3 |x − ȳ|3 (|x − y| + |x − ȳ|)
+
+For y ∈ Q(x), we can show that
+                                    1                                    1
+                                      |y| ≤ |x − y| ≤ 2|y|,                |y| ≤ |x − ȳ| ≤ 2|y|.                  (7.12)
+                                    2                                    2
+Thus, we have
+
+                                                               1 |ω(y)|        ω(y)
+                                             Z
+                          |J11 | ≤ C|x|                         3 |y|
+                                                                        dy ≤ C                 .
+                                                 Q(x)∩{y3 ≥0} |y|              |yh | L3 (Q(x))
+
+Regarding J12 , we claim that
+
+                                     3               |yh |y3             ω(y)
+                                         Z
+                            J12 +                         5
+                                                             ω(y) dy ≤ C                 .                         (7.13)
+                                     2   Q(x)∩{y3 ≥0} |y|                |yh | L3 (Q(x))
+
+We write J12 = J121 + J122 + J123 for
+
+                                                                    y3 |yh ||x − y|2
+                              Z
+                    J121 := −                                                                   ω(y) dy,
+                                      Q(x)∩{y3 ≥0}       |x − y| |x − ȳ|3 (|x − y| + |x − ȳ|)
+                                                                3
+
+                                                       y3 |yh ||x − y||x − ȳ|
+                                     Z
+                       J122 := −                      3 |x − ȳ|3 (|x − y| + |x − ȳ|)
+                                                                                       ω(y) dy,
+                                  Q(x)∩{y3 ≥0} |x − y|
+                                                           y3 |yh ||x − ȳ|2
+                                 Z
+                       J123 := −                      3          3
+                                                                                       ω(y) dy
+                                  Q(x)∩{y3 ≥0} |x − y| |x − ȳ| (|x − y| + |x − ȳ|)
+
+and show that
+
+                            1                |yh |y3             ω(y)
+                                Z
+                   J12k +                         5
+                                                     ω(y) dy ≤ C                 ,                  k = 1, 2, 3.
+                            2   Q(x)∩{y3 ≥0}  |y|                |yh | L3 (Q(x))
+
+We only prove the case k = 1, since the others can be treated similarly. We clearly have
+
+                                             1                |yh |y3
+                                               Z
+                                    J121 +                             ω(y) dy
+                                             2 Q(x)∩{y3 ≥0} |y|5
+                                            2|y|5 − |x − y||x − ȳ|3 (|x − y| + |x − ȳ|)
+                      Z
+                 =−                 |yh |y3                                               ω(y) dy.
+                       Q(x)∩{y3 ≥0}          2|y|5 |x − y||x − ỹ|3 (|x − y| + |x − ỹ|)
+
+We note
+
+           2|y|5 − |x − y||x − ȳ|3 (|x − y| + |x − ȳ|) = |y|5 − |x − y|2 |x − ȳ|3 + |y|5 − |x − y||x − ȳ|4
+
+and
+
+                    |y|5 − |x − y|2 |x − ȳ|3 = |y|3 (|y|2 − |x − y|2 ) + |x − y|2 (|y|3 − |x − ȳ|3 ),
+
+                      |y|5 − |x − y||x − ȳ|4 = |y|4 (|y| − |x − y|) + |x − y|(|y|4 − |x − ȳ|4 ).
+
+
+                                                                    20
+Applying
+
+                                           |y|2 − |x − y|2                                  |y|2 − |x − ȳ|2
+                         |y| − |x − y| =                   ,            |y| − |x − ȳ| =
+                                            |y| + |x − y|                                    |y| + |x − ȳ|
+
+to the above, we have
+
+                                 2|y|5 − |x − y||x − ȳ|3 (|x − y| + |x − ȳ|) ≤ C|x||y|4 .
+
+This infers
+
+                1               |yh |y3                                             1 |ω(y)|        ω(y)
+                    Z                                             Z
+         J121 +                      5
+                                        ω(y) dy ≤ C|x|                                 3 |y|
+                                                                                             dy ≤ C                 .
+                2   Q(x)∩{y3 ≥0} |y|                                  Q(x)∩{y3 ≥0} |y|              |yh | L3 (Q(x))
+
+With Hardy’s inequality, we deduce (7.13). Thus, we obtain (7.11). As estimating J1 , we show
+
+                              4x3 y3 ((xh − yh ) · yh )(|x − y|2 + |x − y||x − ȳ| + |x − ȳ|2 )
+                Z
+          J2 =                                                                                   ω(y) dy.
+                 R(x)∩{y3 ≥0}            |yh ||x − y|3 |x − ȳ|3 (|x − y| + |x − ȳ|)
+
+We can recall (7.6) and show
+
+                        4x3 y3 ((xh − yh ) · yh )(|x − y|2 + |x − y||x − ȳ| + |x − ȳ|2 )     x3
+                                                                                           ≤C        .
+                                   |yh ||x − y|3 |x − ȳ|3 (|x − y| + |x − ȳ|)               |y3 |3
+
+Hence, we have with Hölder’s inequality and Hardy’s inequality that
+
+                                 |ω(y)|             ω(y)             |yh |
+                   Z
+       |J2 | ≤ Cx3                       3
+                                           dy ≤ Cx3                       3
+                                                                                                         ≤ Cx3 k∇ωkL3(R3 ) .
+                    R(x)∩{y3 ≥0}  |y 3 |            |y h |  3
+                                                           L (R(x)) |y 3|
+                                                                                              3
+                                                                                            L 2 (R(x))
+
+To estimate J3 , we use the formula
+                                                                                 
+                                        1          1                  1       1
+                        (xh − yh )            −             = ∇h          −
+                                     |x − y|3   |x − ȳ|3          |x − y| |x − ȳ|
+
+and have
+                                                                                 
+                                                                 1       1                 yh
+                                     Z
+                              J3 =                   ∇h              −                ·         ω(y) dy.
+                                      S(x)∩{y3 ≥0}            |x − y| |x − ȳ|            |yh |
+
+With an integration by parts, we can write J3 = J31 + J32 , where
+                                                                    4x3 y3
+                       Z
+                J31 :=                                                                    ω(y) dS,
+                        {|yh |=4|xh |}∩{0≤y3 ≤4|xh |} |x − y||x − ȳ|(|x − y| + |x − ȳ|)
+                                                                                              
+                                                         4x3 y3                       yh
+                         Z
+                J32 := −                                                      ∇h ·         ω(y) dy.
+                           S(x)∩{y3 ≥0} |x − y||x − ȳ|(|x − y| + |x − ȳ|)          |yh |
+
+From
+
+                        |xh | ≤ |x − y| ≤ |x − ȳ|,           y ∈ {|yh | = 4|xh |} ∩ {0 ≤ y3 ≤ 4|xh |},
+
+we can have
+                                                     Z 4|xh |
+                                              x3
+                                  |J31 | ≤ C                    |ω(y)| dy3 ,      |yh | = 4|xh |.
+                                             |xh |    0
+
+
+
+                                                                  21
+The fundamental theorem of calculus and Hölder’s inequality imply
+                                     Z 4|xh |
+                                                                         1
+                        |ω(y)| ≤                |∂r ω(y)| dr ≤ C|xh | 3 k∇ω(·, y3 )kL3 ({yh ∈R2 ;|yh |≤4|xh |})
+                                      0
+
+for almost all y ∈ {|yh | = 4|xh |} ∩ {0 ≤ y3 ≤ 4|xh |}. Thus, it follows
+
+                                                       |J31 | ≤ Cx3 k∇ωkL3 (S(x)) .
+
+Using Hölder’s inequality and Hardy’s inequality, we have
+                                                                                                    3     ! 32
+                                                                                  y3
+                                                              Z                              2
+                            |J32 | ≤ Cx3 k∇ωkL3 (R3 )                                      2
+                                                                                               dy                .
+                                                               S(x)∩{y3 ≥0} |x − y||x − ȳ|
+
+Here, we note that
+                                                                             3                     
+                                                      y3                                      |xh |
+                                 Z                               2
+
+                                                               2
+                                                                   dy ≤               1 + log         ,                             (7.14)
+                                   S(x)∩{y3 ≥0} |x − y||x − ȳ|                                x3
+
+which will be shown at the end of the proof. Hence, combining the above estimates, we obtain
+                                                                                 2
+                                                                             |xh | 3
+                                           |J32 | ≤ Cx3 k∇ωkL3 (R3 ) 1 + log
+                                                                              x3
+and then
+                                                                                2
+                                                                            |xh | 3
+                                           |J3 | ≤ Cx3 k∇ωkL3 (R3 ) 1 + log         .
+                                                                             x3
+
+Inserting the estimates for J1 , J2 , and J3 into (7.9), we obtain (7.7). Now, we show (7.8). We can have from
+(7.12) that
+                                                          1
+                                          Z
+                           |J11 | ≤ C|x|                     4
+                                                               |ω(y)| dy ≤ CkωkL∞ (Q(x)) .
+                                            Q(x)∩{y3 ≥0} |y|
+
+In the above, we estimated for J12 = J121 + J122 + J123 that
+
+                    1                |yh |y3                                               1
+                        Z                                                Z
+           J12k +                         5
+                                             ω(y) dy ≤ C|x|                                   4
+                                                                                                |ω(y)| dy,           k = 1, 2, 3.
+                    2    Q(x)∩{y3 ≥0} |y|                                    Q(x)∩{y3 ≥0} |y|
+
+Since we have already showed that
+                                                  1
+                               Z
+                                                     4
+                                                       |ω(y)| dy ≤ C|x|−1 kωkL∞ (Q(x)) ,
+                                            Q(x) |y|
+
+we can deduce
+
+                                        3                       |yh |y3
+                                                Z
+                                  J12 +                              5
+                                                                        ω(y) dy ≤ CkωkL∞ (Q(x))
+                                        2           Q(x)∩{y3 ≥0} |y|
+
+and
+
+                                                             |yh |y3
+                                                Z
+                                 J1 + 6x3                         5
+                                                                     ω(y) dy ≤ Cx3 kωkL∞ (R3 ) .
+                                                 Q(x)∩{y3 ≥0} |y|
+
+
+
+                                                                    22
+Recalling (7.6), we have
+
+                                              |ω(y)|                                          1
+                                        Z                                           Z
+                   |J2 | ≤ Cx3                      3
+                                                      dy ≤ Cx3 kωkL∞ (R(x))                       3
+                                                                                                    dy ≤ Cx3 kωkL∞ (R3 ) .
+                                         R(x) |y3 |                                    R(x) |y3 |
+
+Using (7.10) gives
+
+                                     4x3 y3 ((xh − yh ) · yh )(|x − y|2 + |x − y||x − ȳ| + |x − ȳ|2 )
+                  Z
+            J3 =                                                                                        ω(y) dy.
+                        S(x)∩{y3 ≥0}            |yh ||x − y|3 |x − ȳ|3 (|x − y| + |x − ȳ|)
+
+By Hölder’s inequality, it follows
+                                                                                          y3
+                                                                   Z
+                                        |J3 | ≤ Cx3 kωkL∞ (S(x))                          2         2
+                                                                                                      dy.
+                                                                      S(x)∩{y3 ≥0} |x − y| |x − ȳ|
+
+Here, we claim that
+                                                                                                 
+                                                                y3                          |xh |
+                                         Z
+                                                                2         2
+                                                                            dy ≤ C  1 + log         ,
+                                            S(x)∩{y3 ≥0} |x − y| |x − ȳ|                    x3
+
+which actually implies (7.14). We consider the integral on the region S(x) ∩ {0 ≤ y3 ≤ 2x3 } first. Since we
+can estimate
+                                             y3               1                         1
+                  Z                                             Z
+                                             2 |x − ȳ|2
+                                                         dy ≤                                 dy
+                    S(x)∩{0≤y3 ≤2x3 } |x − y|                 x3 S(x)∩{0≤y3 ≤2x3 }  |x −  y|2
+                                                                Z x3 Z 8|xh |
+                                                              2                   r
+                                                            ≤                   2 + y2
+                                                                                       drdy3
+                                                              x3 0    0       r      3
+
+and
+                                  Z 8|xh |
+                                                 r          1     8|xh |2 + y32
+                                                       dr =   log               ≤ log(C|xh |) − log y3 ,
+                                    0         r2 + y32      2          y32
+
+it follows
+                  Z x3 Z 8|xh |                                                        Z x3                               
+             2                          r                             C                                              |xh |
+                                              drdy3 ≤ C log(C|xh |) −                         log y3 dy3 ≤ C 1 + log         .
+             x3    0        0        r2 + y32                         x3                0                             x3
+
+Meanwhile, on the region S(x) ∩ {y3 ≥ 2x3 }, we can see
+                                                                                  Z 8|xh | Z ∞
+                                                       y3                                              ry3
+                            Z
+                                                                   dy ≤ C                                      dy3 dr.
+                                                       2
+                                S(x)∩{y3 ≥2x3 } |x − y| |x − ȳ|
+                                                                 2
+                                                                                   0          x3   (r + y32 )2
+                                                                                                     2
+
+
+Since
+                       Z 8|xh | Z ∞                                    Z 8|xh |
+                                                 ry3                                 r                C|xh |2 + x23
+                                                         dy3 dr ≤ C                        dr ≤ C log               ,
+                        0           x3       (r + y32 )2
+                                               2
+                                                                        0         r2 + x23                x23
+
+the claim follows. Using this estimate, we have
+                                                                                       
+                                                                                  |xh |
+                                                  |J3 | ≤ Cx3 kωkL∞ (R3 ) 1 + log         .
+                                                                                   x3
+
+Collecting the estimates for J1 , J2 and J3 , we obtain (7.8). This completes the proof.
+
+
+                                                                         23
+Acknowledgments
+I.-J. Jeong has been supported by the Samsung Science and Technology Foundation under Project Number
+SSTF-BA2002-04 and the New Faculty Startup Fund from Seoul National University. J. Kim was supported
+by a KIAS Individual Grant (MG086501) at Korea Institute for Advanced Study. The authors thank the
+anonymous referee for a careful reading of the manuscript and giving helpful comments.
+
+Conflict of interest
+The authors state that there is no conflict of interest.
+
+
+References
+ [1] Xinliang An, Haoyang Chen, and Silu Yin, The Cauchy problems for the 2D compressible Euler equations
+                                             7
+     and ideal MHD system are ill-posed in H 4 (R2 ), arXiv:2206.14003.
+ [2]          , Low regularity ill-posedness and shock formation for 3D ideal compressible MHD,
+       arXiv:2110.10647.
+ [3] Jonas Azzam and Jacob Bedrossian, Bounded mean oscillation and the uniqueness of active scalar
+     equations, Trans. Amer. Math. Soc. 367 (2015), no. 5, 3095–3118. MR 3314802
+ [4] Jean Bourgain and Dong Li, Strong ill-posedness of the incompressible Euler equation in borderline
+     Sobolev spaces, Invent. Math. 201 (2015), no. 1, 97–157. MR 3359050
+ [5]         , Strong ill-posedness of the 3D incompressible Euler equation in borderline spaces, Int. Math.
+       Res. Not. IMRN (2021), no. 16, 12155–12264. MR 4300224
+ [6] Jiajie Chen and Thomas Y. Hou, Finite time blowup of 2D Boussinesq and 3D Euler equations with
+     C 1,α velocity and boundary, Comm. Math. Phys. 383 (2021), no. 3, 1559–1667. MR 4244260
+ [7] D. Cordoba and L. Martinez-Zoroa, Non existence and strong ill-posedness in and Sobolev spaces for
+     SQG, arXiv:2107.07463.
+ [8] R. Danchin, Axisymmetric incompressible flows with bounded vorticity, Uspekhi Mat. Nauk 62 (2007),
+     73–94.
+ [9] Tarek M. Elgindi, Finite-time singularity formation for C 1,α solutions to the incompressible Euler equa-
+     tions on R3 , Ann. of Math. (2) 194 (2021), no. 3, 647–727.
+[10] Tarek M. Elgindi and In-Jee Jeong, Ill-posedness for the Incompressible Euler Equations in Critical
+     Sobolev Spaces, Ann. PDE 3 (2017), no. 1, 3:7. MR 3625192
+[11] In-Jee Jeong, Loss of regularity for the 2D Euler equations, J. Math. Fluid Mech. 23 (2021), no. 4,
+     Paper No. 95, 11. MR 4309824
+[12] In-Jee Jeong and Junha Kim, Strong illposedness for SQG in critical Sobolev spaces, arXiv:2107.07739.
+[13] In-Jee Jeong and Tsuyoshi Yoneda, Enstrophy dissipation and vortex thinning for the incompressible
+     2D Navier-Stokes equations, Nonlinearity 34 (2021), no. 4, 1837–1853. MR 4246445
+[14]         , Vortex stretching and enhanced dissipation for the incompressible 3D Navier-Stokes equations,
+       Math. Ann. 380 (2021), no. 3-4, 2041–2072. MR 4297205
+[15] Tosio Kato, Remarks on the Euler and Navier-Stokes equations in R2 , Nonlinear functional analysis
+     and its applications, Part 2 (Berkeley, Calif., 1983), Proc. Sympos. Pure Math., vol. 45, Amer. Math.
+     Soc., Providence, RI, 1986, pp. 1–7. MR 843590
+
+                                                      24
+[16] Tosio Kato and Chi Yuen Lai, Nonlinear evolution equations and the Euler flow, J. Funct. Anal. 56
+     (1984), no. 1, 15–28. MR 735703
+[17] Alexander Kiselev, Lenya Ryzhik, Yao Yao, and Andrej Zlatoš, Finite time singularity for the modified
+     SQG patch equation, Ann. of Math. (2) 184 (2016), no. 3, 909–948. MR 3549626
+[18] Alexander Kiselev and Vladimir Šverák, Small scale creation for solutions of the incompressible two-
+     dimensional Euler equation, Ann. of Math. (2) 180 (2014), no. 3, 1205–1220. MR 3245016
+[19] Hyunju Kwon, Strong ill-posedness of logarithmically regularized 2D Euler equations in the borderline
+     Sobolev space, J. Funct. Anal. 280 (2021), no. 7, 108822. MR 4211020
+[20] V. I. Yudovich, Non-stationary flows of an ideal incompressible fluid, Z. Vycisl. Mat. i Mat. Fiz. 3
+     (1963), 1032–1066. MR 0158189
+[21] Andrej Zlatoš, Exponential growth of the vorticity gradient for the Euler equation on the torus, Adv.
+     Math. 268 (2015), 396–403. MR 3276599
+
+
+
+
+                                                    25
+

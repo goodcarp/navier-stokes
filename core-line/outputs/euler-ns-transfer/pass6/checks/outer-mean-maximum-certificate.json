@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "scope": "initial mean maximum and neutral pressure only; full pressure-derivative gate untested",
+  "cutoff_jets": {
+    "panels": 64,
+    "dps": 35,
+    "first_derivative_display": "[-2.879917644649260685216992398082229293221, 0.0]",
+    "second_derivative_display": "[-27.93684079393522123826176999281128382559, 27.93684079393522123826176999281128310337]",
+    "first_derivative_exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "957016789705688082696064857596359727",
+        "exponent": -118
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "0",
+        "exponent": 0
+      }
+    },
+    "second_derivative_exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "1160450965533899752011326882935170753",
+        "exponent": -115
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "1160450965533899752011326882935170723",
+        "exponent": -115
+      }
+    }
+  },
+  "seed_pressure_upper": "2029200/1419857",
+  "seed_amplitude_interval": [
+    "3/4",
+    "1"
+  ],
+  "retuned_swirl_amplitude_bounds": [
+    "780",
+    "1020"
+  ],
+  "mean_maximum_derivative_lower": "626/35",
+  "unit_seed_derivative_lower": "27509/315"
+}

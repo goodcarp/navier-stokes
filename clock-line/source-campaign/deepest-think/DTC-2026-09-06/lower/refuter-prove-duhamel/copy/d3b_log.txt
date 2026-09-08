@@ -1,0 +1,28 @@
+nsring.py sha256 = 3c8e93b2da7c8f5437f74c3c39e67fb7b5ef6b29d92e01204e3176d817969f03
+[N3-Re0=1] logReE=3.4156  logR=2.0794  Td=none  c2=M Td logReE=--  steps=1707
+    s0=1.5 a0=0.65478 minfloor_a=1.00000 minfloor_r=1.00000 beta/a2=[-0.163,2.055] eta_end=0.0683
+    s0=2.0 a0=0.49344 minfloor_a=1.00000 minfloor_r=1.00000 beta/a2=[-0.237,2.751] eta_end=0.1297
+[N3-Re0=4] logReE=4.8019  logR=2.0794  Td=none  c2=M Td logReE=--  steps=427
+    s0=1.5 a0=0.65478 minfloor_a=1.00000 minfloor_r=1.00000 beta/a2=[0.349,2.315] eta_end=0.1669
+    s0=2.0 a0=0.49344 minfloor_a=1.00000 minfloor_r=1.00000 beta/a2=[0.361,2.788] eta_end=0.3234
+[N3-Re0=16] logReE=6.1882  logR=2.0794  Td=0.64989  c2=M Td logReE=4.0216  steps=62
+    s0=1.5 a0=0.65478 minfloor_a=1.00000 minfloor_r=1.00006 beta/a2=[0.981,2.354] eta_end=0.7509
+    s0=2.0 a0=0.49344 minfloor_a=1.00000 minfloor_r=1.00004 beta/a2=[1.226,2.755] eta_end=0.9579
+[N4-Re0=1] logReE=4.8021  logR=2.7726  Td=none  c2=M Td logReE=--  steps=1281
+    s0=1.5 a0=0.99303 minfloor_a=1.00000 minfloor_r=1.00000 beta/a2=[0.616,1.939] eta_end=0.0681
+    s0=2.0 a0=0.83081 minfloor_a=1.00000 minfloor_r=1.00000 beta/a2=[0.568,2.241] eta_end=0.1266
+[N4-Re0=4] logReE=6.1884  logR=2.7726  Td=0.55402  c2=M Td logReE=3.4285  steps=204
+    s0=1.5 a0=0.99303 minfloor_a=1.00000 minfloor_r=1.00001 beta/a2=[0.858,2.049] eta_end=0.4222
+    s0=2.0 a0=0.83081 minfloor_a=1.00000 minfloor_r=1.00001 beta/a2=[0.972,2.246] eta_end=0.6490
+[N4-Re0=16] logReE=7.5747  logR=2.7726  Td=0.39065  c2=M Td logReE=2.9590  steps=76
+    s0=1.5 a0=0.99303 minfloor_a=1.00000 minfloor_r=1.00003 beta/a2=[1.204,2.071] eta_end=0.8702
+    s0=2.0 a0=0.83081 minfloor_a=1.00000 minfloor_r=1.00002 beta/a2=[1.352,2.239] eta_end=0.9825
+[N5-Re0=1] logReE=6.1884  logR=3.4657  Td=0.54240  c2=M Td logReE=3.3566  steps=799
+    s0=1.5 a0=1.33209 minfloor_a=1.00000 minfloor_r=1.00000 beta/a2=[0.849,1.857] eta_end=0.1280
+    s0=2.0 a0=1.16966 minfloor_a=1.00000 minfloor_r=1.00000 beta/a2=[0.851,2.028] eta_end=0.2220
+[N5-Re0=4] logReE=7.5747  logR=3.4657  Td=0.34558  c2=M Td logReE=2.6177  steps=135
+    s0=1.5 a0=1.33209 minfloor_a=1.00000 minfloor_r=1.00001 beta/a2=[1.111,1.916] eta_end=0.6114
+    s0=2.0 a0=1.16966 minfloor_a=1.00000 minfloor_r=1.00001 beta/a2=[1.191,2.028] eta_end=0.8201
+[N5-Re0=16] logReE=8.9610  logR=3.4657  Td=0.28371  c2=M Td logReE=2.5423  steps=112
+    s0=1.5 a0=1.33209 minfloor_a=1.00000 minfloor_r=1.00001 beta/a2=[1.281,1.932] eta_end=0.9131
+    s0=2.0 a0=1.16966 minfloor_a=1.00000 minfloor_r=1.00001 beta/a2=[1.372,2.030] eta_end=0.9883

@@ -1,0 +1,15 @@
+validation of the elliptic kernel against direct filament Biot-Savart:
+   (r0,z0)=(1.0,0.0) (rs,zs)=(1.5,0.5)  elliptic -0.01620992  filament -0.01620992  rel 2.41e-10
+   (r0,z0)=(1.0,0.0) (rs,zs)=(0.9,0.2)  elliptic -0.10085645  filament -0.10085645  rel 1.18e-10
+   (r0,z0)=(1.0,0.5) (rs,zs)=(2.0,1.3)  elliptic -0.00538740  filament -0.00538740  rel 1.12e-09
+   (r0,z0)=(0.3,0.95) (rs,zs)=(1.1,0.4)  elliptic +0.02720702  filament +0.02720702  rel 2.21e-11
+
+ equatorial material plane (innermost shell): 128/28000 sources with K>0 (origin sign law says K<=0 for z>0)   worst +2.880e-08 at (rs,zs)=(0.0100,33.19224)
+                     OFF the equator, z0=0.5: 15053/28000 sources with K>0 (origin sign law says K<=0 for z>0)   worst +1.136e+00 at (rs,zs)=(0.9907,0.48255)
+                     OFF the equator, z0=2.0: 18239/28000 sources with K>0 (origin sign law says K<=0 for z>0)   worst +2.481e-01 at (rs,zs)=(0.9907,1.89967)
+                      near the axis, z0=0.95: 15964/28000 sources with K>0 (origin sign law says K<=0 for z>0)   worst +3.037e+00 at (rs,zs)=(0.2893,0.86439)
+                   equator, outer shell r0=4: 54/28000 sources with K>0 (origin sign law says K<=0 for z>0)   worst +1.800e-09 at (rs,zs)=(0.0100,33.19224)
+
+Reading: on the equatorial material plane -- the plane the innermost-shell trajectory
+stays in -- the sign law SURVIVES this scan.  My attempted refutation of the L2/L4
+transfer FAILED; that part of the attempt's GAP-2 plausibility argument holds up.

@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "scope": "Frozen source copy and historical byte preservation only.",
+  "snapshot_utc": "2026-09-08T14:51:22.264602+00:00",
+  "upstream_before_addendum": "722cadb3a749874ce0235f54a20c367f7649b9e0",
+  "first_snapshot_commit": "3dc241bc8f22abbd10fe6bb25d81566f5d3f0d5e",
+  "naming": {
+    "codex": "core-line",
+    "claude": "clock-line"
+  },
+  "copied_files": 90,
+  "historical_pass2_through11_files_checked": 351,
+  "existing_source_records_checked": 2037,
+  "relocated_local_arrays": [
+    {
+      "old": "codex/work/pass11/resolved-192-2049-dt100.npz",
+      "new": "core-line/work/pass11/resolved-192-2049-dt100.npz"
+    },
+    {
+      "old": "codex/work/pass11/resolved-192-2049-dt50.npz",
+      "new": "core-line/work/pass11/resolved-192-2049-dt50.npz"
+    }
+  ],
+  "relocated_originals": [
+    {
+      "original_path": "analysis/00_event_record_2026-09-08.md",
+      "previous_preserved_path": "analysis/00_event_record_2026-09-08.md",
+      "preserved_path": "provenance/original-base-a37d92e/analysis/00_event_record_2026-09-08.md",
+      "sha256": "0191900b2848a88b34cdafad86d3fa3dc0b96fbcf1c8e819bf817f8010c22aaa"
+    },
+    {
+      "original_path": "page/forced-route-2026-09-08.html",
+      "previous_preserved_path": "page/forced-route-2026-09-08.html",
+      "preserved_path": "provenance/original-base-a37d92e/page/forced-route-2026-09-08.html",
+      "sha256": "5ed4a53a6fcaaa3235548c99df699101e256567a02cb22716445304a32cd88eb"
+    },
+    {
+      "original_path": "strained-core/README.md",
+      "previous_preserved_path": "strained-core/README.md",
+      "preserved_path": "provenance/original-base-a37d92e/strained-core/README.md",
+      "sha256": "86a2e8a7d0d8974a66fff17e8f52b8ec00fec91c81d0dfe9107aba895dd51175"
+    }
+  ],
+  "relocated_source_versions": [
+    {
+      "path": "core-line/work/pass11/codex-contribution-map.md",
+      "original_preserved_at": "provenance/first-snapshot-3dc241b/codex/work/pass11/codex-contribution-map.md",
+      "original_sha256": "d4711719354b5a1972e267a97a1c06eb6635c22aaae838ed0a47ddb494765c8e",
+      "upstream_sha256": "0b94925c8c1f98ee271f297102fdb8c67b91c6e73f06451310f32df9c67c125c"
+    }
+  ],
+  "intentional_current_file_changes": [
+    {
+      "path": "core-line/outputs/euler-ns-transfer/NEXT_TARGET.md",
+      "previous_sha256": "27d0de32aca1c76f805a363309b17d944a6841c7e0510b4c3e9aa1c0e56892db",
+      "sha256": "0fe9f626fdc306799c409b3d591d18146c67c20734f89e4af2330585e17f6794"
+    },
+    {
+      "path": "core-line/outputs/euler-ns-transfer/REPORT.md",
+      "previous_sha256": "5221d544f2eeb069a3a54e573a849e2b52dc15d308c083dff25005c37bcf3c84",
+      "sha256": "4eb05a30fd56a8cf10427f3a35965993855595d382273724958b350b8d0fd0dc"
+    },
+    {
+      "path": "core-line/outputs/euler-ns-transfer/SHA256SUMS.txt",
+      "previous_sha256": "30dca4a49cf5c218fe15c5f38e1b8e178ba910e1be62bd0046afb564a4615727",
+      "sha256": "140ea07ac67c0c0240fce50537363de4e2499d3f325a7ed20be0501173e05dcf"
+    },
+    {
+      "path": "core-line/outputs/euler-ns-transfer/STATUS.md",
+      "previous_sha256": "1b506a5e2f27cd161685f30b4489e8b5affc7b3c72ab95ae1f3d0fb98aaf47c9",
+      "sha256": "2a4de184c264f3864f6891ad2f5641f7201428b7f64e6d89dcf479b4a6bb12e4"
+    }
+  ],
+  "final_source_records": 2120
+}

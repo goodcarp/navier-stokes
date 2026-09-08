@@ -1,0 +1,4 @@
+[shell N=7 h=1/8 Re0=6.25 lam=1.5 sign=+1] grid 1536x1536  R=128  E=3.519e+09 l=81.15 ReE=4.116e+04 logReE=10.625
+    T32=0.2752600776897202  T2=0.48548230454584457  ommax_final=2.0011 at t=0.4860  sup|eta| ratio=0.50155  steps=486  4017.5s
+    at T32: s*=2.895 (octave 1.53)  a*=1.8772   T32*M*logReE=2.9247   T32*M*log(R)=1.3356
+wrote ~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/bfg/corner-numerics/results_b_n7.json

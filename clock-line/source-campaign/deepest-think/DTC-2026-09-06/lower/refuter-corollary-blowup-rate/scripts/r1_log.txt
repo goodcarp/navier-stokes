@@ -1,0 +1,15 @@
+~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/lower/refuter-corollary-blowup-rate/scripts/r1_fl043_mutants.py:49: RuntimeWarning: divide by zero encountered in divide
+  M >= cc/(s*logp(E0**0.4/(nu*s**0.2))), "fires")
+samples 4000000;  (b) true = 2053207  (51.33%)
+
+mutant                                        (b)&~(mutant)   verdict
+--------------------------------------------------------------------------
+(c) TRUE  exponent 1/5, +1, min(c1,1)                     0   PASS
+M1  exponent 1/4 in Re_*                                  5   FIRES
+M2  exponent 1/6 in Re_*                                 91   FIRES
+M3  E0 exponent 1/5 in Re_*                            2277   FIRES
+M4  bracket = log_+ Re_* (no +1)                     581986   FIRES
+M5  no min(c1,1) guard                                   11   FIRES
+M6  numerator 5*cc instead of cc                      92688   FIRES
+M7  log instead of log_+                               2060   FIRES
+M8  nu multiplied not divided                         80068   FIRES

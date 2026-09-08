@@ -1,0 +1,88 @@
+
+A. kernel facts, my own route
+-----------------------------
+  int G            = 1
+  int |grad G|     = 2/(sqrt(pi)*sqrt(nu)*sqrt(t))
+  E|X|/(2 nu t)    = 2/(sqrt(pi)*sqrt(nu)*sqrt(t))  residual 0
+  ||G(.,tau)||_2   = 2**(3/4)/(8*pi**(3/4)*tau**(3/4))
+
+B. Q = sup |(n.u)w - (n.w)u|/(|u||w|), my own route
+---------------------------------------------------
+  det Gram         = -alpha**2 + 2*alpha*beta*c - beta**2 - c**2 + 1
+  det + obj - (1-c^2) = 0
+  numeric max over 3000000 samples = 0.999999896043568
+
+C. Lemma U constant, my own optimisation
+----------------------------------------
+  tau_*  = 2**(1/5)*3**(4/5)*B**(4/5)/(2*A**(4/5))
+  gamma  = 5*2**(3/5)*3**(2/5)/6 = 5*2**(3/5)*3**(2/5)/6 = 1.9601317042077893
+  C_u    = 5*2**(9/10)*3**(2/5)/(6*pi**(3/5)) = 1.2142394208005358
+  bisection: tau_* = 0.104217595142273536   f(tau_*) = 1.214239420800535818
+
+D. Theorem C / c_div, my own bootstrap algebra
+----------------------------------------------
+  Duhamel(t) <= 40*sqrt(2)*3**(2/5)*E**(1/5)*M**(8/5)*sqrt(t)/(3*pi**(11/10)*sqrt(nu))
+  t_*        = 3*3**(1/5)*pi**(11/5)*nu/(12800*E**(2/5)*M**(6/5))
+  c_div = M Re t_* = 3*3**(1/5)*pi**(11/5)/12800  = 3.622974321831772763e-03
+  independent test point M=0.83 E=11.9 nu=0.207 -> Re_E=12.533260244131
+  t_*=3.482756456330e-04  Duhamel(t_*)=0.415000000000000  M/2=0.415000000000000  M Re t_*=3.622974321831772763e-03
+
+E. F1 -- is Re_E^{-1/2} 'dimensionally impossible'?
+---------------------------------------------------
+  sqrt(nu)/(E^{1/5}M^{1/10}) - Re_E^{-1/2} = 0
+  [Re_E                        ] = 1   -> dimensionless: True
+  [Re_E^{-1/2}                 ] = 1   -> dimensionless: True
+  [sqrt(nu)/(E^{1/5}M^{1/10})  ] = 1   -> dimensionless: True
+  [M*t_*                       ] = 3*3**(1/5)*pi**(11/5)/12800   -> dimensionless: True
+  => every one of them is DIMENSIONLESS.  'M t_*/Re_E^{-1/2} is not a pure number'
+     is FALSE: that ratio IS Re_E^{-1/2}, a dimensionless group.
+  M t_* (Theorem C) = c_div/Re_E,   but sec.6.2 displays M t_* = Re_E^{-1} 'identically'.
+  ratio of the two displays = 1/c_div = 276.0163090238
+  Re_E=1e+00     c_div/Re = 3.622974e-03    c_div/sqrt(Re) = 3.622974e-03    stronger by 1.0000e+00
+  Re_E=1e+02     c_div/Re = 3.622974e-05    c_div/sqrt(Re) = 3.622974e-04    stronger by 1.0000e+01
+  Re_E=1e+06     c_div/Re = 3.622974e-09    c_div/sqrt(Re) = 3.622974e-06    stronger by 1.0000e+03
+  Re_E=1e+17     c_div/Re = 3.622974e-20    c_div/sqrt(Re) = 1.145685e-11    stronger by 3.1623e+08
+
+F. controls in the target's own audit that cannot fail
+------------------------------------------------------
+  s7 'third way' input t = nu M^{-6/5}E^{-2/5};  t_*(Theorem C)/t = 3*3**(1/5)*pi**(11/5)/12800 = 3.622974321832e-03
+  -> the two differ by exactly c_div; the s7 section can never see Theorem C's constant.
+  s7 check 9 (C_w): lhs is rhs -> True  (identical sympy trees; the check cannot fail for ANY value)
+  s7's 9 checks, classified:
+    gamma reduced form               substantive
+    C_u vs gamma-route               substantive
+    Duhamel prefactor                substantive
+    c_div two forms                  substantive
+    1/C_u^2 reduced                  substantive
+    pi/2^(46/5) vs pi*2^(-46/5)      notational identity
+    2*2^(18/5)=2^(23/5)              trivial exponent arithmetic
+    (2^(23/5))^2=2^(46/5)            trivial exponent arithmetic
+    C_w = C_w                        TAUTOLOGY, cannot fail
+  with ANY symbol X in place of C_u:  c_div(X)/c_GIM(X) = 2**(4/5)*pi/(1024*c_G)  d/dX = 0
+  cross-seat 'check': (2 ln2/L)(1+2L-0.7031660) for L =
+    L=8.3178      2.8220608543
+    L=20          2.7931636873
+    L=50          2.7808187082
+    L=100         2.7767037152
+    L=1e+06       2.7725891337
+    limit = 4 ln 2 = 2.7725887222  -- forced by the two QUOTED formulas alone; c_div absent.
+    offset check: (2/5)*ln(0.172403978) = -0.7031659387  (the quoted -0.7031660)
+
+G. clock comparison reproduced by my own arithmetic
+---------------------------------------------------
+  Re=1e+00      (a)/c_1=1.000000e+00    (b)=3.622974e-03    (a)/(b)=2.760163e+02 * c_1
+  Re=1e+02      (a)/c_1=1.784067e-01    (b)=3.622974e-05    (a)/(b)=4.924316e+03 * c_1
+  Re=1e+05      (a)/c_1=7.991736e-02    (b)=3.622974e-08    (a)/(b)=2.205850e+06 * c_1
+  Re=1e+10      (a)/c_1=4.162183e-02    (b)=3.622974e-13    (a)/(b)=1.148831e+11 * c_1
+  Re=1e+20      (a)/c_1=2.125322e-02    (b)=3.622974e-23    (a)/(b)=5.866234e+20 * c_1
+  Re=1e+40      (a)/c_1=1.074075e-02    (b)=3.622974e-43    (a)/(b)=2.964621e+40 * c_1
+  sup_{Re>=1} (1+log Re)/Re = 1 at Re=1  ->  (a)>=(b) for all Re>=1 iff c_1 >= c_div
+  crossover at c_1=1e-3 : Re_E = 12.883
+  crossover at c_1=1e-6 : Re_E = 42209.1
+  datum table:
+    L=8.3178    logRe=15.932434    Re=8.305546e+06   (b)=4.362115e-10   (a)/c_1=5.905825e-02   model=0.166666   model/(b)=3.820761e+08
+    L=20.0000   logRe=39.296834    Re=1.165194e+17   (b)=3.109332e-20   (a)/c_1=2.481585e-02   model=0.069315   model/(b)=2.229248e+18
+    L=50.0000   logRe=99.296834    Re=1.330660e+43   (b)=2.722690e-46   (a)/c_1=9.970404e-03   model=0.027726   model/(b)=1.018327e+44
+    L=100.0000  logRe=199.296834   Re=3.576970e+86   (b)=1.012861e-89   (a)/c_1=4.992590e-03   model=0.013863   model/(b)=1.368691e+87
+
+r4: recheck complete

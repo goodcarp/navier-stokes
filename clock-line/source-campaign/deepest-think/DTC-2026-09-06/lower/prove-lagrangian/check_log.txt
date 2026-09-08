@@ -1,0 +1,89 @@
+PASS  sympy antiderivative residual                        got=1.0                        want=1.0                    dev=0.000e+00
+PASS  sympy P1(lam)-lam                                    got=1.0                        want=1.0                    dev=0.000e+00
+PASS  mpmath |P1-lam|/lam                                  got=0.0                        want=0.0                    dev=0.000e+00
+PASS  route2 P1(1.0)                                       got=0.9999999999845788         want=1.0                    dev=1.542e-11
+PASS  route2 P1(1.1)                                       got=1.0999999999904246         want=1.1                    dev=8.705e-12
+PASS  route2 P1(1.25)                                      got=1.2499999999949465         want=1.25                   dev=4.043e-12
+PASS  route2 P1(1.5)                                       got=1.4999999999979692         want=1.5                    dev=1.354e-12
+PASS  route2 P1(1.75)                                      got=1.7499999999990608         want=1.75                   dev=5.367e-13
+PASS  route2 P1(2.0)                                       got=1.9999999999995182         want=2.0                    dev=2.409e-13
+PASS  route2 P1(3.0)                                       got=2.999999999999937          want=3.0                    dev=2.102e-14
+PASS  route3 Eulerian a(0)/(ML) lam=1.0                    got=0.5000540690554222         want=0.5                    dev=1.081e-04
+PASS  route3 Eulerian a(0)/(ML) lam=1.25                   got=0.6249999145773535         want=0.625                  dev=1.367e-07
+PASS  route3 Eulerian a(0)/(ML) lam=1.5                    got=0.7499992680200739         want=0.75                   dev=9.760e-07
+PASS  route3 Eulerian a(0)/(ML) lam=2.0                    got=0.9999982040773251         want=1.0                    dev=1.796e-06
+PASS  kappa flat                                           got=0.4999999999922894         want=0.5                    dev=1.542e-11
+PASS  kappa sin2phi (= 2/5 exact)                          got=0.4                        want=0.4                    dev=0.000e+00
+PASS  kappa taper 30deg (refuter 0.48363)                  got=0.48362523497316146        want=0.48363                dev=9.853e-06
+PASS  kappa taper 15deg (refuter 0.49781)                  got=0.497807744963111          want=0.49781                dev=4.530e-06
+PASS  kappa taper 7.5deg (refuter 0.49972)                 got=0.49972123051304634        want=0.49972                dev=2.462e-06
+PASS  Phi'(1) flat                                         got=1.000000000023132          want=1.0                    dev=2.313e-11
+PASS  Phi'(1) sin2phi = 10/7                               got=1.4285714285714288         want=1.4285714285714286     dev=1.554e-16
+PASS  Phi'(1) taper7.5                                     got=0.9950364159008276         want=0.99504                dev=3.602e-06
+PASS  taper 7.5 D_true at 1.5                              got=0.027266548084917464       want=0.027267               dev=1.657e-05
+PASS  taper 7.5 D_bound at 1.5                             got=0.10042145810464795        want=0.100421               dev=4.562e-06
+PASS  taper 7.5 Phi(1.5)                                   got=1.473555016249062          want=1.4736                 dev=3.053e-05
+PASS  taper 30 Phi(1.5)                                    got=1.0673581018011455         want=1.0674                 dev=3.925e-05
+PASS  Phi>=1 and deficit bound is upper for 30.0deg
+PASS  Phi>=1 and deficit bound is upper for 20.0deg
+PASS  Phi>=1 and deficit bound is upper for 15.0deg
+PASS  Phi>=1 and deficit bound is upper for 10.0deg
+PASS  Phi>=1 and deficit bound is upper for 7.5deg
+PASS  Phi>=1 and deficit bound is upper for 5.0deg
+PASS  Phi>=1 and deficit bound is upper for 3.0deg
+PASS  P_h(3/2) lower bound 7.5deg                          got=1.3995785418953521         want=1.39958                dev=1.042e-06
+PASS  theta32 exact 4(1-sqrt(2/3))                         got=0.7340136762890959         want=0.7340136762890959     dev=0.000e+00
+PASS  theta32 numeric root                                 got=0.7340136762890958         want=0.7340136762890959     dev=1.513e-16
+PASS  theta32 frozen 2log(3/2)                             got=0.8109302162163288         want=0.8109302162163288     dev=0.000e+00
+PASS  c2 accel 8(1-sqrt(2/3))                              got=1.4680273525781917         want=1.4680273525781917     dev=0.000e+00
+PASS  c2 frozen 4log(3/2)                                  got=1.6218604324326575         want=1.6218604324326575     dev=0.000e+00
+PASS  theta blowup                                         got=4.0                        want=4.0                    dev=0.000e+00
+PASS  H(0,theta32) = sqrt(3/2)                             got=1.224744871391589          want=1.224744871391589      dev=0.000e+00
+PASS  T*a* / int a                                         got=1.1085781089288438         want=1.1085781089288438     dev=0.000e+00
+PASS  accel/frozen ratio                                   got=0.9051502356317253         want=0.90515                dev=2.603e-07
+PASS  closed form vs tail integral (theta<=2, trapezoid)   got=1.4583223517661281e-09     want=0.0                    dev=1.458e-09
+PASS  method-of-lines vs closed form                       got=2.537013266135091e-09      want=0.0                    dev=2.537e-09
+PASS  H1 = -5/6                                            got=-0.8333333333352546        want=-0.8333333333333334    dev=2.305e-12
+PASS  H3 = 3/40                                            got=0.07499999999698678        want=0.075                  dev=4.018e-11
+PASS  H5 = -247/1680                                       got=-0.14702380952823393       want=-0.14702380952380953   dev=3.009e-11
+PASS  sup|a_dev|/M                                         got=0.4197116736916721         want=0.4197                 dev=2.781e-05
+PASS  sup|uz_dev|/(M rho)                                  got=0.19142912897824602        want=0.19143                dev=4.550e-06
+PASS  sum |H| ||C||/l^2 (lam=1)                            got=0.3958                     want=0.3958                 dev=0.000e+00
+PASS  R=64: a(0) - (M/2)logR                               got=-1.2448975184042865e-09    want=0.0                    dev=1.245e-09
+PASS  R=64: material offset (R-dependent, -> 0.2167783)    got=0.21680762195923675        want=0.216773               dev=1.597e-04
+PASS  R=256: a(0) - (M/2)logR                              got=-1.2435852347891796e-09    want=0.0                    dev=1.244e-09
+PASS  R=256: material offset (R-dependent, -> 0.2167783)   got=0.21678010591809382        want=0.216773               dev=3.278e-05
+PASS  R=1024: a(0) - (M/2)logR                             got=-1.242005165380533e-09     want=0.0                    dev=1.242e-09
+PASS  R=1024: material offset (R-dependent, -> 0.2167783)  got=0.21677838524084647        want=0.216773               dev=2.484e-05
+PASS  R=4096: a(0) - (M/2)logR                             got=-1.2404077764927024e-09    want=0.0                    dev=1.240e-09
+PASS  R=4096: material offset (R-dependent, -> 0.2167783)  got=0.21677827769639268        want=0.216773               dev=2.435e-05
+PASS  material offset asymptote (R=4096) vs refuter 0.216773+-2e-6 got=0.21677827769639268        want=0.216773               dev=2.435e-05
+PASS  sup|a-A| whole shell                                 got=0.7047367976786839         want=0.7047                 dev=5.222e-05
+PASS  sup|a-A| bulk                                        got=0.31865209824139074        want=0.31865                dev=6.585e-06
+PASS  kappa(lam=1.0) = lam/2                               got=0.500000009638377          want=0.5                    dev=1.928e-08
+PASS  L3 remainder bound lam=1.0                           got=0.39584319888482355        want=0.3958                 dev=1.091e-04
+PASS  kappa(lam=1.1) = lam/2                               got=0.5500000106022149         want=0.55                   dev=1.928e-08
+PASS  L3 remainder bound lam=1.1                           got=0.43542751877330654        want=0.4354                 dev=6.320e-05
+PASS  kappa(lam=1.25) = lam/2                              got=0.6250000120479716         want=0.625                  dev=1.928e-08
+PASS  L3 remainder bound lam=1.25                          got=0.49480399860602936        want=0.4948                 dev=8.081e-06
+PASS  kappa(lam=1.5) = lam/2                               got=0.7500000144575683         want=0.75                   dev=1.928e-08
+PASS  L3 remainder bound lam=1.5                           got=0.593764798327236          want=0.5938                 dev=5.928e-05
+PASS  L3 remainder taper7.5 lam=1.5                        got=0.6069100239871609         want=0.6069                 dev=1.652e-05
+PASS  (2/5) log C_E                                        got=-0.7031659387091245        want=-0.7031659             dev=5.505e-08
+PASS  Delta5(1/r)*r^3 = -1                                 got=-1.0                       want=-1.0                   dev=0.000e+00
+PASS  viscous penalty phi=30, delta=7.5                    got=0.06853891945200943        want=0.0685                 dev=5.682e-04
+PASS  viscous penalty phi=62.9                             got=0.021621687611488513       want=0.0216                 dev=1.004e-03
+PASS  s7 bangbang theta32 vs exact                         got=0.7340136755756788         want=0.7340136762890959     dev=9.719e-10
+PASS  c2 taper 5.0deg                                      got=1.4688886812249642         want=1.46889                dev=8.978e-07
+PASS  c2 taper 7.5deg                                      got=1.4708578553838962         want=1.47086                dev=1.458e-06
+PASS  c2 taper 10.0deg                                     got=1.474512073360746          want=1.47451                dev=1.406e-06
+PASS  c2 taper 15.0deg                                     got=1.488177395116994          want=1.48818                dev=1.750e-06
+PASS  c2 taper 30.0deg                                     got=1.5901880621075941         want=1.59019                dev=1.219e-06
+PASS  log-rho excursion 2 log(3/2)                         got=0.8109302162163288         want=0.8109302162163288     dev=0.000e+00
+PASS  phi0=30deg -> after lam=1.5                          got=62.83309452607815          want=62.833                 dev=1.504e-06
+PASS  model Dt a / (M^2 L^2) = 1/8                         got=0.125                      want=0.125                  dev=0.000e+00
+PASS  beta/(M^2L^2) = 3/8                                  got=0.375                      want=0.375                  dev=0.000e+00
+PASS  measured T32 M a* / log(3/2)                         got=1.1813593584783106         want=1.1814                 dev=3.440e-05
+PASS  Qprime model at kappa=0.411                          got=0.892960676750725          want=0.893                  dev=4.403e-05
+
+ALL 0 CHECKS PASS

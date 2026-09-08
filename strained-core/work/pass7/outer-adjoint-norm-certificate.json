@@ -1,0 +1,42 @@
+{
+  "interval": "[0.0000083920351182265743644994561044437598, 0.000014930776625007394198518445867521572]",
+  "exact_dyadic_bounds": {
+    "lower": {
+      "sign": 0,
+      "mantissa": "5577464010378469484252113258579",
+      "exponent": -119
+    },
+    "upper": {
+      "sign": 0,
+      "mantissa": "9923203144385424509210371461965",
+      "exponent": -119
+    }
+  },
+  "panels": 18000,
+  "strictly_positive": true,
+  "strictly_negative": false,
+  "width_display": 6.53874150678082e-06,
+  "status": "VALID_ENCLOSURE_TARGET_NOT_MET",
+  "quantity": "nd_squared = ||r div(Qw)||_L2(R3)^2",
+  "squared_target": "81/6250000",
+  "norm_target": "9/2500",
+  "target_proved": false,
+  "norm_display": [
+    0.0028969009507103577,
+    0.003864036312589129
+  ],
+  "elapsed_seconds": 63.83118796348572,
+  "dps": 30,
+  "trust_base": "mpmath.iv outward-rounded range quadrature; no numerical convergence assumption",
+  "formula": "2*pi*int_upper r*m^2*((k*Qdiff*e*q)^2+(Qdiff*(er-e/r)*q+Qrz*e*qz)^2) dr dz",
+  "parameters": {
+    "m": 4,
+    "k": 20,
+    "r0": "21/100",
+    "dr": "7/50",
+    "z0": 4,
+    "hz": "3/5"
+  },
+  "weaker_rational_bound_proved": "773/200000",
+  "weaker_rational_squared_target": "597529/40000000000"
+}

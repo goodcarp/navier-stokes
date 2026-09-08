@@ -1,0 +1,11 @@
+{
+ "coverage": 0.8134182174338883,
+ "coverage_over_finite_leaves": 0.8927707605482397,
+ "n_blind": 762,
+ "n_blind_classes": 94,
+ "n_blind_finite": 399,
+ "n_blind_nonfinite": 363,
+ "n_caught": 3322,
+ "n_checks": 2964,
+ "n_leaves": 4084
+}

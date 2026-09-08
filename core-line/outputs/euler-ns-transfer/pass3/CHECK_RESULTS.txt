@@ -1,0 +1,68 @@
+CHECK: verify_quantitative_core_stage.py
+PASS: explicit Sobolev product and energy counting constants.
+PASS: time-derivative bounds scale as S^2, S^3, S^4.
+PASS: interval restrictions imply strain, vorticity, modal and defined Reynolds gains.
+PASS: order-two derivative norm dominates the stated Bessel norm.
+All arithmetic checks passed. No numerical PDE evolution was performed.
+CHECK: verify_rotational_receiver.py
+PASS 1: generic degree-2 harmonic potential (5 coefficients)
+PASS 2: degree-2 radial first-moment angular identities
+PASS 3: generic degree-4 harmonic potential (9 coefficients)
+PASS 4: degree-4 radial first-moment angular identities
+PASS 5: generic degree-6 harmonic potential (13 coefficients)
+PASS 6: degree-6 radial first-moment angular identities
+PASS 7: initial time derivative has zero local viscous Laplacian
+PASS 8: second-time nonlinear identity before removing pressure gradient
+PASS 9: radial rotational normalization is two-thirds of radial second moment
+PASS 10: all generic harmonic orders give normalized a''(0)=K
+PASS 11: weighted projection decomposition underlying energy lower bound
+PASS 12: initial rigid rotation saturates weighted energy normalization
+PASS 13: RMS velocity scale match implies Reynolds scale match
+PASS 14: weight mass and RMS scaling give exact energy ratio
+PASS 15: uniform third derivative yields the recorded cubic remainder constant
+
+15 exact checks passed. No PDE evolution, full-pressure kernel proof, uniform Sobolev estimate, or profile regeneration is certified by this script.
+CHECK: verify_material_core_transfer.py
+PASS: no first-order material area change
+PASS: second-order material area coefficient
+PASS: incompressible axial/transverse area cancellation
+PASS: transverse metric second coefficient 0,0
+PASS: transverse metric second coefficient 0,1
+PASS: transverse metric second coefficient 1,0
+PASS: transverse metric second coefficient 1,1
+PASS: central second-order vorticity-area flux cancellation
+PASS: rigid rotation commutes with scalar Laplacian
+PASS: skew pressure pairing vanishes for potential acceleration
+PASS: second velocity jet harmonic reduction 0
+PASS: second velocity jet harmonic reduction 1
+PASS: second velocity jet harmonic reduction 2
+PASS: second vorticity jet harmonic reduction 0
+PASS: second vorticity jet harmonic reduction 1
+PASS: second vorticity jet harmonic reduction 2
+PASS: third vorticity jet harmonic reduction 0
+PASS: third vorticity jet harmonic reduction 1
+PASS: third vorticity jet harmonic reduction 2
+PASS: chosen nonquadratic acceleration potential is harmonic
+PASS: chosen first pressure jet is harmonic
+PASS: nonquadratic local harmonic jet u1[0]
+PASS: nonquadratic local harmonic jet u1[1]
+PASS: nonquadratic local harmonic jet u1[2]
+PASS: nonquadratic local harmonic jet u2[0]
+PASS: nonquadratic local harmonic jet u2[1]
+PASS: nonquadratic local harmonic jet u2[2]
+PASS: nonquadratic local harmonic jet omega2[0]
+PASS: nonquadratic local harmonic jet omega2[1]
+PASS: nonquadratic local harmonic jet omega2[2]
+PASS: nonquadratic local harmonic jet omega3[0]
+PASS: nonquadratic local harmonic jet omega3[1]
+PASS: nonquadratic local harmonic jet omega3[2]
+PASS: viscous flux rate coefficient below order four: 0
+PASS: viscous flux rate coefficient below order four: 1
+PASS: viscous flux rate coefficient below order four: 2
+PASS: viscous flux rate coefficient below order four: 3
+PASS: first not-excluded circulation Taylor coefficient
+All algebra checks passed. Circulation is controlled through order four only; no finite-time conservation is asserted.
+CHECK: verify_receiver_flux.py
+PASS: receiver divergence, nonlinear flux, viscous weight Laplacian, harmonic quadratic coefficient, and exact scale-match energy exponent
+SCOPE: algebra supporting finite receiver identities; no terminal-profile or infinite-regeneration proof
+All four packaged checks passed. See VERIFICATION.md for their scope.

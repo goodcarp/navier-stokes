@@ -1,0 +1,479 @@
+                                          LOWER BOUNDS FOR POSSIBLE SINGULAR SOLUTIONS FOR
+                                           THE NAVIER–STOKES AND EULER EQUATIONS REVISITED.
+
+
+
+
+arXiv:1503.03063v2 [math.AP] 2 Sep 2016
+                                                               JEAN C. CORTISSOZ AND JULIO A. MONTERO
+
+
+                                                  Abstract. In this paper we give optimal lower bounds for the blow-up rate
+                                                  of the Ḣ s T3 -norm, 12 < s < 25 , of a putative singular solution of the Navier-
+                                                  Stokes equations, and we also present an elementary proof for a lower bound
+                                                  on blow-up rate of the Sobolev norms of possible singular solutions to the Euler
+                                                  equations when s > 52 .
+
+
+
+
+                                                                               1. Introduction
+                                             The Navier-Stokes equations for an incompressible viscous fluid of viscosity ν = 1
+                                          are given by
+                                                          
+                                                            ut − ∆u + u · ∇u + ∇p = 0 in X × (0, ∞)
+                                          (NS)
+                                                            u (x, 0) = ψ, div u = 0.
+                                          where, in this paper, X = R3 or X = T3 . It is known that given an initial condition
+                                          of finite energy and which belongs to Ḣ s (X) there is an interval
+                                                                                                            of time (0, η),
+                                          η > 0, for which there is a unique smooth solution to (NS) in C [0, T ] ; Ḣ s (X) .
+                                          Let then T > 0 be the largest η > 0 for which the unique solution with initial data
+                                          ψ ∈ Ḣ s (X) remains smooth. It is unknown whether T < ∞ or T = ∞. In the case
+                                          that T < ∞, there is the interesting question of estimating a rate at which the Ḣ s -
+                                          norm blows-up. In [5] the authors, based on ideas presented by Robinson, Sadowski
+                                          and Silva in [11], showed an almost optimal lower bound for the blow–up rate of
+                                          solutions of the Navier–Stokes equations with periodic boundary conditions on a
+                                          bounded maximal interval of existence (0, T ), T < ∞, when this solution belongs
+                                                 3           5
+                                          to Ḣ 2 (T3 ) ∩ Ḣ 2 (T3 ). To be more precise, it was shown that a regular solution of
+                                          the Navier–Stokes equation whose maximal interval of existence (or regularity) is
+                                          (0, T ), must satisfy
+                                                                                                c
+                                                                     ku (t)k 32 3 ≥ p                        ,
+                                                                            H (T )     (T − t) |log (T − t)|
+                                          for a constant c > 0. In this paper we go a little further and give a proof of the
+                                          expected optimal lower blow–up rate. Namely, we prove the following the following
+                                          estimate on the blow–up rate of putative singular solutions to the Navier–Stokes
+                                          equations:
+                                                                   C
+                                                                    1 ≤ ku(T − t)k     3       , C > 0.
+                                                                   t2               Ḣ 2 (T3 )
+                                          The proof of this result requires a detailed inspection of the bounds on the non-
+                                          linear term of the Navier–Stokes equations found in [11], and the application of an
+
+                                            2010 Mathematics Subject Classification. Primary 35Q30, Secondary 35B44.
+                                            Key words and phrases. Navier–Stokes, Euler, blow–up, homogeneous Sobolev spaces.
+                                                                                          1
+2                    JEAN C. CORTISSOZ AND JULIO A. MONTERO
+
+
+interpolation technique inspired by the method used by Hardy to prove Carlson’s
+inequality (see [6]). We must add that this problem using different techniques has
+been treated in the papers [2] and [10].
+   The lower blow–up rates for putative singular solutions to the Navier–Stokes
+equations can be interpreted as a regularity criterion for solutions of the equation
+(as they give a lower bound on the size of the maximal interval of existence). These
+blow–up estimates were first stated for the Lp spaces, p > 3, without proof by Leray
+in his remarkable paper [9], and proved by Giga in [7] via semigroup theory. In this
+paper, we rather follow the elementary, and improve on, the proof on homogeneous
+Sobolev spaces given by Robinson, Sadowski and Silva for their blow–up estimates.
+   On the other hand, there exists the related problem of investigating the possible
+blow-up behavior of solutions to the incompressible Euler equations:
+                     
+                       ut + u · ∇u + ∇p = 0 in X × (0, ∞)
+(E)
+                       u (x, 0) = ψ, div(u) = 0.
+In fact, recently in a very nice paper [1], Chen and Pavlović showed the following
+(although they state their result in R3 and we do in T3 , our arguments apply in
+both cases, see Remark 1).
+Theorem 1.1. Let u (x, t) be a solution of the periodic Euler equations in the class
+                         3                     5      
+(1)      C 1 [0, T ] , Ḣ 2 +δ T3 ∩ C [0, T ] , Ḣ 2 +δ T3 , δ > 0,
+
+and let T > 0 be the minimum time for which u cannot       be continued in the class
+(1). Then, there exists a finite, positive constant C δ, ku (0)kL2 (T3 ) such that
+
+                                                                          2+ 52 δ
+                                                                        1
+               ku (t)k          5       ≥ C δ, ku (0)kL2 (T3 )                          .
+                         Ḣ(T3 ) 2 +δ                                 T −t
+   The proof of this theorem given in [1] relies on obtaining a single exponential
+bound on the H s norms of a solution of the Euler equations via a lenght parameter
+introduced by P. Constantin in [3]. In this paper we follow the approach suggested
+in [11] in conjunction with some ideas presented in [5], to give a less involved proof
+of Theorem 1.1.
+   Part of this paper was written while the second author was visiting the Math-
+ematics Department at Cornell University, and he is quite grateful for their warm
+hospitality -and in particular to Prof. Tim Healy for his encouragement. He also
+must acknowledge the support of Colciencias and his home institution, the Univer-
+sidad de los Andes for making this visit possible, and his advisor (the first named
+author of this paper) for his encouragement, and his almost always insightful obser-
+vations. The first author wants to thank the second author for being a great student
+and colleague, and for all these wonderful years of shared mathematical enthusi-
+asm. He also wants to thank his home institution, the Universidad de los Andes,
+for providing an excellent research environment and economic support (Proyecto
+Semilla P15.160322.009).
+
+         2. The blow up rate for the Navier-Stokes equations
+   The next statement is essentially the same given in [11]. The main difference
+is that we show a proof which includes the case when the solution belongs to
+                                   BLOW–UP NAVIER–STOKES REVISITED                                                         3
+
+  3               5
+Ḣ 2 (T3 ) ∩ Ḣ 2 (T3 ). From now on, in this paper we shall use the notation
+
+                                                   kuks := kukḢ s (T3 ) ,
+
+and ûk refers to the Fourier wavenumber of wavevector k of the function u.
+
+Theorem 2.1. Let u(x, t) = (u1 , u2 , u3 ) be a solution Navier–Stokes equations
+whose maximum interval of existence is (0, T ), 0 < T < ∞, and such that u ∈
+                                           1     5
+C((0, T ), Ḣ s (T3 ) ∩ Ḣ s+1 (T3 )), with < s < . Then the following estimate holds
+                                           2     2
+                                               Cs
+(2)                                           1     1         ≤ ku(T − s)kḢ s (T3 ) .
+                                          t   2 (s− 2 )
+
+
+Proof. First, we must recall the energy inequality found in [11]:
+                                                           !
+       1 d         2
+                                            X            r
+                           2
+(3)         (ku(t)ks ) + 4π ku(t)ks+1 ≤ Cs       uk | |k| ku(t)ks kuks+1−r ,
+                                                |b
+       2 dt
+                                                                                 k
+
+with 0 ≤ r ≤ 1. For the sake of completeness we will give a proof of this inequality
+below.                         
+                      1       1
+   Now we pick r =        s−     , and apply the interpolation technique employed
+                      2       2
+by Hardy in his proof of Carlson’s inequality (see [6]), to the first factor on the
+right hand side of (3), to obtain:
+
+                                                                        q
+  X                                X                                          s+ 12 + b|k|s+ 25
+           uk | |k| (
+          |b
+                  1
+                  2   s− 12   )=          uk | |k| (
+                                         |b
+                                                      1
+                                                      2       s− 21   ) qa|k|
+                                                                                 1            5
+      k                            k                                     a|k|s+ 2 + b|k|s+ 2
+                                                                                                                    ! 12
+                                                                        21         X                   1
+                                            2        2
+                              ≤        a kuks + b kuks+1                                          s+ 1       s+ 5
+                                                                                     k  a |k| 2 + b |k| 2
+                                                  21                                    √  32 −s Z ∞ 3 −s ! 12
+                                     2        2                                      4π      a           y2
+                              ≤ a kuks + b kuks+1                                    √      √                  dy  ,
+                                                                                      ab      b       0 1 + y2
+
+if we choose a = ku(t)k2s+1 and b = ku(t)k2s then the energy inequality (3) becomes
+
+      1 d                                            s   3       5  s
+(4)        (ku(t)k2s ) + 4π 2 ku(t)k2s+1 ≤ Cs ku(t)ks2 + 4 ku(t)ks+1
+                                                                 4−2
+                                                                      ku(t)k s + 5 .
+      2 dt                                                                   2   4
+
+                                                       
+                      s    5       s 1           5 s
+Now, observe that + =                 −     s+      −       (s + 1), so by interpolation
+                      2    4       2 4           4 2
+between homogeneous Sobolev spaces, we get
+                                                                                         5
+                                                                          s
+                                                                              − 14           −s
+                                          kuk s + 5 ≤ kuks2                          kuks+1
+                                                                                        4  2
+                                                                                             .
+                                                  2       4
+
+
+Therefore, from inequality (4) we obtain
+                  1 d         2                2              s+ 1      5
+                                                                        2 −s
+                       (ku(t)ks ) + 4π 2 ku(t)ks+1 ≤ Cs ku(t)ks 2 ku(t)ks+1  .
+                  2 dt
+4                         JEAN C. CORTISSOZ AND JULIO A. MONTERO
+
+                                                         ap  bq 1 1
+It is time to use Young’s inequality ab ≤                   + , + = 1, with the choice
+                                                         p   q p  q
+     2(s+ 21 )              2
+p=    s− 21
+               and q =     5      . We thus get
+                           2 −s
+
+                                                                           
+                            1 d                          1+ 1 1
+                                        2              2     s−
+                                 (ku(t)ks ) ≤ cs ku(t)ks        2               .
+                            2 dt
+
+Finally, by integrating between T − t and T the previous estimate, inequality (2)
+follows.                                                                       
+
+
+Remark 1. Theorem 2.1 is also valid when we consider the case of the whole space,
+                              3            5
+i.e., for solutions u(t) ∈ Ḣ 2 (R3 ) ∩ Ḣ 2 (R3 ), this because all the calculations leading
+                             3
+to its proof are valid on R if we change sums by integrals.
+
+   As promised, we give a proof of inequality (3). It is a consequence of the following
+lemma (see the proof of Lemma 3.1 in [11]) which gives an estimate of the nonlinear
+term
+
+                                          |(B (u, u) , u)Ḣ s | ,
+
+where
+
+                                       B (u, u) = P (u · ∇u) ,
+
+and P is the Leray projector.
+
+Lemma 2.1. For any s > 1 and 0 ≤ r ≤ 1, we have
+                                                                           
+        X X                                                  X
+                      |k|2s (k · u
+                                 bk−q )(b    bk ) ≤ cs 
+                                        uq · u                             uk | kuks kuks+1−r ,
+                                                                     |k|r |b
+        k∈Z˙3 q∈Z˙3                                          k∈Z˙3
+
+
+for all u ∈ Ḣ s+1−r (T3 ) ∩ F r . Here ûk denotes the Fourier wavenumber of u with
+wavevector k, and z denotes the complex conjugate of z.
+
+Proof. Since P is self-adjoint and u(x, t) is divergence free , we have that (see [4],
+chapter 6 p. 53)
+                       X X
+                                |q|s |k|s (b
+                                           uk−q · q)(b    bk ) = 0.
+                                                     uq · u
+                            k∈Ż3 q∈Ż3
+
+
+Using the inequality ( see [8], p.39)
+                                                                 
+               ||x|s − |y|s | ≤ s(2s )|x − y| |x − y|s−1 + |y|s−1 ,                 s > 1;
+
+and the well know inequality
+
+                             (|x| + |y|)r ≤ |x|r + |y|r if 0 ≤ r ≤ 1,
+                                       BLOW–UP NAVIER–STOKES REVISITED                                                      5
+
+
+we obtain:
+      X X
+                    |k|2s (k · u
+                               bk−q )(b    bk )
+                                      uq · u
+      k∈Z˙3 q∈Z˙3
+
+                X X                                                       X X
+           =                    |k|2s (k · u
+                                           bk−q )(b
+                                                  uq · u
+                                                       bk ) −                              |q|s |k|s (b
+                                                                                                      uk−q · q)(b    bk )
+                                                                                                                uq · u
+               k∈Z˙3 q∈Z˙3                                               k∈Ż3 q∈Ż3
+               X X
+                                   s
+           ≤                   |k| |(q · u
+                                         bk−q )| |b     uk | ||k|s − |q|s |
+                                                  uq | |b
+               k∈Z˙3 q∈Z˙3
+                           X X
+           ≤ s2s−1                        |k|s |(q · u
+                                                     bk−q )||b    uk ||k − q|(|k − q|s−1 + |q|s−1 )
+                                                             uq ||b
+                           k∈Z˙3 q∈Z˙3
+                        X X
+           ≤ s2s                       |k|s |k − q|s |q||b
+                                                         uk−q ||b
+                                                                uq ||b
+                                                                     uk |
+                        q∈Z˙3 k∈Z˙3
+                        X X
+           ≤ s2s                       |k|s |k − q|s |q|r |q|1−r |b
+                                                                  uk−q ||b
+                                                                         uq ||b
+                                                                              uk |
+                        q∈Z˙3 k∈Z˙3
+                        X X
+           ≤ s2     s
+                                       |k|s |k − q|s |q|r (|k − q|1−r + |k|1−r )|b
+                                                                                 uk−q ||b
+                                                                                        uq ||b
+                                                                                             uk |
+                        q∈Z˙3 k∈Z˙3
+                           X                   X
+           ≤ s2s+1                |q|r |b
+                                        uq |           |k − q|s |b
+                                                                 uk−q ||k|s+1−r |b
+                                                                                 uk |
+                          q∈Z˙3                k∈Z˙3
+                                                
+                              X
+           ≤ s2s+1                          uk | kuks kuks+1−r ,
+                                       |k|r |b
+                              k∈Z˙3
+
+which is what we wanted to prove.                                                                                           
+   The previous proof gives us also an lower bound on size on the maximal interval
+of existence. Indeed, the following result holds.
+Corollary 2.1. Let u(x, t) be a solution of the Navier–Stokes equations with initial
+condition u0 (x) ∈ Ḣ s (T3 ), 21 < s < 25 , and let T > 0 be the minimum time for
+blow–up. Then
+
+                                                            Ks
+(5)                                                               4      ≤ T.
+                                                       (ku0 ks ) 2s−1
+
+                        3. The blow up rate for the Euler equations
+   Estimate (3) can be used to provide the promised elementary proof of Theorem
+1.1. But before we present our proof we will need the following estimate.
+Lemma 3.1. Let                                                   X
+                                                 kukF 1 =               |k| |ûk | .
+                                                               k∈Z3
+There is a constant c > 0 which only depends on s such that
+                                                                  s− 5
+                                                                     2                 5
+                                            kukF 1 ≤ c kukL2s(T3 ) kuks2s .
+6                        JEAN C. CORTISSOZ AND JULIO A. MONTERO
+
+
+Proof. We have that
+                                        q
+                                                  2s−2
+     X                    X              a + b |k|
+          |ûk | |k| =       |ûk | |k| q
+                                                  2s−2
+      k                    k             a + b |k|
+                                                                !1                              ! 12
+                            X                                  2        X          1
+                    ≤               |ûk |2 |k|2 a + b |k|2s−2
+                               k                                           k
+                                                                                a + b |k|2s−2
+                                                     Z ∞                     12
+                                        2        2      x2 dx
+                    ≤     cs       a kuk1 + b kuks
+                                                 0  a + bx2s−2
+                                             1  a  2(2s−2)
+                                                          3
+                                  2        2
+                    ≤     cs a kuk1 + b kuks √                 .
+                                                a b
+                2                     2
+We let a = kuks and b = kuk1 to obtain (for a new constant cs > 0)
+                                                  3
+                                             kuks 2s−2
+                       kukF 1 ≤ cs kuk1
+                                             kuk1
+                                                       2s−5         3
+                                          = cs kuk12s−2 kuks2s−2 .
+Now we use the Sobolev interpolation inequality
+                                                     s−1        1
+                                      kuk1 ≤ kukL2s (T3 ) kukss ,
+to obtain
+                                                   2s−5       1 2s−5        3
+                                                                        + 2s−2
+                          kukF 1      ≤    cs kukL2s
+                                                  2 (T3 ) kuks
+                                                             s 2s−2
+
+
+                                                   2s−5        5
+                                      =    cs kukL2s
+                                                  2 (T3 ) kuks
+                                                             2s
+                                                                .
+                                                                                                       
+   We are ready to prove the estimate of Chen and Pavlović. Indeed, proceeding
+as we did in the proof of Theorem 2.1, for the Euler equations we obtain (i.e., by
+inequality (3) with r = 1; the extra positive term on the left-hand side does not
+appear, due to the lack of the diffusion term in the Euler equations) :
+                               d      2                2
+                                   kuks ≤ cs kukF 1 kuks ,
+                               dt
+(this is just equation (6.2) in [11]), and hence by the previous lemma we arrive at
+the differential inequality
+                          d      2
+                                               2s−5        5
+                                                             +2
+                             kuks ≤ cs kukL22s(T3 ) kuks2s .
+                          dt
+For a regular solution to Euler equation, it is well-known that for any t ≥ 0,
+                                   ku (t)kL2 (T3 ) ≤ ku (0)kL2 (T3 ) ,
+so we obtain an inequality (here the constant involved depends on ku (0)kL2 (T3 ) )
+                      d                                  5
+                             2                               +2
+                         kuks ≤ c ku (0)kL2 (T3 ) , s kuks2s .
+                      dt
+Let s = 25 + δ. Then our inequality becomes
+                   d                                    2+ 12
+                          2                                   1+ δ
+                      kuk 5 +δ ≤ c ku (0)kL2 (T3 ) , δ kuk 5 +δ 5 .
+                   dt     2                                2
+                            BLOW–UP NAVIER–STOKES REVISITED                                        7
+
+
+Integrating the previous differential inequality from t to T (and assuming blow up
+at T ) we get
+                                    1
+                                        1    ≤ c (T − t) ,
+                                      1+ 2 δ
+                              ku (t)k 5 +δ
+                                         5
+                                            2
+
+where c is a constant that only depends on ku (0)kL2 (T3 ) and δ. Solving for ku (t)k 5 +δ
+                                                                                      2
+finishes the proof.
+
+Remark 2. As commented before in the case of the Navier-Stokes equations, in
+the proofs in this section it is possible to replace T3 by R3 .
+
+                     4. Final comments: Some open questions
+   Theorem 2.1 includes the optimal lower bound for blow–up rates when u ∈
+   3            5
+Ḣ 2 (T3 ) ∩ Ḣ 2 (T3 ); this particular case was missing in the proof given in [11], and
+in [5] a non optimal bound was proved. These bounds raise the following question:
+                                                               1   1
+If there exists some C > 0 such that ku(T − t)ks ≤ Ct− 2 (s− 2 ) , does ku(T − t)ks
+                                                             1
+blow–up? Furthermore, a lower blow-up rate for u ∈ Ḣ 2 (T3 ), for putative blow–up
+solutions to the Navier–Stokes equations, is yet unknown.
+
+                                          References
+ [1] Chen, Thomas; Pavlović, Nataša. A lower bound on blowup rates for the 3D incompressible
+     Euler equation and a single exponential Beale-Kato-Majda type estimate. Comm. Math.
+     Phys. 314 (2012), no. 1, 265–280.
+ [2] Cheskidov, Alexey; Zaya, Karen. Lower bounds of potential blow-up solutions of the three-
+     dimensional Navier-StokesEquations in H 3/2 , arXiv:1503.01784, (2015)
+ [3] Constantin, P.. Geometric statistics in turbulence. SIAM Rev. 36(1), 73–98 (1994).
+ [4] Peter Constantin and Ciprian Foias, Navier-Stokes equations, Chicago Lectures in Mathe-
+     matics, University of Chicago Press, Chicago, IL, 1988.
+ [5] Cortissoz, Jean C.; Montero, Julio A.; Pinilla Carlos E. On lower bounds for possible blow–up
+     solutions to the periodic Navier-Stokes equation. Journal of Mathematical Physics 55, 033101
+     (2014); doi: 10.1063\1.4867616
+ [6] Larsson, Leo; Maligranda, Lech; Pečarić, Josip; Persson, Lars-Erik Multiplicative inequalities
+     of Carlson type and interpolation. World Scientific Publishing Co. Pte. Ltd., Hackensack, NJ,
+     2006.
+ [7] Giga, Yoshikazu. Solutions for semilinear parabolic equations in Lp and regularity of weak
+     solutions of the Navier–Stokes system. J. Differential Equations 62 (1986), no. 2, 186—212.
+ [8] G. H. Hardy, J. E. Littlewood, and G. Pólya, Inequalities, Cambridge, at the University
+     Press, 1934.
+ [9] Leray, J. Sur le mouvement d’un liquide visqueux emplissant l’espace. Acta Math. 63 (1934),
+     no. 1, 193–248.
+[10] McCormick, David; Olson, Eric; Robinson, James C.; Rodrigo, José L.; Vidal-lópez, Alejan-
+     dro; Zhou, Yi. Lower bounds on blowing-up solutions of the 3D Navier–Stokes equations in
+                             5/2
+     Ḣ 3/2 , Ḣ 5/2 , and Ḃ2,1 , arXiv:1503.04323
+[11] Robinson, James C.; Sadowski, Witold; Silva, Ricardo P. Lower bounds on blow up solutions
+     of the three-dimensional Navier-Stokes equations in homogeneous Sobolev spaces.J. Math.
+     Phys. 53 (2012), no. 11, 115618, 15 pp.
+
+   Departamento de Matemáticas, Universidad de los Andes, Bogotá DC, COLOMBIA
+

@@ -1,0 +1,5 @@
+PASS12 verification: finite algebra, conditional proof review, manufactured reconstruction and independent dense-QR checks pass.
+The sampled reconstruction selector is rejected by continuous-form diagnostics.
+The corrected continuous L2 reconstruction remains an unvalidated H7 endpoint object.
+Canonical imports pass; prior pass2-pass11 archives remain unchanged.
+No whole-space NS stage, S3, inherited return, or blowup is certified.

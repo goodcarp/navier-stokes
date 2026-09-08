@@ -1,0 +1,506 @@
+{
+  "status": "PASS",
+  "scope": "Floating-point equivalence and discrete structure only; no full-space NS validation.",
+  "tested_domain": "Real m=0, C4 Fourier representation, projected retained axial state; even Nyquist removed.",
+  "raw_api_difference": "Fast raw nonlinearity already filters excluded axial output; reference raw branch does not.",
+  "source_sha256": {
+    "evolve_full_mac.py": "2e671a3599fc05ed3d0fdef657a75bb0e9dceeab05fb1b96c4c5fc7243a7fe95",
+    "fast_full_mac.py": "3a7f76fcdaa98ccc39a3215380236f1154b09677bda7afca96c728ce1a5eca75",
+    "check_fast_full_mac.py": "f91ea27b659aa40176dc05d5cef14dce84552dbe36f059d32b9f0a476184a895",
+    "check_full_mac.py": "4acc133afb512c8dd3c477fd072b5be80ada3f1fde2eafcd4659222b5510cbb4"
+  },
+  "results": [
+    {
+      "parameters": {
+        "nr": 12,
+        "nz": 31,
+        "J": 0,
+        "dealias": "padding",
+        "R": 4.0,
+        "L": 8.0,
+        "mapping": 2.0,
+        "nu": 0.001
+      },
+      "nz_product_grid": 48,
+      "nphi_product_grid": 1,
+      "projection_equivalence": 0.0,
+      "nonlinear_projected_equivalence": 6.339950802156571e-16,
+      "nonlinear_raw_retained_equivalence": 6.647274378865605e-16,
+      "nonlinear_raw_unfiltered_difference": 6.383840716355006e-16,
+      "raw_fast_energy_work": 7.221224456332878e-19,
+      "projected_fast_energy_work": 1.3754926641562471e-17,
+      "nonlinear_divergence_over_field_norm": 1.9264159861158708e-15,
+      "CN_equivalence": 2.776844502321922e-16,
+      "CN_energy_ratio": 0.9996612999965198,
+      "CN_midpoint_energy_identity": 4.6042862181983416e-17,
+      "CN_divergence_over_field_norm": 7.074199219798807e-16,
+      "full_step_equivalence": 4.4173201666021907e-16,
+      "full_step_energy_ratio": 0.9999887069525402,
+      "full_step_divergence_over_field_norm": 7.240221152967577e-16,
+      "mode_zero_imaginary_max": 0.0,
+      "signed_frequency_dense_CN": [
+        {
+          "m": 0,
+          "k": -15,
+          "dense_saddle_relative": 5.726077613341064e-16
+        },
+        {
+          "m": 0,
+          "k": -1,
+          "dense_saddle_relative": 2.975573267131349e-16
+        },
+        {
+          "m": 0,
+          "k": 0,
+          "dense_saddle_relative": 2.734514720245478e-16
+        },
+        {
+          "m": 0,
+          "k": 1,
+          "dense_saddle_relative": 2.975573267131349e-16
+        },
+        {
+          "m": 0,
+          "k": 15,
+          "dense_saddle_relative": 5.726077613341064e-16
+        }
+      ],
+      "maximum_independent_template_matrix_relative": 6.21882233568426e-17,
+      "CN_h_zero_is_projection": 3.140144598787598e-16,
+      "angular_equivariance": 0.0,
+      "axial_equivariance": 7.176122637696909e-16,
+      "odd_C4_full_step_defect": 6.533925736497238e-16
+    },
+    {
+      "parameters": {
+        "nr": 12,
+        "nz": 32,
+        "J": 1,
+        "dealias": "padding",
+        "R": 4.0,
+        "L": 8.0,
+        "mapping": 2.0,
+        "nu": 0.001
+      },
+      "nz_product_grid": 48,
+      "nphi_product_grid": 4,
+      "projection_equivalence": 0.0,
+      "nonlinear_projected_equivalence": 6.156262802114762e-16,
+      "nonlinear_raw_retained_equivalence": 6.060604034392951e-16,
+      "nonlinear_raw_unfiltered_difference": 0.36248818524723037,
+      "raw_fast_energy_work": 1.4723874589792328e-18,
+      "projected_fast_energy_work": 1.5682330790476382e-18,
+      "nonlinear_divergence_over_field_norm": 2.114139573502601e-15,
+      "CN_equivalence": 3.448073278255549e-16,
+      "CN_energy_ratio": 0.9995931739972693,
+      "CN_midpoint_energy_identity": 2.974796667488737e-17,
+      "CN_divergence_over_field_norm": 8.212579116939468e-16,
+      "full_step_equivalence": 5.493202672263108e-16,
+      "full_step_energy_ratio": 0.9999864327396935,
+      "full_step_divergence_over_field_norm": 7.862384051242976e-16,
+      "mode_zero_imaginary_max": 0.0,
+      "signed_frequency_dense_CN": [
+        {
+          "m": 0,
+          "k": -15,
+          "dense_saddle_relative": 7.395273701435274e-16
+        },
+        {
+          "m": 0,
+          "k": -1,
+          "dense_saddle_relative": 2.1871356834185683e-16
+        },
+        {
+          "m": 0,
+          "k": 0,
+          "dense_saddle_relative": 1.6669983782893417e-16
+        },
+        {
+          "m": 0,
+          "k": 1,
+          "dense_saddle_relative": 2.1871356834185683e-16
+        },
+        {
+          "m": 0,
+          "k": 15,
+          "dense_saddle_relative": 7.395273701435274e-16
+        },
+        {
+          "m": 4,
+          "k": -15,
+          "dense_saddle_relative": 1.2071666642273347e-15
+        },
+        {
+          "m": 4,
+          "k": -1,
+          "dense_saddle_relative": 1.0002892701704027e-15
+        },
+        {
+          "m": 4,
+          "k": 0,
+          "dense_saddle_relative": 4.734606689745305e-16
+        },
+        {
+          "m": 4,
+          "k": 1,
+          "dense_saddle_relative": 1.497852134720709e-15
+        },
+        {
+          "m": 4,
+          "k": 15,
+          "dense_saddle_relative": 1.9014757488161354e-15
+        }
+      ],
+      "maximum_independent_template_matrix_relative": 6.21882233568426e-17,
+      "CN_h_zero_is_projection": 2.9042444959174035e-16,
+      "angular_equivariance": 5.310749574369553e-16,
+      "axial_equivariance": 6.791175664232184e-16,
+      "odd_C4_full_step_defect": 4.1618625691715623e-16
+    },
+    {
+      "parameters": {
+        "nr": 16,
+        "nz": 33,
+        "J": 2,
+        "dealias": "padding",
+        "R": 4.0,
+        "L": 8.0,
+        "mapping": 2.0,
+        "nu": 0.001
+      },
+      "nz_product_grid": 50,
+      "nphi_product_grid": 7,
+      "projection_equivalence": 0.0,
+      "nonlinear_projected_equivalence": 7.586846797462519e-16,
+      "nonlinear_raw_retained_equivalence": 7.25262148655243e-16,
+      "nonlinear_raw_unfiltered_difference": 6.877612718654265e-16,
+      "raw_fast_energy_work": 3.9481388006830965e-18,
+      "projected_fast_energy_work": 6.787719396778006e-18,
+      "nonlinear_divergence_over_field_norm": 5.2107836287868905e-15,
+      "CN_equivalence": 3.3728547576320797e-16,
+      "CN_energy_ratio": 0.9993920842601177,
+      "CN_midpoint_energy_identity": 3.3280157594093885e-17,
+      "CN_divergence_over_field_norm": 1.2259924349497436e-15,
+      "full_step_equivalence": 5.598699041103429e-16,
+      "full_step_energy_ratio": 0.9999796952980764,
+      "full_step_divergence_over_field_norm": 1.1971400914965718e-15,
+      "mode_zero_imaginary_max": 0.0,
+      "signed_frequency_dense_CN": [
+        {
+          "m": 0,
+          "k": -16,
+          "dense_saddle_relative": 2.7483723172246794e-15
+        },
+        {
+          "m": 0,
+          "k": -1,
+          "dense_saddle_relative": 3.1138906388260894e-16
+        },
+        {
+          "m": 0,
+          "k": 0,
+          "dense_saddle_relative": 1.8540205381457927e-16
+        },
+        {
+          "m": 0,
+          "k": 1,
+          "dense_saddle_relative": 3.684104576148838e-16
+        },
+        {
+          "m": 0,
+          "k": 16,
+          "dense_saddle_relative": 3.126685890357156e-15
+        },
+        {
+          "m": 8,
+          "k": -16,
+          "dense_saddle_relative": 1.2281253470424802e-14
+        },
+        {
+          "m": 8,
+          "k": -1,
+          "dense_saddle_relative": 1.3743201563801727e-15
+        },
+        {
+          "m": 8,
+          "k": 0,
+          "dense_saddle_relative": 6.475014264059698e-16
+        },
+        {
+          "m": 8,
+          "k": 1,
+          "dense_saddle_relative": 1.116428892375612e-15
+        },
+        {
+          "m": 8,
+          "k": 16,
+          "dense_saddle_relative": 2.6990079149412587e-15
+        }
+      ],
+      "maximum_independent_template_matrix_relative": 3.3358564530096575e-17,
+      "CN_h_zero_is_projection": 3.379597660431057e-16,
+      "angular_equivariance": 6.949572152949481e-16,
+      "axial_equivariance": 8.221914346950338e-16,
+      "odd_C4_full_step_defect": 7.160652778825778e-16
+    },
+    {
+      "parameters": {
+        "nr": 28,
+        "nz": 64,
+        "J": 3,
+        "dealias": "padding",
+        "R": 4.0,
+        "L": 8.0,
+        "mapping": 2.0,
+        "nu": 0.001
+      },
+      "nz_product_grid": 96,
+      "nphi_product_grid": 10,
+      "projection_equivalence": 0.0,
+      "nonlinear_projected_equivalence": 7.267844637782297e-16,
+      "nonlinear_raw_retained_equivalence": 7.257513360896063e-16,
+      "nonlinear_raw_unfiltered_difference": 0.20449944135606368,
+      "raw_fast_energy_work": 3.702667378465043e-18,
+      "projected_fast_energy_work": 1.752320560323768e-18,
+      "nonlinear_divergence_over_field_norm": 1.1934095244723509e-14,
+      "CN_equivalence": 3.293682295422755e-16,
+      "CN_energy_ratio": 0.9981384097928119,
+      "CN_midpoint_energy_identity": 7.447888387283444e-17,
+      "CN_divergence_over_field_norm": 1.9315400109089538e-15,
+      "full_step_equivalence": 5.634894615273232e-16,
+      "full_step_energy_ratio": 0.9999375250963978,
+      "full_step_divergence_over_field_norm": 1.9231586730550162e-15,
+      "mode_zero_imaginary_max": 0.0,
+      "signed_frequency_dense_CN": [
+        {
+          "m": 0,
+          "k": -31,
+          "dense_saddle_relative": 2.1719673838420273e-15
+        },
+        {
+          "m": 0,
+          "k": -1,
+          "dense_saddle_relative": 3.2806763733428306e-16
+        },
+        {
+          "m": 0,
+          "k": 0,
+          "dense_saddle_relative": 1.812790338488718e-16
+        },
+        {
+          "m": 0,
+          "k": 1,
+          "dense_saddle_relative": 3.4738239358075034e-16
+        },
+        {
+          "m": 0,
+          "k": 31,
+          "dense_saddle_relative": 3.925232643572069e-15
+        },
+        {
+          "m": 12,
+          "k": -31,
+          "dense_saddle_relative": 5.1977549508099625e-15
+        },
+        {
+          "m": 12,
+          "k": -1,
+          "dense_saddle_relative": 3.1755982273868116e-15
+        },
+        {
+          "m": 12,
+          "k": 0,
+          "dense_saddle_relative": 1.6471880630206924e-15
+        },
+        {
+          "m": 12,
+          "k": 1,
+          "dense_saddle_relative": 1.493585952414442e-15
+        },
+        {
+          "m": 12,
+          "k": 31,
+          "dense_saddle_relative": 9.93173680787391e-15
+        }
+      ],
+      "maximum_independent_template_matrix_relative": 1.9212675334612706e-17,
+      "CN_h_zero_is_projection": 3.19421832371706e-16,
+      "angular_equivariance": 7.076548801329865e-16,
+      "axial_equivariance": 8.901716608891225e-16,
+      "odd_C4_full_step_defect": 6.209566663943088e-16
+    },
+    {
+      "parameters": {
+        "nr": 12,
+        "nz": 31,
+        "J": 2,
+        "dealias": "filter",
+        "R": 4.0,
+        "L": 8.0,
+        "mapping": 2.0,
+        "nu": 0.001
+      },
+      "nz_product_grid": 31,
+      "nphi_product_grid": 7,
+      "projection_equivalence": 0.0,
+      "nonlinear_projected_equivalence": 6.06039724775941e-16,
+      "nonlinear_raw_retained_equivalence": 5.655692980303016e-16,
+      "nonlinear_raw_unfiltered_difference": 0.7033024157487306,
+      "raw_fast_energy_work": 4.301882298289754e-18,
+      "projected_fast_energy_work": 3.8578950005575284e-18,
+      "nonlinear_divergence_over_field_norm": 6.868422090789279e-15,
+      "CN_equivalence": 3.4013083318095343e-16,
+      "CN_energy_ratio": 0.9996705145692243,
+      "CN_midpoint_energy_identity": 4.026543486597301e-17,
+      "CN_divergence_over_field_norm": 9.543767129237715e-16,
+      "full_step_equivalence": 5.610403774602997e-16,
+      "full_step_energy_ratio": 0.9999889976657389,
+      "full_step_divergence_over_field_norm": 9.953338893921513e-16,
+      "mode_zero_imaginary_max": 0.0,
+      "signed_frequency_dense_CN": [
+        {
+          "m": 0,
+          "k": -10,
+          "dense_saddle_relative": 1.4878316656491718e-15
+        },
+        {
+          "m": 0,
+          "k": -1,
+          "dense_saddle_relative": 2.9001104280260405e-16
+        },
+        {
+          "m": 0,
+          "k": 0,
+          "dense_saddle_relative": 1.8620597534369455e-16
+        },
+        {
+          "m": 0,
+          "k": 1,
+          "dense_saddle_relative": 2.9001104280260405e-16
+        },
+        {
+          "m": 0,
+          "k": 10,
+          "dense_saddle_relative": 1.4878316656491718e-15
+        },
+        {
+          "m": 8,
+          "k": -10,
+          "dense_saddle_relative": 6.019296459166465e-15
+        },
+        {
+          "m": 8,
+          "k": -1,
+          "dense_saddle_relative": 7.806355147999968e-16
+        },
+        {
+          "m": 8,
+          "k": 0,
+          "dense_saddle_relative": 3.372022307711304e-16
+        },
+        {
+          "m": 8,
+          "k": 1,
+          "dense_saddle_relative": 1.1304535450382702e-15
+        },
+        {
+          "m": 8,
+          "k": 10,
+          "dense_saddle_relative": 1.5762855591007248e-15
+        }
+      ],
+      "maximum_independent_template_matrix_relative": 6.21882233568426e-17,
+      "CN_h_zero_is_projection": 3.152030819036193e-16,
+      "angular_equivariance": 7.04950079908226e-16,
+      "axial_equivariance": 8.250713048846356e-16,
+      "odd_C4_full_step_defect": 5.742014419361467e-16
+    },
+    {
+      "parameters": {
+        "nr": 16,
+        "nz": 32,
+        "J": 2,
+        "dealias": "filter",
+        "R": 4.0,
+        "L": 8.0,
+        "mapping": 2.0,
+        "nu": 0.001
+      },
+      "nz_product_grid": 32,
+      "nphi_product_grid": 7,
+      "projection_equivalence": 0.0,
+      "nonlinear_projected_equivalence": 5.44891869507101e-16,
+      "nonlinear_raw_retained_equivalence": 5.195366195904943e-16,
+      "nonlinear_raw_unfiltered_difference": 0.6947626229585517,
+      "raw_fast_energy_work": 9.226740017096721e-18,
+      "projected_fast_energy_work": 2.981410960833989e-18,
+      "nonlinear_divergence_over_field_norm": 3.740560607718058e-15,
+      "CN_equivalence": 3.0021472889137096e-16,
+      "CN_energy_ratio": 0.9996308474053696,
+      "CN_midpoint_energy_identity": 2.9322386949511434e-17,
+      "CN_divergence_over_field_norm": 9.164376663826481e-16,
+      "full_step_equivalence": 4.879774261540891e-16,
+      "full_step_energy_ratio": 0.9999876637767522,
+      "full_step_divergence_over_field_norm": 9.198567096381806e-16,
+      "mode_zero_imaginary_max": 0.0,
+      "signed_frequency_dense_CN": [
+        {
+          "m": 0,
+          "k": -10,
+          "dense_saddle_relative": 1.173857424034473e-15
+        },
+        {
+          "m": 0,
+          "k": -1,
+          "dense_saddle_relative": 2.2585594403425486e-16
+        },
+        {
+          "m": 0,
+          "k": 0,
+          "dense_saddle_relative": 1.8469610924564733e-16
+        },
+        {
+          "m": 0,
+          "k": 1,
+          "dense_saddle_relative": 2.2585594403425486e-16
+        },
+        {
+          "m": 0,
+          "k": 10,
+          "dense_saddle_relative": 1.579521115514096e-15
+        },
+        {
+          "m": 8,
+          "k": -10,
+          "dense_saddle_relative": 5.3321956664711074e-15
+        },
+        {
+          "m": 8,
+          "k": -1,
+          "dense_saddle_relative": 9.276940703956344e-16
+        },
+        {
+          "m": 8,
+          "k": 0,
+          "dense_saddle_relative": 5.955645899806265e-16
+        },
+        {
+          "m": 8,
+          "k": 1,
+          "dense_saddle_relative": 1.4752493785713835e-15
+        },
+        {
+          "m": 8,
+          "k": 10,
+          "dense_saddle_relative": 1.7458452414492136e-15
+        }
+      ],
+      "maximum_independent_template_matrix_relative": 3.3358564530096575e-17,
+      "CN_h_zero_is_projection": 3.0684912375397897e-16,
+      "angular_equivariance": 6.185424055348002e-16,
+      "axial_equivariance": 6.742127254842523e-16,
+      "odd_C4_full_step_defect": 4.1186908792986854e-16
+    }
+  ],
+  "seconds": 11.626089096069336
+}

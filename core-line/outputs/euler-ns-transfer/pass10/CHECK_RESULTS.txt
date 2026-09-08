@@ -1,0 +1,315 @@
+RUN verify_time_polynomial_residual.py
+PASS: exact first/quadratic Taylor residuals; rational cancellation-resistant residual lower bound; certified initial-jet premise; linear-candidate H4 cone obstruction at T>=1/16250; product constants and exterior integral. No actual-flow error lower bound or duration certificate is claimed.
+PASS verify_time_polynomial_residual.py
+RUN verify_cylindrical_NS_representation.py
+{
+  "status": "PASS",
+  "checks": 41,
+  "verified": [
+    "vector Laplacian: plus order m+1",
+    "vector Laplacian: minus order m-1",
+    "divergence of gradient",
+    "diffusion-gradient intertwining component 0",
+    "diffusion-gradient intertwining component 1",
+    "diffusion-gradient intertwining component 2",
+    "divergence-diffusion intertwining",
+    "divergence of curl",
+    "curl of gradient component 0",
+    "curl of gradient component 1",
+    "curl of gradient component 2",
+    "curl-curl identity component 0",
+    "curl-curl identity component 1",
+    "curl-curl identity component 2",
+    "weighted gradient-divergence adjoint boundary identity",
+    "angular gradient energy and shifted orders",
+    "helical energy weights",
+    "nonlinear rotating-basis term sign 1",
+    "nonlinear rotating-basis term sign -1",
+    "full streamfunction Fourier seed divergence",
+    "initial seed helical plus",
+    "initial seed helical minus",
+    "arbitrary radial affine core and pump divergence",
+    "mapped radial conservative operator",
+    "factored regular scalar operator n=0",
+    "factored regular scalar operator n=1",
+    "factored regular scalar operator n=3",
+    "factored regular scalar operator n=4",
+    "factored regular scalar operator n=5",
+    "factored regular scalar operator n=7",
+    "factored regular scalar operator n=8",
+    "factored regular scalar operator n=9",
+    "axisymmetric pressure gradient ladders agree",
+    "pressure ladder regularity for m=0",
+    "pressure ladder regularity for m=4",
+    "pressure ladder regularity for m=8",
+    "zero-axial-frequency free-space Green normalization",
+    "compatible projection is divergence free",
+    "compatible projection is idempotent",
+    "compatible projection is weighted self-adjoint",
+    "compatible projection Pythagorean identity"
+  ],
+  "scope": "Exact symbolic identities only; no discretization, NS evolution, whole-space truncation bound, or interval certificate."
+}
+PASS verify_cylindrical_NS_representation.py
+RUN check_initial_full_field.py
+{
+  "status": "PASS",
+  "scope": "Analytic identities plus floating-point consistency tests, not interval or PDE certification",
+  "exact_checks": [
+    "radial strain divergence",
+    "arbitrary envelope divergence",
+    "full mixed swirl/seed pressure source"
+  ],
+  "numerical_divergence_max": 2.847716647714797e-14,
+  "Cartesian_gradient_relative_errors": [
+    7.357239968857146e-07,
+    1.839306257919458e-07
+  ],
+  "Cartesian_laplacian_relative_errors": [
+    5.7283994565375e-06,
+    1.4357901396133315e-06
+  ],
+  "Cartesian_divergence_of_convection_relative_errors": [
+    9.211889794915548e-07,
+    2.3029678685702058e-07
+  ],
+  "Fourier_source_reconstruction_relative_error": 1.1189540539400089e-16,
+  "Fourier_convection_reconstruction_relative_error": 1.5713854599275696e-16,
+  "full_mixed_source_relative_error": 1.487540142932163e-16
+}
+PASS check_initial_full_field.py
+RUN verify_full_initial_coefficient_identities.py
+{
+  "status": "PASS",
+  "checks": 8,
+  "scope": "Exact Cartesian divergence, affine-core quotient and coordinate-rotation identities; no numerical pressure or NS evolution certification."
+}
+PASS verify_full_initial_coefficient_identities.py
+RUN check_manufactured_pressure.py
+{
+  "checks": {
+    "Cylinder": {
+      "all_modes_pressure_and_gradient_decrease": true,
+      "all_modes_operator_residual_below_1e_minus_8": true
+    },
+    "HighOrderCylinder": {
+      "all_modes_pressure_and_gradient_decrease": true,
+      "all_modes_operator_residual_below_1e_minus_8": true
+    }
+  },
+  "orders": {
+    "Cylinder": {
+      "0": {
+        "pressure_relative_L2": [
+          1.8271932790871488,
+          2.011318801853551,
+          2.001835824005635
+        ],
+        "gradient_relative_L2": [
+          1.4186381920642093,
+          1.8148420680104276,
+          1.944515431366929
+        ],
+        "div_pressure_gradient_plus_source_relative_L2": [
+          2.418498591025472,
+          1.99515457669346,
+          1.7148555280951103
+        ]
+      },
+      "4": {
+        "pressure_relative_L2": [
+          1.9359612440954572,
+          2.022346553648013,
+          2.0037085731713984
+        ],
+        "gradient_relative_L2": [
+          1.7137582258027573,
+          1.7540599499761393,
+          1.9271040024529784
+        ],
+        "div_pressure_gradient_plus_source_relative_L2": [
+          2.179463619376294,
+          2.0929182746756423,
+          1.6805323546605502
+        ]
+      },
+      "8": {
+        "pressure_relative_L2": [
+          2.0124078198485322,
+          2.0273416398545883,
+          2.0057330730575265
+        ],
+        "gradient_relative_L2": [
+          2.2092163924811388,
+          1.6814175663073143,
+          1.9056923968324617
+        ],
+        "div_pressure_gradient_plus_source_relative_L2": [
+          1.8676459861509225,
+          2.1984657772163456,
+          1.642320421150347
+        ]
+      }
+    },
+    "HighOrderCylinder": {
+      "0": {
+        "pressure_relative_L2": [
+          6.482238793873111,
+          7.0603137759402195,
+          8.281506191331728
+        ],
+        "gradient_relative_L2": [
+          4.368057248610749,
+          4.278833774750035,
+          5.385148072946899
+        ],
+        "div_pressure_gradient_plus_source_relative_L2": [
+          2.703210705928177,
+          4.073584677059458,
+          5.03573535869807
+        ]
+      },
+      "4": {
+        "pressure_relative_L2": [
+          4.404038328951349,
+          6.712456762684003,
+          5.822407532302746
+        ],
+        "gradient_relative_L2": [
+          4.6076838927183354,
+          4.164643321167021,
+          5.36892663744216
+        ],
+        "div_pressure_gradient_plus_source_relative_L2": [
+          2.3718057400765042,
+          4.033442719436943,
+          5.006569064863352
+        ]
+      },
+      "8": {
+        "pressure_relative_L2": [
+          4.844809175116808,
+          6.174197872960699,
+          5.702976404031681
+        ],
+        "gradient_relative_L2": [
+          4.739904742177232,
+          4.1742377107999395,
+          5.3546997605149045
+        ],
+        "div_pressure_gradient_plus_source_relative_L2": [
+          1.9867812542286438,
+          3.9734250686467734,
+          4.974897917317531
+        ]
+      }
+    }
+  },
+  "seconds": 3.512716054916382
+}
+PASS check_manufactured_pressure.py
+RUN verify_corotating_time_polynomial.py
+PASS: transformed jets, full bilinear residual, reconstruction sign, rotation norm weights, and manufactured phase energy.
+No whole-space coefficient norm, positive-time error enclosure, or NS return is certified by this checker.
+PASS verify_corotating_time_polynomial.py
+RUN verify_periodic_image_tail.py
+{
+  "status": "PASS",
+  "kernel_operator_bound": "24/(4*pi*R^5)",
+  "exact_energy_upper": "2015718896182553/7560000000",
+  "coarse_energy_upper": 270000,
+  "absolute_tail_bound": "6E/[pi L(LN-6)^4] < 540000/[L(LN-6)^4]",
+  "tails": [
+    {
+      "period": 16,
+      "count": 8,
+      "bound_exact": "16875/110766728"
+    },
+    {
+      "period": 16,
+      "count": 16,
+      "bound_exact": "27/3125000"
+    },
+    {
+      "period": 16,
+      "count": 32,
+      "bound_exact": "16875/32777216648"
+    },
+    {
+      "period": 32,
+      "count": 8,
+      "bound_exact": "27/6250000"
+    },
+    {
+      "period": 32,
+      "count": 16,
+      "bound_exact": "16875/65554433296"
+    },
+    {
+      "period": 32,
+      "count": 32,
+      "bound_exact": "16875/1073967432976"
+    },
+    {
+      "period": 64,
+      "count": 8,
+      "bound_exact": "16875/131108866592"
+    },
+    {
+      "period": 64,
+      "count": 16,
+      "bound_exact": "16875/2147934865952"
+    },
+    {
+      "period": 64,
+      "count": 32,
+      "bound_exact": "16875/34773863631392"
+    }
+  ],
+  "dependencies": [
+    "cutoff monotonicity and |chi derivative|<4 from pass6 cutoff certificate",
+    "Pass8 R0<=392/5 and Z0<=12/5; unchanged supports and lambda=1/4"
+  ],
+  "scope": "Exact omitted-image bound; retained image integrals still require quadrature enclosures for a full certificate."
+}
+PASS verify_periodic_image_tail.py
+RUN check_full_reference_comparisons.py
+{
+  "status": "PASS: independent numerical reference comparisons and explicit failure retention",
+  "comparisons": [
+    {
+      "period": 16,
+      "pressure_reference_discrepancy": 5.153674749358572e-05,
+      "periodic_image_contribution": 0.4801334653146258,
+      "rigorous_image_tail_bound": 5.148393221188804e-07,
+      "Kprime_reference_discrepancy": 0.0001901163037700826,
+      "unresolved_divergence_L2": 919.7613263112896
+    },
+    {
+      "period": 32,
+      "pressure_reference_discrepancy": 4.922714311028642e-05,
+      "periodic_image_contribution": 0.008383184525666849,
+      "rigorous_image_tail_bound": 1.5712766962810785e-08,
+      "Kprime_reference_discrepancy": 0.00019011630394061285,
+      "unresolved_divergence_L2": 919.7613263113667
+    }
+  ],
+  "unresolved_fine_b2_discrepancy": 11.59242738718038,
+  "scope": "Stored runs compared; no evolved endpoint, commuting projection, residual bound or continuum accuracy certificate."
+}
+PASS check_full_reference_comparisons.py
+PASS: 8 scoped programs. No full 3D NS endpoint, commuting projection, complete residual bound, inherited return or blowup is certified.
+
+Additional independently audited estimate:
+RUN verify_sharp_error_hierarchy.py
+{
+  "status": "PASS",
+  "checks": 105,
+  "exact_H4_lower_squared": "843075135/64",
+  "exact_H5_lower_squared": "2341875375/16",
+  "uniform_exact_initial_exponent_lower": 6720,
+  "nonlinear_scalar_constant_squared": 284,
+  "scope": "Exact rational/combinatorial/tensor checks for the proved error inequality. No actual evolution norm, residual, comparison-ODE solution or endpoint gain has been enclosed."
+}
+PASS verify_sharp_error_hierarchy.py
+PASS: 9 scoped programs in total. No full 3D endpoint, residual enclosure, inherited return or blowup is certified.

@@ -1,0 +1,92 @@
+{
+  "status": "EXPLORATORY full-3D initial coefficients on a mapped finite cylinder; not a validated whole-space evolution",
+  "parameters": {
+    "nr": 768,
+    "nz": 2048,
+    "R": 8.0,
+    "L": 16.0,
+    "mapping": 4.0,
+    "nu": 0.001,
+    "A": 1020,
+    "lam": 0.25,
+    "T": 0.001,
+    "pressure": "fd"
+  },
+  "analytic_initial_divergence_max": 7.105427357601002e-14,
+  "source_compatibility_repairs": [
+    {
+      "tag": "p0",
+      "source_repaired": false,
+      "raw_midpoint_mean_source_radial_integral": [
+        -0.016656073745906497,
+        0.0
+      ],
+      "computed_outer_zero_mode_radial_flux": [
+        -0.0001943867966384034,
+        0.0
+      ]
+    },
+    {
+      "tag": "p1",
+      "source_repaired": false,
+      "raw_midpoint_mean_source_radial_integral": [
+        -1.7842067435608442,
+        -6.048904695164357e-13
+      ],
+      "computed_outer_zero_mode_radial_flux": [
+        1.9271843284701056,
+        5.771035128826911e-13
+      ]
+    }
+  ],
+  "initial": {
+    "energy": 81037.24363175928,
+    "fluctuation_energy": 6.443757152169768,
+    "fluctuation_energy_derivative": 447.42630674359725,
+    "fractional_fluctuation_energy_derivative": 69.4356252381327,
+    "energy_derivative": -4611.550382544563,
+    "viscous_energy_derivative": -4611.619343960031,
+    "energy_identity_relative_error": 1.4954063112715449e-05,
+    "pressure_zz_at_core": -8.228850200576058,
+    "beta_prime": 0.11442510028802921,
+    "mean_G": 41.870254950482966,
+    "mean_G_prime": 103.3891544060131,
+    "radial_mean_acceleration": 6635.067927028199,
+    "vertical_mean_acceleration": -126.86131579808738,
+    "axial_mean_strain_derivative": -31494.835386226772,
+    "mixed_pressure_radial_unit": [
+      -46.861240280796395,
+      55.05736255047151
+    ],
+    "N0_L2": 27457.450118038065,
+    "numerical_div_N0_L2": 919.7613263112896,
+    "numerical_div_N0_exterior_max": 0.00012706343831416785
+  },
+  "second_coefficient": {
+    "pressure_zz_time_derivative": -116.08926867412058,
+    "pressure_T": -84.08926867412058,
+    "beta_second": 40.90038333417999,
+    "mean_G_second": -77790.96274528155,
+    "N1_L2": 51553076.83625552
+  },
+  "quadratic_field_at_T": {
+    "core_b": 1.0021435589889998,
+    "core_Omega": 1.0020041077908572,
+    "core_beta": 1.0001391722818882,
+    "mean_fixed_receiver": 41.93474799963367,
+    "mean_radial_branch_value": 42.053345475817764,
+    "mean_radial_branch_radius": 0.2189875941715161,
+    "fluctuation_energy": 261.09188714463056,
+    "energy": 81363.9155648,
+    "scope": "Values of the full quadratic time polynomial only, not actual NS endpoint values or error bounds."
+  },
+  "seconds": 90.68662810325623,
+  "unresolved_errors": [
+    "periodic axial images",
+    "finite radial boundary and future source tails",
+    "source zero-mode compatibility repair",
+    "radial/axial quadrature and differentiation",
+    "whole-space smooth divergence-free reconstruction",
+    "space-time H4 residual and endpoint inheritance"
+  ]
+}

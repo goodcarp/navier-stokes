@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-08",
+  "local_theory_primary_source": "https://terrytao.wordpress.com/2018/10/09/254a-notes-3-local-well-posedness-for-the-euler-equations/",
+  "comparison_primary_sources": [
+    "https://arxiv.org/abs/2311.01369v3",
+    "https://arxiv.org/abs/1402.0290v3"
+  ],
+  "inherited_manifests": [
+    {
+      "path": "../SOURCES.json",
+      "sha256": "f0905ca43918ac4558103c117e060b4ce097b2854afa4bf5c3d37ddf3578e3fe"
+    },
+    {
+      "path": "../pass2/SOURCES.json",
+      "sha256": "87f9edf9968071600f90d2bcbae650c0781f94ae60bcafd4d372e23cf5305d50"
+    }
+  ],
+  "active_core_lemma": {
+    "path": "../pass2/active-core-pressure.md",
+    "sha256": "ae7e7824545e6dd8fba503e6610fda63a98fe8ef020b7f316aa81650df9ce600"
+  },
+  "verification": {
+    "python": "3.9.6 (default, Jan  9 2026, 11:03:41) \n[Clang 17.0.0 (clang-1700.6.4.2)]",
+    "four_packaged_scripts_passed": true,
+    "numerical_NS_evolution": false,
+    "formal_kernel_replay": false,
+    "finite_transfer_analytical_argument": true,
+    "terminal_profile_return_proved": false,
+    "NS_blowup_proved": false
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "checks": 26,
+  "labels": [
+    "cutoff drift combination",
+    "diffusion cutoff constant",
+    "Young inequality perfect square",
+    "cutoff maximum n=1",
+    "cutoff maximum n=2",
+    "cutoff maximum n=3",
+    "cutoff maximum n=4",
+    "cutoff maximum n=5",
+    "cutoff maximum n=6",
+    "cutoff maximum n=7",
+    "cutoff maximum n=8",
+    "cutoff maximum n=9",
+    "cutoff maximum n=10",
+    "cutoff maximum n=11",
+    "cutoff maximum n=12",
+    "five-dimensional constant 27",
+    "one minus cutoff square",
+    "choice of Bernstein coefficient",
+    "tail weight comparison",
+    "five-dimensional tail integral",
+    "linear-drift example PDE",
+    "quadratic weighted-gradient closure",
+    "Brownian quadratic moment",
+    "Brownian tenth moment",
+    "c_5_10 less than 10/3",
+    "quadratic noise constant"
+  ],
+  "scope": "Exact cutoff, Young, weight, tail-integral, Gaussian-moment and example-PDE algebra only; not existence, solution regularity, NS bootstrap or S3 certification.",
+  "source_revision_observed": {
+    "path": "~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/s3close/round2/pmax-h3v/PROOF.md",
+    "bytes": 65253,
+    "sha256": "510d9705cf13a112822c4dc72c195a1d5b253ed38c2ec4a18d15e609c685e884",
+    "mtime_utc": "2026-09-08T14:18:33.784273+00:00"
+  }
+}

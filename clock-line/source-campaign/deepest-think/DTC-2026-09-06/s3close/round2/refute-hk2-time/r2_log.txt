@@ -1,0 +1,9 @@
+lam=1.25: model K2hat<=107.6762 (d*=0.2029);  Lemma-7.2-licensed K2hat<=136.1240 (d*=0.1427);  ratio 1.264;  L5 ratio 1.550;  L4 ratio 1.429
+        on the model ball: sup|grad eta_lam| / (lam^2 sup|grad eta_0|(label)) = 0.9463;  Hess: 0.5366
+lam=1.5: model K2hat<=161.7550 (d*=0.1672);  Lemma-7.2-licensed K2hat<=243.7452 (d*=0.1175);  ratio 1.507;  L5 ratio 1.805;  L4 ratio 1.842
+        on the model ball: sup|grad eta_lam| / (lam^2 sup|grad eta_0|(label)) = 0.9624;  Hess: 0.4797
+extra factor e^{C' theta_max/L} on the gradient (squared on the Hessian):
+  C'=76.11: L=10: 266.8  L=40: 4.042  L=160: 1.418  L=640: 1.091  L=2560: 1.022
+  C'=119.33: L=10: 6368  L=40: 8.933  L=160: 1.729  L=640: 1.147  L=2560: 1.035
+  C'=151.15: L=10: 6.582e+04  L=40: 16.02  L=160: 2.001  L=640: 1.189  L=2560: 1.044
+WROTE r2_results.json 117.16451978683472

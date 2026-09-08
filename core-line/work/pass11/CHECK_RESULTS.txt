@@ -1,0 +1,611 @@
+RUN verify_poloidal_toroidal_design.py
+{
+  "status": "PASS",
+  "checks": [
+    "generic cylindrical divergence and vertical-vorticity identities",
+    "axis-regular helical powers for signed modes -5 through 5",
+    "exact meridional/core-swirl/outer-swirl initial potential identities",
+    "common-frequency kinetic-orthogonal Leray projection and potential energy",
+    "exterior pressure-residual radial integrals for derivative orders zero through four"
+  ],
+  "scope": "Exact algebra only. No evolved coefficient, Galerkin truncation error, finite-energy Bessel sum, or useful-time NS certificate is asserted."
+}
+PASS verify_poloidal_toroidal_design.py
+RUN check_shared_hankel_projection.py
+{
+  "status": "PASS",
+  "scope": "Exact operator and toroidal/poloidal block algebra; Gaussian quadrature tests; no nonlinear evolution or error enclosure",
+  "manufactured": [
+    {
+      "m": 0,
+      "signed_orders": true,
+      "nr": 256,
+      "nk": 256,
+      "analytic_transform_relative_error": 6.439293542825908e-15,
+      "gradient_removal_relative_error": 3.2334947784230958e-15,
+      "solenoidal_recovery_relative_error": 3.8439906356763066e-14,
+      "physical_divergence_relative_error": 2.4517803597118064e-16,
+      "projected_roundtrip_relative_error": 3.8191676153445595e-14,
+      "Parseval_relative_error": 1.6710105237712113e-14
+    },
+    {
+      "m": 0,
+      "signed_orders": false,
+      "nr": 256,
+      "nk": 256,
+      "analytic_transform_relative_error": 6.439293542825908e-15,
+      "gradient_removal_relative_error": 3.2334947784230958e-15,
+      "solenoidal_recovery_relative_error": 3.8439906356763066e-14,
+      "physical_divergence_relative_error": 2.4517803597118064e-16,
+      "projected_roundtrip_relative_error": 3.8191676153445595e-14,
+      "Parseval_relative_error": 1.6710105237712113e-14
+    },
+    {
+      "m": 4,
+      "signed_orders": true,
+      "nr": 256,
+      "nk": 256,
+      "analytic_transform_relative_error": 4.418203878192996e-15,
+      "gradient_removal_relative_error": 3.795619363950274e-15,
+      "solenoidal_recovery_relative_error": 2.655067394529048e-14,
+      "physical_divergence_relative_error": 1.59331623774311e-15,
+      "projected_roundtrip_relative_error": 1.656380317267175e-14,
+      "Parseval_relative_error": 1.3013006995681635e-15
+    },
+    {
+      "m": 4,
+      "signed_orders": false,
+      "nr": 256,
+      "nk": 256,
+      "analytic_transform_relative_error": 4.418203878192996e-15,
+      "gradient_removal_relative_error": 3.795619363950274e-15,
+      "solenoidal_recovery_relative_error": 2.6550673945290483e-14,
+      "physical_divergence_relative_error": 1.59331623774311e-15,
+      "projected_roundtrip_relative_error": 1.6563803172671754e-14,
+      "Parseval_relative_error": 1.3013006995681635e-15
+    },
+    {
+      "m": 8,
+      "signed_orders": true,
+      "nr": 256,
+      "nk": 256,
+      "analytic_transform_relative_error": 2.222407361269164e-15,
+      "gradient_removal_relative_error": 7.313756270896638e-15,
+      "solenoidal_recovery_relative_error": 2.064090376592219e-14,
+      "physical_divergence_relative_error": 4.687648963578541e-15,
+      "projected_roundtrip_relative_error": 2.344489647387859e-15,
+      "Parseval_relative_error": 1.0803939617502335e-15
+    },
+    {
+      "m": 8,
+      "signed_orders": false,
+      "nr": 256,
+      "nk": 256,
+      "analytic_transform_relative_error": 2.222407361269164e-15,
+      "gradient_removal_relative_error": 7.313756270896638e-15,
+      "solenoidal_recovery_relative_error": 2.064090376592219e-14,
+      "physical_divergence_relative_error": 4.687648963578541e-15,
+      "projected_roundtrip_relative_error": 2.344489647387859e-15,
+      "Parseval_relative_error": 1.0803939617502335e-15
+    }
+  ],
+  "random_projection": {
+    "divergence": 1.0547118733938987e-14,
+    "idempotence": 5.169475958410885e-16,
+    "orthogonal_energy_relative_defect": 1.165676437148096e-16
+  },
+  "incompatible_grid_demo": {
+    "naive_mismatched_grid_gradient_leak": 0.09198631536789798,
+    "scope": "Deliberately incorrect indexwise mixing; demonstrates why shared k or a compatible non-diagonal map is necessary."
+  }
+}
+PASS check_shared_hankel_projection.py
+RUN check_full_mac.py
+{
+  "status": "PASS bounded floating-point structural/manufactured MAC checks",
+  "solver_sha256": "2e671a3599fc05ed3d0fdef657a75bb0e9dceeab05fb1b96c4c5fc7243a7fe95",
+  "structural": [
+    {
+      "nr": 16,
+      "nz": 32,
+      "J": 2,
+      "dealias": "padding",
+      "nzpad": 48,
+      "gradient_negative_adjoint_relative": 1.0868502436852853e-15,
+      "gather_scatter_adjoint_relative": 5.895596652421096e-16,
+      "independent_gradient_gram_relative": 3.207542556586445e-17,
+      "minimum_generalized_viscous_eigenvalue": 0.36166176606310013,
+      "projection_idempotence_relative": 2.1630774395089447e-16,
+      "projected_divergence_L2": 1.1647009073633603e-13,
+      "projected_divergence_over_input_divergence": 1.9843972747695116e-16,
+      "projection_orthogonality_relative": 2.6806073447830223e-17,
+      "projected_norm_ratio": 0.7995522591758947,
+      "projection_self_adjoint_relative": 8.262269873359032e-18,
+      "raw_lamb_energy_work_relative": 4.207091628546971e-18,
+      "projected_lamb_energy_work_relative": 7.417481493091997e-19,
+      "nonlinear_rotation_equivariance_relative": 7.529286456396772e-16,
+      "nonlinear_axial_translation_relative": 8.032571439258595e-16,
+      "CN_energy_ratio": 0.9987513557883437,
+      "CN_midpoint_energy_identity_relative": 5.451387396363232e-17,
+      "CN_divergence_L2": 7.342188465660878e-14,
+      "direct_signed_k_stokes_relative": 5.189124200471587e-15,
+      "projection_odd_symmetry_relative": 1.994300357676615e-16,
+      "nonlinear_odd_symmetry_relative": 8.474352208233783e-16,
+      "CN_odd_symmetry_relative": 3.324182987926226e-16,
+      "one_split_step_divergence_L2": 7.544471522344942e-16,
+      "one_split_step_energy_ratio": 0.9999820498725968,
+      "mode_zero_imaginary_max": 0.0
+    },
+    {
+      "nr": 32,
+      "nz": 64,
+      "J": 2,
+      "dealias": "padding",
+      "nzpad": 96,
+      "gradient_negative_adjoint_relative": 6.462262601806068e-16,
+      "gather_scatter_adjoint_relative": 3.474406187708381e-16,
+      "independent_gradient_gram_relative": 1.6722596138643073e-16,
+      "minimum_generalized_viscous_eigenvalue": 0.3615022506556665,
+      "projection_idempotence_relative": 2.651556452452932e-16,
+      "projected_divergence_L2": 2.3049166549529255e-13,
+      "projected_divergence_over_input_divergence": 2.102321673043521e-16,
+      "projection_orthogonality_relative": 7.711709937294391e-17,
+      "projected_norm_ratio": 0.7992631514303602,
+      "projection_self_adjoint_relative": 3.3426692281877995e-18,
+      "raw_lamb_energy_work_relative": 2.7989112868590444e-18,
+      "projected_lamb_energy_work_relative": 2.031705696915079e-18,
+      "nonlinear_rotation_equivariance_relative": 8.126159490737127e-16,
+      "nonlinear_axial_translation_relative": 8.847604073231011e-16,
+      "CN_energy_ratio": 0.9956886816433983,
+      "CN_midpoint_energy_identity_relative": 5.4456049695255425e-17,
+      "CN_divergence_L2": 1.61362486355551e-13,
+      "direct_signed_k_stokes_relative": null,
+      "projection_odd_symmetry_relative": 3.0606211109230607e-16,
+      "nonlinear_odd_symmetry_relative": 1.0244804801181676e-15,
+      "CN_odd_symmetry_relative": 4.519635163199357e-16,
+      "one_split_step_divergence_L2": 1.6253577473344667e-15,
+      "one_split_step_energy_ratio": 0.999937910586862,
+      "mode_zero_imaginary_max": 0.0
+    },
+    {
+      "nr": 64,
+      "nz": 128,
+      "J": 2,
+      "dealias": "padding",
+      "nzpad": 192,
+      "gradient_negative_adjoint_relative": 1.539353351959546e-15,
+      "gather_scatter_adjoint_relative": 3.729878813603711e-16,
+      "independent_gradient_gram_relative": 2.3259718749511428e-16,
+      "minimum_generalized_viscous_eigenvalue": 0.361462400247091,
+      "projection_idempotence_relative": 3.0442149494297793e-16,
+      "projected_divergence_L2": 4.789737118538076e-13,
+      "projected_divergence_over_input_divergence": 2.2696573890933604e-16,
+      "projection_orthogonality_relative": 4.378645512278686e-17,
+      "projected_norm_ratio": 0.8085812643176016,
+      "projection_self_adjoint_relative": 6.632976184220729e-19,
+      "raw_lamb_energy_work_relative": 1.569866128061599e-18,
+      "projected_lamb_energy_work_relative": 3.305822888774728e-18,
+      "nonlinear_rotation_equivariance_relative": 8.750302105580047e-16,
+      "nonlinear_axial_translation_relative": 9.769683294040535e-16,
+      "CN_energy_ratio": 0.9835013814580049,
+      "CN_midpoint_energy_identity_relative": 7.099463252842688e-18,
+      "CN_divergence_L2": 3.390417396008122e-13,
+      "direct_signed_k_stokes_relative": null,
+      "projection_odd_symmetry_relative": 3.5040863796633454e-16,
+      "nonlinear_odd_symmetry_relative": 1.1213743721653866e-15,
+      "CN_odd_symmetry_relative": 5.192704651604899e-16,
+      "one_split_step_divergence_L2": 3.4596920881758917e-15,
+      "one_split_step_energy_ratio": 0.999760660875359,
+      "mode_zero_imaginary_max": 0.0
+    },
+    {
+      "nr": 16,
+      "nz": 32,
+      "J": 2,
+      "dealias": "filter",
+      "nzpad": 48,
+      "gradient_negative_adjoint_relative": 1.0868502436852853e-15,
+      "gather_scatter_adjoint_relative": 5.895596652421096e-16,
+      "independent_gradient_gram_relative": 3.207542556586445e-17,
+      "minimum_generalized_viscous_eigenvalue": 0.36166176606310013,
+      "projection_idempotence_relative": 2.2078998678380786e-16,
+      "projected_divergence_L2": 9.309606896215522e-14,
+      "projected_divergence_over_input_divergence": 1.5861547318484297e-16,
+      "projection_orthogonality_relative": 1.3073873567970762e-17,
+      "projected_norm_ratio": 0.6707238539572539,
+      "projection_self_adjoint_relative": 2.7540899577863436e-18,
+      "raw_lamb_energy_work_relative": 2.516992335866044e-18,
+      "projected_lamb_energy_work_relative": 1.0712983951352999e-17,
+      "nonlinear_rotation_equivariance_relative": 5.631916962434126e-16,
+      "nonlinear_axial_translation_relative": 4.596204733642242e-16,
+      "CN_energy_ratio": 0.9991095625635075,
+      "CN_midpoint_energy_identity_relative": 5.14844616622795e-17,
+      "CN_divergence_L2": 6.015730904816203e-14,
+      "direct_signed_k_stokes_relative": 4.962631110101602e-15,
+      "projection_odd_symmetry_relative": 2.0028195674052876e-16,
+      "nonlinear_odd_symmetry_relative": 5.883314595509834e-16,
+      "CN_odd_symmetry_relative": 3.0489393353154424e-16,
+      "one_split_step_divergence_L2": 6.15690438569457e-16,
+      "one_split_step_energy_ratio": 0.9999871871389501,
+      "mode_zero_imaginary_max": 0.0
+    }
+  ],
+  "manufactured_curl": [
+    {
+      "nr": 16,
+      "dealias": "padding",
+      "results": {
+        "0": {
+          "curl_relative_L2": 0.03650738607630335,
+          "first_four_rows_absolute_error": 0.0069620390469355975,
+          "max_absolute_error": 0.03291668925263705
+        },
+        "4": {
+          "curl_relative_L2": 0.09390351971328657,
+          "first_four_rows_absolute_error": 0.0008877882111167812,
+          "max_absolute_error": 0.01402169947995466
+        },
+        "rigid_core_first_four_cells_vorticity_error": 0.0
+      },
+      "scope": "Smooth wall-compatible manufactured m0 and m4 toroidal fields; sampled before projection. Rigid-core test excludes the incompatible outer wall."
+    },
+    {
+      "nr": 32,
+      "dealias": "padding",
+      "results": {
+        "0": {
+          "curl_relative_L2": 0.009355023180137615,
+          "first_four_rows_absolute_error": 0.0015170309183809572,
+          "max_absolute_error": 0.009671813252240917
+        },
+        "4": {
+          "curl_relative_L2": 0.042984649307144636,
+          "first_four_rows_absolute_error": 0.0001873301120730354,
+          "max_absolute_error": 0.0055186625202594125
+        },
+        "rigid_core_first_four_cells_vorticity_error": 2.220446049250313e-16
+      },
+      "scope": "Smooth wall-compatible manufactured m0 and m4 toroidal fields; sampled before projection. Rigid-core test excludes the incompatible outer wall."
+    },
+    {
+      "nr": 64,
+      "dealias": "padding",
+      "results": {
+        "0": {
+          "curl_relative_L2": 0.0023744744123001156,
+          "first_four_rows_absolute_error": 0.00036225520353871943,
+          "max_absolute_error": 0.0025469952595345777
+        },
+        "4": {
+          "curl_relative_L2": 0.012856009285631237,
+          "first_four_rows_absolute_error": 4.5086673769195806e-05,
+          "max_absolute_error": 0.002775895598970102
+        },
+        "rigid_core_first_four_cells_vorticity_error": 0.0
+      },
+      "scope": "Smooth wall-compatible manufactured m0 and m4 toroidal fields; sampled before projection. Rigid-core test excludes the incompatible outer wall."
+    }
+  ],
+  "dealiasing": {
+    "dealias": "padding",
+    "angular_J_low": 2,
+    "angular_J_reference": 4,
+    "nz_low": 32,
+    "nz_reference": 96,
+    "nz_product_grid": 48,
+    "input_energy_fraction_beyond_old_filter": 0.3094507767681858,
+    "largest_retained_axial_integer": 15,
+    "resample_adjoint_relative": 5.1429777948536835e-18,
+    "retained_nonlinearity_relative": 9.257451805359302e-16,
+    "scope": "Same radial operators and input coefficients, independent larger angular/axial product grid."
+  },
+  "seconds": 23.728441172,
+  "scope": "Discrete adjoints, projection, Gram viscosity, constrained CN, Lamb energy work, symmetries, and radial curl consistency only. No whole-space reconstruction, interval residual, axis high-derivative enclosure, or research endpoint is certified."
+}
+PASS check_full_mac.py
+RUN check_fast_full_mac.py
+{"status": "PASS", "seconds": 24.155345916748047, "output": "/private/var/folders/kq/17r93krx6fs800t8qmx1xd1w0000gn/T/pass11-checks-25mhz431/experiments/fast-full-mac-checks.json", "maximum_projected_nonlinearity_error": 7.586846797462519e-16, "maximum_full_step_error": 5.634894615273232e-16}
+PASS check_fast_full_mac.py
+RUN verify_validated_error_hierarchy.py
+{
+  "status": "PASS",
+  "checks": 44,
+  "scope": "Manufactured exact/rational comparison-system tests only. No supplied test bounds describe or validate the selected NS evolution.",
+  "nonlinear_manufactured_accepted_slabs": 2,
+  "giant_off_diagonal_manufactured_endpoint": [
+    "14821387422376473015/14821387422376473014217086081112052205218558037201992197050570753012880593911808",
+    "5021681687624879937/50216813883093446110686315385661331328818843555712276103168",
+    "15065045062874639811/50216813883093446110686315385661331328818843555712276103168",
+    "17575885906687079779/25108406941546723055343157692830665664409421777856138051584",
+    "6805647338418769271/680564733841876926926749214863536422912"
+  ],
+  "checked": [
+    "outward dyadic rounding 0",
+    "outward rational square root 0",
+    "outward dyadic rounding 1/3",
+    "outward rational square root 1/3",
+    "outward dyadic rounding 5/7",
+    "outward rational square root 5/7",
+    "outward dyadic rounding 1/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "outward rational square root 1/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "outward dyadic rounding 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "outward rational square root 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "outward dyadic rounding 17/4",
+    "outward rational square root 17/4",
+    "ambiguous binary-float API input is rejected",
+    "negative residual rejected by direct Bounds constructor",
+    "nonpositive duration rejected before zero-error shortcut",
+    "invalid direct Options constructor rejected",
+    "mismatched radius vectors rejected",
+    "exponential reference bracket",
+    "integrated exponential exact identity is enclosed",
+    "manufactured B is nilpotent of order at most five",
+    "finite path exponential agrees with exact matrix polynomial",
+    "finite path integral agrees with exact matrix polynomial",
+    "manufactured high-order linear feed coefficient",
+    "nonzero-rate path encloses independent exact exponential formula",
+    "nonzero-rate forced path encloses independent exact formula",
+    "manufactured nonlinear interval is certified",
+    "certified endpoint encloses exact nonlinear solution",
+    "stored exact radius inequality",
+    "adaptive subdivision handles a conservative failure",
+    "subdivided certificate encloses exact inherited nonlinear solution",
+    "no reset of inherited component errors",
+    "accepted durations cover the complete request",
+    "representation jump is included once at the original slab boundary",
+    "boundary jump is inherited rather than reset",
+    "failed slab makes no unsupported progress",
+    "nonlinear closure failure is explicit, even for a finite exact solution",
+    "large off-diagonal feed closes without a large exponential",
+    "giant coefficient still yields a small manufactured high-order endpoint",
+    "exponential control depends on the diagonal only",
+    "non-square verification length is safely enclosed",
+    "exponential resource limit is reported as failure",
+    "exact zero error and zero residual remain exactly zero",
+    "length changes preserve derivative bounds exactly",
+    "negative verification lengths are rejected"
+  ]
+}
+PASS verify_validated_error_hierarchy.py
+RUN check_independent_hierarchy_audit.py
+{
+  "status": "PASS",
+  "checks": 161,
+  "scope": "Synthetic comparison systems; exact rational algebra only. No NS norms or residuals were supplied.",
+  "matrix_reference": "Independent ordinary matrix Taylor series with row-sum norm remainder"
+}
+PASS check_independent_hierarchy_audit.py
+RUN check_exterior_harmonic_mass.py
+{
+  "status": "PASS",
+  "scope": "Exact boundary algebra and floating-point exterior/matrix tests; no evolved-field or NS residual bound",
+  "continuous": [
+    {
+      "m": 0,
+      "k": 0.7,
+      "mass": 3.1097771832920174,
+      "full_stiffness": 4.047581639626177,
+      "mass_quadrature_relative_error": 2.220446049250313e-16,
+      "stiffness_quadrature_relative_error": 0.0
+    },
+    {
+      "m": 0,
+      "k": 2.3,
+      "mass": 1.0892801882541172,
+      "full_stiffness": 12.52458439172856,
+      "mass_quadrature_relative_error": 6.661338147750939e-16,
+      "stiffness_quadrature_relative_error": 2.220446049250313e-16
+    },
+    {
+      "m": 1,
+      "k": 0,
+      "mass": 7.290000000000001,
+      "full_stiffness": 4.0,
+      "mass_quadrature_relative_error": 1.1102230246251565e-16,
+      "stiffness_quadrature_relative_error": 1.1102230246251565e-16
+    },
+    {
+      "m": 4,
+      "k": 0,
+      "mass": 1.8225000000000002,
+      "full_stiffness": 10.0,
+      "mass_quadrature_relative_error": 3.3306690738754696e-16,
+      "stiffness_quadrature_relative_error": 3.3306690738754696e-16
+    },
+    {
+      "m": 4,
+      "k": 0.7,
+      "mass": 1.6085048804139146,
+      "full_stiffness": 10.415937404884174,
+      "mass_quadrature_relative_error": 2.220446049250313e-16,
+      "stiffness_quadrature_relative_error": 0.0
+    },
+    {
+      "m": 8,
+      "k": 0,
+      "mass": 0.9112500000000001,
+      "full_stiffness": 18.0,
+      "mass_quadrature_relative_error": 5.551115123125783e-16,
+      "stiffness_quadrature_relative_error": 5.551115123125783e-16
+    },
+    {
+      "m": 8,
+      "k": 2.3,
+      "mass": 0.7060623237562647,
+      "full_stiffness": 21.467751761225784,
+      "mass_quadrature_relative_error": 7.771561172376096e-16,
+      "stiffness_quadrature_relative_error": 7.771561172376096e-16
+    }
+  ],
+  "discrete": [
+    {
+      "m": 0,
+      "k": 0.7,
+      "outer_mass": 3.7486036589004024,
+      "boundary_gradient": -0.720268197356454,
+      "divergence": 3.5005674040686524e-15,
+      "idempotence": 4.440892098500626e-16,
+      "kinetic_self_adjoint_defect": 1.5265566588595902e-16,
+      "gradient_removal_error": 8.434172412146374e-16
+    },
+    {
+      "m": 0,
+      "k": 2.3,
+      "outer_mass": 1.7281066638625024,
+      "boundary_gradient": -1.5624035578713715,
+      "divergence": 5.478396259263632e-16,
+      "idempotence": 1.1102230246251565e-16,
+      "kinetic_self_adjoint_defect": 5.551115123125783e-17,
+      "gradient_removal_error": 8.091239844753841e-16
+    },
+    {
+      "m": 1,
+      "k": 0,
+      "outer_mass": 7.928826475608386,
+      "boundary_gradient": -0.34052958635254116,
+      "divergence": 1.8172111733469767e-15,
+      "idempotence": 6.661338147750939e-16,
+      "kinetic_self_adjoint_defect": 1.1102230246251565e-16,
+      "gradient_removal_error": 2.0471501066083613e-15
+    },
+    {
+      "m": 4,
+      "k": 0,
+      "outer_mass": 2.4613264756083852,
+      "boundary_gradient": -1.0969694702254482,
+      "divergence": 2.0959391564258614e-15,
+      "idempotence": 2.220446049250313e-16,
+      "kinetic_self_adjoint_defect": 1.1102230246251565e-16,
+      "gradient_removal_error": 2.3603665272841412e-15
+    },
+    {
+      "m": 4,
+      "k": 0.7,
+      "outer_mass": 2.2473313560222996,
+      "boundary_gradient": -1.201424966890022,
+      "divergence": 4.629834858378011e-15,
+      "idempotence": 2.220446049250313e-16,
+      "kinetic_self_adjoint_defect": 1.1102230246251565e-16,
+      "gradient_removal_error": 4.8043221128972395e-15
+    },
+    {
+      "m": 8,
+      "k": 0,
+      "outer_mass": 1.5500764756083854,
+      "boundary_gradient": -1.7418495425783973,
+      "divergence": 6.074211085014251e-15,
+      "idempotence": 2.220446049250313e-16,
+      "kinetic_self_adjoint_defect": 1.1102230246251565e-16,
+      "gradient_removal_error": 6.640256811206863e-15
+    },
+    {
+      "m": 8,
+      "k": 2.3,
+      "outer_mass": 1.34488879936465,
+      "boundary_gradient": -2.007600926764748,
+      "divergence": 4.114528430600959e-15,
+      "idempotence": 3.3306690738754696e-16,
+      "kinetic_self_adjoint_defect": 5.551115123125783e-17,
+      "gradient_removal_error": 4.578422862806412e-15
+    }
+  ]
+}
+PASS check_exterior_harmonic_mass.py
+RUN check_exterior_mac_blocks.py
+{
+  "status": "PASS",
+  "scope": "Independent finite-dimensional harmonic-exterior MAC model; no NS evolution or residual enclosure",
+  "cases": [
+    {
+      "m": 0,
+      "k": 0,
+      "operator_defects": [
+        1.1706311577689612e-14,
+        1.7763568394002544e-15,
+        1.5781712850542474e-16,
+        0.0
+      ],
+      "positive_gram_relative_error": 0.0,
+      "nonlinear_weak_adjoint_defect": 6.280369834735101e-16,
+      "CN_energy_identity_relative_defect": 3.790187029593493e-16
+    },
+    {
+      "m": 0,
+      "k": 0.7,
+      "operator_defects": [
+        1.5875964781436003e-14,
+        1.797173521111972e-15,
+        3.3306690738754696e-16,
+        1.7763568394002505e-15
+      ],
+      "positive_gram_relative_error": 0.0,
+      "nonlinear_weak_adjoint_defect": 6.12235403661387e-15,
+      "CN_energy_identity_relative_defect": 3.6980755279709955e-16
+    },
+    {
+      "m": 4,
+      "k": 0,
+      "operator_defects": [
+        7.67309446362302e-15,
+        4.440892098500626e-16,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "positive_gram_relative_error": 1.9060028713657373e-16,
+      "nonlinear_weak_adjoint_defect": 2.3102244613642867e-15,
+      "CN_energy_identity_relative_defect": 1.0060573186991426e-15
+    },
+    {
+      "m": 4,
+      "k": 0.7,
+      "operator_defects": [
+        4.1785151456445175e-15,
+        4.996003610813204e-16,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "positive_gram_relative_error": 1.8731381801464658e-16,
+      "nonlinear_weak_adjoint_defect": 1.7763568394002505e-15,
+      "CN_energy_identity_relative_defect": 1.8976945477790045e-16
+    },
+    {
+      "m": 4,
+      "k": -0.7,
+      "operator_defects": [
+        4.1785151456445175e-15,
+        4.996003610813204e-16,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "positive_gram_relative_error": 1.8890805329951622e-16,
+      "nonlinear_weak_adjoint_defect": 8.881784197001252e-16,
+      "CN_energy_identity_relative_defect": 4.618213860032944e-16
+    },
+    {
+      "m": 8,
+      "k": 2.3,
+      "operator_defects": [
+        1.0633008259709678e-14,
+        7.216449660063518e-16,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "positive_gram_relative_error": 0.0,
+      "nonlinear_weak_adjoint_defect": 7.021666937153402e-16,
+      "CN_energy_identity_relative_defect": 2.750446431978185e-16
+    }
+  ],
+  "axial_reflection_stiffness_defect": 0.0,
+  "axis_constraint_congruence": {
+    "mode": 4,
+    "reduced_dimension": 21,
+    "full_dimension": 24,
+    "divergence": 3.114110306630575e-14,
+    "kinetic_self_adjoint_defect": 1.8735013540549517e-16
+  }
+}
+PASS check_exterior_mac_blocks.py
+RUN check_compare_mac_endpoints.py
+{"status": "PASS", "manufactured_grid_count": 2, "rejection_count": 28, "output": "/private/var/folders/kq/17r93krx6fs800t8qmx1xd1w0000gn/T/pass11-checks-25mhz431/experiments/compare-mac-endpoints-checks.json"}
+PASS check_compare_mac_endpoints.py
+PASS: 9 bounded programs. No validated whole-space NS endpoint, successor class, or blowup is certified.

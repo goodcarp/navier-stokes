@@ -1,0 +1,15 @@
+{
+  "MAC": {
+    "cold_step_seconds": 13.408429015000003,
+    "warm_step_seconds": 2.5736798830000005,
+    "energy": 81021.8069350848,
+    "div": 5.059783785475342e-12
+  },
+  "FastMAC": {
+    "cold_step_seconds": 3.001028429999998,
+    "warm_step_seconds": 1.8107284200000002,
+    "energy": 81021.8069350848,
+    "div": 5.101608932837796e-12
+  },
+  "relative_step_difference": 1.0254957595307991e-15
+}

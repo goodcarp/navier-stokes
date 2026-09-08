@@ -1,0 +1,116 @@
+{
+  "prepared_utc": "2026-09-08T06:30:40.490342+00:00",
+  "papers_downloaded": [
+    {
+      "name": "euler.pdf",
+      "url": "https://cims.nyu.edu/~tristanb/euler.pdf",
+      "sha256": "97ef408bff09b4f6ed9f3867734d1eb2245f3f34e6334b28136c84c02d0ae8d8",
+      "bytes": 1105306,
+      "inspected_copy_mtime_utc": "2026-09-08T06:08:59.602053+00:00"
+    },
+    {
+      "name": "statement.pdf",
+      "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
+      "sha256": "8d7723941bcda2fa55c1e74faa6298e04c706d17ff8abd2ad01878039c621f9d",
+      "bytes": 53497,
+      "inspected_copy_mtime_utc": "2026-09-08T06:08:59.711296+00:00"
+    }
+  ],
+  "additional_primary_sources_read": [
+    "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+    "https://www.cscamm.umd.edu/publications/AxisymmetricFlow_CS-08-45.pdf"
+  ],
+  "proof_scope": {
+    "repository": "tristanbuckmaster/fluid_lean",
+    "commit": "d0124689230b58b4f86e7b90ac59de06404b3b6b",
+    "files": [
+      {
+        "path": "Challenge.lean",
+        "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/Challenge.lean",
+        "bytes": 3454,
+        "sha256": "470a2468cc22abe02b56fe77061ef379150363da4cb6af2e66bcd66cb6f07cc5"
+      },
+      {
+        "path": "Solution.lean",
+        "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/Solution.lean",
+        "bytes": 1348,
+        "sha256": "579ee0830b3083f78efef039c5abf581ba7d880fc1ee41467ed0437995519880"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/README.md",
+        "bytes": 5052,
+        "sha256": "5925a6eec362a04ecc115bd4a0f53ca9510260faa3a7f57dc7a41b0706b05b16"
+      },
+      {
+        "path": "formalization.yaml",
+        "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/formalization.yaml",
+        "bytes": 4436,
+        "sha256": "e4e3b2715e9d0e39eb0a9be714b35051c63b8b898b8c6070a97fd627dce91b56"
+      },
+      {
+        "path": "comparator.json",
+        "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/comparator.json",
+        "bytes": 238,
+        "sha256": "9dfc55a88c6a5b19ded16a18df26a9f9a7a7aaf8c4996191efbbe8cae7f8bab4"
+      },
+      {
+        "path": "scripts/PrintAxioms.lean",
+        "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/scripts/PrintAxioms.lean",
+        "bytes": 107,
+        "sha256": "a1b802777e8c7112944f7b5f86c0d616bfae85ce12e78e41fa0925a937b8c016"
+      },
+      {
+        "path": "EulerBlowup/Main.lean",
+        "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/EulerBlowup/Main.lean",
+        "bytes": 4887,
+        "sha256": "3ccb4fc2af310fd09fec9257722a41b9973cc2d42c1d24cb72d17730ffb5408f"
+      },
+      {
+        "path": "EulerBlowup/Theorem01Prime.lean",
+        "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/EulerBlowup/Theorem01Prime.lean",
+        "bytes": 4989,
+        "sha256": "4b54b01e3b092e863db0b5fcaf8bd536bd8d0aa4455921e328bfd7da4266fdc7"
+      },
+      {
+        "path": "EulerBlowup/Theorem01.lean",
+        "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/EulerBlowup/Theorem01.lean",
+        "bytes": 145499,
+        "sha256": "b5e8a782739b8034f03a8e71068c1c3c5fb011708751c8f722440a4bd4b6829d"
+      }
+    ],
+    "method": "Static selected-file reading and textual proposition comparison only.",
+    "main_theorem_proposition_matches_after_whitespace_normalization": true,
+    "full_build": false,
+    "kernel_replay": false,
+    "dependency_closure_audit": false
+  },
+  "local_research_inputs": [
+    {
+      "repository": "goodcarp/navier-stokes-research-astra",
+      "path": "README.md",
+      "sha256": "0f5be0fb14749e17a332b3eed214929329a8214364cf8a731fa50a67f91bafa5"
+    },
+    {
+      "repository": "goodcarp/navier-stokes-research-astra",
+      "path": "FINDINGS.md",
+      "sha256": "dd90e9efae74c387b9470b3cebf8b0a9614924759d92c7d039e39692de650335"
+    },
+    {
+      "repository": "goodcarp/navier-stokes-research-astra",
+      "path": "docs/outputs/RETURN_Deepest-Think-Astra_PASS14.md",
+      "sha256": "fa39e812ac4ac115c66ca4d4d69c1091c3b826f5fc851c02dd8b1a3eacaebff0"
+    },
+    {
+      "repository": "goodcarp/navier-stokes-research-astra",
+      "path": "docs/outputs/navier-stokes-pass14/NEXT_TARGET.md",
+      "sha256": "50054fb9b480df0ed396040b8c0b0a9e582e0dac39593bd7e90e7c70710e8af1"
+    },
+    {
+      "repository": "goodcarp/navier-stokes-research-astra",
+      "path": "docs/outputs/navier-stokes-pass28/NEXT_TARGET.md",
+      "sha256": "c494726da803dac0a38b36325544b5a606ee4691cd0dab8424d4bfcdab2896b2"
+    }
+  ],
+  "limits": "Paper SHA256 identifies the inspected bytes, not their mathematical correctness. Source papers and proof code are not redistributed in this package."
+}

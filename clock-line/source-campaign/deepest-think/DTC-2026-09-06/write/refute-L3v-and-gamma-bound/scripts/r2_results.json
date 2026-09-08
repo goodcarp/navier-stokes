@@ -1,0 +1,32 @@
+{
+ "grad5b_structure_residual": "Matrix([[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]])",
+ "grad5b_structure_is_zero": true,
+ "trace_grad5b": "0",
+ "grad5_vs_grad3_op_norm_max_reldiff": 1.2844396204549155e-16,
+ "B1_bound_worst_ratio": 0.9984753523601009,
+ "lap5_residual": "0",
+ "dz_residual": "0",
+ "B2_squared_residual": "0",
+ "B3_residual": "0",
+ "integrating_factor_residual": "0",
+ "indicial_polynomial": "2*k*(k + 1)",
+ "indicial_roots": [
+  "-1",
+  "0"
+ ],
+ "frobenius_note": "f bounded (Corollary A1) forces the k=0 branch; the k=-1 branch is unbounded, so (1-t^2)f' -> 0 and a_dev(1) = -f(1) is finite. PROOF.md asserts this (\"a_dev being finite at one endpoint\") without the argument.",
+ "kernels": {
+  "p_half": {
+   "D_prime": "-3*u**3/(2*sqrt(1 - u**2)) + 3*u/(2*sqrt(1 - u**2)) + 3*asin(u)/2 - 3*pi/4",
+   "D_at_1": "0",
+   "K_at_0": "pi/4",
+   "K_at_0_float": 0.7853981633974483
+  },
+  "p_one": {
+   "D_prime": "2*u - 2",
+   "D_at_1": "0",
+   "K_at_0": "2/3",
+   "K_at_0_float": 0.6666666666666666
+  }
+ }
+}

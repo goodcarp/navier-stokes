@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-08",
+  "scope": "Full initial-field algebra, conditional error estimates, exact omitted-image tail, and exploratory periodic-cylinder coefficients; no full NS endpoint",
+  "external_primary_sources": [
+    {
+      "title": "NIST modified Bessel differential equation",
+      "url": "https://dlmf.nist.gov/10.25.E1"
+    },
+    {
+      "title": "NIST modified Bessel Wronskian",
+      "url": "https://dlmf.nist.gov/10.28.E2"
+    }
+  ],
+  "archive_dependencies": [
+    "pass6 cutoff monotonicity and |chi prime|<4",
+    "pass8 unchanged envelope moment bounds",
+    "pass9 full initial receiver acceleration certificate",
+    "pass9 explicit amplitude inequalities and endpoint bridge"
+  ],
+  "runtime": {
+    "python": "Python 3",
+    "numpy": "numerical arrays",
+    "scipy": "FFT, Bessel functions and radial solves",
+    "sympy": "exact algebra"
+  },
+  "not_performed": [
+    "Lean or another formal proof-kernel replay",
+    "full compact 3D NS time integration",
+    "full-space residual enclosure",
+    "inherited return or singularity construction"
+  ]
+}

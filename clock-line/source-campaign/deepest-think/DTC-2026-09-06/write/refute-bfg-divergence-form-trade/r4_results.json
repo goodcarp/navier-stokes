@@ -1,0 +1,19 @@
+{
+ "gradL1": "2/sqrt(pi*nu*t)",
+ "L2": "(8*pi*tau)**(-3/4)",
+ "Q": 1.0,
+ "Q_numeric_max": 0.9999998960435675,
+ "C_u": 1.2142394208005358,
+ "tau_star": 0.10421759514227354,
+ "gamma": 1.9601317042077893,
+ "c_div": 0.0036229743218317728,
+ "c_div_endtoend": 0.0036229743218317728,
+ "F1_expr_equals_ReE_minus_half": true,
+ "F1_all_dimensionless": true,
+ "F1_display_gap": 276.016309023797,
+ "F2_ratio_is_c_div": true,
+ "F6_s7_check9_tautology": true,
+ "F6_substantive_of_9": 5,
+ "F3b_cancellation_structural": true,
+ "F3a_offset_from_Eshell": -0.7031659387091244
+}

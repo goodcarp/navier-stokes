@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "scope": "Package/source integrity plus exact finite algebra and manufactured floating reconstruction tests; no whole-space NS residual, useful stage, S3 or return certificate.",
+  "manifest_counts": {
+    "SHA256SUMS.txt": 10,
+    "pass2/SHA256SUMS.txt": 17,
+    "pass3/SHA256SUMS.txt": 16,
+    "pass4/SHA256SUMS.txt": 33,
+    "pass5/SHA256SUMS.txt": 39,
+    "pass6/SHA256SUMS.txt": 23,
+    "pass7/SHA256SUMS.txt": 21,
+    "pass8/SHA256SUMS.txt": 35,
+    "pass9/SHA256SUMS.txt": 39,
+    "pass10/SHA256SUMS.txt": 48,
+    "pass11/SHA256SUMS.txt": 68,
+    "pass11/data/SHA256SUMS.txt": 2,
+    "pass12/SHA256SUMS.txt": 35,
+    "pass12/data/SHA256SUMS.txt": 4
+  },
+  "manifest_failures": [],
+  "programs": [
+    {
+      "script": "check_c4_adapted_reference.py",
+      "exit_code": 0,
+      "stdout": "PASS: 37 exact C4, coordinate, pressure, viscosity and comparison identities\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_comoving_gradient_decay.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"checks\": 26,\n  \"labels\": [\n    \"cutoff drift combination\",\n    \"diffusion cutoff constant\",\n    \"Young inequality perfect square\",\n    \"cutoff maximum n=1\",\n    \"cutoff maximum n=2\",\n    \"cutoff maximum n=3\",\n    \"cutoff maximum n=4\",\n    \"cutoff maximum n=5\",\n    \"cutoff maximum n=6\",\n    \"cutoff maximum n=7\",\n    \"cutoff maximum n=8\",\n    \"cutoff maximum n=9\",\n    \"cutoff maximum n=10\",\n    \"cutoff maximum n=11\",\n    \"cutoff maximum n=12\",\n    \"five-dimensional constant 27\",\n    \"one minus cutoff square\",\n    \"choice of Bernstein coefficient\",\n    \"tail weight comparison\",\n    \"five-dimensional tail integral\",\n    \"linear-drift example PDE\",\n    \"quadratic weighted-gradient closure\",\n    \"Brownian quadratic moment\",\n    \"Brownian tenth moment\",\n    \"c_5_10 less than 10/3\",\n    \"quadratic noise constant\"\n  ],\n  \"scope\": \"Exact cutoff, Young, weight, tail-integral, Gaussian-moment and example-PDE algebra only; not existence, solution regularity, NS bootstrap or S3 certification.\",\n  \"source_revision_observed\": {\n    \"path\": \"~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/s3close/round2/pmax-h3v/PROOF.md\",\n    \"bytes\": 65253,\n    \"sha256\": \"510d9705cf13a112822c4dc72c195a1d5b253ed38c2ec4a18d15e609c685e884\",\n    \"mtime_utc\": \"2026-09-08T14:18:33.784273+00:00\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "check_compact_potential_reconstruction.py",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"seconds\": 7.233465909957886, \"output\": \"/private/var/folders/kq/17r93krx6fs800t8qmx1xd1w0000gn/T/forced-route-pass12-_f42spzw/pass12/experiments/compact-potential-independent-checks.json\", \"source_changed\": false}\n",
+      "stderr": ""
+    },
+    {
+      "script": "check_continuous_potential_fit.py",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"output\": \"/private/var/folders/kq/17r93krx6fs800t8qmx1xd1w0000gn/T/forced-route-pass12-_f42spzw/pass12/experiments/continuous-potential-independent-checks.json\", \"largest_dense_QR_error\": 7.75947509173208e-14}\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "repository": "goodcarp/forced-route-2026-09",
+  "release_tags": [
+    "research-archive-2026-09-08",
+    "research-pass12-2026-09-08"
+  ],
+  "release_tag_for_new_assets": "research-pass12-2026-09-08",
+  "scope": "Expected byte-identical release assets and local placements; this inventory does not by itself establish upload completion.",
+  "assets": [
+    {
+      "name": "pass11-resolved-192-2049-dt100.npz",
+      "path": "core-line/outputs/euler-ns-transfer/pass11/data/resolved-192-2049-dt100.npz",
+      "local_paths": [
+        "core-line/outputs/euler-ns-transfer/pass11/data/resolved-192-2049-dt100.npz",
+        "core-line/work/pass11/resolved-192-2049-dt100.npz"
+      ],
+      "bytes": 76614004,
+      "sha256": "beebe458a317919e48f98619a1e675e8bd7b1ab0fc8c6ade0ae105ee2a87a1cf",
+      "url": "https://github.com/goodcarp/forced-route-2026-09/releases/download/research-archive-2026-09-08/pass11-resolved-192-2049-dt100.npz",
+      "release_tag": "research-archive-2026-09-08",
+      "kind": "Finite-cylinder Fourier/MAC endpoint"
+    },
+    {
+      "name": "pass11-resolved-192-2049-dt50.npz",
+      "path": "core-line/outputs/euler-ns-transfer/pass11/data/resolved-192-2049-dt50.npz",
+      "local_paths": [
+        "core-line/outputs/euler-ns-transfer/pass11/data/resolved-192-2049-dt50.npz",
+        "core-line/work/pass11/resolved-192-2049-dt50.npz"
+      ],
+      "bytes": 76688623,
+      "sha256": "603663cf57011ece8f13028fc6175f74a4dfd9cb867fb90e3b791c72aacd1940",
+      "url": "https://github.com/goodcarp/forced-route-2026-09/releases/download/research-archive-2026-09-08/pass11-resolved-192-2049-dt50.npz",
+      "release_tag": "research-archive-2026-09-08",
+      "kind": "Finite-cylinder Fourier/MAC endpoint"
+    },
+    {
+      "name": "pass12-compact-fit-144.npz",
+      "path": "core-line/outputs/euler-ns-transfer/pass12/data/compact-fit-144.npz",
+      "local_paths": [
+        "core-line/outputs/euler-ns-transfer/pass12/data/compact-fit-144.npz",
+        "core-line/work/pass12/compact-fit-144.npz"
+      ],
+      "bytes": 44919162,
+      "sha256": "6f0db71c87bd8b196c86285acb6539b9f5977fa8749e080066dacfeefdc35fcb",
+      "url": "https://github.com/goodcarp/forced-route-2026-09/releases/download/research-pass12-2026-09-08/pass12-compact-fit-144.npz",
+      "release_tag": "research-pass12-2026-09-08",
+      "kind": "Rejected sampled-fit potential coefficients"
+    },
+    {
+      "name": "pass12-compact-fit-96.npz",
+      "path": "core-line/outputs/euler-ns-transfer/pass12/data/compact-fit-96.npz",
+      "local_paths": [
+        "core-line/outputs/euler-ns-transfer/pass12/data/compact-fit-96.npz",
+        "core-line/work/pass12/compact-fit-96.npz"
+      ],
+      "bytes": 29871042,
+      "sha256": "881b0ce25a4889526fe30cde4c93ac3444df2292712cd201cf6a367c49959608",
+      "url": "https://github.com/goodcarp/forced-route-2026-09/releases/download/research-pass12-2026-09-08/pass12-compact-fit-96.npz",
+      "release_tag": "research-pass12-2026-09-08",
+      "kind": "Rejected sampled-fit potential coefficients"
+    },
+    {
+      "name": "pass12-continuous-fit-144.npz",
+      "path": "core-line/outputs/euler-ns-transfer/pass12/data/continuous-fit-144.npz",
+      "local_paths": [
+        "core-line/outputs/euler-ns-transfer/pass12/data/continuous-fit-144.npz",
+        "core-line/work/pass12/continuous-fit-144.npz"
+      ],
+      "bytes": 44903899,
+      "sha256": "b0677820d8aecf9fa34cb030ad5bed69fc6d3e863401bede0b01df70f651a294",
+      "url": "https://github.com/goodcarp/forced-route-2026-09/releases/download/research-pass12-2026-09-08/pass12-continuous-fit-144.npz",
+      "release_tag": "research-pass12-2026-09-08",
+      "kind": "Continuous-L2-fit potential coefficients"
+    },
+    {
+      "name": "pass12-continuous-fit-96.npz",
+      "path": "core-line/outputs/euler-ns-transfer/pass12/data/continuous-fit-96.npz",
+      "local_paths": [
+        "core-line/outputs/euler-ns-transfer/pass12/data/continuous-fit-96.npz",
+        "core-line/work/pass12/continuous-fit-96.npz"
+      ],
+      "bytes": 29872421,
+      "sha256": "b2336d539429ffd9332b2dec386a96c96d19b459c46f0d401b74031101838f54",
+      "url": "https://github.com/goodcarp/forced-route-2026-09/releases/download/research-pass12-2026-09-08/pass12-continuous-fit-96.npz",
+      "release_tag": "research-pass12-2026-09-08",
+      "kind": "Continuous-L2-fit potential coefficients"
+    }
+  ]
+}

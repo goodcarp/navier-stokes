@@ -1,0 +1,67 @@
+~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/lower/refuter-corollary-blowup-rate/scripts/r2_independent_checks.py:59: IntegrationWarning: Extremely bad integrand behavior occurs at some points of the
+  integration interval.
+  return quad(f, 0.0, tt, limit=400)[0]
+==========================================================================
+(1) Leray family: exponent of (T-t) in the induced ||omega||_inf bound
+==========================================================================
+  exponent(q) = [(1-3/q)/2] / [(3/5)(1-2/q)]  = 5*(q - 3)/(6*(q - 2))
+    q=3.001:  exponent = 0.000832501
+    q=4:  exponent = 0.416667
+    q=6:  exponent = 0.625000
+    q=9:  exponent = 0.714286
+    q=20:  exponent = 0.787037
+    q=100:  exponent = 0.824830
+    q=1000:  exponent = 0.832498
+    q=oo:  exponent = nan
+  d/dq of exponent: 5/(6*(q - 2)**2)  (sign fixes monotonicity)
+  sign at q=4,10,1000: [1, 1, 1]
+  => sup over q in (3,inf] attained at q=inf, value 5/6. Attempt's 5/6 CONFIRMED as
+     the best member of this family (the attempt asserted q=inf without checking).
+
+==========================================================================
+(2) INDEPENDENT route to the same baseline (no Leray, no Giga)
+==========================================================================
+  Duhamel lifespan  t_*      = nu/(E**(2/5)*M**(6/5))
+  M*t_* (must be a fn of Re) = nu/(E**(2/5)*M**(1/5))
+  1/Re_E                     = nu/(E**(2/5)*M**(1/5))
+  M*t_* - 1/Re_E             = 0   (expect 0)
+  continuation with clock c/(M Re_E) gives  M >= nu**(5/6)/(E**(1/3)*s**(5/6))
+  => (T-t) exponent -5/6 , nu exponent 5/6, E exponent -1/3 : SAME as row 5'.
+  So the attempt's 'classical baseline' is reproduced by a second, disjoint route.
+
+==========================================================================
+(3) asymptotic constant of (c)
+==========================================================================
+   K=       1 s=   1e-06   (c)/c1 / [5/(s log(1/s))] = 0.734262
+   K=       1 s=   1e-12   (c)/c1 / [5/(s log(1/s))] = 0.846772
+   K=       1 s=   1e-30   (c)/c1 / [5/(s log(1/s))] = 0.932503
+   K=       1 s=  1e-100   (c)/c1 / [5/(s log(1/s))] = 0.978747
+   K=    1000 s=   1e-06   (c)/c1 / [5/(s log(1/s))] = 0.258939
+   K=    1000 s=   1e-12   (c)/c1 / [5/(s log(1/s))] = 0.411361
+   K=    1000 s=   1e-30   (c)/c1 / [5/(s log(1/s))] = 0.635978
+   K=    1000 s=  1e-100   (c)/c1 / [5/(s log(1/s))] = 0.853450
+   K=   0.001 s=   1e-06   (c)/c1 / [5/(s log(1/s))] = 2.763102
+   K=   0.001 s=   1e-12   (c)/c1 / [5/(s log(1/s))] = 5.526204
+   K=   0.001 s=   1e-30   (c)/c1 / [5/(s log(1/s))] = 1.747084
+   K=   0.001 s=  1e-100   (c)/c1 / [5/(s log(1/s))] = 1.147164
+   -> ratio ->1 : the claimed constant 5c_1 is confirmed (slowly, as ~1/log).
+
+==========================================================================
+(4) loglog accumulation constant, by QUADRATURE not antiderivative
+==========================================================================
+   K=1.0
+     T-t=   1e-04  int/c1 =     5.2227   loglog =   2.2203   (int/c1)/loglog =   2.3522
+     T-t=   1e-08  int/c1 =     7.7209   loglog =   2.9135   (int/c1)/loglog =   2.6501
+     T-t=   1e-16  int/c1 =    17.1510   loglog =   3.6066   (int/c1)/loglog =   4.7554
+Traceback (most recent call last):
+  File "~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/lower/refuter-corollary-blowup-rate/scripts/r2_independent_checks.py", line 65, in <module>
+    I = integ(K, T, T-eps)
+  File "~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/lower/refuter-corollary-blowup-rate/scripts/r2_independent_checks.py", line 59, in integ
+    return quad(f, 0.0, tt, limit=400)[0]
+  File "~/Library/Python/3.9/lib/python/site-packages/scipy/integrate/_quadpack_py.py", line 464, in quad
+    retval = _quad(func, a, b, args, full_output, epsabs, epsrel, limit,
+  File "~/Library/Python/3.9/lib/python/site-packages/scipy/integrate/_quadpack_py.py", line 611, in _quad
+    return _quadpack._qagse(func,a,b,args,full_output,epsabs,epsrel,limit)
+  File "~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/lower/refuter-corollary-blowup-rate/scripts/r2_independent_checks.py", line 58, in <lambda>
+    f = lambda ss: 1.0/((T-ss)*(1.0+max(np.log(K*(T-ss)**-0.2), 0.0)))
+ZeroDivisionError: 0.0 cannot be raised to a negative power

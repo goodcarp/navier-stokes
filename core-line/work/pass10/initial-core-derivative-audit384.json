@@ -1,0 +1,20 @@
+{
+  "status": "NUMERICAL DIAGNOSTIC ONLY",
+  "parameters": {
+    "nr": 384,
+    "nz": 1024,
+    "R": 8.0,
+    "L": 16.0,
+    "mapping": 4.0,
+    "nu": 0.001
+  },
+  "b0_extracted": 0.9999626962077981,
+  "Fz_z_at_core": -3.9964799172915626,
+  "Fz_z_exact": -4.0,
+  "source_zz_at_core": -89.93100265762769,
+  "viscous_source_contribution_to_b2": -0.04496550132881384,
+  "lapFz_z_at_core": -145.89369477128866,
+  "viscous_lapF_contribution_to_b2": -0.07294684738564433,
+  "exact_viscous_contributions": 0.0,
+  "scope": "These are the independently differentiated explicit initial field terms used by full_initial_evolution.py. They diagnose spectral differentiation leakage; no pressure or actual positive-time NS value is certified."
+}

@@ -1,0 +1,42 @@
+
+Running phase_heat_check.py
+{
+  "status": "PASS",
+  "scope": "exact auxiliary-model algebra; no PDE blowup certification",
+  "checks": [
+    "three-mode PDE residual with noncommuting B(t)",
+    "initial data are preserved",
+    "unequal-damping ratio identity",
+    "equal damping cancels from ratio",
+    "damped pulse solves its ODE",
+    "same exact return time",
+    "retained amplitude includes heat loss",
+    "return-only success would accept a contracting pulse",
+    "phase-dependent coefficient commutation is correctly rejected"
+  ],
+  "pulse_retained_amplitude": 0.2939861162156208,
+  "undamped_retained_amplitude": 1.4142135623730951
+}
+
+Running viscosity_check.py
+PASS: circulation diffusion in volume coordinates
+PASS: reduced-vorticity diffusion in volume coordinates
+PASS: physical diffusion symbol q = r^2 kappa
+PASS: equal damping shifts the characteristic polynomial
+PASS: equal damping cancels in the projective ratio
+PASS: absolute amplitude retains damping
+PASS: two-generation frequency conversion
+PASS: ordinary viscosity exponent
+
+Exact scale exponent: 2*alpha - 1/(16*Qm*Qprev)
+Once Qm*Qprev >= 1/(16*alpha), this exponent is at least alpha > 0.
+The analytic limit also uses log(Lambda_m) = o(log(N_m)); see ../REPORT.md.
+
+Running direction_check.py
+PASS: both exact reduced diffusion operators
+PASS: physical-coordinate growth exponent identity
+PASS: frozen viscous characteristic polynomial
+PASS: rational scale example and positive summability exponents
+These checks establish algebra only; they do not construct an NS stage or singularity.
+
+ALL FINITE ALGEBRA CHECKS PASSED. No Navier–Stokes existence or blowup is certified.

@@ -1,0 +1,12 @@
+A + A^T                          : [0, 0, 0, 0, 0, 0, 0, 0, 0]
+A v - [(v.w)u - (v.u)w]          : [0, 0, 0]
+div U, div W                     : 0 0
+u.grad w - w.grad u - div(A)     : [0, 0, 0]
+det Gram(a,b,n)                  = -alpha**2 + 2*alpha*beta*c - beta**2 - c**2 + 1
+(1-c^2) - [a^2-2c ab+b^2]        = -alpha**2 + 2*alpha*beta*c - beta**2 - c**2 + 1    det - that = 0
+objective - constraint form      = 0
+=> sup objective = 1 - c^2 <= 1, attained at c = 0.  Q = 1 EXACTLY.
+Q  random max over 4000000 samples   = 0.999999980775060   (claimed exactly 1)
+Q  at u=e1, omega=e2, n=(e1+e2)/sqrt2 = 1.000000000000000  -> the sup is attained
+
+s2: divergence form verified; Q = 1 exactly (Gram argument), attained

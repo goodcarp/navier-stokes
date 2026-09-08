@@ -1,0 +1,174 @@
+{
+  "status": "EXPLORATORY DIRECT-JET AUDIT",
+  "parameters": {
+    "nr": 384,
+    "nz": 1024,
+    "R": 8.0,
+    "L": 16.0,
+    "mapping": 4.0,
+    "nu": 0.001,
+    "A": 1020,
+    "lam": 0.25,
+    "T": 0.001,
+    "pressure": "fd"
+  },
+  "b_jets_0_1_2": [
+    0.9999626962077981,
+    2.1157264000828846,
+    -545.1629442804988
+  ],
+  "Omega_jets_0_1_2": [
+    1.0,
+    2.0000000000000893,
+    8.123809892301043
+  ],
+  "beta1_direct": 0.11580100766719914,
+  "beta2_direct": -553.7496551545526,
+  "beta1_pressure_formula": 0.11396634260345806,
+  "beta2_pressure_formula": 57.06024193905245,
+  "b2_contributions": {
+    "viscous_DeltaF": -0.07294684738564433,
+    "viscous_grad_source": -0.04496550132881384,
+    "differentiated_convection": -619.2449372206065,
+    "pressure": 74.19990536508703
+  },
+  "continuous_affine_targets": {
+    "b1_from_pressure": 2.113966342603458,
+    "b2_from_pressure": 65.7440399946732,
+    "Omega1_from_affine_core": 2.0,
+    "Omega2_from_pressure": 8.227932685206916,
+    "convection_b2_from_direct_b1": -8.462905600331538,
+    "convection_b2_from_pressure": -8.455865370413832
+  },
+  "C1_z_derivative_spectral": 1238.489874441213,
+  "C1_z_derivative_local_centered_6th": 16.891338107408234,
+  "N0_z_derivative_spectral": 4.231452800165769,
+  "N0_z_derivative_local_centered_6th": 4.225485398514853,
+  "axis_divergence_N0": 0.0035208544167485167,
+  "quadratic_quotient_from_direct_jets": 0.9998021756829721,
+  "quadratic_quotient_reported": 0.9998021756829528,
+  "quotient_reconstruction_absolute_error": 1.9317880628477724e-14,
+  "original_summary": {
+    "status": "EXPLORATORY full-3D initial coefficients on a mapped finite cylinder; not a validated whole-space evolution",
+    "parameters": {
+      "nr": 384,
+      "nz": 1024,
+      "R": 8.0,
+      "L": 16.0,
+      "mapping": 4.0,
+      "nu": 0.001,
+      "A": 1020,
+      "lam": 0.25,
+      "T": 0.001,
+      "pressure": "fd"
+    },
+    "analytic_initial_divergence_max": 1.1368683772161603e-13,
+    "source_compatibility_repairs": [
+      {
+        "tag": "p0",
+        "source_repaired": false,
+        "raw_midpoint_mean_source_radial_integral": [
+          -0.06314296370319283,
+          0.0
+        ],
+        "computed_outer_zero_mode_radial_flux": [
+          -0.004259248867716464,
+          0.0
+        ]
+      },
+      {
+        "tag": "p1",
+        "source_repaired": false,
+        "raw_midpoint_mean_source_radial_integral": [
+          -125.75443729496783,
+          -5.25969849633275e-13
+        ],
+        "computed_outer_zero_mode_radial_flux": [
+          126.32747752525586,
+          5.683859912044008e-13
+        ]
+      }
+    ],
+    "initial": {
+      "energy": 81036.69515960476,
+      "fluctuation_energy": 6.444025497458467,
+      "fluctuation_energy_derivative": 447.05835724829996,
+      "fractional_fluctuation_energy_derivative": 69.3756344422629,
+      "energy_derivative": -4612.609521395708,
+      "viscous_energy_derivative": -4611.133429456402,
+      "energy_identity_relative_error": -0.00032001233411559565,
+      "pressure_zz_at_core": -8.227932685206916,
+      "beta_prime": 0.11396634260345806,
+      "mean_G": 41.870254950482966,
+      "mean_G_prime": 103.38458144067852,
+      "radial_mean_acceleration": 6634.417222318452,
+      "vertical_mean_acceleration": -126.86128532747802,
+      "axial_mean_strain_derivative": -31494.765248473734,
+      "mixed_pressure_radial_unit": [
+        -46.84877585440469,
+        55.08378367989054
+      ],
+      "N0_L2": 27457.609820264446,
+      "numerical_div_N0_L2": 10445.61144743776,
+      "numerical_div_N0_exterior_max": 0.021570569877532586
+    },
+    "second_coefficient": {
+      "pressure_zz_time_derivative": -148.39981073017407,
+      "pressure_T": -116.39981073017407,
+      "beta_second": 57.06024193905245,
+      "mean_G_second": -68370.40456188265,
+      "N1_L2": 51551238.19613848
+    },
+    "direct_core_jet_checks": {
+      "b1": 2.1157264000828846,
+      "b2": -545.1629442804988,
+      "Omega1": 2.0000000000000893,
+      "Omega2": 8.123809892301043,
+      "beta1": 0.11572640008279533,
+      "beta2": -553.7496597731312,
+      "b1_pressure_discrepancy": 0.0017600574794265356,
+      "b2_pressure_discrepancy": -610.8999440452543,
+      "Omega2_ode_discrepancy": -0.10764290786472586
+    },
+    "quadratic_field_at_T": {
+      "core_b": 1.0018058411357216,
+      "core_Omega": 1.0020040619049464,
+      "core_beta": 0.9998021756829528,
+      "mean_fixed_receiver": 41.939518727174594,
+      "mean_radial_branch_value": 42.058551986720786,
+      "mean_radial_branch_radius": 0.219018234301559,
+      "fluctuation_energy": 261.06696372587953,
+      "energy": 81363.3452175698,
+      "scope": "Values of the full quadratic time polynomial only, not actual NS endpoint values or error bounds."
+    },
+    "corotating_quadratic_diagnostics": {
+      "candidates": [
+        {
+          "rotation_rate": 1020.0,
+          "first_coefficient_L2": 25510.64102388715,
+          "second_coefficient_L2": 33117164.615485158,
+          "fluctuation_energy_at_T": 69.85823319147426,
+          "total_energy_at_T": 81172.1364870354
+        },
+        {
+          "rotation_rate": 755.1530083212626,
+          "first_coefficient_L2": 25225.552697738804,
+          "second_coefficient_L2": 27274256.957045607,
+          "fluctuation_energy_at_T": 24.02540236381679,
+          "total_energy_at_T": 81126.30365620775
+        }
+      ],
+      "scope": "Exact rotation formulas applied to approximate initial jets. Positive-time polynomial values still have no NS residual/error enclosure; finite-cylinder L2 optimum only."
+    },
+    "seconds": 28.630913972854614,
+    "unresolved_errors": [
+      "periodic axial images",
+      "finite radial boundary and future source tails",
+      "source zero-mode compatibility repair",
+      "radial/axial quadrature and differentiation",
+      "whole-space smooth divergence-free reconstruction",
+      "space-time H4 residual and endpoint inheritance"
+    ]
+  },
+  "scope": "Read-only extraction from the original solver. Direct means the derivative of its reconstructed grid polynomial, not a certified derivative of the whole-space NS solution. Local finite differences are an independent diagnostic, not replacement values or error bounds."
+}

@@ -1,0 +1,60 @@
+{
+ "gradK_norm_residual": "0",
+ "gradK_sup_symbolic": "3/(2*pi**2)",
+ "gradK_sup_num": 0.15198177546350666,
+ "K_sup_num": 0.037995443865876666,
+ "gradK_sup_equals_3_over_2pi2": true,
+ "step_a_residual": "0",
+ "I_ab": "pi/(sqrt(a)*sqrt(b))",
+ "step_b_residual": "0",
+ "step_c_residual": "0",
+ "J_ab": "pi/(2*a**(3/2)*sqrt(b))",
+ "J_of_lambda": "pi/(2*lambda)",
+ "step_d_residual": "0",
+ "angular_identity_mpmath": [
+  {
+   "lam": 0.5,
+   "quad": "3.14159265358979323846264338328",
+   "closed": "3.14159265358979323846264338328",
+   "err": 0.0
+  },
+  {
+   "lam": 0.7,
+   "quad": "2.24399475256413816656707191185",
+   "closed": "2.2439947525641381698352962129",
+   "err": 3.268224301049197e-18
+  },
+  {
+   "lam": 1.0,
+   "quad": "1.57079632679489661923132169164",
+   "closed": "1.57079632679489661923132169164",
+   "err": 0.0
+  },
+  {
+   "lam": 1.25,
+   "quad": "1.25663706143591726527494258535",
+   "closed": "1.25663706143591729538505735331",
+   "err": 3.0110114767965034e-17
+  },
+  {
+   "lam": 1.5,
+   "quad": "1.04719755119659777521978527783",
+   "closed": "1.04719755119659774615421446109",
+   "err": 2.906557081673876e-17
+  },
+  {
+   "lam": 3.0,
+   "quad": "0.523598775598298887609892638916",
+   "closed": "0.523598775598298873077107230547",
+   "err": 1.453278540836938e-17
+  }
+ ],
+ "angular_identity_max_err": 3.0110114767965034e-17,
+ "detDLambda_max_rel_err_fd": 3.228389174796606e-10,
+ "detDLambda_formula": "lambda^2 * (1 + dlog(lambda)/dlog(rho) * (sin^2 phi - 2 cos^2 phi))",
+ "antiderivative_residual": "0",
+ "per_shell_core": "lambda/3",
+ "per_shell_core_residual": "0",
+ "a_integrand_residual": "0",
+ "consequence": "a[eta0 o Lambda^-1](0) = (M/2) int_0^L lambda(rho) dlog rho + shear term, EXACTLY, for ANY profile lambda(.) and the bang-bang cap; and int_S |eta0| |Lambda x|^-4 dx_5 <= pi^3 M int_0^L dlog(rho)/lambda(rho)."
+}

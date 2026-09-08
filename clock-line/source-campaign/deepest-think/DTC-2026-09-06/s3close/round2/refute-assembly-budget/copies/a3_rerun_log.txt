@@ -1,0 +1,7 @@
+kappa(run datum) = 0.4000000000  (exact 2/5, rel 0.00e+00)
+Q' = M T_d log(R/s*) : mean 1.0272  sd 0.0762
+one-parameter fit c = 1.0534  rms 8.78% of mean T_d  (record: 1.0538, 8.8%)
+L range of the runs: 1.386 .. 4.852
+ratio measured/(eps=0 bound at L=log(R/rho0)):  min 1.068 max 3.271 mean 1.500 ; 19/19 above 1
+ratio measured/(eps=0 bound at L=log(R/s*)):    min 0.938 max 1.185 mean 1.013 ; 8/19 above 1
+RERUN_DONE

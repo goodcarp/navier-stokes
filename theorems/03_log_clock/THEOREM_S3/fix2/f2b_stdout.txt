@@ -1,0 +1,116 @@
+f=1 LMAX=  81: K2=0.714180 |grad a|=0.346775 ||Hess a||=0.325697  PDE resid/Hess = 3.04e-01   a rel vs kernel = 4.33e-05
+f=1 LMAX= 161: K2=0.702051 |grad a|=0.346684 ||Hess a||=0.324049  PDE resid/Hess = 1.02e-01   a rel vs kernel = 3.49e-05
+f=1 LMAX= 321: K2=0.705077 |grad a|=0.346757 ||Hess a||=0.324383  PDE resid/Hess = 1.44e-02   a rel vs kernel = 3.55e-05
+f=1 LMAX= 641: K2=0.704969 |grad a|=0.346757 ||Hess a||=0.324368  PDE resid/Hess = 1.06e-02   a rel vs kernel = 3.55e-05
+f=4 LMAX=  81: K2=0.292817 |grad a|=0.108522 ||Hess a||=0.024179  PDE resid/Hess = 3.89e-01   a rel vs kernel = 3.63e-05
+f=4 LMAX= 161: K2=0.292778 |grad a|=0.108447 ||Hess a||=0.022885  PDE resid/Hess = 1.34e-01   a rel vs kernel = 2.66e-05
+f=4 LMAX= 321: K2=0.292697 |grad a|=0.108509 ||Hess a||=0.023139  PDE resid/Hess = 1.89e-02   a rel vs kernel = 2.73e-05
+f=4 LMAX= 641: K2=0.292697 |grad a|=0.108509 ||Hess a||=0.023130  PDE resid/Hess = 1.39e-02   a rel vs kernel = 2.73e-05
+{
+ "measured_lam1": {
+  "f=1": {
+   "LMAX=161": {
+    "K2_measured": 0.702050778009187,
+    "PDE_residual_abs": 0.017011595299104287,
+    "PDE_residual_over_hessian_scale": 0.1015749528180854,
+    "a": 4.289112178806424,
+    "a_kernel_quadrature": 4.2892619757083805,
+    "a_rel_vs_kernel": 3.4923700814902784e-05,
+    "dz_eta": -0.09445481468453087,
+    "grad_a": 0.3466841193985163,
+    "hess_a_op": 0.32404911044463697
+   },
+   "LMAX=321": {
+    "K2_measured": 0.7050765435764705,
+    "PDE_residual_abs": 0.0024854258380439254,
+    "PDE_residual_over_hessian_scale": 0.014430920048224324,
+    "a": 4.289109543836613,
+    "a_kernel_quadrature": 4.2892619757083805,
+    "a_rel_vs_kernel": 3.553801857543023e-05,
+    "dz_eta": -0.09445481468453087,
+    "grad_a": 0.34675650917259715,
+    "hess_a_op": 0.32438253484539353
+   },
+   "LMAX=641": {
+    "K2_measured": 0.7049690023456804,
+    "PDE_residual_abs": 0.0018228931339184795,
+    "PDE_residual_over_hessian_scale": 0.010594327856289205,
+    "a": 4.289109621593688,
+    "a_kernel_quadrature": 4.2892619757083805,
+    "a_rel_vs_kernel": 3.551989026433953e-05,
+    "dz_eta": -0.09445481468453087,
+    "grad_a": 0.34675671198281405,
+    "hess_a_op": 0.3243683132820794
+   },
+   "LMAX=81": {
+    "K2_measured": 0.7141796976111852,
+    "PDE_residual_abs": 0.05639170807772245,
+    "PDE_residual_over_hessian_scale": 0.3036802887758959,
+    "a": 4.289076371340388,
+    "a_kernel_quadrature": 4.2892619757083805,
+    "a_rel_vs_kernel": 4.327186565971998e-05,
+    "dz_eta": -0.09445481468453087,
+    "grad_a": 0.3467751266755194,
+    "hess_a_op": 0.32569714897540836
+   }
+  },
+  "f=4": {
+   "LMAX=161": {
+    "K2_measured": 0.2927775630840252,
+    "PDE_residual_abs": 0.002797480815139638,
+    "PDE_residual_over_hessian_scale": 0.13394725732019885,
+    "a": 3.787771839536469,
+    "a_kernel_quadrature": 3.78787248345846,
+    "a_rel_vs_kernel": 2.6570039627933572e-05,
+    "dz_eta": -1.048390567133517e-05,
+    "grad_a": 0.10844701338782102,
+    "hess_a_op": 0.022884931762170473
+   },
+   "LMAX=321": {
+    "K2_measured": 0.2926974476895657,
+    "PDE_residual_abs": 0.00040948083215998354,
+    "PDE_residual_over_hessian_scale": 0.018893908345739507,
+    "a": 3.7877691310644304,
+    "a_kernel_quadrature": 3.78787248345846,
+    "a_rel_vs_kernel": 2.7285077436222037e-05,
+    "dz_eta": -1.048390567133517e-05,
+    "grad_a": 0.10850917871806266,
+    "hess_a_op": 0.023139084947584373
+   },
+   "LMAX=641": {
+    "K2_measured": 0.2926969140314354,
+    "PDE_residual_abs": 0.0003002908461511543,
+    "PDE_residual_over_hessian_scale": 0.013873259608993656,
+    "a": 3.787769211132955,
+    "a_kernel_quadrature": 3.78787248345846,
+    "a_rel_vs_kernel": 2.7263939310519817e-05,
+    "dz_eta": -1.048390567133517e-05,
+    "grad_a": 0.10850936375450411,
+    "hess_a_op": 0.023129771238017946
+   },
+   "LMAX=81": {
+    "K2_measured": 0.2928167318380638,
+    "PDE_residual_abs": 0.009283874067359445,
+    "PDE_residual_over_hessian_scale": 0.3886354124527212,
+    "a": 3.7877349949090027,
+    "a_kernel_quadrature": 3.78787248345846,
+    "a_rel_vs_kernel": 3.629703746834042e-05,
+    "dz_eta": -1.048390567133517e-05,
+    "grad_a": 0.10852181156590769,
+    "hess_a_op": 0.024179404085431365
+   }
+  }
+ },
+ "slack_lam1": {
+  "f=1": {
+   "bound": 43.5885085063578,
+   "measured": 0.7049690023456804,
+   "slack": 61.83039021761732
+  },
+  "f=4": {
+   "bound": 19.168547410292348,
+   "measured": 0.2926969140314354,
+   "slack": 65.48940727210285
+  }
+ }
+}

@@ -1,0 +1,56 @@
+=== (1) decay of |g_l| (bang-bang shell) ===
+   l=   11  |g_l| = 2.353070e-02   l^1.5 |g_l| = 0.85847   l^2 |g_l| = 2.8472
+   l=   51  |g_l| = 3.471194e-03   l^1.5 |g_l| = 1.26425   l^2 |g_l| = 9.0286
+   l=  101  |g_l| = 1.728549e-03   l^1.5 |g_l| = 1.75454   l^2 |g_l| = 17.6329
+   l=  501  |g_l| = 1.501560e-04   l^1.5 |g_l| = 1.68383   l^2 |g_l| = 37.6893
+   l= 1001  |g_l| = 5.307408e-05   l^1.5 |g_l| = 1.68087   l^2 |g_l| = 53.1803
+   l= 2001  |g_l| = 1.949109e-05   l^1.5 |g_l| = 1.74464   l^2 |g_l| = 78.0423
+   l= 3001  |g_l| = 1.145981e-05   l^1.5 |g_l| = 1.88398   l^2 |g_l| = 103.2071
+   fitted power-law exponent of |g_l| over l=400..2400 : -1.4461   (l^-1.5 predicted)
+
+=== (2) s4's Dall with factor 0.5^(l-1)  [the number reported as 124.3991] ===
+   LMAX=   40   Dall =     65.409   Dall/sqrt(LMAX) = 10.3421
+   LMAX=   80   Dall =     97.977   Dall/sqrt(LMAX) = 10.9541
+   LMAX=  120   Dall =    123.233   Dall/sqrt(LMAX) = 11.2496
+   LMAX=  240   Dall =    180.637   Dall/sqrt(LMAX) = 11.6601
+   LMAX=  500   Dall =    268.095   Dall/sqrt(LMAX) = 11.9896
+   LMAX= 1000   Dall =    387.116   Dall/sqrt(LMAX) = 12.2417
+   LMAX= 2000   Dall =    560.274   Dall/sqrt(LMAX) = 12.5281
+   LMAX= 4000   Dall =    834.716   Dall/sqrt(LMAX) = 13.1980
+   ratio Dall(2000)/Dall(120) = 4.546   ->  R7 FIRED  (criterion >1.5)
+
+=== (3) the CORRECT l1 constant at the stated validity range rho >= 4 rho_in (factor 0.25^(l-1)) ===
+   LMAX=   40   D_l1(rho>=4rho_in) =   13.44766
+   LMAX=  120   D_l1(rho>=4rho_in) =   13.44766
+   LMAX=  500   D_l1(rho>=4rho_in) =   13.44766
+   LMAX= 2000   D_l1(rho>=4rho_in) =   13.44766
+   LMAX= 4000   D_l1(rho>=4rho_in) =   13.44766
+
+=== (4) datum-independent Cauchy-Schwarz constant (valid for ANY z-odd |omega^theta|<=M_in) ===
+   j=2  |x|=4 rho_in :  sqrt(2) INT S dv/v = 1.4324e-02   => D_CS = 14.6682
+   j=3  |x|=8 rho_in :  sqrt(2) INT S dv/v = 4.1648e-04   => D_CS = 13.6471
+   j=4  |x|=16 rho_in :  sqrt(2) INT S dv/v = 1.2958e-05   => D_CS = 13.5875
+   j=5  |x|=32 rho_in :  sqrt(2) INT S dv/v = 4.0483e-07   => D_CS = 13.5838
+   j=6  |x|=64 rho_in :  sqrt(2) INT S dv/v = 1.2651e-08   => D_CS = 13.5835
+
+=== (5) both candidate constants vs the exact octave field (bang-bang z-odd octave 1<rho'<2) ===
+       rho    phi   |a|/(rho_in/rho)^5
+       4.0      5             12.11365
+       4.0     40              5.93445
+       4.0     90              3.20668
+       8.0      5             12.16882
+       8.0     40              5.99159
+       8.0     90              3.11981
+      16.0      5             12.24932
+      16.0     40              5.99546
+      16.0     90              3.10456
+      32.0      5             12.27373
+      32.0     40              5.99574
+      32.0     90              3.10112
+   worst measured D_measured = 12.2737
+
+   reported  D(s4, 0.5^(l-1), LMAX=120) = 123.2330   <-- truncation-dependent
+   correct   D_l1  (0.25^(l-1), rho>=4rho_in) = 13.4477
+   universal D_CS  (Cauchy-Schwarz, any z-odd datum) = 13.5835
+   exact     D_measured (bang-bang) = 12.2737
+SCRIPT-SHA256 20045ad02c8aeefdc9d0e90979321174175c7f33ec75506e8821e1299a1b9042

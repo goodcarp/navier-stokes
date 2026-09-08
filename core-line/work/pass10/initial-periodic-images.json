@@ -1,0 +1,118 @@
+{
+  "status": "NUMERICAL IMAGE QUADRATURE; EXACT ANALYTIC IMAGE-TAIL BOUND, NO QUADRATURE ENCLOSURE",
+  "order_per_piece": 72,
+  "initial_parameters": {
+    "A": 1020,
+    "lam": 0.25,
+    "c": 1.4
+  },
+  "whole_space_pzz_reference": -8.709035202638178,
+  "energy_from_stress_cloud": 81037.42658034676,
+  "raw_source_monopole_quadrature": 3.49233576085739e-11,
+  "axial_stress_moment": 104061.66177148014,
+  "leading_two_image_coefficient_over_distance_fifth": 198743.13428745582,
+  "point_count": 259200,
+  "results": [
+    {
+      "period": 16,
+      "positive_image_pairs": 8,
+      "correction_source": 0.4801244103155886,
+      "correction_stress": 0.48012441031558606,
+      "source_stress_difference": 2.55351295663786e-15,
+      "periodic_pzz_reference": -8.228910792322592,
+      "rigorous_image_tail_bound_exact": "16875/110766728",
+      "rigorous_image_tail_bound_float": 0.00015234719220017044,
+      "numerical_energy_tail_bound": 4.366442178278278e-05
+    },
+    {
+      "period": 16,
+      "positive_image_pairs": 16,
+      "correction_source": 0.4801328681109637,
+      "correction_stress": 0.4801328681109611,
+      "source_stress_difference": 2.55351295663786e-15,
+      "periodic_pzz_reference": -8.228902334527216,
+      "rigorous_image_tail_bound_exact": "27/3125000",
+      "rigorous_image_tail_bound_float": 8.64e-06,
+      "numerical_energy_tail_bound": 2.476321347016077e-06
+    },
+    {
+      "period": 16,
+      "positive_image_pairs": 32,
+      "correction_source": 0.48013346531462836,
+      "correction_stress": 0.4801334653146258,
+      "source_stress_difference": 2.55351295663786e-15,
+      "periodic_pzz_reference": -8.228901737323552,
+      "rigorous_image_tail_bound_exact": "16875/32777216648",
+      "rigorous_image_tail_bound_float": 5.148393221188804e-07,
+      "numerical_energy_tail_bound": 1.4755875042202196e-07
+    },
+    {
+      "period": 32,
+      "positive_image_pairs": 8,
+      "correction_source": 0.008382904442203892,
+      "correction_stress": 0.008382904442203819,
+      "source_stress_difference": 7.28583859910259e-17,
+      "periodic_pzz_reference": -8.700652298195974,
+      "rigorous_image_tail_bound_exact": "27/6250000",
+      "rigorous_image_tail_bound_float": 4.32e-06,
+      "numerical_energy_tail_bound": 1.2381606735080385e-06
+    },
+    {
+      "period": 32,
+      "positive_image_pairs": 16,
+      "correction_source": 0.00838316591700548,
+      "correction_stress": 0.008383165917005407,
+      "source_stress_difference": 7.28583859910259e-17,
+      "periodic_pzz_reference": -8.700652036721173,
+      "rigorous_image_tail_bound_exact": "16875/65554433296",
+      "rigorous_image_tail_bound_float": 2.574196610594402e-07,
+      "numerical_energy_tail_bound": 7.377937521101098e-08
+    },
+    {
+      "period": 32,
+      "positive_image_pairs": 32,
+      "correction_source": 0.008383184525666922,
+      "correction_stress": 0.008383184525666849,
+      "source_stress_difference": 7.28583859910259e-17,
+      "periodic_pzz_reference": -8.700652018112512,
+      "rigorous_image_tail_bound_exact": "16875/1073967432976",
+      "rigorous_image_tail_bound_float": 1.5712766962810785e-08,
+      "numerical_energy_tail_bound": 4.503456047534412e-09
+    },
+    {
+      "period": 64,
+      "positive_image_pairs": 8,
+      "correction_source": 0.00020947351845066627,
+      "correction_stress": 0.00020947351845067248,
+      "source_stress_difference": -6.207057437479513e-18,
+      "periodic_pzz_reference": -8.708825729119727,
+      "rigorous_image_tail_bound_exact": "16875/131108866592",
+      "rigorous_image_tail_bound_float": 1.287098305297201e-07,
+      "numerical_energy_tail_bound": 3.688968760550549e-08
+    },
+    {
+      "period": 64,
+      "positive_image_pairs": 16,
+      "correction_source": 0.00020948166741606187,
+      "correction_stress": 0.00020948166741606807,
+      "source_stress_difference": -6.207057437479513e-18,
+      "periodic_pzz_reference": -8.708825720970763,
+      "rigorous_image_tail_bound_exact": "16875/2147934865952",
+      "rigorous_image_tail_bound_float": 7.856383481405393e-09,
+      "numerical_energy_tail_bound": 2.251728023767206e-09
+    },
+    {
+      "period": 64,
+      "positive_image_pairs": 32,
+      "correction_source": 0.0002094822485152101,
+      "correction_stress": 0.0002094822485152163,
+      "source_stress_difference": -6.207057437479513e-18,
+      "periodic_pzz_reference": -8.708825720389664,
+      "rigorous_image_tail_bound_exact": "16875/34773863631392",
+      "rigorous_image_tail_bound_float": 4.852782589498092e-10,
+      "numerical_energy_tail_bound": 1.3908621665280189e-10
+    }
+  ],
+  "seconds": 56.779978435000004,
+  "note": "All source sums subtract the exact zero monopole term; all stress sums decay directly as n^-5. Bounds cover omitted exact image integrals, not quadrature error in retained images."
+}

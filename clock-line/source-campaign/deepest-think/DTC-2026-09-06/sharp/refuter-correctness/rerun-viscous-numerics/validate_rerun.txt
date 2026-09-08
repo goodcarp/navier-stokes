@@ -1,0 +1,21 @@
+==============================================================================
+C3 / C2 : exact Hill spherical vortex, full domain, Dirichlet = exact monopole
+      h   rel err psi1     a_nose  axis peak/U  bad-op rel err
+  0.080      6.116e-03    0.17061      2.48320       1.826e+00
+  0.040      1.677e-03    0.18030      2.49410       1.835e+00
+  0.020      4.405e-04    0.19446      2.49832       1.847e+00
+  Richardson (2nd order) a_nose -> 0.19918   exact 1/5 = 0.20000
+  exact axis peak/U = 2.5 ; measured 2.49832
+  C3 exact-Hill validation: PASS
+  C2 operator control (3/r -> 1/r must exceed 100% error): FIRES
+==============================================================================
+C4 : pure 5D diffusion, u = 0, must give d<|X|^2>/dt = 10 nu
+  nu = 0.020   d<|X|^2>/dt = 0.20015   exact 10 nu = 0.20000   rel 7.60e-04
+  nu = 0.050   d<|X|^2>/dt = 0.50036   exact 10 nu = 0.50000   rel 7.27e-04
+  C4 5D diffusion law: PASS
+==============================================================================
+odd-symmetry half-domain solver == full-domain solver on an odd datum
+  max rel difference psi1 (half vs full) = 3.575e-16
+  half-domain symmetry check: PASS
+==============================================================================
+SCRIPT-SHA256 3c8e93b2da7c8f5437f74c3c39e67fb7b5ef6b29d92e01204e3176d817969f03

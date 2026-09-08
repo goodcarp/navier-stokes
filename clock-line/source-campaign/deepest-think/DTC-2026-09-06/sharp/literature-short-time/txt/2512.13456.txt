@@ -1,0 +1,1279 @@
+                                                           GROWTH ESTIMATES FOR AXISYMMETRIC EULER
+                                                                  EQUATIONS WITHOUT SWIRL
+
+                                                                             KHAKIM EGAMBERGANOV AND YAO YAO
+
+
+
+
+                                                   Abstract. We consider the axisymmetric Euler equations in R3 without swirl, and establish several
+
+
+
+
+arXiv:2512.13456v1 [math.AP] 15 Dec 2025
+                                                   upper and lower bounds for  R the growth of solutions. On the one hand, we obtain an upper bound
+                                                   t2 for the radial moment R3 rω θ dx, which is the conjectured optimal rate by Childress (Phys. D
+                                                   237(14-17):1921-1925, 2008). On the other hand, for all initial data satisfying certain symmetry and
+                                                   sign conditions, we prove that the radial moment grows at least like t/ log t as time goes to infinity,
+                                                   and ∥ω(·, t)∥Lp (R3 ) exhibits at least t1/4 growth in the limsup sense for all 1 ≤ p ≤ ∞. To the
+                                                   best of our knowledge, this is the first result to establish power-law Lp -norm growth for smooth,
+                                                   compactly supported initial vorticity in R3 . For these initial data, we also show that nearly all
+                                                   vorticity must eventually escape to r → ∞ in the time-integral sense.
+
+                                                                                           1. Introduction
+                                              The incompressible Euler equations in R3 describe the motion of incompressible and inviscid
+                                           fluids in three dimensions. The equations can be written in vorticity form as
+                                                                               (
+                                                                                 ∂t ω + u · ∇ω = ω · ∇u,
+                                                                                                                                    (1.1)
+                                                                                 u = ∇ × (−∆)−1 ω,
+                                           where u(·, t) and ω(·, t) := ∇ × u(·, t) denote the velocity and vorticity of the fluid, respectively. At
+                                           each time, the velocity u can be recovered from the vorticity ω through the second equation, which
+                                           is known as the Biot–Savart law. The term ω · ∇u on the right hand side of the first equation is
+                                           referred to as the vortex stretching term, which can cause vorticity growth and might potentially
+                                           lead to singularities.
+                                              In this paper, we restrict ourselves to axisymmetric Euler flows in R3 without swirl. These are
+                                           the solutions of (1.1) where the velocity field u takes the form
+                                                                                u(r, z, t) = ur (r, z, t)er + uz (r, z, t)ez
+                                           when expressed in cylindrical coordinates (r, θ, z), where (er , eθ , ez ) are the cylindrical unit vectors
+                                           in R3 . Then the vorticity becomes
+                                                                      ω(r, z, t) = ω θ (r, z, t)eθ   with     ω θ := −∂z ur + ∂r uz ,                        (1.2)
+                                           and the first equation in (1.1) simplifies to
+                                                                                                     ωθ
+                                                                                      (∂t + ur ∂r + uz ∂z )
+                                                                                                        = 0.                                 (1.3)
+                                                                                                     r
+                                           This tells us that the quantity ω θ /r remains conserved along particle trajectories, and consequently,
+                                           ∥ω θ /r∥Lp (R3 ) is conserved in time for all 1 ≤ p ≤ ∞.
+                                             Before stating our results, we begin with a brief review of the existing literature on well-posedness
+                                           and growth results for the axisymmetric Euler equations in R3 without swirl.
+                                           Global well-posedness and singularity for 3D axisymmetric Euler without swirl. For the
+                                           3D axisymmetric Euler equation without swirl, global well-posedness of the solution was first shown
+                                           by Ukhovsksii–Yudovich [31] in 1968, for u0 ∈ H 3 (R3 ) and ω0θ /r ∈ (L2 ∩ L∞ )(R3 ). Subsequently,
+                                                                                                     1
+the regularity requirements on u0 were relaxed by Majda [25], Saint Raymond [27] and Shirota–
+Yanagisawa [30] to u0 ∈ H s with s > 5/2.
+    The first well-posedness result using only Lp bounds on ω0θ (without any additional regularity of
+u0 ) is obtained by Danchin [12], under the assumption ω0θ ∈ (L3,1 ∩ L∞ )(R3 ) and ω0θ /r ∈ L3,1 (R3 ),
+where L3,1 denotes the Lorentz space. Here the condition ω0θ /r ∈ L3,1 (R3 ) is necessary – Kim–
+Jeong [21] showed that there exists some q0 < ∞ such that the equation is ill-posed if the condition
+is replaced by ω0θ /r ∈ L3,q (R3 ) for any q ∈ (q0 , ∞]. The well-posedness theory has been further
+                                                                                           1+3/p
+extended by Abidi–Hmidi–Keraani [1] when u0 belongs to the critical Besov spaces Bp,1             and
+  θ        3,1
+ω0 /r ∈ L (R ). 3
+
+   On the other hand, if ω0θ /r is more singular near the axis, finite-time singularity can happen:
+Elgindi [15] and Elgindi–Ghoul–Masmoudi [16] proved finite-time singularity formation of (1.1)–
+(1.2) for some ω0θ ∈ C α (R3 ) with sufficiently small α > 0, and a new proof was recently found by
+Córdoba–Martı́nez-Zoroa–Zheng [11] for some initial data u0 ∈ C ∞ (R3 \ {0}) ∩ C 1,α ∩ L2 for small
+α > 0.
+Vorticity growth from anti-parallel vortex rings. For initial data belonging to the class that
+leads to global well-posedness, it is natural to ask whether the vorticity can grow as t → ∞. Since
+ω θ /r is conserved along each particle trajectory by (1.3), the vorticity would only grow to infinity
+if the radius of some fluid particles grow to infinity. When the initial vorticity consists of two
+anti-parallel vortex rings of the form
+                                     ω0θ (r, z) = f (r, z) − f (r, −z)                                (1.4)
+where f ≥ 0 is localized near a point (r0 , z0 ) with r0 > 0, z0 > 0, experimental evidence shows that
+the two vortex rings move toward each other and expand over time as their vorticity amplitude
+increases; see [29, Section 5.2] and the references therein.
+   This scenario has been formally analyzed in a series of work by Childress, Gilbert and Valiant
+[6, 8, 7]. Childress [6] conjectured that this scenario leads to the fastest possible growth of vorticity
+amplitude: for t ≫ 1, formal analysis suggests that there is a region in the rz-plane of length scale
+t−1 and located at r ∼ t4/3 , where the vorticity amplitude is of order t4/3 , and the kinetic energy in
+this region remains of order 1. See Figure 1 for an illustration of the conjectured scenario, with the
+region contained within the dashed orange rectangle. Numerical simulations by Childress–Gilbert–
+Valiant [8] suggest that the t4/3 vorticity growth can be achieved, although rigorously justifying
+these asymptotics remains a challenging open question.
+
+         z       initial vorticity                           z   conjectured scenario for t  1
+
+
+                                           time t  1                    ∼ t4/3
+
+
+                                       r                                                          r
+                                                                                          −1
+                                                                                length ∼ t
+                                                                   vorticity amplitude ∼ t4/3
+                                                                        kinetic energy ∼ 1
+
+        Figure 1.     The conjectured vorticity growth scenario in Childress [6], where
+        ∥ω ∥L is conjectured to have t4/3 growth. See Childress–Gilbert–Valiant [8, Fig-
+          θ   ∞
+
+        ure 7] for numerical simulations of this scenario.
+                                                    2
+Upper bounds of vorticity growth. For compactly supported initial vorticity satisfying ω0θ /r ∈
+L∞ (R3 ), Childress [5] established the upper bound ∥ω θ ∥L∞ ≲ t2 by solving a variational optimiza-
+tion problem that maximizes the radial velocity subject to constraints on the vorticity. Alterna-
+tively, this t2 upper bound also be derived using the interpolation inequality for maximum velocity
+in Feng–Šverák [19, Eq. (1.23)]; see [24, Section 1.4.2] for an explanation.
+   For compactly supported vorticity with ω0θ /r ∈ L∞ (R3 ), Lim–Jeong [24] has obtained the upper
+bound ∥ω θ ∥L∞ ≲ t4/3 , which matches the conjectured growth rate by Childress [6]. They obtained
+this bound by deriving a novel interpolation inequality that bounds the radial velocity ur by the
+kinetic energy and conserved quantities involving the vorticity. Very recently, Shao–Wei–Zhang [28]
+improved upon this by proving the same t4/3 upper bound without the compact support assumption
+for ω0θ , for all initial data u0 ∈ L2 ∩ C 1,α (R3 ) and ω0θ , ω0θ /r ∈ L∞ (R3 ).
+
+Lower bounds of vorticity growth. When the initial vorticity satisfies the odd-in-z assump-
+tion (1.4) with f ≥ 0 in {z > 0} (which is the scenario in Figure 1, except      that f does not need to
+be localized), Choi–Jeong [10] showed that the radial moment P (t) = R3 r|ω θ | dx increases in time,
+                                                                          R
+
+while the vertical moment Z(t) = R3 zω θ dx decreases in time. By controlling P ′ (t) from below
+                                       R
+                                                                                                      2
+using Z(t) and the kinetic energy E, they also established a quantitative lower bound P (t) ≳ t 15 − .
+                                                                                     1
+For patch-type initial vorticity, this directly leads to the estimate ∥ω θ ∥L∞ ≳ t 15 − . For certain ini-
+                                  1
+tial vorticity in C 1,γ (with γ < 14 ) where r/ω0θ satisfies some integrability condition in its support,
+the growth of P (t) also implies a (slower) growth for ∥ω θ ∥L∞ .
+                                                                                                3
+   More recently, Gustafson–Miller–Tsai [20] has improved the lower bound into P (t) ≳ t 4 − , based
+                                                                                                   3
+on new estimates for the time derivative of P , leading to the lower bound ∥ω θ ∥L∞ ≳ t 8 − for
+patch-type initial data.
+   To the best of our knowledge, for smooth, compactly supported initial vorticity ω0 , there was no
+example in the literature showing ∥ω∥L∞ (or ∥ω∥Lp ) grows to infinity for the 3D incompressible
+Euler equation in the whole space R3 , even without restricting to the axisymmetric setting. (For
+periodic domains, it is known that the “2 + 12 -dimensional flows” can lead to exponential growth
+of ∥ω∥L∞ in T3 [18, Proposition 10.2], and linear growth in R2 × T [26, Section 2.3.1].) When the
+domain has a boundary, or when ω0 is less regular, significant progress has been made in the last
+decade on finite-time singularity formation [17, 15, 16, 2, 3, 32, 4, 11]. For other infinite-in-time
+growth results on 3D Euler equation, see [33, 13, 10, 9, 23]; these results are either in the presence
+of boundary, or the growth is on derivatives of ω instead of ω itself. We refer the readers to the
+reviews by Kiselev [22] and Drivas–Elgindi [14] for an overview on singularity formation and growth
+in Euler equations.
+
+1.1. Our results. Let us start by setting the initial data we will be working on. Since the evolution
+of the vorticity vector ω is completely determined by the scalar component ω θ , from now on, we
+will denote ω θ as ω (and the initial data ω0θ as ω0 ), and refer to it as the vorticity. Throughout this
+paper, we assume that
+                                                       ω0
+                           u0 ∈ L2 (R3 )    and ω0 ,      ∈ L1 (R3 ) ∩ L∞ (R3 ).                    (1.5)
+                                                       r
+Note that there is a global-in-time solution in this class by [12], and if in addition ω0 is assumed
+to be smooth, then ω(·, t) is also smooth for all times.
+   In the axisymmetric setting, since the functions ur , uz , and ω can be written as functions of
+(r, z) with r ≥ 0, it is sufficient to consider their evolution in the half plane
+
+                                     Π := {(r, z) : r ≥ 0, z ∈ R}.
+                                                       3
+For k ∈ N, we define the k-th radial moment as
+                                  ZZ
+                        Pk (t) :=     rk |ω| drdz           (k-th radial moment),                 (1.6)
+                                      Π
+and the vertical moment as
+                                      ZZ
+                            Z(t) :=           zω drdz       (vertical moment).                    (1.7)
+                                          Π
+These quantities play a key role in our study.
+  Now, we state our main results, which can be divided into upper bounds and lower bounds.
+Upper bounds for the solutions. We first prove an upper bound for all k-th radial moment
+for k ≥ 2, and ∥ω(·, t)∥L∞ . For this result, we do not require any additional symmetry or sign
+assumption on ω0 .
+Theorem 1.1 (Upper bounds for radial moments, ∥ur ∥L∞ and ∥ω∥L∞ ). Let the initial data u0
+and ω0 satisfy (1.5). In addition, assume that P2 (0) < ∞. Then for each k ≥ 2, if Pk (0) < ∞, we
+have
+                                                         4    2
+                          Pk (t) ≤ C(k, ω0 , u0 )(1 + t) 3 k− 3 for all t ≥ 0.               (1.8)
+In addition, we also have the following upper bounds for the velocity and vorticity growth:
+                       ∥ur (·, t)∥L∞ (R3 ) ≤ C(ω0 , u0 )(1 + t)1/3     for all t ≥ 0.             (1.9)
+
+                        ∥ω(·, t)∥L∞ (R3 ) ≤ C(ω0 , u0 )(1 + t)4/3      for all t ≥ 0.           (1.10)
+  We point out that these upper bounds matches the conjectured optimal rate by Childress [6], in
+the sense that if the conjectured vorticity growth scenario in Figure 1 is true for some initial data,
+then the solution would have exactly these growth rates for Pk , ∥ur ∥L∞ and ∥ω∥L∞ .
+   Note that the bound ∥ω∥L∞ ≲ t4/3 in (1.10) is the same as in Lim–Jeong [24], but we do not
+require ω0 to be compactly supported, and replace it by the more relaxed assumption P2 (0) < ∞.
+The same bound is also recently derived by Shao–Wei–Zhang [28] under the assumptions u0 ∈
+L2 ∩ C 1,α and ω0 , ω0 /r ∈ L∞ . Compared to their result, we require less regularity, but more
+integrability assumptions.
+Lower bounds for the solutions. Next we move on to deriving lower bounds for solutions, where
+we need to impose additional symmetry and sign conditions. In addition to (1.5), we also require
+the initial vorticity to be odd in z, and and non-negative on the upper half-space {z > 0}:
+                       ω0 (r, −z) = −ω0 (r, z),         and ω0 (r, z) ≥ 0   for z ≥ 0.          (1.11)
+It is known that these properties are preserved for all t, thus it suffices to track the evolution of ω
+in the first quadrant
+                                   Π+ := {(r, z) : r > 0, z > 0}.
+  Under these additional symmetry and sign conditions, in the next theorem we show that P2 (t) ≳
+                                                        3
+        t
+1 + log(2+t) , improving the previous bounds P2 (t) ≳ t 4 − in the literature [10, 20].
+
+Theorem 1.2 (P2 (t) has at least t1− -growth). In addition to (1.5), assume that the initial data
+ω0 satisfies (1.11), and P2 (0) < ∞, Z(0) < ∞. Then there exists a constant c > 0 depending on
+ω0 and u0 , such that
+                                               c(ω0 , u0 ) t
+                             P2 (t) ≥ P2 (0) +               for all t ≥ 0.                (1.12)
+                                               log(2 + t)
+  This immediately leads to the following corollary for patch-type initial data ω0 /r = 1D :
+                                                        4
+                    1
+Corollary 1.3 (t 2 − growth of ∥ω∥L∞ for patch-type solution). Consider patch-type initial data
+ω0 /r = 1D , where D ⊂ Π+ is a compact set. Then the global-in-time solution ω(·, t) (which is also
+of patch type) satisfies
+                                                               t     1/2
+                                ∥ω(t)∥L∞ ≥ c(ω0 , u0 ) 1 +                  .
+                                                           log(2 + t)
+                                               R
+   To see this, note that by conservation of Π+ ωdr, the maximum radius of vorticity support must
+grow like P2 (t)1/2 at least. Since ω/r = 1 in the support for all times, it implies ∥ω(t)∥L∞ ≳ P2 (t)1/2 ,
+which allows us to apply the lower bound of P2 (t) in Theorem 1.2 to conclude.
+   However, for smooth initial data, growth of P2 (t) does not imply growth of ∥ω∥L∞ : if there is a
+large set where ω0 > 0 but has very low value, then one can have growth of P2 if the vorticity in this
+set moves outwards, without causing growth in ∥ω∥L∞ . This is why Choi–Jeong [10, Corollary 1.4]
+need to impose the condition that r/ω0 satisfies some integrability condition in its support, which
+only holds for certain C 1,γ initial data for small γ. Also, note that even for patch-type initial data,
+although the growth of P2 implies growth for ∥ω∥Lp (R3 ) for sufficiently large p [10, Corollary 1.4],
+the range cannot be extended for all p ∈ [1, ∞].
+   In our next result, we aim to obtain the growth of ∥ω∥Lp using a completely different approach
+from [10, 20], without relying on the radial moment P2 (t) at all. Instead, we use the evolution of
+the vertical moment Z(t) in a crucial way. This lead to the following growth for all Lp (R3 ) norms
+for 1 ≤ p ≤ ∞, for all initial data ω0 (including those smooth ones) satisfying (1.5), (1.11), and
+Z(0) < ∞.
+Theorem 1.4 (Growth of ∥ω∥Lp (R3 ) for all 1 ≤ p ≤ ∞). Under the assumptions (1.5), (1.11), and
+Z(0) < ∞, let ω(·, t) be the corresponding global-in-time solution of (1.3). Then there exists some
+constant c(ω0 , u0 ) > 0 that only depends on the initial data, such that
+                                  ∥ω(·, t)∥Lp (R3 )
+                        lim sup                       ≥ c(ω0 , u0 ) > 0   for all 1 ≤ p ≤ ∞.        (1.13)
+                         t→∞            t1/4
+   Although the growth rate t1/4 is not optimal, to the best of our knowledge, this seems to be the
+first example that gives unbounded growth of ∥ω∥Lp for ω0 ∈ Cc∞ (R3 ) for 3D Euler equation in the
+whole space, even without restricting to the axisymmetric setting.
+Almost no vorticity is left behind in any bounded region. Note that although (1.4) gives
+the Lp -norm growth of vorticity, the growth of norm are likely driven by the “head” part of the
+vorticity located near the outmost part of the support (e.g., the part in the orange rectangle on the
+right of Figure 1), and it does not give much information on the “tail” part of the vorticity that is
+left behind.
+                                                                                 +
+   Under the symmetry and sign assumptions
+                                 +
+                                              RR (1.11), since ω(·, t) ≥ 0 on Π for all times, and
+the “total vorticity mass” on Π , given by Π+ ω(r, z, t)drdz, is conserved in time, it is natural
+to ask where the vorticity is located as time evolves. Along the proof of Theorem 1.4, we obtain
+a by-product that sheds light on this question. Heuristically speaking, for any bounded region
+Π+ ∩ {r ≤ R}, we prove that as t → ∞, almost no vorticity remains in this region in the time-
+integral sense. Since R is arbitrary, this means that, in the time-integral sense, nearly all vorticity
+must eventually escape to r → ∞. The precise statement is as follows:
+Theorem 1.5 (Nearly all vorticity escapes to r → ∞ in the time-integral sense). Under the
+assumptions (1.5), (1.11), and Z(0) < ∞, let ω(·, t) be the corresponding global-in-time solution of
+(1.3). Then there exists some constants C(ω0 , u0 ) > 0 and R0 (ω0 , u0 ) ≥ 1 that only depends on
+the initial data, such that the following holds: for any R ≥ R0 , defining the “vorticity mass” in
+                                                             5
+Π+ ∩ {r ≤ R} as                                   ZZ
+                                      mR (t) :=                ω(r, z, t) drdz,
+                                                   Π+ ∩{r≤R}
+we have that mR (t) satisfies
+                                      Z ∞
+                                            mR (t)4 dt ≤ C(ω0 , u0 )R4 < ∞.                            (1.14)
+                                       0
+1.2. Overview of the proof strategy. In the proof of the upper bounds in Theorem 1.1, the
+key step is to control the evolution of the second moment P2 (t) through an elementary but useful
+observation: its time derivative can be bounded by an interpolation of kinetic energy, ∥ω/r∥L∞
+and P2 itself. Once this is done, the bounds on ∥ur ∥L∞ and ∥ω∥L∞ directly follows from applying
+the P2 bound into an interpolation inequality in Lim–Jeong [24, Prop. A.1]. Finally, for k ≥ 2,
+we obtain upper bounds for Pk (t) by bounding its time derivative using an interpolation among
+∥ur ∥L∞ , the kinetic energy, ∥ω/r∥L∞ and Pk itself.
+   In the proofs of Theorems 1.2, 1.4 and 1.5, the common theme is to express the time derivative
+of P2 (t) and Z(t) from a new perspective. Previously, [10, 20] have already shown that P2′ (t) > 0
+and Z ′ (t) < 0, by expressing their time derivatives as double integrals of the form
+                          ZZ ZZ
+                                       K(r, r, z, z) ω(r, z, t)ω(r, z, t) drdzdrdz           (1.15)
+                                 Π+    Π+
+for some kernel K that is positive in P2′ (t), and negative in Z ′ (t); in both cases, the expression for
+the kernel K is quite involved. In this paper we take a completely different approach, and derive
+new representations for P2′ (t) and Z ′ (t) using the velocity field u, instead of ω (See Section 4.1 for
+the derivation):
+                                     Z ∞
+                             ′
+                           P2 (t) =         rur (r, 0, t)2 dr,                                          (1.16)
+                                       0
+                                     Z ∞
+                                            uz (0, z, t)2                ur (r, z, t)2
+                                                                ZZ
+                             ′
+                          −Z (t) =                        dz +                         drdz.            (1.17)
+                                       0          2                 Π+         r
+We find that when expressed in this form, the integrals on the right hand side are easier to work
+with, compared to the double integral representation (1.15).
+   In particular, in the proof of Theorem 1.2, in order to control P ′ (t) from below, we apply the
+Cauchy-Schwarz inequality to the new formulation (1.16) to obtain
+                         Z b(t)                         Z b(t)                 !2 Z                 !−1
+                                                                                        b(t)
+               P2′ (t) ≥        rur (r, 0, t)2 dr ≥            ur (r, 0, t) dr               r−1 dr
+                          a(t)                          a(t)                      a(t)
+
+for all 0 < a(t) < b(t). By choosing b(t) ∼ 1 + t, a(t) ∼ (1 + t)−1/3 , we are able to show that
+R b(t)
+ a(t) ur (r, 0, t) dr is bounded below by a positive constant (see Section 4.2 for details), thus leading
+to P2′ (t) ≳ (1 + log t)−1 .
+   In the proof of Theorems 1.4 and 1.5, the crucial step is to obtain some quantitative lower bound
+for −Z ′ (t). Using the new formulation (1.17), we prove that for any sufficiently large R and any
+positive
+RR         m ≤ m0 , if the “vorticity mass” in the region Π+ ∩ {r ≤ R} is at least m at some t, i.e.,
+   Π+ ∩{r≤R} ω(r, z, t) drdz ≥ m, then we have the quantitative lower bound
+
+                                            −Z ′ (t) ≥ c(ω0 , u0 )m4 R−4                               (1.18)
+at this time. (See Proposition 5.1 for the precise statement.) Roughly speaking, it says that if
+there is a certain amount of vorticity in the bounded region {r ≤ R} at some time, then −Z ′ (t)
+cannot be too small at this time.
+                                                         6
+   On the other hand, since Z(t) is monotone decreasing and positive, −Z ′ (t) is integrable in time
+over [0, ∞), thus −Z ′ (t) must decay to zero as t → ∞ in the time-integral sense. We can then obtain
+Theorem 1.4 by fixing a suitable m only depending on initial data, setting R ∼ t1/4 and RR integrate
+(1.18) in time. Similarly, we obtain Theorem 1.5 by fixing R, choosing m as mR (t) = r≤R ωdrdz,
+and integrating in time. See Section 5 for the detailed proofs.
+
+1.3. Organization of the paper. In Section 2, we collect various properties on the axi-symmetric
+Biot-Savart law and the energy. We then prove Theorem 1.1 for the upper bounds in Section 3. In
+Section 4–5, we aim to derive various lower bounds on the solutions under the extra assumptions
+that ω0 is odd in z and non-negative in {z > 0}. Section 4 is devoted to the proof of Theorem 1.2,
+which gives a lower bound of t1− growth rate of the radial moment P2 . Finally, in Section 5 we
+prove Theorems 1.4–1.5, which deal with growth of ∥ω(·, t)∥Lp (R3 ) , and show that nearly all vorticity
+escapes to r → ∞ in the time-integral sense.
+
+Acknowledgements. YY has been supported by the MOE Tier 1 grant and the Asian Young
+Scientist Fellowship. The authors are very grateful to Tarek Elgindi and In-Jee Jeong for helpful
+discussions.
+
+                                          2. Preliminaries
+2.1. Notation and conventions. Throughout this paper, we frequently use the following notation
+and conventions:
+   • By the rz-plane we mean the half-plane
+                                    Π := {(r, z) : r ≥ 0, z ∈ R}.
+      Its upper quadrant is denoted by
+                                     Π+ := {(r, z) ∈ Π : z > 0}.
+
+   • Since the evolution of the vorticity vector ω is completely determined by the scalar component
+     ω θ , from now on, we will denote ω θ as ω (and the initial data ω0θ as ω0 ), and refer to it as the
+     vorticity throughout this paper.
+   • We use the abbreviation ω for ω(r, z, t) and ω for ω(r, z, t) in integrals and formulas, whenever
+     the dependence is clear from the context. Similarly, we write ur and uz for ur (r, z, t) and
+     uz (r, z, t), while ur and uz are used for ur (r, z, t) and uz (r, z, t), respectively.
+   • The measure µ is defined in Π by dµ := r drdz. More precisely, for A ⊂ Π we have
+                                              ZZ
+                                     µ(A) :=      r drdz.
+                                                       A
+
+2.2. Axisymmetric Biot–Savart law. We begin by recalling the axisymmetric Biot–Savart law
+and some useful facts in the standard 3D setting. In the axisymmetric without swirl case, the
+stream function is recovered from the vorticity by
+                                     ZZ √
+                                                 (r − r)2 + (z − z)2
+                                                                    
+                                   1
+                     ψ(r, z, t) =         rr F                         ω drdz,
+                                  2π   Π                  rr
+where F is an elliptic integral given by
+                                   Z π
+                                              cos θ
+                           F (s) =                       1/2
+                                                             dθ,      s > 0.                       (2.1)
+                                    0 (2(1 − cos θ) + s)
+                                                   7
+The velocity field becomes
+                                        1
+                                     u = ∇⊥ ψ,              ∇⊥ := (∂z , −∂r )1
+                                        r
+and by denoting
+                                                       (r − r)2 + (z − z)2
+                                 D = D(r, z, r, z) :=                      ,
+                                                                rr
+we can write the radial and vertical velocity components as
+                                                      (z − z) ′
+                                                 ZZ
+                                              1
+                              ur (r, z, t) =            √     F (D) ω drdz,                                 (2.2)
+                                             πr     Π     rr
+                                   ZZ √                                      
+                               1                1            r−r      D      ′
+              uz (r, z, t) = −             rr      F (D) +         −       F (D) ω drdz.                    (2.3)
+                               πr     Π         4r             rr     2r
+  Next, we recall some properties of F , namely, its asymptotic behavior near 0 and ∞. It is
+not difficult to observe that F is strictly positive and decreasing for s > 0, diverging near 0 and
+vanishing as s tends to infinity. Moreover, we have the following asymptotics estimates:
+                                   1     1
+                           F (s) =   log + log 8 − 2 + O(s log s),               s → 0+ ,
+                                   2     s
+                                   π 1
+                           F (s) =         + O(s−5/2 ), s → +∞.
+                                   2 s3/2
+Similarly, for F ′ (s), we observe that it is strictly negative and increasing for s > 0, with the
+following asymptotics near the end points:
+                                           1
+                                −F ′ (s) =    + O(log s), s → 0+ ,
+                                           2s
+                                           3π 1
+                                −F ′ (s) =         + O(s−7/2 ), s → +∞.
+                                            4 s5/2
+Continuing this, one can also derive such asymptotics for the k-th derivative of F . We refer the
+readers to [19] for the proof of these estimates, along with other properties of F and its derivatives.
+
+2.3. The kinetic energy. Recall that the kinetic energy
+                                          ZZZ
+                                        1
+                                E(t) =           |u(x, t)|2 dx
+                                        2     R3
+
+is conserved in time and finite by our assumptions on the initial data. In the axisymmetric without
+swirl setting, this becomes
+                                             ZZ
+                                    E(t) = π    r(u2r + u2z ) drdz,
+                                                        Π
+
+showing that it has nonnegative contributions from both components. Defining E0 := π1 E(t), we
+have                                    ZZ
+                                             E0 =       r(u2r + u2z ) drdz,
+                                                    Π
+and it can be treated as a positive constant depending only on the initial data.
+
+  1The usual notation is ∇⊥ := (−∂ , ∂ ), however, in this case, we would need to define the vorticity as negative
+                                     z   r
+in the upper quadrant.
+                                                            8
+                    3. Upper bounds of the radial moments and L∞ norm
+   The goal of this section is to prove Theorem 1.1. Before
+                                                          RRthe proof, we state a technical lemma
+that controls the evolution of the radial moments Pk := Π rk |ω|drdz in time. Note that if the
+integral is defined as Π rk ωdrdz (without the absolute value on ω), its time derivative can be
+                       RR
+
+directly computed as k Π rk−1 ur ω drdz (see [20, Eq.(2.8)]). With the absolute value, it is slightly
+                        RR
+
+more involved to control Pk′ (t), where we overcome the lack of regularity of the absolute value
+function by approximating it with a sequence of smooth functions.
+Lemma 3.1. Under the assumptions of Theorem 1.1, for each k ≥ 2, we have the following
+differential inequality for Pk :     ZZ
+                                                  Pk′ (t) ≤ k            rk−1 |ur ω| drdz.                       (3.1)
+                                                                    Π
+
+Proof. To rigorously justify (3.1), we will take a regularization of the absolute value function f (ω) :=
+|ω| in Pk . For any ϵ > 0, we approximate f by a smooth function fϵ ∈ C ∞ (R) defined as
+                                                  p
+                                        fϵ (s) := s2 + ϵ2 − ϵ.
+For any s ∈ R, we clearly have 0 ≤ fϵ (s) ≤ s, |fϵ′ (s)| < 1, and limϵ↘0 fϵ (s) = |s|. Using such
+function fϵ (ω) to replace |ω| in Pk , we introduce
+                                             ZZ
+                                  Pkϵ (t) :=     rk fϵ (ω(r, z, t)) drdz,
+                                                                Π
+and compute its time derivative as follows:
+                     ZZ                         ZZ
+         d ϵ                k ′
+                                                                      ω 
+            Pk (t) =      r fϵ (ω)∂t ω drdz =         rk+1 fϵ′ (ω)∂t         drdz
+         dt                                                             r
+                       ZΠZ                     ω 
+                                                    Π
+                                                                 Z Z                      ω 
+                   =−        rk+1 fϵ′ (ω)u · ∇      drdz = −           rk fϵ′ (ω) (ru) · ∇     drdz,
+                           Π                    r                    Π                     r
+where we denote u := (ur , uz ), and ∇ := (∂r , ∂z ) as the gradient in the rz-plane. Applying
+divergence theorem to the last integral, and using the fact that ∇ · (ru) = 0, we have
+                      ZZ
+            d ϵ
+              P (t) =      ∇(rk fϵ′ (ω)) · uω drdz
+            dt k
+                      Z ZΠ                          ZZ                                      (3.2)
+                    =      krk−1 fϵ′ (ω)ur ω drdz +    rk fϵ′′ (ω)∇ω · uω drdz =: I1 + I2 .
+                                Π                                              Π
+Introducing
+                                                                    Z s
+                                                       gϵ (s) :=            fϵ′′ (y)y dy,
+                                                                     0
+we can rewrite I2 as
+                             ZZ                                                    ZZ
+                      I2 =              r   k
+                                                fϵ′′ (ω)ω ∇ω · u drdz =                  rk ∇(gϵ (ω)) · u drdz
+                                    Π           | {z }                               Π
+                                                =gϵ′ (ω)
+                                    ZZ
+                         =−                  (k − 1)rk−1 gϵ (ω)ur drdz.
+                                        Π
+
+Plugging it into (3.2) and integrating in time, the following holds for any t2 > t1 ≥ 0:
+                          Z t2 Z Z                          Z t2 Z Z
+      ϵ         ϵ                    k−1 ′
+    Pk (t2 ) − Pk (t1 ) ≤          kr |fϵ (ω)ur ω| drdzdt +          (k − 1)rk−1 |gϵ (ω)ur | drdzdt.
+                           t1            Π                                               t1   Π
+                                                                        9
+                                           2
+Since gϵ (s) = fϵ′ (s)s − fϵ (s) = ϵ − s2ϵ+ϵ2 , one can check that |gϵ (s)| ≤ min{ϵ, |s|}. Sending ϵ ↘ 0
+and applying dominating convergence theorem, we arrive at
+                                        Z t2 Z Z
+                  Pk (t2 ) − Pk (t1 ) ≤          krk−1 |ur ω| drdzdt for all t2 > t1 ≥ 0,
+                                      t1       Π
+
+finishing the proof.                                                                                    □
+  Now we are ready to prove Theorem 1.1.
+Proof of Theorem 1.1. We divide the proof into the following steps:
+Step 1: Upper bound for P2 . Let us first obtain the bound (1.8) for the special case k = 2. By
+Lemma 3.1, we have
+                                                                  |ω|
+                              ZZ                    ZZ
+                     ′
+                   P2 (t) ≤ 2      r|ur ω| drdz = 2      r2 |ur |     drdz.                (3.3)
+                                 Π                     Π           r
+Denote A0 := ∥ω0 /r∥L∞ , which is finite by our assumption on ω0 . Since ∥ω(·, t)/r∥L∞ is conserved
+in time, we have |ω|
+                          1/2 |ω| 1/2
+                   r ≤ A0 ( r )       . Plugging it into (3.3) yields
+                                       1/2 |ω| 1/2
+                         ZZ                                      ZZ
+               ′               2                               1/2
+              P2 (t) ≤ 2      r |ur |A0            drdz = 2A0           r3/2 |ur ||ω|1/2 drdz.
+                            Π               r                         Π
+We then apply Cauchy–Schwarz inequality to obtain
+                                 Z Z             1/2 Z Z            1/2
+                    ′        1/2            2                2
+                  P2 (t) ≤ 2A0        r|ur | drdz           r |ω| drdz
+                                       Π                                 Π
+                                1/2 1/2 1/2
+                            ≤ 2A0 E0 P2 ,
+where we used the conservation    of the kinetic energy, which is finite by assumption on the initial
+data, and E0 := π1 E(t) = Π r(|ur |2 + |uz |2 ) drdz, as denoted earlier.
+                           RR
+  Solving this differential inequality, we have the following quadratic upper bound for P2 (t):
+                                                                  2
+                                 P2 (t) ≤ P2 (0)1/2 + (A0 E0 )1/2 t .                           (3.4)
+
+Step 2: Upper bounds for ∥ur ∥L∞ and ∥ω∥L∞ . Next we move on to prove (1.9) and (1.10).
+(The proof of (1.9) for k > 2 will be postponed till the end, since its proof relies on (1.9).) Using
+the bound (3.4) that we just obtained, (1.9) is a direct consequence when we apply the following
+interpolation inequality in Lim–Jeong [24, Prop. A.1] (the original inequality is written using norms
+in R3 , and we rewrite it in the 2-dimensional domain Π):
+                               √   1/3    ω        1/2             1/6         1/3   1/2
+               ∥ur ∥L∞ (Π) ≤ C∥ ru∥L2 (Π)                     ∥r2 ω∥L1 (Π) = CE0 A0 P2 (t)1/6 ,
+                                          r        L∞ (Π)
+
+where C > 0 is a universal constant. Plugging (3.4) into above immediately yields ∥ur (·, t)∥L∞ (R3 ) ≤
+C0 (1 + t)1/3 , where C0 depends on A0 , E0 and P2 (0). This gives (1.9).
+   Once we have (1.9), the upper bound for vorticity (1.10) directly follows the conservation of ω/r
+along flow maps, which we briefly sketch below for the sake of completeness. For a fluid particle
+originates from (r, z) with r > 0, denote its flow map at time t by ϕt (r, z), whose time evolution
+           d
+satisfies dt ϕt (r, z) = u(ϕt (r, z), t). Applying (1.9), the r-component of ϕt (r, z) (which we denote by
+ r
+ϕt (r, z)) satisfies
+                                               Z t
+                                  r
+                          0 < ϕt (r, z) ≤ r +      ∥ur (s)∥L∞ ds ≤ r + C1 (1 + t)4/3 ,
+                                               0
+                                                         10
+where C1 depends on A0 , E0 and P2 (0). As a result, for any (r, z) ∈ Π with r > 0, we have
+                                         |ω0 (r, z)| r          |ω0 (r, z)|
+                   |ω(ϕt (r, z), t)| =              ϕt (r, z) ≤             (r + C1 (1 + t)4/3 ).                  (3.5)
+                                              r                      r
+We can then discuss two cases:
+  • If r < C1 (1 + t)4/3 , we have
+                                           |ω0 (r, z)|
+                     |ω(ϕt (r, z), t)| ≤               · 2C1 (1 + t)4/3 ≤ 2C1 A0 (1 + t)4/3 .
+                                                r
+  • If r ≥ C1 (1 + t)4/3 , we simply have |ω(ϕt (r, z), t)| ≤ 2|ω0 (r, z)| ≤ 2∥ω0 ∥L∞ .
+Combining the above two cases gives
+                                           ∥ω(·, t)∥L∞ ≤ C2 (1 + t)4/3 ,
+where C2 depends on A0 , E0 , P2 (0) and ∥ω0 ∥L∞ . This finishes the proof of (1.10).
+Step 3: Upper bounds for Pk with k > 2. For k > 2, we again apply Lemma 3.1 to obtain
+                             ZZ                     ZZ
+                   ′               k−1                           ω
+                  Pk (t) ≤ k      r |ur ω| drdz = k     rk |ur |   drdz
+                                Π                     Π          r
+Again, using that A0 := ∥ω0 /r∥L∞ = ∥ω(t)/r∥L∞ , we have | ωr | ≤ A1−b            ω b
+                                                                             0 | r | for any 0 < b ≤ 1, where
+               k−1
+we choose b = k . Plugging it into above gives
+                             ZZ
+                ′        1/k                ω (k−1)/k
+              Pk (t) ≤ kA0         rk |ur |             drdz
+                                            r
+                             Z ZΠ
+                         1/k
+                     = kA0         r1/k |ur | · rk−1 |ω|(k−1)/k drdz
+                                Π
+                                            ZZ
+                         1/k      (k−2)/k
+                     ≤ kA0 ∥ur ∥L∞                r1/k |ur |2/k · rk−1 |ω|(k−1)/k drdz
+                                                      Π
+                          1/k    (k−2)/k              1/k
+                      ≤ kA0 ∥ur ∥L∞               r           |ur |2/k            rk−1 |ω|(k−1)/k
+                                                                         Lk (Π)                     Lk/(k−1) (Π)
+                                                          1            k−1
+                            1/k            (k−2)/k
+                      ≤ kA0 ∥ur (t)∥L∞                    k
+                                                     E0 Pk (t) k .
+  Finally, plugging the upper bound (1.9) for ∥ur ∥L∞ into above gives
+                                         1/k    (k−2)/k         1/k
+                         Pk′ (t) ≤ kA0 C0                     E0 (1 + t)(k−2)/3k Pk (t)(k−1)/k
+                                  ≤ kC3 (1 + t)(k−2)/3k Pk (t)(k−1)/k .
+Here C3 only depends on A0 , E0 , P2 (0) (and is independent of k, since the powers 1/k and (k − 2)/k
+are both between 0 and 1). Solving this differential inequality gives
+                                 1              4  2
+                                                      k                           4    2
+                Pk (t) ≤ Pk (0) k + C3 (1 + t) 3 − 3k    ≤ C4 (k, u0 , ω0 )(1 + t) 3 k− 3 ,
+
+finishing the proof of (1.8) for the k > 2 cases.                                                                     □
+
+                         4. t1− lower bound for the radial moment P2
+   In this section, we prove Theorem 1.2, which gives a t1− lower bound for the r2 -radial moment
+P2 . Recall that the initial vorticity ω0 is assumed to be odd-in-z and nonnegative in the upper
+quadrant Π+ . These assumptions allow us to redefine our radial and vertical moments as
+                                   ZZ                        ZZ
+                                         k
+                         Pk (t) :=      r ω drdz,    Z(t) :=       zω drdz.                  (4.1)
+                                           Π+                                         Π+
+                                                                  11
+From (1.6) and (1.7), it follows that the radial and vertical moments over the whole Π are simply
+twice those over Π+ . Therefore, we adopt the definitions (4.1) throughout this section. We also
+assume finiteness of the initial moments,
+                                      0 < P2 (0) < ∞,        0 < Z(0) < ∞.                       (4.2)
+   Before moving to our analysis, we recall the following monotonicity properties of the moments
+established in Choi–Jeong [10]:
+Lemma 4.1 (Theorem 1.1 of [10]). Under the assumptions (1.5), (1.11) and (4.2), the moments
+P2 and Z defined in (4.1) satisfy that P2 (t) is strictly increasing in time, while Z(t) is strictly
+decreasing in time.
+  This monotonicity result played a crucial role in the proofs of both Choi–Jeong [10] and Gustafson–
+Miller–Tsai [20], where both papers expressed P2′ (t) and Z ′ (t) as double integrals of the form
+                               ZZ ZZ
+                                            K(r, r, z, z) ωω drdzdrdz
+                                       Π+   Π+
+
+for some kernel K that is positive in P2′ (t), and negative in Z ′ (t). The main difference of our
+approach from those in is to derive new representations for the time derivative of the moments. As
+we will see, we will find alternative (but identical) expressions that express these integrals using
+the velocity field u, instead of ω. Moreover, we rely on the vorticity total mass, whereas in the
+previous works the kinetic energy plays a crucial role.
+
+4.1. A new representation for the time derivatives of moments. Under the odd-in-z as-
+sumption, the upper quadrant Π+ remains invariant, meaning that particle trajectories never cross
+z = 0. So uz vanishes at z = 0 (i.e., on the r-axis). Moreover, from the axisymmetric no-swirl
+structure, we know that ur vanishes along the z-axis. With these boundary conditions, one can
+simply integrate by parts to find
+                      ZZ                   ZZ                      ZZ
+               ′            2                   2
+             P2 (t) =      r ∂t ω drdz = −     r ∇ · (uω) drdz = 2      rur ω drdz,
+                          Π+                      Π+                         Π+
+
+where, throughout this section, ∇ := (∂r , ∂z ). Substituting ω = −∂z ur + ∂r uz and re-applying
+integration by parts yields
+                                           Z ∞
+                                    ′
+                                  P2 (t) =       rur (r, 0, t)2 dr.                        (4.3)
+                                                 0
+
+Similarly, for the time derivative of Z(t) (which we will use in the next section), we have
+                        ZZ                    ZZ                      ZZ
+                  ′
+                Z (t) =       z ∂t ω drdz = −      z ∇ · (uω) drdz =        uz ω drdz,
+                            Π+                       Π+                      Π+
+and                                   Z ∞
+                                     uz (0, z, t)2            ur (r, z, t)2
+                                                        ZZ
+                         −Z ′ (t) =                dz +                     drdz.              (4.4)
+                                 0        2                Π+       r
+     From the axisymmetric Biot–Savart law, expressions (2.2) and (2.3), one can evaluate ur (r, 0, t)
+as
+                                       ZZ
+                                     1       z
+                                                 −F ′ (D) ω drdz
+                                                         
+                      ur (r, 0, t) =        √
+                                     π   Π r rr
+                                                                2    2
+                                                                     
+                                                       ′ (r − r) + z
+                                       ZZ
+                                     2         z
+                                   =         √    −F                      ω drdz,                (4.5)
+                                     π   Π+ r rr              rr
+                                                        12
+and uz (0, z, t), using the asymptotic estimates for F and F ′ at ∞, as
+                        ZZ √                                       
+                 1             r 1               r−r     D
+−uz (0, z, t) =     lim      √        F (D) +         −       F ′ (D) ω drdz
+                 π r→0+ Π r 4r                    rr     2r
+                        ZZ "                                                            !                     #
+                 1             π         r2           3π r1/2 (r − r) r2 + (z − z)2            (rr)5/2
+              =     lim                             −                    −                                      ω drdz
+                 π r→0+ Π 8 r2 + (z − z)2 3/2         4       r3/2 r        2r5/2 r1/2   (r2 + (z − z)2 )5/2
+                                r2
+                   ZZ
+                 1
+              =                            ω drdz
+                 2 Π (r2 + (z − z)2 )3/2
+                                   r2                  r2
+                   ZZ                                             
+                 1
+              =                               −                      ω drdz.                       (4.6)
+                 2 Π+ (r2 + (z − z)2 )3/2 (r2 + (z + z)2 )3/2
+Thus, for each t ≥ 0 we have: ur (r, 0, t) > 0 for all r ∈ R+ and −uz (0, z, t) > 0 for all z ∈ R.
+Together with the representations (4.3) and (4.4), this immediately implies that P2′ (t) > 0 and
+−Z ′ (t) > 0 for all t ≥ 0. In other words, we provide an alternative proof of Lemma 4.1, showing
+that P2 (t) is strictly increasing and Z(t) is strictly decreasing in t ≥ 0.
+4.2. The total vorticity mass. Since ∥ω/r∥Lp (R3 ) is conserved for all p ≥ 1, by rewriting the L1
+norm as integral on the rz-plane (and using the odd-in-z symmetry and non-negativity in Π+ ), we
+know the following quantity                ZZ
+                                       m(t) =         ω(r, z, t) drdz
+                                                 Π+
+is conserved for all time, which we call the total vorticity mass, and denote it by m0 . Plugging
+ω = −∂z ur + ∂r uz into the above integral and performing integration by parts (where both ur and
+uz vanish at infinity), we obtain
+                                  Z ∞                   Z ∞
+                            m0 =      ur (r, 0, t) dr +     (−uz (0, z, t)) dz.
+                                   0                     0
+Since ur > 0 along the r-axis and −uz > 0 along the z-axis, we observe that both integrals above
+are positive.
+  In fact, it is possible to evaluate these integrals explicitly. In particular, one has
+   Z ∞                         ZZ           Z ∞                                            
+                             1         2                     1                     1
+       (−uz (0, z, t)) dz =           r ω                               −                    dz drdz
+    0                        2 Π+             0     (r2 + (z − z)2 )3/2 (r2 + (z + z)2 )3/2
+                               ZZ           Z z                 
+                             1         2               1
+                          =           r ω           2    2 3/2
+                                                               dz drdz
+                             2 Π+             −z (r + z )
+                             ZZ                           ZZ
+                                         z                            z
+                          =        √            ω drdz =         √         ω drdz,                (4.7)
+                                       2
+                                      r +z    2                    r + z2
+                                                                    2
+                                Π+                           Π+
+which is a portion of the total mass as 0 < √r2z+z 2 < 1 in Π+ . Consequently,
+                           Z ∞                    ZZ                    
+                                                                  z
+                               ur (r, 0, t) dr =          1− √             ω drdz.                (4.8)
+                            0                        Π+         r2 + z 2
+Hence, comparing the integrand factors in (4.7) and (4.8) reveals which axis integral contributes
+more to the total mass, particularly in certain regions.
+  Now we are ready to prove Theorem 1.2.
+Proof of Theorem 1.2. At each t ≥ 0, for any 0 < a < b < ∞, by Cauchy-Schwarz inequality we
+obtain              Z b                   Z b      Z b                2
+                                      2          1
+                         rur (r, 0, t) dr          dr ≥     ur (r, 0, t) dr .
+                       a                      a r        a
+                                                   13
+Noting (4.3), we then have
+                                                      R                     2
+                                                           b
+                                                           a ur (r, 0, t) dr
+                                          P2′ (t) ≥             .                                (4.9)
+                                                    log(b/a)
+To obtain a lower bound on the right hand side (possibly depending on t), the rest of the proof
+will be about choosing a and b, depending on t as well as the initial data ω0 and u0 , so that the
+         Rb
+integral a ur (r, 0, t) dr admits a uniform positive lower bound for all time, while log(b/a) remains
+controlled from above.
+   First, we claim that       Z   ∞
+                                      ur (r, 0, t)dr > γ(ω0 ) > 0          for all t ≥ 0,               (4.10)
+                              0
+                                                          R
+where γ(ω0 ) is a positive constant depending on m0 := Π+ ω0 drdz, A0 := ∥ω0 /r∥L∞ and Z(0).
+To show this, first note that for any H > 0 and any t > 0, the mass of ω(·, t) in {z > H} can be
+bounded by
+                ZZ                            ZZ
+                                                   z                   Z(t)   Z(0)
+                      ω(r, z, t)1{z>H} drdz ≤        ω(r, z, t) drdz ≤      ≤      ,
+                   Π+                           Π+ H                    H      H
+therefore by fixing
+                                                     m0
+                                                  H :=    ,
+                                                    2Z(0)
+we know the mass of ω(·, t) in {z > H} never exceeds m0 /2 for all t ≥ 0.
+   Next let us consider the straight line z = kr in Π+ , where the slope k > 0 will be fixed momentar-
+ily. This line divides the region {0 < z < H} into two parts. The left part {0 < z < H, 0 < r < z/k}
+is a triangle, whose maximum r-coordinate is H/k. Using the fact that ∥ω/r∥L∞ = ∥ω0 /r∥L∞ = A0 ,
+ω(·, t) is uniformly bounded in this triangle for all times by
+                                  ω        H   A0 H                                               z
+                      ω(·, t) ≤              ≤                    for 0 < z < H, 0 < r <            .
+                                  r     L∞ k    k                                                 k
+Since the area of this triangle is H 2 /(2k), the mass of ω(·, t) in this triangle can be bounded by
+                          Z H Z z/k
+                                                      A0 H H 2        A0 m30
+                                    ω(r, z, t) drdz ≤            =              ,
+                           0    0                       k 2k        16k 2 Z(0)3
+                                                                                            1/2
+                                                                                   0    A         m
+where we use the definition of H in the last equality. Setting k := 2Z(0)    0
+                                                                                 3/2 , the right hand side
+
+above becomes m0 /4.
+   Combining the above mass upper bounds in {z > H} and the triangle, we know that with the
+above definition of H and k, the right part {0 < z < H, r > z/k} contains at least mass m0 /4 for
+all times. Applying this to (4.8), we obtain
+                    Z ∞                    Z HZ ∞                 
+                                                             z
+                         ur (r, 0, t) dr ≥           1− √            ω(r, z, t) drdz
+                     0                      0  z/k        r2 + z 2
+                                                       
+                                                   k      m0
+                                         > 1− √                =: γ,
+                                                 1+k  2    4
+finishing the proof of the claim (4.10). R                          R∞
+                                              a
+   On the other hand, we will control 0 ur (r, 0, t)dr and b ur (r, 0, t)dr from above using the
+upper bounds for ∥ur (t)∥L∞ and P2 (t) established in Theorem 1.1. From (1.9), it follows that
+                        Z a
+                            ur (r, 0, t) dr ≤ a∥ur (·, t)∥L∞ (R3 ) ≤ a C5 (1 + t)1/3 ,      (4.11)
+                          0
+                                                             14
+where C5 depends only on ω0 and u0 . Therefore, by choosing a = a(t; ω0 , u0 ) as
+                                                                  γ
+                                     a = a(t; ω0 , u0 ) :=                 ,                       (4.12)
+                                                            4C5 (1 + t)1/3
+                         Ra
+we achieve theRbound 0 ur (r, 0, t) dr ≤ γ4 for all t ≥ 0.
+                 ∞
+   To control b ur (r, 0, t)dr, note that although P2 (t) = Π+ ωr2 drdz is defined as a double
+                                                                      RR
+
+integral in Π+ , it is identical to a line integral along the r-axis: plugging in ω = −∂z ur + ∂r uz and
+performing integration by parts gives
+                                ZZ                                  Z ∞
+                                                          2
+                       P2 (t) =       (−∂z ur + ∂r uz )r drdz =          r2 ur (r, 0, t)dr,        (4.13)
+                                             Π+                                      0
+where we used that
+                ZZ                                        ZZ                        ZZ
+                                         2
+                                  (∂r uz )r drdz = −               2ruz drdz =                  2∂r ψ drdz = 0.
+                             Π+                               Π+                           Π+
+Combining (4.13) with the upper bound (1.8) with k = 2 yields
+                 Z ∞                   Z ∞ 2
+                                          r                   P2 (t)   C6 (1 + t)2
+                      ur (r, 0, t)dr ≤       ur (r, 0, t)dr =        ≤             ,                                           (4.14)
+                  b                     b b2                   b2           b2
+where C6 depends only on ω0 and u0 . Choosing b = b(t; ω0 , u0 ) as
+                                                                            1/2
+                                                                         2C6 (1 + t)
+                                              b = b(t; ω0 , u0 ) :=                  ,                                         (4.15)
+                                                                            γ 1/2
+                        R∞
+we guarantee that b ur (r, 0, t) ≤ γ4 for all t ≥ 0.
+  Therefore, combining (4.10) with (4.11) and (4.14) gives
+     Z b(t;ω0 ,u0 )                       Z a(t;ω0 ,u0 )                   Z ∞
+                                                                                                                         γ
+                    ur (r, 0, t) dr ≥ γ −                ur (r, 0, t) dr −                           ur (r, 0, t) dr ≥     .   (4.16)
+        a(t;ω0 ,u0 )                              0                                   b(t;ω0 ,u0 )                       2
+Also, the definitions of a(t; ω0 , u0 ), b(t; ω0 , u0 ) in (4.12) and (4.15) yields
+                             b(t; ω0 , u0 )
+                       log                  ≤ C(ω0 , u0 )(1 + log(1 + t)) ≤ C(ω0 , u0 ) log(2 + t)                             (4.17)
+                             a(t; ω0 , u0 )
+for some C(ω0 , u0 ) > 0.
+   Finally, plugging (4.16) and (4.17) into (4.9), we obtain
+                                                           c(ω0 , u0 )
+                                              P2′ (t) ≥                   for all t ≥ 0,
+                                                          log(2 + t)
+where c(ω0 , u0 ) > 0 is a constant depending only on ω0 and u0 . Integrating it over [0, t] gives
+                                                                         c(ω0 , u0 ) t
+                                                  P2 (t) ≥ P2 (0) +                    ,
+                                                                         log(2 + t)
+which yields (1.12).                                                                                                               □
+
+                                        5. Growth of vorticity in Lp (R3 )
+   We continue with the same initial data ω0 as in the previous section, which is odd-in-z and
+nonnegative in the upper quadrant Π+ . Thoughout this section, the vertical moment (4.1) plays a
+crucial role in our analysis, and we impose the additional assumption Z(0) < ∞.
+   Furthermore, the quantity ω/r is conserved along particle trajectories, and therefore all of its Lp
+norms are preserved in time. Since Π+ is invariant by the flow, all the conserved quantities can be
+restricted toRRΠ+ . In particular,
+                             RR as in the previous section, we denote A0 := ∥ω0 /r∥L∞ = ∥ω/r∥L∞
+and m0 := Π+ ω0 drdz = Π+ ω drdz.
+                                                                   15
+   Under this setup, we aim to prove Theorem 1.4. The proof is based on a simple observation:
+since Z(t) is monotone decreasing in time and positive for all times, the time integral of −Z ′ (t) in
+(0, ∞) must be finite (and bounded by Z(0)). Recall that in (4.4), we have
+                                  Z ∞
+                                      uz (0, z, t)2            ur (r, z, t)2
+                                                         ZZ
+                       −Z ′ (t) =                   dz +                     drdz.
+                                   0       2                Π+       r
+The right hand side contains two non-negative integrals. In the following key proposition, we take
+a closer look at the right hand side and aim to bound it from below. Roughly speaking, it says
+that if ω has a positive mass m in the region {r < R} at some time, −Z ′ (t) cannot be too small at
+this time; it is at least ∼ mR−4 .
+Proposition 5.1. Take any positive m ≤ m0 . Then there exists two constants R0 (m0 , A0 , E0 ) ≥ 1
+and c0 (m0 , A0 , E0 , Z(0)) > 0, such that the following is true: for any t ≥ 0 and R ≥ R0 , if ω(·, t)
+satisfies
+                                        ZZ
+                                               ω(r, z, t) drdz ≥ m,                               (5.1)
+                                               r≤R
+then we have                    Z ∞
+                                        uz (0, z, t)2                ur (r, z, t)2        c0 m4
+                                                             ZZ
+                   −Z ′ (t) =                         dz +                         drdz ≥       .      (5.2)
+                                0            2                    Π+       r               R4
+Proof of Proposition 5.1. Assume that the mass condition (5.1) holds for some t. Fixing this t, we
+split the region {r ≤ R} into D1 (R) ∪ D2 (R), where
+                             √                                                   √
+D1 (R) := {(r, z) ∈ Π+ : r < 3z} ∩ {r ≤ R} and D2 (R) := {(r, z) ∈ Π+ : r ≥ 3z} ∩ {r ≤ R}.
+Then we consider two cases.                                                 RR
+Case 1. Suppose that the vorticity mass in D1 (R) exceeds m/2, i.e., D1 (R) ω drdz > m/2. Then
+using (4.7), we have
+               Z ∞                      ZZ                            ZZ
+                                                    z               1                    m
+                   (−uz (0, z, t)) dz =       √            ω drdz >            ω drdz > .     (5.3)
+                 0                         Π+
+                                                  2
+                                                r +z     2          2 D1 (R)             4
+On the other hand, note that although Z(t) = Π+ zωdrdz is defined as a double integral in Π+ ,
+                                                      RR
+it is identical to a line integral along the z-axis: plugging in ω = −∂z ur + ∂r uz and performing
+integration by parts yields
+                             ZZ                                 Z ∞
+                     Z(t) =         (−∂z ur + ∂r uz )z drdz =       z(−uz (0, z, t)) dz,
+                                 Π+                                     0
+                                                    −1 ∂ ψ drdz = 0. From this expression for Z(t) and using
+                     RR                   RR
+where we used that Π+ ur drdz =              Π+ r       z
+its decreasing property, we obtain
+                               Z ∞
+                                          z(−uz (0, z, t)) dz = Z(t) ≤ Z(0).
+                                    0
+Therefore, for any α > 0 we have
+                  Z ∞                                          Z ∞
+                                                       1                                        1
+                        (−uz (0, z, t)) dz ≤                           z (−uz (0, z, t)) dz ≤     .
+                    αZ(0)                            αZ(0)     αZ(0)                            α
+             8
+Choosing α = m in the above inequality and combining it with (5.3) gives
+               Z 8Z(0)/m                          Z ∞
+                                              m                                m
+                         (−uz (0, z, t)) dz >   −          (−uz (0, z, t)) dz > .
+                 0                            4    8Z(0)/m                     8
+                                                          16
+By Cauchy–Schwarz inequality, we now obtain
+     Z ∞                   Z 8Z(0)/m                    Z 8Z(0)/m                        !2
+                                               m                                                    m3
+                     2
+         uz (0, z, t) dz ≥           u2z dz ≥                       (−uz (0, z, t)) dz        >           .
+      0                     0                 8Z(0)      0                                        83 Z(0)
+
+Since m3 ≥ m4 /m0 (recall that m ≤ m0 ), we obtain (5.2) under Case 1 by choosing c0 ≤ 2·83 m10 Z(0)
+(also note that we have used R ≥ R0 ≥ 1; R0 will be fixed in Case 2).
+                                                                                  RR
+Case 2. Suppose that the vorticity mass in D2 (R) is at least m/2, i.e., D2 (R) ω drdz ≥ m/2. In
+this case, our goal is to show that
+                                  ur (r, z, t)2
+                            ZZ
+                                                drdz ≥ c0 (m0 , A0 , E0 )m4 R−4 .             (5.4)
+                              Π +       r
+In order to do this, we first establish a technical lemma that gives a lower bound of the velocity
+integral along a portion of the r-axis under Case 2.
+Lemma 5.2. If at some time t ≥ 0, the assumption D2 (R) ω(r, z, t) drdz ≥ m
+                                                         RR
+                                                                             2 holds, then we have
+                                       Z R
+                                           ur (r, 0, t) dr ≥ c1 m                             (5.5)
+                                         0
+at this time, where c1 > 0 is a universal constant.
+Proof of Lemma 5.2. Recall that for a point on the r-axis, using (4.5), the velocity ur is given by
+                                                             2    2
+                                                                  
+                                                  ′ (r − r) + z
+                                   ZZ
+                                 2       z
+                  ur (r, 0, t) =         √     −F                       ω drdz.
+                                 π   Π+ r rr               rr
+Integrating this for r ∈ [0, R] and swapping the order of integration, we have
+            Z R                              Z R                   2    2
+                                                                              
+                                                            ′ (r − r) + z
+                                    ZZ
+                                  2               z
+                ur (r, 0, t) dr ≥                 √     −F                       dr ω drdz.     (5.6)
+             0                    π   D2 (R)   0 r rr               rr
+                                             √
+   For each (r, z) ∈ D2 (R), we have r ≥ 3 z. This implies that the interval (r − z, r) is contained
+in (r/3, r), and therefore also in (0, R). Moreover, for every r ∈ (r − z, r), we have
+                      (r − r)2 + z 2   2 z2  6 z2
+                                     ≤      ≤ 2 ≤2           for all (r, z) ∈ D2 (R).
+                           rr           rr    r
+In view of the comparison −F ′ (s) ∼ 1s for 0 < s < 2, this yields
+                          2     2      c r2
+                                 
+                 ′ (r − r) + z
+              −F                    ≥ 2       for all (r, z) ∈ D2 (R) and r ∈ (r − z, r),
+                         rr             z
+where c > 0 is some universal constant. Thus, we can bound the inner integral on the right hand
+side of (5.6) from below as
+            Z R                     2    2           Z r                  Z r
+                                                           z r2
+                                         
+                  z        ′ (r − r) + z                                       1
+                 √     −F                     dr ≥ c       √     2 dr ≥ c        dr ≥ c.
+             0 r rr               rr                  r−z r rr z           r−z z
+
+Combining this with (5.6), we conclude that
+                           Z R                      ZZ
+                                                 2c                   cm
+                               ur (r, 0, t) dr ≥             ω drdz ≥    ,
+                            0                    π    D2 (R)           π
+and therefore (5.5) follows.                                                                                  □
+                                                  17
+   Note that (5.5) only contains information on the integral of ur on the r-axis, and does not say
+anything about the interior of Π+ . In order to obtain (5.4), we aim to show a positive lower bound
+    R 2R
+for 0 |ur (r, z̃, t)| dr for all z̃ ∈ [0, c2 m2 R−2 ], where c2 := 4Ac01m0 , c1 is the universal constant in
+(5.5), and A0 := ∥ω0 /r∥L∞ . To do this, note that in the rectangular region
+                               Q := {(r, z) ∈ Π+ : 0 < r < 2R, 0 < z < c2 m2 R−2 },
+the vorticity mass is bounded above by
+                 ZZ                    Z c2 m2 R−2 Z 2R
+                                ω                                            c1 m
+                       ω drdz ≤                         r drdz = 2A0 c2 m2 ≤      ,
+                     Q          r  L∞
+                                        0           0                         2
+where we used ∥ω(t)/r∥L∞ = ∥ω0 /r∥L∞ = A0 in the second step, and the definition c2 := 4Ac01m0 in
+the last step.
+  As a result, for any R̃ ∈ [R, 2R] and z̃ ∈ [0, c2 m2 R−2 ], the vorticity mass in the rectangle
+                                     QR̃,z̃ := {(r, z) ∈ Π+ : 0 < r < R̃, 0 < z < z̃}
+does not exceed c1 m/2 since QR̃,z̃ ⊂ Q. Integrating ω over QR̃,z̃ and then applying Green’s theorem,
+we obtain
+              Z                    Z
+       c1 m
+            ≥          ω drdz =            (−∂z ur + ∂r uz ) drdz
+         2      QR̃,z̃              QR̃,z̃
+              Z R̃                    Z z̃                     Z R̃                    Z z̃                  (5.7)
+            =       ur (0, r, t) dr +       uz (R̃, z, t) dz −      ur (r, z̃, t) dr −      uz (z̃, 0, t) dr
+                  0                          0                           0                     0
+              = I1 + I2 − I3 − I4 .
+Note that we have I1 ≥ c1 m, which follows from (5.5) together with the facts that R̃ > R and
+ur ≥ 0 on the r-axis. Also, we have I4 < 0 since uz < 0 on the z-axis due to (4.6).
+   To control I2 , we claim the following: there exists some R̃ ∈ [R, 2R] such that
+                                   Z c2 m2 R−2
+                                                                    c1 m
+                                               |uz (R̃, z, t)| dz ≤      .               (5.8)
+                                     0                               4
+To show this, assume for contradiction that (5.8) is false for all R̃ ∈ [R, 2R], i.e.
+                       Z c2 m2 R−2
+                                                       c1 m
+                                   |uz (r, z, t)| dz >      for all r ∈ [R, 2R].
+                         0                              4
+Then, noting E0 ≥ 2 Π+ ru2z drdz and applying Cauchy–Schwarz inequality, we get
+                     RR
+
+                Z 2R Z c2 m2 R−2
+        E0 ≥ 2                   r|uz (r, z, t)|2 dzdr
+                      R    0
+                          Z 2R        Z c2 m2 R−2                       !2
+                 2R2                                                                 2R2       2 c1 m
+                                                                                                     2 3c2
+             ≥                   r                  |uz (r, z, t)| dz        dr >         · 3R          ≥ 1 R04 ,
+                 c2 m2     R            0                                           c2 m2         4      8c2
+where in the last step we used the assumption R ≥ R0 . We can then choose R0 := R0 (m0 , A0 , E0 ) ≥
+1 such that the right hand side above exceeds 2E0 (recall that c2 only depends on m0 and A0 , and
+c1 is the universal constant in (5.5)), arriving at a contradiction. This finishes the proof of (5.8).
+   Note that (5.8) implies that for all z̃ ∈ [0, c2 m2 R−2 ], there exists some R̃ ∈ [R, 2R] such that
+|I2 | ≤ c14m , therefore for such R̃ we have
+                           Z R̃
+                                                                          c1 m   c1 m
+                                ur (r, z̃, t) dr = I3 ≥ I1 − |I2 | − I4 −      ≥      .
+                             0                                             2      4
+                                                                18
+Since R̃ ≤ 2R, this implies
+                     Z 2R
+                                                    c1 m
+                          |ur (r, z̃, t)| dr ≥ I3 ≥             for all z̃ ∈ [0, c2 m2 R−2 ].
+                      0                              4
+Consequently, applying Cauchy–Schwarz inequality yields
+                                           Z c2 m2 R−2 Z 2R
+                      ur (r, z, t)2                            ur (r, z, t)2
+                ZZ                                                               
+                                    drdz ≥                                   dr dz
+                   Π+       r               0              0         r
+                                                 Z c2 m2 R−2 Z 2R                    2
+                                            1
+                                         ≥                           |ur (r, z, t)| dr dz
+                                           2R2 0                0
+                                            1                      2 c c2
+                                                      2 −2 c1 m
+                                                             
+                                                                            2 1 4 −4
+                                         ≥       c2 m  R               =        m R .
+                                           2R2                 4           32
+We therefore obtain (5.4) and consequently (5.2), completing the proof for Case 2.                  □
+  We now prove Theorem 1.4.
+Proof of Theorem 1.4. Recall that the quantity ω/r is transported by the flow u, which is divergence-
+free in R3 . Therefore, the distribution function of ω/r in Π+ remains the same for all time with
+respectRRto the measure dµ := r drdz. As before, we also recall notations A0 := ∥ω0 /r∥L∞ > 0 and
+m0 := Π+ ω0 drdz > 0.
+   For each 0 < λ ≤ A0 , defining the level sets Dλ (t) := {(r, z) ∈ Π+ : ω(r, z, t)/r ≥ λ}, we observe
+that                 Z                      Z                       Z A0
+                                                ω(r, z, t)
+                m0 =      ω(r, z, t) drdz =                rdrdz =        µ(Dλ (t)) dλ > 0,
+                      Π+                     Π+    r                  0
+                  R
+where µ(A) := A rdrdz. Thus, there exists 0 < δ ≤ A0 that only depends on the distribution of
+ω0 /r, such that
+                                                        m0
+                             µ(Dδ (t)) = µ(Dδ (0)) ≥           for all t ≥ 0.                     (5.9)
+                                                       2A0
+   From now on, we fix
+                                              n     m0 δ o
+                                     m := min m0 ,          ∈ (0, m0 ],                          (5.10)
+                                                    4A0
+and let R0 ≥ 1 and c0 > 0 be the constants in Proposition 5.1 corresponding to this m (thus,
+the constants m, R0 , c0 only depend on the initial data ω0 and u0 ). Applying Proposition 5.1 with
+this m, we see that for any taken R ≥ R0 , if (5.1) is satisfied at some t ≥ 0, then we have (5.2)
+at this time t. Note that this implies (5.1) cannot hold for too long time. Indeed, if we define
+C7 := c−1     −4
+         0 m Z(0), which only depends on the initial data, and suppose that (5.1) holds for all
+            4
+t ∈ [0, C7 R ], then we would have
+                               −Z ′ (t) ≥ c0 m4 R−4         for all t ∈ [0, C7 R4 ].
+Integrating this inequality in time yields
+                                         Z C7 R4
+                                    4
+                     Z(0) − Z(C7 R ) ≥           c0 m4 R−4 dt = c0 m4 C7 = Z(0),
+                                             0
+
+i.e., Z(C7 R4 ) ≤ 0, contradicting with the fact that Z(t) > 0 for all t ≥ 0. As a result, we have
+shown that for any R ≥ R0 , there must be some tR ∈ [0, C7 R4 ] such that (5.1) fails. Hence at this
+tR we have                             ZZ
+                                                 ω(r, z, tR ) drdz < m.                         (5.11)
+                                          r≤R
+                                                       19
+  On the other hand, the left hand side above can be bounded from below as
+ZZ                        ZZ                      ZZ
+                                ω(r, z, tR )                       ω(r, z, tR )
+      ω(r, z, tR ) drdz =                    dµ ≥                               dµ ≥ δµ(Dδ (tR )∩{r ≤ R}).
+  r≤R                       r≤R      r              Dδ (tR )∩{r≤R}      r
+Combining this with (5.11) and the definition of m in (5.10) implies
+                                                         m    m0
+                                µ(Dδ (tR ) ∩ {r ≤ R}) <    ≤      .
+                                                         δ    4A0
+Subtracting the above inequality from (5.9), we obtain
+                                               m0
+                     µ(Dδ (tR ) ∩ {r > R}) >         for some tR ∈ [0, C7 R4 ].              (5.12)
+                                               4A0
+It remains to show that this implies the growth of ∥ω∥Lp (in the limsup sense) for all 1 ≤ p ≤ ∞.
+   For p = ∞, note that (5.12) directly implies
+                                    ∥ω(tR )∥L∞ (R3 ) = ∥ω(tR )∥L∞ (Π+ ) ≥ δR,
+by the definition of Dδ and the fact that Dδ (tR ) ∩ {r > R} ̸= ∅.
+  For 1 ≤ p < ∞, we have
+                                                                            ω(r, z, tR ) p
+                               ZZ                           ZZ
+        ∥ω(tR )∥pLp (R3 ) = 4π    |ω(r, z, tR )|p dµ ≥ 4πRp                                dµ
+                             Π+                              Dδ (tR )∩{r>R}      r
+                                                           πm0
+                      ≥ 4π (δR)p µ(Dδ (tR ) ∩ {r > R}) >         (δR)p ,
+                                                            A0
+and taking the power 1/p,
+                               ∥ω(tR )∥Lp (R3 ) ≥ (πm0 A−1
+                                                        0 )
+                                                            1/p
+                                                                δR.
+Since δ > 0 depends only on the initial data and (πm0 A−1
+                                                       0 )
+                                                          1/p is uniformly bounded from below
+
+for all p ≥ 1, we conclude that, at time tR ,
+                               ∥ω(tR )∥Lp (R3 ) ≥ c̃(ω0 , u0 )R         for all 1 ≤ p ≤ ∞,
+with some constant c̃(ω0 , u0 ) > 0 that depends only on the initial data.
+  As a consequence, for all R ≥ R0 we have
+                                               ∥ω(t)∥Lp (R3 )
+                                     sup                      ≥ c̃(ω0 , u0 ).
+                                  t∈[0,C7 R4 ]      R
+Through a change of variable T := C7 R4 , we obtain that for all T ≥ C7 R04 ,
+                       ∥ω(t)∥Lp (R3 )               ∥ω(t)∥Lp (R3 )                  −1/4
+             sup                        ≥ sup                        ≥ c̃(ω0 , u0 )C7      =: c(ω0 , u0 ) > 0,
+            t∈[0,T ]       t1/4          t∈[0,T ]       T 1/4
+which yields (1.13).                                                                                             □
+   Finally, we prove Theorem 1.5, whose proof is almost a direct consequence of Proposition 5.1.
+                                                                              RR
+Proof of Theorem 1.5. Fix any R ≥ R0 . For each t ≥ 0, recall that mR (t) := Π+ ∩{r≤R} ω(r, z, t) drdz
+satisfies mR (t) ≤ m0 by definition.
+   Therefore, for each t ≥ 0, by defining m as mR (t) and applying Proposition 5.1 with this m, we
+obtain
+                           −Z ′ (t) ≥ c0 (ω0 , u0 )mR (t)4 R−4 for all t ≥ 0.
+Integrating in time over t ∈ [0, ∞) directly leads to
+                             Z ∞
+                                   mR (t)4 dt ≤ c0 (ω0 , u0 )−1 Z(0)R4 < ∞,
+                                    0
+which finishes the proof.                                                                                        □
+                                                                20
+                                                   References
+ [1] H. Abidi, T. Hmidi, and S. Keraani. On the global well-posedness for the axisymmetric Euler equations. Math.
+     Ann., 347(1):15–41, 2010.
+ [2] J. Chen and T. Y. Hou. Finite time blowup of 2D Boussinesq and 3D Euler equations with C 1,α velocity and
+     boundary. Comm. Math. Phys., 383(3):1559–1667, 2021.
+ [3] J. Chen and T. Y. Hou. Stable nearly self-similar blowup of the 2D Boussinesq and 3D Euler equations with
+     smooth data I: Analysis. arXiv preprint arXiv:2210.07191, 2022.
+ [4] J. Chen and T. Y. Hou. Stable nearly self-similar blowup of the 2D Boussinesq and 3D Euler equations with
+     smooth data II: Rigorous numerics. Multiscale Model. Simul., 23(1):25–130, 2025.
+ [5] S. Childress. On vortex stretching and the global regularity of Euler flows I. Axisymmetric flow without swirl.
+     https://math.nyu.edu/~childres/cocpaperone.pdf, 2006.
+ [6] S. Childress. Growth of anti-parallel vorticity in Euler flows. Phys. D, 237(14-17):1921–1925, 2008.
+ [7] S. Childress and A. D. Gilbert. Eroding dipoles and vorticity growth for Euler flows in R3 : the hairpin geometry
+     as a model for finite-time blowup. Fluid Dynamics Research, 50(1):011418, 2018.
+ [8] S. Childress, A. D. Gilbert, and P. Valiant. Eroding dipoles and vorticity growth for Euler flows in R3 : I.
+     axisymmetric flow without swirl. Journal of Fluid Mechanics, 805:1–30, 2016.
+ [9] K. Choi and I.-J. Jeong. Filamentation near hill’s vortex. Comm. PDE, 48(1):54–85, 2023.
+[10] K. Choi and I.-J. Jeong. On vortex stretching for anti-parallel axisymmetric flows. Amer. J. Math., 147(5):1251–
+     1284, 2025.
+[11] D. Córdoba, L. Martı́nez-Zoroa, and F. Zheng. Finite time singularities to the 3D incompressible Euler equations
+     for solutions in C ∞ (R3 \ {0}) ∩ C 1,α ∩ L2 . Ann. PDE, 11(2):19, 2025.
+[12] R. Danshen. Axisymmetric incompressible flows with bounded vorticity. Uspekhi Mat. Nauk, 62(3(375)):73–94,
+     2007.
+[13] T. Do. On vorticity gradient growth for the axisymmetric 3D Euler equations without swirl. Arch. Ration. Mech.
+     Anal., 234(1):181–209, 2019.
+[14] T. D. Drivas and T. M. Elgindi. Singularity formation in the incompressible Euler equation in finite and infinite
+     time. EMS Surv. Math. Sci., 10(1):1–100, 2023.
+[15] T. Elgindi. Finite-time singularity formation for C 1,α solutions to the incompressible Euler equations on R3 .
+     Ann. of Math. (2), 194(3):647–727, 2021.
+[16] T. M. Elgindi, T.-E. Ghoul, and N. Masmoudi. On the stability of self-similar blow-up for C 1,α solutions to the
+     incompressible Euler equations on R3 . Camb. J. Math., 9(4):1035–1075, 2021.
+[17] T. M. Elgindi and I.-J. Jeong. Finite-time singularity formation for strong solutions to the axi-symmetric 3D
+     Euler equations. Ann. PDE, 5(2):Paper No. 16, 51, 2019.
+[18] T. M. Elgindi and N. Masmoudi. L∞ ill-posedness for a class of equations arising in hydrodynamics. Arch. Rat.
+     Mech. Anal., 235(3):1979–2025, 2020.
+[19] H. Feng and V. Šverák. On the Cauchy problem for axi-symmetric vortex rings. Arch. Ration. Mech. Anal.,
+     215(1):89–123, 2015.
+[20] S. Gustafson, E. Miller, and T.-P. Tsai. Growth rates for anti-parallel vortex tube Euler flows in three and higher
+     dimensions. arXiv preprint arXiv:2303.12043, 2023.
+[21] J. Kim and I.-J. Jeong. A simple ill-posedness proof for incompressible Euler equations in critical Sobolev spaces.
+     J. Func. Anal., 283(10):109673, 2022.
+[22] A. Kiselev. Small scales and singularity formation in fluid dynamics. In Proceedings of the International Congress
+     of Mathematicians 2018, pages 2363–2390. World Scientific, 2018.
+[23] A. Kiselev, J. Park, and Y. Yao. Small scale formation for the 2-dimensional Boussinesq equation. Anal. & PDE,
+     18(1):171–198, 2024.
+[24] D. Lim and I.-J. Jeong. On the optimal rate of vortex stretching for axisymmetric Euler flows without swirl.
+     Arch. Ration. Mech. Anal., 249(3):32, 2025.
+[25] A. Majda. Vorticity and the mathematical theory of incompressible fluid flow. Comm. Pure Appl. Math.,
+     39(S1):S187–S220, 1986.
+[26] A. J. Majda and A. L. Bertozzi. Vorticity and Incompressible Flow, volume 27. Cambridge University Press,
+     2002.
+[27] X. Saint Raymond. Remarks on axisymmetric solutions of the incompressible Euler system. Comm. PDE, 19(1-
+     2):321–334, 1994.
+[28] F. Shao, D. Wei, and Z. Zhang. Global regularity of axisymmetric Euler equations without swirl in higher
+     dimensions. to appear in Acta Mathematica Sinica, English Series, 2025.
+[29] K. Shariff and A. Leonard. Vortex rings. Annu. Rev. Fluid Mech, 24:235–79, 1992.
+
+
+                                                          21
+[30] T. Shirota and T. Yanagisawa. Note on global existence for axially symmetric solutions of the Euler system.
+     Proc. Japan Acad. Ser. A Math. Sci., 70(10):299–304, 1994.
+[31] M. R. Ukhovskii and V. I. Iudovich. Axially symmetric flows of ideal and viscous fluids filling the whole space.
+     J. Appl. Math. Mech., 32:52–61, 1968.
+[32] Y. Wang, C.-Y. Lai, J. Gómez-Serrano, and T. Buckmaster. Asymptotic self-similar blow-up profile for three-
+     dimensional axisymmetric euler equations using neural networks. Phys. Rev. Lett., 130:244002, Jun 2023.
+[33] V. Yudovich. On the loss of smoothness of the solutions of the euler equations and the inherent instability of
+     flows of an ideal fluid. Chaos: An Interdisciplinary Journal of Nonlinear Science, 10(3):705–719, 2000.
+
+  Department of Mathematics, National University of Singapore, Block S17, 10 Lower Kent Ridge
+Road, Singapore, 119076, Singapore.
+  Email address: k.egamberganov@u.nus.edu
+
+  Department of Mathematics, National University of Singapore, Block S17, 10 Lower Kent Ridge
+Road, Singapore, 119076, Singapore.
+  Email address: yaoyao@nus.edu.sg
+
+
+
+
+                                                         22
+

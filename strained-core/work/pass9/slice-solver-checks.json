@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "Analytic Gaussian evolution, known Poisson solution, discrete incompressibility and circulation; no PDE certification",
+  "results": [
+    {
+      "nr": 192,
+      "poisson_relative_max_error": 0.0001316768071781115,
+      "discrete_divergence_max": 4.2327252813834093e-16,
+      "Gaussian_relative_max_error": 1.712973729439682e-06,
+      "nonlinear_circulation_error": 3.789561257387201e-15
+    },
+    {
+      "nr": 384,
+      "poisson_relative_max_error": 3.290126056358664e-05,
+      "discrete_divergence_max": 8.500145032286355e-16,
+      "Gaussian_relative_max_error": 4.286273910736327e-07,
+      "nonlinear_circulation_error": 1.1368683772161604e-14
+    },
+    {
+      "nr": 768,
+      "poisson_relative_max_error": 8.225801663105716e-06,
+      "discrete_divergence_max": 1.7104373473131318e-15,
+      "Gaussian_relative_max_error": 1.0718082478433644e-07,
+      "nonlinear_circulation_error": 1.7053025658242404e-14
+    }
+  ]
+}

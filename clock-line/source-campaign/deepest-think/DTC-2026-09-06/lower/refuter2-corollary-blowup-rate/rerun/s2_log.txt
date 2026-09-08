@@ -1,0 +1,22 @@
+========================================================================
+(1) viscosity power in the Leray/Giga lower bound
+========================================================================
+  u solves NS with viscosity nu on [0,T).  Put w(x,sigma) = u(x,sigma/nu)/nu.
+  Then w solves the nu=1 equations and blows up at Tw = nu*T.
+  nu=1 statement (Leray 1934 / Giga 1986):  ||w(sigma)||_q >= c (Tw-sigma)^(-(1-3/q)/2)
+  => ||u(t)||_q >= c * nu * (nu (T-t))^(-(1-3/q)/2) = c * nu*(sqrt(nu)*sqrt(s))**((3 - q)/q)
+     q=oo:  nu exponent = 1/2,  (T-t) exponent = -1/2
+     q=4:  nu exponent = 7/8,  (T-t) exponent = -1/8
+     q=6:  nu exponent = 3/4,  (T-t) exponent = -1/4
+     q=9:  nu exponent = 2/3,  (T-t) exponent = -1/3
+  q=inf:  ||u(t)||_inf >= c nu^(1/2) (T-t)^(-1/2).
+
+========================================================================
+(2) NS-scaling invariance of the three forms of the corollary
+========================================================================
+  (a)  M*(T-t)*(1+log+ Re_E)   [Re_E = E^(2/5) M^(1/5)/nu]
+     scaled minus original = 0   (expect 0)
+  (b)  M*(T-t)*(1+log+(E0^(2/5) M^(1/5)/nu))
+     scaled minus original = 0   (expect 0)
+  (c)  M*(T-t)*(1+log+(E0^(2/5)/(nu (T-t)^(1/5))))
+     scaled minus original = 0   (expect 0)

@@ -1,0 +1,80 @@
+==============================================================================
+(A) NS scaling: invariance of M*T and Re_E
+==============================================================================
+  ell_lam/ell           = 1/lambda    (expect 1/lambda)
+  Re_E(lam)/Re_E        = 1    (expect 1)
+  Re_E as E,M,nu        = E**(2/5)*M**(1/5)/nu   (expect E**(2/5)*M**(1/5)/nu)
+  (M*T)_lam/(M*T)       = 1    (expect 1)
+
+==============================================================================
+(B) the implicit -> explicit bootstrap:  (b) implies (c).
+    (b) M*s*(1+log+(E0^(2/5)M^(1/5)/nu)) >= c1
+    (c) M >= cc/(s*(1+log+(E0^(2/5)/(nu*s^(1/5)))))   with cc=min(c1,1)
+    Search for a counterexample: (E0,nu,s,c1,M) with (b) true and (c) false.
+==============================================================================
+  samples                 = 4000000
+  (b) true                = 2053207
+  (b) true and (c) false  = 0    <-- must be 0
+
+  Same search with cc replaced by c1 (i.e. WITHOUT the min(c1,1) guard):
+  (b) true and (c-no-min) false = 11   <-- expected > 0: the guard is needed
+
+==============================================================================
+(C) the classical comparator: Leray/Giga  ||u(t)||_inf >= c nu^(1/2)(T-t)^(-1/2)
+    fed through  ||u||_inf <= C E^(1/5) M^(3/5)   (Astra pass 8, eq. (4))
+==============================================================================
+  exponent of nu   = 5/6   (from (3/5)a = 1/2)
+  exponent of E    = -1/3
+  exponent of (T-t)= -5/6
+  check E^(1/5)*(that)^(3/5) = sqrt(nu)/sqrt(s)   (expect nu^(1/2)/s^(1/2))
+  => classical route gives exponent 5/6 in (T-t); the corollary gives 1 minus a log.
+
+==============================================================================
+(D) accumulation of vorticity implied by the corollary (compare BKM / Ingimarson-Kukavica)
+==============================================================================
+  claimed antiderivative F(r) = -5c*log(1 + log K - (1/5)log r)
+  F'(r) - integrand           = 0   (expect 0)
+  => int_?^t ||omega|| ds >= 5*c*log( 1 + log K + (1/5)log(1/(T-t)) ) + O(1)
+  i.e.  >= 5*c*loglog(1/(T-t)) + O(1).
+  Ingimarson-Kukavica (Euler, Thm 2.1): int_0^t ||omega|| >= (1/C) loglog(1/(T*-t)).
+
+==============================================================================
+(E) where the corollary overtakes the Leray-derived comparator (both constants set to 1)
+==============================================================================
+   ours:      M >= c1/(s*(1+log+(E0^(2/5)/(nu s^(1/5)))))
+   classical: M >= c2*nu^(5/6) E0^(-1/3) s^(-5/6)
+   The crossover LOCATION depends on the two unknown constants c1,c2; what is
+   constant-free is the RATIO's growth exponent.  Set c1=c2=1 and tabulate:
+
+     E0     nu        (T-t)      corollary      classical      ratio
+         1       1      1e+00     1.0000e+00     1.0000e+00  1.000e+00
+         1       1      1e-03     4.1989e+02     3.1623e+02  1.328e+00
+         1       1      1e-06     2.6574e+05     1.0000e+05  2.657e+00
+         1       1      1e-09     1.9438e+08     3.1623e+07  6.147e+00
+         1       1      1e-12     1.5323e+11     1.0000e+10  1.532e+01
+         1       1      1e-15     1.2646e+14     3.1623e+12  3.999e+01
+
+         1    0.01      1e+00     1.7841e-01     2.1544e-02  8.281e+00
+         1    0.01      1e-03     1.4313e+02     6.8129e+00  2.101e+01
+         1    0.01      1e-06     1.1950e+05     2.1544e+03  5.547e+01
+         1    0.01      1e-09     1.0257e+08     6.8129e+05  1.505e+02
+         1    0.01      1e-12     8.9836e+10     2.1544e+08  4.170e+02
+         1    0.01      1e-15     7.9917e+13     6.8129e+10  1.173e+03
+
+      1000   0.001      1e+00     9.3713e-02     3.1623e-04  2.963e+02
+      1000   0.001      1e-03     8.2971e+01     1.0000e-01  8.297e+02
+      1000   0.001      1e-06     7.4438e+04     3.1623e+01  2.354e+03
+      1000   0.001      1e-09     6.7497e+07     1.0000e+04  6.750e+03
+      1000   0.001      1e-12     6.1740e+10     3.1623e+06  1.952e+04
+      1000   0.001      1e-15     5.6887e+13     1.0000e+09  5.689e+04
+
+     0.001     0.1      1e+00     1.0000e+00     1.4678e+00  6.813e-01
+     0.001     0.1      1e-03     5.2055e+02     4.6416e+02  1.121e+00
+     0.001     0.1      1e-06     3.0279e+05     1.4678e+05  2.063e+00
+     0.001     0.1      1e-09     2.1349e+08     4.6416e+07  4.599e+00
+     0.001     0.1      1e-12     1.6486e+11     1.4678e+10  1.123e+01
+     0.001     0.1      1e-15     1.3428e+14     4.6416e+12  2.893e+01
+
+   Fitted slope of log(ratio) vs log(1/s) over s in [1e-15,1e-6]:
+     E0=1 nu=1:  slope = 0.1314   (-> 1/6 = 0.1667 as s->0, minus the log)
+     E0=1000 nu=0.001:  slope = 0.1537   (-> 1/6 = 0.1667 as s->0, minus the log)

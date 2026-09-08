@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "scope": "exact manufactured/local algebra, no NS trajectory or error enclosure",
+  "checks": 37,
+  "results": [
+    {
+      "name": "central C4 commutant",
+      "passed": true
+    },
+    {
+      "name": "central incompressibility",
+      "passed": true
+    },
+    {
+      "name": "central matrices at different times commute",
+      "passed": true
+    },
+    {
+      "name": "C4 commutant has only the two central parameters",
+      "passed": true
+    },
+    {
+      "name": "central commutant dimension is two",
+      "passed": true
+    },
+    {
+      "name": "mode4 quartic pressure is harmonic",
+      "passed": true
+    },
+    {
+      "name": "mode4 quartic pressure is C4 invariant",
+      "passed": true
+    },
+    {
+      "name": "mode4 quartic pressure Hessian vanishes at center",
+      "passed": true
+    },
+    {
+      "name": "axisymmetric quartic pressure is harmonic",
+      "passed": true
+    },
+    {
+      "name": "axisymmetric quartic pressure is C4 invariant",
+      "passed": true
+    },
+    {
+      "name": "axisymmetric quartic pressure Hessian vanishes at center",
+      "passed": true
+    },
+    {
+      "name": "manufactured determinant one",
+      "passed": true
+    },
+    {
+      "name": "manufactured trace A zero",
+      "passed": true
+    },
+    {
+      "name": "manufactured reference requires time ordering",
+      "passed": true
+    },
+    {
+      "name": "manufactured relative divergence",
+      "passed": true
+    },
+    {
+      "name": "full gradient transform",
+      "passed": true
+    },
+    {
+      "name": "physical divergence",
+      "passed": true
+    },
+    {
+      "name": "complete material acceleration and factor 2",
+      "passed": true
+    },
+    {
+      "name": "anisotropic vector diffusion",
+      "passed": true
+    },
+    {
+      "name": "full pressure source after affine subtraction",
+      "passed": true
+    },
+    {
+      "name": "pressure gradient metric",
+      "passed": true
+    },
+    {
+      "name": "pressure Laplacian metric",
+      "passed": true
+    },
+    {
+      "name": "cubic radius solves dz/dI=z cubed",
+      "passed": true
+    },
+    {
+      "name": "quadratic radius solves dz/dI=z squared",
+      "passed": true
+    },
+    {
+      "name": "cubic variational exponent",
+      "passed": true
+    },
+    {
+      "name": "quadratic variational exponent",
+      "passed": true
+    },
+    {
+      "name": "Fourier endpoint radial bound integral",
+      "passed": true
+    },
+    {
+      "name": "endpoint D4 Holder constant squared",
+      "passed": true
+    },
+    {
+      "name": "second Taylor Holder factor",
+      "passed": true
+    },
+    {
+      "name": "gradient Taylor Holder factor",
+      "passed": true
+    },
+    {
+      "name": "mixed radius Bernoulli equation",
+      "passed": true
+    },
+    {
+      "name": "mixed variational exponent",
+      "passed": true
+    },
+    {
+      "name": "Fourier H4 versus D4 coefficient bound 24",
+      "passed": true
+    },
+    {
+      "name": "outer maximum gradient is symmetric",
+      "passed": true
+    },
+    {
+      "name": "rotating-basis shear generator",
+      "passed": true
+    },
+    {
+      "name": "outer eigenvector plus",
+      "passed": true
+    },
+    {
+      "name": "outer eigenvector minus",
+      "passed": true
+    }
+  ]
+}

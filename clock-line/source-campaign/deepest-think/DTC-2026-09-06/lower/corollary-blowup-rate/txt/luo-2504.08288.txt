@@ -1,0 +1,1998 @@
+                                            SHARP NORM INFLATION FOR 3D NAVIER-STOKES EQUATIONS
+                                                          IN SUPERCRITICAL SPACES
+
+                                                                                      XIAOYUTAO LUO
+
+
+                                                  Abstract. We prove that the incompressible Navier-Stokes equations exhibit norm
+                                                  inﬂation in Ḃp,q
+                                                                s
+                                                                    (R3 ) with smooth, compactly supported initial data. Such norm inﬂation
+                                                  is shown in all supercritical Ḃp,q
+                                                                                  s
+                                                                                      near the scaling-critical line s = −1+ p3 except at s = 0.
+                                                  The growth mechanism diﬀers depending on the sign of the regularity index s: forward
+
+
+
+
+arXiv:2504.08288v1 [math.AP] 11 Apr 2025
+                                                  energy cascade driven by mixing for s > 0 and backward energy cascade caused by
+                                                  un-mixing for s < 0. The construction also demonstrates arbitrarily large, ﬁnite-time
+                                                  growth of the vorticity, the ﬁrst of such examples for the Navier-Stokes equations.
+
+
+
+
+                                                                                     1. Introduction
+                                              In this paper, we consider the three-dimensional Navier-Stokes equations of incompress-
+                                           ible viscous ﬂuids,
+                                                               
+                                                               
+                                                               ∂t u − ∆u + u · ∇u + ∇p = 0
+                                                                 div u = 0                      (t, x) ∈ [0, T ] × R3           (1.1)
+                                                               
+                                                               
+                                                                 u|t=0 = u0
+                                           where u : [0, T ] × R3 → R3 is the unknown velocity ﬁeld, p : [0, T ] × R3 → R is the scalar
+                                           pressure, and u0 : R3 → R3 is the initial data.
+                                              Our focus is the well-posedness/ill-posedness of the Cauchy problem (1.1), where the
+                                           notion of criticality plays a central role. Recall that a Banach space X is called critical
+                                           for (1.1) if its norm | · |X is invariant under the scaling
+                                                                            u(t, x) 7→ uλ (t, x) := λu(λ2 t, λx).                                  (1.2)
+                                                                                              1                               −1+3/p
+                                           Examples of critical spaces include L3 , Ḣ 2 and more generally, Ḃp,∞ . Heuristically,
+                                           (1.1) exhibits local well-posedness in critical or subcritical spaces but might become ill-
+                                           behaved in supercritical regimes where scaling favors nonlinearity over dissipation.
+                                              The well-posedness/ill-posedness of (1.1) in supercritical spaces poses signiﬁcant chal-
+                                           lenges. While there have been existence results in supercritical spaces, from Leray’s sem-
+                                           inal weak solutions [Ler34] to Calderón’s splitting [Cal90, Pop24], these solutions are not
+                                           known to preserve their initial data’s regularity, except in the energy space. Such a lim-
+                                           itation motivates fundamental questions about the persistence of regularity and stability
+                                           in supercritical settings.
+                                              In [Luo24] it was proved that (1.1) exhibits norm inﬂation in H s when 0 < s < 12 ,
+                                           i.e. solution with arbitrarily small initial data can be arbitrarily large in an arbitrarily
+                                           short time. The main result of this paper establishes norm inﬂation for (1.1) in almost all
+                                           supercritical spaces near the critical regularity threshold:
+                                           Theorem 1.1. For any s 6= 0 and 1 ≤ p, q ≤ ∞ such that −3 < s − p3 < −1, the 3D
+                                           Navier-Stokes equations (1.1) are strongly ill-posed in Ḃp,q
+                                                                                                     s (R3 ) in the following sense.
+
+
+                                             Date: April 14, 2025.
+                                             2020 Mathematics Subject Classification. 35Q30.
+                                             Key words and phrases. Navier-Stokes equations, Norm inﬂation, Ill-posedness.
+                                                                                                  1
+2                                              XIAOYUTAO LUO
+
+
+
+   For any ǫ > 0, there exists a time 0 < t∗ ≤ ǫ and a solution u of (1.1) such that the
+following holds.
+    (1) The solution u is smooth on [0, t∗ ], i.e.
+
+                                            u ∈ C ∞ ([0, t∗ ] × R3 ).
+
+    (2) The initial data u|t=0 = u0 ∈ Cc∞ (R3 ) and
+
+                                                |u0 |Ḃ s (R3 ) ≤ ǫ.                                                 (1.3)
+                                                       p,1
+
+
+    (3) u develops norm inﬂation at t = t∗ :
+
+                                            |u(t∗ )|Ḃ s          3)     ≥ ǫ−1 .                                     (1.4)
+                                                      p,∞ (R
+
+
+
+
+              Derivative s                                                  Derivative s
+
+                                                           Ẇ 2,1 ⊂ Ḃ1,∞
+                                                                      2                                    Ẇ 2,1 ⊂ Ḃ1,∞
+                                                                                                                      2
+
+
+
+
+                                      1                                                           1
+                                    Ḣ 2                                                        Ḣ 2
+
+
+                               L3      L2                            1                     L3      L2     0          1
+                                                                     p                                  Ḃ1,∞        p
+
+
+                  −1                                                            −1
+                Ḃ∞,∞                                                         Ḃ∞,∞
+
+
+
+
+        Figure 1. Left: Supercritical region in light blue. Right: Ill-posedness
+        region of Theorem 1.1 in pink
+
+
+  As depicted in Figure 1, Theorem 1.1 establishes norm inﬂation for (1.1) in Ḃp,qs near
+                           3
+the critical line s = −1 + p except possibly at s = 0. It remains an open question whether
+such norm inﬂation can occur in supercritical Lebesgue spaces Lp , 2 < p < 3.
+
+Remark 1.2.
+      • The upper limit s = −1 + 3p is sharp—the solution map is continuous for small
+                     −1+3/p
+        data in Bp,∞          , p < ∞, see for instance [BCD11, Theorems 5.40].
+                                         −1
+      • Theorem 1.1 extends the famous Ḃ∞,∞ norm inﬂation of Bourgain-Pavlović to
+          −s
+        Ḃ∞,∞ , −3 < s < −1.
+      • While the lower limit s = −3 + 3p appears to be technical, the result covers most of
+                                               s for s < −3 + 3 .
+        the practical cases. In fact, L1 6֒→ Ḃp,q            p
+      • By standard embedding results, Theorem 1.1 implies the same strong ill-posedness
+        in Sobolev spaces Ẇ s,p as well.
+
+  As said in the abstract, the driving mechanism of norm inﬂation diﬀers between s > 0
+and s < 0. The growth in the case s > 0 is based on mixing, producing a forward energy
+cascade. On the contrary, for s < 0, the growth of negative norms results from a backward
+energy cascade caused by un-mixing. Therefore the restriction of s 6= 0 is essential in our
+construction.
+                        NORM INFLATION IN SUPERCRITICAL SPACES                              3
+
+1.1. Application to small-scale formation. A key implication of the norm inﬂation in
+the s > 0 case is its connection to the small-scale formation of (1.1). In potential blowup
+scenarios, the transfer of energy to ﬁner scales can lead to singularities. To quantify this,
+one may examine the growth ratio of subcritical norms, such as:
+                                               |ω(t)|L∞
+                                                                                        (1.5)
+                                                |ω0 |L∞
+where ω denotes the vorticity of the solution. By the Beale-Kato-Majda criterion [BKM84],
+unbounded growth of (1.5) is a suﬃcient and necessary condition of a ﬁnite-time blowup.
+Recent numerical investigations [Hou23] found a class of pure swirl initial data that ex-
+hibits signiﬁcant sustained growth of (1.5), providing empirical support for potential ﬁnite-
+time blowup.
+   Despite recent developments on blowup scenarios/small-scale formation in related ﬂuid
+models [Kv14, BL15a, Elg21, HK21, KY23, CMZ25], no rigorous lower bounds for (1.5)
+have been established for solutions of the Navier-Stokes equations to date. In other words,
+there remains no proof of growth—let alone sustained growth or blowup—for solutions of
+(1.1).
+   A direct corollary of our construction demonstrates unbounded growth ratios within
+ﬁnite time for smooth solutions of (1.1):
+Theorem 1.3. For any M > 0, there exist a time t∗ > 0 and a smooth solution u of (1.1)
+on [0, t∗ ] such that its vorticity ω = ∇ × u satisﬁes
+                                      |ω(t∗ )|L∞
+                                                 ≥ M.                                   (1.6)
+                                       |ω0 |L∞
+  In particular, the initial data u0 ∈ Cc∞ (R3 ) can be arbitrarily small in any prescribed
+supercritical (homogeneous) Sobolev/Besov space.
+   One can show a similar growth ratio for other norms such as |u|W s,p with s > 0 in (1.6).
+   The growth in Theorem 1.3 is signiﬁcant but mere for a short burst of time. To ﬁnd po-
+tential blowup candidates, one needs to establish a feedback loop of self-sustained growth
+in (1.1), which is far beyond the scope of the current paper.
+
+1.2. Background and literature. We now discuss the related background of our result.
+As the literature on well-posedness of (1.1) is too vast to give a complete account here, we
+only mention several key milestones and refer to the monographs [LR16, BV22] for further
+references.
+   Weak and mild solutions. For L2 initial data, the existence of a global weak solution
+was established in Leray’s seminal work [Ler34]. Leray solutions are constructed via
+compactness arguments and satisfy the energy inequality. However, their regularity and
+uniqueness remain open problems. See recent [Hou23] for numerics of potential blowup
+and [ABC22] for non-uniqueness under external forcing.
+   An alternative framework, the mild solution approach treats (1.1) as a perturbation of
+the heat equation and involves the equivalent integral formulation
+                                       ˆ t
+                               ∆t
+                       u(t) = e u0 −       e∆(t−τ ) P div(u ⊗ u)(τ ) dτ                (1.7)
+                                           0
+where P is the Leray projection.
+   In the framework of mild solution (1.7), the notion of criticality plays an important
+role. Under the scaling (1.2), the following is a well-known hierarchy of embedded critical
+spaces
+                       1           −1+ 3
+                     Ḣ 2 ⊂ L3 ⊂ Ḃp,∞ p , p < ∞ ⊂ BM O −1 ⊂ Ḃ∞,∞
+                                                               −1
+                                                                   .
+4                                     XIAOYUTAO LUO
+
+   In [FK64], Fujita and Kato initiated the research on mild solutions, establishing local
+                                  1
+well-posedness of (1.1) for Ḣ 2 initial data.
+   Subsequent developments in L3 [Kat84, Gig86] and in Besov spaces [CMP94, Can97]
+culminated with Koch-Tataru’s BM O −1 theorem [KT01] that remains the sharpest local
+well-posedness of (1.1) without structural assumptions. See recent [CP25] for the sharp
+non-uniqueness construction to the Koch-Tataru’s BM O−1 theorem.
+   Ill-posedness in critical regimes. It had been conjectured [Mey97, Can04] that
+(1.1) is ill-posed in Ḃ∞,∞
+                         −1 , the largest critical space. Indeed, the groundbreaking work
+
+of Bourgain-Pavlović [BP08] conﬁrmed this via a norm inﬂation construction. We also
+mention other mild ill-posedness results around the same time of [BP08]. In [Ger08], the
+author proved that the solution map is not C 2 in Ḃ∞,q   −1 for q > 2, whereas in [CS10], the
+
+authors show a jump discontinuity in Ḃ∞,∞    −1 . The result of Bourgain-Pavlović [BP08] was
+
+improved in subsequent work [Yon10, CD14, Wan15], eventually showing ill-posedness in
+  −1 for q > 2 in [CD14] and all 1 ≤ q ≤ 2 in [Wan15].
+Ḃ∞,q
+   This scarcity of ill-posedness results contrasts starkly with the vast scope of well-
+posedness theory. Remarkably, in the critical regime, norm inﬂation phenomena are
+conﬁned to endpoint spaces p = ∞— the solution map is continuous for small data in
+  −1+3/p
+Bp,∞ , see for instance [BCD11, Theorems 5.40].
+   Supercritical regimes and beyond. In supercritical spaces–where nonlinearity
+dominates–the classical well-posedness theory of mild solutions collapses. These spaces
+include:
+                                                                        
+                      Ḣ s , (s < 12 ), Lp , (p < 3), Ḃp,q
+                                                        s
+                                                            , s < −1 + p3 .
+
+   Despite this, existence results via compactness method survive, as in classical Leray
+weak solutions. Calderón [Cal90] pioneered a hybrid approach via solution splitting u(t) =
+um + uw : the mild part um is constructed à la Kato in critical spaces, while the weak
+part is a Leray-type weak solution of a perturbed system. This “nonlinear interpolation”
+approach was revisited in various critical settings [SŠ17, BSŠ18, AB19].
+                                                                               s , −1 + 2 <
+   Calderón’s splitting was recently extended to supercritical Besov spaces Ḃp,q       p
+s < −1 + 3p by Popov [Pop24]. However, such solutions cannot maintain the initial data’s
+regularity, as our norm inﬂation result demonstrates.
+   While controlling the solutions in supercritical regimes poses signiﬁcant challenges, re-
+cent developments suggest that (1.1) should be ill-posed in such regimes. In particular,
+it was shown by convex integration that (1.1) admits nonunique weak solutions under su-
+percritical regularity [BV19, CL22]. However, those weak solutions exhibit characteristics
+much diﬀerent from the smooth ones considered in the norm inﬂation literature. We also
+mention recent [CP25], where the authors combined convex integration with aspects of
+critical mild formulation to show nonuniqueness of large BM O −1 solutions.
+   Small scale formation and blowup. In recent years, there have been signiﬁcant
+advances in understanding blowup scenarios and small-scale formation in related ﬂuid
+models [KN12, LH14, Kv14, Tao16, Elg21, HK21, KY23, CMZ25]. The growth mechanisms
+of small-scale formation are sometimes closely related to norm inﬂation constructions, as
+demonstrated by [Kv14, EJ17]
+   However, no growth mechanism had been rigorously established for solutions of (1.1)
+prior to Theorem 1.3. This is in part due to the viscous dissipation prohibits or suppresses
+many growth mechanisms known in the inviscid setting, including the DiPerna-Majda 2 12 D
+setup [DM87], the 3D Hou-Luo scenario [LH14, CH23], Bourgain-Li’s deformation of os-
+cillation [BL15a], and Elgindi’s Euler self-similar blowups [Elg21]. Furthermore, Leray’s
+backward self-similar solutions, once considered prime candidates for singularity formula-
+tion, were ruled out in the 1990s [NRŠ96, Tsa98].
+                        NORM INFLATION IN SUPERCRITICAL SPACES                              5
+
+   In [CMZZ24], the authors show singularity formation for a generalized Navier-Stokes
+system with fractional dissipation of small order and external forces in L1t C 1,ǫ . We refer
+to [CMZ23, CMZZ24, CMZ25] for a detailed discussion of the methodology.
+   As in other norm inﬂation constructions, our solutions exhibit only an instantaneous
+burst of growth. A central open question remains: Can solutions to (1.1) achieve pro-
+longed, sustained growth or even ﬁnite time blowup?
+1.3. Outline of construction. The argument of proving Theorem 1.1 is based on [Luo24].
+The essential steps consist of:
+    (a) Constructing a simpliﬁed approximate system capturing key dynamics of (1.1);
+    (b) Demonstrating norm inﬂation within this approximate system;
+    (c) Establishing proximity between the approximate and exact solutions of (1.1).
+   This general scheme of proving ill-posedness of ﬂuid equations was already rooted
+in the pioneering work [BL15a, BL15b] but brought to systematic treatments in recent
+works [CMZ22, CMZO24].
+   Step (a): Approximations. To ﬁnd the approximate system, we follow the two steps
+reductions as in [Luo24]:
+      • 3D Navier-Stokes to 3D Euler : In supercritical spaces, viscous eﬀects are dom-
+         inated by the nonlinearity over short timescales, allowing (1.1) to approximate
+         Euler dynamics.
+      • 3D Euler to 2D Euler + transport : Exploiting axisymmetric anisotropy, we reduce
+         the system into a 2D Euler equation (governing radial and vertical components)
+         and a linear transport equation for the swirl component.
+   Step (b): Norm inflation mechanism. For the reduced system of “2D Euler +
+liner transport”, norm inﬂation arises solely from the swirl component’s evolution, while
+radial/axial components remain stationary.
+      • Case s > 0: Non-Lipschitz velocity ﬁelds (permitted by supercriticality) induce
+         rapid growth via mixing. Our construction is based on [Luo24], with enhanced
+         bookkeeping for Besov estimates.
+      • Case s < 0: Initial data is carefully “premixed”—time evolution unmixes it, in-
+         ducing a decay of positive regularity norms, which is turned into the growth of
+         negative regularity norms.
+   Step (c): Stability of the approximation.
+   Once we establish the desired growth for the approximate solution, critical to the proof
+is showing that norm inﬂation persists under the full (1.1) dynamics.
+   This requires that our reduced system remain a good approximation of (1.1). On
+one hand, the supercritical regularity allows to neglect the viscous dissipation until the
+norm inﬂation occurs. On the other hand, the anisotropic ﬂow structures provide the
+necessary smallness allowing to recover from “2D Euler+linear transport” to the full 3D
+Euler dynamics.
+Organization of the paper. The rest of the paper is structured as follows.
+    • Section ?? introduces preliminaries of necessary functional settings and essential
+      inequalities.
+    • Section 2 constructs approximate solutions for the reduced system of “2D Euler +
+      transport”.
+    • Sections 3 (for s > 0) and 4 (for s < 0) prove norm inﬂation in the approximate
+      system.
+    • Section 5 compares approximate and exact solutions, establishing smoothness and
+      stability up to the critical time t∗ .
+6                                         XIAOYUTAO LUO
+
+      • Section 6 combines these results to conclude Theorem 1.1 and Theorem 1.3.
+
+Acknowledgment. The author is partially supported by NSFC No. 12421001 and No.
+12288201.
+
+1.4. Notations. For a vector- or tensor- value function f , its modulus |f | denotes the
+square root of the sum of squares of each component.
+   For a Banach space X, its norm is denoted by | · |X . Functional norms in this paper are
+mostly deﬁned on R3 , so we often use | · |Lp and | · |W k,p for brevity.
+   For two quantities X, Y ≥ 0, we write X . Y if X ≤ CY holds for some constant
+C > 0, and similarly X & Y if X ≥ CY , and X ∼ Y means X . Y and X & Y at the
+same time.
+   In addition, X .a,b,c,... Y means X ≤ Ca,b,c...Y for a constant Ca,b,c... depending on
+parameters a, b, c . . . .
+   Throughout the paper, for k ∈ N, ∇k refers to the full gradient in R3 . We denote the
+Fourier transform of a function f by fb.
+
+1.5. Sobolev and Besov spaces. We recall the deﬁnition of Sobolev spaces for integer
+k ∈ N,
+                              X
+                  |f |W k,p =   |∇i f |Lp   |f |Ẇ k,p = |∇k f |Lp .           (1.8)
+                                 0≤i≤k
+
+  We also recall the fractional Sobolev spaces of the following deﬁnition. For real s ∈ R
+and 1 < p < ∞,
+                         |f |W s,p = |J s f |Lp |f |Ẇ s,p = |Λs f |Lp               (1.9)
+                                                              cs = (1 + |ξ|2 ) s2 and Λs is the
+where J s is the Bessel potential with the Fourier multiplies J
+                                            cs = |ξ|s . When p = 2, we denote H s := W s,2
+Riesz potential with the Fourier multiplies Λ
+and Ḣ := Ẇ .
+       s       s,2
+
+  It is well-known that for 1 < p < ∞, when s = k is an integer, both deﬁnitions (1.8)
+and (1.9) coincide. In this paper we only consider either k ∈ N with 1 ≤ p ≤ ∞ or k ∈ R
+with 1 < p < ∞.
+
+1.6. Besov spaces. We recall the deﬁnition of Besov spaces by the Littlewood-Paley
+decomposition. Since we only use some duality and interpolation properties of Besov
+spaces, we refer to [BCD11] for the details.
+   Let {∆q }q∈Z be a sequence of Littlewood-Paley                                cq is
+                                                  projection operators such that ∆
+                                             P
+supported in frequencies |ξ| ∼ 2 and Id = q∈Z ∆q in the sense of distribution.
+                                q
+
+   For s ∈ R, 1 ≤ p, q ≤ ∞, the homogeneous Besov norm Ḃp,q
+                                                           s is given by
+
+
+                                 |f |Ḃ s = 2sq |∆q f |Lp                               (1.10)
+                                       p,q                    ℓq (Z)
+
+    We also frequently the following fact:
+                                      k
+                                    Ḃp,1 ֒→ Ẇ k,p ֒→ Ḃp,∞
+                                                         k
+
+
+  We do not use the deﬁnition (1.10) to actually compute Besov norms. Instead, we often
+use the following tools. The ﬁrst is a convenient interpolation result.
+Lemma 1.4. [BCD11, Proposition 2.22] For any s1 < s2 and 0 < α < 1, let s :=
+αs1 + (1 − α)s2 . Then
+                               |f |Ḃ s .α,s1 ,s2 |f |αḂ s1 |f |1−α
+                                                                   s
+                                                                 Ḃ 2
+                                                                      .
+                                    p,1                 p,∞       p,∞
+                         NORM INFLATION IN SUPERCRITICAL SPACES                                                             7
+
+  The second, valid for all s ∈ R but especially useful for s < 0, is the duality
+                                                 ˆ
+                                |f |Ḃ s ∼ sup       f φ dx                                                            (1.11)
+                                         p,q
+                                                φ∈Q−s        R3
+                                                   p′ ,q ′
+
+where for 1 ≤ p, q ≤ ∞ Q−s
+                        p′ ,q ′ := {φ ∈ S(R ) : |φ|Ḃ −s ≤ 1} with S(R ) the Schwartz class
+                                           3                          3
+                                                             p′ ,q ′
+and p′ , q ′ being the Hölder conjugates of p, q.
+  Finally, our main tool is the following Kato-Ponce commutator estimate.
+Proposition 1.5. [KP88, Propostion 4.2] Let u be a smooth solution of (1.1) on [0, t0 ]
+for some t0 > 0 such that |∇u|L∞ ([0,t0 ];L∞ ) ≤ M for some constant M ≥ 1.
+   Then for any k ≥ 0 and 1 < p < ∞,
+                       |u(t)|W k,p ≤ |u0 |W k,p eCk,p M t         for all t ∈ [0, t0 ]
+for universal constants Ck,p independent of M , t0 , and t.
+
+                              2. The approximate solution
+   In this section, we construct a class of approximate solutions of (1.1). In the construc-
+tion, there are two free parameters whose values we ﬁxed in Section 5 depending on the
+given ǫ > 0.
+   The main result is Proposition 2.1 below. In the next two sections, we will show that
+the approximate solution u also stays close to the exact solution u at least until t∗ .
+Proposition 2.1. Let s, p be given as in Theorem 1.1. For any ǫ > 0 and µ, ν ≥ 1
+satisfying (2.10), there exists a smooth, divergence-free, axisymmetric vector ﬁeld u :
+[0, ∞) × R3 → R3 and a time t∗ (µ, ν, ǫ) > 0 (deﬁned in (2.11)) such that the following
+holds.
+    (1) Regularity estimates: u satisﬁes for any k ∈ N, the estimates
+                                                                         2   2     1    1
+                          |u|L∞ ([0,t∗ ];Ẇ k,q ) ≤ Cǫ,k,q µk−s µ p − q ν p − q .                                       (2.1)
+   (2) Approximation property: There exist a smooth autonomous pressure p : R3 →
+       R and an error ﬁeld E : R+ × R3 → R3 such that
+                
+                                                         +    3
+                ∂t u − ∆u + u · ∇u + ∇p = E in (t, x) ∈ R × R
+                  div u = 0                                                  (2.2)
+                
+                
+                  u|t=0 = u0
+       where the error ﬁeld E, compactly supported in R3 at each time t ∈ R+ , satisfy for
+       any k ∈ N, the estimates
+                                                                                    1       2           1
+                                                                       1+ 2p −s                 − q2        − 1q
+               |E|L∞ ([0,t∗ ];Ẇ k,q ) ≤ Cǫ,k,q µk−s (µ−1 ν)(µ                    ν p )µ p             νp          .    (2.3)
+2.1. Outline of construction. We give a brief description of the construction of u.
+As discussed in the introduction, we ﬁrst neglect the viscous eﬀects and consider the
+axisymmetric Euler equations
+                     
+                                                     1
+                     ∂t uθ + ur ∂r uθ + uz ∂z uθ + r uθ ur = 0
+                       ∂t ur + ur ∂r ur + uz ∂z ur − 1r u2θ + ∂r p = 0           (2.4)
+                     
+                     
+                       ∂t uz + ur ∂r uz + uz ∂z uz + ∂z p = 0.
+In (2.4), the nonlinear terms decompose into a two dimensional transport part of ur , uz
+and 1/r terms. In our anisotropic setup (see Figure 2), 1/r is much less than a full
+derivative, and hence 1/r terms are of lower order among the nonlinear terms. Dropping
+all 1/r terms, we then observe that
+      • A swirl component uθ governed by a passive transport equation.
+8                                      XIAOYUTAO LUO
+
+      • Radial and vertical components (ur , uz ) satisfying the 2D Euler equations in the
+        rz-plane.
+  There is a lot of freedom in constructing solutions to this reduced system. Speciﬁcally
+we take the following.
+      • The radial and vertical components (ur , uz ) to be a stationary radial vortex in the
+        rz-plane.
+      • The swirl uθ supported inside the radial vortex and passively transported by
+        (ur , uz ) in the rz-plane .
+
+2.2. Auxiliary coordinates. Now we start the construction. We work in the cylindrical
+coordinate centered at the origin with (x1 , x2 , x3 ) 7→ (θ, r, z) deﬁned by
+
+                            x1 = r cos θ,   x2 = r sin θ,   x3 = z
+
+and the associated orthonormal frame
+
+                eθ = (− sin θ, cos θ, 0) er = (cos θ, sin θ, 0) ez = (0, 0, 1).
+
+   We note the point-wise bounds |∇k er | . r −k and |∇k eθ | . r −k for k ∈ N.
+   For any vector ﬁeld v : R3 → R3 , we denote its cylindrical components by v = vθ eθ +
+vr er + vz ez . We say a function f : R3 → R is axisymmetric if it does not depend on
+θ, and similarly for a vector-valued function v : R3 → R3 if its components vθ , vr , vz are
+axisymmetric.
+   By an induction argument and the identity ∇f = ∂r f er + ∂z f ez , for any axisymmetric
+f : R3 → R we have the following standard point-wise bounds for k ∈ N
+                                            X
+                              |∇k f (x)| .k     |∂ri ∂zk−i f (x)|.                     (2.5)
+                                            0≤i≤k
+
+    We also work with a shifted polar coordinate in the rz-plane (see Figure 2)
+
+                            r = ν −1 + ρ cos(ϕ),    z = ρ sin(ϕ).
+
+centered at the point (r, z) = (ν −1 , 0) for some ν ≥ 1, a large parameter whose value we
+will ﬁx in Section 5 depends on ǫ > 0, see also (2.10) below.
+  We also note the following useful point-wise bounds: if f : R3 → R is axisymmetric,
+then for k ∈ N
+                                    X         1
+                    |∇k f (x)| .k             k−i
+                                                  |∂ρi ∂ϕj f (x)| when ρ > 0          (2.6)
+                                            ρ
+                                  0≤i+j≤k
+
+which can be proved by passing ﬁrst to (2.5) and then use induction in the rz-plane.
+Another useful inequality, valid for any f : R3 → R is
+
+                      |∂ρk f (x)| ≤ |∇kr,z f (x)| ≤ |∇k f (x)| when ρ > 0               (2.7)
+
+where ∇kr,z denotes taking the gradient in rz-plane.
+   We use the convention that if a function f is deﬁned by variables r, z, ρ, ϕ, we use the
+same letter f to indicate its Euclidean counterpart R3 → R deﬁned implicitly by these
+variables and vice versa.
+   It is worth emphasizing that all the norms Lp or W k,p appearing below are taken in the
+original Euclidean variable of R3 , and we only use variables (θ, r, z) and (ρ, ϕ) to simply
+the notations.
+                         NORM INFLATION IN SUPERCRITICAL SPACES                           9
+
+
+
+2.3. The parameters and the setup. In the construction of the approximate solution
+u there are a few parameters. The ﬁrst group consists of exponent parameters that depend
+on the input exponent s, p from Theorem 1.1.
+   Throughout the paper we ﬁx
+     • 0 < b ≪ 1 given by
+                                      1              3
+                                 b=        −1−s+          .                         (2.8)
+                                      10              p
+     • N ≫ 1 given by
+                                              100
+                                  N = max{        , 100}.                           (2.9)
+                                                s
+     • k0 = 6 such that k0 > |s| + 3, to facilitate the constructions when s < 0.
+   The two major frequency parameters µ, ν ≥ 1 related by
+                                              ν = µ1−b .                             (2.10)
+The parameter µ represents the magnitude of a derivative, while ν −1 is the scale of the
+distance to the origin. Their values are ﬁxed till the very end of the proof depending on
+ǫ > 0 and other universal constants.
+   Deﬁne the critical time t∗ > 0, the onset of norm inﬂation:
+                                                       2    1
+                                  t∗ = ǫ−N −2 µ−1− p +s ν − p ,                      (2.11)
+where N > 0 is the large exponent that we ﬁxed in (2.9). Note that t∗ → 0 as µ → ∞
+due to (2.8) and (2.10).
+
+                    z
+
+
+
+
+                                                                  ρ       µ−1
+                                                                      ϕ
+                                                                                r
+
+
+                                       ν −1
+
+
+                 Figure 2. Anisotropic setup in rz-plane with µ−1 ≪ ν −1 .
+
+  Throughout the construction, let us ﬁx the proﬁles f, g ∈ Cc∞ (R) (in the shifted polar
+coordinate (ρ, ϕ), see Figure 2) such that
+                         ′
+                        
+                         f (ρ) = 1 for 1 ≤ ρ ≤ 32
+                        
+                        f (ρ) = dN fe(ρ) for some fe ∈ C ∞ (R)
+                                                         c
+                                  dρN
+                                         1
+                                                                                   (2.12)
+                        
+                         supp f (ρ) ⊂ {   ≤ ρ ≤ 2}
+                        
+                                        2
+                          supp g(ρ) ⊂ {1 ≤ ρ ≤ 23 }.
+     These proﬁles will be used to construct various components of the approximate solution
+u.
+
+2.4. Definition of ur and uz . Using the large parameters µ, ν ≥ 1 and proﬁles f, g, we
+deﬁne the approximate solution u : R+ × R3 → R3 in cylindrical
+                         u(t, x) = uθ (t, x)eθ + ur (x)er + uz (x)ez .               (2.13)
+10                                               XIAOYUTAO LUO
+
+  Among the cylindrical components, only uθ evolves with time. The stationary rz-
+components ur and uz are deﬁned as follows.
+                                                              2          1
+                                                                  −s
+                                     ur (z, r) := −ǫ2 µ p               ν p f ′ (µρ)∂z ρ
+                                                                                                              (2.14)
+                                     uz (z, r) := uz,p + uz,c
+where uz,p is the principal part of ez -component
+                                                         2          1
+                                                             −s
+                                          uz,p := ǫ2 µ p          ν p f ′ (µρ)∂r ρ                            (2.15)
+and uz,c is a divergence corrector deﬁned by
+                                                       f (µρ)
+                                                         −1+ p2 −s        1
+                                          uz,c := ǫ2 µ        .         νp           (2.16)
+                                                          r
+     Since u is an axisymmetric vector ﬁeld, we check that it indeed has zero divergence:
+                                             ur
+                            div u = ∂r ur +     + ∂z uz,p + ∂z uz,c
+                                             r
+                                  = 0.
+  The key point is that the vector ﬁeld R2 ∋ (ur , uz,p ) = Cǫ,µ ∇⊥ (f (µρ)) is a radial vortex
+and hence a stationary solution to the 2D Euler equation on the rz-plane with compact
+support. More precisely,
+Lemma 2.2. There exists a pressure p(r, z), smooth in (r, z) ∈ R+ × R and constant
+outside the support of (ur , uz,p ), such that
+                                    
+                 
+                  ur ∂r + uz,p ∂z ur + ∂r p = 0
+                    ur ∂r + uz,p ∂z uz,p + ∂z p = 0 in (r, z) ∈ R+ × R.     (2.17)
+                 
+                 
+                   ∂r ur + ∂z uz,p = 0
+     In addition, for any smooth G(r, z) there holds
+                                                      2   1 f ′ (ρ)
+                           ur ∂r + uz,p ∂z G = ǫ2 µ−s+ p ν p         ∂ϕ G.                                    (2.18)
+                                                                ρ
+Proof. Since (ur , uz,p ) = Cǫ,µ ∇⊥
+                                  r,z (f (µρ)), the vorticity w = ∇r,z ·(ur , uz,p ) = Cǫ,µ ∆r,z (f (µρ))
+                                                                   ⊥
+
+and hence the vorticity is compactly supported and radial in ρ.
+  The second (2.18) follows from −∂z ρ∂r + ∂r ρ∂z = ρ−1 ∂ϕ .                                        
+2.5. Definition of uθ . Motivated by (2.18), we give the construction of the θ component,
+the one that manifests the desired norm inﬂation.
+   Deﬁne the θ-component uθ : R+ × R3 → R as the unique smooth solution of the free
+transport equation on (r, z) ∈ R+ × R
+              (
+                ∂t uθ + (ur ∂r + uz,p ∂z )uθ = 0
+                                                 for (t, r, z) ∈ R+ × R+ × R       (2.19)
+                uθ |t=0 = u0,θ
+where the initial data
+                    (            2
+                                   −s−k0 1p k0
+                      ǫ−2+k0 N µ p      ν ∂ρ [sin(ϕ + ζ(ρ))g(µρ)]                                 if s < 0
+            u0,θ :=       2
+                            −s 1                                                                              (2.20)
+                       2
+                      ǫ µ p ν p sin(ϕ)g(µρ)                                                       if s > 0.
+                                                                                              1
+                                                                                      −s+ 2
+                                                               p ν p ρ−1 = ǫ−N µ−1 ρ−1 .
+where ∂ρk0 is k0 times diﬀerentiation in ρ and ζ(ρ) := t∗ ǫ2 µ
+  By the design of u0,θ and Lemma 2.2, we can express uθ explicitly
+                                 2         1                                  1
+                                     −s                           −s+ p2
+                   uθ (t) = ǫ2 µ p        ν p sin(ϕ − tǫ2 µ                  ν p ρ−1 )g(µρ)   if s > 0.
+  A similar but more complicated expression holds for s < 0 where one see that the phase
+angle ϕ + ζ(ρ) gets unmixed at t = t∗ .
+                          NORM INFLATION IN SUPERCRITICAL SPACES                                  11
+
+2.6. Properties of the approximate solution. We start with immediate consequences
+of the deﬁnitions (2.13)–(2.16) and derive useful Sobolev estimates for the approximate
+solution.
+   By their deﬁnitions, the objects uθ , ur , uz are supported in the ring {x ∈ R3 : ρ ≤ 2µ−1 }.
+Therefore, the vector ﬁeld u : R+ ×R3 → R3 deﬁned by (2.13)–(2.16) is smooth, divergence-
+free, and compactly supported with a support of size ∼ µ−2 ν −1 .
+   We derive useful Sobolev estimates for u of positive order in the below lemma. All
+Sobolev or Lebesgue norms in this paper are taken in R3 and hence we will not spell out
+the spatial domain.
+Lemma 2.3. For any k ∈ N and 1 ≤ q ≤ ∞, u satisﬁes the estimates
+                                                        2 2 1 1
+                                                           −     −
+                   |u|L∞ ([0,t∗ ];W k,q ) ≤ Cǫ,k,q µk−s µ p q ν p q ,
+
+where the constant Cǫ,k,q > 0 is independent of µ and ν.
+Proof. Since u is supported on a set of size ∼ µ−2 ν −1 , it suﬃces to prove that for k ∈ N,
+                                                                     2       1
+                                                             k−s p p
+                              |∇k u|L∞            3 ≤ Cǫ,k µ
+                                     t,x ([0,t ]×R )
+                                              ∗                 µ ν .
+and we analyze each component separately.
+Part 1: Estimates of ur er and uz ez
+   We drop the time variable as these two vector ﬁelds are stationary.
+   Since the constants in the estimates are allowed to depend on ǫ, by the deﬁnitions
+(2.14), (2.16), and (2.15) and using (2.6) for diﬀerentiation in ρφ-coordinates, we obtain
+                                                       2 1
+                               |∇k ur |L∞ ≤ Cǫ,k µk−s µ p ν p
+                                                       2 1                         (2.21)
+                                k                 k−s
+                              |∇ uz,p |L ≤ Cǫ,k µ
+                                        ∞              µp ν p
+
+and                                                       2 1
+                           |∇k uz,c|L∞ ≤ Cǫ,k (µ−1 ν)µk−s µ p ν p .                          (2.22)
+
+  Then the estimates for ur er and uz ez follow from (2.21), (2.22), and |∇k er | . r −k . ν k
+on the support of u thanks to ν ≪ µ.
+Part 2: Estimates of uθ eθ
+  Since uθ is transported by ur and uz,p, in both cases s > 0 and s < 0 by Lemma 2.2 we
+can write synthetically the uθ as
+                             2      1 X
+                      uθ = µ p −s ν p   ai Fi (µρ)Gi (ϕ + bi (t)ρ−1 µ−1 )               (2.23)
+                                          i
+
+where Fi and Gi are ﬁnitely many smooth proﬁles that can be computed explicitly and
+ai , bi (t) ∈ R are ǫ dependent but uniformly bounded on [0, t∗ ] in ν, µ. Theses claims follow
+from the deﬁnition of t∗ in (2.11).
+    When k = 0, the estimates follow trivially. For integers k ≥ 1, we need to bound the
+factor of each (spatial) diﬀerentiation on uθ .
+    By the construction of uθ , all Fi in (2.23) are supported in ρ ∈ [1, 32 ], so by diﬀerentiating
+in ρφ we observe from (2.6) that the maximum factor for each diﬀerentiation is Cǫ µ, namely
+                                                                         2       1
+                            |∇k (uθ )|L∞ ([0,t∗ ]×R3 ) ≤ Cǫ,k µk−s µ p ν p .                 (2.24)
+  It follows from (2.24) and |∇k eθ | . ν k on the support of uθ that
+                                                                             2       1
+                           |∇k (uθ eθ )|L∞ ([0,t∗ ]×R3 ) ≤ Cǫ,k µk−s µ p ν p .
+                                                                                                  
+12                                         XIAOYUTAO LUO
+
+2.7. Proof of Proposition 2.1.
+Proof of Proposition 2.1. Since the estimate (2.1) have been shown in Lemma 2.3, it only
+remains to show (2.2) and (2.3), the construction of E and its estimates.
+Step 1: Definition of p and E
+  The construction of the error ﬁeld E splits into two parts
+                                            E = Ee + Ev
+where E e is the “Eulerian” error deﬁned via cylindrical components E e = E e,θ eθ +E e,r er +
+E e,z ez by
+                                                  1
+                             E e,θ = uz,c ∂z uθ + uθ ur                                           (2.25)
+                                                  r
+                                                  1 2
+                             E e,r = uz,c ∂z ur − uθ
+                                                  r
+                             E e,z = ur ∂r uz,c + uz,p ∂z uz,c + uz,c ∂z uz
+and E v is the “viscous” error given by
+                                             E v = −∆u.                                           (2.26)
+  We deﬁne the pressure p(r, z) as (2.17), which is also smooth as a function R3 → R.
+  Note that E e corresponds to lower order nonlinear errors arising between the full 3D
+Euler dynamics and the transport plus 2D Euler dynamics of the approximate solution,
+whereas E v is introduced when neglecting the viscous dissipation.
+  By Lemma 2.2 and (2.19), u satisﬁes the 3D Euler equations with E e as the error on
+the right:
+                                ∂t u + u · ∇u + ∇p = E e                          (2.27)
+which can be seen in cylindrical coordinates, namely
+                    
+                                                   1
+                    ∂t uθ + ur ∂r uθ + uz ∂z uθ + r uθ ur = E e,θ
+                                                    1 2
+                      ∂t ur + ur ∂r ur + uz ∂z ur − r uθ + ∂r p = E e,r
+                    
+                    
+                      ∂t uz + ur ∂r uz + uz ∂z uz + ∂z p = E e,z .
+   It follows from (2.27) that u satisﬁes the 3D Navier-Stokes equations with E = E e + E v
+as the error, which proves (2.2).
+Step 2: Estimates of E
+   It remains to show the estimate for E. By the considerations in Lemma 2.3, it suﬃces
+to only consider the case k = 0 for |E|L∞ , that is
+                                                     1−s+ p2 p1  −s+ p2 p1 
+                      |E|L∞ ([0,t∗ ]×R3 ) .ǫ µ−1 ν µ        ν    µ      ν .         (2.28)
+     For the viscous error E v of (2.26), we apply Lemma 2.3
+                                                                             2 1
+                   |E v |L∞ ([0,t∗ ]×R3 ) ≤ |∇2 u|L∞ ([0,t∗ ]×R3 ) ≤ Cǫ µ2−s µ p ν p .            (2.29)
+Here we notice that
+                  2 1                                      3       −1− 1
+            µ2−s µ p ν p = right hand side of (2.28) × µ1+s− p µ−1 ν      p
+                                                                            .                     (2.30)
+
+By (2.8), the last factor in (2.30) satisﬁes
+                                 3       −1− 1
+                          µ1+s− p µ−1 ν       p
+                                                ≤ µ−10b µ2b ≤ µ−1 ν,
+and hence from (2.29) and (2.30) we conclude that
+                                                           1−s+ p2    1          −s+ p2    1
+                     |E v |L∞ ([0,t∗ ]×R3 ) ≤ Cǫ µ−1 ν µ             νp       µ            νp .   (2.31)
+                          NORM INFLATION IN SUPERCRITICAL SPACES                             13
+
+  For the Eulerian error E e given by (2.25), since estimating E e,θ and E e,z is very similar,
+we only demonstrate the estimate of E e,r .
+  For E e,r , we use the Hölder inequality and the fact that r ∼ ν −1 on the support of u,
+                                                                      1
+                   |E e,r |L∞ ([0,t∗ ]×R3 ) ≤ |uz,c |L∞ |∂z ur |L∞ + | uθ |L∞ |uθ |L∞
+                                                                      r
+                                            . |uz,c |L∞ |∇ur |L∞ + ν|uθ |L∞ |uθ |L∞ .
+By (2.22), and (2.1) proved in Part 1,
+                                                 2    1    2   1          2   1 2
+         |E e,r |L∞ ([0,t∗ ]×R3 ) .ǫ µ−1 νµ−s µ p ν pµ1−s µ p ν p + ν µ−s µ p ν p
+                                                                                        (2.32)
+                                         1−s+ p2 p1  −s+ p2 1p 
+                              .ǫ µ−1 ν µ        ν     µ       ν .
+Using the same strategy, one can show that both E e,θ and E e,z satisfy the same estimate
+as (2.32).
+   Combining (2.31) and (2.32) gives (2.28).
+                                                                                       
+
+                   3. Growth of the approximate solution: s > 0
+   In this and the next sections, we show the approximate solution u constructed in the
+previous section develop the desired norm inﬂation on [0, t∗ ].
+   Due to diﬀerences in the growth mechanisms, we separate the two cases s > 0 and
+s < 0—this section focuses on the case s > 0 whereas s < 0 is more involved and will be
+treated in the next section.
+   The main result of this section is summarized in the following.
+Proposition 3.1 (Norm inﬂation for u: s > 0). Let s, p be given as in Theorem 1.1 such
+that s > 0. The approximate solution u constructed in Proposition 2.1 satisﬁes:
+                                                             s (R3 ):
+   (1) Small initial data: The initial data u0 is small in Ḃp,1
+                                             |u0 |Ḃ s . ǫ2 .                             (3.1)
+                                                     p,1
+
+   (2) Norm inflation at critical time: There exists ǫ0 = ǫ0 (s, p) > 0 such that for
+       all 0 < ǫ ≤ ǫ0 at the critical time t∗ = t∗ (ǫ, µ) > 0 (deﬁned in (2.11)), u exhibits
+         s (R3 ) inﬂation:
+       Ḃp,∞
+                                          |u(t∗ )|Ḃ s        & ǫ−2 .                     (3.2)
+                                                     p,∞
+
+Both implicit constants are independent of ǫ or µ, ν.
+  To prove Proposition 3.1 and for later use, we need the following elementary result.
+Lemma 3.2. Let h : T → R be smooth and 2π-periodic. Denote by ζ(ρ) = ǫ−N µ−1 ρ−1 .
+Let G : R3 → R be deﬁned in the toroidal ρϕ coordinates by G = h(ϕ − ζ(ρ))g(µρ) with g
+from (2.12).
+   Then for any k ∈ N and 1 ≤ q ≤ ∞, there exists ǫk > 0 (depending on h and g) such
+that for any 0 < ǫ ≤ ǫk
+                                                                        2   1
+                                   |∂ρk G|Lq (R3 ) ∼ ǫ−N k µk− q ν − q
+where the implicit constant does not depend on ǫ, µ or ν.
+Proof. Since g is supported on ρ ⊂ [1, 23 ], G is smooth and compactly away from ρ = 0 on
+R3 . We need to estimate
+                              X
+                      ∂ρk G =     µk−i g(k−i) (µρ)∂ρi (h(ϕ − ζ(ρ))) .               (3.3)
+                                 0≤i≤k
+14                                                XIAOYUTAO LUO
+
+     Let us consider the main term of (3.3)
+                                                              k
+                                  Gk,p := h(k) (ϕ − ζ(ρ)) ζ (1) g(µρ),                             (3.4)
+
+and the decomposition
+                                             ∂ρk G = Gk,p + Gk,c .
+     By Faà di Bruno’s formula, for any i ∈ N, we see that
+                           X                                                      mj
+       ∂ρi (h(ϕ − ζ(ρ))) =       Cm1 ,...,mi h(m1 +···+mi ) (ϕ − ζ(ρ))Π1≤j≤i ζ (j)     ,           (3.5)
+                             m1 ,...,mi
+
+where the summation runs over m1 + 2m2 + · · · + imi = i.
+  Observe that each ζ (j) (ρ) is of the form Cj ǫ−N µ−1 ρ−1−j . So on the support of g(µρ),
+we have |ζ (j) (ρ)| ∼ ǫ−N µj .
+  It follows from (3.5) that in Gk,c , the largest possible factor of ǫ is (ǫ−N )k−1 , namely
+                                          |Gk,c |L∞ . (ǫ−N )k−1 µk .                               (3.6)
+Using the support property of g(µρ) we obtain from (3.6) that
+                                                                          2       1
+                                    |Gk,c |Lq . (ǫ−N )k−1 µk− q ν − q .                            (3.7)
+     On the other hand, the main term (3.4) satisﬁes the bound
+                                                                      2       1
+                                     |Gk,p |Lq ∼ (ǫ−N )k µk− q ν − q .                             (3.8)
+Since the constants in (3.7) and (3.8) are independent of ǫ, for each k ∈ N we can choose
+ǫk > 0 such that |Gk,c |Lq ≪ |Gk,p |Lq , which implies
+                                                                                      2     1
+                               |∂ρk G|Lq ∼ |Gk,p |Lp ∼ (ǫ−N )k µk− q ν − q .
+                                                                                                      
+     With the help of Lemma 3.2, we can ﬁnish the
+Proof of Proposition 3.1. Since u0 = u0,θ eθ + ur er + uz ez , by repeating the argument of
+Lemma 2.3 while keeping track of ǫ we can obtain
+                                              |ur er |Ẇ k,p . ǫ2 µk−s
+                                              |uz ez |Ẇ k,p . ǫ2 µk−s                             (3.9)
+                                            |u0,θ eθ |Ẇ k,p . ǫ2 µk−s
+for all k ∈ N. So the upper bound (3.1) follows by applying Lemma 1.4 with s1 = 0 < s
+and s2 = k0 > s:
+                                          1− ks      1− ks            1− ks               1− ks
+                      |u0 |Ḃ s . |u0 |Ḃ 0 0 |u0 | k0 0 . |u0 |L̇p 0 |u0 |Ẇ k00,p . ǫ2 .        (3.10)
+                            p,1             p,∞      Ḃp,∞
+
+     For the upper bound (3.2), since only uθ evolves with time, by (3.10) it suﬃces to prove
+                                            |uθ (t∗ )eθ |Ḃ s      & ǫ−2 .                        (3.11)
+                                                             p,∞
+
+In what follows we will ﬁrst show that for any k ∈ N if ǫ > 0 is suﬃciently small, then
+                                      |uθ (t∗ )eθ |Ẇ k,p ∼ ǫ2−kN µk−s                            (3.12)
+and then pass to (3.11) using Lemma 1.4.
+   We now focus on showing (3.12). Thanks to the fact |∇k eθ | . ν k on the support of
+uθ (t∗ ), we see that the estimate of |∇k (uθ (t∗ )eθ )|Lp is dominated by |∇k0 uθ (t∗ )|Lp .
+                         NORM INFLATION IN SUPERCRITICAL SPACES                                                         15
+
+
+  Based on these considerations and (2.6), we apply Lemma 3.2 to ∂ϕj uθ (t∗ ) and obtain
+that for any i ∈ N, there exists ǫi > 0 such that for any 0 < ǫ ≤ ǫi
+                                    ∂ρi ∂ϕj (uθ (t∗ ))        ∼ ǫ2−N i µi−s .                                       (3.13)
+                                                         Lp
+  Now thanks to (3.13), the lower bound of (3.12) follows
+                                                          
+                          ∇k uθ (t∗ )eθ p ≥ ∂ρk uθ (t∗ )eθ
+                                                   L                                            Lp
+                                                         ≥ |∂ρk uθ (t∗ )|Lp
+                                                            2−kN 1−s
+                                                         &ǫ              µ           .
+  Similarly the upper bound of (3.12) also follows from (3.13):
+                                             X
+                      |∇k (uθ (t∗ )eθ )|Lp .    |∇i uθ (t∗ )∇k−i eθ |Lp
+                                                     0≤i≤k
+                                                       X
+                                                 .             ν k−i |∇i uθ (t∗ )|Lp
+                                                     0≤i≤k
+                                                       X
+                                                 .             ν k−i ǫ2−iN µi−s
+                                                     0≤i≤k
+
+                                                 . ǫ2−kN µk−s ,                                                     (3.14)
+where we used |∇k−i eθ | . ν k−i on the support of uθ in the second inequality and (3.13)
+with (2.6) in the third inequality.
+   Thus both directions of (3.12) have been established. Since s < k0 < 2k0 , by Lemma
+1.4
+                                                                k0                    k0 −s
+                                ∗                        ∗                   ∗
+                                                                                                                    (3.15)
+                                                              2k0 −s                 2k0 −s
+                           |u(t )|Ẇ k0 ,p . |u(t )|            s
+                                                              Ḃp,∞
+                                                                       |u(t )|       Ẇ 2k0 ,p
+                                                                                                     ,
+
+and therefore similar to (3.10), by (3.14) and (3.15) we can conclude that for all suﬃciently
+small ǫ > 0
+                                                               k −s                      2k0 −s
+                                                              − 0k
+                            |u(t∗ )|Ḃ s      & |u(t∗ )|Ẇ 2k00 ,p |u(t∗ )|Ẇ k00 ,p
+                                                                                           k
+                                        p,∞
+
+                                              & ǫ2−sN
+                                              & ǫ−2
+where we have used sN ≥ 100.
+                                                                                                                        
+3.1. Estimates of vorticity. We record some useful estimates for the vorticity of the
+approximate solution.
+Lemma 3.3. Under the setting of Proposition 3.1, for any 1 ≤ q ≤ ∞, there holds,
+                                                                     2   2       1       1
+                                |ω(t∗ )|Lq & ǫ−2 µ1−s µ p − q ν p − q ,
+where ω := ∇ × u is the vorticity of u.
+Proof. Denote ω = ω θ eθ + ω r er + ω z ez . It suﬃces to show the lower bounds for ω r (t∗ ) =
+∂z uθ (t∗ ).
+   Since ∂z uθ = (sin(ϕ)∂ρ + cos(ϕ) ρ1 ∂ϕ )uθ , we obtain from (3.13) that
+                                           1                                   2 2
+                                                                                 −    1
+                                                                                        −1
+      |∂z uθ (t∗ )|Lq ≥ |∂ρ uθ (t∗ )|Lq − | ∂ϕ uθ (t∗ )|Lq ≥ Cǫ2−N − cǫ2 µ1−s µ p q ν p q .
+                                           ρ
+Since N ≥ 100, the ﬁrst term above dominates the second, and hence we have
+                                                                                         2           1
+                                                                                             − 2q        − q1
+                       |ω(t∗ )|Lq ≥ |∂z uθ (t∗ )|Lq & ǫ−2 µ1−s µ p                                  νp          .
+16                                           XIAOYUTAO LUO
+
+                                                                                                 
+
+                    4. Growth of the approximate solution: s < 0
+   In this section, we show the norm inﬂation for the approximate solution u when s < 0.
+The estimates are more complex than those for s > 0, as here we rely on duality to
+estimate norms with a negative derivative.
+   The main result of this section is the extension of Proposition 3.1 to the case s < 0.
+Proposition 4.1 (Norm inﬂation for u: s < 0). Let s, p be given as in Theorem 1.1 such
+that s < 0. The approximate solution u constructed by Proposition 2.1 satisﬁes
+                                                              s (R3 ):
+    (1) Small initial data: The initial data u0 is small in Ḃp,1
+                                               |u0 |Ḃ s . ǫ2 .
+                                                      p,1
+
+      (2) Norm inflation at critical time: There exists ǫ0 = ǫ0 (s, p) > 0 such that for
+          all 0 < ǫ ≤ ǫ0 at the critical time t∗ = t∗ (ǫ, µ) > 0 (deﬁned in (2.11)), u exhibits
+            s (R3 ) inﬂation:
+          Ḃp,∞
+                                            |u(t∗ )|Ḃ s         & ǫ−2 .
+                                                      p,∞
+
+Both implicit constants are independent of ǫ or µ, ν.
+     In the rest of this section, we prove Proposition 4.1 in several steps.
+
+4.1. Upper bounds for ur er and uz ez . Recall that the initial data u0 = ur er + uz ez +
+u0,θ eθ . We start with the upper bound for ur er .
+Lemma 4.2. Under the setting of Proposition 4.1, there holds
+                                             |ur er |Ḃ s . ǫ2 .
+                                                           p,1
+
+Proof. Since −k0 < s < 0, by Lemma 1.4 it suﬃces to show
+                                     |ur er |Ḃ −k0 . ǫ2 µ−k0 −s                             (4.1)
+                                                  p,∞
+
+and
+                                            |ur er |Lp . ǫ2 µ−s .                            (4.2)
+     The Lp bound (4.2) follows directly from the deﬁnition of ur , and we focus on the
+negative Besov bound (4.1).
+  To show (4.1), we invoke the duality principle (1.11)
+                                               ˆ
+                         |ur er |Ḃ −k0 ∼ sup      ur er · φ dx ,                            (4.3)
+                                     p,∞              k
+                                                 φ∈Qp′0,1         R3
+
+
+where Qkp′0,1 := {φ ∈ S(R3 ) : |φ|Ḃ k0 ≤ 1} with S(R3 ) the Schwartz class and p′ being the
+                                    p′ ,1
+Hölder conjugate of p.
+  For any given φ ∈ S(R3 ), consider the integral on the right-hand side of (4.3). Inte-
+grating by parts in z, we have
+                   ˆ                                   ˆ
+                                              2     1
+                                        2 −1+ p −s p
+                        ur er · φ dx = ǫ µ        ν         f (µρ)er · ∂z φ dx
+                     R3                                  R3                        (4.4)
+                                               2     1
+                                         2 −1+ p −s p
+                                     := ǫ µ        ν Iφ .
+  To estimate the integral Iφ , we will repeatedly integrate by parts in ρ. To reduce
+notation, let us denote by f (−k) ∈ Cc∞ ([ 21 , 23 ]) the k-order anti-derivative of f which exists
+up to k = N ≥ 100 thanks to (2.12).
+                               NORM INFLATION IN SUPERCRITICAL SPACES                            17
+
+  Using ∂ρ er = 0, we repeatedly integrate by parts k0 − 1 = 5 times in ρ
+                   ˆ
+              Iφ =           f (µρ)er · ∂z φ rρdρdϕdθ
+                     R+ ×T×T
+                             ˆ
+                                                                                             (4.5)
+                 = −µ−k0 +1            f (−k0 +1) (µρ)er · ∂ρk0 −1 rρ∂z φ dρdϕdθ.
+                                        R+ ×T×T
+                                            
+Since ∂ρ r = cos(ϕ), we have ∂ρk0 −1 ∂z φ rρ = rρ∂ρk0 −1 ∂z φ+(k0 − 1)(cos(ϕ)ρ+r)∂ρk0 −2 ∂z φ+
+2Ck20 −1 cos(ϕ)∂ρk0 −3 ∂z φ.
+   It follows from (4.5) that Iφ can be further decomposed into
+                                                                      
+                          Iφ = −µ−k0 +1 I1 + (k0 − 1)I2 + 2Ck20 −1 I3                    (4.6)
+with
+                      ˆ
+               I1 =                 f (−k0 +1) (µρ)er · ∂ρk0 −1 ∂z φrρ dρdϕdθ
+                        R+ ×T×T
+                      ˆ
+               I2 =                 f (−k0 +1) (µρ)er · ∂ρk0 −2 ∂z φ(cos(ϕ)ρ + r) dρdϕdθ
+                        R+ ×T×T
+                      ˆ
+               I3 =                 f (−k0 +1) (µρ)er · cos(ϕ)∂ρk0 −3 ∂z φ dρdϕdθ.
+                        R+ ×T×T
+  For I1 , using (2.7) we obtain the point-wise bound
+                               ∂ρk0 −1 ∂z φ(x) . ∇k0 −1 ∂z φ(x) ≤ ∇k0 φ(x) .                  (4.7)
+
+Switching back to R3 , and by (4.7) we obtain that
+                                    ˆ
+                            |I1 | .    f (−k0 +1) (µρ) ∇k0 φ dx.
+                                               R3
+Hence I1 obeys the desired bound
+                                                       − p2 − p1
+                                          |I1 | . µ        ν         ∇ k 0 φ L p′ .           (4.8)
+  For I2 , we further integrate by parts in ρ one more time to obtain
+                                                        
+                                  I2 = −µ−1 I21 + 2I22                                        (4.9)
+with
+                          ˆ
+                I21 =                   f (−k0 ) (µρ)er · ∂ρk0 −1 ∂z φ(cos(ϕ)ρ + r) dρdϕdθ
+                              R+ ×T×T
+                          ˆ
+                I22 =                   f (−k0 ) (µρ)er · ∂ρk0 −2 ∂z φ cos(ϕ) dρdϕdθ.
+                              R+ ×T×T
+
+  For I21 , we switch back to R3 and use (4.7) to obtain
+                                                               ρ+r
+                                   ˆ
+                          |I21 | .      |f (−k0 ) (µρ)||∇k0 φ|     dx
+                                     R3                         ρr                           (4.10)
+                                              − p2 1− p1        k0
+                                         .µ        ν       ∇ φ L p′ .
+For I22 , integrating by parts in ρ once more
+                           ˆ
+                        −1
+               I22 = −µ              f (−k0 −1) (µρ)er · ∂ρk0 −1 ∂z φ cos(ϕ) dρdϕdθ,         (4.11)
+                                  R+ ×T×T
+and it follows from (4.11) and (4.7) that
+                                                                  1
+                                      ˆ
+                        |I22 | . µ −1
+                                          |f (−k0 −1) (µρ)||∇k0 φ| dx
+                                       R3                         ρr                         (4.12)
+                                           − p2 1− p1      k0
+                                    .µ         ν        ∇ φ L p′ .
+18                                        XIAOYUTAO LUO
+
+Thus by (4.9), (4.10), and (4.12) we have
+                                             −2 −1
+                               |I2 | . µ−1 ν µ p ν p ∇k0 φ Lp′ (R3 ) .                        (4.13)
+
+     Finally noting that |I3 | ∼ µ−1 |I22 |, by (4.4), (4.6), (4.8), and (4.13) we have
+                       ˆ
+                                                 −1+ p2 −s p1
+                           ur er · φ dx . ǫ2 µ            ν |Iφ |
+                          R3
+                                                            2           1
+                                         . ǫ2 µ−k0 + p −s ν p (|I1 | + |I1 | + |I3 |)
+                                         . ǫ2 µ−k0 ∇k0 φ Lp′
+                                         . ǫ2 µ−k0 φ Ḃ k0 .
+                                                                    p′ ,1
+
+
+                                                                                                  
+
+     Next, we show the same upper bound for uz ez as ur er .
+
+Lemma 4.3. Under the setting of Proposition 4.1, there holds
+
+                                          |uz ez |Ḃ s . ǫ2 .
+                                                      p,1
+
+
+Proof. To establish the same bounds for uz ez = uz,p ez + uz,c ez , we use the same strategy
+as Lemma 4.2. Let φ ∈ S(R3 ) and consider the integral
+                                    ˆ
+                                        uz ez · φ dx.                                  (4.14)
+                                            R3
+
+     For uz,p ez , we ﬁrst switch to cylindrical coordinates and integrate by parts
+                                                                       
+                    ˆ                                       ˆ
+                                               −1+ p2 −s p1
+                         uz,p ez · φ dx = ǫ2 µ          ν     ∂r f (µρ) ez · φ rdrdθdz
+                      R3
+                                                                                              (4.15)
+                                                                    
+                                           ˆ
+                                   2     1
+                          2 −1+ p −s p
+                    = −ǫ µ             ν     f (µρ)ez · r∂r φ + φ drdθdz.
+
+Similarly, by the deﬁnition of uz,p we obtain
+                 ˆ                                   ˆ
+                                             2     1
+                                       2 −1+ p −s p
+                     uz,c ez · φ dx = ǫ µ        ν     f (µρ)ez · φ drdθdz.
+                     R3
+
+So adding up (4.14) and (4.15) , we need to estimate
+               ˆ                                  ˆ
+                                          2     1
+                                    2 −1+ p −s p
+                   uz ez · φ dx = −ǫ µ        ν     f (µρ)ez · ∂r φ rdrdθdz
+                    R3
+                                                                1
+                                                −1+ p2 −s
+                                     := −ǫ2 µ               ν p Iφ .
+
+     This integral Iφ can be estimated identically as in Lemma 4.2 for ur er by noting that
+
+                    ∂ρk ∂r φ(x) ≤ ∇kr,z ∂r φ(x) ≤ ∇k+1 φ(x)                  for any k ∈ N,
+
+and we have the same estimate as ur
+                         ˆ
+                             uz ez · φ dx . ǫ2 µ−k0 −s |φ|Ḃ k0 .
+                                R3                                          p′ ,1
+
+
+                                                                                                  
+                               NORM INFLATION IN SUPERCRITICAL SPACES                             19
+
+4.2. Upper bounds for u0,θ eθ . In the rest of this section, we focus on the azimuthal
+part u0,θ eθ .
+Lemma 4.4. Under the setting of Proposition 4.1, there holds
+                                                |u0,θ eθ |Ḃ s . ǫ2 .                         (4.16)
+                                                              p,1
+
+Proof. For brevity of notation, let us denote k1 = k0 − 2 = 4. Since also k1 > |s| + 1, it
+                                  −k1
+suﬃces to estimate the Lp and Ḃp,1   norm and then use Lemma 1.4 to interpolate.
+  From the deﬁnition of u0,θ (2.20) we obtain immediately
+                                            |u0,θ eθ |Lp (R3 ) . ǫ−2 µ−s                      (4.17)
+to prove (4.16), it suﬃces to prove
+                                        |u0,θ eθ |Ḃ −k1 . ǫ−2+k1 N µ−k1 −s .                 (4.18)
+                                                  p,1
+
+Indeed, since −k1 < s < 0, by Lemma 1.4, (4.17) and (4.18) imply that
+                                      1+ s −2+k1 N − s
+                 |u0,θ eθ |Ḃ s . ǫ−2    k1
+                                            ǫ         k1
+                                                         ≤ ǫ−2+N s ≤ ǫ2 ,
+                                  p,1
+
+where we have used that N s ≥ 100.
+   From now on we focus on proving (4.18). To this end, let φ ∈ S(R3 ) and consider the
+integral                           ˆ
+                                                        u0,θ eθ · φ dx.
+                                                  R3
+                                                              1
+                                                       s+ 2
+   For simplicity denote by ζ(ρ) = t∗ ǫ2 µ p ν p ρ−1 = ǫ−N µ−1 ρ−1 . Recalling the deﬁnition
+of u0,θ from (2.20) and integrating by parts k1 = 4 times in ρ, we have
+       ˆ
+            u0,θ eθ · φ dx
+         R3
+                       2     1
+                               ˆ                                            
+            −2+k0 N p −s−k0 p
+       =ǫ            µ     ν           ∂ρ2 (sin(ϕ + ζ(ρ))g(µρ)) ∂ρk1 eθ · φrρ dρdϕdθ.
+                                        R+ ×T×T
+                                             
+Using ∂ρ2 (φr) = 2 cos(ϕ) we get ∂ρk1 eθ · φrρ = eθ · ∂ρk1 φrρ + k1 eθ · ∂ρk1 −1 φ(r + ρ cos(ϕ)) +
+2Ck21 eθ · ∂ρk1 −2 φ cos(ϕ) and so we can decompose the integral into three parts:
+                    ˆ
+                                                    2         1
+                                                                                     
+                        u0,θ eθ · φ dx = ǫ−2+k0 N µ p −s−k0 ν p I1 + k1 I2 + 2Ck21 I3
+                     R3
+with
+                 ˆ
+          I1 =                 ∂ρ2 (sin(ϕ + ζ(ρ))g(µρ)) eθ · ∂ρk1 φrρ dρdϕdθ
+                     R+ ×T×T
+                 ˆ
+          I2 =                 ∂ρ2 (sin(ϕ + ζ(ρ))g(µρ)) eθ · ∂ρk1 −1 φ(r + ρ cos(ϕ)) dρdϕdθ
+                     R+ ×T×T
+                 ˆ
+          I3 =                 ∂ρ2 (sin(ϕ + ζ(ρ))g(µρ)) eθ · ∂ρk1 −2 φ cos(ϕ) dρdϕdθ.
+                     R+ ×T×T
+For I1 , we can estimate directly and obtain
+                             |I1 | . ∂ρ2 (sin(ϕ + ζ(ρ))g(µρ)) Lp (R3 ) |∂ρk1 φ|Lp′ .          (4.19)
+The ﬁrst part of (4.19) can be estiamted by Lemma 3.2, yielding
+                                                                                    2   1
+                          ∂ρ2 (sin(ϕ + ζ(ρ))g(µρ)) Lp (R3 ) . (ǫ−2N µ2 )(µ− p ν − p ).
+And hence by (2.7)
+                                                                    2   1
+                                    |I1 | . (ǫ−2N µ2 )(µ− p ν − p )|φ|Ḃ k1 .
+                                                                            p′ ,1
+20                                               XIAOYUTAO LUO
+
+     For I2 we integrate by part once more in ρ to further split it as
+                                                I2 = −(I21 + I22 ),
+with
+                     ˆ
+             I21 =                  ∂ρ (sin(ϕ + ζ(ρ))g(µρ)) eθ · ∂ρk1 φ(r + ρ cos(ϕ)) dρdϕdθ
+                         R+ ×T×T
+                     ˆ
+             I22 =                  ∂ρ (sin(ϕ + ζ(ρ))g(µρ)) eθ · ∂ρk1 −1 φ cos(ϕ) dρdϕdθ.
+                         R+ ×T×T
+
+We bound I21 by absolute value of the integrand, obtaining
+                      ˆ
+             |I21 | .    ∂ρ (sin(ϕ + ζ(ρ))g(µρ)) ∂ρk1 φ (r + ρ) ρ−1 r −1 dx
+                               R3
+                           . ν |∂ρ (sin(ϕ + ζ(ρ))g(µρ))|Lp |∂ρk1 φ|Lp′
+By Lemma 3.2 and (2.7) again, it follows that
+                              |I21 | . ν |∂ρ (sin(ϕ + ζ(ρ))g(µρ))|Lp |φ|Ḃ k1
+                                                                                                  p′ ,1
+
+                                                1− p2       1− p1
+                                                                                                                          (4.20)
+                                      . ǫ−N µ           ν           |φ|Ḃ k1 .
+                                                                          p′ ,1
+
+     For I22 we integrate by parts once more and then bound it by the absolute value
+                           ˆ
+                 |I22 | ≤          sin(ϕ + ζ(ρ))g(µρ)eθ · ∂ρk1 φ cos(ϕ) dρdϕdθ
+                             +
+                          ˆ R ×T×T
+                        .     g(µρ) ∇k1 φ (rρ)−1 dx.
+                              R3
+
+It follows that
+                                                                                  1− p2 1− p1
+                     |I22 | . µν g(µρ) Lp (R3 ) ∇k1 φ Lq . µ                           ν        |∇k1 φ|Ḃ k1 .            (4.21)
+                                                                                                          p′ ,1
+
+
+     Putting together (4.20) and (4.21) we have
+                                                                    2       1
+                                         |I2 | . ǫ−N µ1− p ν 1− p |φ|Ḃ k1 .
+                                                                                     p′ ,1
+
+
+     Finally noting that |I3 | ∼ |I22 |, we combine the estimates for Ii ’s to obtain
+               ˆ
+                   u0,θ eθ · φ dx
+                R3
+                                                                       
+                             2
+                               −s−k0 p1        2− 2 − 1       1− 2 1− 1
+              . ǫ−2+k0 N µ p        ν ǫ−2N µ p ν p + ǫ−N µ p ν p |∇k1 φ|Ḃ k1
+                                                                                                                  p′ ,1
+                    −2+k1 N −s−k1         k1
+               .ǫ             µ         |∇ φ|Ḃ k1
+                                                  p′ ,1
+
+
+where in the third inequality we assumed (with loss of generality) ǫ < 1 and used µ ≥ ν.
+                                                                                       
+
+4.3. Lower bounds for uθ (t∗ )eθ . Next, we show the growth of uθ at time t∗ . The method
+of proving a lower bound is reminiscent of Lemma 3.2.
+Lemma 4.5. Under the setting of Proposition 4.1, there exists ǫ0 = ǫ0 (s, p) > 0 such that
+if 0 < ǫ ≤ ǫ0 , then
+                                               |uθ (t∗ )eθ |Ḃ s & ǫ−2 .
+                                                                    p,1
+                          NORM INFLATION IN SUPERCRITICAL SPACES                                               21
+
+
+Proof. Since s < 0, to ﬁnd the lower bound in Ḃp,1       s , we can use the inverse interpolation
+
+inequality
+                       |uθ (t∗ )eθ |Ḃ s & |uθ (t∗ )eθ |sẆ 1,p |uθ (t∗ )eθ |1−s
+                                                                             Lp .           (4.22)
+                                           p,1
+
+which is a direct consequence of Lemma 1.4.
+  We will estimate the right-hand side of (4.22) in two steps below.
+Step 1: Lp bound
+  Recall that the initial data of uθ (t∗ ) is given by
+                         2
+                           −s−k0 p1 k0
+                                          X
+       u0,θ = ǫ−2+k0 N µ p      ν ∂ρ            ∂ρi (sin(ϕ + ζ(ρ))) µk−i g(k−i) (µρ)                       (4.23)
+                                                     0≤i≤k0
+                                                               1
+                                                       s+ 2
+where as before we denote ζ(ρ) = t∗ ǫ2 µ p ν p ρ−1 = ǫ−N µ−1 ρ−1 for simplicity.
+  The idea is to identify the main term in (4.23) as in Lemma 3.2 and track its time
+evolution.
+  Further analyzing (4.23), by Faa di bruno, for any i ∈ N, we see that
+                         X                                                       mj
+  ∂ρi (sin(ϕ + ζ(ρ))) =       Cm1 ,...,mi sin(m1 +···+mi ) (ϕ + ζ(ρ))Π1≤j≤i ζ (j)     , (4.24)
+                          m1 ,...,mi
+
+where the summation runs over m1 + 2m2 + · · · + imi = i.
+   Then by the design of uθ (transported by ur er + uz,p ez ), from Lemma 2.2, (4.23) and
+(4.24) we see that all the angle phase ϕ + ζ(ρ) gets un-mixed to ϕ at the time t = t∗ .
+Namely, we have
+                                                 X
+                                    2         1
+            uθ (t∗ )eθ = ǫ−2+k0 N µ p −s−k0 ν p     µk−i g(k−i) (µρ)
+                                                               0≤i≤k0
+                            X                                                      mj                   (4.25)
+                                       Cm1 ,...,mi sin(m1 +···+mi ) (ϕ)Π1≤j≤i ζ (j)       eθ .
+                         m1 ,...,mi
+
+  Let us consider the main term in (4.25), deﬁned by
+                                                 2             1
+                                                                                   k0
+                                                     −s−k0
+                  uθ,p eθ := ǫ−2+k0 N µ p                    ν p sin(k0 ) (ϕ) ζ (1)     g(µρ)eθ ,          (4.26)
+and the decomposition
+                                        uθ (t∗ )eθ = uθ,p eθ + uθ,c eθ
+   As in the proof Lemma 3.2, on the support of g(µρ), we have |ζ (j) (ρ)| ∼ ǫ−N µj . It
+follows that in uθ,c , the largest possible factor of ǫ is (ǫ−N )k0 −1 , namely
+                                                  2         1
+                                                                             
+                        |uθ,c eθ |Lp . ǫ−2+k0 N µ p −s−k0 ν p µk0 (ǫ−N )k0 −1
+                                                                                 (4.27)
+                                     . ǫ−2+N µ−s .
+On the other hand, the main term (4.26) satisﬁes
+                                                           2             1
+                                                                                                      
+                                        −2+k0 N              −s−k0               k0 −k0 N
+                    |uθ,p e |
+                           θ Lp   ∼ǫ                   µ   p         ν   p       µ ǫ        |g(µρ)|
+                                                                                                  Lp
+                                                                                                           (4.28)
+                                  ∼ ǫ−2 µ−s .
+From (4.27) and (4.28), it follow that for all suﬃciently small ǫ, there holds
+                                           |uθ eθ |Lp ∼ ǫ−2 µ−s .                                          (4.29)
+Step 2: Ẇ 1,p bound
+  Next, we establish the following upper bound for |uθ (t∗ )eθ |Ẇ 1,p :
+                                       |uθ (t∗ )eθ |Ẇ 1,p . ǫ−2 µ1−s .                                    (4.30)
+22                                       XIAOYUTAO LUO
+
+Since |∇eθ | . ν on the support of uθ , it then suﬃces to show
+                                   |uθ (t∗ )|Ẇ 1,p . ǫ−2 µ1−s .
+For ∇uθ (t∗ ), we need to bound ∂ρ uθ and ρ−1 ∂ϕ uθ . Both ∂ρ uθ and ρ−1 ∂ϕ uθ can be esti-
+mated in the same way as in Step 1 using (4.25). The same argument yields the bound
+                                   |∇uθ (t∗ )|Lp . ǫ−2 µ1−s .
+Thus (4.30) holds.
+Step 3: Conclusion
+  Now that we have (4.29) and (4.30), we can go back to (4.22) and obtain
+                                                                                −2
+                    |uθ (t∗ )eθ |Ḃ s & |uθ (t∗ )eθ |sẆ 1,p |uθ (t∗ )eθ |1−s
+                                                                          Lp & ǫ .
+                                 p,1
+
+                                                                                               
+
+                             5. Stability of approximation
+   In this section, we prove that the approximate solution u deﬁned in the previous section
+stays close in strong norms to the actual solution u of (1.1) up to the critical time t∗ .
+   In the following, only the constants with an ǫ subscript depend on ǫ. All constants are
+independent of µ, ν but may change from line to line.
+5.1. The main proposition. We will be proving the following proposition, the main
+result of this section.
+Proposition 5.1. Let T = T (ǫ, µ) > 0 be the maximal time of existence for the local-in-
+time solution u : [0, T ) × R3 → R3 of (1.1) with the same initial data u0 as u.
+   For any ǫ > 0, there exists µǫ > 0 suﬃciently large such that if µ ≥ µǫ , then there must
+be 0 < t∗ < T , namely u ∈ C ∞ ([0, t∗ ] × R3 ).
+   More quantitatively, for any ǫ > 0, if µ ≥ µǫ , then for any k ≥ 0 and 1 ≤ q ≤ ∞
+                                                           γ      2
+                                                                     −2 1−1
+                     |u − u|L∞ ([0,t∗ ];Ḃ k ) ≤ Ck,ǫ µ−1 ν µk−s µ p q ν p q            (5.1)
+                                       q,∞
+                                        9                      4
+where Ck,ǫ is independent of µ and γ = 10 if 1 ≤ q ≤ 2 and γ = 10 if 2 < q ≤ ∞.
+   The proof of Proposition 5.1 occupies the rest of this section. The slightly more precise
+(5.1) is to leave some room for the lossy embedding that will incur in Section 6.
+5.2. The bootstrap assumption. We use a bootstrap argument that transfers the small-
+ness of E to the diﬀerence u − u on the interval [0, t∗ ], thus proving Proposition 5.1.
+   Denote by w = u − u the diﬀerence between the approximate solution u and the exact
+solution u (having the same initial data u0 as u) . It follows from Proposition 2.1 that the
+vector ﬁeld w, well-deﬁned on the time interval [0, T ), satisﬁes the evolution equation
+              
+              
+              ∂t w + u · ∇w + w · ∇u + ∇q = E
+                div w = 0                                for (t, x) ∈ [0, T ) × R3      (5.2)
+              
+              
+                w|t=0 = 0
+where q := p − p with p being the pressure of the exact solution u and p the pressure from
+Proposition 2.1.
+  For any given ǫ > 0, let us ﬁx Mǫ ≥ 1 such that
+                                                                   2     1
+                              |∇u|L∞ ([0,t∗ ]×R3 ) ≤ Mǫ µ1−s+ p ν p .                       (5.3)
+This is always possible thanks to (2.1) from Proposition 2.1. We note that the exact value
+Mǫ ≥ 1 plays no role.
+  For this ﬁxed Mǫ , we will prove the following bound on the exact solution u
+                                                           1
+                                                1−s+ p2
+                 |∇u|L∞ ([0,t∗ ]×R3 ) ≤ 2Mǫ µ             νp   for all       0 ≤ t ≤ t∗ .   (5.4)
+                          NORM INFLATION IN SUPERCRITICAL SPACES                                        23
+
+                                                                                             1
+                                                                                  1−s+ p2
+We will prove (5.4) by a bootstrap argument. Since |∇u0 |L∞ ≤ Mǫ µ                          ν p holds at
+t = 0, by continuity let us introduce
+  The bootstrap assumption:
+  For some 0 < t0 ≤ t∗ , there holds
+                                                 2   1
+                       |∇u(t)|L∞ ≤ 2Mǫ µ1−s+ p ν p       for all   0 ≤ t ≤ t0 .                   (†)
+  In the steps below, we will prove that if µ is suﬃciently large (depending on ǫ > 0),
+then under the bootstrap assumption (†), we have the improved bound
+                                 3     1−s+ p2 p1
+                    |∇u(t)|L∞ ≤ Mǫ µ          ν      for all 0 ≤ t ≤ t0 ,
+                                 2
+which will imply (†) on the whole interval [0, t∗ ] by continuity.
+5.3. Basic estimates. To facilitate the estimates, we will frequently use the following
+bounds which are direct consequences of Proposition 1.5, the deﬁnition of t∗ (from (2.11)),
+and the bootstrap assumption (†),
+                      (                                        2 2   1
+                                                                −      −1
+                        |u|L∞ ([0,t0 ];W k,q ) ≤ Cǫ,k,q µk−s µ p q ν p q ,
+                             1−s+ p2 p1
+                                                                                      (5.5)
+                        t∗ µ        ν          ≤ Cǫ
+where k ≥ 0 and 1 < q < ∞.
+  Note that in Proposition 5.1 we claimed the estimates for all 1 ≤ q ≤ ∞ compared to
+1 < q < ∞ in (5.5).
+5.4. Energy estimates. As the ﬁrst step in the bootstrap argument, we derive suitable
+energy estimates on w, gaining a small factor (µ−1 ν) comparing to u and u.
+   As in [Luo24], we need the power of the smallness factor µ−1 ν in (5.6) strictly bigger
+                                              5
+than 12 to compensate the lossy embedding H 2 + ֒→ W 1,∞ in our anisotropic setup.
+Lemma 5.2. Under the bootstrap assumption (†), the diﬀerence w = u − u satisﬁes for
+any integer k ≥ 0 the estimate,
+                                      δ        2      1   1
+              |∇k w(t)|L2 ≤ Cǫ,k µ−1 ν k µk−s µ p −1 ν p − 2 for any t ∈ [0, t0 ] (5.6)
+                 −k
+where δk = 9+10
+             10       > 0 for each k ∈ N.
+Proof. For each k ∈ N we need to ﬁnd µ-independent constants Cǫ,k such that (5.6) holds.
+We will prove by induction.
+Step 1: The case k = 0
+   Since both u and u are divergence-free, multiplying (5.2) by w = u − u and integrating,
+we obtain
+                      d
+                         |w(t)|2L2 + |∇w|2L2 . |∇u|L∞ |w|2L2 + |E|L2 |w|L2 .                   (5.7)
+                      dt
+   We drop the positive dissipation term on the left-hand side of (5.7). By the estimates
+in Proposition 2.1 and (5.5) which hold on [0, t∗ ], it follows that
+            d                       2  1                               2 1  2    1  1
+               |w(t)|L2 .ǫ µ1−s+ p ν p |w|L2 + µ−s (µ−1 ν)µ1−s+ p ν p µ p −1 ν p − 2 .         (5.8)
+            dt
+   Applying Gronwall’s inequality (recalling w|t=0 = 0) to (5.8) yields
+                    1−s+ p2 1                   2   1   2      1   1
+                                                                      
+  |w(t)|L2 .ǫ eCǫ tµ       νp
+                               tµ−s (µ−1 ν)µ1−s+ p ν p µ p −1 ν p − 2    for any t ∈ [0, t0 ]. (5.9)
+
+  Then by (5.5), the exponential factor in (5.9) is independent of µ and ν, and hence we
+have shown (5.6) when k = 0:
+                                     −s+ 2 −1 1 − 1
+                 |w(t)|L2 ≤ Cǫ µ−1 ν µ     p   ν p 2 for any t ∈ [0, t0 ].
+24                                                    XIAOYUTAO LUO
+
+Step 2: The case k ≥ 1
+   Now we assume (5.6) has been proved for levels ≤ k−1 with µ, ν independent constants.
+   By testing (5.2) with −∂α2 w and summing over all multi-indexes |α| = k, we have the
+following standard energy estimates for ∇k w:
+                                d k 2
+                                  |∇ w|L2 .k I(t) + J(t)
+                               dt
+where we have dropped the positive linear term, and the terms I(t), J(t) are given by
+               I(t) = |∇u|L∞ |∇k w|2L2 + |∇u|L∞ |∇k w|2L2 + |∇k E|L2 |∇k w|L2
+and                                     X                                             
+            J(t) = |∇k w|L2                       |∇m w|L2 |∇k+1−m u|L∞ + |∇k+1−m u|L∞ .
+                                   0≤m≤k−1
+   The idea is that I(t) can be bounded similarly to the L2 case and J(t) can be estimated
+using the induction hypothesis on |∇m w|L2 , m ≤ k − 1.
+Step 3: Estimates of I(t)
+   For the term I, using (5.5) and Proposition 2.1 we have
+                                              2        1
+                          I ≤ Cǫ,k µ1+ p −s ν p |∇k w|2L2 + |∇k E|L2 |∇k w|L2 .                                                       (5.10)
+For the second term in (5.10), we use Young’s inequality and Proposition 2.1, obtaining
+              |∇k E|L2 |∇k w|L2
+                                    1
+                       1+ p2 −s                            1+ 2p −s     1
+              .ǫ,k µ              ν p |∇k w|2L2 + (µ                   ν p )−1 |∇k E|2L2                                              (5.11)
+                       1+ p2 −s     1
+                                                                         1+ 2p −s           1
+                                                                                                  k−s+ p2 −1          1
+                                                                                                                        − 21
+              .ǫ,k µ              ν |∇k w|2L2 + (µ−1 ν)2 (µ
+                                    p                                               ν )(µ   p                    ν    p        )2 .
+From (5.10) and (5.11), it follows that
+                                    1
+                        1+ p2 −s                                            1+ p2 −s        1
+                                                                                                   k−s+ p2 −1          1
+                                                                                                                           − 21 2
+             I .ǫ,k µ              ν p |∇k w|2L2 + (µ−1 ν)2 (µ                          ν p )(µ                   νp           ) .    (5.12)
+Step 4: Estimates of J(t)
+   To estimate J, we ﬁrst bound the factor |∇m u|L∞ for m ∈ N.
+                                    3
+   By the Sobolev embedding W m+ q +δ,q (R3 ) ֒→ W m,∞ (R3 ) for any δ > 0 and q < ∞, it
+follows from (5.5) that for any m ∈ N,
+                         |∇m u|L∞ ([0,t0 ]×R3 ) .δ,p |u| ∞                                     3 +δ,p
+                                                                                            m+ q
+                                                                      L ([0,t0 ];W                         )
+                                                                       m−s+ 2q
+                                                                                     
+                                                                                       δ+ 1 − 1
+                                                                                        1
+                                                                                                                                     (5.13)
+                                                        .m,δ,q µ                   ν µ qν q .
+                                                                                        q
+
+
+     By (2.8), we may choose q < ∞, δ > 0 depending on k such that
+                                        1         1
+                                   µδ µ q ν − q ≤ µb10
+                                                             −k                                 −k−1
+                                                                      ≤ (µ−1 ν)−10                     .                              (5.14)
+It follows from (5.13) and (5.14) that for any m ∈ N
+                                                                               2    1
+                       |∇m u|L∞ ([0,t0 ]×R3 ) .ǫ,m,k (µm−s+ p ν p )(µ−1 ν)−10                                                         (5.15)
+                                                                                                               −k−1
+
+
+
+where we note the loss of a very small power of µ−1 ν compared to |∇m u(t)|L∞ .
+  It then follows from (5.15) and the inductive assumption at levels m ≤ k − 1 that
+                         X                     2   1
+                                                                 2   1
+                                                                                        
+                              (µ−1 ν)δm (µm−s+ p ν p ) (µk+1−m−s+ p ν p )(µ−1 ν)−10
+                                                                                   −k−1
+   J(t) ≤ Cǫ,k |∇k w|L2
+                             m≤k−1
+                                  k−s+ p2    1
+                                                      1−s+ p2     1     X
+                                                                                   (µ−1 ν)δm (µ−1 ν)−10
+                   k                                                                                                       −k−1
+          ≤ Cǫ,k |∇ w|L2 (µ                 ν p )(µ             νp)
+                                                                       m≤k−1
+                                             1                    1
+                                  k−s+ p2             1−s+ p2
+                   k
+          ≤ Cǫ,k |∇ w|L2 (µ                 ν )(µ
+                                             p                  ν )(µ−1 ν)δk .
+                                                                  p                                                                   (5.16)
+where we have used that δm − 10−k−1 ≥ δk for m ≤ k − 1 in the last line.
+                        NORM INFLATION IN SUPERCRITICAL SPACES                              25
+
+  By Young’s inequality again, we obtain from (5.16) the desired estimate:
+                  1−s+ p2 p1              1−s+ p2 p1  k−s+ p2 p1 2 −1 2δk
+      J(t) .ǫ,k µ        ν |∇k w|2L2 + (µ        ν ) µ        ν     (µ ν) .            (5.17)
+Step 5: Conclusion
+  Collecting the estimates (5.12) and (5.17) of I, J, at level k, on the interval [0, t0 ], we
+have the diﬀerential inequality
+                   d k 2            1−s+ p2 p1
+                     |∇ w|L2 .ǫ,k µ        ν |∇k w|2L2
+                  dt
+                                             2 1        2 1 2
+                                  + (µ1−s+ p ν p ) µk−s+ p ν p (µ−1 ν)2δk .
+  By Gronwall’s inequality, we obtain for all 0 ≤ t ≤ t0 the estimate
+                                    2 1
+                               1−s+ p            2 1 2      2   1
+                                                                             
+     |∇k w(t)|2L2 ≤ Cǫ,k eCǫ tµ       νp
+                                         t µk−s+ p ν p µ1−s+ p ν p (µ−1 ν)2δk .        (5.18)
+
+By (5.5) again, the exponential factor in (5.18) is independent of µ, ν, and we have
+                                       2 1 2
+             |∇k w(t)|2L2 ≤ Cǫ,k µk−s+ p ν p (µ−1 ν)2δk    for all 0 ≤ t ≤ t0 .
+  Once the induction is complete, we conclude that (5.6) holds for all integer k ∈ N.
+                                                                                            
+5.5. Proof of main proposition. With all the preparations in hand, we can ﬁnish the
+Proof of Proposition 5.1. We ﬁrst show the smoothness of u up to t = t∗ and then derive
+the bound (5.1).
+Step 1: Continuation of (†)
+  For k ∈ N, consider the family of Sobolev embedding
+                                  |w|L∞ .k |w|    3        −k−1                        (5.19)
+                                                H 2 +b10
+where b is as in (2.8).
+  Assume that the bootstrap assumption (†) is satisﬁed for some 0 < t0 < t∗ . We aim to
+use (5.19) and Lemma 5.2 to show that the bootstrap assumption (†) holds up to t = t∗ .
+  By standard interpolations, the integer Sobolev estimates in Lemma 5.2 implies the
+same non-integer Sobolev estimate for |w| 32 +b10−k−1 . It follows that
+                                               H
+                                                             3     −k−1 −s 2 −1 1 − 1 
+              |∇k w(t)|L∞ ([0,t0 ]×R3 ) .ǫ,k (µ−1 ν)δk µk+ 2 +b10         µp ν p 2
+                                                         1                 2   1
+                                        .ǫ,k (µ−1 ν)δk − 2 −10                          (5.20)
+                                                              −k−1
+                                                                    µk−s µ p ν p
+                                                     2         2  1
+                                        .ǫ,k (µ−1 ν) 5 µk−s µ p ν p .
+where we have used the deﬁnition of δk .
+  In particular, from (5.20) we have
+                                                           2b     2   1
+                        |∇w(t)|L∞ ([0,t0 ]×R3 ) ≤ Cǫ µ− 5 µ1−s+ p ν p .                (5.21)
+
+Thanks to the negative exponent − 2b5 on µ in (5.21), by taking µ ≥ 1 suﬃciently large
+depending on ǫ, we can ensure that
+                                   1           1
+                     |∇w(t)|L∞ ≤ Mǫ µ2−s ν 2 for any t ∈ [0, t0 ]               (5.22)
+                                   2
+where Mǫ ≥ 1 is the same constant from the bootstrap assumption (†).
+  Combining (5.3) and (5.22), for any t ∈ [0, t0 ] we have
+                           |∇u(t)|L∞ ≤ |∇u(t)|L∞ + |∇w(t)|L∞
+                                       3         1                                     (5.23)
+                                     ≤ Mǫ µ2−s ν 2 .
+                                       2
+26                                                    XIAOYUTAO LUO
+
+   In other words, we have shown that for any ǫ > 0, there exists µǫ > 0 such that if
+µ ≥ µǫ then under the bootstrap assumption (†) with 0 < t0 < t∗ , the improved bound
+(5.23) holds. From here we conclude that
+                                           3          1
+                                |∇u(t)|L∞ ≤ Mǫ µ2−s ν 2                        for any t ∈ [0, t∗ ]
+                                           2
+and in particular u does not blowup at t = t∗ and T > t∗ .
+Step 2: Verification of (5.1)
+  Finally, we show the bound (5.1).
+  Observe that (5.20) implies (5.1) for 2 ≤ q ≤ ∞ by a standard interpolation with
+Lemma 5.2. It suﬃces to consider k ∈ N with 1 ≤ q < 2.
+  We use the integral equation
+                          ˆ t
+                                                                
+                   w(t) =     e(t−τ )∆ −P div(w ⊗ u + u ⊗ w) + E dτ
+                                      0
+
+where P denotes the projection onto divergence-free vector ﬁelds.
+  Since P and et∆ are bounded on Ḃq,∞
+                                    k , we need to bound
+
+
+       |w|L∞ ([0,t∗ ];Ḃ k      .t∗ |w ⊗ u + u ⊗ w|L∞ ([0,t∗ ];Ḃq,∞    ∗
+                                                                 k+1 + t |E| ∞
+                                                                            L ([0,t∗ ];Ḃ k                                      .   (5.24)
+                        q,∞ )                                        )                                                   q,∞ )
+
+
+   We estimate the right hand-side of (5.24) in order.
+   For the nonlinear part, we ﬁrst work with Ẇ k+1,q whose norm dominates that of Ḃq,∞
+                                                                                       k+1 .
+
+Since k ∈ N, by product rule we have
+                                                X                                
+  t∗ |w ⊗ u + u ⊗ w|L∞ ([0,t∗ ];Ẇ k+1,q ) . t∗   |∇k+1−i w|L2 |∇i u|Lr + |∇i u|Lr . (5.25)
+                                                            0≤i≤k+1
+
+            2q
+where r := 2−q ∈ [2, ∞).
+  By Proposition 2.1, (5.5), and Lemma 5.2, it follows from (5.25) that
+
+                        t∗ |w ⊗ u + u ⊗ w|L∞ ([0,t∗ ];Bq,∞
+                                                       k+1
+                                                           )
+                                                              −s+ p2 −1         1
+                                                                                    − 12        −s+ p2 − r2    1
+                                                                                                                    − 1r 
+                        .ǫ,k,q t∗ (µ−1 ν)δk µk+1 µ                             νp            µ                 νp                    (5.26)
+                                           9       k−s+ p2 − q2       1
+                                                                        − 1q
+                        .ǫ,k,q (µ−1 ν) µ   10                     ν   p
+
+
+                          2q
+where we have used r = 2−q    and δk > 10
+                                        9
+                                          .
+  Finally, for the source term by Proposition 2.1 we have
+                                                                                                 2    2   1    1
+                             t∗ |E|L∞ ([0,t∗ ];Ḃ k         .ǫ,k (µ−1 ν)1 µk−s+ p − q ν p − q .                                      (5.27)
+                                                    q,∞ )
+
+
+     Combining (5.24), (5.26), and (5.27), we have for any 1 ≤ q < 2
+                                                                                9                 2   2   1     1
+                             |w|L∞ ([0,t∗ ];Ḃ k        .ǫ,k,q (µ−1 ν) 10 µk−s+ p − q ν p − q
+                                                q,∞ )
+
+
+which shows (5.1) with 1 ≤ q < 2.
+                                                                                                                                         
+
+
+                                       6. Proof of main Theorems
+     In this last section, we ﬁnish the proof of Theorem 1.1.
+                              NORM INFLATION IN SUPERCRITICAL SPACES                              27
+
+6.1. Proof of Theorem 1.1.
+
+Proof of Theorem 1.1 for s > 0. In this case all statements in Theorem 1.1 have been
+proved in the previous sections.
+   Indeed, given such s > 0 and p we ﬁrst take ǫ > 0 smaller if necessary so that Proposition
+3.1 holds. Then we have:
+     • Smallness of the initial data (1.3)— proved in Proposition 3.1.
+     • Smoothness of the local solution u on [0, t∗ ]— proved in Proposition 5.1.
+     • Growth of |u|Ḃ s , i.e. (1.4)—- follows from (3.2) in Proposition 3.1 and (5.1) in
+                      p,∞
+       Proposition 5.1 by taking µ large:
+
+                          |u(t∗ )|Ḃ s    ≥ |u(t∗ )|Ḃ s    − |w(t∗ )|Ḃ s    ≥ ǫ−1 .
+                                    p,∞               p,∞               p,∞
+
+
+                                                                                                  
+
+  When s < 0, since Proposition 5.1 only provides the control of Sobolev norms with
+positive derivatives, it still remains to prove (1.4).
+
+Proof of Theorem 1.1 for s < 0. To show (1.4) when s < 0, we use the mild formulation
+for the diﬀerence w as in the proof of Proposition 5.1. Since w has zero initial data and
+is smooth on [0, t∗ ], we have
+                             ˆ t
+                                                                  
+                      w(t) =     e(t−τ )∆ E − P div(w ⊗ u + u ⊗ w) dτ.               (6.2)
+                                     0
+
+We now take the Ḃp,∞
+                  s    norm on (6.2), and by the Ḃp,∞
+                                                   s   boundedness of P and of the heat
+semi-group there holds
+
+           |w(t∗ )|Ḃ s      . t∗ |(w ⊗ u + u ⊗ w)|L∞ ([0,t∗ ];Ḃp,∞    ∗
+                                                                 s+1 + t |E| ∞
+                                                                     )                   s
+                                                                            L ([0,t∗ ];Ḃp,∞ ).
+                      p,∞
+                               |               {z                   } |        {z           }
+                                                    :=N                                 :=S
+
+  There are many ways to estimate the terms N , S on the right-hand side, and the non-
+optimal but simple one below suﬃces for our purpose.
+Part 1: Estimate of N
+  For the nonlinear terms, we ﬁrst note that by Proposition 2.1 and Lemma 5.2 for any
+k ∈ N, 1 ≤ q < 2, there holds
+                                            X                                            
+   |(w ⊗ u + u ⊗ w)|L∞ ([0,t∗ ];Ẇ k,q ) .       |∇k−i w|L∞
+                                                          t L
+                                                                     i            i
+                                                              2 |∇ u|L∞ Lq ) + |∇ u|L∞ Lq
+                                                                          t          t
+                                           0≤i≤k                                            (6.3)
+                                                  −1
+                                                      9 k−2s+ 2 1 2 − 2 1 − 1
+                                         .ǫ,k,q µ ν µ 10         p ν p µp   qνp q
+
+
+              2q
+where q ′ := 2−q ∈ [2, ∞). By interpolation (6.3) holds for all k ≥ 0.
+  Next, consider the two cases p ≥ 32 and 1 ≤ p < 32 .
+  Case I: 1 ≤ p < 32 .
+  When 1 ≤ p < 32 , we have s + 1 > 0. Using Lemma 1.4 with s1 = 0 and s2 = k0 + 1
+together with (6.3) yields
+
+                                                            −1
+                                                                  9 1−s+ 2 1
+                    |(w ⊗ u + u ⊗ w)|L∞ ([0,t∗ ];Ḃp,∞
+                                                   s+1 .ǫ µ
+                                                       )       ν  10
+                                                                     µ    pνp.
+
+
+
+  Case II: p ≥ 32 .
+28                                                XIAOYUTAO LUO
+
+                                                  s+3− 3
+     When p ≥ 23 , by the embedding Ḃ 3 ,∞ p ֒→ Ḃp,∞
+                                                   s+1 and that s + 3 − 3 > 0, we can apply
+                                                                        p
+                                                  2
+Lemma 1.4 to interpolate (6.3) with q = 23 and obtain
+           |(w ⊗ u + u ⊗ w)|L∞ ([0,t∗ ];Ḃp,∞
+                                          s+1 .ǫ |(w ⊗ u + u ⊗ w)|
+                                              )                                                                         3
+                                                                                                                   s+3− p
+                                                                                                   L∞ ([0,t∗ ];Ḃ 3              )
+                                                                                                                   2 ,∞
+                                                                  9 s+3− 3 −2s+ 2 1            1
+                                                                                                  −2               2 4
+                                                                                                                     −3
+                                                         .ǫ µ−1 ν 10 µ     p        pνpµ      νp 3                 p
+
+                                                                  9 1−s+ 2 1 2− 3 2 − 4 1 − 2
+                                                         .ǫ µ−1 ν 10 (µ      p ν p )µ  p µp 3 ν p 3
+
+
+                                                                 9        2    1
+                                                                                       − 2 + 1
+                                                         .ǫ µ−1 ν 10 µ1−s+ p ν p µ−1 ν
+                                                                                           3   p
+
+
+
+which implies
+                                                                  −1
+                                                                        9 −2+1
+                      t∗ |(w ⊗ u + u ⊗ w)|L∞ ([0,t∗ ];Ḃp,∞
+                                                        s+1 .ǫ µ
+                                                            )        ν  10  3 p
+
+                                                                       1
+                                                              .ǫ µ−1 ν 5 .                                                                (6.4)
+Part 2: Estimate of S
+  Finally, we estimate the source term. Consider two cases: p = 1 and p > 1.
+  Case I: p = 1.
+  If p = 1, then s > 0 and we can proceed using Lemma 1.4 with s1 = 0 and s2 = k0
+together with Proposition 2.1 to obtain that
+                                                                                                    1
+                                                                                      1+ p2 −s
+                                  |E|L∞ ([0,t∗ ];Ḃ s         .ǫ (µ−1 ν)(µ                         νp)                                    (6.5)
+                                                      p,∞ )
+
+     Case I: p > 1.
+     If p > 1, we choose 0 < δ < 1/5 small such that s + 3 − p3 − δ > 0 and pδ := 3−δ
+                                                                                   3
+                                                                                      < p.
+                         s+3− 3 −δ
+By the embedding Ḃpδ ,∞ p                   s , Lemma 1.4, and Proposition 2.1 we get
+                                        ֒→ Ḃp,∞
+                                                                                                                            1
+                                                              3                               2         1    2
+                                                                                                                 − p2           − p1
+             |E|              s+3− 3 −δ    .ǫ µs+3− p −δ−s (µ−1 ν)(µ1+ p −s ν p )µ p                                δ   νp            δ   (6.6)
+                L∞ ([0,t∗ ];Ḃpδ ,∞ p )
+                                                                          3           2        1        2    2δ         1         δ
+                                           .ǫ (µ−1 ν)µ3− p −δ (µ1+ p −s ν p )µ p −2+ 3 ν p −1+ 3
+                                                                  1   δ       2           1
+                                           .ǫ (µ−1 ν) p + 3 (µ1+ p −s ν p ).
+     Therefore, in either case by (6.5) and (6.6) we have
+                                                                                  1
+                                                                                      + δ3                   δ
+                        t∗ |E|                  s+3− 3 −δ         .ǫ (µ−1 ν) p                ≤ (µ−1 ν) 3 .                               (6.7)
+                                  L∞ ([0,t∗ ];Ḃpδ ,∞ p )
+
+Part 4: Conclusion
+  Collecting (6.4) for N and (6.7) for S we obtain
+                                                                                      δ
+                                             |w(t∗ )|Ḃ s             .ǫ (µ−1 ν) 3                                                        (6.8)
+                                                            p,∞
+
+for some small 0 < δ < 1/5.
+   We still have the freedom to increase the value of µ, and we can choose µ suﬃciently
+large such that in (6.8) we have
+                                     |w(t∗ )|Ḃ s ≤ ǫ.
+                                                                      p,∞
+
+Thanks to Proposition 4.1, this completes the proof since
+                   |u(t∗ )|Ḃ s      ≥ |u(t∗ )|Ḃ s         − |w(t∗ )|Ḃ s                ≥ Cǫ−2 − ǫ ≥ ǫ−1
+                             p,∞                      p,∞                     p,∞
+
+provided ǫ is small.
+                                                                                                                                             
+                         NORM INFLATION IN SUPERCRITICAL SPACES                                      29
+
+6.2. Proof of Theorem 1.3. Finally we prove Theorem 1.3.
+   To avoid visual confusion with w = u − u, we denote the vorticity by ∇ × u.
+   Since any supercritical Sobolev/Besov spaces embeds into Ẇ 2−δ,1 when δ > 0 is small
+enough, we apply Theorem 1.1 with s close to 2 and p = 1 to obtain the solution with
+initial data that is ǫ-small in the prescribed supercritical Sobolev/Besov norm.
+   To obtain a lower bound for |∇ × u(t∗ )|L∞ we consider
+                       |∇ × u(t∗ )|L∞ ≥ |∇ × u(t∗ )|L∞ − |∇w(t∗ )|L∞ .                            (6.9)
+   The estimate of |∇ × u(t∗ )|L∞ was proved in Lemma 3.3:
+                               |∇ × u(t∗ )|L∞ ≥ Cǫ−2 µ1−s (µ2 ν 1 ).                             (6.10)
+where we recall that p = 1 has been chosen.
+   Therefore, by Proposition 5.1, (6.9), and (6.10), for all suﬃciently large µ such a solution
+u satisﬁes
+                            |∇ × u(t∗ )|L∞ ≥ Cǫ−2 µ1−s (µ2 ν 1 ).                        (6.11)
+   The upper bound |∇ × u0 |L∞ follows from (3.9), yielding
+                          |∇ × u0 |L∞ ≤ |∇u0 |L∞ ≤ Cǫ2 µ1−s (µ2 ν 1 ).                           (6.12)
+   It follows from (6.11) and (6.12) that
+                                  |∇ × u(t∗ )|L∞
+                                                 ≥ Cǫ−4 ≥ M
+                                   |∇ × u0 |L∞
+provided ǫ > 0 is suﬃciently small.
+
+                                           References
+[AB19]    Dallas Albritton and Tobias Barker. Global weak Besov solutions of the Navier-Stokes equa-
+          tions and applications. Arch. Ration. Mech. Anal., 232(1):197–263, 2019.
+[ABC22]   Dallas Albritton, Elia Brué, and Maria Colombo. Non-uniqueness of Leray solutions of the
+          forced Navier-Stokes equations. Ann. of Math. (2), 196(1):415–455, 2022.
+[BCD11]   Hajer Bahouri, Jean-Yves Chemin, and Raphaël Danchin. Fourier analysis and nonlinear
+          partial differential equations, volume 343 of Grundlehren der mathematischen Wissenschaften
+          [Fundamental Principles of Mathematical Sciences]. Springer, Heidelberg, 2011.
+[BKM84]   J. T. Beale, T. Kato, and A. Majda. Remarks on the breakdown of smooth solutions for the
+          3-D Euler equations. Comm. Math. Phys., 94(1):61–66, 1984.
+[BL15a]   Jean Bourgain and Dong Li. Strong ill-posedness of the incompressible Euler equation in
+          borderline Sobolev spaces. Invent. Math., 201(1):97–157, 2015.
+[BL15b]   Jean Bourgain and Dong Li. Strong illposedness of the incompressible Euler equation in integer
+          C m spaces. Geom. Funct. Anal., 25(1):1–86, 2015.
+[BP08]    Jean Bourgain and Nataša Pavlović. Ill-posedness of the Navier-Stokes equations in a critical
+          space in 3D. J. Funct. Anal., 255(9):2233–2247, 2008.
+[BSŠ18]   T. Barker, G. Seregin, and V. Šverák. On stability of weak Navier-Stokes solutions with large
+          L3,∞ initial data. Comm. Partial Differential Equations, 43(4):628–651, 2018.
+[BV19]    Tristan Buckmaster and Vlad Vicol. Nonuniqueness of weak solutions to the Navier-Stokes
+          equation. Ann. of Math. (2), 189(1):101–144, 2019.
+[BV22]    Jacob Bedrossian and Vlad Vicol. The mathematical analysis of the incompressible Euler and
+          Navier-Stokes equations—an introduction, volume 225 of Graduate Studies in Mathematics.
+          American Mathematical Society, Providence, RI, [2022] ©2022.
+[Cal90]   Calixto P. Calderón. Existence of weak solutions for the Navier-Stokes equations with initial
+          data in Lp . Trans. Amer. Math. Soc., 318(1):179–200, 1990.
+[Can97]   Marco Cannone. A generalization of a theorem by Kato on Navier-Stokes equations. Rev. Mat.
+          Iberoamericana, 13(3):515–541, 1997.
+[Can04]   Marco Cannone. Harmonic analysis tools for solving the incompressible Navier-Stokes equa-
+          tions. In Handbook of mathematical fluid dynamics. Vol. III, pages 161–244. North-Holland,
+          Amsterdam, 2004.
+[CD14]    Alexey Cheskidov and Mimi Dai. Norm inﬂation for generalized Navier-Stokes equations. In-
+          diana Univ. Math. J., 63(3):869–884, 2014.
+30                                         XIAOYUTAO LUO
+
+[CH23]   Jiajie Chen and Thomas Y. Hou. Stable nearly self-similar blowup of the 2d boussinesq and
+         3d euler equations with smooth data i: Analysis. 2023.
+[CL22]   Alexey Cheskidov and Xiaoyutao Luo. Sharp nonuniqueness for the Navier-Stokes equations.
+         Invent. Math., 229(3):987–1054, 2022.
+[CMP94] M. Cannone, Y. Meyer, and F. Planchon. Solutions auto-similaires des équations de navier-
+         stokes. Séminaire Équations aux dérivées partielles (Polytechnique), pages 1–10, 1993-1994.
+[CMZ22] Diego Córdoba and Luis Martínez-Zoroa. Non existence and strong ill-posedness in C k and
+         Sobolev spaces for SQG. Adv. Math., 407:Paper No. 108570, 74, 2022.
+[CMZ23] Diego Córdoba and Luis Martínez-Zoroa. Blow-up for the incompressible 3D-Euler equations
+                           1
+         with uniform C 1, 2 −ǫ ∩ L2 force. preprint, 2023.
+[CMZ25] Diego Córdoba and Luis Martínez-Zoroa. Finite time singularities of smooth solutions for the
+         2d incompressible porous media (IPM) equation with a smooth source. preprint, 2025.
+[CMZO24] Diego Córdoba, Luis Martínez-Zoroa, and Wojciech S. Ożański. Instantaneous gap loss of
+         Sobolev regularity for the 2D incompressible Euler equations. Duke Math. J., 173(10):1931–
+         1971, 2024.
+[CMZZ24] Diego Córdoba, Luis Martínez-Zoroa, and Fan Zheng. Finite time blow-up for the hypodissi-
+         pative navier stokes equations with a force in L1t Cx1,ǫ ∩ L∞
+                                                                     t Lx . preprint, 2024.
+                                                                        2
+
+[CP25]   Matei P. Coiculescu and Stan Palasek. Non-uniqueness of smooth solutions of the navier-stokes
+         equations from critical data. preprint, 2025.
+[CS10]   A. Cheskidov and R. Shvydkoy. Ill-posedness of the basic equations of ﬂuid dynamics in Besov
+         spaces. Proc. Amer. Math. Soc., 138(3):1059–1067, 2010.
+[DM87]   Ronald J. DiPerna and Andrew J. Majda. Oscillations and concentrations in weak solutions
+         of the incompressible ﬂuid equations. Comm. Math. Phys., 108(4):667–689, 1987.
+[EJ17]   Tarek Mohamed Elgindi and In-Jee Jeong. Ill-posedness for the incompressible Euler equations
+         in critical Sobolev spaces. Ann. PDE, 3(1):Paper No. 7, 19, 2017.
+[Elg21]  Tarek Elgindi. Finite-time singularity formation for C 1,α solutions to the incompressible Euler
+         equations on R3 . Ann. of Math. (2), 194(3):647–727, 2021.
+[FK64]   Hiroshi Fujita and Tosio Kato. On the Navier-Stokes initial value problem. I. Arch. Rational
+         Mech. Anal., 16:269–315, 1964.
+[Ger08]  Pierre Germain. The second iterate for the Navier-Stokes equation. J. Funct. Anal.,
+         255(9):2248–2264, 2008.
+[Gig86]  Yoshikazu Giga. Solutions for semilinear parabolic equations in Lp and regularity of weak
+         solutions of the Navier-Stokes system. J. Differential Equations, 62(2):186–212, 1986.
+[HK21]   Siming He and Alexander Kiselev. Small-scale creation for solutions of the SQG equation.
+         Duke Math. J., 170(5):1027–1041, 2021.
+[Hou23]  Thomas Y Hou. Potentially Singular Behavior of the 3D Navier–Stokes Equations. Found.
+         Comput. Math., 23:2251–2299, 2023.
+[Kat84]  Tosio Kato. Strong Lp -solutions of the Navier-Stokes equation in Rm , with applications to
+         weak solutions. Math. Z., 187(4):471–480, 1984.
+[KN12]   Alexander Kiselev and Fedor Nazarov. A simple energy pump for the surface quasi-geostrophic
+         equation. In Nonlinear partial differential equations, volume 7 of Abel Symp., pages 175–179.
+         Springer, Heidelberg, 2012.
+[KP88]   Tosio Kato and Gustavo Ponce. Commutator estimates and the Euler and Navier-Stokes equa-
+         tions. Comm. Pure Appl. Math., 41(7):891–907, 1988.
+[KT01]   Herbert Koch and Daniel Tataru. Well-posedness for the Navier-Stokes equations. Adv. Math.,
+         157(1):22–35, 2001.
+[Kv14]   Alexander Kiselev and Vladimir Šverák. Small scale creation for solutions of the incompressible
+         two-dimensional Euler equation. Ann. of Math. (2), 180(3):1205–1220, 2014.
+[KY23]   Alexander Kiselev and Yao Yao. Small scale formations in the incompressible porous media
+         equation. Arch. Ration. Mech. Anal., 247(1):Paper No. 1, 25, 2023.
+[Ler34]  J. Leray. Sur le mouvement d’un liquide visqueux emplissant l’espace. Acta Math., 63(1):193–
+         248, 1934.
+[LH14]   Guo Luo and Thomas Y. Hou. Potentially singular solutions of the 3d axisymmetric euler
+         equations. Proceedings of the National Academy of Sciences, 111(36):12968–12973, 2014.
+[LR16]   Pierre Gilles Lemarié-Rieusset. The Navier-Stokes problem in the 21st century. CRC Press,
+         Boca Raton, FL, 2016.
+[Luo24]  Xiaoyutao Luo. Illposedness of incompressible ﬂuids in supercritical Sobolev spaces. preprint,
+         2024.
+[Mey97]  Yves Meyer. Wavelets, paraproducts, and Navier-Stokes equations. In Current developments
+         in mathematics, 1996 (Cambridge, MA), pages 105–212. Int. Press, Boston, MA, 1997.
+                          NORM INFLATION IN SUPERCRITICAL SPACES                                       31
+
+[NRŠ96]   J. Nečas, M. Ružička, and V. Šverák. On Leray’s self-similar solutions of the Navier-Stokes
+          equations. Acta Math., 176(2):283–294, 1996.
+[Pop24]   Henry Popkin. On rough Calderón solutions to the Navier-Stokes equations and applications
+          to the singular set. 2024.
+[SŠ17]    G. Seregin and V. Šverák. On global weak solutions to the Cauchy problem for the Navier-
+          Stokes equations with large L3 -initial data. Nonlinear Anal., 154:269–296, 2017.
+[Tao16]   Terence Tao. Finite time blowup for an averaged three-dimensional Navier-Stokes equation. J.
+          Amer. Math. Soc., 29(3):601–674, 2016.
+[Tsa98]   Tai-Peng Tsai. On Leray’s self-similar solutions of the Navier-Stokes equations satisfying local
+          energy estimates. Arch. Rational Mech. Anal., 143(1):29–51, 1998.
+[Wan15]   Baoxiang Wang. Ill-posedness for the Navier-Stokes equations in critical Besov spaces Ḃ∞,q −1
+                                                                                                         .
+          Adv. Math., 268:350–372, 2015.
+[Yon10]   Tsuyoshi Yoneda. Ill-posedness of the 3D-Navier-Stokes equations in a generalized Besov space
+          near BMO−1 . J. Funct. Anal., 258(10):3376–3387, 2010.
+
+  State Key Laboratory of Mathematical Sciences, Academy of Mathematics and Systems
+Science, Chinese Academy of Sciences, Beijing 100190, China
+  Email address: xiaoyutao.luo@amss.ac.cn
+

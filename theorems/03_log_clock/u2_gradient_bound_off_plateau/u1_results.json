@@ -1,0 +1,27 @@
+{
+ "A1_div5b_minus_2a_residual": "0",
+ "A2_grad5b_structure_residual": "Matrix([[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]])",
+ "A3_worst_ratio_op_over_bound": 0.9989318482494669,
+ "A3_violated": false,
+ "B_b_at_origin": [
+  "0",
+  "0"
+ ],
+ "C_advective_split_residual": "0",
+ "C_grad_commutes_with_Lap5_residual": "0",
+ "D_lap5_rho1_g_residual": "0",
+ "D_lap5_rho2_g_residual": "0",
+ "D_k1_rearranged_residual": "0",
+ "D_k2_rearranged_residual": "0",
+ "F_C_K": 0.037995443865876666,
+ "F_S4": 26.318945069571622,
+ "F_C_K_times_S4": 1.0,
+ "F_3pi2_over_16": 1.8505508252042546,
+ "F_C_K_times_pi4_over_2": 1.8505508252042544,
+ "E_riesz_numeric": 48.70454551715526,
+ "E_riesz_closed_pi4_over_2": 48.70454551700121,
+ "E_riesz_rel_err": 3.1630060173002208e-12,
+ "E_riesz_classical_formula": 48.70454551700121,
+ "F_R_A_over_rho": 1.9996092223226414,
+ "F_collar_coeff_4RA_over_2": 3.9992184446452828
+}

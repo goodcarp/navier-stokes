@@ -1,0 +1,194 @@
+{
+ "E_hess_CK_linear": 66.66219999999998,
+ "E_hess_c_dependence": {
+  "E_hess(c=1)/E_hess(c=0.5)": 29.746677371502035,
+  "c-prefactor (tau*V1 ~ c^2 (e^{2cG}-1)/cG)": 29.746677371502038,
+  "e^{3(cG(1)-cG(0.5))}": 12.549485735660552
+ },
+ "bfg_M0Td_invariance": "omega~ = omega/nu so M~ = M/nu ; T~ = nu T ; M~ T~ = M T",
+ "bfg_fixed_nu_scaling": "u -> lambda u(lambda x, lambda^2 t): omega -> lambda^2 omega, T_d -> T_d/lambda^2, nu unchanged; it does not reach nu = 1",
+ "bfg_strictness": "Theorem 10 gives sup_{t<=T} ||omega(t)||_inf <= M ||omega_0||_inf; with T_d := first time >= (3/2)M0, take any M in (1, 3/2): then T_d > T >= 1/(c(M) M0), so M0 T_d >= 1/c(M) with M fixed, an absolute constant; the assembly's M = 3/2 reading needs strictness it does not state",
+ "bfg_viscosity_rescaling_residual": "0",
+ "feedback_exponent": {
+  "measured_L=160": {
+   "Jacobian": [
+    [
+     6.940498351835911,
+     0.5963463682243098
+    ],
+    [
+     10.65826973456474,
+     0.39756424548287317
+    ]
+   ],
+   "assembly_p_over_ML": 8.244787498666929,
+   "dominant_rate": 7.799227072201153,
+   "eigenvalues": [
+    7.799227072201153,
+    -0.4611644748823678
+   ],
+   "exp_pc_assembly": 804.0625498955561,
+   "exp_pc_true": 560.1233851524121,
+   "pc_star_assembly": 6.689677064530387,
+   "pc_star_true": 6.328157090089274,
+   "ratio_assembly_over_true": 1.057128792679199
+  },
+  "measured_L=1e+06": {
+   "Jacobian": [
+    [
+     6.837152541184622,
+     0.593014977433767
+    ],
+    [
+     10.308146697456413,
+     0.39534331828917796
+    ]
+   ],
+   "assembly_p_over_ML": 8.171424238666928,
+   "dominant_rate": 7.676680406360698,
+   "eigenvalues": [
+    7.676680406360698,
+    -0.44418454688689873
+   ],
+   "exp_pc_assembly": 757.5968563325607,
+   "exp_pc_true": 507.10843604324776,
+   "pc_star_assembly": 6.630151392355024,
+   "pc_star_true": 6.228724858519921,
+   "ratio_assembly_over_true": 1.0644476265934293
+  },
+  "measured_L=1e+12": {
+   "Jacobian": [
+    [
+     6.837136003225384,
+     0.5930144443264824
+    ],
+    [
+     10.308090668861924,
+     0.3953429628843215
+    ]
+   ],
+   "assembly_p_over_ML": 8.171412498678668,
+   "dominant_rate": 7.676660773230146,
+   "eigenvalues": [
+    7.676660773230146,
+    -0.44418180712044003
+   ],
+   "exp_pc_assembly": 757.5896397855561,
+   "exp_pc_true": 507.10035788014915,
+   "pc_star_assembly": 6.6301418667329,
+   "pc_star_true": 6.228708928539532,
+   "ratio_assembly_over_true": 1.0644488196187862
+  },
+  "proved_L=160": {
+   "Jacobian": [
+    [
+     34.807252576180005,
+     3.617933716226762
+    ],
+    [
+     31.813782967182735,
+     2.4119558106328043
+    ]
+   ],
+   "assembly_p_over_ML": 42.720156773057575,
+   "dominant_rate": 38.038036224058274,
+   "eigenvalues": [
+    38.038036224058274,
+    -0.8188278372454594
+   ],
+   "exp_pc_assembly": 1131580363634123.2,
+   "exp_pc_true": 25339878290787.37,
+   "pc_star_assembly": 34.66239160246072,
+   "pc_star_true": 30.86340048776294,
+   "ratio_assembly_over_true": 1.1230904908292283
+  },
+  "proved_L=1e+06": {
+   "Jacobian": [
+    [
+     33.87966028389735,
+     3.5977227252144592
+    ],
+    [
+     28.336897620931573,
+     2.3984818168096282
+    ]
+   ],
+   "assembly_p_over_ML": 41.97446360305757,
+   "dominant_rate": 36.83972478096029,
+   "eigenvalues": [
+    36.83972478096029,
+    -0.5615826802533093
+   ],
+   "exp_pc_assembly": 617900862678259.1,
+   "exp_pc_true": 9583954799984.133,
+   "pc_star_assembly": 34.057349144139934,
+   "pc_star_true": 29.89111144109521,
+   "ratio_assembly_over_true": 1.1393804881178442
+  },
+  "proved_L=1e+12": {
+   "Jacobian": [
+    [
+     33.87951184552893,
+     3.597719490941686
+    ],
+    [
+     28.336341230810053,
+     2.3984796606277907
+    ]
+   ],
+   "assembly_p_over_ML": 41.974344273176904,
+   "dominant_rate": 36.83953194872674,
+   "eigenvalues": [
+    36.83953194872674,
+    -0.5615404425700206
+   ],
+   "exp_pc_assembly": 617841039060893.5,
+   "exp_pc_true": 9582455404838.107,
+   "pc_star_assembly": 34.05725232195186,
+   "pc_star_true": 29.890954980377415,
+   "ratio_assembly_over_true": 1.139383212891977
+  }
+ },
+ "scaling_exponents": {
+  "c=0.25_L=160->640": {
+   "E_4_exponent": -2.0,
+   "E_hess_exponent": -2.2180085270023793,
+   "E_tail_L1": 1.9135016578111648e-21,
+   "E_tail_L2": 3.958411020240521e-105,
+   "c_G_L1": 0.561453125,
+   "c_G_L2": 0.42161328124999997,
+   "eps_bulk_exponent": -1.0,
+   "q_half_exponent": 1.0
+  },
+  "c=0.25_L=640->2560": {
+   "E_4_exponent": -2.0,
+   "E_hess_exponent": -2.05379725568872,
+   "E_tail_L1": 3.958411020240521e-105,
+   "E_tail_L2": 0.0,
+   "c_G_L1": 0.42161328124999997,
+   "c_G_L2": 0.3866533203125,
+   "eps_bulk_exponent": -1.0,
+   "q_half_exponent": 1.0
+  },
+  "c=0.811383_L=160->640": {
+   "E_4_exponent": -2.0,
+   "E_hess_exponent": -2.8047467527475907,
+   "E_tail_L1": 16.353897042243233,
+   "E_tail_L2": 8.734211938569935e-07,
+   "c_G_L1": 1.822213171038646,
+   "c_G_L2": 1.3683587105843804,
+   "eps_bulk_exponent": -1.0,
+   "q_half_exponent": 1.0
+  },
+  "c=0.811383_L=640->2560": {
+   "E_4_exponent": -2.0,
+   "E_hess_exponent": -2.19594261890167,
+   "E_tail_L1": 8.734211938569935e-07,
+   "E_tail_L2": 2.7904637132125284e-26,
+   "c_G_L1": 1.3683587105843804,
+   "c_G_L2": 1.254895095470814,
+   "eps_bulk_exponent": -1.0,
+   "q_half_exponent": 1.0
+  }
+ }
+}

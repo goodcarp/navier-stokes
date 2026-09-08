@@ -1,0 +1,264 @@
+{
+ "A_sign_at_n5": {
+  "k(k-3)": {
+   "0": 0,
+   "1": -2,
+   "2": -2,
+   "3": 0,
+   "4": 4
+  },
+  "nonpositive_for_k": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "B_zeroth_order_coefficients": {
+  "eps=0 value": "-2/rho^2 in both cases, = k(k-3)/rho^2 at n=5",
+  "k=1": "-(2 rho^2 + 5 eps^2)/R_eps^4   <= 0 for every rho, eps",
+  "k=2": "-(2 rho^2 + 10 eps^2)/R_eps^4  <= 0 for every rho, eps"
+ },
+ "C_note": "|grad g|^2 G^2 >= |grad g|^2 |g|^2 >= sum_x |g.d_x g|^2 by Cauchy-Schwarz, so the vector remainder is >= 0 for every eps >= 0.",
+ "D_note": "d_j of the ADVECTIVE equation produces exactly -(d_j b).grad eta and no multiple of eta; div_5 b = 2a enters only when the equation is written in conservation form, which the argument never uses.",
+ "E_lap_radial": "beta*(r**2 + 1)**(beta/2)*(beta*r**2 + 3*r**2 + 5)/(r**4 + 2*r**2 + 1)",
+ "E_majorant_algebra": {
+  "k=1 combination": "3 beta (r^2+1)^{b/2-1} + beta(beta-2) r^2 (r^2+1)^{b/2-2} <= beta(beta+1)(r^2+1)^{b/2-1}",
+  "majorised by": "beta(beta+3)(r^2+1)^{b/2-1}, using r^2 <= r^2+1 and beta >= 2",
+  "phi''+4phi'/r": "5 beta (r^2+1)^{b/2-1} + beta(beta-2) r^2 (r^2+1)^{b/2-2}"
+ },
+ "E_majorant_gap_poly": "beta*(beta - 2)",
+ "E_majorant_k1_min_gap": {
+  "at_beta": 2.0,
+  "claim": "Delta h - (2/rho^2) x.grad h <= beta(beta+1) phi/(rho^2+1)",
+  "min_gap": 0.0
+ },
+ "E_majorant_min_gap_over_grid": {
+  "at_beta": 2.0,
+  "claim": "phi'' + 4 phi'/r <= beta(beta+3) phi/(r^2+1)",
+  "min_gap": 0.0
+ },
+ "F_eigs": [
+  "-a/2 - sqrt(4*P**2 - 4*P*omega + 4*Q**2 + 12*Q*a + 9*a**2 + omega**2)/2",
+  "-a/2 + sqrt(4*P**2 - 4*P*omega + 4*Q**2 + 12*Q*a + 9*a**2 + omega**2)/2"
+ ],
+ "F_note": "The transverse R^3 in R^4 carries the eigenvalue a with multiplicity 3; the (e_r, e_z) block has trace -a and (tr)^2 - 4 det = (3a+2Q)^2 + (2P-omega)^2. Gamma_rad = max(a, lam_top).  The sharp rate for |grad eta| is -Lambda_min = max(-a, (a + sqrt((3a+2Q)^2+(2P-omega)^2))/2), which is <= ||grad_5 b||_op = Gamma.  u2 uses Gamma; the note records the sharper rate as headroom and does NOT use it.",
+ "F_reference_strain": {
+  "Gamma = ||grad_5 b||_op": 2.0,
+  "Gamma_rad = Lambda_max": 1.0,
+  "Gamma_rad_over_Gamma": 0.5,
+  "a": 1.0,
+  "eigenvalues_sym": [
+   -2.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "minus_Lambda_min": 2.0,
+  "note": "-Lambda_min = 2a = Gamma exactly on the reference strain, so replacing Gamma by the sharp rate in P2 gains a factor 1.  Gamma_rad/Gamma = 1/2 reproduces u5 (c).",
+  "sharpening_gain = Gamma/(-Lambda_min)": 1.0
+ },
+ "checks": {
+  "A_weight_n2_k0": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n2_k1": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n2_k2": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n2_k3": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n2_k4": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n3_k0": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n3_k1": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n3_k2": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n3_k3": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n3_k4": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n4_k0": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n4_k1": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n4_k2": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n4_k3": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n4_k4": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n5_k0": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n5_k1": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n5_k2": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n5_k3": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n5_k4": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n6_k0": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n6_k1": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n6_k2": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n6_k3": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n6_k4": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n7_k0": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n7_k1": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n7_k2": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n7_k3": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "A_weight_n7_k4": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "B_V_eps_identity_k1_n5": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "B_V_limit_eps0": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "B_W_eps_identity_k2_n5": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "B_W_limit_eps0": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "B_grad_Reps": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "B_lap_Reps": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "B_lap_Reps2": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "C_scalar_kato_remainder": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "C_vector_kato_remainder": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "D_advective_equals_conservative_minus_divb_eta": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "D_gradient_equation_j1": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "D_gradient_equation_j2": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "D_gradient_equation_j3": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "D_gradient_equation_j4": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "D_gradient_equation_j5": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "E_r_phip_le_beta_phi_poly": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "E_radial_k1_combination_exact": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "E_radial_laplacian_exact": {
+   "residual": "0",
+   "residual_is_zero": true
+  },
+  "F_block_top_eigenvalue": {
+   "residual": "0",
+   "residual_is_zero": true
+  }
+ },
+ "summary": {
+  "n_checks": 49,
+  "n_fail": 0
+ }
+}

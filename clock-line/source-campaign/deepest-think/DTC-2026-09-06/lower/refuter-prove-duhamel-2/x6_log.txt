@@ -1,0 +1,40 @@
+nsring.py sha256 = 3c8e93b2da7c8f5437f74c3c39e67fb7b5ef6b29d92e01204e3176d817969f03
+
+====================================================================================================
+(B) the seat's own datum on the equatorial plane
+====================================================================================================
+  omega^theta(s, phi) = -M tanh(sin phi/sin 7.5deg) tanh(cos phi/0.12) Theta(s)
+ phi(deg)  |omega| at s=1.5 rho0
+     0.00           0.000000e+00
+     1.00           1.305262e-01
+     5.00           5.729874e-01
+    15.00           9.454813e-01
+    30.00           9.810887e-01
+    45.00           9.819601e-01
+    54.74           9.818765e-01
+    75.00           9.560726e-01
+    89.00           1.418223e-01
+    90.00           5.010915e-16
+  -> omega^theta == 0 on the equator (phi = 90 deg) EXACTLY, for any datum odd in z.
+     So the plane on which the sign law survives (x5b) is the plane on which the datum
+     vanishes.  No trajectory with |omega_0| = M0 lives there.
+
+====================================================================================================
+(C) the strain functional at the seat's own tracer seed (s=1.5 rho0, phi=45 deg)
+====================================================================================================
+                       field point a = int K om  positive part  negative part   |neg|/a  total mass/|a|
+N=4           ORIGIN (L1/L2 exact)      1.37117        1.37117        0.00000    0.0000          1.0000
+N=4 equator, s=1.5 rho0 (omega=0 there)      1.33421        1.33421       -0.00000    0.0000          1.0000
+N=4  seat's tracer seed, phi=45deg      1.00180        1.25029       -0.24849    0.2480          1.4961
+N=4      phi=54.74deg (L3's angle)      1.04623        1.24143       -0.19519    0.1866          1.3731
+N=5           ORIGIN (L1/L2 exact)      1.71069        1.71069        0.00000    0.0000          1.0000
+N=5 equator, s=1.5 rho0 (omega=0 there)      1.67393        1.67393       -0.00000    0.0000          1.0000
+N=5  seat's tracer seed, phi=45deg      1.33738        1.58156       -0.24417    0.1826          1.3652
+N=5      phi=54.74deg (L3's angle)      1.38373        1.57930       -0.19557    0.1413          1.2827
+
+Reading.  At the origin the negative part is 0 by the proved sign law: a is a POSITIVE
+functional, no cancellation.  At the seat's own tracer seed (phi = 45 deg) the negative
+part is a finite fraction of a, so the same functional is a DIFFERENCE of two comparable
+pieces there.  L2's 'every material element contributes with the same sign, for all time'
+and L4's 'P1 >= 0, so only P2 is sign-indefinite' are therefore not available at any point
+that carries vorticity.  GAP 2 is a structural gap, not the O(1/L) size step the NOTE calls it.

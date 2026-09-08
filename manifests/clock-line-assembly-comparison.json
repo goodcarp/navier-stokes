@@ -1,0 +1,13 @@
+{
+  "status": "IDENTICAL_BYTES",
+  "paths": {
+    "curated": "outputs/new-forced-route-research/theorems/03_log_clock/THEOREM_S3/THEOREM_S3.md",
+    "collected": "outputs/new-forced-route-research/clock-line/source-campaign/deepest-think/DTC-2026-09-06/s3close/round2/THEOREM_S3/THEOREM_S3.md",
+    "live": "~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/s3close/round2/THEOREM_S3/THEOREM_S3.md"
+  },
+  "sha256": {
+    "curated": "02c387b5a5ef1ae4dd2c4abad7d911bad7b90744b87c25a41596a103ca28c78e",
+    "collected": "02c387b5a5ef1ae4dd2c4abad7d911bad7b90744b87c25a41596a103ca28c78e",
+    "live": "02c387b5a5ef1ae4dd2c4abad7d911bad7b90744b87c25a41596a103ca28c78e"
+  }
+}

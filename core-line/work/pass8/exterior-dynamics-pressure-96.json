@@ -1,0 +1,34 @@
+{
+  "status": "EXPLORATORY whole-space endcap quadrature, not an error enclosure",
+  "n": 96,
+  "xi_stationary": 0.46792364389312446,
+  "r": 0.21547557533348247,
+  "unit_swirl_speed": 0.1905054412583273,
+  "unit_centrifugal": 0.16842894185506593,
+  "p_v_r": 0.16206511423472308,
+  "p_v_rr": -2.3456089611933244,
+  "p_v_zz": 0.030158603663512334,
+  "p_v_z": 1.9103983346534817e-07,
+  "radial_acceleration": 0.006363827620342849,
+  "vertical_acceleration": -1.9103983346534817e-07,
+  "radial_acceleration_r": 0.0006247337086748003,
+  "vertical_acceleration_z": -0.030158603663512334,
+  "fractional_centrifugal_remainder": 0.03778345663311807,
+  "harmonic_delta_trace_residual": 4.85722573273506e-17,
+  "endcap_contributions": {
+    "4.0": {
+      "delta": 0.0019670718077197734,
+      "delta_r": -0.006363837943513582,
+      "delta_z": 0.0,
+      "delta_zz": 0.030158699219074405,
+      "delta_rr": -0.0006247813554624904
+    },
+    "-4.0": {
+      "delta": -5.092850378453739e-07,
+      "delta_r": 1.0323170723269425e-08,
+      "delta_z": 1.9103983346534817e-07,
+      "delta_zz": -9.555556207114255e-08,
+      "delta_rr": 4.764678769013574e-08
+    }
+  }
+}

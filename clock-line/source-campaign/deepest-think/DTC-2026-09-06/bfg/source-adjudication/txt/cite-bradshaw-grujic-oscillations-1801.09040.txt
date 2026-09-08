@@ -1,0 +1,1072 @@
+                                               Oscillations and integrability of the vorticity in the 3D NS flows
+                                                               Y. Do1            A. Farhat2            Z. Grujić1          L. Xu1
+
+
+
+
+arXiv:1801.09040v2 [math.AP] 18 Oct 2018
+                                                                   1
+                                                                       University of Virginia, 2 Florida State University
+                                                                                        October 19, 2018
+
+
+                                                                                             Abstract
+
+                                                 In the studies of the Navier-Stokes (NS) regularity problem, it has become increasingly clear
+                                                 that a more realistic path to improved a priori bounds is to try to break away from the scaling
+                                                 of the energy-level estimates in the realm of the blow-up-type arguments (the solution in view is
+                                                 regular/smooth up to the possible blow-up time) rather than to try to improve the regularity of
+                                                 Leray’s weak solutions. The present article is a contribution in this direction; more precisely, it
+                                                 is shown–in the context of an algebraic/polynomial-type blow-up profile of arbitrary degree–that
+                                                 a very weak condition on the vorticity direction field (membership in a local bmo space weighted
+                                                 with arbitrary many logarithms)–suffices to break the energy-level scaling in the bounds on the
+                                                 vorticity. At the same time, the obtained bounds transform a 3D NS criticality scenario depicted
+                                                 by the macro-scale long vortex filaments into a no-singularity scenario.
+
+                                                 Keywords: L ln(k) L Estimates; Vortex Stretching Term; Weighted BMO spaces; Pointwise
+                                                 Multipliers in BMO.
+
+
+                                           1    Introduction
+                                           The 3D Navier-Stokes (NS) equations read
+                                                                                ut + (u · ∇)u = ν△u − ∇p + f,
+                                           supplemented with the incompressibility condition div u = 0. A vector field u denotes the velocity
+                                           of the fluid, a scalar field p the pressure, a positive constant ν the viscosity, and a vector field f the
+                                           external force. In what follows, for simplicity, the viscosity is set to 1, f taken to be a potential
+                                           force and the spatial domain to be the whole space R3 .
+                                              Taking the curl of the (u, p) formulation yields the equations for the vorticity of the fluid ω
+                                           (ω = curl u),
+                                                                            ωt + (u · ∇)ω = △ω + (ω · ∇)u.
+                                           (Since we are on R3 , the velocity can be recovered from the vorticity by the Biot-Savart law, and
+                                           one obtains a closed system for ω.) In this setting, the only piece of data is the initial condition.
+                                               The left-hand side represents the transport of the vorticity by the velocity, the first term on
+                                           the right-hand side is the diffusion, and the second term is the vortex-stretching term. The vortex-
+                                           stretching term (ω · ∇)u is responsible for amplification of the vorticity magnitude in 3D NS flows
+                                           and possible formation of singularities (it is identically zero in 2D).
+
+
+                                                                                                 1
+    The NS regularity problem is super-critical, i.e., there is a scaling gap between any regularity
+class/criterion and the corresponding a priori bound (with respect to the unique scaling leaving
+the NS equations invariant). Moreover, the scaling gap has been of the fixed size; all the regularity
+classes are (at best) scaling-invariant, while all the a priori bounds have been on the scaling level
+of the Leray’s energy class L∞ (0, T ; L2 ). Somewhat unexpectedly, a very recent work (Bradshaw,
+Farhat, and Grujić [3]) introduced a mathematical framework based on the suitably defined scale
+of spatial intermittency/sparseness of the regions of intense vorticity–and motivated by the com-
+putational simulations of turbulent flows–in which the regularity class is still scaling invariant, but
+the a priori bound is algebraically/polynomially better than the energy-level bound (this is in the
+context of a blow-up-type argument; i.e., one studies an initially smooth solution in the vicinity of
+the first possible blow-up time).
+    There are two main classical approaches in the study of the NS regularity problem; one is to
+try to improve the regularity of the Leray’s weak solutions (or some other class of weak solutions),
+and the other one is to study the initially smooth/regular flows approaching a possible singularity
+(a blow-up-type argument). Given that there is an increasing evidence that Leray’s solutions may
+not be unique (see, for example, a very recent work of Buckmaster and Vicol [5]), and the fact that
+regular solutions are necessarily unique, the second avenue seems more realistic. In addition, the
+aforementioned reduction of the scaling gap ([3]) took place within the realm of the blow-up-type
+arguments.
+   The main goal of this article is to show that–in the context of a blow-up-type argument–one
+can escape the energy-level scaling of the vorticity a priori bounds under a very weak condition on
+the oscillations of the vorticity direction field ξ. We were motivated by the work of Bradshaw and
+Grujić [2] where it was shown that as long as ξ is uniformly-in-time bounded in the logarithmically
+weighted space of the functions of bounded mean oscillations bmo   g 1 , the vorticity magnitude
+                                                                       |logr|
+stays bounded in the Zygmund space L log L breaking the energy-level scaling L1 . A notable
+                                         g 1 allows for discontinuities (e.g., discontinuities of
+feature of this result is that the space bmo
+                                              |logr|
+sin log | log r|-type). At the same time, the question arose of whether it was possible to break the
+energy-level scaling in the vorticity bounds under a weaker assumption on ξ (allowing for stronger
+                                                                           g 1 is optimal within
+discontinuities), or whether there is a natural obstruction and the space bmo
+                                                                                |logr|
+this framework.
+    Unfortunately, there is an obstruction. Namely, one of the main ingredients in [2] is the Coifman-
+Rochberg BM O-estimate on the logarithm of the maximal function ([7]) which has no analogue in
+the weighted BM O-spaces. In particular, in the case where the weight is a k-fold log-composite
+(the case of the most interest for applications to the 3D NSE), several types of counterexamples are
+presented in the Appendix. It turned out that the obstruction disappears if one restricts the consid-
+erations to the case where the function of interest (its magnitude) exhibits an algebraic/polynomial-
+type singularity (there is no restriction on the degree/strength of the singularity). Fortunately, in
+the realm of the 3D NSE, an algebraic/polynomial type of the blow-up profile (for the vortic-
+ity magnitude) is consistent with the current NS theory, and–in this context–it is indeed possible
+                                                                           g 1 with the class of
+to generalize the result from [2], i.e., replace the original ξ-condition bmo
+                                                                                |logr|
+ξ-conditions
+                                           g
+                                           bmo            1
+                                                 ln ln... ln | ln r|
+
+
+
+
+                                                       2
+where the number of the log-composites can be an arbitrary positive integer, and still obtain the
+bound on the vorticity magnitude escaping the energy-level scaling.
+   In addition, the estimates on the vorticity magnitude obtained here yield improved estimates
+on the distribution function of the vorticity sufficient to transform a geometric criticality scenario
+presented in Dascaliuc and Grujić [9] into a regularity scenario.
+    The paper is organized as follows. Section 2 presents several results on weighted local BM Os
+and maximal functions; in particular, a ‘dynamic’ generalization of the Coifman-Rochberg estimate
+in the setting of the algebraic/polynomial-type singularity is presented. Section 3 contains the main
+result.
+
+
+2    Results on Weighted BMOs and Maximal Functions
+In this section, we list and prove some results in harmonic analysis that will be applied in the next
+section. ffl Henceforth,
+                     ´ for a set S and a function f , f (S) will denote the average value of f on S,
+                   1
+f (S) = s f = |S|     S f.
+
+Lemma 2.1. Let ϕ be a suitable weight function and δ > 0 sufficiently small (depending on ϕ).
+For any f ∈ L1 define
+                                                          1
+                         kf kbmo
+                             g ϕ := kf kL1 + sup                       |f (x) − f (Q)| dx.
+                                                   |Q|<δ ϕ(r)      Q
+
+Suppose φ : (0, ∞) → [0, ∞) is increasing near 0, and let φ∗ be defined by
+                                              ˆ δ
+                                                       φ(s)
+                                     φ∗ (t) =               ds.                                          (2.1)
+                                               min(δ,t) s
+
+Then
+                                                                            
+                             kf gkbmo
+                                  g . kf kbmo
+                                          g               kgk∞ + kgkbmo(φ )−1 .                          (2.2)
+                                                     φ                         ∗
+
+       g = bmo
+(Here, bmo g 1 .)
+Proof. We slightly modify the proof of Theorem 2 in Janson [10] as follows. Let Q = Q(x0 , r) be
+any cube with center x0 and side length r < 2δ . Then, as shown in [10],
+                                            ˆ δ
+                                                 φ(t)
+                          |f (Q)| . kf kbmo
+                                        gφ            dt . φ∗ (r)kf kbmo
+                                                                     g φ.
+                                              r   t
+The following string of inequalities is then easily verified.
+
+                (f g)(Q) .              |g| |f − f (Q)| dx +               |f | |g − g(Q)| dx
+                             Q(x0 ,r)                           Q(x0 ,r)
+
+                         . kgk∞                |f − f (Q)| dx + |f (Q)|                  |g − g(Q)| dx
+                                    Q(x0 ,r)                                  Q(x0 ,r)
+
+                         . φ(r)kf k g
+                                   bmo
+                                       kgk∞ + kf k g
+                                                  bmo
+                                                      φ∗ (r)                          |g − g(Q)| dx
+                                           φ                   φ
+                                                                           Q(x0 ,r)
+                         . kf kbmo
+                               g kgk∞ + kf kbmo
+                                            g kgkbmo(φ )−1 .
+                                    φ                      φ           ∗
+
+
+
+
+                                                          3
+Lemma 2.2. For an 0 < r < 1 and a function f define the following incarnation of the maximal
+operator: Mr (f ) = (M (|f |r ))1/r where the usual maximal operator is defined as
+                                                      1
+                                                        ˆ
+                                     M (f )(x) = sup       |f (y)|dy                    (2.3)
+                                                 x∈Q |Q| Q
+
+where the supremum is taken over all cubes containing x. Let {ft } be a family of functions satisfying
+  1. {ft } ⊂ C 1 (Rn \ {0})
+
+  2. sup |∇ft | . |x|−ℓ
+       t
+
+  3. inf |ft | & 1.
+       t
+
+Then there exists r ∈ (0, 1) such that ∇Mr (ft ) exists almost everywhere and
+
+                                                    sup |∇Mr (ft )| . |x|−k
+                                                        t
+
+where k depends only on r and ℓ.
+Proof. Let f be a member {ft }. Note that ∇Mr (f ) exists almost everywhere because the maximal
+function maps Hölder continuous function to Hölder continuous function and in particular Lipschitz
+function to Lipschitz function (cf. Buckley [4]). Let g = |f |r . We choose r small enough so that
+|g| . |x|−m and m < n − 1. Fix an x ∈ Q and let Q̃ = (y − x) + Q. Then y ∈ Q̃ if and only if
+x ∈ Q, and for any Q containing x
+
+                                           gdz ≤        gdz −          gdz +              gdz
+                                       Q            Q             Q̃                 Q̃
+
+                                              ≤ sup             gdz −            gdz + sup              gdz
+                                                   y∈Q̃     Q               Q̃              y∈Q̃   Q̃
+
+                                              = sup             gdz −            gdz + sup              gdz.
+                                                   x∈Q      Q               Q̃              y∈Q Q
+
+Consequently
+
+                                   |M (g)(x) − M (g)(y)| ≤ sup                            gdz −         gdz .
+                                                                           x∈Q       Q             Q̃
+
+Now fix an x 6= 0 and suppose y is close enough to x. Let Q0 be the cube centered at 0 with side
+length |x|/4. If Q ∩ (2Q0 ) = ∅, then for y close enough to x
+                                                     |g(z + y − x) − g(z)|
+               gdz −        gdz        |x − y| ≤                            dz ≤                            |∇g(ξz,x,y )|dz . |x|−ℓ .
+           Q           Q̃                           Q        |x − y|                                    Q
+
+If Q ∩ (2Q0 ) 6= ∅, then diam(Q) ≥ |x|/2 (the diameter of Q) and
+                                                                                                                                   !
+                                    
+                                                                                 ˆ                            ˆ
+                   gdz −         gdz |x − y| ≤ (|Q||x − y|)−1                                      gdz +                     gdz       .
+               Q            Q̃                                                    (Q∆Q̃)∩Q0                     (Q∆Q̃)∩Qc0
+
+
+
+                                                                       4
+For the first part of the right hand side, we have estimates
+                       ˆ
+       (|Q||x − y|) −1
+                                  gdz . |x|−1           gdz . |x|−1 |x|−(ℓ−1)r . |x|−(ℓ−1)r−1 .
+                         (Q∆Q̃)∩Qc0                          (Q∆Q̃)∩Qc0
+
+For the second part we have
+                      ˆ
+                   −1
+       (|Q||x − y|)                    gdz . |x|−1                              gdz . |x|−1                   |z|−m dz.
+                          (Q∆Q̃)∩Q0                          (Q∆Q̃)∩(2Q0 )                    (Q∆Q̃)∩(2Q0 )
+
+
+Note that the maximal average of |z|−m takes place when Q∆Q̃ contains the origin, in which case
+(Q∆Q̃) ∩ (2Q0 ) is a flat cube inside 2Q0 whose height is at most |x − y|. The largest possible
+average is attained when y → x, i.e. the flat cube shrinks to an area in Rn−1 . So
+                                ˆ
+                             −1
+                 (|Q||x − y|)             gdz . |x|−1             |z̃|−m dz̃
+                                      (Q∆Q̃)∩Q0                            (2Q0 )∩Rn−1
+                                                                        −1   1−n    −m+n−1
+                                                             . |x|        |x|     |x|         . |x|−m−1 .
+
+To sum up, for some fixed k and for y close enough to x, we have
+                                                                    
+                                               gdz −         gdz     |x − y| . |x|−k .
+                                           Q            Q̃
+
+Combining the two cases yields
+                                                                                
+               |∇M (g)(x)| .           sup             lim |M (g)(x) − M (g)(y)| |x − y| . |x|−k1 .
+                                 all directions y y→x
+
+                                                                           ′
+Note that the second assumption implies M (g) . |x|−ℓ for some ℓ′ . Consequently,
+
+                                      |∇Mr (f )(x)| . |x|−k2               for some k2 ,
+
+finishing the argument.
+
+
+Lemma 2.3. Suppose a family of differentiable functions {ft }0<t<T is compactly supported in
+B(0, 1) (open ball with radius 1 centered at 0) and
+                         1
+  1. |ft (x)| &                        in B(0, 12 ) for some ǫ1 , ǫ2 > 0
+                  |x|ǫ1 + (T − t)ǫ2
+                          1
+  2. sup |∇ft (x)| .          for some ℓ1 > 0
+       t                |x|ℓ1
+                           1
+  3. sup |∇ft (x)| .              for some ℓ2 > 0.
+       x                (T − t)ℓ2
+
+Set φ∗ (x) = ln(k) (| ln x|) = log log . . . log | log x| (for some k ∈ N) and φ(x) = −xφ′∗ (x) for small x.
+Then, for a suitable r ∈ (0, 1), sup kφ∗ (Mr ft )kbmo     g . 1.    φ
+                                       t
+
+
+
+                                                                5
+Proof. Lemma 2.2 and the second assumption imply
+                                                                           1
+                                              sup |∇Mr ft | .                                                           (2.4)
+                                                t                        |x|ℓ1
+
+for some r ∈ (0, 1). In fact ℓ1 can be different from the one given in the assumption, but for
+convenience we still denote it by ℓ1 . Following a similar argument as in Lemma 2.2, we deduce that
+
+                    |M (|ft |r )(x) − M (|ft |r )(y)| ≤ sup                |ft (z)|r dz −          |ft (z)|r dz
+                                                             x∈Q       Q                      Q̃
+
+and that
+              |M (|ft |r )(x) − M (|ft |r )(y)|
+                                                ≤ sup               |ft (z)|r dz −          |ft (z)|r dz /|x − y|
+                           |x − y|                x∈Q          Q                       Q̃
+                                                                 ||ft |r (z + y − x) − |ft |r (z)|
+                                                    . sup                                          dz
+                                                       x∈Q     Q              |x − y|
+
+                                                    . sup          |∇|ft |r (ξz,x,y )|dz .
+                                                       x∈Q Q
+
+
+Therefore |∇M (|ft |r )(x)| . sup        |∇|ft |r (ξz,x,y )|dz. Having in mind the first assumption implies
+                                 x∈Q Q
+inf |ft |(x) & 1, we see
+t,x
+
+
+                                 |∇M (|ft |r )(x)| . sup               |∇|ft |(ξz,x,y )|dz .                            (2.5)
+                                                          x∈Q Q
+
+The second assumption implies that sup |ft | . |x|−ℓ1 +1 , so                           sup         |ft | . 1. Then the third
+                                               t                                     x∈∂B(0, 12 )
+assumption implies that
+                                                                          1
+                                            sup M (ft ) .                        .                                      (2.6)
+                                         x∈B(0, 12 )                   (T − t)ℓ2
+
+Combining (2.6) and (2.5) with the third assumption we obtain
+                                                            1
+                                  sup |∇Mr ft | .                ′          for some ℓ′2 .                              (2.7)
+                                   x                     (T − t)ℓ2
+Now we divide the proof into three cases:
+  If dist(0, Q) & (diam(Q))γ with γ < 1/ℓ1 , note that by (2.4)
+
+                   φ∗ (Mr ft )dx − inf φ∗ (Mr ft ) . sup φ∗ (Mr ft ) − inf φ∗ (Mr ft )
+               Q                    Q                     Q                        Q
+
+                                                       . sup |φ′∗ (Mr ft ) · ∇Mr ft | · diam(Q)
+                                                          Q
+                                                                             
+                                                       . φ′∗       inf Mr ft · sup |∇Mr ft | · diam(Q) .
+                                                                   Q               Q
+
+
+
+                                                               6
+                                                                                             
+From the first assumption we know inf Mr ft & 1, so φ′∗                           inf Mr ft       . 1, and
+                                   Q                                              Q
+
+
+                             φ∗ (Mr ft )dx − inf φ∗ (Mr ft ) . (dist(0, Q))−ℓ1 · diam(Q)
+                         Q                             Q
+
+                                                                        . |Q|(1−γℓ1 )/n . φ(|Q|) .
+
+   If T − t & (diam(Q))δ with δ < 1/ℓ2 , similarly, by (2.7)
+                                                              
+                                                    ′
+                 φ∗ (Mr ft )dx − inf φ∗ (Mr ft ) . φ∗ inf Mr ft · sup |∇Mr ft | · diam(Q)
+               Q                          Q                             Q                Q
+                                                                            −ℓ2
+                                                             . (T − t)            diam(Q)
+                                                             . |Q|(1−δℓ2 )/n . φ(|Q|) .
+
+The last inequality follows from the fact that (1 − δℓ2 )/n > 0 and |x|(1−δℓ2 )/n ≪ φ(|x|) when |x| is
+sufficiently small.
+    If dist(0, Q) . (diam(Q))γ and T − t . (diam(Q))δ , we divide the proof into two subcases.
+Case (i): if 0 ∈
+               / Q, then by the first assumption we have
+                                                                             1
+                         inf Mr ft ≥ inf |ft | &
+                         Q                 Q               (dist(0, Q) + diam(Q))ǫ1 + (T − t)ǫ2
+                                       & (diam(Q))− min{γǫ1 ,δǫ2 } & |Q|−ǫ3 .
+
+This implies (by Jensen’s inequality and the mean value theorem)
+                                                                                                
+       φ∗ (Mr ft )dx − inf φ∗ (Mr ft ) . (φ∗ ◦ exp)       ln(Mr ft ) dx − (φ∗ ◦ exp) inf ln(Mr ft )
+     Q                  Q                              Q                               Q
+                                                                                           
+                                       . (φ∗ ◦ exp)′ (ξQ )    ln(Mr ft ) dx − inf ln(Mr ft )
+                                                                              Q                        Q
+
+                                                                           ′
+                                 ffl
+where inf ln(Mr ft ) ≤ ξQ ≤            Q ln(Mr ft )dx. Note that (φ∗ ◦ exp) is decreasing near 0, and that by
+       Q                                       ffl
+Coifman and Rochberg [7] we have                     Q ln(Mr ft ) dx − inf
+                                                                        Q
+                                                                           ln(Mr ft ) . 1; consequently
+
+                                                                               
+                        φ∗ (Mr ft )dx − inf φ∗ (Mr ft ) . (φ∗ ◦ exp)′ ln |Q|−ǫ3 . φ(|Q|) .
+                    Q                          Q
+
+
+Case (ii): if 0 ∈ Q, then
+                                                                1
+               inf Mr ft ≥ inf |ft | &                                                & (diam(Q))− min{ǫ1 ,δǫ2 }
+                Q               Q              (diam(Q))ǫ1 + (T − t)ǫ2
+
+which leads back to the proof of Case (i).
+
+
+
+
+                                                                    7
+3     Main Result
+This section is devoted to our main result which is formulated in the following theorem.
+Theorem 3.1. Let u be a Leray solution to the 3D NSE on R3 × (0, ∞). Assume that the initial
+vorticity ω0 ∈ L1 ∩ L2 , and that T > 0 is the first (possible) blow-up time. Suppose that
+    1. for some choice of the parameters ǫ1 , ǫ2 , ℓ1 , ℓ2 > 0 and some neighborhood U of 0,
+                                  1
+          • |ω(x, t)| &
+                          |x|ǫ1 + (T − t)ǫ2
+                               1
+          • sup |∇ω(x, t)| .
+            t<T              |x|ℓ1
+                                  1
+          • sup |∇ω(x, t)| .
+            x∈U              (T − t)ℓ2
+       (in particular, ǫ1 , ǫ2 can be arbitrarily small and ℓ1 , ℓ2 can be arbitrarily large),
+                                   −1
+    2. setting ϕ(r) = ln(k) | ln r|      = (ln ln . . . ln | ln r|)−1 and ξ(t, x) = ω(t, x)/|ω(t, x)|,
+
+                                                   sup k(ψξ)(t, ·)k g
+                                                                   bmo ϕ
+                                                                         < ∞.                            (3.1)
+                                                  t∈(0,T )
+
+
+Then
+                                              ˆ
+                                      sup         ψ(x)w(x, t)Φ(w(x, t))dx < ∞.                           (3.2)
+                                   t∈(0,T )
+             p
+where w =        exp(k+1) (1) + |ω|2 and Φ(r) = ln(k) (| ln r|).
+Remark 3.2. Condition 1. is a description of the algebraic/polynomial nature of the blow-up profile
+(this is consistent with the current 3D NS theory) suitable for our purposes; note that the degree is
+arbitrary, i.e., there is no restriction on the strength of the singularity. Condition 2. is a very mild
+(the number of log-composites is arbitrary) condition on the oscillation of the vorticity direction
+allowing for a wide range of discontinuities.
+
+Proof. Recall that (cf. Bradshaw and Grujić [2])
+                                                                           ω
+                                      ∂t w − ∆w + (u · ∇)w ≤ ω · ∇u ·        .
+                                                                           w
+Let f (w) = Φ(w) + wΦ′ (w). Then
+                                                                      
+                              ∇f (w) = f ′ (w)∇w = Φ′ (w) + (wΦ′ (w))′ ∇w,
+
+and one can show that                                            
+                                        0 ≤ w Φ′ (w) + (wΦ′ (w))′ ≤ 1
+for all w; consequently, wf ′ (w) is non-negative and bounded. Multiplying the initial inequality by
+ψf yields
+                                                                              ω
+                   ψf (w)∂t w − ψf (w)∆w + ψf (w)(u · ∇)w ≤ ψf (w) ω · ∇u · .
+                                                                              w
+
+
+                                                             8
+Time-derivative:
+
+                                          ∂t (ψwΦ(w)) =ψ ∂t (wΦ(w))
+                                                                                                 
+                                                        =ψ Φ(w)wt + wΦ′ (w)wt
+                                                        =ψf (w)wt .
+
+Laplacian:
+
+                −∆w ψf (w) = − ∇ · (ψf (w)∇w) + ∇ (ψf (w)) · ∇w
+                                          = − ∇ · (ψf (w)∇w) + f (w)∇ψ · ∇w + ψ∇f (w) · ∇w
+                                          = − ∇ · (ψf (w)∇w) + f (w)∇ψ · ∇w + ψf ′ (w)|∇w|2 .
+
+Note that after taking the integral −∇ · (ψf (w)∇w) vanishes, and since ψf ′ (w)|∇w|2 is always
+non-negative, it can be dropped.
+
+Advection:
+
+                     (u · ∇)w ψf (w) =ψu · ∇F (w) = ∇ · (ψuF (w)) − (u · ∇ψ) F (w)
+
+where F is an antiderivative of f and |F (w)| . |w|1+ǫ for arbitrary small ǫ. The first term vanishes
+after taking the integral.
+
+Vortex-stretching:
+                                                                                        
+               ω                                                            ω   ω
+      ω · ∇u ·   ψf (w) =ω · ∇u · ξψf (w) + ω · ∇u ·                          −              ψf (w)
+               w                                                            w |ω|
+                                                                                                                         
+                                                                                 ′                               ω   ω
+                                  =ω · ∇u · ξψΦ(w) + ω · ∇u · ξψwΦ (w) + ω · ∇u ·                                  −          ψf (w).
+                                                                                                                 w |ω|
+
+   In the spirit of [2], we arrive at
+                 ˆ                                   ˆ τˆ
+        I(τ ) ≡ ψ(x)w(x, τ )Φ(w(x, τ ))dx ≤ I(0) + c      ω · ∇u · ψξΦ(w)dxdt + J(τ )
+                                                                             0       x
+
+where
+                     ˆ τˆ                                  ˆ τˆ
+             J =−                                   (u · ∇ψ)F (w)dxdt
+                                  f (w)∇ψ · ∇w dxdt +
+                      0       x                             0       x
+                  ˆ τˆ                           ˆ τˆ                    
+                                      ′                             ω   ω
+                +        ω · ∇u · ξψwΦ (w)dxdt +         ω · ∇u ·     −     ψf (w)dxdt
+                   0   x                          0    x            w |ω|
+             =: J1 + J2 + J3 + J4 .
+
+    Note that |f (w)| . wǫ for arbitrary small ǫ; Hölder inequality with 1/p + 1/q = 1 and Lions
+[11, Theorem 3.7] with Lq (RN × (0, T )) (q < 4/3) then yields
+                     ˆ ˆ                               1/p ˆ ˆ                    1/q        ˆ ˆ            1/p
+                                      ′             p                            q
+              J1 .                |wf (w) + f (w)|                      |∇w|                 .               w          < ∞.
+                          t   x                                 t   x                                t   x
+
+
+
+                                                                9
+   Turning to J2 , Hölder and Sobolev inequalities imply
+                            ˆ τ                               ˆ τ
+                       J2 .      kF (w)∇ψk2 kuk2 . supkuk2        kF (w)∇ψk2
+                             0                         t       0
+                            ˆ τ                  ˆ τ
+                          .      kF (w)∇ψk2 .        k∇(F (w)∇ψ)k 6
+                                                                   5
+                                                  0
+                            ˆ0 τ
+                          .      kF (w)k 6 + kf (w)∇wk 6
+                                         5               5
+                            ˆ0 τ             ˆ τ
+                          .      kF (w)k 6 +     kf (w)kp′ k∇wkq′
+                                                5
+                                   0                       0
+
+where 1/p′ + 1/q ′ = 5/6 and 6/5 < q ′ < 4/3. Note that
+                                                           5
+                                                                                           1/p′
+                                  kF (w)k 6 . kwk23 and kf (w)kp′ . kwk1                          ;
+                                            5
+
+hence, by using the result in Constantin [8] (also see Lions [11]),
+               ˆ τ                  1/p′ ˆ τ            ˆ ˆ          ˆ ˆ
+                                                                                ′
+          J2 .         2
+                   kwk2 + supkwk1              k∇wkq . ′
+                                                                    2
+                                                                |∇u| +     |∇w|q < ∞.
+                   0                   t               0                  t   x                       t   x
+
+   Regarding J3 and J4 , it suffices to observe that
+                                                                    ω   ω
+                                       |ξwΦ′ (w)| . 1 and             −   . |ω|−2 ,                           (3.3)
+                                                                    w |ω|
+respectively.
+    This completes the a priori boundedness of J, and we can turn our attention to the remaining
+(leading order) vortex-stretching term.
+    On one hand, by the convexity of ln(k) x (for large x) we deduce
+
+              |Φ(Mr w) − Φ(w)| ≤ |log(Mr w) − log w| = log(Mr w/w) ≤ Mr w/w − 1;
+
+this yields
+              ˆ τˆ                                                       ˆ τˆ
+                           ω · ∇u · ψξ (Φ(w) − Φ(Mr w)) dxdt ≤                        |∇u| (Mr w − ω) dxdt
+               0       x                                                  0       x
+
+which is a priori bounded by Hölder inequality and the fact that Mr is bounded on L2 . On the
+other hand, H1 −BM O duality, Div-Curl Lemma (cf. Coifman et al. [6]), Lemma 2.1 and Condition
+2. (3.1) combine to
+     ˆ τˆ                            ˆ τ
+            ω · ∇u · ψξΦ(Mr w)dxdt .      kω · ∇ukH1 kψξΦ(Mr w)kBM O dt
+      0   x
+                                     ˆ0 τ
+                                   .      kω · ∇ukH1 kψξΦ(Mr w)k g
+                                                                 bmo
+                                                                     dt
+                                      0
+                                     ˆ τ                               
+                                   .      kωk2 k∇uk2 kψξk∞ + kψξk gbmoϕ
+                                                                          kΦ(Mr w)k g
+                                                                                   bmoφ
+                                                                                        dt
+                                      0
+                                                           ˆ τˆ
+                                   . sup kΦ(Mr w)kbmo  g         |∇u|2 dxdt               (3.4)
+                                                                          φ
+                                                t∈(0,T )                      0        x
+
+
+
+                                                               10
+where φ satisfies ϕ = (φ∗ )−1 (here, we are referring to the notation of Lemma 2.3). Consequently,
+Lemma 2.3 paired with Condition 1. imply
+
+                                          sup kΦ(Mr w)k g
+                                                       bmo
+                                                           < ∞.
+                                                                   φ
+                                         t∈(0,T )
+
+This completes the proof.
+
+Remark 3.3. Instead of imposing a restriction on time dynamics of the vorticity near the possible
+singular time T , one can assume that the singular profile at t = T has a somewhat regular shape,
+e.g. an almost radial symmetry plus an almost monotonicity plus an almost convexity, or satisfying
+the assumptions of Lemma A.1 below, and assume that the mean oscillations leading to the blow-up
+time are not worse than the mean oscillations of the singular profile.
+
+
+A      Appendix
+Lemma A.1. Suppose a Lebesgue measurable function f is compactly supported in a neighborhood
+of 0 and
+
+    1. |f | & |x|−ǫ for some ǫ
+
+    2. |∇f | . |x|−ℓ for some ℓ.
+                   g φ where φ and φ∗ are given in Lemma 2.3.
+Then, φ∗ (Mr f ) ∈ bmo
+
+Proof. The proof is similar to Lemma 2.3, utilizing Lemma 2.2.
+
+
+    The rest of the Appendix is devoted to demonstrating that Condition 1. in Theorem 3.1 is
+essentially optimal within the mathematical framework utilized.
+
+Lemma A.2. Let f : R → C be differentiable such that
+
+    1. f is even on [−1, 1]
+
+    2. there exists a constant constant C > 0 such that for every y ∈ [−1, 1] and |x| ≥ |y|
+
+                                                    |f ′ (x)| ≤ C|f ′ (y)|                    (A.1)
+
+    3. |xf ′ (x)| . φ(x) for all x ∈ [0, 1].
+
+Then for every interval I of length at most 1 we have
+                                        1
+                                          ˆ
+                                             |f − fI | . φ(|I|).
+                                       |I| I
+
+                                                   g φ.
+In particular, if we assume that f ∈ L1 , then f ∈ bmo
+
+
+
+
+                                                         11
+Proof. Let I = [aI , bI ]. Consider the case when I ⊂ [0, ∞) first. Then by the triangle inequality
+
+                         1                      1
+                           ˆ                        ˆ
+                             |f (x) − fI |dx ≤ 2         |f (x) − f (y)|dxdy
+                       |I| I                   |I| I 2
+                                                2
+                                                    ¨
+                                             = 2                    |f (x) − f (y)|dxdy
+                                               |I|     aI ≤x≤y≤bI
+                                                                    ˆ y
+                                                2
+                                                    ¨
+                                             ≤ 2                         |f ′ (t)|dtdxdy
+                                               |I|     aI ≤x≤y≤bI x
+                                                2
+                                                    ˆ
+                                             = 2 |f ′ (t)|(t − aI )(bI − t)dt
+                                               |I| I
+                                                1
+                                                   ˆ
+                                             .        |f ′ (t − aI )|(t − aI )dt
+                                               |I| I
+
+(using (A.1) we have |f ′ (t)| . |f ′ (t − aI )|, while clearly 0 ≤ bI − t ≤ |I|)
+                                       ˆ |I|                          ˆ |I|
+                                 1                               1
+                            =                  |f ′ (t)|tdt .                 φ(t)|I|dt ≤ φ(|I|)
+                                |I|      0                      |I|    0
+
+using the monotonicity of φ.
+    The case when I ⊂ [−∞, 0] is entirely similar.
+    Now consider the remaining case when aI < 0 < bI . Without loss of generality we may assume
+that |aI | ≤ |bI |, and it suffices to show that for some constant c we have
+
+                                             1
+                                               ˆ
+                                                  |f − c| . φ(|I|)
+                                            |I| I
+                               ´                    ´                             ´
+(This would imply (1/|I|) I |f − fI | = (1/|I|) I |(f − c) − (f − c)I | ≤ (2/|I|) I |f − c| . φ(|I|).)
+                 ´b
+    Set c = b1I 0 I f . Since |I| ≤ 1, I ⊂ [−1, 1], and f being even on [−1, 1] implies
+                                                          ˆ bI                      ˆ bI
+                              1                     1                      1
+                                   ˆ
+                                         |f − c| .               |f − c| .                 |f − c|
+                             |I|       I           |I|     0               bI        0
+
+which reduces this case to the case I ⊂ [0, ∞) considered above.
+
+
+Lemma A.3. Let f : (0, 1) → (0, ∞) be differentiable, decreasing and integrable near 0, and such
+that for every open interval I ⊂ (0, 1) of sufficiently small length we have
+
+                                         1
+                                           ˆ
+                                              |f − fI | . φ(|I|).
+                                        |I| I
+
+   1. Assume that for x sufficiently near 0 |xf ′ (x)| & ψ(x) where ψ is essentially increasing non-
+      negative on (0, 1]. Then ψ(x) . φ(4x) for x sufficiently near 0.
+
+   2. Assume that in addition f is also near 0. Then |xf ′ (x)| . φ(x) near 0.
+
+
+
+
+                                                                12
+Proof. (1) Let I = (0, T ) where T < 1 is sufficiently small. By the mean value theorem f (α) =
+    ´T
+T −1 0 f (x)dx for some α ∈ (0, T ), and since f ′ (t) < 0 we have
+                            ˆ                   ˆ α                         ˆ T
+                T φ(T ) &   |f (x) − fI |dx =         |f (x) − f (α)|dx +       |f (x) − f (α)|dx
+                          I                      0                           α
+                         ˆ αˆ α                   ˆ Tˆ x
+                                      ′
+                       =           |f (t)|dtdx +              |f ′ (t)|dtdx
+                          0     x                    α     α
+                         ˆ α           ˆ t        ˆ T             ˆ T
+                                 ′                          ′
+                       =      |f (t)|      dxdt +        |f (t)|       dxdt
+                          0             0            α              t
+                         ˆ α                ˆ T
+                       =         ′
+                              |f (t)|tdt +      |f ′ (t)|(T − t)dxdt = J1 + J2 .
+                                0               α
+
+If α < T /2, the second term can be bounded from below as
+                              ˆ cT /2              ˆ cT /2
+                                        ′
+                         J2 &         |f (t)|tdt &         ψ(t)dt &c T ψ(T /2)
+                                     T /2                         T /2
+
+using the essentially increasing property of ψ, and if α > T /2, the first term as
+                                        ˆ cT /4
+                                   J1 &         ψ(t)dt & T ψ(T /4).
+                                                 T /4
+
+Consequently,                                   ˆ
+                                    T φ(T ) &           |f (x) − fI |dx & T ψ(T /4)
+                                                    I
+which implies the desired estimate.
+   (2) We proceed similarly as above and obtain (considering the two cases for α)
+                                    (ˆ                                 )
+                                                    T /2
+                                                    ˆ                           T
+                            T φ(T ) & min                  |f ′ (t)|tdt,              |f ′ (t)|(T − t)dt
+                                                0                              T /2
+                                              (ˆ                               ˆ 3T /4             )
+                                                 T /2
+                                    & T min                  |f ′ (t)|dt,                |f ′ (t)|dt .
+                                                     T /4                       T /2
+
+Utilizing that f ′ < 0 and f ′ increasing near 0 (because of convexity), we have that |f ′ | is decreasing
+near 0; hence, for T sufficiently small,
+
+                            T φ(T ) & T 2 min{|f ′ (T /2)|, |f ′ (3T /4)|} & T 2 |f ′ (T )|.
+
+Thus x|f ′ (x)| . φ(x) for x near 0 completing the proof.
+
+
+Theorem A.4. There exists a sequence {fn } ⊂ Lp ∩ Cc∞ ([−1, 1]) such that
+
+                                                           g →∞
+                                             kφ∗ (M (fn ))kbmo
+                                                                           φ
+
+
+where φ∗ (x) = ln(k) (| ln x|), k ≥ 1 and φ(x) = −xφ′∗ (x) for small x.
+
+
+                                                                13
+Remark A.5. It is worth noting that the above result fails when k = 0, i.e., when φ∗ (x) = | ln x|
+for small x and–consequently–φ = 1 (this follows directly from Coifman and Rochberg [7]). As a
+matter of fact, this is the main reason that the case k ≥ 1 is more intricate than the case k = 0
+considered in Bradshaw and Grujić [2].
+
+Proof. Let us discuss the problem in one dimension (examples for higher dimensions can be obtained
+by rotating the one-dimensional examples). Start with the function
+
+                         f (x) = s−δ · χ[−s,s] + ℓ1 · χ[−s−ǫ,−s) + ℓ2 · χ(s,s+ǫ] + C
+
+where s, δ, ǫ > 0, C > 1 and ℓ1 , ℓ2 are two straight lines connecting the constant pieces in the
+continuous way, and mollify the sharp corners at ±s, ±(s + ǫ) (we call the modified function f ) in
+a way ensuring that f ≡ s−δ + C on [−s, s] and f ≡ C outside [−ǫ − s, s + ǫ]. Then for x > s + ǫ
+(or x < −s − ǫ)
+
+                                               A + s−δ (1 − η(x)/2)η(x)ǫ
+                                 M (f )(x) =                             +C
+                                                       x + η(x)ǫ
+            ´ s+ǫ
+where A =    −ǫ−s f dx and η(x) = x+
+                                          √2(x−s)
+                                            2
+                                                            . Let
+                                               x +2ǫ(x−s)
+
+
+                                                 h = φ∗ (M (f )).
+
+In what follows, we will show that by sending the parameters s and δ to 0 in a suitable fashion,
+the weighted BMO norm of h tends to infinity. More precisely, we are after the sequences sn and
+δn and some intervals In = (ksn , rsn ) (where 1 . k, r . 1) such that
+
+                                      |In | inf |h′n (x)|/φ(|In |−1 ) → ∞.
+                                          x∈In
+
+
+                                          g φ → ∞. In order to apply Lemma A.3 we will show
+Then Lemma A.3–(ii) would imply that khn kbmo
+that hn is monotone and convex on In and also analyze the asymptotic behavior of the quantity
+|In | inf |h′n (x)|/φ(|In |−1 ).
+   x∈In
+   A straightforward calculation gives
+
+                 d           s−δ ǫ(γ ′ − γγ ′ )(x + γǫ) − (1 + γ ′ ǫ)(A + s−δ (1 − γ/2)γǫ)
+                   M (f ) =
+                dx                                           (x + γǫ)2
+                d2
+                   M (f ) = ǫ F (γ, γ ′ , γ ′′ , x, ǫ, A, s) + A(x + γǫ)−4
+               dx2
+                                  √                 
+                   2(x−s) 1+(x+s)/ x2 +2ǫ(x−s)
+       ′
+where γ (x) = 2 −           √ 2                        . When x is comparable to s (i.e. x ≈ ks), γ ′ and γ ′′
+                            x+    x +2ǫ(x−s)
+are bounded. In addition, for a fixed s, F is bounded when ǫ → 0. Hence, if x is comparable to s
+and ǫ is small enough (ǫ ≪ s), then
+
+                                            d                          d2
+                    M (f ) ≈ Ax−1 ,           M (f ) ≈ −Ax−2 ,            M (f ) ≈ Ax−4 ;
+                                           dx                         dx2
+
+
+
+                                                        14
+consequently for sufficiently small s and x (x is comparable to s)
+
+                                        d                      −1 −1
+                                           M (fn ) ≈ − ln Ax−1
+                          h′ = φ′∗ (M (fn ))                        x < 0,
+                                       dx
+                                                                            2
+                        ′′  ′           d2            ′′            d
+                       h = φ∗ (M (fn )) 2 M (fn ) + φ∗ (M (fn ))      M (fn )
+                                       dx                          dx
+                            ≈ (ln Ax−1 )−1 x−3 − (ln Ax−1 )−2 x−2 > 0.
+
+Now choose k, r (1 . k, r . 1) such that on I = (ks, rs) the above requirements are satisfied (and
+Lemma A.3 applies). For a fixed δ, sending s → 0
+                                                           −1           −1
+                |I| inf |h′ (x)|/φ(|I|−1 ) ≈ s ln(s1−δ s−1 )    s−1 ln s−1     ≈ δ−1 .
+                    x∈I
+
+Summarizing, for each n we can choose In such that |In | inf |h′n (x)|/φ(|In |−1 ) is close to δn−1 (with
+                                                                 x∈In
+δn → 0) and thus
+
+                                    sup |In | inf |h′n (x)|/φ(|In |−1 ) = ∞.
+                                      n        x∈In
+
+
+
+
+Corollary A.6. There exists a sequence {fn } ⊂ Cc∞ ([−1, 1]) such that fn → f pointwise (also in
+                          g φ and |f | & |x|−ℓ but
+Lp ), φ∗ (Mδ (f )) ∈ Lp ∩ bmo
+
+                                            kφ∗ (Mδ (fn ))kbmo
+                                                           g →∞
+                                                             φ
+
+
+where φ∗ (x) = ln(k) (| ln x|) (k ≥ 1) and φ(x) = −xφ′∗ (x) for small x.
+
+Proof. As in the previous theorem, it suffices to consider the one-dimensional setting. Consider the
+mollified version of the function
+
+                    f (x) = s−δ · χ[−s,s] + t−ℓ · χ[−t,t] + |x|−ℓ · χR\[−t,t] ,   t≫s
+
+(and call it f ) such that for s + ǫ < x < t
+
+                                            A + s−δ (1 − γ(x)/2)γ(x)ǫ
+                                 M (f ) =                             + t−ℓ
+                                                    x + γ(x)ǫ
+
+where γ is as in Theorem A.4 and A ≈ s1−δ . The rest of the argument is very similar to that of
+Theorem A.4, except that when sending s and δ to 0 we let s decrease much faster compared
+                                                                                      √    to δ
+because we want Ax−1 to dominate t−ℓ . A suitable choice is given by s = e−1/t and δ = t. Then,
+if x is comparable to s (i.e. x ≈ ks) we have
+                                                                  √
+                                     Ax−1 /t−ℓ ≈ tℓ s−δ ≈ tℓ e1/ t → ∞
+
+and the same idea as in Theorem A.4 applies.
+
+
+
+
+                                                      15
+Corollary A.7. For any ℓ > n, there exists a (infinite) collection {ft } ⊂ Cc∞ ([−1, 1]) such that
+
+                                         kft kL1 . 1,          |∇ft | . |x|−ℓ
+
+but kφ∗ (M (ft ))kbmo
+                  g → ∞.
+                     φ
+
+
+Proof. Consider a suitably mollified version of
+                                                                           
+      f (x) = s−δ · χ[−s,s] + s−δ − s1−ℓ + |x|1−ℓ χ(s,b] + s−δ − s1−ℓ + |x|1−ℓ χ[−b,−s) + C
+
+where b is determined by s−δ − s−ℓ + b−ℓ = 0. Note that if ℓ > 1 and δ is sufficiently small then
+b − s ≪ s and f ≡ C outside [−b, b]. Similarly as in Theorem A.4, for x > s + b (or x < −s − b)
+
+                                             d                              d2
+                   M (f ) ≈ Ax−1 ,             M (f ) ≈ −Ax−2 ,                M (f ) ≈ Ax−4
+                                            dx                             dx2
+            ´ s+b
+where A = −b−s f dx. Setting h = φ∗ (M (f )), one can show h is monotone and convex on some
+interval I = (ks, rs) (1 . k, r . 1) and
+                                                         −1           −1
+                |I| inf |h′ (x)|/φ(|I|−1 ) ≈ s ln s1−δ s−1      s−1 ln s−1     ≈ δ−1 .
+                    x∈I
+
+Finally, we choose fs(t),δ(t) with s(t), δ(t) → 0 and Is(t) such that
+                                                          
+                              |Is | inf h′s(t),δ(t) (x)       φ(|Is |−1 ) ≈ δ−1 → ∞.
+                                  x∈Is
+
+Lemma A.3 then yields kφ∗ (M (fs(t),δ(t) ))k g
+                                            bmo
+                                                → ∞. In addition, note that–by construction–{fs,δ }
+                                                    φ
+is bounded in L1 and its gradients bounded by |x|−ℓ .
+
+
+Theorem A.8. For any α < n and 0 < α < β, there exists f ∈ Lp ∩ C 1 (Rn \ {0}) such that
+|x|−α . |f | . |x|−β but
+                                φ∗ (Mδ (f )) ∈ g φ.
+                                             / bmo
+
+Proof. For simplicity set n = 1 and δ = 1. Let f be a suitable mollification (on (0, ∞)) of
+                                                   X −β
+                                    x−α · χR\∪Ii +    ai · χ I i
+                                                                i
+
+where Ii = [ai , bi ] are disjoint (e.g. an = 2−2 ) and |Ii | ≈ aγi i with γi → ∞ and |Ii | ≪ (ai − bi+1 ).
+                                                    n
+
+
+Then for bi+1 ≪ x < ai
+                                                              ´ ai −α
+                                                  |Ii |a−β
+                                                        i + x t       dt
+                                      (M f )(x) ≈
+                                                          bi − x
+
+
+
+
+                                                          16
+(one can show that the average of f on [x, ai ] is increasing when x → ai by differentiation). A
+direct computation when ai − x ≈ |Ii | then gives
+
+              d             −x−α (bi − x) + (|Ii |a−β           1−α
+                                                   i + (1 − α)(ai   − x1−α ))
+                (M f )(x) =
+             dx                                   (bi − x)2
+                              −a−α                          −β   −α
+                                i (ai − x + |Ii |) + (|Ii |ai + ai (ai − x))   a−β
+                                                                                i − ai
+                                                                                         −α
+                          ≈                                                  =              .
+                                                   |Ii |2                          |Ii |
+
+Let g = φ∗ (M (f )); then (for ai − x ≈ |Ii |)
+
+                                                               d
+                              |g′ | = |φ(M (f ))||M (f )|−1      (M f )(x)
+                                                              dx
+                                  & |φ(a−β      β    −β
+                                        i )| · ai · ai |Ii |
+                                                            −1
+                                                               ≈ |φ(a−β       −1
+                                                                     i )||Ii | .
+
+Consequently, for some small interval Ji (|Ji | ≈ |Ii |) which is close to ai we have
+
+                  |Ji | inf |g′ (x)|/φ(|Ji |−1 ) ≈ |Ji ||φ(a−β       −1       −1
+                                                            i )||Ii | /φ(|Ji | )
+                      x∈Ji
+
+                                               ≈ |φ(a−β          −1       −β      −γi
+                                                     i )|/φ(|Ii | ) ≈ |φ(ai )|/φ(ai   )
+                                                                 −β
+                                               & | ln a−γ
+                                                       i |/| ln ai | ≈ γi /β → ∞.
+                                                         i
+
+
+
+
+Lemma A.3 then implies g = φ∗ (M (f )) ∈ g φ.
+                                       / bmo
+
+
+
+
+References
+[1] Z. Bradshaw and Z. Grujić. Blow-up scenarios for the 3D Navier-Stokes equations exhibiting
+    sub-criticality with respect to the scaling of one-dimensional local sparseness. J. Math. Fluid
+    Mech., 16(2):321–334, 2014. ISSN 1422-6928. URL https://doi.org/10.1007/s00021-013-0155-0 .
+
+[2] Z. Bradshaw and Z. Grujić. A spatially localized L log L estimate on the vorticity in
+    the 3D NSE. Indiana Univ. Math. J., 64(2):433–440, 2015. ISSN 0022-2518. URL
+    https://doi.org/10.1512/iumj.2015.64.5496 .
+
+[3] Z. Bradshaw, A. Farhat, and Z. Grujić. An algebraic reduction of the ‘scaling gap’ in the
+    Navier-Stokes regularity problem. URL https://arxiv.org/abs/1704.05546
+
+[4] Stephen M. Buckley. Is the maximal function of a Lipschitz function continuous? Ann. Acad.
+    Sci. Fenn. Math., 24(2):519–528, 1999. ISSN 1239-629X.
+
+[5] T. Buckmaster and V. Vicol. Nonuniqueness of weak solutions to the Navier-Stokes equation.
+    URL https://arxiv.org/abs/1709.10033
+
+
+
+                                                       17
+[6] R. Coifman, P.-L. Lions, Y. Meyer, and S. Semmes. Compensated compactness and Hardy
+    spaces. J. Math. Pures Appl. (9), 72(3):247–286, 1993. ISSN 0021-7824.
+
+[7] R. R. Coifman and R. Rochberg. Another characterization of BMO. Proc. Amer. Math. Soc.,
+    79(2):249–254, 1980. ISSN 0002-9939. URL https://doi.org/10.2307/2043245 .
+
+[8] Peter Constantin. Navier-Stokes equations and area of interfaces. Comm. Math. Phys., 129(2):
+    241–266, 1990. ISSN 0010-3616. URL http://projecteuclid.org/euclid.cmp/1104180744 .
+
+[9] R. Dascaliuc and Z. Grujić. Vortex stretching and criticality for the three-dimensional
+    Navier-Stokes equations. J. Math. Phys., 53(11):115613, 9, 2012. ISSN 0022-2488. URL
+    https://doi.org/10.1063/1.4752170 .
+
+[10] S. Janson. On functions with conditions on the mean oscillation. Ark. Mat., 14(2):189–196,
+    1976. ISSN 0004-2080. URL https://doi.org/10.1007/BF02385834 .
+
+[11] Pierre-Louis Lions. Mathematical topics in fluid mechanics. Vol. 1, volume 3 of Oxford Lecture
+    Series in Mathematics and its Applications. The Clarendon Press, Oxford University Press, New
+    York, 1996. ISBN 0-19-851487-5. Incompressible models, Oxford Science Publications.
+
+
+
+
+                                                18
+

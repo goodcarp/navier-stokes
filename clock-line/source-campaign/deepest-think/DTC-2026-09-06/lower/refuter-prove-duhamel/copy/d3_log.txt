@@ -1,0 +1,37 @@
+nsring.py sha256 = 3c8e93b2da7c8f5437f74c3c39e67fb7b5ef6b29d92e01204e3176d817969f03
+
+[N3] grid 96x96  R=8  nu=0.01  logReE=8.021  Td_global=0.5060941875959091  steps=49  wall=4s
+    s0=1.5 phi=45  a0=+0.65478  |om0|/M=0.9835  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0001  beta/a^2 in [+1.282,+2.373]  eta_end/eta0=0.9637  Td_tr=0.56326
+    s0=2.0 phi=45  a0=+0.49344  |om0|/M=1.0033  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.527,+2.758]  eta_end/eta0=0.9973  Td_tr=none
+    s0=3.0 phi=45  a0=+0.29132  |om0|/M=1.0008  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+2.221,+3.840]  eta_end/eta0=0.9990  Td_tr=none
+
+[N4] grid 192x192  R=16  nu=0.01  logReE=9.407  Td_global=0.34490533291889464  steps=68  wall=11s
+    s0=1.5 phi=45  a0=+0.99303  |om0|/M=0.9835  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.324,+2.079]  eta_end/eta0=0.9699  Td_tr=0.37985
+    s0=2.0 phi=45  a0=+0.83081  |om0|/M=1.0033  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.468,+2.241]  eta_end/eta0=0.9967  Td_tr=none
+    s0=3.0 phi=45  a0=+0.62600  |om0|/M=1.0008  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.700,+2.551]  eta_end/eta0=0.9993  Td_tr=none
+
+[N5] grid 384x384  R=32  nu=0.01  logReE=10.794  Td_global=0.26181270072842067  steps=103  wall=56s
+    s0=1.5 phi=45  a0=+1.33209  |om0|/M=0.9835  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.351,+1.937]  eta_end/eta0=0.9730  Td_tr=0.28640
+    s0=2.0 phi=45  a0=+1.16966  |om0|/M=1.0033  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.448,+2.031]  eta_end/eta0=0.9969  Td_tr=0.29390
+    s0=3.0 phi=45  a0=+0.96424  |om0|/M=1.0008  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.550,+2.179]  eta_end/eta0=0.9993  Td_tr=none
+
+[N4-fine] grid 384x384  R=16  nu=0.01  logReE=9.408  Td_global=0.3476083774917616  steps=136  wall=87s
+    s0=1.5 phi=45  a0=+0.99100  |om0|/M=0.9823  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.328,+2.103]  eta_end/eta0=0.9849  Td_tr=0.36716
+    s0=2.0 phi=45  a0=+0.83007  |om0|/M=1.0006  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.459,+2.255]  eta_end/eta0=0.9983  Td_tr=none
+    s0=3.0 phi=45  a0=+0.62591  |om0|/M=1.0002  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.681,+2.547]  eta_end/eta0=0.9994  Td_tr=none
+
+[N4-Re400] grid 192x192  R=16  nu=0.0025  logReE=10.794  Td_global=0.33883807678183075  steps=67  wall=9s
+    s0=1.5 phi=45  a0=+0.99303  |om0|/M=0.9835  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.340,+2.080]  eta_end/eta0=0.9796  Td_tr=0.37287
+    s0=2.0 phi=45  a0=+0.83081  |om0|/M=1.0033  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.470,+2.241]  eta_end/eta0=0.9979  Td_tr=none
+    s0=3.0 phi=45  a0=+0.62600  |om0|/M=1.0008  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.705,+2.551]  eta_end/eta0=0.9998  Td_tr=none
+
+[N4-Re25] grid 192x192  R=16  nu=0.04  logReE=8.021  Td_global=0.37613399425348587  steps=74  wall=9s
+    s0=1.5 phi=45  a0=+0.99303  |om0|/M=0.9835  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.241,+2.074]  eta_end/eta0=0.9170  Td_tr=0.41222
+    s0=2.0 phi=45  a0=+0.83081  |om0|/M=1.0033  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.387,+2.240]  eta_end/eta0=0.9917  Td_tr=0.40787
+    s0=3.0 phi=45  a0=+0.62600  |om0|/M=1.0008  min[a(1+a0t)/a0]=+1.0000  min[(r/r0)/(1+a0t)]=+1.0000  beta/a^2 in [+1.597,+2.551]  eta_end/eta0=0.9978  Td_tr=none
+
+[N4-REVERSED(control)] grid 192x192  R=16  nu=0.01  logReE=9.407  Td_global=None  steps=133  wall=13s
+    s0=1.5 phi=45  a0=-0.99303  |om0|/M=0.9835  min[a(1+a0t)/a0]=+0.1130  min[(r/r0)/(1+a0t)]=+nan  beta/a^2 in [+2.115,+3.251]  eta_end/eta0=0.9791  Td_tr=none
+    s0=2.0 phi=45  a0=-0.83081  |om0|/M=1.0033  min[a(1+a0t)/a0]=+0.1715  min[(r/r0)/(1+a0t)]=+nan  beta/a^2 in [+2.269,+3.623]  eta_end/eta0=0.9978  Td_tr=none
+    s0=3.0 phi=45  a0=-0.62600  |om0|/M=1.0008  min[a(1+a0t)/a0]=+0.2491  min[(r/r0)/(1+a0t)]=+nan  beta/a^2 in [+2.538,+4.431]  eta_end/eta0=0.9992  Td_tr=none
+

@@ -1,0 +1,104 @@
+{
+ "n_tested": 295,
+ "n_caught": 271,
+ "n_missed": 24,
+ "detection_rate": 0.9186440677966101,
+ "missed": [
+  {
+   "token": "0.34913942333376546",
+   "mutated": "0.34913942333376549"
+  },
+  {
+   "token": "0.01",
+   "mutated": "0.04"
+  },
+  {
+   "token": "0.05",
+   "mutated": "0.08"
+  },
+  {
+   "token": "0.10",
+   "mutated": "0.13"
+  },
+  {
+   "token": "0.20",
+   "mutated": "0.23"
+  },
+  {
+   "token": "0.25",
+   "mutated": "0.28"
+  },
+  {
+   "token": "8.3",
+   "mutated": "8.6"
+  },
+  {
+   "token": "0.0",
+   "mutated": "0.3"
+  },
+  {
+   "token": "1.9",
+   "mutated": "1.2"
+  },
+  {
+   "token": "1.5",
+   "mutated": "1.8"
+  },
+  {
+   "token": "1.0",
+   "mutated": "1.3"
+  },
+  {
+   "token": "3.1",
+   "mutated": "3.4"
+  },
+  {
+   "token": "0.7",
+   "mutated": "0.0"
+  },
+  {
+   "token": "1.25",
+   "mutated": "1.28"
+  },
+  {
+   "token": "0.02",
+   "mutated": "0.05"
+  },
+  {
+   "token": "0.21097",
+   "mutated": "0.21090"
+  },
+  {
+   "token": "6.15",
+   "mutated": "6.18"
+  },
+  {
+   "token": "5.1",
+   "mutated": "5.4"
+  },
+  {
+   "token": "1.88",
+   "mutated": "1.81"
+  },
+  {
+   "token": "0.16",
+   "mutated": "0.19"
+  },
+  {
+   "token": "0.002",
+   "mutated": "0.005"
+  },
+  {
+   "token": "0.3",
+   "mutated": "0.6"
+  },
+  {
+   "token": "0.9",
+   "mutated": "0.2"
+  },
+  {
+   "token": "0.37",
+   "mutated": "0.30"
+  }
+ ]
+}

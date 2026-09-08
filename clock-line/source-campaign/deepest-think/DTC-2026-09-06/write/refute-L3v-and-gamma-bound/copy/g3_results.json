@@ -1,0 +1,24 @@
+{
+ "trace_minus_2a": "0",
+ "E_matrix": "[[-r*Derivative(psi(r, z_), r, z_), 0, 0, 0, -r*Derivative(psi(r, z_), (z_, 2))], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [r*Derivative(psi(r, z_), (r, 2)) + 3*Derivative(psi(r, z_), r), 0, 0, 0, r*Derivative(psi(r, z_), r, z_)]]",
+ "E_block_residual": "Matrix([[0, 0], [0, 0]])",
+ "E_offblock_residual": "Matrix([[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]])",
+ "op_norm_5D_vs_3D_maxreldiff": 0.0,
+ "I1_identity_residuals": [
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0"
+ ],
+ "Delta5_homog_residual": "0",
+ "bulk_identity_residual": "0",
+ "r_grad_a_residual": "r**4*(-Abs(Subs(Derivative(A(t), t), t, z_/sqrt(r**2 + z_**2)))**2 + Subs(Derivative(A(_xi_1), _xi_1), _xi_1, z_/sqrt(r**2 + z_**2))**2)/(r**2 + z_**2)**2"
+}

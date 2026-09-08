@@ -1,0 +1,34 @@
+{
+ "measured_Qprime": 0.988,
+ "sd": 0.018,
+ "log32": 0.4054651081081644,
+ "accel_theta_kappa": 0.36700683814454793,
+ "per_kappa": {
+  "N=3": {
+   "kappa": 0.437,
+   "Qprime_frozen": 0.9278377759912229,
+   "Qprime_accel": 0.8398325815664712,
+   "z_frozen": -3.3423457782653965,
+   "z_accel": -8.231523246307153
+  },
+  "N=5": {
+   "kappa": 0.415,
+   "Qprime_frozen": 0.9770243568871432,
+   "Qprime_accel": 0.8843538268543324,
+   "z_frozen": -0.6097579507142675,
+   "z_accel": -5.758120730314867
+  },
+  "N=6": {
+   "kappa": 0.411,
+   "Qprime_frozen": 0.9865331097522249,
+   "Qprime_accel": 0.892960676750725,
+   "z_frozen": -0.08149390265417401,
+   "z_accel": -5.2799624027375005
+  }
+ },
+ "c2_frozen": 1.6218604324326575,
+ "c2_accel": 1.4680273525781917,
+ "claimed_improvement_fraction": 0.09484976436827475,
+ "model_shortfall_at_kappa_0.411": 0.09619364701343625,
+ "implied_c2_from_data_if_2L": 1.976
+}

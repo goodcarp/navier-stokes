@@ -1,0 +1,5 @@
+beta=1.6  tau=0.5  nu=0.002   sqrt(2 nu tau)=0.04472
+ kappa=16.000000  ||b''||=     0.10   loss(PDE)= 1.453097e-05   loss*kappa= 2.324955e-04   loss(MC)= nan +- nan  z=+nan
+ kappa= 8.000000  ||b''||=     0.20   loss(PDE)= 2.906200e-05   loss*kappa= 2.324960e-04   loss(MC)= nan +- nan  z=+nan
+ kappa= 4.000000  ||b''||=     0.40   loss(PDE)= 5.812446e-05   loss*kappa= 2.324978e-04   loss(MC)= nan +- nan  z=+nan
+ kappa= 2.000000  ||b''||=     0.80   loss(PDE)= 1.162527e-04   loss*kappa= 2.325053e-04   loss(MC)= nan +- nan  z=+nan

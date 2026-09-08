@@ -1,0 +1,61 @@
+=== A. kernel L^1 of |grad G_nu| : three routes ===
+   nu=1       t=1      closed=1.12837916709551256  radial=1.12837916709551256 (rel 2.4e-51)  cartesian=1.12838 (rel 1.3e-06)
+   nu=1       t=0.01   closed=11.2837916709551251  radial=11.2837916709551251 (rel 0.0e+00)  cartesian=11.2838 (rel 1.3e-06)
+   nu=7       t=3      closed=0.246232521229829082  radial=0.246232521229829082 (rel 0.0e+00)  cartesian=0.246232 (rel 1.3e-06)
+   nu=0.001   t=5      closed=15.9576912160573077  radial=15.9576912160573077 (rel 1.3e-51)  cartesian=15.9577 (rel 1.3e-06)
+  gradL1_nu1_t1                                  1.12837916709551256   
+   int G_nu(nu=1,t=1) = 1.0
+   int d_1 G = 0 by oddness in x_1 (exact)
+  G_L2_tau1                                      0.0890881837943737764   ||G(.,1)||_2 = (8 pi tau)^{-3/4}
+   ||G(.,1)||_2 numeric = 0.08908818379437378  closed = 0.08908818379437378
+
+=== B. Q = sup |(n.u)w - (n.w)u|/(|u||w|) : brute force on the sphere, my parameterisation ===
+  Q_random_max_12e6                              0.99999995107541062   must be <= 1
+   objective - (1-c^2) on the constraint boundary: 0
+  Q_exact                                        1   sup_n = 1-c^2 <= 1, max over c at c=0
+  Q_attained                                     0.999999999999999889   
+
+=== C. C_u : my own symbolic optimisation, then an independent 1-D numeric min ===
+   tau_* = 2**(1/5)*3**(4/5)*B**(4/5)/(2*A**(4/5))
+   f(tau_*) = 5*2**(3/5)*3**(2/5)*A**(3/5)*B**(2/5)/6
+   gamma = 5*2**(3/5)*3**(2/5)/6 = 1.9601317042077893
+  gamma                                          1.96013170420778926   
+   C_u (symbolic) = 5*2**(9/10)*3**(2/5)/(6*pi**(3/5)) = 1.2142394208005358
+  C_u                                            1.21423942080053582   
+  tau_star                                       0.104217595142273536   
+  C_u_numeric                                    1.21423942080053582   
+   note's closed form 5*2^(9/10)3^(2/5)/(6 pi^(3/5)) - mine = 0
+
+=== D. c_div : my own bootstrap, symbolically, from scratch ===
+   Duhamel(t) = 8*2**(3/5)*C_u*E0**(1/5)*M0**(8/5)*sqrt(t)/(sqrt(pi)*sqrt(nu))
+   t_* = 3*3**(1/5)*pi**(11/5)*nu/(12800*E0**(2/5)*M0**(6/5))
+   c_div = M0 * Re_E * t_* = 3*3**(1/5)*pi**(11/5)/12800 = 0.0036229743218317728
+  c_div                                          0.00362297432183177276   
+   note's 3*3^(1/5)pi^(11/5)/12800 - mine = 0
+  c_div_over_piCu2                               0.00362297432183177276   = pi/(2^{46/5}C_u^2)
+  inv_Cu2                                        0.678252406508449757   
+  pi_2_m46_5                                     0.00534163135591710948   
+  c_div_Q2                                       0.000905743580457943191   
+  ratio_Q1_Q2                                    4   
+
+=== E. THE DIMENSIONAL CLAIM the note makes in its headline ===
+   sqrt(nu)/(E^{1/5}M^{1/10})  minus  Re_E^{-1/2}  = 0
+   dimension of sqrt(nu)/(E^{1/5}M^{1/10}) = 1
+   dimension of Re_E                        = 1
+  dim_of_sqrtnu_over_E15M110_is_one              1   1 == the expression IS dimensionless, i.e. IS a pure number
+
+=== F. the campaign datum, my own arithmetic ===
+   L=8.3178    logRe=15.932434    Re=8.305546e+06   pow=4.362115e-10   log/c1=5.905825e-02 model=0.166666   model/pow=3.820761e+08 model/log=2.822061
+   L=20        logRe=39.296834    Re=1.165194e+17   pow=3.109332e-20   log/c1=2.481585e-02 model=0.069315   model/pow=2.229248e+18 model/log=2.793164
+   L=50        logRe=99.296834    Re=1.330660e+43   pow=2.722690e-46   log/c1=9.970404e-03 model=0.027726   model/pow=1.018327e+44 model/log=2.780819
+   L=100       logRe=199.296834   Re=3.576970e+86   pow=1.012861e-89   log/c1=4.992590e-03 model=0.013863   model/pow=1.368691e+87 model/log=2.776704
+   limit of model/log as L->inf = 2ln2*2 = 4ln2 = 2.772588722239781
+   NOTE: model/log = (2ln2/L)(1+2L-0.7031660) uses ONLY two numbers quoted from
+         sharp/exact-first-order; c_div does not appear.  Zero input from this note.
+
+=== G. crossover and the 'log beats power for Re>=1' claim ===
+   min of Re/(1+log Re) on [1,inf) : [(1.0, 1.0), (1.5, 1.0672623541818729), (2.0, 1.1812322182992825), (10.0, 3.027931065641139), (1000000.0, 67496.83016913898)]
+   c_1=1e-3 -> crossover Re_E = 12.883
+   c_1=1e-6 -> crossover Re_E = 42209.1
+
+r1: independent recomputation complete

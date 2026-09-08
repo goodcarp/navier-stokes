@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-08",
+  "inherited_manifests": [
+    {
+      "path": "../pass5/SOURCES.json",
+      "sha256": "a508c73876cf60d5c7ead781c3ff2183b6d292705c53e6939e1af4eb7816fa71"
+    },
+    {
+      "path": "../pass6/SOURCES.json",
+      "sha256": "e90c45faf8e1d4d44f07a4b1c2f41fae9a58b8ae529cef4d5945260bb8972128"
+    }
+  ],
+  "new_derivations": "Full horizontal D kernel, m=4 mixed-pressure Green/residual bound, outward interval estimates and common finite-amplitude local feedback.",
+  "source_scope": "No new external theorem or contemporary announcement is used in this pressure certificate. Earlier source attributions remain in the unchanged manifests.",
+  "verification": {
+    "python": "3.9.6 (default, Jan  9 2026, 11:03:41) \n[Clang 17.0.0 (clang-1700.6.4.2)]",
+    "mpmath_version": "1.3.0",
+    "sympy_version": "1.14.0",
+    "finite_check_programs_passed": 7,
+    "decisive_interval_calculations_recomputed": true,
+    "formal_kernel_replay": false,
+    "NS_time_evolution": false,
+    "finite_outer_family_full_initial_gate_certified": true,
+    "finite_outer_family_mean_initial_growth_certified": true,
+    "qualitative_common_local_time_consequence": true,
+    "useful_numerical_stage_duration_certified": false,
+    "same_solution_return_proved": false,
+    "NS_blowup_proved": false,
+    "earlier_packages_unchanged": true,
+    "local_artifact_links_resolved": 41
+  }
+}

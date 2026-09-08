@@ -1,0 +1,73 @@
+{
+ "A_H2_violated_but_gate_holds": [
+  {
+   "run": "N3-Re0=1",
+   "s0": 1.5,
+   "beta_min_over_a2": -0.1631608520145582,
+   "minFa": 1.0010537756475915,
+   "minFr": 0.9999997761677876,
+   "gate": "HOLDS"
+  },
+  {
+   "run": "N3-Re0=1",
+   "s0": 2.0,
+   "beta_min_over_a2": -0.23660772762286975,
+   "minFa": 1.001061714403706,
+   "minFr": 1.0000000594820884,
+   "gate": "HOLDS"
+  }
+ ],
+ "B": {
+  "fwd_minFa": 1.0010537756475915,
+  "fwd_minFr": 0.9999997761677876,
+  "rev_minFa": 0.11299066805247533,
+  "rev_minFr": 1.000016538581,
+  "headline": 0.9999997761677876
+ },
+ "C": [
+  {
+   "case": "B = +2 on [0,.2], -3 on [.2,.55]  (H2 badly violated)",
+   "min_B": -3.0,
+   "minFa": -0.03994996935227617,
+   "minFr": 0.9658100014346866,
+   "gate": "VIOLATED",
+   "H2": "VIOLATED"
+  },
+  {
+   "case": "B = +3 on [0,.15], -6 on [.15,.55]",
+   "min_B": -6.0,
+   "minFa": -2.1039766314732504,
+   "minFr": 0.7518754441337321,
+   "gate": "VIOLATED",
+   "H2": "VIOLATED"
+  },
+  {
+   "case": "B = +1.9 (approx the measured beta/a^2~2 early) then -4",
+   "min_B": -4.0,
+   "minFa": -0.21424639326599015,
+   "minFr": 0.9814785480120893,
+   "gate": "VIOLATED",
+   "H2": "VIOLATED"
+  },
+  {
+   "case": "B = 0 (the exact Riccati floor, (H2) marginal)",
+   "min_B": 0.0,
+   "minFa": 0.9999999999999661,
+   "minFr": 1.0,
+   "gate": "HOLDS",
+   "H2": "SATISFIED"
+  },
+  {
+   "case": "B = -0.30 constant  ((H2) violated everywhere, q=0.548<qmax)",
+   "min_B": -0.3,
+   "minFa": 0.820679625652948,
+   "minFr": 0.9656038883651076,
+   "gate": "VIOLATED",
+   "H2": "VIOLATED"
+  }
+ ],
+ "monotone_a_fraction": [
+  25,
+  36
+ ]
+}

@@ -1,0 +1,39 @@
+=== closed forms quoted in PROOF.md ===
+  gamma = (3/2)^(2/5)+(2/3)^(3/5) = 5*2^(-2/5)3^(-3/5) OK    value = 1.96013170420779
+  C_u closed form vs gamma*(4/sqrtpi)^(3/5)*(8pi)^(-3/10) OK    value = 1.21423942080054
+  Duhamel prefactor 2^(18/5)C_u/sqrt(pi) = 40*sqrt2*3^(2/5)/(3 pi^(11/10)) OK    value = 8.30686928126049
+  c_div = pi/(2^(46/5)C_u^2) = 3*3^(1/5)pi^(11/5)/12800 OK    value = 0.00362297432183177
+  1/C_u^2 = 3*6^(1/5)pi^(6/5)/25                       OK    value = 0.67825240650845
+  c_div/c_GIM factor pi*2^(-46/5) numeral              OK    value = 0.00534163135591711
+  2*2^(18/5) = 2^(23/5)                                OK    value = 24.2514650641664
+  (2^(23/5))^2 = 2^(46/5)                              OK    value = 588.133557758482
+  C_w = 3*2^(1/6)/(2 pi^(2/3))                         OK    value = 0.784927737928299
+
+=== numerals quoted in PROOF.md ===
+  C_u                        1.21423942080054
+  gamma                      1.96013170420779
+  c_div                      0.00362297432183177
+  c_div_Q2                   0.000905743580457943
+  pi*2^(-46/5)               0.00534163135591711
+  1/C_u^2                    0.67825240650845
+  3*6^(1/5)pi^(6/5)/25       0.67825240650845
+  4 ln 2                     2.77258872223978
+  8pi/3                      8.37758040957278
+  4pi/3                      4.18879020478639
+  C_w                        0.784927737928299
+  c_div/c_div_Q2             4
+
+=== the exponent claim, re-derived a THIRD way (pure dimensional analysis) ===
+  M t_* = nu/(E**(2/5)*M**(1/5))    Re^{-1} = nu/(E**(2/5)*M**(1/5))    difference = 0
+  => M t_* = Re_E^{-1} identically.  Testing the brief's guess Re^{-1/2}:
+     M t_* / Re^{-1/2} = sqrt(nu)/(E**(1/5)*M**(1/10))  (not a constant -> the -1/2 law is dimensionally impossible)
+
+=== s5 limit claim: model/(a) -> 4 ln 2 ===
+   L=10        (2 ln2/L)*(1+2L-0.7031660) = 2.8137386523
+   L=100       (2 ln2/L)*(1+2L-0.7031660) = 2.7767037152
+   L=1000      (2 ln2/L)*(1+2L-0.7031660) = 2.7730002215
+   L=10000     (2 ln2/L)*(1+2L-0.7031660) = 2.7726298722
+   L=100000    (2 ln2/L)*(1+2L-0.7031660) = 2.7725928372
+   limit 4 ln 2 = 2.7725887222
+
+AUDIT CLEAN  (9 closed-form identities, 0 mismatches)

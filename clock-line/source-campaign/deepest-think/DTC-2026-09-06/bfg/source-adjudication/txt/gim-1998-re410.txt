@@ -1,0 +1,38 @@
+     Title         On the Cauchy problem for the Navier-Stokes equations with nondecaying initial data
+
+
+
+
+   Author(s)       Giga, Y.; Inui, K.; Matsui, S.
+
+
+
+    Citation       Hokkaido University Preprint Series in Mathematics, 410, 1-34
+
+
+
+   Issue Date      1998-05-01
+
+
+
+
+      DOI          https://doi.org/10.14943/83556
+
+
+
+    Doc URL        https://hdl.handle.net/2115/69160
+
+
+
+      Type         departmental bulletin paper
+
+
+
+
+File Information   re410.pdf
+
+
+
+
+                   Hokkaido University Collection of Scholarly and Academic Papers : HUSCAP
+

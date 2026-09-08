@@ -1,0 +1,34 @@
+{
+  "scope": "Floating continuous-form endpoint diagnostics; no NS residual or error certificate.",
+  "file": "work/pass12/compact-fit-144.npz",
+  "nz_quadrature": 4099,
+  "gauss_order_per_radial_span": 36,
+  "core_Omega": 0.2142394870292954,
+  "core_b": 45.38392893860754,
+  "core_beta": 211.83736746159067,
+  "core_margin_b_minus_Omega": 45.16968945157824,
+  "mean_G_fixed": 41.708446190619604,
+  "mean_G_selected": 41.88712829314045,
+  "mean_G_selected_radius": 0.21985411580312902,
+  "initial_K_quadrature": 6.443771766575103,
+  "increment_modal_energies": [
+    {
+      "mode": 4,
+      "increment_energy": 25.709689133895132
+    },
+    {
+      "mode": 8,
+      "increment_energy": 0.037065266071408844
+    },
+    {
+      "mode": 12,
+      "increment_energy": 0.0008090315958187306
+    },
+    {
+      "mode": 16,
+      "increment_energy": 2.664118805586812e-05
+    }
+  ],
+  "initial_increment_cross": -18.980936374066346,
+  "endpoint_K_quadrature": 13.21042546525917
+}

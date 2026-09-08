@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "scope": "Manufactured finite algebra and floating-point reconstruction tests; no production fit or residual certificate.",
+  "reconstruction_sha256_before": "e5ea11ec43ce683aa5310cb3697dfe06d16a4633c3858622d0fee74daab85739",
+  "reconstruction_sha256_after": "e5ea11ec43ce683aa5310cb3697dfe06d16a4633c3858622d0fee74daab85739",
+  "source_changed_during_check": false,
+  "checker_sha256": "62919a3370d4b37ef157b02cc2d7dbfafaf3f281b00afd163eb528dad112177d",
+  "fits": [
+    {
+      "m": 0,
+      "nz": 17,
+      "fit_weighted_relative": 2.2526114902888234e-12,
+      "offgrid_relative": {
+        "False": 6.935741012391174e-12,
+        "True": 7.009726887318948e-12
+      },
+      "dense_QR_velocity_relative": 5.646434299888168e-12,
+      "band_truncation_relative": 0.0,
+      "design_condition_max": 711.1007290910995,
+      "normal_equation_backward": 2.8204611494176557e-12,
+      "outer_endpoint_derivatives_0_to_8": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "last_retained_derivative9": 1.9558871228449232e-05
+    },
+    {
+      "m": 4,
+      "nz": 18,
+      "fit_weighted_relative": 5.818293157564799e-16,
+      "offgrid_relative": {
+        "False": 9.367042840272302e-16,
+        "True": 8.579430168403046e-16
+      },
+      "dense_QR_velocity_relative": 9.167679493766306e-16,
+      "band_truncation_relative": 0.0,
+      "design_condition_max": 242.17479342227142,
+      "normal_equation_backward": 3.3957525730752075e-16,
+      "outer_endpoint_derivatives_0_to_8": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "last_retained_derivative9": 1.9558871228449232e-05
+    },
+    {
+      "m": 16,
+      "nz": 17,
+      "fit_weighted_relative": 5.471019725289815e-16,
+      "offgrid_relative": {
+        "False": 3.1491619472964794e-16,
+        "True": 4.0403945666545286e-16
+      },
+      "dense_QR_velocity_relative": 6.330037759970007e-16,
+      "band_truncation_relative": 0.0,
+      "design_condition_max": 553.8692795757139,
+      "normal_equation_backward": 3.2565928622839195e-16,
+      "outer_endpoint_derivatives_0_to_8": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "last_retained_derivative9": 1.9558871228449232e-05
+    }
+  ],
+  "symbolic": {
+    "axis_checks": [
+      {
+        "mode": -4,
+        "axis_orders": [
+          3,
+          5,
+          4
+        ]
+      },
+      {
+        "mode": 0,
+        "axis_orders": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "mode": 4,
+        "axis_orders": [
+          5,
+          3,
+          4
+        ]
+      },
+      {
+        "mode": 16,
+        "axis_orders": [
+          17,
+          15,
+          16
+        ]
+      }
+    ],
+    "axial_window_commutator": true,
+    "ordered_norm_orders": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "bad_m4_potential": "r^5 cos(4 theta): velocity degree4; a nonzero fifth derivative is homogeneous degree -1, hence not locally L2 across axis.",
+    "bad_velocity_d5_at_1_1": "945*sqrt(2)/16"
+  },
+  "seconds": 11.695132970809937
+}

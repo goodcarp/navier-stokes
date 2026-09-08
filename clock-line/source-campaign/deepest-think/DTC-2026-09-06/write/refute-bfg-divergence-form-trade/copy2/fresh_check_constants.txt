@@ -1,0 +1,64 @@
+=== GATE (independent recomputation of every stored number) ===
+  s1 int|grad G| nu=1 t=1                    stored=1.128379167095513        recomputed=1.128379167095513        rel=2.31e-17   PASS
+  s1 int|grad G| nu=1 t=0.01                 stored=11.28379167095513        recomputed=11.28379167095513        rel=5.51e-17   PASS
+  s1 int|grad G| nu=7 t=3                    stored=0.2462325212298291       recomputed=0.2462325212298291       rel=1.10e-17   PASS
+  s1 int|grad G| nu=0.001 t=5                stored=15.95769121605731        recomputed=15.95769121605731        rel=6.57e-17   PASS
+  s1 K6 sup|gradG|(|x|+1)^4                  stored=0.9231098780623342       recomputed=0.9231098780623342       rel=7.35e-17   PASS
+  s1 K7 sup G(|x|+1)^4                       stored=0.7109819927227933       recomputed=0.7109819927227933       rel=3.20e-18   PASS
+  s1 K8 8pi/3                                stored=8.377580409572783        recomputed=8.377580409572783        rel=1.23e-16   PASS
+  s1 K8 4pi/3                                stored=4.188790204786391        recomputed=4.188790204786391        rel=3.67e-18   PASS
+  s2 Q exact                                 stored=1                        recomputed=1                        rel=0.00e+00   PASS
+  s2 Q attained                              stored=0.9999999999999999       recomputed=1                        rel=1.00e-16   PASS
+  s2 Q triangle                              stored=2                        recomputed=2                        rel=0.00e+00   PASS
+  s3 gamma                                   stored=1.960131704207789        recomputed=1.960131704207789        rel=6.30e-18   PASS
+  s3 C_u                                     stored=1.214239420800536        recomputed=1.214239420800536        rel=2.88e-17   PASS
+  s3 C_w enstrophy variant                   stored=0.7849277379282986       recomputed=0.7849277379282986       rel=1.11e-17   PASS
+  s4 c_div                                   stored=0.003622974321831773     recomputed=0.003622974321831773     rel=1.62e-19   PASS
+  s4 c_div (Q=2)                             stored=0.0009057435804579432    recomputed=0.0009057435804579432    rel=4.06e-20   PASS
+  s4 Q gain factor                           stored=4                        recomputed=4                        rel=0.00e+00   PASS
+  s4 pi*2^(-46/5)                            stored=0.005341631355917109     recomputed=0.005341631355917109     rel=3.30e-19   PASS
+  s4 log-clock 1/(1+logRe) Re=1              stored=1                        recomputed=1                        rel=0.00e+00   PASS
+  s4 power-clock c/Re     Re=1               stored=0.003622974321831773     recomputed=0.003622974321831773     rel=1.62e-19   PASS
+  s4 log-clock 1/(1+logRe) Re=100            stored=0.1784067150181842       recomputed=0.1784067150181842       rel=9.67e-18   PASS
+  s4 power-clock c/Re     Re=100             stored=3.622974321831773e-05    recomputed=3.622974321831773e-05    rel=3.77e-22   PASS
+  s4 log-clock 1/(1+logRe) Re=100000         stored=0.07991736247446586      recomputed=0.07991736247446586      rel=4.57e-19   PASS
+  s4 power-clock c/Re     Re=100000          stored=3.622974321831773e-08    recomputed=3.622974321831773e-08    rel=3.77e-25   PASS
+  s4 log-clock 1/(1+logRe) Re=1e+10          stored=0.04162183486928337      recomputed=0.04162183486928337      rel=5.00e-19   PASS
+  s4 power-clock c/Re     Re=1e+10           stored=3.622974321831773e-13    recomputed=3.622974321831773e-13    rel=3.77e-30   PASS
+  s4 log-clock 1/(1+logRe) Re=1e+20          stored=0.02125321636564776      recomputed=0.02125321636564776      rel=8.68e-19   PASS
+  s4 power-clock c/Re     Re=1e+20           stored=3.622974321831773e-23    recomputed=3.622974321831773e-23    rel=3.77e-40   PASS
+  s4 log-clock 1/(1+logRe) Re=1e+40          stored=0.01074074588089139      recomputed=0.01074074588089139      rel=3.74e-19   PASS
+  s4 power-clock c/Re     Re=1e+40           stored=3.622974321831773e-43    recomputed=3.622974321831773e-43    rel=1.48e-59   PASS
+  s5 log Re_E   L=8.3178                     stored=15.932434                recomputed=15.932434                rel=1.03e-17   PASS
+  s5 Re_E       L=8.3178                     stored=8305545.64787379         recomputed=8305545.647873791        rel=1.36e-16   PASS
+  s5 power win  L=8.3178                     stored=4.362114754927932e-10    recomputed=4.362114754927932e-10    rel=5.98e-26   PASS
+  s5 log   win  L=8.3178                     stored=0.05905825470809454      recomputed=0.05905825470809454      rel=4.37e-18   PASS
+  s5 model win  L=8.3178                     stored=0.1666659887373934       recomputed=0.1666659887373934       rel=6.14e-18   PASS
+  s5 log Re_E   L=20                         stored=39.296834                recomputed=39.296834                rel=0.00e+00   PASS
+  s5 Re_E       L=20                         stored=1.165193792993896e+17    recomputed=1.165193792993896e+17    rel=2.58e-17   PASS
+  s5 power win  L=20                         stored=3.109331978608259e-20    recomputed=3.109331978608259e-20    rel=2.28e-37   PASS
+  s5 log   win  L=20                         stored=0.02481584533415206      recomputed=0.02481584533415206      rel=1.70e-18   PASS
+  s5 model win  L=20                         stored=0.06931471805599453      recomputed=0.06931471805599453      rel=9.42e-19   PASS
+  s5 log Re_E   L=50                         stored=99.296834                recomputed=99.296834                rel=0.00e+00   PASS
+  s5 Re_E       L=50                         stored=1.330659922166396e+43    recomputed=1.330659922166396e+43    rel=8.19e-17   PASS
+  s5 power win  L=50                         stored=2.722689893547968e-46    recomputed=2.722689893547968e-46    rel=5.01e-63   PASS
+  s5 log   win  L=50                         stored=0.009970404449655908     recomputed=0.009970404449655908     rel=3.81e-19   PASS
+  s5 model win  L=50                         stored=0.02772588722239781      recomputed=0.02772588722239781      rel=6.23e-19   PASS
+  s5 log Re_E   L=100                        stored=199.296834               recomputed=199.296834               rel=0.00e+00   PASS
+  s5 Re_E       L=100                        stored=3.576969746703214e+86    recomputed=3.576969746703214e+86    rel=5.24e-17   PASS
+  s5 power win  L=100                        stored=1.012861326314252e-89    recomputed=1.012861326314252e-89    rel=4.42e-107  PASS
+  s5 log   win  L=100                        stored=0.004992590147480813     recomputed=0.004992590147480813     rel=4.01e-19   PASS
+  s5 model win  L=100                        stored=0.01386294361119891      recomputed=0.01386294361119891      rel=8.12e-19   PASS
+
+  50 PASS, 0 FAIL
+
+=== END-TO-END sanity: the bootstrap actually closes at t_* ===
+  M = 3.7, E = 0.41, nu = 0.013 -> Re_E = 69.9536750335
+  t_* = 1.3997581237509200e-05   Duhamel(t_*) = 1.8500000000000001e+00   M/2 = 1.8500000000000001e+00   rel = 0.00e+00
+  M*Re_E*t_* = 3.6229743218317728e-03   (= c_div)
+  omega cap check: ||omega|| <= M + M/2 = 1.5 M < 2M (the bootstrap cap) -> closes
+
+=== DYNAMIC MUTATION TEST (v -> 1.5 v + 0.37, one stored number at a time) ===
+  mutated 50 stored numbers; gate CAUGHT 50, MISSED 0
+
+ALL CHECKS PASS AND EVERY MUTATION CAUGHT  (50 checks, 50 mutations caught / 50)

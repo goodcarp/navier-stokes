@@ -1,0 +1,1 @@
+stored numbers mutated: 678   caught: 678   blind: 0   coverage: 1.0000

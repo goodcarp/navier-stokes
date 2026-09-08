@@ -1,0 +1,46 @@
+==========================================================================================
+A. prove-duhamel's own data: (H2) violated, gate says HOLDS
+==========================================================================================
+       N3-Re0=1 s0=1.5  min (beta+nuV)/a^2 = -0.1632  min F_a = 1.001054  min F_r = 1.000000  GATE = HOLDS
+       N3-Re0=1 s0=2.0  min (beta+nuV)/a^2 = -0.2366  min F_a = 1.001062  min F_r = 1.000000  GATE = HOLDS
+
+   -> 2 tracer histories in the seat's own run set violate (H2) and still pass the gate.
+   -> Therefore F_a >= 1 does NOT imply (H2); the NOTE's 'equivalent' is one-way only.
+
+==========================================================================================
+B. FL-043: is the F_r half of the gate diagnostic?
+==========================================================================================
+   forward  min F_a over 36 tracers = 1.001054   min F_r = 0.999999776
+   reversed min F_a over  3 tracers = 0.112991   min F_r = 1.000016539
+   gate threshold is 1 - 1e-2 = 0.99
+   F_a: forward PASS (1.0011>=0.99), reversed FAIL (0.1130<0.99)  -> DIAGNOSTIC
+   F_r: forward PASS (1.0000>=0.99), reversed PASS (1.0000>=0.99) -> NOT DIAGNOSTIC
+
+   The NOTE's headline 'worst forward minimum over all 39 tracer histories and all times:
+   1.000000' is min(min F_a, min F_r) = 0.999999776, i.e. it is the F_r
+   number, the half that also passes on the control.  The diagnostic half's worst forward
+   value is 1.001054.
+
+==========================================================================================
+C. synthetic: violate (H2) hard, still pass the gate
+==========================================================================================
+   B = +2 on [0,.2], -3 on [.2,.55]  (H2 badly violated)
+      min B = -3.00 -> (H2) VIOLATED    min F_a = -0.039950  min F_r = 0.965810  GATE = VIOLATED
+   B = +3 on [0,.15], -6 on [.15,.55]
+      min B = -6.00 -> (H2) VIOLATED    min F_a = -2.103977  min F_r = 0.751875  GATE = VIOLATED
+   B = +1.9 (approx the measured beta/a^2~2 early) then -4
+      min B = -4.00 -> (H2) VIOLATED    min F_a = -0.214246  min F_r = 0.981479  GATE = VIOLATED
+   B = 0 (the exact Riccati floor, (H2) marginal)
+      min B = +0.00 -> (H2) SATISFIED   min F_a = 1.000000  min F_r = 1.000000  GATE = HOLDS
+   B = -0.30 constant  ((H2) violated everywhere, q=0.548<qmax)
+      min B = -0.30 -> (H2) VIOLATED    min F_a = 0.820680  min F_r = 0.965604  GATE = VIOLATED
+
+   Cases where (H2) is VIOLATED and the gate still says HOLDS:
+
+   The gate is a NECESSARY-condition test for the CONCLUSION of Theorem D
+   (a >= a0/(1+a0 t)), not a test of its HYPOTHESIS (H2).  Any trajectory whose strain
+   is non-decreasing passes it automatically, whatever beta does afterwards.
+
+   Check: a non-decreasing on [0,T] => F_a >= 1 automatically (a>=a0 and 1+a0t>=1).
+   In every forward run of the seat, is a non-decreasing?
+      a non-decreasing on 25/36 forward tracer histories -> F_a >= 1 is automatic there.

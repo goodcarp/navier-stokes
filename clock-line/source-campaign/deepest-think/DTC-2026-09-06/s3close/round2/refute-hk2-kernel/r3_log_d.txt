@@ -1,0 +1,12 @@
+
+=== (d) delta_m: (D-B) inside the equatorial layer, w = 0.20 ... 0.025 ===
+  w=0.200 (r,z)=(1.5,0.0000): eta_z=-2.1823  |grad a|=0.2451 ||Hess a||=1.6243  K2=2.4365   [r|eta_z|/5 - 2|grad a| = +0.1645]  PDE rel 1.4e-07 sym 7.2e-05 [161s]
+  w=0.200 (r,z)=(1.5,0.0900): eta_z=-1.9893  |grad a|=0.2775 ||Hess a||=1.4550  K2=2.1680   [r|eta_z|/5 - 2|grad a| = +0.0418]  PDE rel 1.6e-07 sym 4.2e-06 [119s]
+  w=0.100 (r,z)=(1.5,0.0000): eta_z=-4.3645  |grad a|=0.2468 ||Hess a||=3.7588  K2=5.6382   [r|eta_z|/5 - 2|grad a| = +0.8158]  PDE rel 7.2e-08 sym 9.8e-05 [120s]
+  w=0.100 (r,z)=(1.5,0.0450): eta_z=-3.9903  |grad a|=0.2929 ||Hess a||=3.3989  K2=5.0878   [r|eta_z|/5 - 2|grad a| = +0.6114]  PDE rel 8.2e-08 sym 1.8e-06 [90s]
+  w=0.050 (r,z)=(1.5,0.0000): eta_z=-8.7290  |grad a|=0.2445 ||Hess a||=8.0981  K2=12.1471   [r|eta_z|/5 - 2|grad a| = +2.1296]  PDE rel 9.6e-08 sym 1.9e-04 [89s]
+  w=0.050 (r,z)=(1.5,0.0225): eta_z=-7.9863  |grad a|=0.2998 ||Hess a||=7.3633  K2=11.0387   [r|eta_z|/5 - 2|grad a| = +1.7963]  PDE rel 5.0e-08 sym 3.6e-07 [86s]
+  w=0.025 (r,z)=(1.5,0.0000): eta_z=-17.4580  |grad a|=0.2427 ||Hess a||=16.8137  K2=25.2205   [r|eta_z|/5 - 2|grad a| = +4.7521]  PDE rel 9.2e-06 sym 4.8e-04 [97s]
+  w=0.025 (r,z)=(1.5,0.0112): eta_z=-15.9755  |grad a|=0.3033 ||Hess a||=15.3356  K2=23.0000   [r|eta_z|/5 - 2|grad a| = +4.1861]  PDE rel 6.0e-06 sym 4.4e-05 [123s]
+
+WROTE r3_results_d.json

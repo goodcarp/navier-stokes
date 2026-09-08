@@ -1,0 +1,27 @@
+ 0.0 1.00  S in [0.42678, 0.42835]  mid 0.42757
+ 0.0 1.25  S in [0.53347, 0.53544]  mid 0.53446
+ 0.0 1.50  S in [0.64017, 0.64253]  mid 0.64135
+ 7.5 1.00  S in [0.42712, 0.42858]  mid 0.42785
+ 7.5 1.25  S in [0.53601, 0.53784]  mid 0.53692
+ 7.5 1.50  S in [0.65340, 0.65559]  mid 0.65450
+15.0 1.00  S in [0.42901, 0.43048]  mid 0.42974
+15.0 1.25  S in [0.54980, 0.55163]  mid 0.55072
+15.0 1.50  S in [0.70312, 0.70532]  mid 0.70422
+30.0 1.00  S in [0.44220, 0.44367]  mid 0.44293
+30.0 1.25  S in [0.60425, 0.60608]  mid 0.60516
+30.0 1.50  S in [0.78952, 0.79171]  mid 0.79061
+
+max QUADPACK reldiff 3.648355690409418e-14
+lam1.00_del0.0     seat 0.4280  mine [0.4268, 0.4284]  inside=True  seat-mid +0.00045
+lam1.25_del0.0     seat 0.5350  mine [0.5335, 0.5354]  inside=True  seat-mid +0.00057
+lam1.50_del0.0     seat 0.6420  mine [0.6402, 0.6425]  inside=True  seat-mid +0.00068
+lam1.00_del7.5     seat 0.4282  mine [0.4271, 0.4286]  inside=True  seat-mid +0.00033
+lam1.25_del7.5     seat 0.5373  mine [0.5360, 0.5378]  inside=True  seat-mid +0.00041
+lam1.50_del7.5     seat 0.6550  mine [0.6534, 0.6556]  inside=True  seat-mid +0.00050
+lam1.00_del15.0    seat 0.4301  mine [0.4290, 0.4305]  inside=True  seat-mid +0.00033
+lam1.25_del15.0    seat 0.5511  mine [0.5498, 0.5516]  inside=True  seat-mid +0.00041
+lam1.50_del15.0    seat 0.7047  mine [0.7031, 0.7053]  inside=True  seat-mid +0.00050
+lam1.00_del30.0    seat 0.4433  mine [0.4422, 0.4437]  inside=True  seat-mid +0.00033
+lam1.25_del30.0    seat 0.6056  mine [0.6042, 0.6061]  inside=True  seat-mid +0.00041
+lam1.50_del30.0    seat 0.7911  mine [0.7895, 0.7917]  inside=True  seat-mid +0.00050
+all seat values inside my two-sided interval: True

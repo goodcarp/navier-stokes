@@ -1,0 +1,53 @@
+### k3_bound
+=== (D-B) campaign datum: omega = -M tanh(sin phi/sin d) tanh(cos phi/w) Theta(rho) ===
+  L= 10.0 lam=1.00: d*=0.1662  |grad a|<=4.6795  ||Hess a||<=30.8114  ||Hess u^z||<=41.8975   K2hat <= 66.6622
+  L= 10.0 lam=1.25: d*=0.2029  |grad a|<=6.5594  ||Hess a||<=41.6335  ||Hess u^z||<=68.5340   K2hat <= 107.6738
+  L= 10.0 lam=1.50: d*=0.1672  |grad a|<=7.7905  ||Hess a||<=55.4589  ||Hess u^z||<=104.5984   K2hat <= 161.7735
+  L= 40.0 lam=1.00: d*=0.1662  |grad a|<=4.6796  ||Hess a||<=30.8114  ||Hess u^z||<=41.8976   K2hat <= 66.6625
+  L= 40.0 lam=1.25: d*=0.2029  |grad a|<=6.5595  ||Hess a||<=41.6335  ||Hess u^z||<=68.5342   K2hat <= 107.6741
+  L= 40.0 lam=1.50: d*=0.1672  |grad a|<=7.7905  ||Hess a||<=55.4590  ||Hess u^z||<=104.5986   K2hat <= 161.7739
+
+=== (D-A) idealised datum (sharp sgn(z), corner taper, SHARP radial edges) ===
+  f= 0.400: d*=0.1862  |grad a|<=4.7757  ||Hess a||<=25.7823   K2hat <= 73.2454   [edge surface part of L5 = 16]
+  f= 0.200: d*=0.1254  |grad a|<=5.7372  ||Hess a||<=39.4135   K2hat <= 93.8930   [edge surface part of L5 = 61]
+  f= 0.100: d*=0.0950  |grad a|<=6.7301  ||Hess a||<=60.6432   K2hat <= 126.9817   [edge surface part of L5 = 176]
+  f= 0.050: d*=0.0475  |grad a|<=7.6688  ||Hess a||<=104.9471   K2hat <= 195.9668   [edge surface part of L5 = 429]
+  f= 0.025: d*=0.0238  |grad a|<=8.6853  ||Hess a||<=190.3418   K2hat <= 327.3918   [edge surface part of L5 = 949]
+
+WROTE k3_results.json
+real 198.69
+user 132.06
+sys 15.11
+### k4_direct
+~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/s3close/round2/refute-hk2-kernel/rerun/hk2lib.py:32: RuntimeWarning: overflow encountered in square
+  ca = 1.0/np.cosh(a)**2; cb = 1.0/np.cosh(b)**2
+~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/s3close/round2/refute-hk2-kernel/rerun/hk2lib.py:32: RuntimeWarning: overflow encountered in cosh
+  ca = 1.0/np.cosh(a)**2; cb = 1.0/np.cosh(b)**2
+hhat_l : {1: '7.912e-01', 3: '-3.348e-02', 5: '9.729e-02', 11: '1.540e-03', 31: '6.436e-05', 61: '1.128e-07', 101: '2.518e-11', 141: '2.095e-15', 161: '-6.062e-16'}
+
+=== control 1: Lap5 a - d_z eta  (the PDE the series must satisfy) ===
+   (r,z)=(0.5,0.866): Lap5 a = -3.4542465520   d_z eta = -3.4542465520   rel = 9.22e-13
+   (r,z)=(0.75,0.3849): Lap5 a = -0.8794904098   d_z eta = -0.8794904098   rel = 5.55e-14
+   (r,z)=(0.62,0.554): Lap5 a = -1.4089076313   d_z eta = -1.4089076313   rel = 8.62e-13
+   (r,z)=(0.4,1.1): Lap5 a = -2.9274979762   d_z eta = -2.9274979762   rel = 7.53e-12
+
+=== control 2: a(x) series vs direct 5D kernel quadrature ===
+   (r,z)=(0.5,0.866): a_series = 4.651534585   a_kernel = 4.651534585   rel = 8.81e-12
+   (r,z)=(0.75,0.3849): a_series = 4.720132781   a_kernel = 4.720132781   rel = 3.45e-12
+
+=== control 3: mode truncation ===
+   mmax=  41: a=4.6515345259  a_rr=-0.0303457473  a_zz=-1.4209687246
+   mmax=  81: a=4.6515345853  a_rr=-0.0304300027  a_zz=-1.4210223190
+   mmax= 121: a=4.6515345853  a_rr=-0.0304300422  a_zz=-1.4210223224
+   mmax= 161: a=4.6515345853  a_rr=-0.0304300422  a_zz=-1.4210223224
+
+=== MEASURED ||grad^2_5 b|| at points of N_tau (L = 10, delta = 7.5 deg, w = 0.20) ===
+   lam=1.00 (r,z)=(0.50000,0.86603):  a=4.65152  |grad a|=0.51640  ||Hess a||=1.55469   ||grad^2 b|| = 2.19034
+   lam=1.25 (r,z)=(0.62500,0.55426):  a=4.70234  |grad a|=0.24737  ||Hess a||=0.93629   ||grad^2 b|| = 1.54378
+   lam=1.50 (r,z)=(0.75000,0.38490):  a=4.72013  |grad a|=0.23160  ||Hess a||=0.77568   ||grad^2 b|| = 1.47773
+
+WROTE k4_results.json
+real 408.66
+user 213.25
+sys 12.38
+### k9_kernel_measure

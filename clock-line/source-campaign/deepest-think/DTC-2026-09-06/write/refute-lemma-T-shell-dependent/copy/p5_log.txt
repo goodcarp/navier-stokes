@@ -1,0 +1,29 @@
+K1  the mu-only bound on Phi = Lambda   (mu = 0, Delta != 0)
+   L=   8.318  mu=0.0e+00  |Delta|=0.213803  mu-only bound=0.000000  VIOLATED=True
+   L=  20.000  mu=0.0e+00  |Delta|=0.213803  mu-only bound=0.000000  VIOLATED=True
+   L=  50.000  mu=0.0e+00  |Delta|=0.213803  mu-only bound=0.000000  VIOLATED=True
+   L= 100.000  mu=0.0e+00  |Delta|=0.213803  mu-only bound=0.000000  VIOLATED=True
+   L= 400.000  mu=0.0e+00  |Delta|=0.213803  mu-only bound=0.000000  VIOLATED=True
+   K1 FIRED: True
+
+K2  best single T_lambdabar (own instrument)
+           L  lambar*         mu       muJ  LemT bound/a_true
+       8.318   1.1760   0.385344    0.8028             70.514
+      20.000   1.1760   0.385344    0.7001             67.972
+      50.000   1.1760   0.385344    0.6562             66.848
+     100.000   1.1760   0.385344    0.6416             66.469
+     400.000   1.1760   0.385344    0.6306             66.182
+   mu spread over L = 0.0   K2 FIRED: True
+
+K3  axis ramp at fixed mu, L = 8.317766166719343
+   mu_b=0.3 phi_c=1e-01  mu=0.29740  muJ=4.339e+02  |Delta|=        3.3909  mu-only bound=    108.1812  violates=False  full bound=4.1472e+04
+   mu_b=0.3 phi_c=1e-02  mu=0.29886  muJ=1.810e+06  |Delta|=        8.5746  mu-only bound=    109.9783  violates=False  full bound=1.7499e+08
+   mu_b=0.3 phi_c=1e-03  mu=0.29888  muJ=1.637e+10  |Delta|=       50.8019  mu-only bound=    109.9964  violates=False  full bound=1.5827e+12
+   mu_b=0.3 phi_c=1e-04  mu=0.29888  muJ=1.620e+14  |Delta|=      464.3991  mu-only bound=    109.9966  violates=True  full bound=1.5666e+16
+   mu_b=0.3 phi_c=1e-05  mu=0.29888  muJ=1.619e+18  |Delta|=     4591.7832  mu-only bound=    109.9966  violates=True  full bound=1.5650e+20
+   mu_b=0.9 phi_c=1e-01  mu=0.86589  muJ=1.536e+04  |Delta|=       33.9887  mu-only bound=1787663.1878  violates=False  full bound=1.4715e+10
+   mu_b=0.9 phi_c=1e-02  mu=0.86989  muJ=1.150e+08  |Delta|=      258.6367  mu-only bound=2094257.1048  violates=False  full bound=1.2875e+14
+   mu_b=0.9 phi_c=1e-03  mu=0.86993  muJ=1.114e+12  |Delta|=     2402.6056  mu-only bound=2097630.4458  violates=False  full bound=1.2500e+18
+   mu_b=0.9 phi_c=1e-04  mu=0.86993  muJ=1.111e+16  |Delta|=    23738.5138  mu-only bound=2097664.2118  violates=False  full bound=1.2461e+22
+   mu_b=0.9 phi_c=1e-05  mu=0.86993  muJ=1.110e+20  |Delta|=   236993.6596  mu-only bound=2097664.5495  violates=False  full bound=1.2457e+26
+   fitted |Delta| ~ 0.05835 phi_c^-0.9781   mu spread=1.48e-07   K3 FIRED: True   full bound holds: True

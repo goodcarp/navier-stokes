@@ -1,0 +1,8 @@
+# s3close — closing conjecture (S3), the sharp log clock (sitting of 2026-09-08, goal "WIN")
+Continues DTC-2026-09-06. Inputs: lower/SYNTHESIS.md, write/* (four pieces + refutations), gaps/*.
+Units: hk2/ (prove (H-K2): the ∇²u bound), assembly/ (the bootstrap on the window = GAP T's PDE half, and the assembled theorem with explicit error budget), refute-*/ (blind referees), THEOREM_S3.md (assembled, after referees).
+Rules: every constant from a script in the seat's own folder; SHA256SUMS computed; nothing outside the seat's folder edited; L-89 referees before any deposit.
+
+2026-09-08 06:50Z — operator: Codex (Astra) may be working on this in parallel. Fable's lanes are exactly the folders above plus campaign/external/alpoge-buckmaster-2026-09-08/. Astra outputs are NOT read by the Fable seat until Part C (leak guard). Dead-drop deposited on thread chimera-deepest-thought-20260906.
+
+2026-09-08 08:20Z — operator: fewer agents, less verification, be clever. Round-2 workflow (4 referees + 4 blind provers + refuters) STOPPED mid-run; partial files under round2/refute-* are PARTIAL, unreviewed. hk2-b (second (H-K2) engine) stopped; its last word: measured K₂ 0.5–5.4 M/ρ₀, crude bound loose 40–95×. Advisor finding (Fable seat, from ASSEMBLY.md §2.3): the e^{pc}=e^{34} feedback is an artifact of an a-priori reference strain 𝔞; defining 𝔞 as the true exterior l=1 strain at the label radius removes the ε_{T′} term from the map driver, leaving μ = O(1/L) and one application of Lemma T′ in the final strain bound. Round 2 relaunched lean: round2/u1 (that argument + budget, Opus) and round2/u2 (BLOCK 3 by BV transport, Opus). Referees only at closure.

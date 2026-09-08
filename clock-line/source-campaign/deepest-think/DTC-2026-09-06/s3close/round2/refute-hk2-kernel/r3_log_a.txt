@@ -1,0 +1,7 @@
+=== (a) (D-B): Lambda_4, Lambda_5 and the assembled bound at hk2's d* ===
+  lam=1.0: L4=98.6879 L5=135.1188  sups=(5.5947,28.1569,5.5963)  bound: |grad a|<=4.6795 ||Hess||<=30.8114 K2<=66.6622  measured: |grad a|=0.5164 ||Hess||=1.5547 K2=2.1904  a=4.6515  [108s]
+       with |gradK| weighted instead of C_gradK |w|^-5: C_gradK*L5 = 20.5356 vs int|gradK||grad eta| = 9.6742
+  lam=1.5: L4=158.7310 L5=216.4686  sups=(10.5224,71.9998,10.5274)  bound: |grad a|<=7.7899 ||Hess||<=55.4619 K2<=161.7782  measured: |grad a|=0.7288 ||Hess||=6.2476 K2=5.3854  a=6.9228  [58s]
+       with |gradK| weighted instead of C_gradK |w|^-5: C_gradK*L5 = 32.8993 vs int|gradK||grad eta| = 13.2844
+
+WROTE r3_results_a.json

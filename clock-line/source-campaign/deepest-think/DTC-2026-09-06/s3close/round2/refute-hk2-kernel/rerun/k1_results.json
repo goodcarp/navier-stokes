@@ -1,0 +1,56 @@
+{
+ "div5 b = 2a": true,
+ "tr grad5 b = 2a": true,
+ "omega^theta = d_z u^r - d_r u^z": true,
+ "E = [[r d_r a, r d_z a],[r d_z a - omega^theta, -r d_r a]] (5x5 residual 0)": true,
+ "grad_y u^z = (d_z a - eta) y": true,
+ "d_z u^z = -2a - y.grad_y a": true,
+ "d_e grad5 b, rows 1..4 = y (Hess a e)^T + e (grad a)^T + (grad a . e) P4": true,
+ "Hess u^z = q P4 + y (grad q)^T + (y d_z q) (x) e_z + S55 e_z (x) e_z,  q = d_z a - eta": true,
+ "Hess u^z is symmetric as written (y (grad_y q)^T symmetric since grad_y q || y)": true,
+ "Lap5 G5 = 0 away from 0": true,
+ "|S^4| = 8 pi^2/3 (from 2 pi^{5/2}/Gamma(5/2))": {
+  "ok": true,
+  "value": "8*pi**2/3"
+ },
+ "-|S^4| R^4 dG5/dR = 1  (fundamental solution normalisation)": true,
+ "K = -d_z G5 = 3 wz/(8 pi^2 |w|^5)": {
+  "ok": true,
+  "value": "3*wz/(8*pi**2*(w1**2 + w2**2 + w3**2 + w4**2 + wz**2)**(5/2))"
+ },
+ "C_K_exact": "3/(8*pi**2)",
+ "C_K": 0.037995443865876666,
+ "|K(w)| <= C_K |w|^-4 with C_K = 3/(8 pi^2)": {
+  "ok": true,
+  "value": 0.037995443865876666
+ },
+ "C_K * |S^4| = 1 exactly": true,
+ "|grad K|^2 = (3/(8pi^2))^2 (1+15 what_z^2)/|w|^10": true,
+ "C_gradK_exact": "3/(2*pi**2)",
+ "C_gradK": 0.15198177546350666,
+ "sup |grad K| |w|^5 = 4 * 3/(8 pi^2) = 3/(2 pi^2)": {
+  "ok": true,
+  "value": 0.15198177546350666
+ },
+ "C_gradK * |S^4| = 4 exactly": true,
+ "<what_z^2>_{S^4} = 1/5": {
+  "ok": true,
+  "value": "1/5"
+ },
+ "spherical mean of grad K = 0 (delta_jz - 5 <what_z what_j> = 0)": true,
+ "|grad eta_P| = M/r^2": true,
+ "Hess(1/r) eigenvalues {2/r^3, -1/r^3 (x3), 0}": {
+  "ok": true,
+  "value": {
+   "-2*M*Abs(y1)/y1**4": 1,
+   "M*Abs(y1)/y1**4": 3,
+   "0": 1
+  }
+ },
+ "||Hess eta_P||_op = 2M/r^3": true,
+ "Lap5 eta_P = -eta_P/r^2": true,
+ "plateau": {
+  "grad": "M/r^2",
+  "hess_op": "2M/r^3"
+ }
+}

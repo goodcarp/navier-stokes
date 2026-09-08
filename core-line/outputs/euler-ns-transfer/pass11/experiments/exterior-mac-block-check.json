@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "scope": "Independent finite-dimensional harmonic-exterior MAC model; no NS evolution or residual enclosure",
+  "cases": [
+    {
+      "m": 0,
+      "k": 0,
+      "operator_defects": [
+        1.1706311577689612e-14,
+        1.7763568394002544e-15,
+        1.5781712850542474e-16,
+        0.0
+      ],
+      "positive_gram_relative_error": 0.0,
+      "nonlinear_weak_adjoint_defect": 6.280369834735101e-16,
+      "CN_energy_identity_relative_defect": 3.790187029593493e-16
+    },
+    {
+      "m": 0,
+      "k": 0.7,
+      "operator_defects": [
+        1.5875964781436003e-14,
+        1.797173521111972e-15,
+        3.3306690738754696e-16,
+        1.7763568394002505e-15
+      ],
+      "positive_gram_relative_error": 0.0,
+      "nonlinear_weak_adjoint_defect": 6.12235403661387e-15,
+      "CN_energy_identity_relative_defect": 3.6980755279709955e-16
+    },
+    {
+      "m": 4,
+      "k": 0,
+      "operator_defects": [
+        7.67309446362302e-15,
+        4.440892098500626e-16,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "positive_gram_relative_error": 1.9060028713657373e-16,
+      "nonlinear_weak_adjoint_defect": 2.3102244613642867e-15,
+      "CN_energy_identity_relative_defect": 1.0060573186991426e-15
+    },
+    {
+      "m": 4,
+      "k": 0.7,
+      "operator_defects": [
+        4.1785151456445175e-15,
+        4.996003610813204e-16,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "positive_gram_relative_error": 1.8731381801464658e-16,
+      "nonlinear_weak_adjoint_defect": 1.7763568394002505e-15,
+      "CN_energy_identity_relative_defect": 1.8976945477790045e-16
+    },
+    {
+      "m": 4,
+      "k": -0.7,
+      "operator_defects": [
+        4.1785151456445175e-15,
+        4.996003610813204e-16,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "positive_gram_relative_error": 1.8890805329951622e-16,
+      "nonlinear_weak_adjoint_defect": 8.881784197001252e-16,
+      "CN_energy_identity_relative_defect": 4.618213860032944e-16
+    },
+    {
+      "m": 8,
+      "k": 2.3,
+      "operator_defects": [
+        1.0633008259709678e-14,
+        7.216449660063518e-16,
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "positive_gram_relative_error": 0.0,
+      "nonlinear_weak_adjoint_defect": 7.021666937153402e-16,
+      "CN_energy_identity_relative_defect": 2.750446431978185e-16
+    }
+  ],
+  "axial_reflection_stiffness_defect": 0.0,
+  "axis_constraint_congruence": {
+    "mode": 4,
+    "reduced_dimension": 21,
+    "full_dimension": 24,
+    "divergence": 3.114110306630575e-14,
+    "kinetic_self_adjoint_defect": 1.8735013540549517e-16
+  }
+}

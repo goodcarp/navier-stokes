@@ -1,0 +1,17 @@
+{
+  "source": "transport_time_control.py",
+  "source_sha256": "107ef3864359c51e26ab8806b4d97c4b70940d47aab49622f711ca5534809e16",
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "transport_time_control.py"
+  ],
+  "cwd": "~/<core-line-working-tree>/2026-09-06/new-chat/outputs/navier-stokes-pass8",
+  "exit_code": 0,
+  "python": "3.9.6",
+  "sympy": "1.14.0",
+  "completed_utc": "2026-09-06T12:23:30.595158+00:00",
+  "elapsed_seconds": 4.811939287,
+  "stdout_sha256": "c86009f2a65b11ec00f2155ba58c7c8d8673e8b051e42cabb28aeeff5f8d6dbf",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Exact entropy/scaling and auxiliary scalar kernel controls only; the analytical record-clock proof is separate."
+}

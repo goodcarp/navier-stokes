@@ -1,0 +1,75 @@
+{
+ "theta32_accel": 0.7340136762890959,
+ "theta32_frozen": 0.8109302162163288,
+ "c2_accel": 1.4680273525781917,
+ "c2_frozen": 1.6218604324326575,
+ "c2_frozen_id": 1.6218604324326575,
+ "c2_accel_id": 1.4680273525781917,
+ "theta_blowup_kappa_half": 4.0,
+ "ratio_accel_over_frozen": 0.9051502356317253,
+ "E_const": 0.172403978,
+ "log_ReE_offset_two_fifths_logCE": -0.7031659387091245,
+ "logReE_vs_L": {
+  "7.5deg": {
+   "formula": "2L + 2 log(1/delta) + (2/5) log C_E",
+   "const": 3.3634819502879663
+  },
+  "10.0deg": {
+   "formula": "2L + 2 log(1/delta) + (2/5) log C_E",
+   "const": 2.7881178053844047
+  }
+ },
+ "Delta5_of_1_over_r": "-1",
+ "viscous_rate_over_ML": "nu/(r^2 M L) = (rho_0 delta)^2/(r^2 L) with rho_0 delta = sqrt(nu/M)",
+ "viscous_penalty_examples": {
+  "phi=30.0": {
+   "nu_over_r2_in_units_of_M_at_rho_in=rho_0,delta=7.5deg": 0.06853891945200943
+  },
+  "phi=62.9": {
+   "nu_over_r2_in_units_of_M_at_rho_in=rho_0,delta=7.5deg": 0.021621687611488513
+  }
+ },
+ "sup_a_minus_A_over_shell": 0.7047367976786839,
+ "argmax_a_minus_A": [
+  1023.9999989759999,
+  5.0,
+  -0.7047367976786839
+ ],
+ "sup_a_minus_A_bulk_only(1 octave in from each end)": 0.31865209824139074,
+ "viscous_numerics_crosscheck": {
+  "kappa=0.4": {
+   "Qprime_model_accel": 0.9175170953613698,
+   "Qprime_model_frozen": 1.0136627702704109,
+   "T_a_star_over_int_a_model": 1.1085781089288438
+  },
+  "kappa=0.411": {
+   "Qprime_model_accel": 0.892960676750725,
+   "Qprime_model_frozen": 0.9865331097522249,
+   "T_a_star_over_int_a_model": 1.1085781089288438
+  },
+  "kappa=0.415": {
+   "Qprime_model_accel": 0.8843538268543324,
+   "Qprime_model_frozen": 0.9770243568871432,
+   "T_a_star_over_int_a_model": 1.1085781089288438
+  },
+  "kappa=0.437": {
+   "Qprime_model_accel": 0.8398325815664712,
+   "Qprime_model_frozen": 0.9278377759912229,
+   "T_a_star_over_int_a_model": 1.1085781089288438
+  }
+ },
+ "viscous_numerics_measured": {
+  "Qprime": 0.988,
+  "Qprime_sd": 0.018,
+  "T32_M_a_star_seq": [
+   0.546,
+   0.508,
+   0.501,
+   0.49,
+   0.483,
+   0.479
+  ],
+  "log_ratio": 1.1813593584783106
+ },
+ "model_T_a_star_over_int_a": 1.1085781089288438
+}

@@ -1,0 +1,662 @@
+   ON LOCAL UNIQUENESS OF WEAK SOLUTIONS TO THE NAVIER-STOKES SYSTEM
+                       WITH BM O−1 INITIAL DATUM
+
+                                         IGOR KUKAVICA AND VLAD VICOL
+
+
+
+
+        A BSTRACT. We address the problem of local uniqueness of weak solutions to the Navier–Stokes system, with
+        the initial datum in a subspace of BM O−1 (Rn ). The existence and uniqueness of local mild solutions has
+        been proven by Koch and Tataru [KT]. We present a necessary and sufficient condition for two weak solutions
+        to evolve from the same initial datum, and for weak solutions to be mild.
+                              Journal of Dynamics and Differential Equations. Volume 20, Number 3 (2008), 719–732.
+
+
+                                                 1. I NTRODUCTION
+  In this paper we address the uniqueness of solutions of the initial value problem for the Navier–Stokes
+equations in Rn × [0, ∞)
+                               ∂t uk − ∆uk + uj ∂j uk + ∂k p = 0,             k = 1, . . . , n,                       (1.1)
+                               ∂j uj = 0,                                                                             (1.2)
+with the initial datum
+                                          uk (·, 0) = u0k ,       k = 1, . . . , n.                                   (1.3)
+The unknowns are the velocity vector field u(x, t) ∈ Rn and the pressure p(x, t) ∈ R, with (x, t) ∈
+Rn × [0, ∞). The initial datum is divergence free and belongs to a space that we detail upon in Section 2.
+   Fabes, Jones, and Riviere have proven in [FJR] that the Navier–Stokes system (1.1)–(1.3) with u0 ∈
+Lp (Rn ) has a unique local mild solution in Lq (0, T ; Lp (Rn )) if n < p ≤ ∞ and n/p + 2/q < 1. Moreover,
+they showed that if 2 ≤ p < ∞ and 2 ≤ q ≤ ∞, then u is weak solution of (1.1)–(1.3) if and only if u is a
+mild solution, i.e.,
+                                                   Z t
+                               u(·, t) = et∆ u0 +       e(t−s)∆ P∇ · (u ⊗ u)ds,                        (1.4)
+                                                         0
+
+where P denotes the Hopf–Leray projector, and et∆ f denotes the solution of the heat equation with an initial
+datum f .
+   The first author of the present paper considered in [Ku] the case p = ∞. It is well–known (cf. [S])
+that uniqueness of weak solutions with bounded initial datum does not hold. In [Ku] it was shown that
+two weak solutions u and u   e evolve from the same initial datum if and only if u   e is obtained from u by
+means of a transform u e(x, t) = u(x − Φ(t), t) + φ(t), where φ ∈ L∞ ([0, T )), with limt→0 φ(t) = 0 and
+         Rt
+Φ(t) = 0 φ(s)ds. In particular, uniqueness holds when one imposes a growth restriction on the pressure
+(cf. [GIKM, K, Ku]).
+   We recall the scaling invariance of the Navier–Stokes equations: If u(x, t) and p(x, t) solve (1.1)–(1.3)
+with an initial datum u0 (x), then λu(λx, λ2 t) and λ2 p(λx, λ2 t) also solve the equations, but with the initial
+datum λu0 (λx). Spaces that are invariant under the above transformations are called critical spaces for the
+Navier–Stokes equations.
+
+  Date: November 26, 2007.
+  2000 Mathematics Subject Classification. 35Q30, 76D05, 35K15.
+  Key words and phrases. Navier–Stokes Equations, weak solutions, mild solutions, uniqueness, BM O−1 .
+                                                              1
+2                                        IGOR KUKAVICA AND VLAD VICOL
+
+   The existence and uniqueness of local mild solutions of the Navier–Stokes equations in the critical space
+Ln (Rn ) was proven by Kato in [Ka]. (For other existence results for the initial value problem also cf. [CF,
+FK, L, W].) The existence and uniqueness in a critical Morrey space was obtained by Taylor in [T] (also
+see Giga and Miyakawa [GM]). Koch and Tataru established in [KT] the existence and uniqueness of mild
+solutions on [0, T ) for initial datum in the critical space BM OT−1 , extending those previous results. They
+showed that there exists ε > 0 such that for all T > 0, if
+                                                       Z Z                          !1/2
+                                                             t
+                                                                           s∆      2
+                ku0 kBM O−1 = sup sup            t−n/2                 √ |e u0 (y)| dyds            < ε,
+                              T    0<t<T x∈Rn            0       |y−x|< t
+
+and if u0 is divergence free, there exists a unique local mild solution u ∈ ET of (1.1)–(1.3) on Rn × [0, T ).
+Here ET is defined as u ∈ L2uloc,x L2t (Rn × [0, T )) such that
+                                                                         Z tZ                            !1/2
+                          √
+       kukET = sup            tku(·, t)kL∞ + sup sup             t−n/2                           2
+                                                                                      √ |u(y, s)| dyds          < ∞.
+                  0<t<T                     x∈Rn 0<t<T                    0     |y−x|< t
+
+Moreover, if u0 belongs to the closure of S(Rn ) in BM O−1 , denoted by V M O −1 , there exists T > 0 and
+a mild solution u ∈ CT of (1.1)–(1.3) on Rn × [0, T ), where
+                                       CT = {v ∈ ET : lim kvkEτ = 0}.
+                                                             τ →0
+
+For further results on solutions evolving from BM OT−1 initial datum see for instance [ADT, GPS, L] and
+references therein.
+   In the present paper, we prove that if u ∈ ET is a weak solution of (1.1)–(1.3), then there exists φ(t) ∈
+L∞ ((0, T R )), with limt→0 φ(t) = 0, such that u
+                                                e(x, t) = u(x − Φ(t), t) + φ(t) ∈ ET is a mild solution, where
+            t
+Φ(t) = 0 φ(s)ds. Our main result states that all weak solutions u ∈ CT are obtained from the unique CT -
+mild solution by the transgalilean transformation u 7→ u  e described above. We also give a natural necessary
+and sufficient condition for a weak solution to be mild, and hence for weak solutions to be unique, in terms
+of the pressure. This generalizes the results in [GIKM, K, Ku].
+   Even though weak solutions in ET are bounded for positive time, the results in [Ku] do not apply here
+since we are considering the uniqueness at t = 0. We note that the criticality of the problem creates several
+difficulties which do not arise in the L∞ case [Ku], including the definition of a weak solution and the
+behavior of weak solutions as t → 0. A consequence of Lemma 3.1 is that the class of weak solutions we
+consider is contained in the class of weak solutions in [Ku]. Thus, even when restricting the class of weak
+solutions, we prove that uniqueness still fails.
+   The paper is organized as follows. In Section 2 we give the definition of a weak solution and state the
+main theorems. Section 3 contains the proof that a weak solution attains the initial value in the sense of
+distributions, and that every mild solution is a weak solution. Lemma 3.3 is the main ingredient of the
+proofs of our main theorems. Both, Theorem 2.1 and Theorem 2.2, are then proven at the end of Section 3.
+
+                                                2. M AIN R ESULTS
+   The summation convention on repeated indices will be used throughout. We shall use the same notation
+for scalars and vectors. In the following, C denotes a sufficiently large, positive generic constant depending
+only on n, while the additional dependence on a quantity will be represented by a lower index. Lastly,
+limt→0 denotes limt→0+ .
+   Throughout this paper, fix T > 0 and u0 ∈ BM OT−1 such that ∇ · u0 = 0 in D ′ (Rn ).
+Definition. We say that u ∈ ET is a weak solution of the initial value problem (1.1)–(1.3) on Rn × [0, T )
+if it is weakly divergence free and there exists p ∈ L1loc (Rn × (0, T )) such that for all ψ = (ψ1 , . . . , ψn ) ∈
+C0∞ (Rn × [0, T )):
+                        LOCAL UNIQUENESS OF WEAK SOLUTIONS TO THE NAVIER-STOKES SYSTEM                          3
+
+     (i) The following limit exists
+                                      Z TZ                  Z TZ
+                                             p∂k ψk = lim          p∂k ψk .                                (2.1)
+                                        0+             ε→0 ε
+
+    (ii) For any k = 1, . . . , n, we have
+                  Z TZ                                  Z TZ           Z
+                         uk (∂t ψk + ∆ψk + uj ∂j ψk ) +      p∂k ψk = − u0k ψk (·, 0).                     (2.2)
+                        0                                  0+
+
+   Note that |u|, |u|2 ∈ L1loc (Rn × [0, T )) for all u ∈ ET , which shows that the first integral on the left of
+(2.2) is well-defined. We shall refer to a weak/mild solution of (1.1)–(1.3) on Rn × [0, T ) with the initial
+datum u0 simply as a weak/mild solution of (N SE)u0 on [0, T ). Note that as opposed to [FJR], we work in
+D ′ instead of S ′ . We now state our main result.
+Theorem 2.1. A function u ∈ ET is a weak solution of (N SE)u0 on [0, T ) if and only if there exists
+                e ∈ ET of (N SE)u0 on [0, T ), and a function φ = (φ1 , . . . , φn ) ∈ L∞ ((0, T )) with
+a mild solution u
+limt→0 φ(t) = 0, such that
+                                       u(x, t) = u
+                                                 e(x − Φ(t), t) + φ(t),
+                Rt
+where Φ(t) = 0 φ(s)ds.
+   Additionally, if u(1) and u(2) ∈ CT (or if ku(1) kET and ku(2) kET are sufficiently small) are two weak
+solutions of (N SE)u0 on [0, T ), then there exists φ as above such that u(1) (x, t) = u(2) (x − Φ(t), t) + φ(t).
+  Note that by [KT] and Lemma 3.2 below, if u0 ∈ V M O−1 , the closure of S(Rn ) in BM O−1 , there exists
+T > 0 and a weak solution u ∈ CT of (N SE)u0 on [0, T ). The following natural condition guarantees the
+uniqueness of weak solutions.
+Theorem 2.2. There is at most one u ∈ ET which is a is a weak solution of (N SE)u0 on [0, T ) and for
+which the associated pressure p satisfies
+                                          p(x, t) = o(|x|), |x| → ∞,                                       (2.3)
+for a.e. t ∈ (0, T ).
+   The proof of Theorem 2.2 shows that (2.3) may be replaced by kp(·, t)kL1 (x+Q1 ) = o(|x|) as |x| → ∞
+for a.e. t ∈ (0, T ), where x + Q1 represents the unit cube in Rn centered at x. This is a weaker condition
+on the pressure than in [GIKM, K, Ku].
+   We recall the definition of the j-th Riesz-transform Rj as the Fourier multiplier iξj /|ξ| (cf. [St, Chapter
+3]). We shall denote the composition of the Riesz-transforms Ri and Rj by Rij . It is well known that Rij is
+a Calderón-Zygmund operator, and in particular it is bounded from L∞ to BM O [F].
+Remark 2.3. Several comments are in order to justify our definition of a weak solution of (N SE)u0 on
+[0, T ):
+     (a) In the case u0 ∈ Lp , where 1 < p < ∞, a weak solution of (1.1)–(1.3) is commonly defined,
+         for instance in [FJR], as a divergence free vector field u ∈ Lq (0, T ; Lp (Rn )), such that for any
+         ψ ∈ S(Rn × [0, T )), with div(ψ(·, t)) = 0 for all 0 ≤ t < T , and for all k = 1, 2, . . . , n
+                           Z TZ                                    Z
+                                 uk (∂t ψk + ∆ψk + uj ∂j ψk ) = − u0k ψk (·, 0).                         (2.4)
+                                0
+         If we allow u0 (x) and u(x, t) not to decay at infinity, for instance u0 (x) = 1 for all x ∈ Rn , then
+         letting uk (x, t) = 2 for all (x, t) ∈ Rn × (0, T ), we have that for any ψ as above
+                           Z TZ                                          Z
+                                 uk (∂t ψk + ∆ψk + uj ∂j ψk ) = 0 = − u0k ψk (·, 0).
+                            0
+4                                        IGOR KUKAVICA AND VLAD VICOL
+                                                                              R
+         This is because for any φ ∈ S(Rn ) with div(φ) = 0, we have that φ = 0 (cf. [MS]). Thus, (2.4)
+         for divergence free test functions ψ would allow the constant function 2 to be a weak solution of
+         (1.1)–(1.3) with the initial condition 1.
+                                                                                    −1
+     (b) The solutions constructed by Koch and Tataru (cf. [KT]) for u0 ∈ BM   √ OT , have the    property that
+         the associated pressure is given by p = Rij (ui uj ). Moreover, since t u(x, t) ∈ L∞ (Rn × [0, T ))
+         and Rij maps L∞ to BM O, we obtain that sup0<t<T t kp(·, t)kBM O < ∞. But this does not
+                                                               R TR
+         guarantee that p ∈ L1loc (Rn × [0, T )), and therefore 0 p · ∇ψ is not assured to exist as a Lebesgue
+         integral. This explains the requirement (2.1).
+                                                   R TR
+     (c) The following example suggests that 0 p · ∇ψ might not always exist in the Lebesgue sense.
+         Namely, uk (x, t) = t sin(1/t) and p(x, t) = −xk (sin(1/t) − (1/t) cos(1/t)) solve (1.1)–(1.3) with
+         initial datum u0 (x) = 0. However, for ψ ∈ C0∞ (Rn × [0, T )) which does not vanish identically at
+                                             R TR
+         t = 0, one can readily verify that 0 |p∂k ψk | = ∞.
+
+                                           3. P ROOFS OF R ESULTS
+    The following lemma shows how weak solutions behave as time converges to 0.
+Lemma 3.1. If u ∈ ET is a weak solution of (N SE)u0 on [0, T ), then u(·, t) → u0 in D ′ (Rn ) as t → 0.
+Moreover, if the pressure associated to u is given by p = Rij (ui uj ), then the convergence holds in S ′ (Rn ).
+  Using the explicit representation of the kernel Kij one can prove (cf. [L, Proposition 11.1]) that for
+f ∈ S(Rn ) and i, j, k ∈ {1, . . . , n} we have
+                                                                    1
+                                        |Rij (∂k f )(x)| ≤ Cf              ,                       (3.1)
+                                                              (1 + |x|)n+1
+where Cf can be taken
+                                     X                                X
+                         Cf =              k(1 + |ξ|)∂ α fˆ(ξ)kL1 +          k∂ α fˆkL∞ .          (3.2)
+                                 |α|≤n+1                            |α|≤n+2
+
+Proof of Lemma 3.1. Since we are interested in the behavior of u(·, t) as t → 0, and since BM OT1 ⊆
+BM OT2 whenever 0 < T2 ≤ T1 , we may assume in this proof that T ≤ 1. First we prove the lemma
+√ a general p ∞
+for               ∈ L1loc (Rn × (0, T )). Let ϕ R= (ϕ1 , . . . , ϕn ) ∈ D(Rn ) be a fixed test function. Since
+  t uk (x, t) ∈ L (Rn × [0, T )), we have that uk (·, t)ϕkR ∈ L1 ([0, T )).
+   Fix τ ∈ (0, T /2) which is a point in the Lebesgue set of uk (·, t)ϕk . For each integer m ≥ 1/τ we define
+a nonincreasing function αm ∈ C0∞ ([0, T )) by αm = 1 on [0, τ ] and αm = 0 on [τ + 1/m, 2τ ]. Let the
+sequence {αm } also satisfy (1/m)kα′m kL∞ < C, for all m ≥ 1/τ . Then αm (t)ϕ(x) ∈ C0∞ (Rn × [0, T )),
+and according to (2.2) with ψk (x, t) = αm (t)ϕk (x), we have
+            Z 2τZ              Z 2τZ                                 Z 2τZ                Z
+                        ′
+                   uk αm ϕk +          uk αm (∆ϕk + uj ∂j ϕk ) +           pαm ∂k ϕk = − u0k ϕk .         (3.3)
+             0                   0                                    0+
+                                           R 2τ
+Note that supp α′m ⊂ [τ, τ + 1/m] and       0     α′m (t)dt = αm (2τ ) − αm (0) = −1. The Lebesgue Differenti-
+ation Theorem implies that
+                             Z 2τZ                                    Z
+                       lim           uk (x, t)α′m (t)ϕk (x)dxdt = −        uk (x, τ )ϕk (x)dx.             (3.4)
+                      m→∞ 0
+
+Sending m → ∞ in (3.3) we obtain
+      Z                     Z                  Z τZ                        Z τZ
+        uk (x, τ )ϕk (x)dx − u0k (x)ϕk (x)dx =      uk (∆ϕk + uj ∂j ϕk ) +      p∂k ϕk .                   (3.5)
+                                                          0                               0+
+To analyze the first term on the right of (3.5), note that
+                       Z τZ               Z τ
+                                                                            √
+                            |uk ∆ϕk | ≤       kuk (·, t)kL∞ k∆ϕk kL1 dt ≤ Cϕ τ kukEτ .                     (3.6)
+                        0                  0
+                       LOCAL UNIQUENESS OF WEAK SOLUTIONS TO THE NAVIER-STOKES SYSTEM                         5
+
+              √
+Letting q = 1/ n and M ≥ q be the smallest number such that supp ϕ ⊆ [−M + q, M − q]n , we get
+               Z τZ                          X            Z τZ
+                    |uk uj ∂j ϕk | ≤                              √    √
+                                                                          |uk | |uj | |∂j ϕk |
+                0                        n
+                                            √           n  0 |x−kq τ |≤ τ
+                                     k∈Z ,kq τ ∈[−M,M ]
+                                               
+                                      n/2   M n
+                    ≤ C k∇ϕkL τ   ∞         √     kuk2Eτ ≤ Cϕ kuk2Eτ .                         (3.7)
+                                              τ
+By the Dominated Convergence Theorem we also obtain that
+                                        Z τZ
+                                    lim       uk uj ∂j ϕk = 0,                                            (3.8)
+                                          τ →0 0
+
+without making the assumption that limτ →0 kukEτ = 0. Observe that the condition (i) in the definition of a
+weak solution implies that for any ψ ∈ C0∞ (Rn × [0, T ))
+                                             Z τZ
+                                         lim         p∂k ψk = 0.                                      (3.9)
+                                            τ →0 0+
+
+Indeed, by the definition of the limit in (2.1), for any ε > 0, there exists δ0 > 0 such that for any 0 < δ2 <
+                   Rδ R
+δ1 < δ0 , we have δ21 p∂k ψk < 2ε, which proves (3.9). Now collecting (3.5)–(3.9) we obtain the desired
+                                              R
+D ′ convergence, along the Lebesgue set of uk (·, t)ϕk ; namely,
+                             Z
+                         lim (uk (x, τ ) − u0k (x)) ϕk (x)dx
+                        τ →0
+                                Z τZ                                Z τZ
+                         = lim         uk (∆ϕk + uj ∂j ϕk ) + lim           p∂k ϕk = 0,                  (3.10)
+                              τ →0 0                             τ →0 0+
+
+ where all the limits in τ are taken on the Lebesgue set. Choosing another suitable sequence αm (t) ∈
+ C0∞R ([0, T )) and proceeding as above, we prove the weak continuity of uk in time, i.e., the continuity in t
+ of uk (·, t)ϕk . This shows that the limit in (3.10) can be taken along any sequence τ → 0 (not necessarily
+ along the Lebesgue set).
+    Now, assume that p = Rij (ui uj ), and let ϕ = (ϕ1 , . . . , ϕn ) ∈ S(RnR). Fix a smooth radial function
+ θ ∈ D(Rn ) that is identically 1 in a neighborhood of the origin, with θ = 1. For any R ∈ N and
+         n
+Rx ∈ R , let θR (x)R = θ(x/R). Also fix τ ∈ (0, T /2), an element in the intersection of the Lebesgue sets of
+   uk (·, t)ϕk and uk (·, t)θR ϕk , for R ∈ N. Define αm (t) be as above, and substitute αm (t)θR (x)ϕk (x) in
+ (2.2) to obtain
+            Z 2τZ                Z
+                       ′
+                   uk αm θR ϕk + u0k θR ϕk
+              0
+                    Z 2τZ                                      Z 2τZ
+                 =        uk αm (∆(θR ϕk ) + uj ∂j (θR ϕk )) +         Rij (ui uj )αm ∂k (θR ϕk )
+                   0                                              0+
+                  Z 2τZ                                          Z 2τZ
+              =           uk αm (∆(θR ϕk ) + uj ∂j (θR ϕk )) +           ui uj αm Rij (∂k (θR ϕk )) .   (3.11)
+                   0                                              0
+As in (3.5) we send m → ∞ and use the Lebesgue Differentiation Theorem to get
+              Z              Z
+                 u0k θR ϕk − uk (·, τ )θR ϕk
+                           Z τZ                                   Z τZ
+                         =      uk (∆(θR ϕk ) + uj ∂j (θR ϕk )) +      ui uj Rij (∂k (θR ϕk )) .        (3.12)
+                               0                                         0
+For R ∈ N, similarly to (3.6), we have
+                      Z τZ
+                                                     √
+                             |uk ∆((1 − θR )ϕk )| ≤ C τ kukEτ k∆((1 − θR )ϕk )kL1 ,                     (3.13)
+                          0
+6                                        IGOR KUKAVICA AND VLAD VICOL
+
+which converges to 0 as R → ∞. We also have
+                                    Z τZ
+                                lim       uk uj ∂j ((1 − θR )ϕk ) = 0.                                    (3.14)
+                                    R→∞      0
+The proof is similar to the pressure term , treated next. To bound the last term on the right of (3.12), we split
+the space integral into cubes and use the decay rate given by (3.1) to obtain that for R ∈ N we have
+   Z τZ                                                    X          √
+                                                       2             ( τ )n
+         |ui uj Rij ∂k ((1 − θR )ϕk )| ≤ C(1−θR )ϕ kukEτ                  √ n+1 ≤ C(1−θR )ϕ kuk2Eτ , (3.15)
+     0                                                        n
+                                                                (1 + |k|q  τ)
+                                                            k∈Z
+                                                                    1/2           1/2
+where C(1−θR )ϕ is given by (3.2). Using that kf kL1 ≤ Ckf kL2 k|x|n f kL2 holds for f ∈ S(Rn ), and the
+Hausdorff-Young Inequality, it is then easy to show that ϕ ∈ S(Rn ) implies C(1−θR )ϕ → 0 as R → 0. In
+(3.15) we also used that
+                                            X           √
+                                                       ( τ )n
+                                     sup                   √        ≤ C,                          (3.16)
+                                    0<τ <1       (1 + |k|q τ )n+1
+                                           k∈Zn
+              √
+where q = 1/ n as earlier. Let us now analyze the left side of (3.12). We first show that
+                                      Z
+                                lim      uk (x, τ )(1 − θR (x))ϕk (x)dx = 0.
+                                 R→∞
+
+The above follows from the Dominated Convergence Theorem and
+                              Z
+                                                                    1
+                                 |uk (x, τ )ϕk (x)|dxdt ≤ Cϕ kukEτ √ .
+                                                                     τ
+We now prove that
+                                         Z
+                                   lim       u0k (x)(1 − θR (x))ϕk (x)dx = 0.                             (3.17)
+                                  R→∞
+
+This follows by writing u0 = v0 + ∂i vi , for appropriate functions vi ∈ BM OT for all i = 0, 1, . . . , n (cf.
+[KT, L]). Since v0 ∈ BM OT , we also have |v0 | ∈ BM OT ; hence,
+                 Z                                  XZ
+                    |v0j (x)| |ϕj (x)|dx ≤ kϕj kL ∞                     |v0j (x)|dx
+                                                         k∈Zn   kT /2+[0,T /2]n
+                                X                                     1
+                       ≤ CT,ϕ          (1 + |k|) kv0 kBM OT                  ≤ Cϕ,T kv0 kBM OT .
+                                                                (1 + |k|)n+2
+                                k∈Zn
+
+In the above we used that ϕ ∈ S and that the difference between the averages of |v0 | on two cubes Q and
+Q′ of volume T , but whose centers are at distance |k| apart, is proportional to (1 + |k|) kv0 kBM OT , with an
+implicit constant depending on T . Similarly one can show that the terms with ∂i vi have an R-independent
+L1 bound, and hence (3.17) follows from the Dominated Convergence Theorem.
+   Collecting (3.12)-(3.17), we obtain by letting R → ∞ that
+      Z                                     Z τZ                          Z τZ
+          (uk (x, τ ) − u0k (x)) ϕk (x)dx =       uk (∆ϕk + uj ∂j ϕk ) +         ui uj Rij (∂k ϕk ) .    (3.18)
+                                                 0                                0
+Using similar bounds as before we note that
+            Z τZ                           Z τZ
+                                                                           √
+                  |uk (∆ϕk + uj ∂j ϕk )| +      |ui uj Rij (∂k ϕk )| ≤ Cϕ ( τ + kukEτ )kukEτ ,
+              0                                      0
+and hence the Dominated Convergence Theorem implies that the right of (3.18) vanishes as τ →R0, along se-
+quences in the above mentioned intersection of Lebesgue sets. We again prove the continuity of uk (·, t)ϕk
+in the variable t and obtain the desired S ′ convergence along any sequence τ → 0, completing the proof of
+the lemma.                                                                                               
+                    LOCAL UNIQUENESS OF WEAK SOLUTIONS TO THE NAVIER-STOKES SYSTEM                              7
+
+  We recall that the Hopf–Leray projector is given explicitly by (Pf )k = fk + Rkj fj . This allows us to
+                                                                     2
+write (1.4) in terms of the heat kernel G(x, t) = (4πt)−n/2 e−|x| /4t for all (x, t) ∈ Rn × (0, ∞). Thus
+u ∈ ET is a mild solution of (N SE)u0 on [0, T ) if
+                   Z tZ                                                        Z
+     uk (x, t) = −       (δik + Rjk )∂j G(x − y, t − s)ui (y, s)uj (y, s)dyds + G(x − y, t)u0k (y)dy
+                    0
+                   Z tZ
+               =−        ∂j G(x − y, t − s)uj (y, s)uk (y, s)dyds
+                    0
+                      Z tZ                                     Z
+                   −         ∂k G(x − y, t − s)p(y, s)dyds + G(x − y, t)u0k (y)dy                  (3.19)
+                        0+
+
+for a.e. (x, t) ∈ Rn × [0, T ), where p = R   ij (ui uj ). In Lemma 3.2, using the decay rate of ∂k (Rij G(x, t))
+at infinity (cf. [FJR]), we prove that every mild solution of (N SE)u0 on [0, T ) is also a weak solution, as
+defined above, with the same initial datum.
+   Note that the function u(x, t) = t, for all (x, t) ∈ R × [0, T ), is a weak solution of (N SE)0 on [0, T ),
+but that the unique mild solution with u0 (x) = 0 is u(x, t) = 0. Hence, a weak solution of (N SE)u0 on
+[0, T ) need not be mild.
+Lemma 3.2. If u ∈ ET is a mild solution of (N SE)u0 on [0, T ), then u is also a weak solution of (N SE)u0
+on [0, T ).
+                                                                 √
+Proof of Lemma 3.2. Let p = Rij (ui uj ). Since sup0<t<T t kuk (·, t)kL∞ < ∞, and since Rij maps L∞
+to BM O, we have sup0<t<T t kp(·, t)kBM O < ∞, and hence p ∈ L1loc (Rn × (0, T )). We now need to
+check that p satisfies the condition (i) in the
+                                             √ definition of a weak solution. For all 0 < τ1 < τ2 < τ ≤ T and
+ψ ∈ C0∞ (Rn × [0, T )), by letting q = 1/ n, we have
+          Z τ2Z                               Z τ2Z
+                 p(x, t)∂k ψk (x, t)dxdt ≤           |ui (x, t)uj (x, t)Rij (∂k ψk )(x, t)dxdt|           (3.20)
+            τ1                                  τ1
+                                          Z τZ                                !
+                      X                                                                            1
+               ≤ Cψ        τ n/2 τ −n/2             √     √
+                                                              |u(x, t)|2 dxdt        sup
+                                                                                      √    √ (1 + |x|)n+1
+                     k∈Zn                  0 |x−kq τ |< τ                       |x−kq τ |< τ
+                             X           √    n
+                                        ( τ)
+               ≤ Cψ kuk2Eτ                   √      .
+                                n
+                                  (1 + |k|q τ )n+1
+                             k∈Z
+
+As earlier, the last sum in the above inequality is finite for any 0 < τ ≤ T , and (3.16) holds. Since the
+above is satisfied for all 0 < τ1 < τ2 < τ , the Dominated Convergence Theorem shows that the right term
+of (3.20) converges to 0 as τ → 0, and hence (2.1) holds. It remains to be shown that u and p satisfy (2.2).
+For this purpose, let ψ ∈ C0∞ (Rn × [0, T )). Using that uk is given by (3.19), we can calculate ∂t uk − ∆uk
+in D ′ (ε, T ). For any 0 < ε < T we have
+                     Z TZ                                               Z
+                                                                 
+                            uk (∂t ψk + ∆ψk + uj ∂j ψk ) + p∂k ψk = − uk (·, ε)ψk (·, ε).
+                    ε
+By uk ∈ ET , and by the previous discussion, R                      R above equation is well–defined for ε = 0.
+                                                  the left side of the
+Thus it remains to be shown that limε→0 uk (·, ε)ψk (·, ε) = u0k ψk (·, 0). We write
+          Z                      Z
+            uk (·, ε)ψk (·, ε) − u0k ψk (·, 0)
+                 Z                                        Z
+              ≤ |uk (·, ε)| |ψk (·, ε) − ψk (·, 0)| +        (uk (·, ε) − u0k (·)) ψk (·, 0)
+                                                                   Z
+                                −1/2
+              ≤ ku(·, ε)kEε ε        kψk (·, ε) − ψk (·, 0)kL1 +       (uk (·, ε) − u0k (·)) ψk (·, 0) .  (3.21)
+8                                      IGOR KUKAVICA AND VLAD VICOL
+
+Since ψk ∈ C0∞ (Rn × [0, T )), the mean value theorem implies that the first term on the far right side of
+(3.21) converges to 0 as ε → 0. To approximate the second term, use the definition of uk (x, t) in (3.19), to
+obtain
+                              Z
+        uk (x, ε) − u0k (x) = G(x − y, ε)u0k (y)dy − u0k (x)
+                 Z εZ                                                                   
+              +          ∂k G(x − y, ε − s)p(y, s) + ∂j G(x − y, ε − s)uj (y, s)uk (y, s) dyds.       (3.22)
+                 0+
+                                                                                       ′   n
+                                                                      √ n+1to 0 in D (R ) as ε → 0. Since
+The proof of the lemma is complete if the right side of the above converges
+p = Rij (ui uj ) and max{|∂j G(y, s)|, |∂k Rij G(y, s)|} ≤ C/(|y| + s)         (cf. [FJR]), we may split the
+space integral into cubes and obtain that the second term in (3.22) converges in to 0 as ε → 0. Moreover
+                     Z Z                                   
+                            G(x − y, ε)u0k (y)dy − u0k (x) ψk (x, 0)dx → 0 as ε → 0,
+
+since the heat semigroup eε∆ converges to the identity in S ′ as ε → 0, proving the lemma.                   
+
+    The following lemma proves the first part of Theorem 2.1.
+Lemma 3.3. If u ∈ ET is a weak solution of (N SE)u0 on [0, T ), then there exists u    e ∈ ET , a mild solution
+                                                                 ∞
+of (N SE)u0 on [0, T ), and a function φ = (φ1 , . . . , φn ) ∈ L ((0, T )), with limt→0 φ(t) = 0, such that
+                         u(x, t) = u
+                                   e(x − Φ(t), t) + φ(t),       (x, t) ∈ Rn × [0, T )
+               Rt
+where Φ(t) = 0 φ(s)ds.
+  Moreover, if u ∈ CT then u  e ∈ CT . A weak solution u ∈ CT of (N SE)u0 on [0, T ) is a mild solution if
+and only if the associated pressure satisfies p = Rij (ui uj ).
+Proof of Lemma 3.3. As in [Ku], we first prove that there exists a function φ ∈ L∞ ((0, T ), Rn ), with
+limt→0 φ(t) = 0, such that
+                                ∂t uk − ∆uk + ∂j (uj uk ) + ∂k π + φ′k (t) = 0                          (3.23)
+
+holds in D ′ (Rn × (0, T )), where π = Rij (ui uj ).
+   Since u is a weak solution of (N SE)u0 on [0, T ), there exists p ∈ L1loc (Rn × (0, T )) such that the
+conditions (i) and (ii) hold. In particular, taking the divergence of (2.2), and using that both u and u0 are
+divergence-free, we obtain that ∆p = −∂j ∂k (uj uk ) = ∆π in D ′ (Rn × (0, T )). Let ph = p − π be
+the harmonic component of the pressure. Following [Ku] one can show that for 1 ≤ k ≤ n, ∂k ph is a
+distribution depending only on t, and hence (3.23) holds in D ′ (Rn × (0, T )) with ∂k ph instead of φ′k . We
+therefore define
+                      Z                      Z                   Z tZ
+              φk (t) = uk (x, t)β(x)dx − u0k (x)β(x)dx −               uk (x, s)∆β(x)dxds
+                                                                   0
+                         Z tZ                                   Z tZ
+                      −        uk (x, s)uj (x, s)∂j β(x)dxds −        π(x, s)∂k β(x)dxds, t > 0        (3.24)
+                         0                                      0+
+                                  R
+where β ∈ D(Rn ) is fixed, with     β = 1. We need to check that limt→0+ φk (t) = 0. As is in the proof of
+Lemma 3.1, the last three terms on the right hand side of (3.24) are bounded as
+                          Z                     Z
+                                                                         √
+             |φk (t)| ≤      uk (x, t)β(x)dx − u0k (x)β(x)dx + Cβ ( t + kukEt )kukEt .
+
+Using the fact that u(·, t) → u0 in D ′ (Rn ) as t → 0, and the Dominated Convergence Theorem as in (3.8),
+we obtain the desired convergence of φ.
+                       LOCAL UNIQUENESS OF WEAK SOLUTIONS TO THE NAVIER-STOKES SYSTEM                             9
+
+  Define ue(x, t) = u(x − Φ(t), t) + φ(t) and pe(x, t) = π(x − Φ(t), t). We claim that u
+                                                                                       e is a weak solution
+with the associated pressure pe. The fact that u
+                                               e ∈ ET follows from
+                                               √
+                        ukEτ ≤ kukEτ + C( τ + τ )kφkL∞ + Ckuk2Eτ sup N (t),
+                       ke                                                                            (3.25)
+                                                                             0<t<τ
+                          √          n                                 √
+where N (t) ≤ C 1 + tkφkL∞ is the number of balls of radius t necessary to cover the ball of radius
+√
+   t + tkφ(t)kL∞ . Note that if u ∈ CT all terms on the right of (3.25) vanish as τ → 0, proving that u    e ∈ CT .
+After a short verification, we check that u   e and pe satisfy condition (ii) of the definition of a weak solution.
+Condition (i) is satisfied by pe = Rij (e ui u
+                                             ej ) due to Lemma 3.2. This proves our claim, and by Lemma 3.1
+we can conclude that u  e attains the initial value in S ′ .
+    Following the arguments in [FJR] and [Ku] we now show that u        e is actually a mild solution, proving the
+first claim in the lemma. Let θ ∈ D(Rn ) be identically 1 in a neighborhood of 0. For R > 0 and y ∈ Rn let
+θR (y) = θ(y/R). Also fix α ∈ C ∞ (R) such that 0 ≤ α ≤ 1, α′ ≥ 0, α(s) = 0 for s ≤ 1 and α(s) = 1 for
+2 ≤ s. For a fixed (x, t) ∈ Rn × [0, T ) and for any ε > 0, define
+                                             s t − s
+                              ψ(y, s) = α          α           θR (y)G(x − y, t − s),
+                                               ε         ε
+for any (y, s) ∈ Rn × [0, T ). Since supp (α(s/ε)α((t − s)/ε)) ∈ (ε, t − ε) and α(s/ε)α((t − s)/ε) = 1
+for s ∈ (2ε, t − 2ε), we have ψ ∈ D(Rn × (0, T )). Moreover, letting R → ∞, we obtain θR (y) → 1 for
+every y ∈ Rn ; using ψ as a test function in (2.2), we have
+                   Z Z
+                  1 T                    t − s
+                                      ′ s
+                          u
+                          ek (y, s)α          α              G(x − y, t − s)dyds
+                  ε 0                     ε          ε
+                         1 T
+                            Z Z                  s t − s
+                       −            u
+                                    ek (y, s)α         α′           G(x − y, t − s)dyds
+                         ε 0                       ε           ε
+                         Z TZ                          s t − s
+                       −         uek (y, s)euj (y, s)α        α          ∂j G(x − y, t − s)dyds
+                           0                              ε         ε
+                         Z TZ                 s t − s
+                       −         pek (y, s)α        α            ∂k G(x − y, t − s)dyds = 0.     (3.26)
+                           0+                   ε           ε
+We analyze the behavior of the first term on the left side of (3.26). For t ≥ 4ε this term equals
+                                  Z 2εZ
+                           (1/ε)         uek (y, s)α′ (s/ε) G(x − y, t − s)dyds.
+                                       ε
+             R 2ε
+Since (1/ε) ε       α′ (s/ε)ds = 1, we re-write this term as
+           Z            Z
+        1 2ε ′  s 
+               α           u
+                           ek (y, s) (G(x − y, t − s) − G(x − y, t)) dyds
+        ε ε         ε
+              Z             Z                                             Z
+             1 2ε ′  s 
+         +          α          (e
+                                uk (y, s) − u0k (y)) G(x − y, t)dyds + u0k (y)G(x − y, t)dy.               (3.27)
+             ε ε        ε
+The first term in the above expression can be bounded as
+                         Z
+                       1 2ε ′  s 
+                               α        uk (·, s)kL∞ kG(x − ·, t − s) − G(x − ·, t)kL1 ds
+                                       ke
+                       ε ε         ε
+                                  Z
+                                1 2ε ′  s              1
+                             ≤          α         ukC2ε √ kG(·, t − s) − G(·, t)kL1 ds.
+                                                 ke
+                                ε ε         ε             s
+                                                             √
+Using the mean value theorem we check that lims→0 (1/ s)kG(·, t − s) − G(·, t)kL1 = 0. The Dominated
+Convergence Theorem implies that right side of the last inequality converges to 0 as ε → 0. The second term
+in (3.27) vanishes as ε → 0 since by Lemma 3.1 u     e(·, s) → u0 in S ′ (Rn ), while clearly G(·, t) ∈ S(Rn ) for
+all t > 0.
+10                                           IGOR KUKAVICA AND VLAD VICOL
+
+  Note that as ε → 0, we have (1/ε)α(s/ε)α′ ((t − s)/ε) → δt and α(s/ε)α((t − s)/ε) → χ(0,t) in D ′ (R).
+By letting ε → 0 in (3.26), for k = 1, . . . , n, and a.e. (x, t) ∈ Rn × [0, T ), we have
+                          Z tZ
+              u
+              ek (x, t) +        uek (y, s)e
+                                           uj (y, s)∂j G(x − y, t − s)dyds
+                           0
+                       Z t Z                                         Z
+                    +         pek (y, s)∂k G(x − y, t − s)dyds − u0k (y)G(x − y, t)dy = 0.
+                           0+
+We showed earlier that pe = Rij (e
+                                 ui u
+                                    ej ); thus u
+                                               e is a mild solution. Mild solutions are unique in CT (cf. [KT],
+[L]); hence a weak solution u ∈ CT is mild if and only if the associated pressure p satisfies p = Rij (ui uj ),
+proving the lemma.                                                                                           
+Proof of Theorem 2.1. Let u ∈ ET be a weak solution of (N SE)u0 on [0, T ). By Lemma 3.3, there exists a
+mild solution u e ∈ ET given by u  e(x, t) = u(x + Φ(t), t) − φ(t), for a suitable φ ∈ L∞ ((0, T )). Conversely,
+if u
+   e ∈ ET is a mild solution of (N SE)u0 on [0, T ), then by Lemma 3.2, this is a weak solution, and the
+function u(x, t) = u   e(x − Φ(t), t) + φ(t) ∈ ET is also a weak solution of (N SE)u0 on [0, T ), proving the
+first statement of the theorem.
+    Let u(1) and u(2) ∈ CT be two weak solutions of (N SE)u0 on [0, T ). By Lemma 3.3 there exist mild
+solutions ue(i) ∈ CT of (N SE)u0 on [0, T ), and functions φ(i) ∈ L∞ ((0, T )) with limt→0 φ(i) = 0, such
+       (i)
+that u (x, t) = u  e(i) (x − Φ(i) (t), t) + φ(i) (t), for i = 1, 2.
+    We claim that u e(1) = u e(2) a.e. in Rn × [0, T ). This is known (cf. [ADT]), but we sketch the proof to
+emphasize the necessity of u   e(i) ∈ CT (or that ku(i) kET is sufficiently small) for i = 1, 2. Denote B(u, v) =
+R t (t−s)∆
+  0 e       P∇ · (u ⊗ v)ds. Then u     e(1) (·, t) − u
+                                                     e(2) (·, t) = B(e u(1) , u
+                                                                              e(1) − u  e(2) ) + B(e  u(1) − u
+                                                                                                             e(2) , u
+                                                                                                                    e(2) ). For
+τ ∈ (0, T ), by [KT] we have that kB(u, v)kEτ ≤ C0 kukEτ kvkEτ , and hence
+                                                                             
+                           u(1) − u
+                          ke       e(2) kEτ ≤ C0 ke    u(1) kEτ + keu(2) kEτ ke   u(1) − u  e(2) kEτ .                   (3.28)
+                                                                                                            
+Since limτ →0 ke  u(i) kEτ = 0, for i = 1, 2, we can fix τ such that C0 ke            u(1) kEτ + ke u(2) kEτ ≤ 1/2. Then
+(3.28) shows that u  e(1) and ue(2) agree on [0, τ ). For t ≥ τ we have u       e(i) (·, t) ∈ L∞ for i = 1, 2, and hence
+u (1)
+e (·, t) = u   (2)
+              e (·, t) on [τ, T ) (cf. [FJR]).
+    Thus letting φ(t) = φ(1) (t) − φ(2) (t), we obtain that u     e(1) (x, t) = u e(2) (x − Φ(t), t) + φ(t), concluding
+the proof of the Theorem.                                                                                                    
+Proof of Theorem 2.2. By Theorem 2.1, in order to show that a weak solution u ∈ ET of (N SE)u0 on [0, T )
+is unique, it suffices to prove that the function φ(t) constructed in Lemma 3.3 is identically 0 on [0, T ).
+   We write π = Rij (ui uj ) and ph = p − π. It was shown earlier that ∆ph = 0 in D ′ (Rn ) and that
+π(·, t) ∈ BM O for a.e. t > 0. We denote x + Q1 the unit cube centered at x in Rn . It then follows that for
+a.e. t > 0 and |x| > 1,
+                                   Z                   Z
+                                           |π(·, t)| −   |π(·, t)| ≤ Ct log |x|.
+                                       x+Q1                 Q1
+This shows that kπ(·, t)kL1 (x+Q1 ) = o(|x|), as |x| → ∞, for a.e. t ∈ (0, T ). Moreover, p = o(|x|), as
+|x| → ∞ implies kp(·, t)kL1 (x+Q1 ) = o(|x|), as |x| → ∞, and hence for a.e. t ∈ (0, T ) we have
+                    kph (·, t)kL1 (x+Q1 ) = kp(·, t) − π(·, t)kL1 (x+Q1 ) = o(|x|), as |x| → ∞.                        (3.29)
+The proof of Theorem 2.1 implies that ∂k ph = φ′k (t) in D ′ (Rn × (0, T )), which implies
+                                                    ph = xk φ′k (t) + f,                                               (3.30)
+where f ∈ D ′ (Rn × (0, T )) is a distribution of time. Based on the fact that ph = p − Rij (ui uj ) ∈
+L1loc (Rn × (0, T )) we obtain φ′k (t), f ∈ L1loc (Rn × (0, T )) for k = 1, 2, . . . , n. From (3.29) and (3.30) it
+follows that φ′k (t) = 0 for a.e. t ∈ (0, T ), and since limt→0 φk (t) = 0, we obtain φk (t) = 0 for t ∈ (0, T ),
+concluding the proof of the theorem.                                                                            
+                         LOCAL UNIQUENESS OF WEAK SOLUTIONS TO THE NAVIER-STOKES SYSTEM                                            11
+
+Acknowledgment. Both authors were supported in part by the NSF grant DMS–0604886.
+
+                                                          R EFERENCES
+[ADT]        P. Auscher, S. Dubois, and P. Tchamitchian, On the stability of global solutions to Navier-Stokes equations in the space,
+             J. Math. Pures Appl. (9) 83 (2004), no. 6, 673–697.
+[CF]         P. Constantin and C. Foias, Navier–Stokes equations, Chicago Lectures in Mathematics, University of Chicago Press,
+             Chicago IL, 1988.
+[F]          C. Fefferman, Characterizations of bounded mean oscillation, Bull. Amer. Math. Soc. 77 (1971), 587–588.
+[FJR]        E.B. Fabes, B.F. Jones and N.M. Riviere, The initial value problem for the Navier–Stokes equations with initial data in
+             Lp , Arch. Rational Mech. Anal. 45 (1972), 220–240.
+[FK]         H. Fujita and T. Kato, On the Navier–Stokes initial value problem I, Arch. Rational Mech. Anal. 16 (1964), 269–315.
+[GIKM]       Y. Giga, K. Inui, J. Kato and S. Matsui, Remarks on The Uniqueness of Bounded Solutions of The Navier–Stokes
+             Equations, Nonlinear Analysis: Theory, Methods & Applications 47 (2001), 4141–4156.
+[GPS]        P. Germain, N. Pavlović, and G. Staffilani, Regularity of solutions to the Navier-Stokes equations evolving from small
+             data in BM O−1 , arXiv:math/0609781v2 [math.AP].
+[GM]         Y. Giga ad T. Miyakawa, Navier–Stokes flow in R3 with measures as initial vorticity and Morrey spaces, Comm. Partial
+             Differential Equations 14, No. 5 (1989), 577–618.
+[K]          J. Kato, The Uniqueness of Nondecaying Solutions for the Navier–Stokes Equations, Arch. Rational Mech. Anal. 169
+             (2003), 159–175.
+[Ka]         T. Kato, Strong Lp -solutions of the Navier–Stokes equations in Rm with applications to weak solutions, Math. Zeit. 187
+             (1984), 471-480.
+[KT]         H. Koch and D. Tataru, Well Posedness for the Navier–Stokes equations, Adv. Math. 157 (2001), 22-35.
+[Ku]         I. Kukavica, On local uniqueness of weak solutions of the Navier–Stokes system with bounded initial data, J. Diff.
+             Eq. 194 (2003), No. 1, 39–50.
+[L]          P.G. Lemarié-Rieusset, Recent developments in the Navier–Stokes problem, Reserach Notes in Mathematics, Vol. 431,
+             Chapman & Hall/CRC Press, Boca Raton FL, 2002.
+[MS]         T. Miyakawa and M.E. Schonbek, On optimal decay rates for weak solutions to the Navier–Stokes equations, Math.
+             Bohemica 126 (2001), 443–455.
+[S]          J. Serrin, On the interior regularity of weak solutions of the Navier–Stokes equations, Arch. Rational Mech. Anal. 9
+             (1962), 187–195.
+[St]         E.M. Stein, Singular integrals and differentiability properties of functions, Princeton Mathematical Series, No. 30,
+             Princeton University Press, Princeton NJ, 1970
+[T]          M. Taylor, Analysis on Morrey spaces and applications to Navier–Stokes equation, Comm. Partial Differential Equa-
+             tions 17 (1992), 1407–1456.
+[W]          F. Weissler, The Navier–Stokes initial value problem in Lp , Arch. Rational Mech. Anal. 74 (1980), No. 3, 219–230.
+
+      D EPARTMENT OF M ATHEMATICS , U NIVERSITY OF S OUTHERN C ALIFORNIA , L OS A NGELES , CA 90089.
+      E-mail address: kukavica@usc.edu
+
+      D EPARTMENT OF M ATHEMATICS , U NIVERSITY OF S OUTHERN C ALIFORNIA , L OS A NGELES , CA 90089.
+      E-mail address: vicol@usc.edu
+

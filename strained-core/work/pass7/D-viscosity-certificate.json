@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "viscous_upper_strictly_below_four": true,
+  "radial_upper_strictly_below_120000": true,
+  "radial_second_derivative_energy": {
+    "interval": "[100952.1793303089676983218159257833218569, 113430.7471049831419909679864742410035166]",
+    "exact_dyadic_bounds": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "255944181444828033113005073714364715",
+        "exponent": -101
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "1150324437215746995662639719374396981",
+        "exponent": -103
+      }
+    },
+    "panels": 1024,
+    "strictly_positive": true,
+    "strictly_negative": false,
+    "width_display": 12478.567774674173
+  },
+  "viscous_upper_bound_interval": "[3.263029119503281114289078677167430340491, 3.658516517079472127305937188046058041206]",
+  "viscous_upper_bound_exact": {
+    "lower": {
+      "sign": 0,
+      "mantissa": "542163707088145637639162094904910155",
+      "exponent": -117
+    },
+    "upper": {
+      "sign": 0,
+      "mantissa": "1215750644385889419243421364113779287",
+      "exponent": -118
+    }
+  },
+  "sufficient_threshold": "5093339/210000",
+  "below_threshold": true,
+  "radial_upper_below_120000": true,
+  "viscous_upper_below_four": true,
+  "method": "one-dimensional outward range quadrature plus analytic energy/kernel bounds",
+  "scope": "upper bound for nu*d_w, not a direct pressure solve; Euler kernel proof separate"
+}

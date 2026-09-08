@@ -1,0 +1,19 @@
+=== (i) DEEP INTERIOR rho=64: exact two-sided collar and far remainder vs phi ===
+    phi(deg)  collar_exact  bound 4/s+pi/8    slack  |far-far0|  C1=0.292
+       45.00      0.166500            6.05       36x    0.013251     0.292
+       10.00      0.058156           23.43      403x    0.014073     0.292
+        3.00      0.052785           76.82     1455x    0.013468     0.292
+        1.00      0.052309          229.59     4389x    0.013410     0.292
+        0.30      0.052244          764.34    14630x    0.013403     0.292
+        0.10      0.052189         2292.23    43921x    0.013402     0.292
+        0.03      0.051993         7639.83   146940x    0.013402     0.292
+=== (ii) INNER EDGE rho=rho0+: one-sided collar (interior modes u in (1/2,1)) vs phi ===
+    phi(deg)    collar_in     far_rem  sum=c_edge-ish  (1/4)ln(1/phi)
+       10.00     0.577449   -0.014103        0.563347        0.436410
+        3.00     0.872970   -0.013498        0.859472        0.737404
+        1.00     1.147103   -0.013440        1.133663        1.012057
+        0.30     1.448206   -0.013434        1.434773        1.313050
+        0.10     1.726131   -0.013433        1.712698        1.587703
+        0.03     1.834461   -0.013433        1.821028        1.888696
+   fitted growth of the inner-edge collar: 0.21702 * log(1/phi)   (the BOUND grows like 4/phi)
+SCRIPT-SHA256 6150bcb4502216903a90eb16e527d351448ed47c5a0c32b01107a6ea31b638cf

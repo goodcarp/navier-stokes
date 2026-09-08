@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "kernel_operator_bound": "24/(4*pi*R^5)",
+  "exact_energy_upper": "2015718896182553/7560000000",
+  "coarse_energy_upper": 270000,
+  "absolute_tail_bound": "6E/[pi L(LN-6)^4] < 540000/[L(LN-6)^4]",
+  "tails": [
+    {
+      "period": 16,
+      "count": 8,
+      "bound_exact": "16875/110766728"
+    },
+    {
+      "period": 16,
+      "count": 16,
+      "bound_exact": "27/3125000"
+    },
+    {
+      "period": 16,
+      "count": 32,
+      "bound_exact": "16875/32777216648"
+    },
+    {
+      "period": 32,
+      "count": 8,
+      "bound_exact": "27/6250000"
+    },
+    {
+      "period": 32,
+      "count": 16,
+      "bound_exact": "16875/65554433296"
+    },
+    {
+      "period": 32,
+      "count": 32,
+      "bound_exact": "16875/1073967432976"
+    },
+    {
+      "period": 64,
+      "count": 8,
+      "bound_exact": "16875/131108866592"
+    },
+    {
+      "period": 64,
+      "count": 16,
+      "bound_exact": "16875/2147934865952"
+    },
+    {
+      "period": 64,
+      "count": 32,
+      "bound_exact": "16875/34773863631392"
+    }
+  ],
+  "dependencies": [
+    "cutoff monotonicity and |chi derivative|<4 from pass6 cutoff certificate",
+    "Pass8 R0<=392/5 and Z0<=12/5; unchanged supports and lambda=1/4"
+  ],
+  "scope": "Exact omitted-image bound; retained image integrals still require quadrature enclosures for a full certificate."
+}

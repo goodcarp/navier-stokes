@@ -1,0 +1,82 @@
+==============================================================================
+(1) sanity: the exact procedure reproduces the truth of (c) (p = 1/5)
+==============================================================================
+     kappa       c1        mu_fix      mu_p(p=1/5)   mu_p<=mu_fix (c) true?
+       1e-06     5e-01   5.0000e-01   5.0000e-01   True
+       1e-03     5e-01   5.0000e-01   5.0000e-01   True
+       1e+00     5e-01   5.0000e-01   5.0000e-01   True
+       1e+03     5e-01   6.7846e-02   6.3229e-02   True
+       1e+06     5e-01   3.5343e-02   3.3748e-02   True
+       1e+09     5e-01   2.3837e-02   2.3017e-02   True
+       1e+12     5e-01   1.7968e-02   1.7464e-02   True
+       1e+15     5e-01   1.4413e-02   1.4069e-02   True
+       1e+18     5e-01   1.2030e-02   1.1780e-02   True
+       1e+21     5e-01   1.0322e-02   1.0131e-02   True
+       1e+24     5e-01   9.0382e-03   8.8870e-03   True
+   (c) verified TRUE on every grid point of the exact procedure: True
+
+==============================================================================
+(2) the exponent mutants p < 1/5 are FALSE FOR EVERY p -- explicit witnesses
+    Take K = s^p exactly.  Then K s^(-p) = 1, so log_+ = 0 and m_p = cc/s (its
+    largest possible value), while kappa = K s^(-1/5) = s^(p-1/5) -> infinity.
+    A violation exists as soon as mu_fix(kappa,c1) < c1, i.e. as soon as kappa > 1.
+==============================================================================
+     p        1/5-p     log10(1/s) needed   kappa      mu_fix       m_p*s=c1   violation
+    0.1000   1.0e-01               40    1.0e+04  5.1981e-02     0.5000   True
+    0.1900   1.0e-02              400    1.0e+04  5.1981e-02     0.5000   True
+    0.1990   1.0e-03             4000    1.0e+04  5.1981e-02     0.5000   True
+    0.1999   1.0e-04            4e+04    1.0e+04  5.1981e-02     0.5000   True
+
+    => the counterexample to the mutant p exists only for  log10(1/s) >~ 4/(1/5-p).
+       The attempt's sampler draws s in [1e-12, 1e4], i.e. log10(1/s) <= 12.
+       Smallest detectable defect:  1/5-p >= 4/12 = 0.333  -- i.e. NO mutant with
+       p in (-0.133, 0.2) can be seen at K=s^p.  The sampler also draws K from
+       E0^(2/5)/nu with E0 in [1e-8,1e8], nu in [1e-8,1e4]: log10 K in [-7.2, 11.2].
+       Requiring K = s^p with log10(1/s)=4/d gives log10 K = -4p/d, e.g. -796 at
+       p=0.199 -- roughly 800 decades outside the box.
+
+    Concrete witness for p = 0.199, written back in the original variables:
+      s = T-t = 1e-4000 ,  K = E0^(2/5)/nu = 1e-796 ,  c1 = 0.5
+      M = 0.051981/s * (1+1e-9)
+      (b) holds:   M*s*(1+log_+(K M^(1/5))) = 0.500000001  >= c1 = 0.5   -> True
+      mutant m_p = c1/(s(1+log_+(K s^-p))) = c1/s = 0.5000/s ;  M*s = 0.051981 < 0.5  -> mutant VIOLATED: True
+
+==============================================================================
+(3) uniform sampler, seed distribution on the two mutants nearest the truth
+==============================================================================
+   mutant p=0.19:  N=2000000, 20 seeds -> min=0 median=1.0 max=5  zeros=8/20
+   mutant p=0.199:  N=2000000, 20 seeds -> min=0 median=0.0 max=0  zeros=20/20
+   Both mutants are FALSE (block 2 gives explicit witnesses); the uniform gate
+   returns PASS for p=0.199 on every seed.  FL-043: same verdict, different truth.
+
+==============================================================================
+(4) Section 4 accumulation: high-precision quadrature vs the claimed closed form
+    I(V) = int_{s=e^-V}^{1} c/(r(1+log K+(1/5)log(1/r))) dr,  substitute r=e^-v:
+    I(V) = int_0^V c dv/(1+log K+v/5) = 5c[log(1+log K+V/5) - log(1+log K)]
+==============================================================================
+        V=log(1/(T-t))     quadrature        closed form       claimed 5c*loglog
+                                                                 = 5c*log V
+         1.0000e+01       0.549306144       0.549306144       1.151292546
+         1.0000e+02       1.522261219       1.522261219       2.302585093
+         1.0000e+03       2.651652454       2.651652454       3.453877639
+         1.0000e+06       6.103038823       6.103038823       6.907755279
+         1.0000e+08       8.405621441       8.405621441       9.210340372
+
+    effective loglog coefficient  kappa_acc(V) := I(V)/(c*loglog(1/(T-t)))
+                                                = I(V)/(c*log V)   -> 5
+        T-t            V           kappa_acc     (headline says 5)
+   1e-6            1.382e+01     2.52351
+   1e-12           2.763e+01     2.82594
+   1e-100          2.303e+02     3.54027
+   1e-1000         2.303e+03     3.96195
+   1e-10000        2.303e+04     4.19894
+   1e-100000       2.303e+05     4.34825
+   1e-1000000      2.303e+06     4.45069
+   1e-10000000     2.303e+07     4.52530
+   1e-1000000000   2.303e+09     4.62671
+
+    Solving kappa_acc(V) = 4.5 :
+      V = 9.7656e+06   i.e.  T-t = e^-V = 1e-4.2411e+06
+    So the '5c_1 loglog' coefficient is never within 10% of 5 at any (T-t) that
+    could be written down.  The statement is asymptotically correct; the number 5
+    is not an approximation to anything reachable.

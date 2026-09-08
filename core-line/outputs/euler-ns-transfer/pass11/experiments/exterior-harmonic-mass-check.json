@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "scope": "Exact boundary algebra and floating-point exterior/matrix tests; no evolved-field or NS residual bound",
+  "continuous": [
+    {
+      "m": 0,
+      "k": 0.7,
+      "mass": 3.1097771832920174,
+      "full_stiffness": 4.047581639626177,
+      "mass_quadrature_relative_error": 2.220446049250313e-16,
+      "stiffness_quadrature_relative_error": 0.0
+    },
+    {
+      "m": 0,
+      "k": 2.3,
+      "mass": 1.0892801882541172,
+      "full_stiffness": 12.52458439172856,
+      "mass_quadrature_relative_error": 6.661338147750939e-16,
+      "stiffness_quadrature_relative_error": 2.220446049250313e-16
+    },
+    {
+      "m": 1,
+      "k": 0,
+      "mass": 7.290000000000001,
+      "full_stiffness": 4.0,
+      "mass_quadrature_relative_error": 1.1102230246251565e-16,
+      "stiffness_quadrature_relative_error": 1.1102230246251565e-16
+    },
+    {
+      "m": 4,
+      "k": 0,
+      "mass": 1.8225000000000002,
+      "full_stiffness": 10.0,
+      "mass_quadrature_relative_error": 3.3306690738754696e-16,
+      "stiffness_quadrature_relative_error": 3.3306690738754696e-16
+    },
+    {
+      "m": 4,
+      "k": 0.7,
+      "mass": 1.6085048804139146,
+      "full_stiffness": 10.415937404884174,
+      "mass_quadrature_relative_error": 2.220446049250313e-16,
+      "stiffness_quadrature_relative_error": 0.0
+    },
+    {
+      "m": 8,
+      "k": 0,
+      "mass": 0.9112500000000001,
+      "full_stiffness": 18.0,
+      "mass_quadrature_relative_error": 5.551115123125783e-16,
+      "stiffness_quadrature_relative_error": 5.551115123125783e-16
+    },
+    {
+      "m": 8,
+      "k": 2.3,
+      "mass": 0.7060623237562647,
+      "full_stiffness": 21.467751761225784,
+      "mass_quadrature_relative_error": 7.771561172376096e-16,
+      "stiffness_quadrature_relative_error": 7.771561172376096e-16
+    }
+  ],
+  "discrete": [
+    {
+      "m": 0,
+      "k": 0.7,
+      "outer_mass": 3.7486036589004024,
+      "boundary_gradient": -0.720268197356454,
+      "divergence": 3.5005674040686524e-15,
+      "idempotence": 4.440892098500626e-16,
+      "kinetic_self_adjoint_defect": 1.5265566588595902e-16,
+      "gradient_removal_error": 8.434172412146374e-16
+    },
+    {
+      "m": 0,
+      "k": 2.3,
+      "outer_mass": 1.7281066638625024,
+      "boundary_gradient": -1.5624035578713715,
+      "divergence": 5.478396259263632e-16,
+      "idempotence": 1.1102230246251565e-16,
+      "kinetic_self_adjoint_defect": 5.551115123125783e-17,
+      "gradient_removal_error": 8.091239844753841e-16
+    },
+    {
+      "m": 1,
+      "k": 0,
+      "outer_mass": 7.928826475608386,
+      "boundary_gradient": -0.34052958635254116,
+      "divergence": 1.8172111733469767e-15,
+      "idempotence": 6.661338147750939e-16,
+      "kinetic_self_adjoint_defect": 1.1102230246251565e-16,
+      "gradient_removal_error": 2.0471501066083613e-15
+    },
+    {
+      "m": 4,
+      "k": 0,
+      "outer_mass": 2.4613264756083852,
+      "boundary_gradient": -1.0969694702254482,
+      "divergence": 2.0959391564258614e-15,
+      "idempotence": 2.220446049250313e-16,
+      "kinetic_self_adjoint_defect": 1.1102230246251565e-16,
+      "gradient_removal_error": 2.3603665272841412e-15
+    },
+    {
+      "m": 4,
+      "k": 0.7,
+      "outer_mass": 2.2473313560222996,
+      "boundary_gradient": -1.201424966890022,
+      "divergence": 4.629834858378011e-15,
+      "idempotence": 2.220446049250313e-16,
+      "kinetic_self_adjoint_defect": 1.1102230246251565e-16,
+      "gradient_removal_error": 4.8043221128972395e-15
+    },
+    {
+      "m": 8,
+      "k": 0,
+      "outer_mass": 1.5500764756083854,
+      "boundary_gradient": -1.7418495425783973,
+      "divergence": 6.074211085014251e-15,
+      "idempotence": 2.220446049250313e-16,
+      "kinetic_self_adjoint_defect": 1.1102230246251565e-16,
+      "gradient_removal_error": 6.640256811206863e-15
+    },
+    {
+      "m": 8,
+      "k": 2.3,
+      "outer_mass": 1.34488879936465,
+      "boundary_gradient": -2.007600926764748,
+      "divergence": 4.114528430600959e-15,
+      "idempotence": 3.3306690738754696e-16,
+      "kinetic_self_adjoint_defect": 5.551115123125783e-17,
+      "gradient_removal_error": 4.578422862806412e-15
+    }
+  ]
+}

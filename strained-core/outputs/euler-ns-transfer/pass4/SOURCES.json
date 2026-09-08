@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-08",
+  "inherited_manifests": [
+    {
+      "path": "../SOURCES.json",
+      "sha256": "f0905ca43918ac4558103c117e060b4ce097b2854afa4bf5c3d37ddf3578e3fe"
+    },
+    {
+      "path": "../pass2/SOURCES.json",
+      "sha256": "87f9edf9968071600f90d2bcbae650c0781f94ae60bcafd4d372e23cf5305d50"
+    },
+    {
+      "path": "../pass3/SOURCES.json",
+      "sha256": "b6b4aa5919ccca3adca1044d5851c51702e4426111707c4bea29608f122edd18"
+    }
+  ],
+  "new_external_sources": [],
+  "derivations": "Direct initial NS identities, compact profiles, whole-space Newton pressure, and independent finite algebra audits.",
+  "verification": {
+    "python": "3.9.6 (default, Jan  9 2026, 11:03:41) \n[Clang 17.0.0 (clang-1700.6.4.2)]",
+    "formal_kernel_replay": false,
+    "NS_time_evolution": false,
+    "certified_full_pressure_sign": false,
+    "terminal_profile_return_proved": false,
+    "NS_blowup_proved": false,
+    "ten_packaged_checks_passed": true,
+    "independent_core_numerical_control_passed": true,
+    "angular_error_bounds_analytical": true,
+    "angular_residual_norms_certified": false
+  }
+}

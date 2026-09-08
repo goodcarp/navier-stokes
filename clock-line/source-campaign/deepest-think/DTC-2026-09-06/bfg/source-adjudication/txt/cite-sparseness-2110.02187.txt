@@ -1,0 +1,1056 @@
+                                                       REMARKS ON SPARSENESS AND REGULARITY
+                                                            OF NAVIER–STOKES SOLUTIONS
+
+                                                             DALLAS ALBRITTON AND ZACHARY BRADSHAW
+
+                                                 A BSTRACT. The goal of this paper is twofold. First, we give a simple proof that
+                                                 sufficiently sparse Navier–Stokes solutions do not develop singularities. This pro-
+                                                 vides an alternative to the approach of [Gru13], which is based on analyticity
+
+
+
+
+arXiv:2110.02187v2 [math.AP] 5 Apr 2022
+                                                 and the ‘harmonic measure maximum principle’. Second, we analyze the claims
+                                                 in [BFG19, GX19] that a priori estimates on the sparseness of the vorticity and
+                                                 higher velocity derivatives reduce the ‘scaling gap’ in the regularity problem.
+
+
+
+
+                                                                              1. I NTRODUCTION
+                                             In this paper, we offer an interpretation of the recent program of Grujić and coau-
+                                          thors on the relationship between sparseness and regularity of Navier–Stokes solu-
+                                          tions, see [Gru13, BFG19, GX19]. These papers connect sparseness to regularity by
+                                          way of analyticity and explore the implications of this connection. The most notable
+                                          implication is the notion of ‘asymptotic criticality’, wherein the scaling properties
+                                          of certain sets (‘sparseness classes’) improve as higher derivatives are considered
+                                          (we elaborate in Section 1.2). As the number of derivatives tends to infinity, the a
+                                          priori controlled supercritical quantities associated with the aforementioned sparse-
+                                          ness classes seems to approach criticality [GX19]. In this sense, the scaling gap is
+                                          said to be closed within the sparseness framework. This prospect is intriguing, as
+                                          the scaling gap is a fundamental barrier to establishing global regularity for the
+                                          Navier–Stokes equations.
+                                             The aims of this paper are twofold: First, we offer new approaches to the esti-
+                                          mates introduced in [Gru13] which are the foundation of the later works [BFG19,
+                                          GX19]. Second, we analyze the sparseness classes which seem to bridge the scaling
+                                          gap in [BFG19, GX19] by way of concrete examples. In the first direction, we re-
+                                          frame the analyticity-based argument of [Gru13] in terms of methods more widely
+                                          known in the fluids community. Furthermore, we introduce a frequency version of
+                                          sparseness which has the benefit of involving fewer parameters. We hope this sim-
+                                          plified setting will make the higher derivative estimates in [GX19] more transparent.
+                                          In the second direction, we seek to understand exactly what is happening when the
+                                          sparseness classes of [GX19] seem to approach criticality. In particular, we show for
+                                          a broad class of concrete examples of vector fields that the framework introduced
+                                          in [GX19] does not rule out singularities beyond those ruled out by membership in
+                                          L∞    2
+                                            t Lx . Our examples suggest that membership in the sparseness classes of [GX19]
+                                          may not be enough to meaningfully bridge the scaling gap insofar as regularity is
+                                          concerned.
+
+                                                                                         1
+2                           D. ALBRITTON AND Z. BRADSHAW
+
+1.1. Introduction to sparseness. We give an introductory discussion of the notion
+of sparseness and discuss its connection to the regularity problem. A measurable
+function f : Rd → R satisfying
+                      n        1       o
+                        |f | > kf kL∞ ∩ B` (x0 ) ≤ ε|B` |                   (1.1)
+                               2
+for all x0 ∈ Rd is said to be ε-sparse at scale `. We will soon define a more flex-
+ible notion of sparseness and only consider (1.1) briefly for illustrative purposes.
+Heuristically, sparseness means that the set where the function f is substantial is
+relatively small in measure. In particular, sparseness ensures that f concentrates on
+a small set. For example,
+                                        1 1
+                                  f = + 1(− 2ε , 2ε )                            (1.2)
+                                        2 2
+is ε-sparse at scale ` = 1 in dimension d = 1.
+   Sparseness is a non-linear requirement. In particular, it is not amenable to a vec-
+tor space structure, although it is invariant under multiplying f by a prefactor. It is
+also invariant under translation and rotation, whereas dilation simply dilates `.
+   The original motivation for the PDE analysis of sparseness of Navier–Stokes so-
+lutions comes from the phenomenology of turbulence, see [Gru13]. Loosely speak-
+ing, turbulent flows are observed to be concentrated on vortex filaments, which are
+observed to be sparse.
+   A key feature of the above class is that solutions of the heat equation with sparse
+initial data f rapidly decrease in norm after time T = C`2 :
+                                            3
+                             ket∆ f kL∞ ≤ kf kL∞ , t ≥ T.                            (1.3)
+                                            4
+Sparseness requires that f has substantial variation or ‘large gradient’ over scale `,
+and the heat evolution smooths this variation by decreasing   √ the function. Since the
+heat kernel is roughly concentrated on a ball of radius C t, the variation on scale `
+is not seen until time T . These heuristics essentially comprise the proof we write in
+Lemma 2.1. It is also possible to take a Fourier-analytic perspective: a substantial
+amount of the function is concentrated in frequencies ≥ C`−1 , see Definition 2.2
+and Lemma 2.4.
+   Since L∞ is a subcritical space for the Navier–Stokes equations, it is reasonable
+to expect that, if the initial velocity u0 is sufficiently sparse, then the Navier–Stokes
+solution also undergoes a rapid decrease in norm, analogous to (1.3), at least while
+the non-linearity is perturbative. In summary, sufficient sparseness should allow the
+Navier–Stokes solution to be continued. This is essentially the proof of Theorem 1.2
+below.
+   We emphasize that the simple heuristics above are robust enough to be translated
+into a simple proof.
+   The route taken by Grujić [Gru13] to the regularity criterion introduced above is
+different. The rapid decrease√in (1.3) is observed by showing that the solution is spa-
+tially analytic with radius C t. Hence, it can be extended to an analytic function in
+a strip in Cd , on which its real and imaginary parts are harmonic and thus satisfy a
+certain ‘harmonic measure majorization principle’. Extending this argument to the
+      REMARKS ON SPARSENESS AND REGULARITY OF NAVIER–STOKES SOLUTIONS                          3
+
+non-linear setting is done by demonstrating analytic smoothing of Navier-Stokes
+solutions, which can be technical, especially at the level of higher derivative esti-
+mates in [GX19]. We hope that this alternative approach or the frequency version
+that we introduce in Section 2 will help streamline these estimates.
+  It is well known that small scale activity is essential to singularity formation. This
+can be quantified in terms of an a priori lower bound on the sparseness of a singular
+Navier–Stokes solution. We explain the idea at the level of functions f ∈ L1 ∩ L∞ ,
+though any two Lebesgue spaces will do. In terms of dimensional analysis, we have
+                          kf kL1 = M Ld ,
+                                                    
+                                                kf kL∞ = M.                        (1.4)
+The unique way, up to a prefactor, to form a length scale from these two quantities
+is
+                                               1
+                                         kf kL1 d
+                                 `0 =              .                          (1.5)
+                                         kf kL∞
+Heuristically, `0 is a length scale at which the two quantities are in balance. We
+make sense of this with Chebyshev’s inequality:
+                             λ |{|f | > λ}| ≤ kf kL1 ,      λ > 0.                         (1.6)
+By choosing λ = kf kL∞ /2, we conclude
+                     n       1       o  kf kL1
+                      |f | > kf kL∞ ≤ 2        = 2`d0 ,                                    (1.7)
+                             2          kf kL∞
+an upper bound on the volume where the function is substantial.1 In particular, we
+have that the solution is sparse on length scales ` = a`0 with a  1:
+                     n        1        o
+                       |f | > kf kL∞ ∩ B` (x0 ) ≤ Cd a−d |B` |.              (1.8)
+                              2
+In the context of singular Navier–Stokes solutions, whose L2 norm is controlled,
+the above reasoning demonstrates that the length scale of sparseness is guaranteed
+to shrink with a certain rate as t → T ∗ , see Theorem 1.4.
+   We now formulate the main results of this paper. First, we define
+Definition 1.1 (Lp -sparseness). Let 1 ≤ p ≤ ∞, ε, β ∈ (0, 1), and ` > 0. A vector
+field u0 ∈ Lp (Rd ) is (ε, β, `)-sparse in Lp if there exists a measurable set S such
+that
+                                 ku0 kLp (S c ) < βku0 kLp                       (1.9)
+and
+                                       |S ∩ B` (x0 )|
+                                 sup                   ≤ ε.                     (1.10)
+                                x0 ∈Rd    |B` (x0 )|
+   This definition can be extended to spaces other than the Lebesgue spaces. It gen-
+eralizes the volumetric notion of sparseness used in [BFG19, GX19] but is different
+than the one-dimensional version in [Gru13].
+  1
+    In the opposite direction, one obtains an upper bound on the sparseness (a lower bound on the
+volume where the function is substantial) by controlling kf kL∞ from below and k∇f kL∞ from
+above.
+4                              D. ALBRITTON AND Z. BRADSHAW
+
+   Let d ≥ 3 and p ∈ (d, +∞]. We define the guaranteed existence time T̄ (d, p, ku0 kLp ) >
+0 by
+                                                   1      d
+                                     ku0 kLp T̄ 2 (1− p ) = cp ,                           (1.11)
+where cp ∈ (0, 1] is a small constant. For each u0 ∈ Lpσ , there exists a unique mild
+Navier–Stokes solution u ∈ C((0, T̄ ]; Lp ) which furthermore satisfies2
+                                 sup ku(·, t)kLp ≤ 2ku0 kLp .                              (1.12)
+                                t∈(0,T̄ )
+
+Classical bilinear estimates (see, for example, [Tsa18, Chapter 5]) imply that for
+t ∈ (0, T̄ ), we have
+                   Z t
+                                                       1     d
+                       e(t−s)∆ P∇ · (u ⊗ u) ds  ≤ C1 t 2 (1− p ) ku0 k2Lp , (1.13)
+                     0                                    Lp
+
+for a constant C1 ≥ (2cp )−1 that will play a role in what follows.
+   The following theorem is thematically similar to the main result in [Gru13],
+which is the foundation for later work [BFG19, GX19].
+Theorem 1.2 (Regularity criterion). Let u0 ∈ Lpσ (Rd ) and T0 > T̄ (d, p, ku0 kLp )
+(otherwise, the conclusion is trivial). Define γ according to
+                                               1
+                                                   (1− pd )
+                                    ku0 kLp T02               γ = cp ,                     (1.14)
+and in particular, γ ∈ (0, 1). Define T1 according to
+                                               1
+                                                   (1− pd )        γ
+                                    ku0 kLp T12               =       ,                    (1.15)
+                                                                  2C1
+which when compared to (1.11) ensures that T < T̄ . There exists C0 ≥ 1, depend-
+ing only on p ∈√(d, +∞] and the dimension d, such that, if u0 is (ε, β, `)-sparse in
+Lp , where ` = T1 `¯ and the dimensionless parameters satisfy
+                                                                        1
+                 `¯2 ≥ C0 log(C0 /γ);       β = C0−1 γ;             ε1− p ≤ C0−1 γ/`¯d     (1.16)
+then the unique strong solution with initial data u0 extends past time T0 .
+
+   The above theorem may be regarded as a generalization of Grujić’s work [Gru13]
+to the Lp scale.3 However, the main novelty is that the proof avoids analyticity and
+the harmonic measure maximum principle in favor of methods widely used in the
+fluids literature. In principle, it can be adapted to generalize [BFG19, GX19].
+   We obtain as a corollary a blow-up criterion which may be regarded as saying
+that a singular solution can only exhibit ‘slow’ concentration at small spatial scales.
+This highlights the usefulness of sparseness as a tool to quantify blow-up.
+
+    2
+    When p < +∞, we have also C([0, T̄ ]; Lp ).
+   3
+    We mention two differences. First, the paper [Gru13] is written in terms of so-called ‘linear
+sparseness’, although the further developments [BFG19, GX19] focused on ‘volumetric sparseness’
+in L∞ , which is akin to Definition 1.1 and which we focus on here. Second, the sparsity in the
+regularity criterion in [Gru13, Theorem 4.1] and subsequent papers is imposed with a ‘time lag’, so
+their hypotheses are not the same as ours.
+      REMARKS ON SPARSENESS AND REGULARITY OF NAVIER–STOKES SOLUTIONS                   5
+
+Corollary 1.3 (Blow-up criterion). Suppose that u is a strong Navier–Stokes solu-
+tion with initial data u0 ∈ Lpσ . Suppose that the maximal time of existence T ∗ (u0 )
+is finite. Let γp (t) satisfy
+                                                1    d
+                         ku(·, t)kLp (T ∗ − t) 2 (1− p ) γp (t) = cp               (1.17)
+and T1 (t) be defined by (1.15) with γp (t) replacing γ. Then,  for all t ∈ (0, T ∗ ), the
+solution u(·, t) fails to be (ε, β, `)-sparse in Lp with ` = T1 (t)`¯ and dimensionless
+                                                            p
+
+parameters satisfying (1.16) with γ = γp (t).
+  Finally, we include a theorem which demonstrates how sparseness necessarily
+occurs just prior to a blow-up time. The case p = ∞ is discussed in [Gru13].
+Theorem 1.4 (A priori sparseness). Suppose that u is a strong Navier–Stokes solu-
+tion with initial data u0 ∈ L2σ ∩ Lpσ . Let
+                                         µ                 
+                              ku(·, t)kL2 p    1       1 1
+                   `0 (t) =                  ,    =d      −     .          (1.18)
+                              ku(·, t)kLp      µp      2 p
+Then, for all ε, β ∈ (0, 1), there exists a ≥ 1 such that u(·, t) is (ε, β, `(t))-sparse
+in Lp for all t ∈ (0, T ∗ (u0 )), where `(t) = a`0 (t). In particular, if the maximal time
+of existence T ∗ (u0 ) is finite, then
+                    1
+                                                1    d
+                                              (1− p )
+                  `0 p ≤ c−1          ∗
+                                                      → 0 as t → T−∗ .
+                   µ
+                          p ku0 kL2 (T − t)                                        (1.19)
+                                            2
+
+
+
+  Together, Theorem 1.4 and Corollary 1.3 assert that, just prior to a blow-up time,
+activity must concentrate on small scales, see (1.19), but cannot concentrate too
+quickly. In Section 3.2, we obtain analogues of the above theorems for the fre-
+quency sparseness we introduce in Definition 2.2. Frequency sparseness has the
+added benefit that it involves fewer parameters, which simplifies the proofs and
+makes it compelling for applications.
+
+1.2. Examples concerning ‘asymptotic criticality’. Our second goal, which is
+perhaps more important, is to elucidate the so-called ‘asymptotic criticality’ intro-
+duced in [GX19].
+   In [BFG19], it was proposed that the ‘scaling gap’ between the energy class,
+where the a priori estimates live, and the critical spaces, where the regularity crite-
+ria live, could be reduced by an ‘algebraic factor’ by analyzing the vorticity sparse-
+ness. The natural extension to sparseness of ∇k u was implemented in [GX19]. The
+authors develop analogues of Theorems 1.2 and 1.4 and interpret them as closing
+the scaling gap, within the sparseness framework, asymptotically as k → +∞.
+   We offer a different interpretation of [BFG19, GX19] which suggests that, in a
+certain reasonable sense, the ‘scaling gap’ is not improved beyond the energy class.
+This is discussed below and in the examples in Section 4.
+   To understand the interpretation in [BFG19, GX19], we codify the sparseness
+                                         (k)
+classes introduced therein. The class Zα is defined by the requirement that ∇k f
+is sparse, with some value of parameters, with the sparseness scale ` assumed to
+satisfy ` ≈ k∇k f k−αL∞ (bounded above and below, up to multiplicative constants).
+  (k)
+Zα implicitly depends on these parameters and constants.
+6                           D. ALBRITTON AND Z. BRADSHAW
+
+                                    (k)
+   To understand better the class Zα , we identify its scaling symmetry. Recall that,
+if f is sparse at scale `old , then λβ f (λx) is sparse at scale `new = `old /λ for any
+                                      (k)
+β ∈ R. A calculation shows that Zα is invariant under the scaling symmetry
+                                                     1
+                                 fλ (x) = λ α −k f (λx),                          (1.20)
+which makes `new ∼ k∇k fλ k−αL∞ . (The choice β = 1/α − k is the only choice
+                            (k)                                 1
+which does so.) Therefore, Zα has the same homogeneity as Ẇ k− α ,∞ , and we
+write informally
+                                                         1
+                                   Zα(k) ∼ W k− α ,∞ .                            (1.21)
+This ‘identification’ should not be taken seriously and is easily abused, as we see
+                                               (k)
+below. This is, perhaps, because the classes Zα should not be conflated with what
+we conceive of as function spaces, such as Lebesgue and Sobolev spaces, which are
+actually Banach spaces.
+  When k = 0 and d = 3, we have
+                                                     p
+                             Lp,∞ ⊂ Zα(0) with α = ,                         (1.22)
+                                                     3
+                                                                 (0)
+and indeed Lp,∞ has the same homogeneity as Zα . The notation ⊂ is only set
+            (0)
+inclusion: Zα is not a normed vector space. The informal relationship L3α,∞ ∼
+  (0)
+Zα is used systematically in [BFG19]. Hence, the discovery in [BFG19] that
+                                               (0)           6
+                                   ω ∈ Z 2 ∼ L 5 ,∞                               (1.23)
+                                               5
+
+
+‘uniformly’ up until a putative finite-time blow-up, was interpreted as a reduction
+in the scaling gap (recall that ω ∈ L∞   1
+                                     t Lx is at the level of the energy class). In terms
+of homogeneity in (1.21), however, we have that
+                                          (1)                3
+                                 u ∈ Z 2 ∼ W − 2 ,∞ ,                             (1.24)
+                                           5
+
+
+which has the same homogeneity as L2 . Similarly, in [GX19], the a priori sparse-
+ness exponent ᾱk corresponding to ∇k u is
+                                                     1
+                                     ᾱk =                .                       (1.25)
+                                                   k + d2
+Notice that
+                                     (k)                 d
+                                   Zᾱk ∼ Ẇ − 2 ,∞ ,                             (1.26)
+which has the same homogeneity as L2 .
+   While the above interpretation is suggestive, still, the relationship (1.21) is infor-
+mal and should not be taken seriously. Rather, to better demonstrate that the scaling
+gap is not reduced, we analyze the sparseness of ∇k u in a class of concrete blow-
+up scenarios in Section 4. These scenarios are motivated by the blow-ups known
+                                                                       (k)
+to occur in related nonlinear PDEs. Among these scenarios, the Zᾱk classes corre-
+sponding to the a priori sparseness in [GX19] do not exclude more blow-ups than
+finite kinetic energy u ∈ L∞   2
+                           t Lx already does.
+      REMARKS ON SPARSENESS AND REGULARITY OF NAVIER–STOKES SOLUTIONS                      7
+
+1.3. Existing literature. The existing literature concerning Navier-Stokes regu-
+larity is massive, and we mention only a few threads connected to [Gru13, BG17,
+GX19] and the present work. One way to understand this program is as connect-
+ing rates of spatial concentration to potential singularity formation. In particular,
+sparseness is closely related to the concentration phenomena studied in [LOW18]
+and [BP20].4 The results therein are dedicated to lower bounds on hypothetical sin-
+gular solutions in balls whose radii are bounded above, and they have applications
+to quantitative L∞     3
+                   t Lx blow-up criteria [BP21]. The criteria [GX21] of Grujić and
+Xu may be considered as in the vein of [LOW18] but through the lens of sparse-
+ness and analyticity. We also observe that [LOW18] contains a regularity crite-
+rion in the spirit of Theorem 1.2; they ask that u0 is supported in high frequencies
+|ξ|  ku0 kL∞ . A closely related notion to our frequency sparseness is that of ‘dissi-
+pation wavenumber’, explored in [CS14b] and subsequent works; this is in turn re-
+lated to the ‘bubbles of concentration’ in Tao’s quantitative L∞    3
+                                                                t Lx criterion [Tao21].
+Furthermore, sparseness and concentration are directly related to intermittency, and
+in particular, to the analytical approach to intermittency introduced in [CS14a] and
+the concept of characteristic speeds and active regions therein.
+   The original result of Grujić [Gru13] can be viewed as a geometric regularity
+criterion. Such results have a rich history within the analysis of fluid equations. See,
+for example, the pioneering papers [CF93, CC99], which, respectively, initiated
+research into regularity based on the alignment of the vorticity and membership
+of reduced components in critical classes, as well as the references in the survey
+papers [BadVGG18, Mil21].
+   We mention two further works in the program of [GX19]. In [GX20], Grujić and
+Xu extend the tools developed in [GX19] to the hyper-dissipative Navier–Stokes
+equations to analyze certain geometric blow-up scenarios. Their program has also
+recently informed the computational study [RGB+ 21] on small length scales in
+turbulence.
+
+                                   2. P RELIMINARIES
+  Let G : Rd → R be a Schwartz function and Gt be the convolution operator
+                                     d     √
+                         Gt u0 := t− 2 G(·/ t) ∗ u0 .                     (2.1)
+                                                             2
+when t > 0. We have in mind that G = (4π)−d/2 e−|x| /4 and Gt is the heat semi-
+group, though it will be convenient to allow G to be general.
+                                                                            p   d
+Lemma 2.1. Let p ∈ (1, ∞], γ ∈ (0, 1), and     √ t > 0 be fixed. Let u0 ∈ L (R )
+be a vector field. Suppose that u0 is (ε, β, `¯ t)-sparse, where the dimensionless
+parameters ε, β ∈ (0, 1) and `¯ > 0 satisfy
+                                                      1
+              `¯ ≥ f (γ);    β ≤ kGk−1
+                                    L1 γ/3;       ε1− p ≤ C0−1 kGk−1   ¯d
+                                                                  L∞ γ/`               (2.2)
+where f depends on G and satisfies f (γ) → +∞ as γ → 0+ , and C0 > 1 is an
+absolute constant depending only on the dimension. Then
+                                 kGt u0 kLp ≤ γku0 kLp .                               (2.3)
+  4
+    See also [KMT] where the p ≥ 3 condition in [BP20] is reduced to 2 by passing to a Morrey
+scale.
+8                            D. ALBRITTON AND Z. BRADSHAW
+
+When Gt = et∆ , the above requirement on `¯ can be made more explicit:
+
+                                  `¯2 ≥ C0 ln(C0 /γ).                          (2.4)
+                                                √
+   Notice that the length scale of sparseness `¯ t in Lemma 2.1 depends on t.
+   The case p = 1 fails since, for non-negative initial data, the heat equation pre-
+serves the L1 norm, regardless of sparsity.
+
+Proof. We write only the proof for p ∈ (1, ∞). The endpoint case p = ∞ is identi-
+cal except that the outer norm in (2.7) is replaced by a sup.
+    √ rescaling, we need only consider t = 1, a fact we now justify. Let u0 (x) =
+   Upon
+u
+e0 ( tx). Then a simple computation shows
+                                                        √
+                          (Gt ∗ u
+                                e0 )(x) = (G1 ∗ u0 )(x/ t).
+
+Using this, we have
+                                            √ pd
+                           kGt ∗ u
+                                 e0 kLp =      t kG1 ∗ u0 kLp .
+                                                   √
+                                    e0 is (ε, β, `¯ t)-sparse, then u0 is (ε, β, `)-sparse.
+By the definition of sparseness, if u                                            ¯
+Hence, assuming the result for t = 1, we have for a given vector field u     e0 that
+                             √ dp             √ d
+            kGt ∗ u
+                  e0 kLp =    t kG1 ∗ u0 kLp ≤ t p γku0 kLp = γke
+                                                                u0 kLp .
+
+    Assuming t = 1, we expand the operator G1 into three parts:
+
+                               G1 u0 = Ifar + IInear
+                                                S    + IInear
+                                                         Sc ,
+
+where
+                               Z
+                    far
+                   I (x) =         G(x − y)χB`c¯ (x − y)u0 (y) dy
+                               Z
+                 IInear
+                   S (x) =         G(x − y)χB`¯(x − y)u0 (y)χS (y) dy                (2.5)
+                               Z
+                 IInear
+                   S c (x) =       G(x − y)χB`¯(x − y)u0 (y)χS c (y) dy.
+
+We will first fix `¯ and then ε and β.
+ By Young’s convolution inequality, the first term, Ifar , satisfies
+                                                          ¯ −k ku0 kLp
+                   kIfar kLp ≤ ku0 kLp kGkL1 (B`c¯) .G,k h`i                         (2.6)
+
+for all k ≥ 0, since G is a Schwartz function. By choosing `¯ sufficiently large, we
+can therefore ensure
+                                          γ
+                               kIfar kLp ≤ ku0 kLp .
+                                           3
+                                                                         ¯2
+When G corresponds to the heat kernel, we have kGkL1 (B`c¯) ≤ Ce−` /8 , which gives
+us the requirement on `¯ in (2.4).
+      REMARKS ON SPARSENESS AND REGULARITY OF NAVIER–STOKES SOLUTIONS                9
+
+  The second term, IInear
+                     S , is the most interesting:
+                  Z Z                                        p    p1
+         near
+      kIIS kLp =            G(x − y)u0 (y)χB`¯(x) (y)χS (y) dy dx
+                          Z                                   p  p1
+                  ≤ kGkL∞
+                                                            1
+                              ku0 kLp (B`¯(x)) |S ∩ B`¯(x)| p 0
+                                                                  dx             (2.7)
+
+                                              1       d
+                                               ¯ p ku0 kLp ,
+                  . kGkL∞ sup |S ∩ B`¯(x)| p0 (`)
+                            x∈Rd
+
+where the suppressed constant depends on the volume of the unit ball and | · | refers
+to Lebesgue measure. By the sparseness assumption, this becomes
+                                                  1
+                         kIInear           p0 ¯d                                 (2.8)
+                            S kLp . kGkL∞ ε ` ku0 kLp .
+
+We choose ε small to ensure that
+                                             γ
+                               kIInear
+                                  S kLp ≤      ku0 kLp .
+                                             3
+Finally, for IInear
+               S c , by Young’s convolution inequality, we have
+
+                 kIInear
+                    S c kLp ≤ ku0 χS c kLp kGkL1 ≤ βkGkL1 ku0 kLp .              (2.9)
+By taking β ≤ kGk−1
+                 L1 γ/3, we are done.                                              
+
+   Lp -sparseness is formulated in physical space, but a similar conclusion in Fourier
+space follows if the initial data is supported on sufficiently high Littlewood-Paley
+frequencies.
+         P See      [BCD11, Chapter
+                                  P 2]˙ for a review of Littlewood-Paley theory. Let
+                  ˙
+∆≥J = j≥J ∆j and ∆<J = j<J ∆j . Here, 2 is a frequency, and 2−J is a length
+                                                  J
+
+scale. It is not essential that J is an integer.
+Definition 2.2 (Lp -sparseness in frequency). Let β ∈ (0, 1) and J ∈ R. Then a
+vector field u0 ∈ Lp is (β, J)-sparse in frequency in Lp if
+                              k∆<J u0 kLp ≤ βku0 kLp .                         (2.10)
+
+   This notion of sparseness actually encompasses the spatial version, at least within
+a certain parameter range, as we demonstrate in Lemma 2.3, while preserving the
+caloric decay property (2.3), see Lemma 2.4.
+Lemma√ 2.3 (Spatial vs. frequency sparseness). Let 1 ≤ p ≤ ∞, γ ∈ (0, 1), J ∈   √ R,
+and t = 2−J . Let u0 ∈ Lp (Rd ) be a vector field. Suppose that u0 is (ε, β, `¯ t)-
+sparse with dimensionless parameters ε, β ∈ (0, 1) and `¯ > 0 satisfying (2.2). Then
+u0 is (γ, J)-sparse in frequency.
+
+Proof. Let G be the Schwartz function associated to the convolution operator ∆<1 .
+Then the proof is a direct application of Lemma 2.1.                           
+Lemma 2.4. Fix 1 ≤ p ≤ ∞, t > 0 and γ > 0. Let u0 ∈ Lp . There exists J ∈ Z
+satisfying 2J ∼ γ −1 t−1/2 and β = γ/2 so that, if u0 is (β, J)-sparse in frequency,
+then
+                              ket∆ u0 kLp ≤ γku0 kLp .                        (2.11)
+10                           D. ALBRITTON AND Z. BRADSHAW
+
+Proof. By [BCD11, Lemma 2.4], for any 1 ≤ p ≤ ∞,
+                          ˙ j u0 kLp ≤ Ce−ct22j ku0 kLp .
+                     ket∆ ∆                                                      (2.12)
+Hence,
+                                              X       
+     t∆
+                   X
+                         −ct22j                    1               1           γ
+ke ∆≥J u0 kLp .          e        ku0 kLp .         2j
+                                                        ku0 kLp . 2J ku0 kLp < ku0 kLp ,
+                   j≥J                        j≥J
+                                                  t2             t2            2
+                                                                              (2.13)
+provided 2J ∼ γ −1 t−1/2 .
+  On the other hand, by assumption
+                     ket∆ ∆<J u0 kLp ≤ k∆<J u0 kLp < βku0 kLp ,                  (2.14)
+and we are done provided β = γ/2.                                                    
+Remark 2.5. One could also give a frequency sparseness definition in homoge-
+neous Besov spaces. This is essentially what is done in [BG17].
+
+                                    3. M AIN RESULTS
+3.1. Sparseness in physical space. In this section, we prove Theorem 1.2, Corol-
+lary 1.3, and Theorem 1.4. First, we adapt Lemma 2.1 to the nonlinear setting:
+Proposition 3.1. Let d < p ≤ ∞ and u0 ∈ Lpσ (Rd ). For any γ ∈ (0, 1), define
+T1 ∈ (0, T̄ ) according to (1.15). Then T1 satisfies the following properties: First,
+the strong Lp solution u of the Navier-Stokes equations with initial data u0 exists√on
+Rd × (0, T1 ]. Moreover, for all t ∈ (0, T1 ], if u0 is (ε, β, `)-sparse, where ` = t`¯
+and
+                   γ         1
+               β = ; ε1− p ≤ (2C0 )−1 γ/`¯d ; , `¯2 ≥ C0 ln(2C0 /γ),               (3.1)
+                    6
+then
+                               ku(·, t)kLp ≤ γku0 kLp .                            (3.2)
+Proof. From (1.13) and the definition of T1 , for all t ∈ (0, T1 ], we have
+                    Z t
+                                                         γ
+                        e(t−s)∆ P∇ · (u ⊗ u) ds        ≤ ku0 kLp .                (3.3)
+                     0                             Lp    2
+Next, we apply Lemma 2.1 (with γ/2 instead of γ therein) to obtain
+                                           γ
+                              ket∆ u0 kLp ≤ ku0 kLp                           (3.4)
+                                           2
+under the requirements on (ε, β, `) in Lemma 2.1. Finally, we combine (3.3), (3.4),
+and Duhamel’s formula for u to complete the proof.                               
+
+Example 3.2. Focusing on the case when p = ∞ for simplicity, we include an ex-
+ample to demonstrate that the conditions stipulated in the theorem are not overde-
+termined nor do they result in a smallness condition in L∞ . Fix γ = 1/2. We will
+show that for any β, ε ∈ (0, 1) and ` > 0 there exists a divergence-free vector
+field u0 such that ku0 kL∞ = 1 and u0 is (, β, `)-sparse. Let φ : R → [0, 1] satisfy
+φ = 1 on [−r, r] and φ = 0 on [−2r, 2r]c where r > 0 will be chosen momen-
+tarily. Let u0 be the vector field (0, φ(x1 )φ(x3 ), 0). As a shear flow, this vector
+field is plainly divergence free. Furthermore, for any r, ku0 kL∞ = 1. (In any case,
+      REMARKS ON SPARSENESS AND REGULARITY OF NAVIER–STOKES SOLUTIONS                              11
+
+sparseness is preserved under multiplication by a non-zero prefactor.) By choos-
+ing r we will ensure the appropriate sparseness condition is satisfied by setting
+S = {x ∈ R3 : |x1 | < 2r and |x3 | < 2r}. In particular, we want u0 (x) = 0 on S c
+and hence ku0 kL∞ (S c ) < βku0 kL∞ for any β ∈ (0, 1). Additionally, for any ` > 0
+and ε > 0 we may take r small compared to ` so that
+                                        |S ∩ B` (x)|
+                                   sup               ≤ ε.
+                                   x∈Rd   |B` (x)|
+Because we are free to choose any values for β, ε and `, we may choose them to be
+the values stated in the theorem.
+
+Proof of Theorem 1.2. It suffices to show that, for a time t0 ∈ (0, T̄ ), we have
+                                                    1
+                                                        (1− dp )
+                                  ku(·, t0 )kLp T02                ≤ cp                         (3.5)
+since this guarantees that the solution is strong on the time interval (0, t0 + T0 ).
+We achieve (3.5) by applying Proposition 3.1 with γ as above and setting t0 = T1 ,
+provided that u0 is appropriately (ε, β, `)-sparse in Lp .                        
+Proof of Corollary 1.3. This follows immediately from Theorem 1.2 applied at time
+t ∈ (0, T ∗ ) with u0 = u(·, t) and T0 = T ∗ − t.                               
+Proof of Theorem 1.4. Let b ∈ (0, 1) and define
+                                                            −d
+                        St = {x : |u(x, t)| > b`0 p ku(·, t)kLp }.                              (3.6)
+                                                                           − 2d
+Chebyshev’s inequality (1.6) with f = |u|2 and λ = b2 `0 p ku(·, t)k2Lp gives
+                                                                 2d
+                                   2d
+                                                                  p
+                                                                    + µ2
+                               ` p ku(·, t)k2L2   `0 p   `d0
+                        |St | ≤ 02              =      =     .                                  (3.7)
+                                b ku(·, t)k2Lp      b2   b2
+As before, we consider balls with radius ` = a`0 . Then the solution will be sparse
+at scale ` when a  1:
+                                                  Cd
+                             |St ∩ B` (x0 )| ≤ d 2 |B` |,                       (3.8)
+                                                 a b
+provided that we verify that ku(·, t)kLp (S c ) < ku(·, t)kLp (when p = +∞, this step
+is automatic). By interpolation and the definition of St , we have
+                                             1− 2                      2
+            ku(·, t)kLp (S c ) ≤ ku(·, t)kL∞p(S c ) ku(·, t)kLp 2
+                                      d               1− p2             2
+                               (3.6)   −p
+                                ≤ b`0 ku(·, t)kLp               ku(·, t)kLp 2
+                                                                           p2                 (3.9)
+                                    2 − d (1− 2 )           ku(·, t)kL2
+                              = b1− p `0 p p                                      ku(·, t)kLp
+                                                            ku(·, t)kLp
+                              (1.18)     2
+                                 ≤ b1− p ku(·, t)kLp
+                             2
+Choosing b to satisfy b1− p = β and a sufficiently large depending on ε and β
+completes the proof.                                                        
+12                            D. ALBRITTON AND Z. BRADSHAW
+
+3.2. Frequency sparseness. In this section, we explore analogous theorems con-
+cerning frequency sparseness, see Definition 2.2.
+  Our first result is an analogue of Proposition 3.1.
+Proposition 3.3. Let d < p ≤ ∞ and u0 ∈ Lpσ (Rd ). For any γ ∈ (0, 1), define
+T1 ∈ (0, T̄ ) according to (1.15). Then T1 satisfies the following properties: First,
+the strong Lp solution u of the Navier-Stokes equations with initial data u0 exists
+on Rd × (0, T1 ]. Moreover, for any t ∈ (0, T1 ] if u0 is (β, J)-sparse where
+                                   γ
+                             β = ; 2J ∼ γ −1 t−1/2 ,
+                                   2
+then
+                               ku(·, t)kLp ≤ γku0 kLp .
+
+Proof. From (1.13) and the definition of T1 , for all t ∈ (0, T1 ], we have
+                    Z t
+                                                         γ
+                        e(t−s)∆ P∇ · (u ⊗ u) ds        ≤ ku0 kLp .               (3.10)
+                     0                             Lp    2
+Applying Lemma 2.4 ensures that, if u0 is (γ/2, J)-sparse where J is defined by
+2J ∼ γ −1 t−1/2 then
+                                          γ
+                          ket∆ u0 kLp ≤ ku0 kLp .                         (3.11)
+                                          2
+This concludes the proof.                                                     
+
+   Based on Proposition 3.3, we may revisit Theorems 1.2 and 1.4, as well as Corol-
+lary 1.3, from the frequency perspective.
+Corollary 3.4 (Frequency regularity criterion). Let d < p ≤ ∞, u0 ∈ Lpσ , and
+T0 ≥ T̄ . Let γ be defined by
+                                             1
+                                                 (1− pd )
+                                  ku0 kLp T02               γ = cp .             (3.12)
+Define T1 according to (1.15). Assume that u0 is (β, J)-sparse in frequency in Lp ,
+where
+                                  γ               −1/2
+                              β = ; 2J ∼ γ −1 T1                            (3.13)
+                                  2
+and the suppressed constants are dimensionless and universal. Then, the unique
+mild solution for u0 exists and remains smooth beyond time T0 .
+
+Proof. It suffices to show that, for a time t0 ∈ (0, T̄ ), we have
+                                                    1
+                                                        (1− dp )
+                                 ku(·, t0 )kLp T02                 ≤ cp          (3.14)
+since this guarantees that the solution is strong on the time interval (0, t0 + T0 ). We
+can achieve (3.14) by applying Proposition 3.3 with γ as above, taking t = T1 and
+requiring u0 to be appropriately (β, J)-sparse.                                        
+
+     In the next corollary, we define T1 (t) as in Corollary 1.3.
+       REMARKS ON SPARSENESS AND REGULARITY OF NAVIER–STOKES SOLUTIONS                  13
+
+Corollary 3.5 (Frequency blow-up criterion). Let d < p ≤ ∞ and u0 ∈ Lpσ . Let u
+be the unique strong solution for u0 . Suppose that the maximal time of existence T ∗
+is finite. Let γp (t) be defined by
+                                                  1       d
+                        ku(·, t)kLp (T ∗ − t) 2 (1− p ) γp (t) = cp .               (3.15)
+Let J(t) be defined by the property that
+                                            1
+                            ku<J (·, t)kLp < ku(·, t)kLp .
+                                            2
+Then
+                                                              1
+                                   2J(t) .γ −1 T1 (t)− 2
+                                                                      1   d
+In the case of Type-1 blow-up, i.e., ku(·, t)kLp ∼ (T ∗ − t)− 2 (1− p ) , we have
+                                                              1
+                                   2J(t) .(T ∗ − t)− 2 .
+
+Proof. This follows immediately from Corollary 3.4 initiated at time t ∈ (0, T ∗ )
+with u0 = u(·, t) and T0 = T ∗ − t.                                            
+Proposition 3.6 (A priori frequency sparseness). Let d < p ≤ ∞. Suppose that u
+is a strong Navier-Stokes solution with initial data u0 ∈ L2σ ∩ Lpσ . Let `0 and µp be
+defined as in Theorem 1.4. Then, for any β ∈ (0, 1), letting 2−J ∼ `0 β −µp , we have
+u(·, t) is (β, J)-sparse in frequency.
+
+Proof. By Bernstein’s inequality, we have,
+                                              d       d
+                                      2J( 2 − p ) ku0 k2
+                    k∆≤J u(·, t)kLp .                    ku(·, t)kLp .              (3.16)
+                                       ku(·, t)kLp
+The proposition follows readily.                                                        
+
+   We now use the heat kernel estimates to give yet another proof (after Cheski-
+dov and Shvydkoy [CS09], Farhat, Grujić, and Leitmeyer [FGL17b, FGL17a], and
+                                                              −1
+Hmidi and Li [HL17]) that if a strong solution is small in Ḃ∞,∞  on any interval of
+time then it can be smoothly extended to a larger interval of time. This illustrates a
+positive connection between sparseness and regularity.
+Proposition 3.7. Let u0 ∈ L∞σ . Let u be the unique strong solution with initial data
+u0 . Let T ∗ ∈ (0, +∞] be the maximal time of existence. There exists a universal
+constant ∗ such that if
+                             sup ku(·, t)kḂ∞,∞
+                                              −1  < ∗ ,                       (3.17)
+                              0<t<T ∗
+       ∗
+then T = +∞.
+
+Proof. Assume that T ∗ < +∞. Note that u ∈ C((0, T ); L∞ ). Since ku(·, t)kL∞
+blows up as t → T−∗ , for any M > ku0 kL∞ , there exists tM so that ku(·, tM )kL∞ =
+M and suptM <t<T ∗ ku(·, t)kL∞ > M . The times tM are called escape times. We
+will arrive at a contradiction by proving no escape times exist. Note that, for all t
+sufficiently close to T ∗ ,
+                                                                  1
+                            ku(·, t)kL∞ ≥ c∞ (T ∗ − t)− 2 .                         (3.18)
+14                          D. ALBRITTON AND Z. BRADSHAW
+
+Let γ = 1/2 and 2J = 2(t0 − t)−1/2 where t0 = t + (T ∗ − t)/2 = T ∗ /2 +
+t/2. We will show that if kukL∞     −1
+                                t Ḃ∞,∞
+                                        is small then u(·, t) is (γ, J) sparse and, by
+                        0
+Proposition 3.3, ku(·, t )kL∞ ≤ ku(·, t)kL∞ . This implies t is not an escape time.
+Since t was arbitrary, there exist no escape times close to T ∗ and, therefore, T ∗ is
+not a blow-up time.
+                                                −1
+  We have by the definitions of the norm of Ḃ∞,∞    and t0 that
+                k∆≤J u(·, t)kL∞ ≤ C2J ku(·, t)kḂ∞,∞
+                                                 −1
+
+                                                − 12
+                                      1 ∗                                      (3.19)
+                                = C (T − t)            ku(·, t)kḂ∞,∞
+                                                                  −1
+                                      2
+                                . ku(·, t)kL∞ ku(·, t)kḂ∞,∞
+                                                         −1 ,
+
+
+where we assume t is close enough to T ∗ for (3.18) to hold. Requiring
+                                     kukL∞   −1
+                                         t Ḃ∞,∞
+                                                 β                            (3.20)
+implies u(·, t) is (β, J)-sparse.                                                  
+
+                                     4. E XAMPLES
+                                                       (k)
+   In this section, we examine the sparsity classes Zα originally introduced in [GX19]
+through the lens of concrete examples. The ansatz we consider is motivated by
+known singularity formation for related nonlinear PDEs, e.g., semilinear heat equa-
+tions (see [Col16] and the references therein), the three-dimensional compressible
+Navier-Stokes equations [MRRS19], and Burgers equation with fractional dissipa-
+tion [OP21, CMVP21], among others.
+   For x ∈ Rd and t ∈ (−T, 0), we define the (backward) similarity variables
+                                    x
+                           y=           , s = − log(−t)                          (4.1)
+                                 (−t)ζx
+and
+                                          1
+                              u(x, t) =       U (y, s) ,                    (4.2)
+                                       (−t)ζt
+where u : Rd × (−T, 0) → Rd is a vector field and ζx , ζt > 0 are two positive
+exponents. Let S = − log T . The vector field U : Rd × (S, +∞) → Rd can be
+viewed as a ‘similarity profile.’ Notably, U can remain controlled for s > S and
+still correspond to blow-up in u as t → 0− . For every k ∈ N0 , we assume that U
+satisfies
+                             sup k∇ky U (·, s)kL∞ ≤ Ck                      (4.3)
+                            s∈(S,+∞)
+
+for some Ck > 0,
+                            sup |∇ky U | → 0 as |y| → +∞ ,                       (4.4)
+                         s∈(S,+∞)
+
+and there exists Rk > 0 such that
+                               inf     k∇ky U kL∞ (BRk ) ≥ ck                    (4.5)
+                            s∈(S,+∞)
+
+for some ck > 0.
+      REMARKS ON SPARSENESS AND REGULARITY OF NAVIER–STOKES SOLUTIONS                15
+
+  If u satisfies the Navier-Stokes equations
+                   ∂t u + u · ∇u − ∆u + ∇p = 0 ,        div u = 0 ,               (4.6)
+then U satisfies the system
+    ∂s U + ζt U + ζx y · ∇y U + e−(1−ζt −ζx )s U · ∇y U − e−(1−2ζx )s ∆U + ∇P = 0
+    div U = 0 .
+                                                                                (4.7)
+   The canonical choice of exponents in (4.7) is ζt = ζx = 1/2, which causes the
+exponential prefactors to be autonomous. With this choice, if moreover U were
+steady, then u would be a backward self-similar solution, as proposed in Leray’s
+work [Ler34, (3.11), p. 225]. Such solutions were excluded by [NRŠ96, Tsa98,
+Tsa99]. If instead U were time-periodic, then u would be a backward discretely
+self-similar solution; this scenario has not been ruled out.
+   A different but natural choice is ζt + ζx = 1 and 0 < ζx < 1/2, which causes
+the exponential prefactor in front of the term U · ∇y U to become autonomous,
+whereas the prefactor in front of ∆U converges to zero as s → +∞. In this scenario,
+the Navier-Stokes singularity would be a perturbation of an Euler singularity. We
+emphasize that the above scenario is purely speculative, and the currently known
+Euler singularities [Elg21] (see also the numerical predictions in [LH14]) cannot, to
+the best of our knowledge, be readily perturbed to Navier-Stokes singularities in this
+fashion. Analogous blow-ups, in which the dissipation is perturbative, are known to
+occur for the three-dimensional compressible Navier-Stokes equations [MRRS19]
+and the Burgers equation with fractional dissipation [OP21, CMVP21].
+   The ansatz (4.1)-(4.5) may be thought of as describing a ‘shape’ of blow-up,
+and it encompasses a wide range of possible behaviors, as it is not known how
+a hypothetical Navier-Stokes singularity might realistically look. In particular, the
+decay requirement (4.4) is general and might also capture functions beyond the
+Leray-Hopf class. Typically the ‘correct’ behavior as |y| → +∞ may depend on the
+choice of exponents. For example, it does not make sense to generally impose that
+U ∈ L∞     2   d
+        s Ly (R ×(S, +∞)), as this would cause the blow-up profile u(·, 0) to vanish
+identically when ζt = ζx = 1/2, thereby violating backward uniqueness [ESŠ03].
+One can also imagine an inner blow-up region ‘glued’ to a smooth outer region, as
+can be made rigorous for the harmonic map heat flow [DdPW20].
+   Our main observation is the following:
+Proposition 4.1. Let d ≥ 2, T, ζt , ζx > 0, and u : Rd × (−T, 0) → Rd be a vector
+field satisfying the hypotheses (4.1)-(4.5). Then the following are equivalent:
+(1) (Locally finite kinetic energy). supt∈(−T,0) ku(·, t)kL2 (B(−t)ζx R ) < +∞.
+                                                                      0
+                               (k)
+(2) (Sparsity). u belongs to Zᾱk uniformly in t ∈ (−T, 0).
+(3) (Exponents). ζt ≤ dζx /2.
+                                                                                    (k)
+   In particular, within the class of examples we present here, membership in Zᾱk
+is not stronger than the condition of finite kinetic energy u ∈ L∞  2   d
+                                                                 t Lx (R × (−T, 0)).
+
+Proof. The criteria (4.1)-(4.5) ensure two elementary sparseness properties on the
+profiles U (·, t):
+16                              D. ALBRITTON AND Z. BRADSHAW
+
+  I. For any ε, β ∈ (0, 1), there exists Lk  1 such that ∇ky U is sparse at scale Lk ,
+uniformly in s. In this section, ‘sparse’ means in the L∞ sense. Indeed, we define
+S = {|∇k U | > βk∇k U kL∞ }. Then
+                                 S ⊂ {|∇k U | > βck } ⊂ BR̄k                                    (4.8)
+for sufficiently large R̄k . Hence,
+                                                                        d
+                                                                   R̄k
+                            |S ∩ B` (x0 )| ≤ |BR̄k | ≤                        |B` |,            (4.9)
+                                                                    `
+and we choose Lk = `  R̄k .
+  II. For any ε, β ∈ (0, 1), there exists `k  1 such that the components of ∇ky U are
+not sparse at scale `k . Indeed, choose xk (depending on t) such that |∇k U (xk )| =
+k∇k U kL∞ . Since k∇k+1 U kL∞ ≤ Ck+1 , we have that for ` β k∇k U kL∞ /Ck+1 ,
+                             |∇k U (xk )| > βk∇k U kL∞ in B` (xk ).                            (4.10)
+     We now verify the scales of sparseness in the above examples. Clearly, we have
+                                        1
+                           ∇kx u =             (∇k U )(y, s).                 (4.11)
+                                    (−t)ζt +kζx y
+Therefore, according to I, the solution u and its derivatives ∇kx u are sparse at scale
+` = (−t)ζx Lk . The norm of ∇k u in L∞ is ∼k (−t)−(ζt +kζx ) , bounded above and be-
+low up to multiplicative constants. Multiplying this exponent by a number −αk
+(depending on ζt and ζx ) and matching it to the exponent ζx , we discover that
+           (k)
+u(·, t) ∈ Zαk , uniformly in t, with
+                                             ζx         1
+                                   αk =            = ζt     .                                  (4.12)
+                                          ζt + kζx   ζ
+                                                        + k    x
+
+Hence,
+                          u belongs to Zα(k)
+                                          k
+                                             uniformly in t ∈ (−T, 0) .                        (4.13)
+Moreover, according to II, we have that
+       u fails to belong to Zα(k) uniformly in t ∈ (−T, 0) for any α > αk .                    (4.14)
+  We now compute what exponents are admissible under various conditions. We
+begin by computing the norms
+                                                                         −ζt +( dp −k)ζx
+                     k∇kx u(·, t)kLp B                ∼
+                                                            p,k (−t)                       .   (4.15)
+                                          (−t)ζx Rk
+
+
+  1. Locally finite kinetic energy: By inspecting (4.15) with p = 2 and k = 0, we
+observe that the exponents which keep (4.15) bounded are precisely those satisfying
+                                                 d
+                                             ζt ≤ ζx .                                         (4.16)
+                                                 2
+                    (k)
+     2. The class Zᾱk : Recall that
+                                                        1
+                                           ᾱk =                                               (4.17)
+                                                      k + d2
+      REMARKS ON SPARSENESS AND REGULARITY OF NAVIER–STOKES SOLUTIONS                      17
+
+is the exponent identified in [GX19]. By comparing (4.12) with (4.17), we discover
+                                                                  (k)
+that, due to (4.13) and (4.14), the condition that u belongs to Zᾱk uniformly in
+t ∈ (−T, 0) is equivalent to αk ≥ ᾱk , that is,
+                                            d
+                                     ζt ≤ ζx ,                               (4.18)
+                                            2
+which is the same condition imposed by locally finite kinetic energy. To conclude,
+within the class of examples we present here, having locally finite kinetic energy
+                      (k)
+and membership in Zᾱk occur for exactly the same exponents.                     
+   While the above observation is already our main point, it is interesting to discuss
+further requirements on the exponents:
+   3. Energy class. If ∇x u ∈ L2t L2x (B(−t)ζx Rk × (−T, 0)), then
+                                              
+                                         d             1
+                               ζt <        − 1 ζx + .                           (4.19)
+                                         2             2
+That is, the Leray–Hopf class excludes more exponents than merely having locally
+finite kinetic energy does.
+   4. Known regularity criteria. For u to be a singular solution, it must satisfy
+ku(·, t)kL∞ > c∞ (−t)−1/2 , from which we obtain ζt ≥ 1/2. Similarly, if ad-
+ditionally we assume the decay condition U ∈ L∞               d,∞
+                                                         t Ly , then the requirement
+lim inf t→0− ku(·, t)kLd,∞ > 0 implies that ζt ≥ ζx . We assume the additional spatial
+decay requirement on the profile because (4.15) only describes the norm in a ball
+whose radius is shrinking to zero. The most reasonable spatial decay conditions on
+U depend on ζt and ζx and are those which cause the ‘blow-up profile’ u(·, 0) to be
+well defined and non-trivial. For example, one might instead require |U | ∼ |y|−ζt /ζx
+                                                        dζx /ζt ,∞
+as |y| → +∞, which yields, in particular, u ∈ L∞     t Lx          .
+   The ansatz (4.2) is by no means comprehensive. For instance, it does not ac-
+commodate possible logarithmic corrections to the scaling laws, as are known to
+arise in the two-dimensional harmonic map heat flow [DdPW20], where the proper
+spatial rescaling is y = | log(−t)|2 x/(−t). It is an interesting and important ques-
+tion to understand whether further analysis of the PDE (4.7) may disqualify further
+exponents.
+Acknowledgments. DA was supported by NSF Postdoctoral Fellowship Grant No.
+2002023. ZB was supported in part by the Simons Foundation via Collaboration
+Grant No. 635438. The authors thank Zoran Grujić and Theo Drivas for feedback
+on a preliminary version and Tobias Barker and the anonymous referees for pointing
+out an error in the original manuscript and other valuable comments.
+
+                                       R EFERENCES
+[BadVGG18] Hugo Beirão da Veiga, Yoshikazu Giga, and Zoran Grujić. Vorticity direction and
+           regularity of solutions to the Navier-Stokes equations. In Handbook of mathematical
+           analysis in mechanics of viscous fluids, pages 901–932. Springer, Cham, 2018.
+[BCD11]    Hajer Bahouri, Jean-Yves Chemin, and Raphaël Danchin. Fourier analysis and non-
+           linear partial differential equations, volume 343 of Grundlehren der Mathematischen
+           Wissenschaften [Fundamental Principles of Mathematical Sciences]. Springer, Hei-
+           delberg, 2011.
+18                             D. ALBRITTON AND Z. BRADSHAW
+
+
+
+
+          F IGURE 1. Admissible exponents (ζx , ζt ) for a hypothetical singu-
+          lar solution u satisfying the ansatz (4.2). The purple region denotes
+          those exponents that are consistent with finite energy and do not sat-
+                                                                           (k)
+          isfy the known (critical) regularity criteria. Exponents for Zᾱk are
+          found on the line corresponding to L∞     2
+                                                t Lx . A reduction of the scaling
+          gap would correspond to the sparseness class exponents belonging
+          to the interior of the purple region.
+
+[BFG19]        Zachary Bradshaw, Aseel Farhat, and Zoran Grujić. An algebraic reduction of the
+               ‘scaling gap’ in the Navier-Stokes regularity problem. Arch. Ration. Mech. Anal.,
+               231(3):1983–2005, 2019.
+[BG17]         Zachary Bradshaw and Zoran Grujić. Frequency localized regularity criteria for the
+               3D Navier-Stokes equations. Arch. Ration. Mech. Anal., 224(1):125–133, 2017.
+[BP20]         Tobias Barker and Christophe Prange. Localized smoothing for the Navier-Stokes
+               equations and concentration of critical norms near singularities. Arch. Ration. Mech.
+               Anal., 236(3):1487–1541, 2020.
+[BP21]         Tobias Barker and Christophe Prange. Quantitative regularity for the Navier-Stokes
+               equations via spatial concentration. Comm. Math. Phys., 385(2):717–792, 2021.
+[CC99]         Dongho Chae and Hi-Jun Choe. Regularity of solutions to the Navier-Stokes equa-
+               tion. Electron. J. Differential Equations, pages No. 05, 7, 1999.
+[CF93]         Peter Constantin and Charles Fefferman. Direction of vorticity and the problem of
+               global regularity for the Navier-Stokes equations. Indiana Univ. Math. J., 42(3):775–
+               789, 1993.
+[CMVP21]       Kyle R Chickering, Ryan C Moreno-Vasquez, and Gavin Pandya. Asymptoti-
+               cally self-similar shock formation for 1d fractal Burgers equation. arXiv preprint
+               arXiv:2105.15128, 2021.
+[Col16]        Charles Collot. On blow-up and dynamics near ground states for some semilinear
+               equations. Séminaire Laurent Schwartz — EDP et applications, 2015-2016. talk:20.
+      REMARKS ON SPARSENESS AND REGULARITY OF NAVIER–STOKES SOLUTIONS                                19
+
+[CS09]      A. Cheskidov and R. Shvydkoy. The regularity of weak solutions of the 3d
+            Navier–Stokes equations in ḃ−1    ∞,∞ . Archive for Rational Mechanics and Analysis,
+            195(1):159–169, September 2009.
+[CS14a]     A. Cheskidov and R. Shvydkoy. Euler equations and turbulence: analytical approach
+            to intermittency. SIAM J. Math. Anal., 46(1):353–374, 2014.
+[CS14b]     A. Cheskidov and R. Shvydkoy. A unified approach to regularity problems for the
+            3D Navier-Stokes and Euler equations: the use of Kolmogorov’s dissipation range. J.
+            Math. Fluid Mech., 16(2):263–273, 2014.
+[DdPW20]    Juan Dávila, Manuel del Pino, and Juncheng Wei. Singularity formation for the two-
+            dimensional harmonic map flow into S 2 . Invent. Math., 219(2):345–466, 2020.
+[Elg21]     Tarek Elgindi. Finite-time singularity formation for C 1,α solutions to the incompress-
+            ible Euler equations on R3 . Ann. of Math. (2), 194(3):647–727, 2021.
+[ESŠ03]    L. Escauriaza, G. Seregin, and V. Šverák. L3,∞ -solutions of Navier-Stokes equations
+            and backward uniqueness. Uspekhi Mat. Nauk, 58(2(350)):3–44, 2003.
+                                                                                            −1
+[FGL17a]    Aseel Farhat, Zoran Grujić, and Keith Leitmeyer. Erratum to: The space B∞,∞         , volu-
+            metric sparseness, and 3D NSE [ MR3685972]. J. Math. Fluid Mech., 19(3):525–527,
+            2017.
+                                                                                      −1
+[FGL17b]    Aseel Farhat, Zoran Grujić, and Keith Leitmeyer. The space B∞,∞              , volumetric
+            sparseness, and 3D NSE. J. Math. Fluid Mech., 19(3):515–523, 2017.
+[Gru13]     Z. Grujić. A geometric measure-type regularity criterion for solutions to the 3D
+            Navier-Stokes equations. Nonlinearity, 26(1):289–296, 2013.
+[GX19]      Zoran Grujić and Liaosha Xu. Asymptotic criticality of the Navier-Stokes regularity
+            problem. arXiv preprint arXiv:1911.00974, 2019.
+[GX20]      Zoran Grujić and Liaosha Xu. Time-global regularity of the Navier-Stokes system
+            with hyper-dissipation–turbulent scenario. arXiv preprint arXiv:2012.05692, 2020.
+[GX21]      Zoran Grujić and Liaosha Xu. A regularity criterion for 3d NSE in ‘dynamically
+            restricted’ local morrey spaces. Applicable Analysis, pages 1–15, 2021.
+[HL17]      Taoufik Hmidi and Dong Li. Small Ḃ −1      ∞,∞ implies regularity. Dyn. Partial Differ.
+            Equ., 14(1):1–4, 2017.
+[KMT]       Kyungkeun Kang, Hideyuki Miura, and Tai-Peng Tsai. An -regularity criterion and
+            estimates of the regular set for navier-stokes flows in terms of initial data. Pure and
+            Appl. Anal., to appear.
+[Ler34]     Jean Leray. Sur le mouvement d’un liquide visqueux emplissant l’espace. Acta Math.,
+            63(1):193–248, 1934.
+[LH14]      Guo Luo and Thomas Y Hou. Potentially singular solutions of the 3D axisymmetric
+            Euler equations. Proceedings of the National Academy of Sciences, 111(36):12968–
+            12973, 2014.
+[LOW18]     Kuijie Li, Tohru Ozawa, and Baoxiang Wang. Dynamical behavior for the solutions
+            of the Navier-Stokes equation. Commun. Pure Appl. Anal., 17(4):1511–1560, 2018.
+[Mil21]     Evan Miller. A survey of geometric constraints on the blowup of solutions of the
+            Navier-Stokes equation. J. Elliptic Parabol. Equ., 7(2):589–599, 2021.
+[MRRS19]    Frank Merle, Pierre Raphael, Igor Rodnianski, and Jeremie Szeftel. On the implosion
+            of a three dimensional compressible fluid. arXiv preprint arXiv:1912.11009, 2019.
+[NRŠ96]    J. Nečas, M. Růžička, and V. Šverák. On Leray’s self-similar solutions of the Navier-
+            Stokes equations. Acta Math., 176(2):283–294, 1996.
+[OP21]      Sung-Jin Oh and Federico Pasqualotto. Gradient blow-up for dispersive and dissipa-
+            tive perturbations of the Burgers equation. arXiv preprint arXiv:2107.07172, 2021.
+[RGB+ 21]   Janet Rafner, Zoran Grujić, Christian Bach, Jakob Andreas Bærentzen, Bo Gervang,
+            Ruo Jia, Scott Leinweber, Marek Misztal, and Jacob Sherson. Geometry of turbulent
+            dissipation and the Navier–Stokes regularity problem. Scientific Reports, 11(1):1–9,
+            2021.
+[Tao21]     Terence Tao. Quantitative bounds for critically bounded solutions to the Navier-
+            Stokes equations. In A Kechris, N Makarov, D Ramakrishnan, and X Zhu, editors,
+20                            D. ALBRITTON AND Z. BRADSHAW
+
+              Nine Mathematical Challenges: An Elucidation, volume 104. American Mathemati-
+              cal Society, 2021.
+[Tsa98]       Tai-Peng Tsai. On Leray’s self-similar solutions of the Navier-Stokes equations sat-
+              isfying local energy estimates. Arch. Rational Mech. Anal., 143(1):29–51, 1998.
+[Tsa99]       Tai-Peng Tsai. Erratum: “On Leray’s self-similar solutions of the Navier-Stokes equa-
+              tions satisfying local energy estimates” [Arch. Rational Mech. Anal. 143 (1988), no.
+              1, 29–51; MR1643650 (99j:35171)]. Arch. Ration. Mech. Anal., 147(4):363, 1999.
+[Tsa18]       Tai-Peng Tsai. Lectures on Navier-Stokes equations, volume 192 of Graduate Studies
+              in Mathematics. American Mathematical Society, Providence, RI, 2018.
+
+  S CHOOL OF M ATHEMATICS , I NSTITUTE FOR A DVANCED S TUDY, 1 E INSTEIN D R ., P RINCE -
+TON , NJ 08540, USA
+     Email address: dallas.albritton@ias.edu
+
+     D EPARTMENT OF M ATHEMATICS , U NIVERSITY OF A RKANSAS , FAYETTEVILLE , AR 72701
+     Email address: zb002@uark.edu
+

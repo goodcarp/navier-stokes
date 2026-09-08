@@ -1,0 +1,39 @@
+nsring.py sha256 = 3c8e93b2da7c8f5437f74c3c39e67fb7b5ef6b29d92e01204e3176d817969f03
+
+========================================================================================
+(1) is a = u^r/r >= 0 on supp(omega) ?   (the unstated premise of 'P1 >= 0')
+========================================================================================
+   N=3  supp = {|omega|>0.001 M}:  min a on supp = -0.447430   (max|a| = 1.0511)   share of |omega| where a<0 : 41.7974%
+   N=3  supp = {|omega|>0.01 M}:  min a on supp = -0.447430   (max|a| = 1.0511)   share of |omega| where a<0 : 41.7541%
+   N=3  supp = {|omega|>0.1 M}:  min a on supp = -0.445709   (max|a| = 1.0511)   share of |omega| where a<0 : 41.3433%
+   N=3  P1 integrand: positive part = +0.429031   negative part = -0.011206   -> P1 = +0.417825   (|neg|/pos = 2.6119%)
+
+   N=4  supp = {|omega|>0.001 M}:  min a on supp = -0.449811   (max|a| = 1.3907)   share of |omega| where a<0 : 41.3124%
+   N=4  supp = {|omega|>0.01 M}:  min a on supp = -0.449811   (max|a| = 1.3907)   share of |omega| where a<0 : 41.2686%
+   N=4  supp = {|omega|>0.1 M}:  min a on supp = -0.448536   (max|a| = 1.3907)   share of |omega| where a<0 : 40.8439%
+   N=4  P1 integrand: positive part = +0.792267   negative part = -0.011214   -> P1 = +0.781053   (|neg|/pos = 1.4154%)
+
+   N=5  supp = {|omega|>0.001 M}:  min a on supp = -0.450433   (max|a| = 1.7301)   share of |omega| where a<0 : 41.1920%
+   N=5  supp = {|omega|>0.01 M}:  min a on supp = -0.450433   (max|a| = 1.7301)   share of |omega| where a<0 : 41.1481%
+   N=5  supp = {|omega|>0.1 M}:  min a on supp = -0.448919   (max|a| = 1.7301)   share of |omega| where a<0 : 40.7294%
+   N=5  P1 integrand: positive part = +1.270573   negative part = -0.011215   -> P1 = +1.259358   (|neg|/pos = 0.8826%)
+
+========================================================================================
+(2) the L1 grid-vs-quadrature residual: normalisation, or representation?
+========================================================================================
+   N=3 h=1/8: max|om| analytic = 0.999947  discrete = 1.000393   ratio = 1.000447
+           a_grid = 1.024333   a_quad/(analytic max) = 1.030233  rel = 5.727e-03   |  a_quad/(discrete max) = 1.029773  rel = 5.283e-03
+   N=3 h=1/16: max|om| analytic = 0.999947  discrete = 1.000031   ratio = 1.000085
+           a_grid = 1.024068   a_quad/(analytic max) = 1.030233  rel = 5.983e-03   |  a_quad/(discrete max) = 1.030146  rel = 5.899e-03
+   N=4 h=1/8: max|om| analytic = 0.999950  discrete = 1.000394   ratio = 1.000444
+           a_grid = 1.363678   a_quad/(analytic max) = 1.369700  rel = 4.396e-03   |  a_quad/(discrete max) = 1.369091  rel = 3.954e-03
+   N=4 h=1/16: max|om| analytic = 0.999950  discrete = 1.000032   ratio = 1.000083
+           a_grid = 1.363517   a_quad/(analytic max) = 1.369700  rel = 4.514e-03   |  a_quad/(discrete max) = 1.369586  rel = 4.432e-03
+   N=5 h=1/8: max|om| analytic = 0.999950  discrete = 1.000394   ratio = 1.000444
+           a_grid = 1.703005   a_quad/(analytic max) = 1.709169  rel = 3.607e-03   |  a_quad/(discrete max) = 1.708410  rel = 3.164e-03
+   N=5 h=1/16: max|om| analytic = 0.999950  discrete = 1.000032   ratio = 1.000083
+           a_grid = 1.702960   a_quad/(analytic max) = 1.709169  rel = 3.633e-03   |  a_quad/(discrete max) = 1.709028  rel = 3.550e-03
+   N=6 h=1/8: max|om| analytic = 0.999950  discrete = 1.000394   ratio = 1.000444
+           a_grid = 2.042326   a_quad/(analytic max) = 2.048639  rel = 3.082e-03   |  a_quad/(discrete max) = 2.047729  rel = 2.639e-03
+   N=6 h=1/16: max|om| analytic = 0.999950  discrete = 1.000032   ratio = 1.000083
+           a_grid = 2.042402   a_quad/(analytic max) = 2.048639  rel = 3.044e-03   |  a_quad/(discrete max) = 2.048470  rel = 2.962e-03

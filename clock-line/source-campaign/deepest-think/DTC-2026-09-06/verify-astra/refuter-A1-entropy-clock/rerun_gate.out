@@ -1,0 +1,8 @@
+SOURCE_SHA256 9ee1c4e031795e7fc6f4a96b24cf5bdcff7732bb7ac27530bb6cf258df91a3f1
+GAUSSIAN_ENTROPY -3*log(nu*t/L**2)/2 - 3/2 + mu**2/(4*L**2) + 3*nu*t/(2*L**2)
+DROPPED_DISPLACEMENT_CONTROL -1
+NASH_ODE exact; L1-to-L2 power -3/4 and composed power -3/2
+UNIFORM_BOOTSTRAP_SMALLNESS elementary logarithm slack passed
+CLOCK_SCALING -2; energy Reynolds number invariant
+LARGE_RECORD_PARABOLIC_RATIO grows; geometric delay lower bounds summable
+ALL EXACT CONTROLS PASSED; NO GLOBAL NAVIER_STOKES CONCLUSION

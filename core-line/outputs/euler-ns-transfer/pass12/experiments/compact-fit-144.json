@@ -1,0 +1,84 @@
+{
+  "status": "COMPLETED H7 WHOLE-SPACE ENDPOINT RECONSTRUCTION; NOT NS VALIDATION",
+  "input_checkpoint": "work/pass11/resolved-192-2049-dt50.npz",
+  "input_sha256": "603663cf57011ece8f13028fc6175f74a4dfd9cb867fb90e3b791c72aacd1940",
+  "source_sha256": "6ccd4801ea5ef2ad8ff5211325ded64e2ac8ae7719b962cacfd7714cf91479ac",
+  "parameters": {
+    "nr": 192,
+    "nz": 2049,
+    "R": 8.0,
+    "L": 16.0,
+    "mapping": 4.0,
+    "J": 4,
+    "nu": 0.001,
+    "T": 0.001,
+    "dt": 5e-05,
+    "steps": 20,
+    "dealias": "padding",
+    "backend": "fast",
+    "fft_workers": 4
+  },
+  "radial_intervals": 144,
+  "radial_degree": 9,
+  "base": "Exact unchanged analytic initial datum u0; no fit of u0 is substituted.",
+  "increment": "Fit of U(T)-U_discrete(0); all stored complex axial/angular phases retained.",
+  "potential_output": "work/pass12/compact-fit-144.npz",
+  "potential_sha256": "6f0db71c87bd8b196c86285acb6539b9f5977fa8749e080066dacfeefdc35fcb",
+  "modal_results": [
+    {
+      "mode": 0,
+      "delta_L2": 25.804024252606997,
+      "fit_error_L2_unwindowed": 0.3716578820982754,
+      "fit_error_L2_windowed": 0.45394059335525866,
+      "axial_collar_change_L2": 0.2606386020074994,
+      "max_sampled_normal_equation_relative_residual": 4.856406558690095e-12
+    },
+    {
+      "mode": 4,
+      "delta_L2": 6.231071277586984,
+      "fit_error_L2_unwindowed": 0.12755057980473042,
+      "fit_error_L2_windowed": 0.12755064417985418,
+      "axial_collar_change_L2": 0.0001281490420643941,
+      "max_sampled_normal_equation_relative_residual": 3.837581425008727e-14
+    },
+    {
+      "mode": 8,
+      "delta_L2": 0.27161760017735953,
+      "fit_error_L2_unwindowed": 0.013416309537360924,
+      "fit_error_L2_windowed": 0.013416309537404223,
+      "axial_collar_change_L2": 3.8040046631399406e-08,
+      "max_sampled_normal_equation_relative_residual": 1.3395291052612327e-15
+    },
+    {
+      "mode": 12,
+      "delta_L2": 0.04027722002053852,
+      "fit_error_L2_unwindowed": 0.0020627723245507596,
+      "fit_error_L2_windowed": 0.0020627723245593916,
+      "axial_collar_change_L2": 6.537964053365249e-09,
+      "max_sampled_normal_equation_relative_residual": 7.459499450777977e-16
+    },
+    {
+      "mode": 16,
+      "delta_L2": 0.007306084115631576,
+      "fit_error_L2_unwindowed": 0.00032688626195802117,
+      "fit_error_L2_windowed": 0.00032688626196214824,
+      "axial_collar_change_L2": 1.851470737554367e-09,
+      "max_sampled_normal_equation_relative_residual": 1.2762653482775747e-15
+    }
+  ],
+  "total_sampled_windowed_fit_error_L2": 0.4717155799550347,
+  "axial_collar_change_L2": 0.2606386335112317,
+  "sampled_discrete_increment_L2": 26.547116013788454,
+  "elapsed_seconds": 19.576722331,
+  "uncertified": [
+    "sampled norm versus continuous norm",
+    "radial/axial derivative errors",
+    "time-slab evolution and time derivatives",
+    "pressure and full projected residual",
+    "difference between whole-space NS and finite-cylinder data",
+    "endpoint gain and successor class"
+  ],
+  "regularity": "Compact C8/H9 potentials induce C6/H7 velocity; not C-infinity.",
+  "executed_source_file": "work/pass12/provenance/compact_potential_reconstruction-6ccd4801ea5e.py",
+  "metadata_clarification": "Status wording corrected after completed run; numerical values unchanged."
+}

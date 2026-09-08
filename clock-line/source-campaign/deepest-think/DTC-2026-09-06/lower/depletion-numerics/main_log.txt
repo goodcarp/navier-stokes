@@ -1,0 +1,13 @@
+[shell N=3 h=1/8 Re0=100 lam=1.5 sign=+1 main] grid 96x96 R=8 ReE=2572 logReE=7.852
+    T32=0.6667  T2=1.1306  T4=3.9070  T8=--
+    stop=horizon peak=4.0387 t_final=4.0140 C(0)=0.8346 C(end)=0.1251 eta_ratio=0.33145 steps=260 3.6s
+[shell N=4 h=1/8 Re0=100 lam=1.5 sign=+1 main] grid 192x192 R=16 ReE=1.029e+04 logReE=9.239
+    T32=0.4477  T2=0.7428  T4=2.0197  T8=--
+    stop=horizon peak=5.6752 t_final=4.0016 C(0)=1.1118 C(end)=0.0936 eta_ratio=0.22332 steps=548 15.1s
+[shell N=5 h=1/8 Re0=100 lam=1.5 sign=+1 main] grid 384x384 R=32 ReE=4.116e+04 logReE=10.625
+    T32=0.3379  T2=0.5548  T4=1.4322  T8=--
+    stop=horizon peak=7.3048 t_final=4.0021 C(0)=1.3891 C(end)=0.0762 eta_ratio=0.14067 steps=1128 107.8s
+[shell N=6 h=1/8 Re0=100 lam=1.5 sign=+1 main] grid 768x768 R=64 ReE=1.646e+05 logReE=12.011
+    T32=0.2716  T2=0.4433  T4=1.1043  T8=2.7517
+    stop=reached_8M peak=8.0020 t_final=2.7524 C(0)=1.6663 C(end)=0.0917 eta_ratio=0.09981 steps=1511 2402.1s
+wrote ~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/lower/depletion-numerics/dep_main.json

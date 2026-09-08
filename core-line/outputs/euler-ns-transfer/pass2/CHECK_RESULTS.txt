@@ -1,0 +1,51 @@
+CHECK: verify_active_core_pressure.py
+PASS: rotating-core pressure source, contact term/angular coefficient, fourth-derivative tensor, cone negativity, divergence, and initial vorticity identities
+SCOPE: exact algebra plus the stated analytic local-existence argument; no numerical evolution or regeneration theorem
+CHECK: verify_local_pressure_audit.py
+PASS: compact swirl incompressibility
+PASS: compact swirl exact pressure source
+PASS: Newtonian Hessian regular part
+PASS: angular contraction
+PASS: radial integral is a boundary term
+PASS: core pressure Hessian coefficient
+PASS: horizontal pressure fourth derivative 0,0
+PASS: horizontal pressure fourth derivative 0,1
+PASS: horizontal pressure fourth derivative 1,0
+PASS: horizontal pressure fourth derivative 1,1
+PASS: cone tangent endpoint
+PASS: cone radial endpoint
+PASS: both horizontal kernel eigenvalues are below -6 throughout the cone
+All algebra checks passed; this is an initial time-jet result, not a finite-gain or blowup proof.
+CHECK: verify_affine_stretch_gate.py
+PASS: Gaussian stretched-vorticity full scalar residual
+PASS: Gaussian stretched-swirl full azimuthal momentum residual
+PASS: Gaussian circulation normalization
+PASS: Kelvin incompressibility
+PASS: exact anisotropic Kelvin full NS component 1
+PASS: exact anisotropic Kelvin full NS component 2
+PASS: exact anisotropic Kelvin full NS component 3
+PASS: Kelvin axial vorticity stretching with evolving wavevector
+PASS: affine material volume conservation
+PASS: vorticity gain derivative
+PASS: velocity gain derivative
+PASS: vorticity gain maximizer
+PASS: velocity gain maximizer
+PASS: anisotropic Reynolds-localization product
+PASS: isotropic carrier Reynolds has only viscous loss
+
+All identities passed. Global examples have infinite energy; localization and regeneration are unproved.
+CHECK: verify_correction_window.py
+PASS: exact dimensional exponents and depth J=38K+87.
+PASS: finite scalar recursion, Catalan coefficient bound, terminal sum.
+PASS: proposed p/s<1/4 and general p/s<1/2 power-gap tests.
+Illustrative constant-budget ratios for log A=(J+1)(rF+1)log(rF+2):
+  K=100, m=K^3: log(A)/log(1/rho)=848.56
+  K=1000, m=K^3: log(A)/log(1/rho)=100.625
+  K=10000, m=K^3: log(A)/log(1/rho)=11.9507
+  K=100000, m=K^3: log(A)/log(1/rho)=1.3877
+  K=1e+06, m=K^3: log(A)/log(1/rho)=0.158077
+  K=1e+07, m=K^3: log(A)/log(1/rho)=0.017739
+PASS: illustrative constants eventually fit; polynomial harmonics stay below ceiling.
+PASS: fixed-power nonzero mean floor fails some high derivative in the model.
+All checks passed. No Navier–Stokes solution or full-force estimate was constructed.
+All packaged checks passed; see VERIFICATION.md for scope.

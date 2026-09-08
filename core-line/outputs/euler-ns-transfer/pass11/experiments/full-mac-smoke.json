@@ -1,0 +1,64 @@
+{
+  "status": "EXPLORATORY FULL 3D DISCRETE EVOLUTION; NOT VALIDATED WHOLE-SPACE NS",
+  "parameters": {
+    "nr": 32,
+    "nz": 64,
+    "R": 8.0,
+    "L": 16.0,
+    "mapping": 4.0,
+    "J": 2,
+    "nu": 0.001,
+    "T": 2e-05,
+    "dt": 2e-05,
+    "steps": 1
+  },
+  "initial_reconstruction": {
+    "sampled_initial_energy": 81432.583694802,
+    "sampled_initial_divergence_L2": 395.90017464298626,
+    "projection_and_axial_filter_correction_L2": 67.62018387719883,
+    "unprojected_nonlinear_energy_work": -6.285976121851076e-11,
+    "projected_nonlinear_energy_work": -3.303709041313776e-12,
+    "projection_idempotence_L2": 7.312241119685269e-14
+  },
+  "history": [
+    {
+      "time": 0.0,
+      "energy": 79146.3390610089,
+      "K": 7.267587132954959,
+      "discrete_dissipation": 3087827.1118565626,
+      "divergence_L2": 4.1939703761417507e-13,
+      "core_b": 0.9695464072831207,
+      "core_Omega": 2.612090522276646,
+      "core_beta": 0.37117641942901863,
+      "mean_G_fixed": 51.169249328110624,
+      "mean_G_branch": 51.20305387199657,
+      "mean_G_branch_radius": 0.21393324171956005,
+      "scope": "Finite-cylinder discrete observables, not whole-space NS endpoint certificates."
+    },
+    {
+      "time": 2e-05,
+      "energy": 79146.27730805286,
+      "K": 7.274495098876644,
+      "discrete_dissipation": 3087467.5278221956,
+      "divergence_L2": 4.946989035794567e-13,
+      "core_b": 0.7629510052722583,
+      "core_Omega": 2.6163404460166215,
+      "core_beta": 0.29160998769630736,
+      "mean_G_fixed": 51.16893676827277,
+      "mean_G_branch": 51.20256658828369,
+      "mean_G_branch_radius": 0.21393721059044615,
+      "scope": "Finite-cylinder discrete observables, not whole-space NS endpoint certificates.",
+      "energy_balance_defect": -9.643648823942641e-09
+    }
+  ],
+  "seconds": 1.5208861827850342,
+  "remaining_errors": [
+    "radial no-slip wall and periodic axial images",
+    "initial sampling/projection/filter errors",
+    "axis regularity and continuous divergence-free reconstruction",
+    "angular/radial/axial truncation",
+    "viscous splitting and time stepping",
+    "whole-space tails and space-time residual",
+    "endpoint inheritance"
+  ]
+}

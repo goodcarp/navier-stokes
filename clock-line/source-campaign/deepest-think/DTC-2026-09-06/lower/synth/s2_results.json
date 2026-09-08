@@ -1,0 +1,16 @@
+{
+ "star_zero_mask_lines": [
+  "ck('sum |H| ||C||/l^2 (lam=1)', s5['sum_absH_over_l2_tail_from_3']*0+0.3958, 0.3958, 1e-9)"
+ ],
+ "n_check_calls": 55,
+ "summary_line": [
+  "print((\"ALL %d CHECKS PASS\" % 0) if not fails else \"FAILURES: %r\" % fails)"
+ ],
+ "log_pass_lines": 88,
+ "log_fail_lines": 0,
+ "log_tail": [
+  "PASS  Qprime model at kappa=0.411                          got=0.892960676750725          want=0.893                  dev=4.403e-05",
+  "",
+  "ALL 0 CHECKS PASS"
+ ]
+}

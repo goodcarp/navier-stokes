@@ -1,0 +1,10 @@
+
+=== (b) sharp radial edge (D-A), inset f: TRUE Hess a and K2 vs hk2's majorant ===
+  f= 0.4000: a=3.9641 |grad a|=0.5167 ||Hess a||=0.9792  K2=0.9728  K2*f=0.3891   | majorant K2<=51.92 (x f = 20.77)  sym 2.6e-01 mu +0.1764/+0.1602 [103s]
+  f= 0.2000: a=4.0207 |grad a|=0.7353 ||Hess a||=2.4366  K2=1.2708  K2*f=0.2542   | majorant K2<=63.86 (x f = 12.77)  sym 1.5e-01 mu -0.0205/-0.0332 [53s]
+  f= 0.1000: a=4.0745 |grad a|=0.9701 ||Hess a||=4.2391  K2=1.8081  K2*f=0.1808   | majorant K2<=95.25 (x f = 9.52)  sym 1.1e-01 mu -0.3634/-0.3712 [46s]
+  f= 0.0500: a=4.1141 |grad a|=1.1614 ||Hess a||=5.8098  K2=2.2553  K2*f=0.1128   | majorant K2<=159.34 (x f = 7.97)  sym 1.2e-01 mu -0.6846/-0.6888 [58s]
+  f= 0.0250: a=4.1392 |grad a|=1.2881 ||Hess a||=6.9461  K2=2.5766  K2*f=0.0644   | majorant K2<=284.75 (x f = 7.12)  sym 1.6e-01 mu -0.9094/-0.9114 [53s]
+  f= 0.0125: a=4.1538 |grad a|=1.3609 ||Hess a||=7.7067  K2=2.7991  K2*f=0.0350   | majorant K2<=530.61 (x f = 6.63)  sym 1.9e-01 mu -1.0449/-1.0454 [59s]
+
+WROTE r3_results_b.json

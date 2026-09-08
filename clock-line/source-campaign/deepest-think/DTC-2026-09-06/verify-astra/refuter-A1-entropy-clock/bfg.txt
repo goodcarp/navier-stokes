@@ -1,0 +1,896 @@
+AN ALGEBRAIC REDUCTION OF THE ‘SCALING GAP’ IN THE NAVIER-STOKES
+REGULARITY PROBLEM
+
+arXiv:1704.05546v4 [math.AP] 7 Sep 2018
+
+ZACHARY BRADSHAW, ASEEL FARHAT, AND ZORAN GRUJIĆ
+
+A BSTRACT. It is shown–within a mathematical framework based on the suitably defined scale of
+sparseness of the super-level sets of the positive and negative parts of the vorticity components, and
+in the context of a blow-up-type argument–that the ever-resisting ‘scaling gap’, i.e., the scaling distance between a regularity criterion and a corresponding a priori bound (shortly, a measure of the
+super-criticality of the 3D Navier-Stokes regularity problem), can be reduced by an algebraic factor;
+since (independent) fundamental works of Ladyzhenskaya, Prodi and Serrin as well as Kato and Fujita in 1960s, all the reductions have been logarithmic in nature, regardless of the functional set up
+utilized. More precisely, it is shown that it is possible to obtain an a priori bound that is algebraically
+better than the energy-level bound, while keeping the corresponding regularity criterion at the same
+level as all the classical regularity criteria. The mathematics presented was inspired by morphology of the regions of intense vorticity/velocity gradients observed in computational simulations of
+turbulent flows, as well as by the physics of turbulent cascades and turbulent dissipation.
+
+1. P ROLOGUE
+The Navier-Stokes equations (NSE) describing the motion of three-dimensional (3D) incompressible, viscous, Newtonian fluids read
+
+(1)
+
+∂t u + (u · ∇)u = ν4u − ∇p + f,
+
+supplemented with the incompressibility condition ∇ · u = 0. Here, the vector field u represents
+the velocity, the scalar field p the pressure, a positive constant ν is the viscosity, and the vector
+field f an external force.
+Date: September 11, 2018.
+1
+
+2
+
+ZACHARY BRADSHAW, ASEEL FARHAT, AND ZORAN GRUJIĆ
+
+Henceforth, for simplicity of the exposition, ν will be normalized to 1, f taken to be zero, and the
+spatial domain to be the whole space R3 (since this is an irreversible system, the temporal variable
+lives in the interval (0, ∞)). In this setting, the only relevant piece of data is the initial velocity
+configuration u0 .
+Mathematical theory of the 3D NSE emerged from the groundbreaking work of Leray in the 1930s
+[Leray1, Leray2, Leray3] in which he established global-in-time existence of weak solutions emanating from the initial data with arbitrary large energy, and charted the paths for the study of
+local-in-time and global-in-time existence and uniqueness of strong solutions within the realms of
+arbitrary large and appropriately small initial data, respectively.
+A central problem in the theory ever since has been the possibility of singularity formation in the
+system, and could be considered either from the point of view of possible singularity formation in
+a weak solution or from the point of view of possible finite time blow-up of a local-in-time strong
+solution. This problem is usually referred to as the Navier-Stokes regularity problem.
+The Navier-Stokes regularity problem is supercritical, i.e., there is a ‘scaling gap’–with respect
+to the unique scaling transformation realizing the scaling-invariance of the equations–between
+any known regularity criterion and the corresponding a priori bound. (Note that if (u, p) is a
+solution to the 3D NSE on R3 × (0, ∞), then for any λ > 0, the rescaled pair (uλ , pλ ) given by
+uλ (x, t) = λu(λx, λ2 t) and pλ (x, t) = λ2 p(λx, λ2 t) is also a solution; in addition, this is the only
+such transformation.)
+If we focus on L∞ ((0, T ), X)-type spaces, perhaps the most illustrative example is in the Lp -scale
+where the regularity class is L∞ ((0, T ), L3 ) ([ESS03]; for generalizations see [GKP, Phuc]), and the
+corresponding a priori bound the Leray bound L∞ ((0, T ), L2 ). Moreover, since 1960s, the scaling
+gap has been of the fixed ‘size’ in the sense that all the regularity classes are (at best) scalinginvariant while–in contrast–all the known a priori bounds are on the scaling level of the Leray
+bound.
+Recall that arguably the most classical (scaling invariant) regularity criteria are the Ladyzhenskaya2g
+
+Prodi-Serrin conditions given by u ∈ L q−3 ((0, T ), Lq ), for 3 < q ≤ ∞, the other endpoint being the
+aforementioned Escauriaza, Seregin, and Sverak class L∞ ((0, T ), L3 ). In the vorticity realm, this
+designation goes to the Beale, Kato, and Majda (BKM)-criterion ([BKM84]), ω ∈ L1 ((0, T ), L∞ )
+where ω is the vorticity of the fluid given by ω = curl u.
+One might try to collect additional clues about possible singularity formation in the 3D NSE from
+the geometry of turbulent flows. One of the most prominent morphological signatures of this
+geometry–revealed in high-resolution computational simulations of high (and even moderate; see
+[SchSree]) Reynolds number-flows– is spatial intermittency of the regions of intense vorticity and
+velocity gradients.
+In order to better understand geometry of the flow mathematically, it is beneficial to study the
+vorticity-velocity formulation of the 3D NSE,
+
+(2)
+
+∂t ω + (u · ∇)ω = 4ω + (ω · ∇)u.
+
+AN ALGEBRAIC REDUCTION OF THE ‘SCALING GAP’ IN THE NAVIER-STOKES REGULARITY PROBLEM
+
+3
+
+The incompressibility implies that u can be reconstructed from ω by solving 4u = − curl ω,
+leading to the Biot-Savart law, and closing the system.
+Let us start by noting that conceivably a first work in mathematical analysis of the 3D NSE that
+was motivated by geometry of the flow was a work by Giga and Miyakawa [GiMi] establishing
+global-in-time existence of small, measure-valued solutions modeling the vortex filaments (the
+space utilized is a scaling-invariant Morrey-Campanato space).
+A conceptually related program aimed at mathematical modeling and analysis of coherent structures in fluid flows via the study of oscillating and localized solutions to the NSE was initiated
+by Meyer and his students (Brandolese, Cannone, Lemarie-Rieusset, Planchon, ...); this brought
+in an array of scale-sensitive harmonic analysis tools such as wavelets, atomic decomposition and
+Littlewood-Paley analysis. A chapter in C.I.M.E. lecture notes by Meyer [Mey] provides an insight
+into many of the main ideas and results related to this program.
+The vortex-stretching term, (ω · ∇)u, is responsible for a possibly unbounded growth of the vorticity magnitude in 3D; mechanically, the process of vortex stretching in conjunction with incompressibility of the fluid and conservation of the angular momentum amplifies the vorticity, formally, if we erase the vortex-stretching term in the equations, and the only nonlinear term left is
+the advection term (u · ∇)ω, an a priori bound on the L2 -norm of the vorticity–which suffices to
+bootstrap to infinite smoothness–follows in one line ((ω · ∇)u is identically zero in 2D).
+However, some caution is advised in labeling the vortex-stretching term as a clear-cut ‘bad guy’.
+While the process of vortex-stretching does amplify the vorticity, it also produces locally anisotropic
+small scales in the flow (diameter of a vortex tube, thickness of a vortex sheet, etc.), and this gives
+a chance to some form of a locally anisotropic diffusion to engage just on time to prevent the further amplification of the vorticity magnitude and possible singularity formation. As a matter of
+fact, Taylor [Tay37] concluded his paper from the 1930s with the following thought on turbulent
+dissipation:
+“It seems that the stretching of vortex filaments must be regarded as the principal mechanical
+cause of the high rate of dissipation which is associated with turbulent motion.”
+The stretching is also chiefly responsible for the phenomenon of local coherence of the vorticity
+direction prominent in coherent vortex structures (e.g., in vortex tubes) which can be viewed as
+a local manifestation of the quasi low-dimensionality of the regions of intense fluid activity. This
+observation led to the rigorous mathematical study of locally anisotropic dissipation in the 3D
+NSE originating in the pioneering work by Constantin [Co94] where he presented a singular integral representation of the stretching factor in the evolution of the vorticity magnitude, featuring a
+geometric kernel depleted precisely by local coherence of the vorticity direction. This has been referred to as ‘geometric depletion of the nonlinearity’, and was a key in the proof of a fundamental
+result by Constantin and Fefferman [CoFe93], stating that as long as the vorticity direction (in the
+regions of intense vorticity) is Lipschitz-coherent, no finite time blow-up can occur.
+The Lipschitz-coherence was later scaled down to 12 -Hölder [daVeigaBe02], followed up by a
+complete spatiotemporal localization to an arbitrary small parabolic cylinder B(x0 , 2R) × (t0 −
+(2R)2 , t0 ) [Gr09], and the construction of scaling-invariant, local, hybrid geometric-analytic regularity classes in which the coherence of the vorticity direction is balanced against the growth of the
+
+4
+
+ZACHARY BRADSHAW, ASEEL FARHAT, AND ZORAN GRUJIĆ
+
+vorticity magnitude [GrGu10-1]. In particular, denoting the vorticity direction by ξ, the following
+scaling-invariant regularity class is included,
+Z t0
+
+Z
+
+t0 −(2R)2
+
+B(x0 ,2R)
+
+|ω(x, t)|2 ρ21 ,2R (x, t) dx dt < ∞
+2
+
+where
+
+ργ,r (x, t) =
+
+sup
+y∈B(x,r),y6=x
+
+
+
+sin ∠ ξ(x, t), ξ(y, t)
+|x − y|γ
+
+;
+
+this is to be contrasted to an a priori bound obtained in [Co90],
+Z TZ
+0
+
+R3
+
+|ω(x, t)||∇ξ(x, t)|2 dx dt ≤
+
+1
+2
+
+Z
+
+|u0 (x)|2 dx,
+
+R3
+
+which exhibits the same scaling as the Leray class L∞ ((0, T ), L2 ); another manifestation of the
+scaling gap.
+Let us return to the spatial intermittency of the regions of intense vorticity, more specifically, to
+‘sparseness’ of the vorticity super-level sets. This type of morphology motivated a recent work
+[Gr13] where it was shown that as long as the vorticity super-level sets, cut at a fraction of the
+L∞ -norm, exhibit a suitably defined property of sparseness at the scale comparable to the radius
+of spatial analyticity measured in L∞ , no finite time blow-up can occur. (The proof was presented
+for the velocity formulation, and the argument for the vorticity formulation is completely analogous.)
+The concept of sparseness needed in the proof is essentially local existence of a sparse direction
+(the direction is allowed to depend on the point) at the scale of interest, and it will be referred to as
+‘1D sparseness’. The precise definitions of 1D sparseness and a related concept of ‘3D sparseness’
+can be found at the beginning of section 3, as well as a remark on their relationship. In the rest of
+this section, sparseness will refer to 3D sparseness; we copy the definition below for convenience
+of the reader (m3 denotes the 3-dimensional Lebesgue measure).
+Let S be an open subset of R3 , δ ∈ (0, 1), x0 a point in R3 , and r ∈ (0, ∞). S is 3D δ-sparse around
+x0 at scale r if
+
+m3 S ∩ B(x0 , r)
+ ≤ δ.
+m3 B(x0 , r)
+Since we are interested in the super-level sets of a vector field cut at a fraction of the L∞ -norm, at
+the scale comparable to some inverse power of the L∞ -norm, there are several parameters floating
+around: the fraction at which we cut (call it λ), the ratio of sparseness δ and a constant multiplying
+the inverse power of the L∞ -norm (call it 1c ). More precisely, the class of functions of interest, Xα ,
+is defined as follows.
+
+AN ALGEBRAIC REDUCTION OF THE ‘SCALING GAP’ IN THE NAVIER-STOKES REGULARITY PROBLEM
+
+5
+
+Definition 1. For a positive exponent α, and a selection of parameters λ in (0, 1), δ in (0, 1) and
+c0 > 1, the class of functions Xα (λ, δ; c0 ) consists of bounded, continuous functions f : R3 → R3
+subjected to the requirement that the super-level set
+
+
+
+
+3
+
+x ∈ R : |f (x)| > λkf k∞
+
+(3)
+
+is δ-sparse around any point x0 at scale 1c kf1kα , for some c, c10 ≤ c ≤ c0 .
+∞
+
+It is instructive to make a brief comparison of the scale of classes Xα with the scale of Lorentz
+Lp,∞ spaces defined by the requirement that the distribution function of f , the Lebesgue measure
+of the super-level set cut at level β, decays at least as the inverse p-power of β. There are two key
+differences:
+(i) the definition of Xα involves a specific type of the super-level sets, cut at a fraction of the L∞ norm, while the definition of Lp,∞ involves all levels β,
+(ii) the Lp,∞ spaces are blind to any geometric properties of the super-level sets, and measure only
+the rate of decay of the volume, while the classes Xα can detect the scale of sparseness of the
+super-level sets of the highest interest.
+Remark 2. It is worth noting that the same phenomenon will occur in all rearrangement-invariant
+(with respect to the Lebesgue measure) function classes, i.e., the classes that do not differentiate
+between the functions having identical distribution functions. Typical examples are Lebesgue
+classes Lp , general Lorentz classes Lp,q and Orlicz classes Lφ .
+Taking a closer look, on one hand, it is plain that
+f ∈ Lp,∞ =⇒ f ∈ Xα for α =
+
+(4)
+
+p
+3
+
+(for a given selection of λ and δ, the tolerance parameter c0 will depend on the Lp,∞ -norm of f ),
+on the other hand, in the geometrically worst case scenario (from the point of view of sparseness),
+the whole super-level set being clumped into a single ball, being in Xα is consistent with being in
+L3α,∞ .
+This provides a simple ‘conversion rule’ between the two scales, α = p3 , determining the scaling
+signature of the classes Xα .
+Let us decode the scaling distance between the regularity criterion established in [Gr13] (in the
+vorticity formulation), and any corresponding a priori bounds.
+Recall that the scale of sparseness required is comparable to the lower bound on the radius of
+spatial analyticity evaluated at a suitable time t prior to (possible) blow-up, namely, 1c 1 1 , i.e.,
+2
+kω(t)k∞
+
+one needs ω in X 1 .
+2
+
+In contrast, the best a priori bound available is ω in X 1 ; this follows simply from the a priori
+3
+
+bound on the L1 -norm of the vorticity ([Co90]) and Chebyshev’s inequality (an L log L-bound
+
+6
+
+ZACHARY BRADSHAW, ASEEL FARHAT, AND ZORAN GRUJIĆ
+
+on the vorticity is available under a very weak assumption that the vorticity direction is in a local,
+logarithmically-weighted BM O space that allows for discontinuities [BrGr13-2]).
+3
+
+Applying the scaling conversion rule, X 1 corresponds to L 2 ,∞ and X 1 to L1,∞ ; since these are pre2
+3
+cisely the endpoint classes within the Lp,∞ -scale in the vorticity formulation, we arrive at yet another manifestation of the scaling gap (also, not surprising as the derivation of the a priori bound,
+ω in X 1 , uses no geometric tools).
+3
+
+Back to the drawing board. Recall that computational simulations of turbulent flows indicate a
+high degree of local anisotropy present in the vorticity field, manifested through the formation of
+various coherent vortex structures (e.g., vortex sheets and vortex tubes).
+A simple but key observation is that a vector field exhibiting a high degree of local anisotropy is
+more likely to allow for a considerable discrepancy in sparseness between the full vectorial superlevel sets and the super-level sets of the components. As a matter of fact, it is easy to construct
+locally anisotropic smooth vector fields for which the former are not sparse at any scale, while the
+latter can feature any predetermined scale of sparseness.
+This is our primary motivation for replacing the scale of classes Xα by the scale of classes Zα
+based on sparseness of the super-level sets of the locally selected positive and negative parts of
+the vectorial components fi , fi± , for i = 1, 2, 3.
+Definition 3. For a positive exponent α, and a selection of parameters λ in (0, 1), δ in (0, 1) and
+c0 > 1, the class of functions Zα (λ, δ; c0 ) consists of bounded, continuous functions f : R3 →
+R3 subjected to the following local condition. For x0 in R3 , select the/a component fi± such
+that fi± (x0 ) = |f (x0 )| (henceforth, the norm of a vector v = (a, b, c), |v|, will be computed as
+max{|a|, |b|, |c|}), and require that the set
+
+x∈R
+
+3
+
+: fi± (x) > λkf k∞
+
+
+
+is δ-sparse around x0 at scale 1c kf1kα , for some c, c10 ≤ c ≤ c0 . Enforce this for all x0 in R3 .
+∞
+
+Remark 4. Shortly, we require (local) sparseness of the/a locally maximal component only.
+(The scaling conversion rule remains the same, α = p3 .)
+Going back to the vorticity, since this is potentially a much weaker condition, the two questions to
+examine are as follows.
+(a) is it possible to obtain an analogous regularity criterion at the same scale of sparseness (compared to the full vectorial super-level sets), or at all?
+(b) is it possible to establish an a priori bound at a smaller scale of sparseness (compared to the
+full vectorial case), in particular, in the sense of modifying the scaling exponent α by an algebraic
+factor?
+Affirmative answers to (a) and (b) are presented in sections 3 (Theorem 19) and 4 (Theorem 26),
+respectively, yielding a regularity criterion in Z 1 and an priori bound in Z 2 (with the identical
+2
+5
+selection of the parameters λ, δ and c0 ); since
+
+AN ALGEBRAIC REDUCTION OF THE ‘SCALING GAP’ IN THE NAVIER-STOKES REGULARITY PROBLEM
+
+Regularity class
+
+A priori bound
+
+Energy class
+
+u ∈ L∞ (0, T ; L3 )
+
+u ∈ L∞ (0, T ; L2 )
+
+u ∈ L∞ (0, T ; L2 )
+
+ω ∈ L∞ (0, T ; L 2 )
+
+3
+
+ω ∈ L∞ (0, T ; L1 )
+
+ω ∈ L∞ (0, T ; L1 )
+
+ω(τ ) ∈ X 1 for a particular τ < T
+
+ω(τ ) ∈ X 1 a.e. τ < T
+
+ω(τ ) ∈ X 1 a.e. τ < T
+
+ω(τ ) ∈ Z 1 for a particular τ < T
+
+ω(τ ) ∈ Z 2 for τ < T whenever ω(τ ) ∈ Z 1 a.e. τ < T
+5
+3
+kω(τ )k∞ is large enough
+
+2
+
+2
+
+3
+
+7
+
+3
+
+TABLE 1. The scaling distance between regularity and energy classes is consistent
+across the table. Generally, a priori bounded quantities are in the energy class. Remarkably, Theorem 26 shows the a priori bound in the Zα class is algebraically better
+than the energy class (the a priori bound in Zα is derived in the context of a blow-up
+argument).
+
+1
+2
+1
+< < ,
+3
+5
+2
+this represents an algebraic reduction of the scaling gap in the Zα -framework.
+For a quick scaling comparison, several pointwise-in-time classes and their respective bounds are
+listed in Table 1.
+Remark 5. Note that in the geometrically worst case scenario (for sparseness), ω being in Z 2 is con6
+
+6
+
+5
+
+sistent with ω being in L 5 ,∞ which is–in turn–at the same scaling level as L 5 . Hence, a ‘geometri6
+cally blind’ scaling counterpart of our a priori bound in Z 2 would be the bound ω in L∞ ((0, T ), L 5 )
+5
+
+which is well beyond state-of-the-art (ω in L∞ ((0, T ), L1 ) [Co90]). A counterpart in the velocity
+12
+realm would be the bound u in L∞ ((0, T ), L 5 ), also well beyond state-of-the-art (this would represent an algebraic improvement of the Leray bound u in L∞ ((0, T ), L2 )).
+Remark 6. One should remark that this is not the first time that the exponent 52 appeared in the
+study of formation of small scales in turbulent flows. In the context of the 3D inviscid dynamics,
+the BKM-type criteria reveal that the formation of infinite spatial gradients/infinitesimally-small
+spatial scales is necessary for a finite time blow-up. In particular (see a discussion in [Co94]), if we
+consider the case of approximately self-similar blow-up for the 3D Euler in the form
+
+
+1
+x
+ω(x, t) ≈
+Ω
+,
+T −t
+L(t)
+
+8
+
+ZACHARY BRADSHAW, ASEEL FARHAT, AND ZORAN GRUJIĆ
+
+then the relevant BKM-type necessary condition for the blow-up reads
+Z T
+− 5
+L(t) 2 dt = ∞,
+0
+
+and if we focus on the algebraic-type dependence,
+
+t p
+L(t) = L(0) 1 −
+,
+T
+then the blow-up can be sustained only when p ≥ 52 . Furthermore, since by dimensional analysis
+ω ≈ T 1−t , this scaling is fully consistent with the vorticity being in Z 2 near a possible singular time
+5
+T , strongly hinting at the inviscid nature of Z 2 .
+5
+
+Remark 7. It is not inconceivable that–at least partially–the discrepancy between the exponents 25
+and 31 can be viewed as an indirect measure of the degree of local anisotropy of the vorticity field
+in the regions of intense fluid activity. It is worth noting that the same line of arguments, applied
+to the velocity itself, does not yield any reduction of the scaling gap ([FGL]); this is consistent with
+the picture painted by computational simulations (and fluid mechanics) in which the regions of
+high velocity magnitude tend to be more isotropic (recall that in a suitable statistical sense, the K41
+turbulence phenomenology–based on the velocity–is isotropic and homogeneous, while one way
+to rationalize the phenomenon of intermittency in turbulence is precisely via the coherent vortex
+structures).
+
+2. L OCAL - IN - TIME SPATIAL ANALYTICITY OF THE VORTICITY IN L∞
+One of the most compelling manifestations of diffusion in the 3D NSE is the instantaneous spatiallyanalytic smoothing of the rough initial data. An explicit, sharp lower bound on the radius of
+(spatial) analyticity of the solution emanating from an initial datum in Lp , for 3 < p < ∞, was
+given in [GrKu98]; the method–inspired by the so-called Gevrey class-method introduced by Foias
+and Temam in [FT]–was based on complexifying the equations and tracking the boundary of the
+(locally-in-time expanding) domain of analyticity via solving a real system of PDEs satisfied by
+the real and the imaginary parts of the complexified solutions.
+Since the Riesz transforms are not bounded on L∞ , to obtain an estimate in the case p = ∞ without
+a logarithmic correction requires a different argument (on the real level), see, e.g., [GIM, Ku2]
+and [Gu] in the real and the complex setting, respectively, in the realm of the velocity-pressure
+formulation of the 3D NSE.
+The L∞ -argument within the vorticity-velocity description requires a modification, and we present
+a sketch here, including an estimate on the vortex-stretching term, for completeness. What follows is a modification of the exposition given in [Ku2]. In addition to the initial vorticity ω0 being
+bounded, a suitable decay of ω0 at infinity will be required (we chose ω0 in L2 for convenience);
+however, it is worth noting that this is a ‘soft assumption’, i.e., there will be no quantitative dependence on kω0 k2 in the proof.
+Theorem 8 (real setting).
+Let the initial datum ω0 be in L2 ∩L∞ . Then there exists a unique mild solution
+
+ω in Cw [0, T ], L∞ where T ≥ 1c kω01k∞ for an absolute constant c > 0.
+
+AN ALGEBRAIC REDUCTION OF THE ‘SCALING GAP’ IN THE NAVIER-STOKES REGULARITY PROBLEM
+
+9
+
+Remark 9. Since L∞ is not separable, the continuity of the heat semigroup at the initial
+time is guar
+∞
+anteed only in the weak sense; hence the appearance of the space Cw [0, T ], L
+in the statement
+of the theorem. Alternatively, one could replace L∞ with its (closed) subspace of the uniformly
+continuous functions, and have the strong continuity at the initial time.
+Sketch of the proof.
+follows,
+
+The vorticity-velocity formulation of the 3D NSE in the components is as
+
+∂t ωj − 4ωj + ui ∂i ωj = ωi ∂i uj , j = 1, 2, 3
+
+(5)
+
+where u can be recovered from ω by the Biot-Savart law,
+Z
+uj (x, t) = c
+
+j,k,l ∂yk
+
+1
+ωl (y, t) dy
+|x − y|
+
+(j,k,l is the Levi-Civita symbol), making this a closed system for ω. Differentiation yields
+Z
+(6)
+
+∂i uj (x, t) = c P.V.
+
+j,k,l
+
+∂2
+1
+ωl (y, t) dy.
+∂xi ∂yk |x − y|
+
+A key observation is that the kernel
+∂2
+1
+∂xi ∂yk |x − y|
+is a classical Calderon-Zygmund kernel; hence,
+k∇u(·, t)kBM O ≤ c kω(·, t)kBM O .
+
+(7)
+
+Since we are interested in the mild solutions, we rewrite the equations (5) via the action of the heat
+semigroup,
+Z
+G(x − y, t)(ω0 )j (y) dy
+Z tZ
+−
+G(x − y, t − s) ui ∂i ωj (y, s) dy ds
+0
+Z tZ
++
+G(x − y, t − s) ωi ∂j uj (y, s) dy ds,
+
+ωj (x, t) =
+
+(8)
+
+0
+
+where G is the heat kernel.
+Similarly as in the velocity-pressure description (see, e.g., [GrKu98]), the estimates are performed
+on the sequence of smooth (entire in the spatial variable) global-in-time approximations.
+
+10
+
+ZACHARY BRADSHAW, ASEEL FARHAT, AND ZORAN GRUJIĆ
+
+(n)
+ωj (x, t) =
+
+Z
+
+G(x − y, t)(ω0 )j (y) dy
+Z tZ
+(n−1)
+(n−1)
+−
+G(x − y, t − s) ui
+∂i ωj
+(y, s) dy ds
+0
+Z tZ
+(n−1)
+(n−1)
++
+G(x − y, t − s) ωi
+∂j uj
+(y, s) dy ds,
+
+(9)
+
+0
+
+supplemented with
+(n)
+uj (x, t) = c
+
+Z
+j,k,l ∂yk
+
+1
+(n)
+ω (y, t) dy.
+|x − y| l
+
+The goal is to keep ω (n) in L∞ and ∇u(n) in BM O (uniformly in n, locally-in-time), analogously
+to keeping u(n) in L∞ and p(n) in BM O in the velocity-pressure formulation.
+(n−1)
+
+(n−1)
+
+∂j uj
+, the term responsible for a
+We present an estimate on the vortex-stretching term ωi
+potentially unrestricted growth of the vorticity magnitude, in some detail.
+An estimate on the vortex-stretching term.
+√
+
+The main ingredients are: a pointwise estimate on the heat kernel G, G(x, t) ≤ c
+
+t
+√ 4 (see,
+|x|+ t
+
+e.g., [LR]), a property of a scalar-valued BM O function f featuring a suitable decay at infinity
+(e.g., being in the closure of the test functions in the uniformly-local Lp for some p, 1 ≤ p < ∞),
+R |f (x)|
+dx ≤ c kf kBM O (in general, one has to subtract a local average, for example, over a unit
+(|x|+1)4
+R
+1
+R |f (x)− |B|
+B f|
+ball B, in which case the inequality takes the form
+dx ≤ c kf kBM O [St]), and the
+(|x|+1)4
+Calderon-Zygmund relation (6).
+Combining the above ingredients implies the following string of inequalities.
+Z tZ
+0
+
+(n)
+
+(n)
+
+G(x − y,t − s) ωi (y, s) ∂i uj (y, s) dy ds
+≤ sup kω
+
+(n)
+
+t−s
+(n)
+4 |∂i uj | dy ds
+√
+|x − y| + t − s
+
+(s)k∞
+
+s∈(0,t)
+
+≤ sup kω (n) (s)k∞
+s∈(0,t)
+
+√
+
+Z tZ
+0
+
+Z tZ
+
+1
+
+(n)
+
+|z| + 1
+
+0
+
+4 |∂i uj | dz ds
+
+(n)
+
+≤ c t sup kω (n) (s)k∞ sup k∂i uj (s)kBM O
+s∈(0,t)
+
+s∈(0,t)
+
+≤ c t sup kω (n) (s)k∞ sup kω (n) (s)kBM O
+(10)
+
+≤ ct
+
+s∈(0,t)
+
+s∈(0,t)
+
+
+
+2
+
+sup kω (n) (s)k∞
+s∈(0,t)
+
+.
+
+AN ALGEBRAIC REDUCTION OF THE ‘SCALING GAP’ IN THE NAVIER-STOKES REGULARITY PROBLEM
+
+11
+
+(n)
+
+(Since ω (n) (s) is in L2 , ∂i uj (s) is in L2 as well (by Calderon-Zygmund), and the first BM O-bound
+is available.)
+The estimate on the advection term can be absorbed in the above bound, and we arrive at
+sup kω (n+1) (s)k∞ ≤ c kω0 k∞ + c t
+s∈(0,t)
+
+
+
+sup kω (n) (s)k∞
+
+2
+
+,
+
+s∈(0,t)
+
+which yields boundedness of the sequence on the time-interval
+of the desired length. A similar
+
+argument implies the contraction property in Cw [0, T ], L∞ , concluding the proof.
+The complexification argument is analogous to the complexification of the velocity-pressure formulation; for details, see [GrKu98].
+The main idea is as follows. Recall that the functions in the sequence of approximations (ω (n) , u(n) )
+are entire functions in the spatial variable for any t > 0. Then, denoting a point in C3 by x + iy,
+introduce a related sequence (Ω(n) , U (n) ) by
+Ω(n) (x, t) = ω (n) (x + iαt, t) and U (n) (x, t) = u(n) (x + iαt, t)
+where α > 0 is an optimization parameter.
+The real and the imaginary parts of each of the elements in the sequence (Ω(n) , U (n) ) satisfy a real
+system in which the principal linear parts are decoupled, and the only new type of terms generated
+by the complexification procedure are two lower-order (first order) linear terms coming from the
+chain rule and the Cauchy-Riemann equations in C3 .
+Local-in-time estimates on the system are then of the same type as the estimates on the real 3D
+NSE, resulting in √
+expansion of the domain of analyticity–after the optimization in the parameter
+α–comparable to t (the only global-in-time property needed is for the real and imaginary parts
+of each Ω(n) , on each real-space ‘slice’, to be in L2 ; this is, as in the real case, guaranteed by the
+assumption that ω0 in L2 ).
+More precisely, we arrive at the following result.
+Theorem 10 (complex setting). Let the initial datum ω0 be in L2 ∩ L∞ , and M a constant largerthan 1.
+Then there is a constant c(M ) > 1 such that there exists a unique mild solution ω in Cw [0, T ], L∞ where
+1
+1
+3
+T ≥ c(M
+) kω0 k∞ , and for any t in (0, T ] the solution ω is the R -restriction of a holomorphic function ω
+defined in the domain
+
+Ωt =
+
+3
+
+1
+
+x + iy ∈ C : |y| < p
+c(M )
+
+√
+
+
+t ;
+
+moreover, kω(t)kL∞ (Ωt ) ≤ M kω0 k∞ .
+Remark 11. The above theorem can be localized in the spirit of [BGK15]; this would provide a
+(local) lower bound on the radius of spatial analyticity in terms of the local quantities only (at the
+expense of a logarithmic correction).
+
+12
+
+ZACHARY BRADSHAW, ASEEL FARHAT, AND ZORAN GRUJIĆ
+
+3. S PATIAL COMPLEXITY OF THE VORTICITY COMPONENTS : A REGULARITY CRITERION
+Henceforth, mn will denote the n-dimensional Lebesgue measure. Let us start with recalling the
+concepts of 1D and 3D sparseness suitable for our purposes ([Gr13, FGL]).
+Let S be an open subset of R3 , δ ∈ (0, 1), x0 a point in R3 , and r ∈ (0, ∞).
+Definition 12. S is 1D δ-sparse around x0 at scale r if there exists a unit vector d in S 2 such that
+
+m1 S ∩ (x0 − rd, x0 + rd)
+≤ δ.
+2r
+Definition 13. S is 3D δ-sparse around x0 at scale r if
+
+m3 S ∩ B(x0 , r)
+ ≤ δ.
+m3 B(x0 , r)
+Remark 14. On one hand, it is straightforward to check that, for any S, 3D δ-sparseness at scale r
+1
+implies 1D (δ) 3 -sparseness at scale ρ, for some ρ in (0, r], at any given pair (x0 , r). On the other
+hand, there are plenty of simple examples in which any attempt at the converse fails. However, if
+one is interested in sparseness of a set at scale r, uniformly in x0 (as we will be), the difference is
+much less pronounced.
+We will formulate
+our regularity criterion as a no-blow-up criterion for a solution ω belonging to
+
+∗
+∞
+C [0, T ), L where T ∗ is the first (possible) blow-up time. In this setting, it is convenient to have
+the notion of an ‘escape time’.
+
+Definition 15. Let ω be in C [0, T ∗ ), L∞ where T ∗ is the first possible blow-up time. A time t in
+(0, T ∗ ) is an escape time if kω(τ )k∞ > kω(t)k∞ for any τ in (t, T ∗ ).
+Remark 16. It is a well-known fact that for any level L > 0, there exists a unique escape time t(L);
+this follows from the local-in-time well-posedness in a straightforward manner. As a consequence,
+there are continuum many escape times in (0, T ∗ ).
+As in the previous section, we assume that the initial datum ω0 is (in addition) in L2 .
+Then we can solve the 3D NSE locally-in-time, at any t in (0, T ∗ ), and uniqueness in conjunction
+with Theorem 10 will yield a lower bound on the radius of spatial analyticity near t. In particular,
+for an escape time t, we consider a temporal point s = s(t) conforming to the requirement
+
+(11)
+
+
+s in t +
+
+
+1
+1
+,t +
+;
+4c(M )kω(t)k∞
+c(M )kω(t)k∞
+
+then, a lower bound on the radius of spatial analyticity at s is given by
+1
+1
+2
+2c(M )kω(t)k∞
+
+.
+
+AN ALGEBRAIC REDUCTION OF THE ‘SCALING GAP’ IN THE NAVIER-STOKES REGULARITY PROBLEM
+
+13
+
+Moreover, since t is an escape time, this lower bound can be replaced by
+1
+1
+
+,
+
+2
+2c(M )kω(s)k∞
+
+i.e., in this situation there is no need to worry about a time-lag–a lower bound on the analyticity
+radius at s is given in terms of the L∞ -norm of the solution at s.
+The property of 1D sparseness will be assumed on the super-level sets of the positive and negative
+parts of the vorticity components ωj at s (recall that for a scalar-valued function f , the positive and
+negative parts of f are given by f + (x) = max (f (x), 0) and f − (x) = − min (f (x), 0), respectively);
+more precisely, the sets of interests will be the sets Vsj,± defined by
+
+Vsj,± =
+
+(12)
+
+
+
+x ∈ R3 : ωj± (x, s) >
+
+1
+kω(s)k∞
+2M
+
+
+
+(M is as in Theorem 10).
+
+Since the proof of our regularity criterion is based on the harmonic measure maximum principle,
+we recall a version suitable for our purposes. Here, as in [Gr13], we are
+ concerned with the harmonic measure in the complex plane C; for a suitable pair of sets Ω, K , the harmonic measure of
+K with respect to Ω, evaluated at a point z, will be denoted by h(z, Ω, K). (For the basic properties
+of the harmonic measure in this setting, see, e.g., [Ahl, Ran].)
+Proposition 17. [Ran] Let Ω be an open, connected set in C such that its boundary has nonzero Hausdorff
+dimension, and let K be a Borel subset of the boundary. Suppose that u is a subharmonic function on Ω
+satisfying
+u(z) ≤ M, for z ∈ Ω
+lim sup u(z) ≤ m, for ζ ∈ K.
+z→ζ
+
+Then
+
+u(z) ≤ m h(z, Ω, K) + M 1 − h(z, Ω, K) for z ∈ Ω.
+The last ingredient needed is an extremal property of the harmonic measure in the unit disk
+D.
+Proposition 18. [Sol] Let λ be in (0, 1), K a closed subset of [−1, 1] such that m1 (K) = 2λ, and suppose
+that the origin is in D \ K. Then
+h(0, D, K) ≥ h(0, D, Kλ ) =
+where Kλ = [−1, −1 + λ] ∪ [1 − λ, 1].
+
+1 − (1 − λ)2
+2
+arcsin
+π
+1 + (1 − λ)2
+
+14
+
+ZACHARY BRADSHAW, ASEEL FARHAT, AND ZORAN GRUJIĆ
+
+F IGURE 1. The blue and the red regions are precisely the sets V 1,± , i.e., the superlevel sets of the positive and the negative parts of ω1 , to be contrasted to the totality of
+the region visualized which corresponds to the super-level set of the the full vectorial
+norm max{|ω1 |, |ω2 |, |ω3 |} (from a snapshot of a simulation initialized with the low frequency noise-type initial data at the Reynolds number of approximately 104 ; courtesy of
+M. Mizstal, NBI).
+At this point, it is beneficial to set a specific set of constants: let M be the solution to the equation
+2
+
+1 ∗
+∗
+2 h + (1 − h )M
+
+1 < M < 23 ).
+
+= 1 where h∗ = π2 arcsin
+
+1−( 34 ) 3
+2
+
+1+( 34 ) 3
+
+, and let c(M ) be as in Theorem 10 (note that
+
+
+Theorem 19. Let ω be in C [0, T ∗ ), L∞ where T ∗ is the first possible
+blow-up time, and assume, in
+
+addition, that ω0 is in L2 (then, ω is automatically in L∞ (0, T − ), L2 for any 0 < T − < T ∗ ).
+Let t be an escape time, and suppose that there exists a temporal point s = s(t) as in (11) such that for any
+1
+spatial point x0 , there exists a scale ρ, 0 < ρ ≤
+1 and a direction d with the property that the
+2
+2c(M )kω(s)k∞
+
+

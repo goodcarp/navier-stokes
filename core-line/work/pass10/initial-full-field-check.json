@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scope": "Analytic identities plus floating-point consistency tests, not interval or PDE certification",
+  "exact_checks": [
+    "radial strain divergence",
+    "arbitrary envelope divergence",
+    "full mixed swirl/seed pressure source"
+  ],
+  "numerical_divergence_max": 2.847716647714797e-14,
+  "Cartesian_gradient_relative_errors": [
+    7.357239968857146e-07,
+    1.839306257919458e-07
+  ],
+  "Cartesian_laplacian_relative_errors": [
+    5.7283994565375e-06,
+    1.4357901396133315e-06
+  ],
+  "Cartesian_divergence_of_convection_relative_errors": [
+    9.211889794915548e-07,
+    2.3029678685702058e-07
+  ],
+  "Fourier_source_reconstruction_relative_error": 1.1189540539400089e-16,
+  "Fourier_convection_reconstruction_relative_error": 1.5713854599275696e-16,
+  "full_mixed_source_relative_error": 1.487540142932163e-16
+}

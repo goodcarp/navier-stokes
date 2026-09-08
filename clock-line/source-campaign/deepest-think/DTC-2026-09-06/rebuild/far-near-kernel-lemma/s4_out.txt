@@ -1,0 +1,28 @@
+
+=== z-odd  (near-cap, omega^theta = -M sgn z) ===
+   g_0 = +0.000000   g_1 = -0.833340   (g_0 = 0 <=> z-odd)
+ rho/rho_in        a_series        a_direct   rel diff
+        4.0   -5.795410e-03   -5.796191e-03   1.35e-04
+        8.0   -1.828503e-04   -1.828768e-04   1.45e-04
+       16.0   -5.717762e-06   -5.718595e-06   1.46e-04
+       32.0   -1.786885e-07   -1.787145e-07   1.46e-04
+       64.0   -5.584041e-09   -5.584855e-09   1.46e-04
+      128.0   -1.745014e-10   -1.745269e-10   1.46e-04
+   fitted decay exponent (last 4 pts): series 5.0000   direct 5.0000   predicted 5
+
+=== not z-odd (omega^theta = -M constant) ===
+   g_0 = -1.178097   g_1 = +0.000000   (g_0 = 0 <=> z-odd)
+ rho/rho_in        a_series        a_direct   rel diff
+        4.0   -1.357699e-02   -1.357699e-02   3.07e-15
+        8.0   -8.323455e-04   -8.323455e-04   3.13e-15
+       16.0   -5.173721e-05   -5.173721e-05   3.27e-15
+       32.0   -3.229027e-06   -3.229027e-06   2.89e-15
+       64.0   -2.017427e-07   -2.017427e-07   3.02e-15
+      128.0   -1.260780e-08   -1.260780e-08   3.02e-15
+   fitted decay exponent (last 4 pts): series 4.0009   direct 4.0009   predicted 4
+
+KILL K3' did not fire (threshold 0.15 in the exponent)
+
+leading-term constant for one z-odd octave:  |a| <= D * M_in * (rho_in/rho)^5,  D(l=1 term) = 12.4001
+   all-l absolute bound valid for rho >= 4 rho_in (|xi|>=2):  D = 124.3991
+SCRIPT-SHA256 5fb3d9b966e568ca4d20f6d952bea58672f7dd99c16173ba863641a5ad2d4efa

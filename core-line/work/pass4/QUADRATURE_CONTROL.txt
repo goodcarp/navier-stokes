@@ -1,0 +1,4 @@
+Core control nr=800: t300=-6.734827516735, t300+tWb=-4.171593043050, max error=0.000364206
+Core control nr=1600: t300=-6.734553125174, t300+tWb=-4.171402839866, max error=8.9814e-05
+PASS: analytic core pressure coefficients, divergence, full-harmonic trace, and convergence to an independent one-dimensional cubic reduction.
+No interval certification of the outer-pump pressure gate.

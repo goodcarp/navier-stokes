@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "scope": "Exact operator and toroidal/poloidal block algebra; Gaussian quadrature tests; no nonlinear evolution or error enclosure",
+  "manufactured": [
+    {
+      "m": 0,
+      "signed_orders": true,
+      "nr": 256,
+      "nk": 256,
+      "analytic_transform_relative_error": 6.439293542825908e-15,
+      "gradient_removal_relative_error": 3.2334947784230958e-15,
+      "solenoidal_recovery_relative_error": 3.8439906356763066e-14,
+      "physical_divergence_relative_error": 2.4517803597118064e-16,
+      "projected_roundtrip_relative_error": 3.8191676153445595e-14,
+      "Parseval_relative_error": 1.6710105237712113e-14
+    },
+    {
+      "m": 0,
+      "signed_orders": false,
+      "nr": 256,
+      "nk": 256,
+      "analytic_transform_relative_error": 6.439293542825908e-15,
+      "gradient_removal_relative_error": 3.2334947784230958e-15,
+      "solenoidal_recovery_relative_error": 3.8439906356763066e-14,
+      "physical_divergence_relative_error": 2.4517803597118064e-16,
+      "projected_roundtrip_relative_error": 3.8191676153445595e-14,
+      "Parseval_relative_error": 1.6710105237712113e-14
+    },
+    {
+      "m": 4,
+      "signed_orders": true,
+      "nr": 256,
+      "nk": 256,
+      "analytic_transform_relative_error": 4.418203878192996e-15,
+      "gradient_removal_relative_error": 3.795619363950274e-15,
+      "solenoidal_recovery_relative_error": 2.655067394529048e-14,
+      "physical_divergence_relative_error": 1.59331623774311e-15,
+      "projected_roundtrip_relative_error": 1.656380317267175e-14,
+      "Parseval_relative_error": 1.3013006995681635e-15
+    },
+    {
+      "m": 4,
+      "signed_orders": false,
+      "nr": 256,
+      "nk": 256,
+      "analytic_transform_relative_error": 4.418203878192996e-15,
+      "gradient_removal_relative_error": 3.795619363950274e-15,
+      "solenoidal_recovery_relative_error": 2.655067394529048e-14,
+      "physical_divergence_relative_error": 1.59331623774311e-15,
+      "projected_roundtrip_relative_error": 1.6563803172671754e-14,
+      "Parseval_relative_error": 1.3013006995681635e-15
+    },
+    {
+      "m": 8,
+      "signed_orders": true,
+      "nr": 256,
+      "nk": 256,
+      "analytic_transform_relative_error": 2.222407361269164e-15,
+      "gradient_removal_relative_error": 7.313756270896638e-15,
+      "solenoidal_recovery_relative_error": 2.0640903765922193e-14,
+      "physical_divergence_relative_error": 4.687648963578541e-15,
+      "projected_roundtrip_relative_error": 2.3444896473878587e-15,
+      "Parseval_relative_error": 1.0803939617502335e-15
+    },
+    {
+      "m": 8,
+      "signed_orders": false,
+      "nr": 256,
+      "nk": 256,
+      "analytic_transform_relative_error": 2.222407361269164e-15,
+      "gradient_removal_relative_error": 7.313756270896638e-15,
+      "solenoidal_recovery_relative_error": 2.0640903765922193e-14,
+      "physical_divergence_relative_error": 4.687648963578541e-15,
+      "projected_roundtrip_relative_error": 2.3444896473878587e-15,
+      "Parseval_relative_error": 1.0803939617502335e-15
+    }
+  ],
+  "random_projection": {
+    "divergence": 1.0547118733938987e-14,
+    "idempotence": 5.169475958410885e-16,
+    "orthogonal_energy_relative_defect": 1.165676437148096e-16
+  },
+  "incompatible_grid_demo": {
+    "naive_mismatched_grid_gradient_leak": 0.09198631536789798,
+    "scope": "Deliberately incorrect indexwise mixing; demonstrates why shared k or a compatible non-diagonal map is necessary."
+  }
+}

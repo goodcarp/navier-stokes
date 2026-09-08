@@ -1,0 +1,122 @@
+{
+  "status": "EXPLORATORY full-3D initial coefficients on a mapped finite cylinder; not a validated whole-space evolution",
+  "parameters": {
+    "nr": 768,
+    "nz": 4096,
+    "R": 8.0,
+    "L": 32.0,
+    "mapping": 4.0,
+    "nu": 0.001,
+    "A": 1020,
+    "lam": 0.25,
+    "T": 0.001,
+    "pressure": "fd"
+  },
+  "analytic_initial_divergence_max": 7.105427357601002e-14,
+  "source_compatibility_repairs": [
+    {
+      "tag": "p0",
+      "source_repaired": false,
+      "raw_midpoint_mean_source_radial_integral": [
+        -0.008328036872953248,
+        0.0
+      ],
+      "computed_outer_zero_mode_radial_flux": [
+        -9.71933983192017e-05,
+        0.0
+      ]
+    },
+    {
+      "tag": "p1",
+      "source_repaired": false,
+      "raw_midpoint_mean_source_radial_integral": [
+        -0.8921027105792518,
+        -9.602022028748032e-14
+      ],
+      "computed_outer_zero_mode_radial_flux": [
+        0.9635921360126671,
+        8.822583950621265e-14
+      ]
+    }
+  ],
+  "initial": {
+    "energy": 81037.24363175931,
+    "fluctuation_energy": 6.443757152169768,
+    "fluctuation_energy_derivative": 447.4263067435974,
+    "fractional_fluctuation_energy_derivative": 69.43562523813273,
+    "energy_derivative": -4611.550539930804,
+    "viscous_energy_derivative": -4611.619343960031,
+    "energy_identity_relative_error": 1.4919933898870265e-05,
+    "pressure_zz_at_core": -8.700602790969402,
+    "beta_prime": 0.35030139548470096,
+    "mean_G": 41.870254950482966,
+    "mean_G_prime": 103.38915440600447,
+    "radial_mean_acceleration": 6634.9069423470155,
+    "vertical_mean_acceleration": -123.83008027122229,
+    "axial_mean_strain_derivative": -31493.343943495136,
+    "mixed_pressure_radial_unit": [
+      -46.86124028078197,
+      55.05736255044967
+    ],
+    "N0_L2": 27458.850627431613,
+    "numerical_div_N0_L2": 919.7613263113667,
+    "numerical_div_N0_exterior_max": 8.779782127795141e-05
+  },
+  "second_coefficient": {
+    "pressure_zz_time_derivative": -116.91969545453202,
+    "pressure_T": -84.91969545453202,
+    "beta_second": 38.956833772419,
+    "mean_G_second": -77795.28908269983,
+    "N1_L2": 51552987.2938752
+  },
+  "direct_core_jet_checks": {
+    "b1": 2.350385898601659,
+    "b2": 60.650731520039756,
+    "Omega1": 1.999999999999642,
+    "Omega2": 8.683224593053243,
+    "beta1": 0.35038589860201697,
+    "beta2": 50.5659633325787,
+    "b1_pressure_discrepancy": 8.450311695806789e-05,
+    "b2_pressure_discrepancy": 11.59242738718038,
+    "Omega2_ode_discrepancy": -0.017547204150075046
+  },
+  "quadratic_field_at_T": {
+    "core_b": 1.0023801828925847,
+    "core_Omega": 1.0020043416122961,
+    "core_beta": 1.0003750894728498,
+    "mean_fixed_receiver": 41.934745836462255,
+    "mean_radial_branch_value": 42.05333790210669,
+    "mean_radial_branch_radius": 0.2189875126440924,
+    "fluctuation_energy": 261.09194101495433,
+    "energy": 81363.9086618782,
+    "scope": "Values of the full quadratic time polynomial only, not actual NS endpoint values or error bounds."
+  },
+  "corotating_quadratic_diagnostics": {
+    "candidates": [
+      {
+        "rotation_rate": 1020.0,
+        "first_coefficient_L2": 25511.96444167163,
+        "second_coefficient_L2": 33118583.58994614,
+        "fluctuation_energy_at_T": 69.86838939159183,
+        "total_energy_at_T": 81172.68511025484
+      },
+      {
+        "rotation_rate": 755.164683157062,
+        "first_coefficient_L2": 25226.92828292772,
+        "second_coefficient_L2": 27276885.522891585,
+        "fluctuation_energy_at_T": 24.042255990668735,
+        "total_energy_at_T": 81126.85897685392
+      }
+    ],
+    "scope": "Exact rotation formulas applied to approximate initial jets. Positive-time polynomial values still have no NS residual/error enclosure; finite-cylinder L2 optimum only."
+  },
+  "seconds": 262.66945004463196,
+  "unresolved_errors": [
+    "periodic axial images",
+    "finite radial boundary and future source tails",
+    "source zero-mode compatibility repair",
+    "radial/axial quadrature and differentiation",
+    "whole-space smooth divergence-free reconstruction",
+    "space-time H4 residual and endpoint inheritance"
+  ]
+}

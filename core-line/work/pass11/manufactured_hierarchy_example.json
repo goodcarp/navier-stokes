@@ -1,0 +1,17 @@
+{
+  "description": "Synthetic comparison-system example only. These are not measured or certified bounds for Navier-Stokes.",
+  "ell": "1",
+  "initial_error": ["1e-60", "0", "0", "0", "0"],
+  "slabs": [
+    {
+      "duration": "1",
+      "S": "0",
+      "M": ["0", "0", "0", "1e40"],
+      "residual": ["0", "0", "0", "0", "0"]
+    }
+  ],
+  "options": {
+    "precision_bits": 64,
+    "max_slab_bisections": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+ "C_E_L10_vs_Linf_relgap": 4.728095237733279e-09,
+ "C_E_l1_share_pct": 97.18546477785506,
+ "C_a_proved_phi30": 8.697888081698725,
+ "C_a_ratio_proved_over_measured": 126.05634901012644,
+ "Lemma_Tprime_rel_const": 11.780972450961723,
+ "conservatism_factor_LemmaTprime": 6.066832815561186,
+ "d_f1_taper": 0.7653668647301796,
+ "d_f1_taper_with_eps025": 0.7159745833122586,
+ "d_reduction_pct": 6.453412565140715,
+ "ell_loss_const_f0": 1.9095425048844383,
+ "ell_loss_f1": 2.6026896854443837,
+ "eps_Ca_L160_measured_f1": 0.001294471718412815,
+ "eps_Ca_L160_proved_f1": 0.16317637871998392,
+ "eps_ell_L160_f1": 0.0162668105340274,
+ "eps_floor_delta": 0.0005578499809198287,
+ "equator_margin_minus_dm_deg": 22.16690547392185,
+ "geom_product": 3.375,
+ "lambda_at_c_0p25": 1.1330694840176807
+}

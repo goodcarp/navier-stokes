@@ -1,0 +1,29 @@
+{
+ "J_Lambda_residual": "0",
+ "T_D_commute": true,
+ "T_bounds_hold": true,
+ "Tv_lower_residual": "yy*(lam1**6 - 1)/lam1**4",
+ "Tv_upper_residual": "zt*(lam1**6 - 1)/lam1**4",
+ "a_minus_A": "0",
+ "conj_e_r_residual": "0",
+ "conj_e_z_residual": "0",
+ "dfrak_dlogrho": "-F(U + log(2))",
+ "dfrak_dlogrho_numeric_vs_-F(2rho)": 1.453326348155315e-10,
+ "div3_general": "0",
+ "div3_of_l1_mode": "0",
+ "div5_general_minus_2a": "0",
+ "div5_of_l1_mode_minus_2A": "0",
+ "dz_uz_identity_residual": "0",
+ "max_|Tv|/(lam|v|)": 0.9999999999999155,
+ "min_|Tv|/(lam^-2|v|)": 1.0000316745534321,
+ "one_minus_3cos2_range": [
+  -2.0,
+  1.0
+ ],
+ "origin_identity_numeric_residual": 4.440892098500626e-16,
+ "origin_identity_residual": "Integral(F(u), (u, log_rho0, R_l)) - Integral(F(u), (u, log_rho0, U + log(2))) - Integral(F(u), (u, U + log(2), R_l))",
+ "rho_zeta_monotone": "sqrt(r1**2 + z1**2) - sqrt(r1**2 + zeta**2)",
+ "sin_phi_zeta_ge_sin_phi": "rho_zeta <= rho for |zeta| <= |z|  =>  r/rho_zeta >= r/rho",
+ "ur_minus_Ar": "0",
+ "uz_plus_2Az": "0"
+}

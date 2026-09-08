@@ -1,0 +1,13 @@
+{
+ "S1_div5b_minus_2a": 0.0,
+ "S1_dr_uz_residual": 0.0,
+ "S1_dz_uz_residual": 0.0,
+ "S1_reduction_max_residual": 0.0,
+ "S2_C_K": 0.037995443865876666,
+ "S2_C_gradK": 0.15198177546350666,
+ "S2_MC_ball_gradKz": 0.1299029077899786,
+ "S2_MC_mean_wz2": 0.20006058947794703,
+ "S2_S4_area": 26.318945069571622,
+ "S2_delta_coeff": 0.2,
+ "S2_gradK_norm2_expr": "9*(15*wz**2 + 1)/(64*pi**4)"
+}

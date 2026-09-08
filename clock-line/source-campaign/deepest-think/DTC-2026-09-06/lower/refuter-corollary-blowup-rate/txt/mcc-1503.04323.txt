@@ -1,0 +1,1032 @@
+                                               Lower bounds on blowing-up solutions of the 3D
+                                                                                                5/2
+                                               Navier–Stokes equations in Ḣ 3/2, Ḣ 5/2, and Ḃ2,1 .
+
+
+
+
+arXiv:1503.04323v1 [math.AP] 14 Mar 2015
+                                               David S. McCormicka , Eric J. Olsonb,, James C. Robinsona , Jose L.
+                                                         Rodrigoa , Alejandro Vidal-Lópezc , Yi Zhoud
+                                                                   a
+                                                                     Mathematics Institute, Zeeman Building,
+                                                                University of Warwick, Coventry CV4 7AL, UK.
+                                                b
+                                                  Department of Mathematics/084, University of Nevada, Reno, NV 89557. USA.
+                                             c
+                                               Department of Mathematical Sciences, Xi’an Jiaotong-Liverpool University, Suzhou
+                                                                              215123. China P.R.
+                                              d
+                                                School of Mathematical Sciences, Fudan University, Shanghai 200433. China P.R.
+
+
+
+
+                                           Abstract
+                                           If u is a smooth solution of the Navier–Stokes equations on R3 with first
+                                           blowup time T , we prove lower bounds for u in the Sobolev spaces Ḣ 3/2 , Ḣ 5/2 ,
+                                                                  5/2
+                                           and the Besov space Ḃ2,1 , with optimal rates of blowup: we prove the strong
+                                           lower bounds ku(t)kḢ 3/2 ≥ c(T − t)−1/2 and ku(t)kḂ5/2 ≥ c(T − t)−1 , but in
+                                                                                                      2,1
+
+                                           Ḣ 5/2 we only obtain the weaker result lim supt→T − (T −t)ku(t)kḢ 5/2 ≥ c. The
+                                           proofs involve new inequalities for the nonlinear term in Sobolev and Besov
+                                           spaces, both of which are obtained using a dyadic decomposition of u.
+                                           Keywords: Lower bounds, Navier–Stokes equations, Blowup.
+
+
+                                           1. Introduction
+                                              The aim of this paper is to prove lower bounds on smooth solutions of
+                                           the three-dimensional Navier–Stokes equations, under the assumption that
+                                           there is a finite ‘first blowup time’ T . Results of this type date back to Leray
+
+                                              Email addresses: d.s.mccormick@warwick.ac.uk (David S. McCormick),
+                                           eric@reno (Eric J. Olson), J.C.Robinson@warwick.ac.uk (James C. Robinson),
+                                           J.Rodrigo@warwick.ac.uk (Jose L. Rodrigo), ejolson@unr.edu (Jose L. Rodrigo),
+                                           Alejandro.Vidal@xjtlu.edu.cn (Alejandro Vidal-López), yizhou@fudan.edu.cn (Yi
+                                           Zhou)
+
+
+
+                                                                                     1
+(1934), who showed that there exists an absolute constant c1 such that
+                                               c1
+                              ku(t)kH 1 ≥ √        .
+                                              T −t
+In fact this result, and all subsequent lower bounds, are a consequence of
+upper bounds on the local existence time for solutions with initial data in
+H 1 . Leray also stated (without proof) the lower bound
+                                             c
+                          ku(t)kLp ≥                   ,
+                                       (T − t)(p−3)/2p
+
+a proof of which can be found in Giga (1986) and Robinson & Sadowski
+(2012).
+    More recently there have been a number of papers that treat the problem
+of blowup in Sobolev spaces Ḣ s for s > 1/2. Benameur (2010, with a similar
+periodic analysis in 2013) showed that for s > 5/2
+                                            (3−2s)/3
+                 ku(t)kḢ s ≥ cs ku(T − t)kL2          (T − t)−s/3 ,
+
+which was improved by Robinson, Sadowski, & Silva (2012) to
+                 (
+                  c(T − t)−(2s−1)/4          s ∈ (1/2, 5/2), s 6= 3/2,
+    ku(t)kḢ s ≥        (5−2s)/5                                            (1.1)
+                  cku0 kL2       (T − t)−s/5 s > 5/2.
+
+As argued by Robinson et al. (2012), the bound
+
+                         ku(t)kḢ s ≥ c(T − t)−(2s−1)/4
+
+is what one would expect from scaling considerations for all s > 1/2; we refer
+to this here as the ‘optimal rate’.
+    We note that in the bounds in (1.1) the cases s = 3/2 and s = 5/2
+are excluded, and that the bounds for s > 5/2 are not at the optimal rate.
+Although Benameur and Robinson et al. both obtained the lower bound
+
+                            kû(t)kL1 ≥ c(T − t)−1/2 ,
+
+i.e. a bound with the ‘optimal rate’ in a space with the same scaling as
+Ḣ 3/2 , no lower bound with the correct rate in any space scaling like Ḣ 5/2 has
+previously been shown.
+
+                                        2
+   Recently, Cortissoz, Montero, & Pinilla (2014) proved lower bounds in
+  3/2
+Ḣ  and Ḣ 5/2 at the optimal rates but with logarithmic corrections,
+                           c                                                c
+ku(t)kḢ 3/2 ≥ p                            and ku(t)kḢ 5/2 ≥                         ,
+                   (T − t)| log(T − t)|                           (T − t)| log(T − t)|
+
+where in both cases c depends on ku0 kL2 .
+    In this paper we fill some of these gaps. We will show that if u is a smooth
+solution with maximal existence time T then
+                                               c
+                            ku(t)kḢ 3/2 ≥            ,                     (1.2)
+                                           (T − t)1/2
+which we refer to as a ‘strong blowup estimate’, and
+
+                          lim sup (T − t)ku(t)kḢ 5/2 ≥ c,
+                            t↑T ∗
+
+which we refer to as a ‘weak blowup estimate’. We also prove a strong blowup
+                                5/2
+estimate in the Besov space Ḃ2,1 , which has the same scaling as Ḣ 5/2 ,
+                                                  c
+                                ku(t)kḂ5/2 ≥        .
+                                          2,1   T −t
+   The key to these bounds are two inequalities for the nonlinear term
+B(u, u) = (u · ∇)u. Both are proved using a dyadic decomposition of u.
+The first is the Sobolev space inequality
+
+           |(Λs B(u, u), Λsu)| ≤ ckukḢ s kukḢ s+1 kukḢ 3/2 ,     s ≥ 1,
+
+valid whenever the right-hand side is finite (in fact we prove a more general
+commutator-type estimate in Proposition 5.1). The second is the Besov
+bound
+               |( ˙
+                 △k B(u, u), ˙                                 ˙ k ukL2 ,
+                            △k u)| ≤ cdk 2−k(d/2+1) kuk2Ḃ5/2 k△
+                                                          2,1
+                                     P
+where c does not depend on k and k dk = 1. We present the proofs of these
+inequalities in Sections 5 and 6, with the resulting blowup estimates given
+first in Sections 3 and 4.
+    Within the ten days prior to the submission of this paper to the arXiv,
+two other papers were submitted providing proofs of the lower bound in (1.2)
+for Ḣ 3/2 - one by Cheskidov & Zaya (using an alternative dyadic argument)
+and one by Montero (using a very neat interpolation argument).
+
+                                            3
+2. Preliminaries
+    In this section we prove a simple ODE lemma that provides lower bounds
+on solutions that blow up, and we recall the dyadic decomposition that we
+will use to prove our Sobolev and Besov space inequalities.
+
+2.1. Lower bounds and differential inequalities
+    Lower bounds on solutions that blowup at some time T > 0 can be
+derived from differential inequalities for the norms of the solution (i.e. from
+upper bounds on the local existence time). The following simple ODE lemma
+makes this precise.
+Lemma 2.1. If Ẋ ≤ cX 1+γ and X(t) → ∞ as t → T then
+                                         1/γ
+                                    1
+                       X(t) ≥                  .                          (2.1)
+                                γc(T − t)
+Proof. Write the differential inequality as
+                                 dX
+                                       ≤ c dt
+                                 X 1+γ
+and integrate from t to s to yield
+                          1        1
+                              γ
+                                −       ≤ γc(s − t).
+                         X(t)     X(s)γ
+Letting s → T yields (2.1).
+
+2.2. Homogeneous Sobolev spaces
+    We denote by Ḣ s (Rn ) the space
+                                     Z                               
+                            1    n                 2s      2
+                u : û ∈ Lloc (R ) :          |ξ| |û(ξ)| dξ < ∞ ,
+                                      Rn
+
+where                                     Z
+                    F [u](ξ) = û(ξ) =             e−2πix·ξ u(x) dx       (2.2)
+                                              Rn
+is the Fourier transform of u. We denote by Λs the operator with Fourier
+multiplier |ξ|s; then the norm in Ḣ s is given by
+                                                 Z
+                         s           s
+            kukḢ s = kΛ ukL2 = k|ξ| û(ξ)kL2 =    |ξ|2s |û(ξ)|2 dk.
+                                                         Rn
+
+
+                                          4
+2.3. Homogenous Besov spaces
+    Here we recall some of the standard theory of homogeneous Besov spaces
+which we will use throughout the paper; we refer the reader to Bahouri et
+al. (2011), for proofs and many more details that we must omit.
+    For the purposes of this section, given a function φ and j ∈ Z we denote
+by φj the dilation
+                               φj (ξ) = φ(2−j ξ).
+Let C be the annulus {ξ ∈ Rn : 3/4 ≤ |ξ| ≤ 8/3}. There exist radial functions
+χ ∈ Cc∞ (B(0, 4/3)) and ϕ ∈ Cc∞ (C) both taking values in [0, 1] such that
+                                              X
+         for all ξ ∈ Rn ,              χ(ξ) +     ϕj (ξ) = 1,           (2.3a)
+                                                   j≥0
+                                                   X
+                       n
+         for all ξ ∈ R \ {0},                            ϕj (ξ) = 1,   (2.3b)
+                                                   j∈Z
+
+         if |j − j ′ | ≥ 2, then         supp ϕj ∩ supp ϕj ′ = ∅,      (2.3c)
+         if j ≥ 1, then                   supp χ ∩ supp ϕj = ∅.        (2.3d)
+
+We let h = F −1 ϕ and e   h = F −1 χ, where F −1 is the inverse of the Fourier
+transform operator defined in (2.2).
+   Given a measurable function σ defined on Rn with at most polynomial
+growth at infinity, we define the Fourier multiplier operator Mσ by Mσ u :=
+F −1 (σû). For j ∈ Z, the homogeneous dyadic blocks ˙  △j and the homogeneous
+cut-off operator Ṡj are defined by setting
+                                    Z
+                ˙
+               △j u = Mϕj u = 2  jn
+                                         h(2j y)u(x − y) dy    and
+                                       n
+                                    ZR
+                Ṡj u = Mχj u = 2jn      e
+                                         h(2j y)u(x − y) dy.
+                                   Rn
+
+Formally, we can write the following Littlewood–Paley decomposition
+                                     X
+                                Id =     △˙ .
+                                           j
+                                         j∈Z
+
+
+   We denote by Sh′ (Rn ) the space of tempered distributions such that
+
+                lim kMθ(λ · ) ukL∞ = 0       for any θ ∈ Cc∞ (Rn ).
+                λ→∞
+
+
+                                         5
+Then the homogeneous decomposition makes sense in Sh′ (Rn ): if u ∈ Sh′ (Rn ),
+then u = limj→∞ Ṡj u in Sh′ (Rn ). Moreover, using the homogeneous decom-
+position, it is straightforward to show that
+                                       X
+                               Ṡj u =     ˙ ′ u.
+                                           △ j
+                                       j ′ ≤j−1
+
+
+   Given a real number s and two numbers p, r ∈ [1, ∞], the homogeneous
+              s
+Besov space Ḃp,r (Rn ) consists of those distributions u in Sh′ (Rn ) such that
+                                 X                           1/r
+                   kukḂp,r
+                        s   :=         2   rjs    ˙ j ukr p
+                                                 k△                  <∞
+                                                        L
+                                 j∈Z
+
+
+if r < ∞, and
+                       kukḂp,∞
+                            s
+                                            ˙ ukLp < ∞
+                                := sup 2js k△j
+                                   j∈Z
+
+if r = ∞. For each of these spaces all choices of the function ϕ used to define
+the blocks △˙ j lead to equivalent norms and hence to the same space.
+     Note that if u ∈ Sh′ (Rn ) belongs to Ḃp,r
+                                             s
+                                                 (Rn ) then there exists a non-
+negative sequence (dj )j∈Z such that
+     ˙ ukLp ≤ dj 2−js kuk s ∀ j ∈ Z,
+    k△                                                where          k(dj )kℓr = 1.   (2.4)
+       j                 Ḃp,r
+
+
+
+3. Blowup estimates in Ḣ 3/2 (strong) and Ḣ 5/2 (weak)
+    The proofs of the blow up results follows easily from upper bounds on
+the nonlinear term. We postpone a detailed presentation of the estimates
+and proofs of these bounds until Section 5. In this section we assume those
+estimates, and present a straightforward proof of the strong blowup estimate
+in Ḣ 3/2 , and, with an additional contradiction argument, of the weak blowup
+estimate in Ḣ 5/2 .
+
+Theorem 3.1. Suppose that u is a classical solution of the Navier–Stokes
+existence with maximal existence time T . Then
+
+                          ku(T − t)k2Ḣ 3/2 ≥ c−2   −1
+                                               3/2 t .                                (3.1)
+
+
+
+
+                                            6
+Proof. We take the inner product of the equation with u in Ḣ 3/2 , i.e. we
+apply Λ3/2 and take the inner product with Λ3/2 u,
+                1d
+                     kuk2Ḣ 3/2 + kuk2Ḣ 5/2 = (Λ3/2 B(u, u), Λ3/2u)
+                2 dt
+                                             ≤ c3/2 kuk2Ḣ 3/2 kukḢ 5/2 ,
+
+using the inequality
+
+          |(Λs [(u · ∇)u], Λs u)| ≤ ckukḢ s kukḢ s+1 kukḢ 3/2          s ≥ 1,
+
+from (5.4) with s = 3/2, which is proved in Section 5. We use Young’s
+inequality on the right-hand side to obtain
+                       d
+                          kuk2Ḣ 3/2 + kuk2Ḣ 5/2 ≤ c23/2 kuk4Ḣ 3/2 .
+                       dt
+Dropping the second term on the left-hand side, the required lower bound
+follows immediately from Lemma 2.1.
+   We now use a contradiction argument to obtain a weak lower bound in
+  5/2
+Ḣ  at the correct rate.
+
+Theorem 3.2. Suppose that u is a classical solution of the Navier–Stokes
+existence with maximal existence time T . Then
+
+                          lim sup (T − t)ku(t)kḢ 5/2 ≥ c.                         (3.2)
+                             t↑T
+
+
+Proof. We proceed by contradiction, and suppose that for τ ≤ t ≤ T ,
+
+                              ku(t)kḢ 5/2 ≤ ε(T − t)−1 ,                          (3.3)
+
+where ε is chosen so that 2c3/2 ε < 1. Then on this interval
+
+                 1d
+                      kuk2Ḣ 3/2 ≤ c3/2 kuk2Ḣ 3/2 kukḢ 5/2 − kuk2Ḣ 5/2 .
+                 2 dt
+Since ax − x2 is increasing in x while x ≤ a/2, and by assumption
+                                   1 −1
+                              ε     c
+                                   2 3/2   1                  
+             ku(t)kḢ 5/2 ≤      ≤       ≤   c3/2 ku(t)k2Ḣ 3/2 ,
+                            T −t   T −t    2
+
+                                             7
+it follows that
+                    d                                  ε      2ε2
+                       kuk2Ḣ 3/2 ≤ 2c3/2 kuk2Ḣ 3/2      −          .
+                    dt                               T − t (T − t)−2
+Using the integrating factor (T − t)2c3/2 ε (note that the exponent is < 1) this
+becomes
+              d                            
+                  kuk2Ḣ 3/2 (T − t)2c3/2 ε ≤ −ε2 (T − t)−(2−2c3/2 ε) .
+              dt
+Now drop the right-hand side and integrate from τ to t to conclude that
+
+                  ku(t)k2Ḣ 3/2 ≤ ku(τ )kḢ 3/2 (T − τ )2c3/2 ε (T − t)2c3/2 ε
+                               = Cτ (T − t)2c3/2 ε ,
+
+which contradicts (3.3) provided that 2c3/2 ε < 1, which we assumed above.
+It follows that there exist tk → T such that
+
+                               ku(tk )kḢ 5/2 ≥ (4c3/2 )−1 t−1
+                                                            k
+
+and (3.2) follows.
+   Note that this bound does not use directly any differential inequality
+governing the evolution of kukḢ 5/2 .
+
+                                              5/2
+4. Strong blowup estimate in Ḃ2,1 .
+
+    Although we have been unable to prove a strong lower bound in Ḣ 5/2 at
+the correct rate (i.e. ku(t)kḢ 5/2 ≥ c/(T − t)) we can obtain such a bound in
+                    5/2
+the Besov space Ḃ2,1 , which has the same scaling. Again the proof relies on
+estimates of the nonlinear term, which we delay until Section 6.
+Theorem 4.1. Suppose that u is a classical solution of the Navier–Stokes
+existence with maximal existence time T . Then
+                                            c
+                            ku(t)kḂ5/2 ≥      .                   (4.1)
+                                    2,1   T −t
+Proof. We consider the equation for △ ˙ u, which can be rewritten (by adding
+                                       k
+and subtracting the term involving the summation in i) as
+                 "                                    #
+ d ˙                              X                       X
+   △k u−∆△ ˙ u+ △  ˙ ((u · ∇)u) −      Ṡ    u ∂ ˙
+                                                 △
+                                          k−1 i i k u   +              ˙ u = 0,
+                                                            Ṡk−1ui ∂i △
+             k       k                                                  k
+dt                                  i                     i
+
+
+                                               8
+      ˙ k and ∆ commute. Taking the inner product in L2 with △
+since △                                                      ˙ k u yields
+
+1d ˙                                        X
+                   ˙ uk2 2 ≤ △
+     k△k uk2L2 + k∇△         ˙ ((u · ∇)u) −               ˙ u
+                                              Ṡk−1 ui ∂i △                         ˙ ukL2 .
+                                                                                   k△
+                     k L      k                             k                         k
+2 dt                                        i                                 L2
+
+                                                             ˙ ukL2 , to
+We drop the second term on the left-hand side and divide by k△k
+yield
+
+             d ˙                          X
+                           ˙ ((u · ∇)u) −
+                k△k ukL2 ≤ △                            ˙ u
+                                            Ṡk−1 ui ∂i △
+                            k                             k
+             dt                           i                              L2
+                                      −5k/2
+                          ≤ dk (t)2           kuk2Ḃ5/2 ,
+                                                    2,1
+
+                                 P
+using Proposition 6.6, and where    dk (t) = 1 for each t.
+                         5k/2
+    We now multiply by 2      and sum to obtain
+                              d
+                                 kukḂ5/2 ≤ ckuk2Ḃ5/2 ,
+                              dt      2,1          2,1
+
+
+from which (4.1) follows at once via Lemma 2.1.
+
+5. Bounds for the nonlinear term in Sobolev spaces
+   In this section we will prove the bound on the nonlinear term that we
+used in the proof of Theorem 3.1, namely
+
+                 |(Λ3/2 B(u, u), Λ3/2u)| ≤ c3/2 kuk2Ḣ 3/2 kukḢ 5/2 .
+
+In fact we prove a somewhat more general result in Corollary 5.4, which
+in turn is a consequence of the following commutator estimate (cf. Kato &
+Ponce, 1988; Fefferman et al., 2014).
+
+Proposition 5.1. Take s ≥ 1 and s1 , s2 > 0 such that
+
+               1 ≤ s1 < n2 + 1        and           s1 + s2 = s + n2 + 1.              (??)
+
+Then there exists a constant c such that for all u, B ∈ Ḣ s1 (Rn ) ∩ Ḣ s2 (Rn ),
+
+   kΛs [(u · ∇)B] − (u · ∇)(Λs B)kL2 ≤ c(kukḢ s1 kBkḢ s2 + kukḢ s2 kBkḢ s1 ).
+
+
+                                              9
+   To prove Proposition 5.1 we need two simple lemmas. A proof of the first
+can be found in Fefferman et al. (2014); the second is an immediate conse-
+quence of Berstein’s inequality (see McCormick et al., 2013, for example).
+
+Lemma 5.2. If s ≥ 1 and |b| < |a|/2, then
+
+                                  ||a|s − |a − b|s | ≤ c|a − b|s−1 |b|,
+
+where c = s3s−1 .
+
+Lemma 5.3. There exists a constant c such that, for any k ∈ Z and any p, q
+                       ˙ k u ∈ Lp (Rn ) then △
+with 1 ≤ p ≤ q ≤ ∞, if △                     ˙ k u ∈ Lq (Rn ) and
+
+                                                            ˙ k ukLp .
+                                  ˙ k ukLq ≤ c2kn(1/p−1/q) k△
+                                 k△
+
+   We can now give the proof of Proposition 5.1.
+                                   P     ˙ u and B = P △  ˙ B; then
+Proof of Proposition 5.1. Write u = i∈Z △  i          j∈Z  j
+
+
+      f = Λs [(u · ∇)B] − (u · ∇)(Λs B)
+                  "           !       #                                         !
+          X          X                                              X
+        =      Λs       △˙ i u ∇△ ˙ jB −                                  ˙ i u ∇Λs △
+                                                                          △         ˙ jB
+             j∈Z             i∈Z                                    i∈Z
+                        "    j−10
+                                               !               #        j−10
+                                                                                     !
+            X                    X                                      X
+        =          Λs                   ˙ u ∇△
+                                        △    ˙ B −                             ˙ u ∇Λs △
+                                                                               △       ˙ B
+                                          i   j                                  i       j
+             j∈Z             i=−∞                                       i=−∞
+                                 "      j+9
+                                                      !            #           j+9
+                                                                                            !
+                   X                   X                                       X
+              +             Λs                 ˙ u ∇△
+                                               △    ˙ B −                            ˙ u ∇Λs △
+                                                                                     △       ˙ B
+                                                 i   j                                 i       j
+                   j∈Z                 i=j−9                                i=j−9
+                                 "             i−10
+                                                                   !#                i−10
+                                                                                                       !
+                   X                           X                                     X
+              +                ˙ iu
+                            Λs △                       ˙ jB
+                                                      ∇△                 ˙ iu
+                                                                        −△                      ˙ jB
+                                                                                            ∇Λs △
+                   i∈Z                        j=−∞                                   j=−∞
+             X                   X              X
+        =:         f1,j +              f2,j +         f3,i .
+             j∈Z                 j∈Z            i∈Z
+
+
+   Taking the Fourier transform of f1,j , we have
+                             Z                            j−10
+                                                          X ḋ
+             fˆ1,j (ξ) =                  s
+                                       (|ξ| − |η| )   s                  [
+                                                                         ˙ B(η) dη.
+                                                            △i u(ξ − η)η △j
+                                 Rn                       i=−∞
+
+
+
+                                                          10
+Since i ≤ j − 10, |ξ − η| < |η|/2, so by Lemma 5.2 we have
+                            Z                   j−10
+                                                X ḋ
+            |fˆ1,j (ξ)| ≤            |ξ − η|      △i u(ξ − η) |η|s [
+                                                                   ˙
+                                                                  △j B(η) dη.
+                                Rn             i=−∞
+
+
+Let q1 , q2 satisfy q11 + q12 = 12 and 2 < q1 < s1n−1 , and let p1 , p2 satisfy
+1
+pi
+   = q1i + 21 . Noting that 1+ 21 = p11 + p12 , by Young’s inequality for convolutions
+we have
+                                  j−10
+                                  X ḋ
+                  ˆ
+                 kf k ≤ |ζ|
+                       2                △ u(ζ)              [
+                                                       |η|s △˙ B(η)      .
+                 1,j L                               i                           j
+                                        i=−∞                                                L p2
+                                                               L p1
+
+As 1 − s1 + n/q1 > 0, by Hölder’s inequality we have
+         j−10                                                                             j−10
+        X ḋ                                                                              X ḋ
+                                              1−s1                                   s1
+    |ζ|   △i u(ζ)                    ≤ |ζ|           1{|ζ|≤2j−10 } Lq1 |ζ|                  △i u(ζ)
+        i=−∞                L p1                                                          i=−∞          L2
+                                            j(1−s1 +n/q1 )
+                                     ≤ c2                     kukḢ s1 .
+
+For the other term, by Hölder’s inequality,
+
+                  [
+                  ˙ B(η)
+             |η|s △                                                   [
+                                                                      ˙ B(η)
+                                        ≤ |η|s 1{2j−1 ≤|ζ|≤2j+1 } Lq2 △
+                   j                                                   j
+                                 L p2                                                              L2
+                                                      ˙ B
+                                        ≤ c2j(s+n/q2) △                      ,
+                                                       j
+                                                                        L2
+
+hence
+                                                              ˙ B
+                kf1,j kL2 ≤ c kukḢ s1 2j(s−s1+n/q1 +n/q2 +1) △ j
+                                                                                            L2
+
+                            ≤ c kukḢ s1 2        js2     ˙ B
+                                                          △ j
+                                                                   L2
+
+
+
+
+and thus                    X
+                                     kf1,j k2L2 ≤ c kuk2Ḣ s1 kBk2Ḣ s2 .                               (5.1)
+                            j∈Z
+                                             P                   
+   For the second term, since                      j+9   ˙             ˙ j B is localised in Fourier
+                                                   i=j−9 △i u         ∇△
+
+
+
+
+                                                         11
+space in an annulus centred at radius 2j , we obtain
+                 " j+9       !         #           j+9
+                                                          !
+                     X                             X
+  kf2,j kL2 ≤ Λs         △˙ u ∇△  ˙ B        +         ˙ u ∇Λs △
+                                                       △       ˙ B
+                                    i              j                               i           j
+                        i=j−9                                L2           i=j−9                    L2
+                      j+9                                          j+9
+                     X                                             X
+           ≤ c2js                     ˙ BkL4 +
+                             ˙ ukL4 k∇△
+                            k△                                                         ˙ BkL4
+                                                                           ˙ ukL4 k∇Λs △
+                                                                          k△
+                               i       j                                     i          j
+                    i=j−9                                         i=j−9
+                                               j+9
+                                               X
+                          ˙ BkL2
+           ≤ c2j(s+n/4) k∇△                                    ˙ ukL2
+                                                        2in/4 k△
+                           j                                     i
+                                              i=j−9
+                                                       j+9
+                                                       X
+           ≤ c2   j(s+n/2−s1 )     ˙ BkL2
+                                 k∇△                                            ˙ ukL2
+                                                             2j(s1 −n/4) 2in/4 k△
+                                    j                                             i
+                                                   i=j−9
+
+using Bernstein’s inequality (Lemma 5.3). Since |i − j| ≤ 9, 2j(s1 −n/4) ≤
+c2i(s1 −n/4) , so
+                                                                  j+9
+                                                                  X
+               kf2,j kL2 ≤ c2      j(s2 −1)     ˙ BkL2
+                                              k∇△                               ˙ ukL2 ,
+                                                                          2is1 k△
+                                                 j                                i
+                                                                  i=j−9
+
+and thus                    X
+                                  kf2,j k2L2 ≤ c kuk2Ḣ s1 kBk2Ḣ s2 .                             (5.2)
+                            j∈Z
+
+   For the third term, we use the Sobolev embedding
+                                        k∇ukLp ≤ ckukḢ s1
+                2n
+provided p = n−2s 1 +2
+                       . Using Hölder’s inequality, we obtain
+                 "         i−10
+                                        !#                i−10
+                                                                       !
+                            X                             X
+  kf3,i kL2 ≤ Λs △  ˙ u         ∇△ ˙ B        + ˙  △u              ˙ B
+                                                               ∇Λs △
+                        i                      j                          i                j
+                              j=−∞                           L2               j=−∞                 L2
+                                           i−10
+                                           X
+                  ˙ uk n/(s1 −1)
+           ≤ 2is k△                                 ˙ B
+                                                   ∇△
+                    i L                              j
+                                          j=−∞                    L2n/(n−2s1 +2)
+                                              i−10
+                                              X
+                   ˙ uk n/(s1 −1)
+                + k△                                        ˙ B
+                                                        ∇Λs △
+                     i L                                     j
+                                              j=−∞                      L2n/(n−2s1 +2)
+           ≤ c2   i(s+n/2+1−s1 )    ˙ ukL2 kBk s1
+                                   k△ i       Ḣ
+                    ˙ i ukL2 kBk s1
+           ≤ c2is2 k△           Ḣ
+
+
+                                                       12
+using Bernstein’s inequality (Lemma 5.3) and the fact that 2js ≤ 2is . Hence
+                      X
+                           kf3,i k2L2 ≤ c kuk2Ḣ s2 kBk2Ḣ s1 .         (5.3)
+                           i∈Z
+
+Combining (5.1), (5.2) and (5.3) yields the desired result.
+    In particular, taking s = s1 = n/2 and s2 = n/2 + 1 in Proposition 5.1
+yields
+
+         kΛn/2 [(u · ∇)B] − (u · ∇)(Λn/2 B)kL2
+                        ≤ c(k∇ukḢ n/2 kBkḢ n/2 + kukḢ n/2 k∇BkḢ n/2 ).
+
+The counterexample in the appendix to Fefferman et al. (2014) shows that
+one cannot remove the second term on the right-hand side, at least in the
+case n = 2.
+   We will use this estimate in the form of the following corollary, which
+provides a partial generalisation of Lemma 1.1 from Chemin (1992).
+Corollary 5.4. Take s ≥ 1 and s1 , s2 > 0 such that
+
+                  1 ≤ s1 < n2 + 1       and       s1 + s2 = s + n2 + 1.
+
+Then there exists a constant c such that for all u, v ∈ Ḣ s1 (Rn ) ∩ Ḣ s2 (Rn )
+with ∇ · u = 0,
+
+       |(Λs [(u · ∇)v], Λs v)| ≤ c(kukḢ s1 kvkḢ s2 + kukḢ s2 kvkḢ s1 )kvkḢ s .
+
+Proof. Observe that since
+
+                                 ((u · ∇)Λs v, Λs v) = 0
+
+it follows that
+
+            (Λs [(u · ∇)v], Λs v) = (Λs [(u · ∇)v] − (u · ∇)Λs v, Λs v)
+
+and the inequality is an immediate consequence of Proposition 5.1.
+   Note that in particular for any s ≥ 1, if ∇ · u = 0 then
+
+                   |(Λs [(u · ∇)u], Λs u)| ≤ ckukḢ s kukḢ s+1 kukḢ 3/2             (5.4)
+
+whenever the right-hand side is finite.
+
+                                            13
+6. Bounds for the nonlinear term in Besov spaces
+   Much like the Sobolev embeddings, Besov spaces enjoy certain embed-
+dings with the correct exponents. We quote the two embeddings we will use
+most frequently.
+
+Proposition 6.1 (Proposition 2.20 in Bahouri et al (2011)). Let 1 ≤ p1 ≤
+p2 ≤ ∞ and 1 ≤ r1 ≤ r2 ≤ ∞. For any real number s, we have the continuous
+embedding
+                   Ḃps1 ,r1 (Rn ) ֒→ Ḃps−n(1/p
+                                          2 ,r2
+                                                 1 −1/p2 )
+                                                           (Rn ).
+
+Proposition 6.2 (Proposition 2.39 in Bahouri et al (2011)). For 1 ≤ p ≤
+q ≤ ∞, we have the continuous embedding
+                            n/p−n/q
+                         Ḃp,1        (Rn ) ֒→ Lq (Rn ).
+
+6.1. Homogeneous Paradifferential Calculus
+    Let u and v be tempered distributions in Sh′ (Rn ). We have
+                        X                     X
+                     u=     △˙ ′ u and v =         ˙ v,
+                                                   △
+                              j                      j
+                         j ′ ∈Z                           j∈Z
+
+so, at least formally,                X
+                             uv =              ˙ j ′ u△
+                                               △      ˙ j v.
+                                    j,j ′ ∈Z
+
+One of the key techniques of paradifferential calculus is to break the above
+sum into three parts, as follows: define
+                                     X
+                            Ṫu v :=          ˙ v,
+                                       Ṡj−1 u△j
+                                      j∈Z
+
+and                                      X
+                         Ṙ(u, v) :=               ˙ u△
+                                                   △   ˙ v.
+                                                     k  j
+                                       |k−j|≤1
+
+At least formally, the following Bony decomposition holds true:
+
+                         uv = Ṫu v + Ṫv u + Ṙ(u, v).
+
+We now state two standard estimates on Ṫ and Ṙ that we will use in proving
+our a priori estimates.
+
+                                         14
+Lemma 6.3 (Theorem 2.47 from Bahouri et al (2011)). Let s ∈ R and
+t < 0. There exists a constant C = C(s, t) such that for any p, r1 , r2 ∈ [1, ∞],
+      t               s
+u ∈ Ḃp,r 1
+            and v ∈ Ḃp,r 2
+                            ,
+
+                                     s+t ≤ Ckuk t
+                            kṪu vkḂp,r       Ḃ∞,r kvkḂp,r
+                                                          s
+                                                            1         2
+
+                 n     o
+     1           1   1
+with r = min 1, r1 + r2 .
+
+Lemma 6.4 (Theorem 2.52 from Bahouri et al (2011)). Let s1 , s2 ∈ R such
+that s1 + s2 > 0. There exists a constant C = C(s1 , s2 ) such that, for any
+p1 , p2 , r1 , r2 ∈ [1, ∞], u ∈ Ḃps11,r1 and v ∈ Ḃps22,r2 ,
+
+                         kṘ(u, v)kḂp,r
+                                     s1 +s2 ≤ Ckuk s1
+                                                  Ḃp ,r kvkḂp2 ,r
+                                                              s
+                                                             1   1        2   2
+
+
+provided that
+                       1    1   1                         1    1   1
+                         :=   +   ≤ 1 and                   :=   +   ≤ 1.
+                       p    p1 p2                         r    r1 r2
+   We also require the following Lemma, which is a particular case of Lemma 2.100
+from Bahouri et al (2011).
+
+Lemma 6.5. Let −1 − n/2 < σ < 1 + n/2 and 1 ≤ r ≤ ∞. Let v be a
+                                                             ˙ ]f . There exists
+divergence-free vector field on Rn , and set Qj := [(v · ∇), △j
+a constant C = C(σ, n), such that
+                                   
+                        2jσ kQj kL2 j                               σ .
+                                             ≤ Ck∇vkḂn/2 ∩L∞ kf kḂ2,r
+                                        ℓr                   2,∞
+
+
+6.2. Main Estimate in Besov spaces
+    We are now ready for the main estimate in Besov spaces.
+                                   n/2+1
+Proposition 6.6. If u ∈ Ḃ2,1                then
+
+                           X
+       ˙ ((u · ∇)u) −
+       △ k                       Ṡk−1 ui ∂i ˙
+                                            △k u          . dk 2−k(n/2+1) kuk2Ḃn/2+1 ,   (6.1)
+                                                                                  2,1
+                             i                       L2
+       P
+with       k dk = 1.
+
+
+
+
+                                                15
+                                                                     P
+Proof. Notice that the l-th coordinate of (u · ∇)u is given by i ui ∂i ul , and
+so we have
+                        X                X              X
+           (u · ∇u)l =      Ṫui ∂i ul +   Ṫ∂i ul ui +   Ṙ(ui , ∂i ul )
+                            i                        i                 i
+
+Recall that by definition
+                                           X
+                            Ṫui ∂i ul =                     ˙ ∂i ul ,
+                                                     Ṡj−1ui △ j
+                                               j
+
+and so we can rewrite △˙ Ṫu ∇ul as follows
+                         k
+            X                 X
+                ˙ Ṫu ∂i ul =
+                △                            ˙ ul
+                                 Ṡk−1 ui ∂i △                                        (6.2)
+                    k   i                                   k
+               i                    i
+                                    XX
+                                                                       ˙ △
+                                               (Ṡj−1ui − Ṡk−1 ui )∂i △ ˙
+                                +                                       k j ul        (6.3)
+                                    i      j
+                                    XX
+                                +               ˙ , Ṡj−1ui ∂i ]△
+                                               [△               ˙ ul .                (6.4)
+                                                 k               j
+                                    i      j
+
+   And so we obtain the following expression for the l-th component of the
+term we want to estimate
+                           X                  
+            △˙ ((u · ∇)u) −     Ṡ    u ∂ ˙
+                                          △
+                                   k−1 i i k u   =
+              k
+                                                                 l
+                                    i
+                                    XX
+                                =                                          ˙ △
+                                                   (Ṡj−1ui − Ṡk−1 ui )∂i △  ˙
+                                                                             k j ul   (6.5)
+                                    i      j
+                                    XX
+                                +                   ˙ k , Ṡj−1ui ∂i ]△
+                                                   [△                 ˙ j ul          (6.6)
+                                    i      j
+                                    X
+                                +       ˙ k Ṫ∂ u ui
+                                        △                                             (6.7)
+                                               i l
+                                    i
+                                    X
+                                +       ˙ k Ṙ(ui , ∂i ul )
+                                        △                                             (6.8)
+                                    i
+
+    We will show that L2 norm of each of the four terms in the right hand side
+is controlled by a constant multiple of dk 2−k(n/2+1) kuk2 n/2+1 , hence obtaining
+                                                                           Ḃ2,1
+the result.
+   For (6.5), ignoring the summation in i for now we have
+X
+                           ˙ △
+   (Ṡj−1ui − Ṡk−1 ui )∂i △ ˙       ˙       ˙ ˙             ˙       ˙ ˙
+                            k j ul = △k−1 ui △k △k+1 ∂i ul − △k−2 ui △k △k−1 ∂i ul ,
+ j
+
+
+                                                   16
+and so (now summing in i as well)
+                                         ˙
+              kexpression (6.5)kL2 . 2k k△           ˙
+                                           k−1 ukL∞ k△k ul kL2
+
+                                             △k−2 ukL∞ k ˙
+                                       + 2k k ˙          △k ul kL2
+                                             ˙ ul kL2 kuk n/2+1
+                                          . k△k          Ḃ        2,1
+                                                    −k(n/2+1)
+                                          . dk 2                kukḂd/2+1 kul kḂn/2+1
+                                                                         2,1               2,1
+
+since
+                            ˙ ukL∞ ≤ kuk 1 . kuk n/2+1 .
+                       2 k k△k          Ḃ∞,∞   Ḃ                       2,1
+
+                                       1
+Above we have used the definition of Ḃ∞,∞ and the corresponding embedding
+from Proposition 6.2, and also (2.4) to find
+                          ˙ ukL2 . dk 2−k(n/2+1) kuk n/2+1 .
+                         k△ k                       Ḃ               2,1
+                           P ˙                   ˙
+To treat (6.6), define Qk = j [△k , Ṡj−1 ui ∂i ]△j ul , then applying Lemma 6.5
+we have
+          2k(n/2+1) kQk kL2         . k∇ukḂn/2 ∩L∞ kukḂn/2+1 . kuk2Ḃn/2+1 ,
+                               ℓ1                    2,∞             2,1                     2,1
+
+        n/2                                                       n/2
+since Ḃ2,1 embeds continuously into L∞ and Ḃ2,∞ (see Proposition 6.1 and
+6.2). Hence
+                     kQk kL2 . dk 2−k(n/2+1) kuk2Ḃn/2+1 .
+                                                                   2,1
+
+    To estimate (6.7) we use Lemma 6.3 and the embeddings from Proposition
+(6.1); we have
+                      kṪ∂i ul ui kḂn/2+1 . k∇ul kḂ∞,∞
+                                                     0   kui kḂn/2+1
+                                    2,1                                        2,1
+
+                                                . kuk2Ḃn/2+1 .
+                                                        2,1
+
+
+Using (2.4) we find
+                       ˙ Ṫ∂ u ui k2 ≤ dk 2−k(n/2+1) kuk2 n/2+1 .
+                      k△k   i l    L                    Ḃ                 2,1
+
+
+   Finally we consider (6.8); using Lemma 6.4 with p = 2, (p1 , p2 ) = (∞, 2),
+s1 = 1, r = 1, (r1 , r2 ) = (∞, 1), s2 = n/2, we obtain
+                    kṘ(ui , ∂i ul )kḂn/2+1 . kui kḂ∞,∞
+                                                      1   k∇ul kḂn/2
+                                          2,1                                        2,1
+
+                                                   . kuk2Ḃn/2+1 ,
+                                                           2,1
+
+
+
+
+                                                   17
+since by Proposition 6.1
+
+                            Ḃps1 ,r1 ⊂ Ḃps−d(1/p
+                                            2 ,r2
+                                                   1 −1/p2 )
+                                                             .
+
+Again, by (2.4) we find
+
+                 k˙
+                  △k Ṙ(ui , ∂i ul )kL2 ≤ dk 2−k(n/2+1) kuk2Ḃn/2+1
+                                                                 2,1
+
+   Combining these estimates yields (6.1).
+
+7. Conclusion
+     Lower bounds in Ḣ 3/2 are now available from a number of sources. Whether
+it is possible to obtain a strong lower bound in Ḣ 5/2 remains an interesting
+open question, as does the possibility of obtaining bounds at the optimal rate
+in Ḣ s for s > 5/2.
+
+Acknowledgments
+    This work arose as a result of a visit to Warwick by YZ in October
+2013. DSM was a member of Warwick’s ‘MASDOC’ doctoral training cen-
+tre, funded by EPSRC grant EP/HO23364.1; JCR was supported by an
+EPSRC Leadership Fellowship EP/G007470/1, which also funded EJO’s sab-
+batical year at Warwick during which most of this work was completed, and
+a postdoctoral position for AVL; JLR is partially supported by the European
+Research Council, grant no. 616797.
+
+References
+
+H. Bahouri, J.-Y. Chemin, and R. Danchin. Fourier analysis and nonlinear
+partial differential equations. Springer-Verlag (2011).
+J. Benameur. On the blow-up criterion of 3D Navier-Stokes equations. J.
+Math. Anal. Appl. 371 (2010) 719727.
+J. Benameur. On the blow-up criterion of the periodic incompressible fluids.
+Math. Methods Appl. Sci. 36 (2013) 143153.
+A. Cheskidov and M. Zaya. Lower Bounds of Potential Blow-Up Solutions
+                                                       3
+of the Three-dimensional Navier-Stokes Equations in Ḣ 2 . arXiv:1503.01784.
+
+
+                                           18
+J.C. Cortissoz, J.A. Montero, C.E. Pinilla. On lower bounds for possible
+blow-up solutions to the periodic Navier-Stokes equation. J. Math. Phys.
+55 (2014) 033101.
+C.L. Fefferman, D.S. McCormick, J.C. Robinson, and J.L. Rodrigo. Higher
+order commutator estimates and local existence for the non-resistive MHD
+equations and related models. J. Funct. Anal. 267 (2014) 1035–1056.
+Y. Giga. Solutions for semilinear parabolic equations in Lp and regularity
+of weak solutions of the Navier-Stokes system. J. Differ. Equ. 62 (1986)
+186-212.
+T. Kato and G. Ponce. Commutator estimates and the Euler and Navier–
+Stokes equations. Comm. Pure Appl. Math. 41 (1988) 891–907.
+J. Leray. Sur le mouvement d’un liquide visqueux emplissant l’espace. Acta
+Math. 63 (1934) 193-248 .
+D.S. McCormick, J.C. Robinson, and J.L. Rodrigo. Generalised Gagliardo–
+Nirenberg inequalities using weak Lebesgue spaces and BMO. Milan J. Math.
+81 (2013) 265–289.
+J.A. Montero. Lower bounds for possible blow-up solutions for the Navier–
+Stokes equations revisited. arXiv: 1503.03063.
+J.C. Robinson, W. Sadowski, and R.P. Silva. Lower bounds on blow up
+solutions of the three-dimensional Navier-Stokes equations in homogeneous
+Sobolev spaces. J. Math. Phys. 53 (2012) 115618
+
+
+
+
+                                   19
+

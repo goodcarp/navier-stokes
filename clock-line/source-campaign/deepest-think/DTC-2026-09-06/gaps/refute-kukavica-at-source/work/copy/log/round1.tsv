@@ -1,0 +1,16 @@
+route	url	http	bytes	content_type	saved_as
+homepage_dornsife	https://dornsife.usc.edu/profile/igor-kukavica/	200	311396	text/html; charset=UTF-8	raw/hp_dornsife.html
+homepage_bcf	http://www-bcf.usc.edu/~kukavica/	000	0	ERR	0	-	raw/hp_bcf.html
+homepage_dreamhost	https://kukavica.dreamhosters.com/	200	0	text/html	raw/hp_dreamhost.html
+homepage_dreamhost_pubs	https://kukavica.dreamhosters.com/publications.html	404	315	text/html; charset=iso-8859-1	raw/hp_dreamhost_pubs.html
+wayback_cdx_dreamhost	http://web.archive.org/cdx/search/cdx?url=kukavica.dreamhosters.com*&output=text&limit=400&collapse=urlkey&filter=statuscode:200	200	0	text/plain	raw/wb_cdx_dreamhost.txt
+wayback_cdx_bcf	http://web.archive.org/cdx/search/cdx?url=www-bcf.usc.edu/~kukavica*&output=text&limit=400&collapse=urlkey	200	11414	text/plain	raw/wb_cdx_bcf.txt
+wayback_cdx_math_usc	http://web.archive.org/cdx/search/cdx?url=math.usc.edu/~kukavica*&output=text&limit=400&collapse=urlkey	200	17035	text/plain	raw/wb_cdx_mathusc.txt
+fatcat_lookup	https://api.fatcat.wiki/v0/release/lookup?doi=10.1016/s0022-0396(03)00153-0&expand=files	000	0	ERR	0	-	raw/fatcat.json
+openaire	https://api.openaire.eu/search/publications?doi=10.1016/S0022-0396(03)00153-0	200	46493	application/xml;charset=UTF-8	raw/openaire.xml
+s2	https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/S0022-0396(03)00153-0?fields=title,externalIds,openAccessPdf,isOpenAccess,abstract	200	951	application/json	raw/s2.json
+core_search	https://core.ac.uk/search?q=%22local%20uniqueness%20of%20weak%20solutions%20of%20the%20Navier-Stokes%20system%20with%20bounded%20initial%20data%22	403	6073	text/html; charset=UTF-8	raw/core_search.html
+base_search	https://www.base-search.net/Search/Results?lookfor=Kukavica+local+uniqueness+weak+solutions+Navier-Stokes+bounded+initial+data	200	7847	text/html; charset=utf-8	raw/base_search.html
+sciencedirect_landing	https://www.sciencedirect.com/science/article/pii/S0022039603001530	403	1207954	text/html; charset=UTF-8	raw/sd_landing.html
+sciencedirect_pdf	https://www.sciencedirect.com/science/article/pii/S0022039603001530/pdfft?isDTMRedir=true&download=true	403	1208135	text/html; charset=UTF-8	raw/sd_pdf.pdf
+elsevier_tdm_plain	https://api.elsevier.com/content/article/PII:S0022039603001530?httpAccept=text/plain	400	159	text/xml;charset=UTF-8	raw/elsevier_plain.txt

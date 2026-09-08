@@ -1,0 +1,146 @@
+{
+ "E0_G0": {
+  "E0_argmax_phi_deg": 7.499999999427042,
+  "E0_closed": 7.661297575540389,
+  "E0_rel_gap": 4.368263016064894e-13,
+  "E0_scan": 7.661297575537042,
+  "G0_argmax_phi_deg_u": [
+   172.49999999942705,
+   995.09915
+  ],
+  "G0_closed": 58.69548054098104,
+  "G0_rel_gap": 1.5191447585787349e-10,
+  "G0_scan": 58.695480532064344,
+  "analytic_vs_central_difference_control": 1.4229895368099304e-08,
+  "check_E0sq_equals_G0": 7.105427357601002e-15,
+  "cos_delta_over_sin2_delta": 58.19333256822213,
+  "endcap_bound_absF": 7.639438541650668,
+  "endcap_bound_absFprime": 0.002549025568559795,
+  "endcap_note": "on phi < 1e-3 and phi > pi - 1e-3 the analytic bounds |F| <= 7.6395 and |F'| <= 2.55e-3 hold, both far below the suprema, so excluding the caps from the grid cannot move either supremum.",
+  "endcap_phi": 0.001,
+  "sup_abs_Fprime": 58.19333255930511
+ },
+ "FOREIGN": {
+  "THEOREM_S3_t1_E0": {
+   "origin": "round2/THEOREM_S3/t1_results.json",
+   "value": 7.6612975721936944
+  },
+  "THEOREM_S3_t1_G0": {
+   "origin": "round2/THEOREM_S3/t1_results.json",
+   "value": 58.695476310955364
+  },
+  "refute_u2_G0_ASSEMBLY_family": {
+   "origin": "round2/refute-u2/NOTE.md sec.3",
+   "value": 58.6948961
+  },
+  "refute_u2_eta0_Linf_for_DC": {
+   "origin": "round2/refute-u2/NOTE.md MINOR-2",
+   "value": 4.093173
+  },
+  "refute_u2_sup_e_u_Theta_DC": {
+   "origin": "round2/refute-u2/NOTE.md MINOR-2",
+   "value": 0.53431477
+  }
+ },
+ "TV": {
+  "L=10": {
+   "TV_over_M_Rcubed": 31.130628569650337,
+   "TV_over_M_rho0cubed": 332676670916447.56
+  },
+  "L=20": {
+   "TV_over_M_Rcubed": 31.138234182592523,
+   "TV_over_M_rho0cubed": 3.5560093542332e+27
+  },
+  "L=40": {
+   "TV_over_M_Rcubed": 31.138110098347166,
+   "TV_over_M_rho0cubed": 4.060972777958004e+53
+  }
+ },
+ "closed_forms": {
+  "E0 = 1/sin(delta)": 7.661297575540389,
+  "E0_str": "7.66129757554038867",
+  "G0 = 1/sin(delta)^2 = E0^2": 58.69548054098104,
+  "G0_str": "58.6954805409810374",
+  "derivation": "on the plateau arc g == 1 so F = sgn(cos phi)/sin phi and F^2 + F'^2 = (sin^2 + cos^2)/sin^4 = 1/sin^4 phi; the arc's closest approach to the axis is phi = delta.  The taper arc has |F| <= 1/sin delta and |F'| small, the equatorial arc has |F'| <= 1/delta_m.",
+  "note": "L -> infinity values; at finite L both carry a factor sup Theta <= 1"
+ },
+ "comparison": {
+  "E0_here_vs_t1_rel": 4.363944605090405e-10,
+  "G0_closed_vs_refute_u2_rel": 9.957171755812416e-06,
+  "G0_here_vs_t1_rel": 7.191540551116378e-08,
+  "eta0_Linf_here_vs_refute_u2_DC_rel": 9.07442076533021e-05,
+  "sup_e_u_Theta_here_vs_refute_u2_rel": 4.943331571291206e-09
+ },
+ "datum": {
+  "delta_deg": 7.5,
+  "delta_m_deg": 5.0,
+  "eps_r": 0.25,
+  "form": "eta_0 = -(M/rho) F(phi) Theta(u)"
+ },
+ "mollification_claim": "F_sigma = F * chi_sigma has ||F_sigma||_inf <= ||F||_inf and ||F_sigma'||_inf = ||F' * chi_sigma||_inf <= ||F'||_inf, so neither E_0 nor G_0 increases under angular mollification.  The table confirms it numerically at four scales.",
+ "mollification_control": {
+  "sigma=0.002": {
+   "E0_mollified": 7.660738418085329,
+   "E0_ratio_to_E0": 0.9999270153065396,
+   "G0_mollified": 57.12797385635276,
+   "G0_ratio_to_G0": 0.9732942524674647,
+   "sup_abs_Fprime_mollified": 56.62554588261308
+  },
+  "sigma=0.005": {
+   "E0_mollified": 7.659915814632928,
+   "E0_ratio_to_E0": 0.9998196440101906,
+   "G0_mollified": 55.012522648701285,
+   "G0_ratio_to_G0": 0.9372531265042064,
+   "sup_abs_Fprime_mollified": 54.50914763922537
+  },
+  "sigma=0.01": {
+   "E0_mollified": 7.658586713916966,
+   "E0_ratio_to_E0": 0.9996461615546591,
+   "G0_mollified": 51.9001827334197,
+   "G0_ratio_to_G0": 0.8842279210438208,
+   "sup_abs_Fprime_mollified": 51.394955098709886
+  },
+  "sigma=0.02": {
+   "E0_mollified": 7.6560870573543855,
+   "E0_ratio_to_E0": 0.9993198909016876,
+   "G0_mollified": 46.79392083165999,
+   "G0_ratio_to_G0": 0.7972320935167844,
+   "sup_abs_Fprime_mollified": 46.283386722013546
+  }
+ },
+ "pareto": {
+  "max_A2": 6.40722653038343,
+  "max_B2": 1.0,
+  "n_pareto": 21874,
+  "n_u_grid": 400003
+ },
+ "sup_norms": {
+  "argmax_rho_over_rho0": 1.6376298776869238,
+  "argmax_u": 0.49325000000000063,
+  "eta0_Linf_times_rho0_over_M": 4.093544431740673,
+  "grad_eta0_Linf_times_rho0sq_over_M": 31.093556949918312,
+  "note": "||eta_0||_inf = (M/rho_0) sup_u e^{-u}Theta * sup_phi|F|.  This is NOT E_0. The brief's expected 4.09 is this functional; E_0 = sup rho|eta_0|/M = 7.6613.",
+  "sup_u exp(-u)Theta(u)": 0.534314767358705
+ },
+ "tail_constants": {
+  "L=10": {
+   "A_9": 4.093544511022195,
+   "B_10": 20.287862675305536,
+   "argmax_u": 0.4932800000000004,
+   "argmax_u_grad": 0.3873500000000005
+  },
+  "L=20": {
+   "A_9": 4.093544409191206,
+   "B_10": 20.287820693236345,
+   "argmax_u": 0.4932800000000004,
+   "argmax_u_grad": 0.38736000000000015
+  },
+  "L=40": {
+   "A_9": 4.0935443390216255,
+   "B_10": 20.288317859281804,
+   "argmax_u": 0.49331999999999976,
+   "argmax_u_grad": 0.38723999999999936
+  }
+ },
+ "tail_note": "Theta = O(e^{-2(u-L+eps_r)/eps_r}) = O((rho/R)^{-8}) beyond the outer edge, so |eta_0| = O(rho^{-9}) and |grad eta_0| = O(rho^{-10}).  With the scale-correct envelope (1+(rho/R)^2)^{-m/2} the constants are O(1) and L-independent, and A_9 coincides with ||eta_0||_inf rho_0/M."
+}

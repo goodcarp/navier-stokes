@@ -1,0 +1,24 @@
+c_star                                   0.8113825936219724
+kappa                                    0.4997212305210886
+r_h                                      0.9818223012813015
+kappa_s_record                           0.4494897427831779
+p_over_ML_proved_Linf                    41.974344273057575
+pc_proved_Linf                           34.05725232185504
+exp_pc_proved                            617841039001075.1
+p_over_ML_formula                        41.974344273057575
+coefficient_of_m_from_LemmaTprime        40.474344273057575
+pc_measured_Linf                         6.630141866723374
+lin2x2_dominant_eigenvalue_L1e+18        36.83949606851472
+lin2x2_pc_L1e+18                         29.89092586779793
+assembly_p_over_ML_L1e+18                41.974344273057575
+lin2x2_growth_numeric_L1e+18             8823816720294.416
+lin2x2_growth_from_eigenvalue_L1e+18     9582176438904.186
+lin2x2_dominant_eigenvalue_L160          37.85992375173479
+lin2x2_pc_L160                           30.71888312801269
+assembly_p_over_ML_L160                  42.720156773057575
+lin2x2_growth_numeric_L160               20096345007139.33
+lin2x2_growth_from_eigenvalue_L160       21930141441375.875
+p_over_ML_muJ_frozen_Linf                33.87947541844606
+L_star_reproduced                        {'proved_eps<=0.5': 452529898136127.4, 'proved_eps<=0.1': 1384632540062619.0, 'measured_eps<=0.5': 4830.545760036449, 'measured_eps<=0.1': 9987.403381050912}
+eps_proved_c_star                        {'160.0': inf, '640.0': inf, '2560.0': inf}
+eps_measured_c_star                      {'160.0': inf, '640.0': inf, '2560.0': inf}

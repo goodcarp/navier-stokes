@@ -1,0 +1,57 @@
+C_R variants: {
+ "proved_Gc0": 29.02416532565612,
+ "proved_Gc_value": 37.72205340735485,
+ "proved_Gc_5x": 72.51360573414975,
+ "measured": 3.137501080559945,
+ "assembly_convention": 8.697888081698725
+}
+
+feedback exponents p*c at c = c_* = 0.8113826:
+{
+ "assembly_proved_C'=151.15": 34.2488780703331,
+ "assembly_proved_C'=119.33": 34.20853714200646,
+ "assembly_measured_sens": 6.645025666175127,
+ "slaved_groenwall_C''=151.15": 1.4106013168648242,
+ "slaved_groenwall_C''=11.74": 1.2338593678385132,
+ "slaved_conjugated_proved": 0.34678623569034717,
+ "slaved_conjugated_measured": 0.04124785357496604
+}
+
+mu(c) * L  (L -> infinity):
+{
+ "proved": {
+  "groenwall": 446.2052364675315,
+  "conjugated": 1369.9555729208257,
+  "groenwall_muJ_L": 22.653214193368854,
+  "conjugated_muJ_L": 22.653214193368854
+ },
+ "proved_Ca_measured": {
+  "groenwall": 64.25114198408055,
+  "conjugated": 156.29144908349303,
+  "groenwall_muJ_L": 22.653214193368854,
+  "conjugated_muJ_L": 22.653214193368854
+ },
+ "measured": {
+  "groenwall": 64.25113763066389,
+  "conjugated": 156.29144908349303,
+  "groenwall_muJ_L": 22.653214193368854,
+  "conjugated_muJ_L": 22.653214193368854
+ }
+}
+
+grid:
+measured_L=10240             muG=  0.006278 muJG=  0.002215 epsTG=    0.0119 | muC=   0.01528 epsTC=   0.02887
+measured_L=160               muG=    0.4181 muJG=    0.1538 epsTG=     12.28 | muC=     1.063 epsTC=       inf
+measured_L=2560              muG=   0.02516 muJG=  0.008893 epsTG=   0.05245 | muC=   0.06137 epsTC=    0.1473
+measured_L=40                muG=       inf muJG=       inf epsTG=       inf | muC=     5.674 epsTC=       inf
+measured_L=640               muG=    0.1014 muJG=   0.03611 epsTG=    0.3181 | muC=    0.2493 epsTC=     1.845
+proved_Ca_measured_L=10240   muG=   0.00632 muJG=  0.002215 epsTG=   0.07266 | muC=   0.01528 epsTC=    0.1751
+proved_Ca_measured_L=160     muG=     0.653 muJG=    0.1546 epsTG=      1535 | muC=     1.063 epsTC=       inf
+proved_Ca_measured_L=2560    muG=   0.02584 muJG=  0.008893 epsTG=    0.3272 | muC=   0.06137 epsTC=    0.8934
+proved_Ca_measured_L=40      muG=       inf muJG=       inf epsTG=       inf | muC=     5.674 epsTC=       inf
+proved_Ca_measured_L=640     muG=    0.1129 muJG=   0.03612 epsTG=     2.274 | muC=    0.2493 epsTC=     11.19
+proved_L=10240               muG=   0.04389 muJG=  0.002217 epsTG=    0.5697 | muC=    0.1352 epsTC=     2.877
+proved_L=160                 muG=       inf muJG=       inf epsTG=       inf | muC=       inf epsTC=       inf
+proved_L=2560                muG=    0.1794 muJG=  0.008924 epsTG=     5.009 | muC=     0.559 epsTC=     346.6
+proved_L=40                  muG=       inf muJG=       inf epsTG=       inf | muC=       inf epsTC=       inf
+proved_L=640                 muG=     0.784 muJG=   0.03687 epsTG= 1.772e+04 | muC=      2.56 epsTC=       inf

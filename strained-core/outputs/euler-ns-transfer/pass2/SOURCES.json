@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-08",
+  "primary_pdf": {
+    "url": "https://arxiv.org/pdf/2001.02333",
+    "inspected_version": "arXiv:2001.02333v2; details in jeong-yoneda-stage.md",
+    "local_path": "<core-line-working-tree>/work/pass2/jeong-yoneda.pdf",
+    "sha256": "1b41200db25d53f39d0c3e76a41a7301062b5b782aaae7146545cd052ba30118"
+  },
+  "additional_primary_links": [
+    "https://www.irphe.fr/~ledizes/web/JFM2006a.pdf",
+    "https://arxiv.org/abs/1002.2489",
+    "https://www-fourier.univ-grenoble-alpes.fr/~gallay/Handbook.pdf",
+    "https://preprint.press.jhu.edu/ajm/sites/default/files/AJM-choi-jeong-FINAL.pdf"
+  ],
+  "inherited_provenance": {
+    "manifest": "../SOURCES.json",
+    "sha256": "f0905ca43918ac4558103c117e060b4ce097b2854afa4bf5c3d37ddf3578e3fe",
+    "fluid_lean_commit": "d0124689230b58b4f86e7b90ac59de06404b3b6b"
+  },
+  "verification": {
+    "python": "3.9.6 (default, Jan  9 2026, 11:03:41) \n[Clang 17.0.0 (clang-1700.6.4.2)]",
+    "formal_kernel_replay": false,
+    "all_four_packaged_scripts_passed": true,
+    "navier_stokes_blowup_proved": false
+  }
+}

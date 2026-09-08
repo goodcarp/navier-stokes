@@ -1,0 +1,20 @@
+div u                         = 0
+omega  identically zero?      = False
+div u_lambda                  = 0
+curl u_lambda - omega(lam x)  = [0, 0, 0]
+sup|u| = 1.732050807569   sup|omega| = 3.347547143345
+  lam = 1       sup|u_lam| = 1.73205081        sup|omega_lam| = 3.34754714      ratio = 0.517409
+  lam = 0.5     sup|u_lam| = 3.46410162        sup|omega_lam| = 3.34754714      ratio = 1.03482
+  lam = 0.1     sup|u_lam| = 17.32050808       sup|omega_lam| = 3.34754714      ratio = 5.17409
+  lam = 0.01    sup|u_lam| = 173.20508076      sup|omega_lam| = 3.34754714      ratio = 51.7409
+ratio ||u||_inf/||omega||_inf is unbounded on the family => no F exists.
+
+scaling under u_lam(x) = lam^{-1}u(lam x)  (omega sup FIXED):
+   ||u||_inf                  ~ lam^(-1)
+   E = ||u||_2^2              ~ lam^(-5)
+   ||omega||_2^2 (enstrophy)  ~ lam^(-3)
+   ||omega||_inf              ~ lam^(0)
+   check: int |lam^{-1}u(lam x)|^2 dx = lam^{-2}lam^{-3} int|u|^2 = lamv**(-5) * E
+   check: int |omega(lam x)|^2 dx     = lam^{-3} int|omega|^2 = lamv**(-3) * enstrophy
+
+s6: (N1) established -- no bound ||u||_inf <= F(||omega||_inf) exists

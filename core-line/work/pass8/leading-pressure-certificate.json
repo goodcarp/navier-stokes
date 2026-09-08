@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "panels": 1024,
+  "dps": 35,
+  "dependency": "leading-envelope-certificate.json",
+  "range_integrals": {
+    "radial_A": {
+      "interval": "[0.02611950725832029811222068622190644933708, 0.02749287473730600586705416643269084731601]",
+      "exact_dyadic_bounds": {
+        "lower": {
+          "sign": 0,
+          "mantissa": "277750242270933222135929510907488639",
+          "exponent": -123
+        },
+        "upper": {
+          "sign": 0,
+          "mantissa": "1169417561133920244902086880789701963",
+          "exponent": -125
+        }
+      },
+      "panels": 498,
+      "strictly_positive": true,
+      "strictly_negative": false,
+      "width_display": 0.0013733674789857076
+    },
+    "axial_A": {
+      "interval": "[0.00000000990173267575435902716099159351444002154, 0.00000001042081687606767184586694581269413810353]",
+      "exact_dyadic_bounds": {
+        "lower": {
+          "sign": 0,
+          "mantissa": "883264069703851206406336346034801399",
+          "exponent": -146
+        },
+        "upper": {
+          "sign": 0,
+          "mantissa": "929567927654932082511618183036832249",
+          "exponent": -146
+        }
+      },
+      "panels": 120,
+      "strictly_positive": true,
+      "strictly_negative": false,
+      "width_display": 5.190842003133128e-10
+    },
+    "radial_B": {
+      "interval": "[0.00051069382399460238377219380851961705284, 0.0005373740526865021537456432076811981077322]",
+      "exact_dyadic_bounds": {
+        "lower": {
+          "sign": 0,
+          "mantissa": "173780103200788455949066303992233965",
+          "exponent": -128
+        },
+        "upper": {
+          "sign": 0,
+          "mantissa": "731435658280240174107428151703664311",
+          "exponent": -130
+        }
+      },
+      "panels": 104,
+      "strictly_positive": true,
+      "strictly_negative": false,
+      "width_display": 2.6680228691899767e-05
+    },
+    "axial_B": {
+      "interval": "[0.000003252184057659157154487440646155376605014, 0.000003423151676464015366512925666145930229979]",
+      "exact_dyadic_bounds": {
+        "lower": {
+          "sign": 0,
+          "mantissa": "141652593766758375303106675084941373",
+          "exponent": -135
+        },
+        "upper": {
+          "sign": 0,
+          "mantissa": "298198567627917749222968490486776581",
+          "exponent": -136
+        }
+      },
+      "panels": 652,
+      "strictly_positive": true,
+      "strictly_negative": false,
+      "width_display": 1.709676188048582e-07
+    }
+  },
+  "d_weighted_norm_upper_expression": {
+    "display": "[0.002196164393788516357443798099527907278408, 0.002311335665922136904611205499025841062319]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "747316018065844312069247144435690783",
+        "exponent": -128
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "196626692787192058599861453192164961",
+        "exponent": -126
+      }
+    }
+  },
+  "full_cross_pressure_absolute_upper_expression": {
+    "display": "[0.2669767481743433908607489890374036275872, 0.2809775451111765835024960675222013520399]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "177436483948478331606809661746012889",
+        "exponent": -119
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "23342701196793439829205057460342703",
+        "exponent": -116
+      }
+    }
+  },
+  "local_absolute_upper": "[0.02263496134082394909923588898480451047336, 0.02263496134082394909923588898480451049687]",
+  "E_absolute_upper_expression": {
+    "display": "[0.2896117095151673399599848780222081378255, 0.3036125064520005326017319565070058626543]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "384959992194689133161755457314059755",
+        "exponent": -120
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "807140486892855014430834106375034451",
+        "exponent": -121
+      }
+    }
+  },
+  "E_absolute_upper_strictly_below_one_third": true,
+  "nu_d_rational_upper": "9078400/1419857",
+  "nu_d_upper_below_seven": true,
+  "common_T_negative_margin": "12493177/1120000",
+  "beta_second_lower": "12493177/2240000",
+  "scope": "Full actual initial pressure-derivative gate for the separate leading-envelope family, including viscosity and the nonlocal strong-swirl cross pressure; no sustained gain or return."
+}

@@ -1,0 +1,14 @@
+grad_residuals                       ['0', '0', '0', '0', '0']
+unit_vector_residual                 0
+C_K                                  0.037995443865876666
+C_gradK                              0.15198177546350666
+detDLambda_residual_autodiff         0
+detDLambda_residual_handbuilt        0
+detDLambda_formula                   lambda^2 * (1 + (rho lambda'/lambda) * (sin^2 phi - 2 cos^2 phi))
+shear_weight_identity_residual       0
+shear_weight_range                   [-2.0, 1.0]
+dlog_ghat_residual                   0
+dlog_ghat_range                      [-1.0, 2.0]
+dlog_g_residual                      0
+dlog_g_range                         [-2.0, 1.0]
+a0_cap_over_L                        M/2

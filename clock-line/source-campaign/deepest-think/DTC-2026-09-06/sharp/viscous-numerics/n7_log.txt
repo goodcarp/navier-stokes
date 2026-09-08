@@ -1,0 +1,4 @@
+[shell N=7 h=1/8 Re0=100 lam=1.5 sign=+1] grid 1536x1536  R=128  E=3.519e+09 l=81.15 ReE=6.585e+05 logReE=13.398
+    T32=0.22718257299778497  T2=0.3693004675306824  ommax_final=2.0028 at t=0.3700  sup|eta| ratio=0.86557  steps=373  1384.5s
+    at T32: s*=1.743 (octave 0.80)  a*=2.1079   T32*M*logReE=3.0437   T32*M*log(R)=1.1023
+wrote ~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/sharp/viscous-numerics/results_n7.json

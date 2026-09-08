@@ -1,0 +1,190 @@
+RUN verify_D_pressure_kernels.py
+PASS: both local advection contractions reduce to -3 P.dot.grad Q.
+PASS: exact full-pressure horizontal core/pump kernel ratios.
+PASS: conservative horizontal bounds core<-12/5 and pump<-12.
+PASS: separated horizontal Laplacian and rational viscosity prefactors.
+Coarse viscous upper bound if certified R1<120000: 16470560/4259571
+Conclusion with interval certificate: D_nu < 4-(96/5) C_w <4.
+
+PASS verify_D_pressure_kernels.py
+RUN certify_D_viscosity.py
+{
+  "status": "PASS",
+  "viscous_upper_strictly_below_four": true,
+  "radial_upper_strictly_below_120000": true,
+  "radial_second_derivative_energy": {
+    "interval": "[100952.1793303089676983218159257833218569, 113430.7471049831419909679864742410035166]",
+    "exact_dyadic_bounds": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "255944181444828033113005073714364715",
+        "exponent": -101
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "1150324437215746995662639719374396981",
+        "exponent": -103
+      }
+    },
+    "panels": 1024,
+    "strictly_positive": true,
+    "strictly_negative": false,
+    "width_display": 12478.567774674173
+  },
+  "viscous_upper_bound_interval": "[3.263029119503281114289078677167430340491, 3.658516517079472127305937188046058041206]",
+  "viscous_upper_bound_exact": {
+    "lower": {
+      "sign": 0,
+      "mantissa": "542163707088145637639162094904910155",
+      "exponent": -117
+    },
+    "upper": {
+      "sign": 0,
+      "mantissa": "1215750644385889419243421364113779287",
+      "exponent": -118
+    }
+  },
+  "sufficient_threshold": "5093339/210000",
+  "below_threshold": true,
+  "radial_upper_below_120000": true,
+  "viscous_upper_below_four": true,
+  "method": "one-dimensional outward range quadrature plus analytic energy/kernel bounds",
+  "scope": "upper bound for nu*d_w, not a direct pressure solve; Euler kernel proof separate"
+}
+
+PASS certify_D_viscosity.py
+RUN verify_E_interaction_reduction.py
+PASS: local E, full mixed source, Q/divergence identities, radial Green solution, residual sign, and exact weighted tails.
+
+PASS verify_E_interaction_reduction.py
+RUN certify_outer_E.py
+{
+  "status": "PASS",
+  "panels_requested": 2048,
+  "d_norm_upper_expression": {
+    "display": "[0.005007829558289683123863082774068625461108, 0.005164338192457682738326270040138666706572]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "53252377975982848296130362716222141",
+        "exponent": -123
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "878666611854850658421110882682046483",
+        "exponent": -127
+      }
+    }
+  },
+  "residual_norm_upper_expression": {
+    "display": "[16.82693643639591078499014396541458926069, 21.23061479834006085610644229136811464283]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "349481796789854859690654655672614573",
+        "exponent": -114
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "110235654522184120963530946725681291",
+        "exponent": -112
+      }
+    }
+  },
+  "trial_pairing_absolute_upper_expression": {
+    "display": "[0.007139281370187837380553894291563235139202, 0.007473782929353676127657314705521744516475]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "2372433166759841780831644746917975",
+        "exponent": -118
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "635799136263443482683680598131390503",
+        "exponent": -126
+      }
+    }
+  },
+  "pressure_error_upper_expression": {
+    "display": "[0.0105333037077056385664181653709881062099, 0.01370525935655310505000615334908609375031]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "112009297411099114209034967691483063",
+        "exponent": -123
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "1165914523278307171063424223227352043",
+        "exponent": -126
+      }
+    }
+  },
+  "local_negative_gain_lower_expression": {
+    "display": "[0.004562901556176932643380531640637401559316, 0.004592420789519632912088497798313285918774]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "776337470781560051296193383503320557",
+        "exponent": -127
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "781359908077332818127206227541990977",
+        "exponent": -127
+      }
+    }
+  },
+  "E_upper_expression": {
+    "display": "[0.01308016428837384303488356186423805542445, 0.01661614072972984853428293641397043671335]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "1112737315940646000501577682971870615",
+        "exponent": -126
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "353386231037742657024752032401770567",
+        "exponent": -124
+      }
+    }
+  },
+  "compatibility_upper_expression": {
+    "display": "[17.34176757414131989558123310152281651597, 20.94846354432444550496859514224984546097]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "90043605296655113768004385013615493",
+        "exponent": -112
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "435082565809308716827237036042722687",
+        "exponent": -114
+      }
+    }
+  },
+  "seconds": 18.62240982055664
+}
+
+PASS certify_outer_E.py
+RUN verify_E_certificate_audit.py
+PASS: dyadic E<1/60, separated kernel constants, and all-lambda initial gate T_lambda < -435297/70000, conditional on the independently proved D<4-(96/5)Cw and prior family bounds.
+
+PASS verify_E_certificate_audit.py
+RUN verify_common_family.py
+PASS: actual certificate endpoints imply T_lambda < -435297/70000 and beta_second >435297/140000 for every lambda in [3/4,1]; local-time constants agree. Persistence uses smooth local existence, not this arithmetic checker.
+
+PASS verify_common_family.py
+PASS: 6 finite check programs; both decisive interval calculations recomputed. No PDE time integration, formal proof replay, inherited return, or blowup proof.
+
+RUN verify_next_stage_shear.py
+PASS: initial shear, mean gradient, frozen winding/damping, and Kelvin pressure constraint
+
+PASS verify_next_stage_shear.py
+
+Artifact QA: seven finite programs passed. Both decisive interval calculations were recomputed in the packaged location. Historical pass2--pass6 manifest entries remain unchanged.
+Artifact QA: 41 local Markdown links resolved; Python sources parse; certificate predicates checked against exact dyadic endpoints.
+Scope: a common finite-amplitude initial gate and qualitative short interval, plus a separate frozen shear diagnostic. No useful actual duration, formal replay, inherited return, or blowup proof.

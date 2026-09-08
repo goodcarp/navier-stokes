@@ -1,0 +1,54 @@
+================================================================================================================
+CORNER SWEEP -- datum A, h = rho0/8, box 1.5R, Tmax = 3.0.  M = rho0 = 1.
+ leg  N     Re0       nu   sqrtnu   logRe_E     M*T_d    H_log   resid%     M*T2      s*   oct* MTd*lgRs MTd*lgRe  sup|e|
+   B  5     100     0.01   0.1000   10.6252   0.3379   0.3361    +0.55   0.5548   1.743   0.80   0.9833   3.5905  0.8395
+   A  6       1        1   1.0000    7.4063   0.5385   0.7997   -32.66   1.0346   7.871   2.98   1.1287   3.9886  0.1324
+   A  6       4     0.25   0.5000    8.7926   0.3812   0.5016   -24.02   0.6928   3.654   1.87   1.0913   3.3513  0.3448
+   A  6      16   0.0625   0.2500   10.1789   0.3011   0.3654   -17.59   0.5302   2.259   1.18   1.0071   3.0653  0.6404
+   B  6      25     0.04   0.2000   10.6252   0.2896   0.3361   -13.83   0.4924   2.138   1.10   0.9844   3.0770  0.7209
+   A  6     100     0.01   0.1000   12.0114   0.2716   0.2689    +1.01   0.4433   1.743   0.80   0.9787   3.2627  0.8586
+   A  6     400   0.0025   0.0500   13.3977   0.2659   0.2241   +18.64   0.4309   1.743   0.80   0.9581   3.5627  0.8988
+   B  7    6.25     0.16   0.4000   10.6252   0.2753   0.3361   -18.09   0.4855   2.895   1.53   1.0429   2.9247  0.5016
+   C  7     100     0.01   0.1000   13.3977   0.2272   0.2241    +1.36   0.3693   1.743   0.80   0.9760   3.0437  0.8656
+   E  7     400   0.0025   0.0500   14.7840   0.2232   0.1921   +16.19   0.3608   1.743   0.80   0.9591   3.3004  0.8962
+
+CHECK 1  E is nu-independent  =>  logRe_E(N,Re0) = logRe_E(N,100) + ln(Re0/100)
+   max |measured - predicted| over all h=1/8 runs : 1.776e-15   (PREREG demands <= 1e-9)
+
+CHECK 2  maximum principle sup|eta| non-increasing (PREREG voids a run above 1+4.3e-3)
+   max sup|eta| ratio = 0.93730 ; runs voided : none
+
+LEG D  resolution check
+   N=6 Re0=400     h=1/6.0  T32=0.27189   vs h=1/8 T32=0.26592   rel diff 2.249%
+   N=6 Re0=1       h=1/6.0  T32=0.53855   vs h=1/8 T32=0.53855   rel diff 0.000%
+   N=6 Re0=400     h=1/12.0 T32=0.26452   vs h=1/8 T32=0.26592   rel diff 0.525%
+   sigma_rel = max(0.02 floor, measured) = 0.0225   =>  tolerance 3*sigma_rel = 0.0675 (6.75%)
+
+================================================================================================================
+PRE-REGISTERED VERDICT 1 : KILL-LOG  (H_log : M T_d = 1.8659/(log Re_E - 5.0730), constants frozen)
+  K1  leg-A residuals vs H_log (tolerance +-6.75%):
+       Re0=1       meas 0.5385  H_log 0.7997  resid  -32.66%   EXCEEDS
+       Re0=4       meas 0.3812  H_log 0.5016  resid  -24.02%   EXCEEDS
+       Re0=16      meas 0.3011  H_log 0.3654  resid  -17.59%   EXCEEDS
+       Re0=100     meas 0.2716  H_log 0.2689  resid   +1.01%   ok
+       Re0=400     meas 0.2659  H_log 0.2241  resid  +18.64%   EXCEEDS
+      K1 fires: True
+  K2  ratio MTd(Re0=1)/MTd(Re0=400) : measured 2.0253  H_log 3.5678  rel diff 43.24%  -> fires: True
+  K3  iso-Re_E families (|delta log Re_E| <= 0.01) -- H_log demands equality:
+       logRe_E=10.6252 : (N=5,Re0=100) MTd=0.3379  vs  (N=6,Re0=25) MTd=0.2896   spread 15.40%  -> fires: True
+       logRe_E=10.6252 : (N=5,Re0=100) MTd=0.3379  vs  (N=7,Re0=6.25) MTd=0.2753   spread 20.44%  -> fires: True
+       logRe_E=10.6252 : (N=6,Re0=25) MTd=0.2896  vs  (N=7,Re0=6.25) MTd=0.2753   spread 5.07%  -> fires: False
+       logRe_E=13.3977 : (N=6,Re0=400) MTd=0.2659  vs  (N=7,Re0=100) MTd=0.2272   spread 15.71%  -> fires: True
+  >>> KILL-LOG : FIRES
+
+PRE-REGISTERED VERDICT 2 : KILL-FLOOR (A0 = 0.020 ; kills if any converged run gives M T_d < 0.015)
+  smallest M T_d anywhere in this seat : 0.2232  at N=7 Re0=400
+  >>> KILL-FLOOR : does NOT fire
+
+DESCRIPTIVE (no threshold attached): free two-parameter refits over the corner runs
+   c/(log Re_E - d)      : c=2.4569 d=2.6750 rms=0.02382
+   c/(log(R/rho0) - d)   : c=1.3008 d=0.0800 rms=0.08061
+   c/log(R/s*)           : c=1.0332 rms=0.02047
+   (the two abscissae are no longer degenerate here: corr(log Re_E, log R) = 0.4548 over these runs)
+
+SCRIPT-SHA256 fab803a74daa758270ff378360e2bbdd0990c177c74aec8aba05c312979ea2a3

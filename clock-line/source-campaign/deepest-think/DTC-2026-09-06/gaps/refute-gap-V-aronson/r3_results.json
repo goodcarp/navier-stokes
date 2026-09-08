@@ -1,0 +1,72 @@
+{
+ "sources_audit": [
+  {
+   "file": "aronson1968.pdf",
+   "bytes": 5556660,
+   "kind": "real PDF",
+   "marker": "",
+   "sha256": "e4888a7807a27d81"
+  },
+  {
+   "file": "aronson1968.txt",
+   "bytes": 131825,
+   "kind": "text",
+   "marker": "",
+   "sha256": "93a4bfbbd6918b50"
+  },
+  {
+   "file": "gh.pdf",
+   "bytes": 7715,
+   "kind": "HTML PAGE (not a paper)",
+   "marker": "arXiv: no document for 1707.04620v2",
+   "sha256": "86a8564aaf8b352a"
+  },
+  {
+   "file": "gh2.pdf",
+   "bytes": 126,
+   "kind": "HTML PAGE (not a paper)",
+   "marker": "404 page (126 bytes)",
+   "sha256": "3748ae4af6392595"
+  },
+  {
+   "file": "norris-stroock-1991.pdf",
+   "bytes": 8349962,
+   "kind": "real PDF",
+   "marker": "",
+   "sha256": "22fa02d1e607c530"
+  },
+  {
+   "file": "zhang1997.pdf",
+   "bytes": 3038,
+   "kind": "HTML PAGE (not a paper)",
+   "marker": "Client Challenge #loading-error { font-size: 16px; font-family: 'Inter', sans-serif; marg",
+   "sha256": "32ed63159c77e21e"
+  }
+ ],
+ "quote_check": {
+  "FS  (used to dismiss Fabes-Stroock)": {
+   "quoted": "Neither Nash nor Fabes & Stroock consider the full equation (1)",
+   "verbatim_at_source": false,
+   "source_reads": "Neither Nash or Fabes & Stroock consider the full equation (1)"
+  },
+  "NS  (used to dismiss Norris-Stroock)": {
+   "quoted": "they are forced to assume the uniform continuity of A and E",
+   "verbatim_at_source": true,
+   "source_reads": null
+  },
+  "PE  (used to dismiss Porper-Eidel'man)": {
+   "quoted": "a slight generalization of equations (1) and",
+   "verbatim_at_source": true,
+   "source_reads": null
+  }
+ },
+ "survey_retrieved_by_this_refuter": true,
+ "survey_present_in_gapV_sources": false,
+ "R1_min_bound": 2.687672471097786,
+ "R1_vacuous": true,
+ "R3_drift": 0.7099618205990561,
+ "R3_dmax": 0.25298221281347033,
+ "R3_ratio": 2.8063705060660826,
+ "R2_can_fire": true,
+ "R2_tightest_margin": 11.54584733782067
+}

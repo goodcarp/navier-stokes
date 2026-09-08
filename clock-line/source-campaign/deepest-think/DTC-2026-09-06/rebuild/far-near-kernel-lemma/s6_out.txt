@@ -1,0 +1,21 @@
+
+=== bang-bang (inadmissible: eta unbounded on the axis) ===
+   log rate kappa = -(3/5) g_1 = 0.500000
+   phi(deg):     0.25      0.5        1        2        3        5      7.5       10       15       20       30       45       60       90
+   c_edge  :   1.1430   0.9585   0.7871   0.6140   0.5129   0.3861   0.2864   0.2168   0.1219   0.0588  -0.0174  -0.0617  -0.0504   0.1159
+   fit over phi<=5 deg:  c_edge ~ 0.25171 * log(1/phi) + -0.22993   (max residual 5.0e-03)
+
+=== taper delta=15 deg (admissible) ===
+   log rate kappa = -(3/5) g_1 = 0.497808
+   phi(deg):     0.25      0.5        1        2        3        5      7.5       10       15       20       30       45       60       90
+   c_edge  :   0.1017   0.1017   0.1016   0.1014   0.1010   0.0997   0.0969   0.0927   0.0761   0.0380  -0.0244  -0.0631  -0.0499   0.1174
+   fit over phi<=5 deg:  c_edge ~ 0.00056 * log(1/phi) + 0.09904   (max residual 7.4e-04)
+
+=== taper delta= 7.5 deg (admissible) ===
+   log rate kappa = -(3/5) g_1 = 0.499721
+   phi(deg):     0.25      0.5        1        2        3        5      7.5       10       15       20       30       45       60       90
+   c_edge  :   0.2939   0.2938   0.2933   0.2914   0.2881   0.2771   0.2507   0.2015   0.1166   0.0563  -0.0183  -0.0618  -0.0503   0.1161
+   fit over phi<=5 deg:  c_edge ~ 0.00459 * log(1/phi) + 0.27202   (max residual 6.1e-03)
+
+reading: A ~ 1/4 for the bang-bang cap (unbounded), A -> 0 for admissible tapers (saturation).
+elapsed 130.5s  SCRIPT-SHA256 dec6f64609724a18aead835eea954e2414848f2452763ae1605d2fefdf0fc4e4

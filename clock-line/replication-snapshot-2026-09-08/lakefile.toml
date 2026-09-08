@@ -1,0 +1,30 @@
+name = "EulerBlowup"
+version = "0.1.0"
+defaultTargets = ["EulerBlowup", "Challenge", "Solution"]
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.32.0"
+
+# The vendored library under vendor/cm24-r2 (35 modules and the root import file Cm24.lean), built as a library of this package.
+[[lean_lib]]
+name = "Cm24"
+srcDir = "vendor/cm24-r2"
+
+[[lean_lib]]
+name = "EulerBlowup"
+
+# Comparator statement and solution modules (Challenge.lean is Mathlib-only and trusted; Solution.lean proves it from the library).
+[[lean_lib]]
+name = "Challenge"
+roots = ["Challenge"]
+
+[[lean_lib]]
+name = "Solution"
+roots = ["Solution"]

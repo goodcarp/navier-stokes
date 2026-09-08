@@ -1,0 +1,1537 @@
+                                                       ON THE OPTIMAL RATE OF VORTEX STRETCHING FOR
+                                                         AXISYMMETRIC EULER FLOWS WITHOUT SWIRL
+
+                                                                               DEOKWOO LIM AND IN-JEE JEONG
+
+
+
+
+arXiv:2409.19497v2 [math.AP] 19 Mar 2025
+                                                   Abstract. For axisymmetric flows without swirl and compactly supported initial vorticity, we
+                                                   prove the upper bound of t4/3 for the growth of the vorticity maximum, which was conjectured
+                                                   by Childress [Phys. D, 2008] and supported by numerical computations from Childress–Gilbert–
+                                                   Valiant [J. Fluid Mech. 2016]. The key is to estimate the velocity maximum by the kinetic energy
+                                                   together with conserved quantities involving the vorticity.
+
+
+                                                                                        1. Introduction
+                                              In this paper, we study the optimal rate of vortex stretching for one of the simplest three-
+                                           dimensional flows, namely axisymmetric flows without swirl. Let us first recall the 3D vorticity
+                                           equation for incompressible and inviscid flows: for vorticity ω(t, ·) : R3 → R3 , we have
+                                                                                  ∂ ω + u · ∇ω = ω · ∇u,
+                                                                               
+                                                                                t
+                                                                               
+                                           (1.1)                                  u = ∇ × (−∆)−1 ω,
+                                                                               
+                                                                                  ω|t=0 = ω0 .
+                                                                               
+
+                                           The term ω · ∇u in the vorticity equation is referred to as the vortex stretching term, and the
+                                           Biot–Savart law u = ∇ × (−∆)−1 ω is given explicitly in R3 by
+                                                                     Z
+                                                                                                           1 x
+                                           (1.2)           u(t, x) =     K3 (x − y) × ω(t, y)dy, K3 (x) =       3
+                                                                                                                  , x ∈ R3 .
+                                                                      R3                                  4π |x|
+                                           Let us reduce (1.1) by taking axisymmetric flows without swirl: this means to take the ansatz
+                                           (1.3)             u = ur (r, z)er + uz (r, z)ez ,      ω = ω θ (r, z)eθ = (−∂z ur + ∂r uz )eθ
+                                           in the cylindrical coordinates (er , eθ , ez ). Then, (1.1) simplifies to
+                                                                                                              ur
+                                           (1.4)                                ∂t ω θ + (ur ∂r + uz ∂z )ω θ = ω θ ,
+                                                                                                              r
+                                           and note that the vortex stretching term has been reduced to r−1 ur ω θ in (1.4). Still, depending on
+                                           the regularity of ω θ (t = 0), this term can lead to either instantaneous, finite-time, or infinite-time
+                                           infinite growth of the vorticity maximum ∥ω θ (t, ·)∥L∞ ([18, 19, 28, 10, 21, 15]).
+                                           1.1. Main result. Our main result gives an upper bound for the growth rate of ∥ω θ (t, ·)∥L∞ for
+                                           smooth data, which is believed to be optimal, see the discussion below.
+                                           Theorem 1.1. Assume that ω0θ is compactly supported and ∥r−1 ω0θ ∥L∞ (R3 ) is bounded. Then the
+                                           corresponding unique global-in-time solution ω(t, ·) of (1.1) belonging to L∞        ∞  3
+                                                                                                                       loc (R; L (R )) with the
+                                                              θ  θ                                 θ
+                                           initial data ω0 = ω0 e satisfies, for some constant A(ω0 ) > 0 depending only on ω0 ,θ
+
+                                                                     ∥ω(t, ·)∥L∞ (R3 ) ≤ A(ω0θ )(1 + |t|)4/3    for all   t ∈ R.
+                                             2020 AMS Mathematics Subject Classification: 76B47, 35Q35
+                                             Key words: Vortex stretching; axisymmetric flows without swirl; vorticity; Biot–Savart law
+                                             Date: March 20, 2025.
+                                                                                                   1
+Remark 1.1. Any smooth and compactly supported initial vorticity satisfies the assumption of
+Theorem 1.1; we have ∥r−1 ω0θ ∥L∞ < ∞ once ω0 = ω0θ eθ ∈ C 1 (R3 ). The constant A(ω0θ ) depends only
+on ∥ω0θ ∥L∞ , ∥r−1 ω0θ ∥L∞ , ∥r−1 ω0θ ∥L1 , and ∥u0 ∥L2 . Since ω0θ is compactly supported, ∥r−1 ω0θ ∥L∞ < ∞
+implies that ∥ω0θ ∥L∞ and ∥r−1 ω0θ ∥Lp (for any p < ∞) are bounded. Furthermore, from the fast
+decay of axisymmetric Biot–Savart kernel (see §2.2 below), the initial velocity belongs to L2 (R3 ).
+1.2. Wellposedness for axisymmetric Euler without swirl. In this section, let us clarify the
+wellposedness issue for (1.4) as well as (1.1). A comprehensive survey of wellposedness results for
+(1.1) can be found in [3, 4, 17, 18].
+   To begin with, global regularity of axisymmetric Euler without swirl (1.4) goes back at least to the
+work of Ukhovskii–Yudovich [42] in 1968, where global in time existence, uniqueness, propagation
+of regularity was shown assuming that
+                                                  ω0
+                               ω0 ∈ H m (R3 ),       ∈ (L2 ∩ L∞ )(R3 )
+                                                   r
+with m ≥ 2. Such a regularity assumption on r−1 ω0 was natural, since (1.4) could be written as
+                                      ωθ                    ωθ
+(1.5)                                    + (ur ∂r + uz ∂z )
+                                          ∂t                   = 0.
+                                       r                    r
+In particular, we have the a priori estimate
+                                            ω θ (t, ·)            ω0θ
+                                                                =
+                                                r      Lp (R3 )   r     Lp (R3 )
+
+for any 0 ≤ p ≤ ∞ by incompressibility.1 Therefore, this work already clarified that once the initial
+datum is sufficiently regular, the corresponding solution to (1.4) is regular and global.
+   On the other hand, local in time existence and uniqueness for the full 3D Euler equations (1.1)
+was obtained in Hölder spaces ([31, 22, 43]) in the 1930s, namely for ω0 ∈ C α (R3 ) with any α > 0
+(assuming some decay at infinity). Local regularity for ω0 ∈ H s (R3 ) with any s > 3/2 was obtained
+by Kato [25] and for W s,p (R3 ) with sp > 3 by Kato–Ponce [26].
+   These local regularity results guarantee that once ω0 belongs to such function spaces and takes the
+special form (1.3), then the unique local solution to (1.1) solves (1.4).2 However, such a regularity
+assumption in general does not guarantee global regularity for (1.4) and in particular, H s global
+regularity with s > 3/2 was obtained later by Shirota–Yanagisawa [40] in 1994. (See also [36].)
+   In two dimensions, the (scalar) vorticity is simply being advected by the flow, and the celebrated
+Yudovich theorem [45] gives global uniqueness and existence for vorticity belonging to (L∞ ∩
+L1 )(R2 ). Since the structure of (1.5) is similar, it is tempting to obtain global regularity for (1.4)
+just based on Lp regularity (i.e. without any differentiability) and Danchin [16] in 2007 achieved
+this with
+                                                            ω0
+                                ω0 ∈ (L3,1 ∩ L∞ )(R3 ),         ∈ L3,1 (R3 ),
+                                                             r
+where L3,1 (R3 ) is a Lorentz space which strictly embeds into L3 . As a consequence, it gives global
+regularity for ω0 ∈ (C α ∩ L3,1 )(R3 ) with α > 1/3. Abidi–Hmidi–Keraani ([1]) extended global
+                                             3/p
+regularity to the critical Besov spaces Bp,1 (R3 ) with all p ∈ [1, ∞] in 2010.
+   Recently, Elgindi [18] and Elgindi–Ghoul–Masmoudi [19] proved finite time singularity formation
+of (1.4) for ω0 ∈ C α (R3 ) with sufficiently small α > 0. Their unique local-in-time solution belonging
+   1In the case p = 0, it means the conservation of the volume of the support of ω θ .
+   2For the latter property to hold, one just requires uniqueness for (1.1) and existence for (1.4) with certain regularity
+assumption. Uniqueness for (1.1) (but not existence) is guaranteed just with ω ∈ L∞t,x , see [16]. Existence for (1.1)
+(but not uniqueness) is guaranteed simply with r−1 ω0θ ∈ L1 ∩ Lp with any p > 1 [24].
+                                                            2
+                                     z
+
+
+                                                      R
+
+                                     O                                        r
+
+                                                                      L
+
+
+
+
+            Figure 1. Vortex dipole with maximal support radius R and length scale L.
+
+to L∞ (0, T ; C α (R3 )) satisfies
+                                            lim ∥ω θ (t, ·)∥L∞ (R3 ) = ∞,
+                                          t→T −
+where T is the singularity time. For a more recent improvement on finite-time blowup, see [15].
+Moreover, [28] proved that ∥ω θ (t, ·)∥L∞ can instantaneously blow up as soon as t > 0 with compactly
+supported ω0θ ∈ L∞ (R3 ) satisfying r−1 ω0θ ∈ L3,q (R3 ) with all q sufficiently large.3 In all these
+negative results, the lack of regularity near the axis {r = 0} is the driver of vorticity growth.
+   Lastly, even when the vorticity is regular near the axis, infinite-time infinite growth of the
+vorticity maximum for (1.4) is still possible: Very recently, some lower bounds have appeared
+([10, 21]), which establishes existence of data which completely vanishing near the axis but satisfies
+                                  ∥ω(t, ·)∥L∞ (R3 ) ≥ c tβ       for all     t≥0
+for some c, β > 0. The value of β can be as close to 3/8 in [21] and is smaller in [10]. The questions
+that we focus on this work are: what is the optimal rate of growth for such regular vorticities, and
+when is it achieved. Let us now proceed to review previous works in this direction.
+1.3. Optimal vorticity growth and eroding dipole model by Childress. It is well known
+to experimental physicists that vortex stretching occurs when two anti-parallel vortex rings move
+towards each other. This so-called “head on collision” scenario has been investigated intensively
+([29, 33, 37, 41, 14]), where it was observed that the maximal vortex strength increases together
+with the Reynolds number. A simple but illuminating mathematical model of this scenario can be
+given based on (1.4) (formally taking the Reynolds number to be infinite), by taking the initial
+data to be of the form
+(1.6)                                    ω0θ (r, z) = −φ(r, z) + φ(r, −z),
+where φ ≥ 0 is a bump function supported near some point in (r, z), say (1, 1). This models two
+anti-parallel vortex rings, and the key features are that the vorticity is odd symmetric in z and
+non-positive for z ≥ 0. Under these two assumptions, it can be proved that ([10, 21])
+                      ZZ                                ZZ
+                   d                                  d
+                          r2 |ω θ (t, r, z)|drdz > 0,       |zω θ (t, r, z)|drdz < 0
+                   dt Π                               dt Π
+where Π := {(r, z) : r ≥ 0}. This shows that the vorticity moves southeast in the (r, z)-plane in
+average. Actually, direct numerical simulations of (1.4) reveals that for initial data of the type
+   3In particular this shows sharpness of Danchin’s L3,1 assumption. While it is expected that illposedness occurs
+for L3,1+ε for any ε > 0, this could be a technically challenging problem.
+                                                          3
+(1.6), the solution ω θ (t, ·) rather quickly attaches to the plane {z = 0} as it slides outwards
+in the r-axis ([5, 39, 38]). Furthermore, in all of the aforementioned vorticity growth results
+([18, 19, 28, 10, 21, 15]), the data indeed share the same symmetry and sign condition with (1.6):
+it is essential to have ur > 0 for vorticity growth.
+   This is precisely the setup that Childress and his collaborators investigated in detail ([6, 7, 9, 8]).
+In [6, Theorem 1], Childress proves the upper bound4
+
+(1.7)                                   ∥ω θ (t, ·)∥L∞ (R3 ) ≤ C(1 + t2 ),
+
+by solving the following variational optimization problem: at time t, assuming that ω θ is supported
+near some radius R ≫ 1, what is the optimal shape of ω θ which maximizes its radial velocity ur ,
+under a constraint on the volume of the support of ω θ (which is conserved in time)?
+   Following [6, 7], t2 can be easily explained as follows: assume that the vorticity at time t is
+localized near the point (R(t), 0) with L(t) as its own length scale. Assuming that L(t) ≪ R(t),
+the velocity on the support of vorticity scales as R(t)L(t): roughly speaking, this is because the
+velocity can be obtained by “integrating” the vorticity (which has size ∼ R(t)) over a domain
+with length scale ∼ L(t). Then the volume conservation imposes the restriction R(t)L2 (t) ≲ 1, or
+L(t) ≲ (R(t))−1/2 . Then, from
+
+           d        d
+              R(t) ∼ ∥ω θ (t, ·)∥L∞ (R3 ) ≲ ∥ur (t, ·)∥L∞ (supp (ωθ (t,·))) ∼ R(t)L(t) ≲ (R(t))1/2 ,
+           dt       dt
+we arrive at (1.7).
+   Furthermore, in the same papers, Childress makes an important observation that this scenario
+contradicts the conservation of kinetic energy, namely ∥u∥2L2 . Indeed, using that the support volume
+scales like R(t)L2 (t) and the velocity R(t)L(t), we have
+
+                                           ∥u∥2L2 (R3 ) ≳ R3 (t)L4 (t),
+
+and the scaling L(t) ∼ (R(t))−1/2 clearly makes the right hand side divergent as R(t) → ∞. To fix
+this, we need to have L(t) ≲ (R(t))−3/4 , which gives instead
+
+                                              d
+                                                 R(t) ≲ (R(t))1/4 .
+                                              dt
+Based on these considerations, Childress conjectured in [6, 7] that the maximal growth rate is
+given by t4/3 , which is confirmed in our Theorem 1.1. Later, Childress–Gilbert–Valiant [9] presents
+numerical experiments which supports that the growth rate of t4/3 can be indeed achieved. They
+also report that the optimal growth is attained by rescaled Sadovskii vortex patch–see [13, 23] for
+more discussion related to this point.
+   Finally, we observe that L(t) ≲ (R(t))−3/4 implies that the volume of the dipole support in R3 ,
+which is R(t)L2 (t) ≲ (R(t))−1/2 , goes to zero as R(t) → ∞. Since the total volume of the vorticity
+support remains constant, it means that most of the volume filaments behind (this is what we have
+attempted to depict in Figure 1). Hence the terminology “eroding” dipole in [6, 7] is appropriate.
+
+1.4. Velocity bounds for axisymmetric flows: the proof strategy. Let us now review exist-
+ing bounds on the velocity for axisymmetric flows and then discuss our proof strategy.
+
+  4The initial data can be general and not restricted to the form given in (1.6).
+                                                         4
+Exponential upper bound. To begin with, it is relatively straightforward to obtain the exponential
+in time upper bound for the vorticity. This can be done in a number of ways: in [16], the following
+estimate was established:
+                                     ur            ωθ
+                                                ≲                .
+                                     r L∞ (R3 )     r L3,1 (R3 )
+Using that the right hand side is conserved in time, one obtains the vorticity bound from (1.4)
+                d θ                     ur (t, ·)
+                   ∥ω (t, ·)∥L∞ (R3 ) ≲                    ∥ω θ (t, ·)∥L∞ (R3 ) ≲ ∥ω θ (t, ·)∥L∞ (R3 )
+                dt                          r     L∞ (R3 )
+which results in an exponential in time upper bound, using Gronwall’s inequality. Another estimate
+(assuming compact support of ω θ ) from Majda–Bertozzi [35] is ∥u(t, ·)∥L∞ ≲ ∥ω θ (t, ·)∥L∞ , which
+just uses the conservation of the volume of the support for ω θ . This again results in an exponential
+upper bound for ∥ω θ (t, ·)∥L∞ . To the best of our knowledge, before the work of Childress, the
+exponential bound was still the best one.
+Feng–Sverak estimate and the t2 bound again. A very interesting inequality for axisymmetric flows
+by Feng–Sverak [20] in 2015 gives an alternative, simple proof of the t2 upper bound (although the
+authors had a completely different motivation). Their inequality reads
+                                                     1/2             1/4
+                                               ωθ               ωθ                      1/4
+(1.8)                         ∥u∥L∞ (R3 ) ≲                                     ∥rω θ ∥L1 (R3 )
+                                               r     L∞ (R3 )   r    L1 (R3 )
+(where u = (ur , uz )) and given this inequality, one can estimate
+                                           1/4                        ω θ (t, ·) 1/4
+                                ∥rω (t, ·)∥L1 (R3 ) ≤ (R(t))1/2
+                                     θ
+                                                                          r      L1 (R3 )
+
+and with conservation of ∥r−1 ω θ ∥Lp , one obtains
+                                          d
+                                             R(t) ≲ (R(t))1/2 ,
+                                          dt
+which immediately gives the t2 upper bound.5
+   Actually there is a reason why a sharp inequality on ∥u∥L∞ just involving Lp norms of ω θ
+(possibly with r weights) results in the same answer with Childress’ variational proof. This requires
+an understanding of how the exponents in the right hand side of (1.8) are determined. This is non-
+trivial since three norms appear, and for the inequality
+                                                     α               β
+                                               ωθ               ωθ
+(1.9)                         ∥u∥L∞ (R3 ) ≲                                     ∥rω θ ∥γL1 (R3 )
+                                               r     L∞ (R3 )   r    L1 (R3 )
+to hold, we clearly need
+ • 0 ≤ α, β, γ and α + β + γ = 1 (homogeneity)
+ • 2α − β − 3γ = 0 (3D scaling law).
+We need one more relation to determine the exponents, which comes from two-dimensionalization:
+for (1.9) to hold, it should be true in particular when ω θ is sharply concentrated near a single point
+in Π, say (1, 0). In that case, (1.9) simply reduces to
+(1.10)                               ∥u∥L∞ (R3 ) ≲ ∥ω θ ∥αL∞ (R3 ) ∥ω θ ∥β+γ
+                                                                         L1 (R3 )
+                                                                                  ,
+  5Let us clarify that the quantity ∥rω θ ∥ 1 is conserved only when ω θ is single-signed, namely if it is non-negative
+                                          L
+or non-positive everywhere in Π. Indeed, for single-signed vorticity, one concludes from (1.8) that the velocity is
+uniformly bounded in space and time, which gives the linear bound R(t) ≲ 1 + t. Actually, in the single-signed case,
+the work of Maffei–Marchioro [34] in 2001 provides an upper bound of the form R(t) ≲ 1 + t1/4 log(e + t).
+                                                           5
+and the punchline is that for such concentrated vortices, the 3D Biot–Savart kernel (1.2) is asymp-
+totic to the 2D Biot–Savart law. Therefore, (1.10) must obey the 2D scaling law, which is
+ • α = 1/2 = β + γ.
+This last part was indeed the essential observation in the t2 proof of Childress: the velocity scales
+like R(t)L(t), exactly as in 2D fluids.
+Global velocity bound using kinetic energy and the t3/2 bound. Given that the kinetic energy con-
+servation plays the key role in the t4/3 conjecture of Childress, it was very natural for us to attempt
+to get a Feng–Sverak type inequality which features ∥u∥L2 in the right hand side. After a lot of
+trial and error, we could finally prove the following inequality (see Proposition A.1 below)
+                                                                    1/2
+                                                    1/3        ωθ                     1/6
+(1.11)                         ∥ur ∥L∞ (R3 ) ≲ ∥u∥L2 (R3 )                     ∥rω θ ∥L1 (R3 )
+                                                               r    L∞ (R3 )
+
+where the exponents on the right hand side can be explained as in the case of (1.8). Now that the
+exponent of ∥rω θ ∥L1 is lower, it gives a better bound which is t3/2 . Unfortunately, this is still worse
+than t4/3 , and we were unable to lower the exponent 1/6 in (1.11).6
+  Before we proceed to explaining the proof for t4/3 bound, we note that the t3/2 upper bound is
+the best we can obtain without the compact support assumption for the vorticity. We still need
+some decay, which is rω0θ ∈ L1 (R3 ).
+Theorem 1.2. Assume that ω0θ and r−1 ω0θ are in (L1 ∩ L∞ )(R3 ) and that rω0θ is in L1 (R3 ). Then
+the corresponding unique global-in-time solution ω(t, ·) of (1.1) belonging to L∞         1   ∞   3
+                                                                                loc (R; (L ∩ L )(R ))
+with the initial data ω0 = ω0θ eθ satisfies rω ∈ L∞        1  3                                θ
+                                                  loc (R; L (R )) and, for some constant A(ω0 ) > 0
+                     θ
+depending only on ω0 ,
+                            ∥ω(t, ·)∥L∞ (R3 ) ≤ A(ω0θ )(1 + |t|)3/2        for all       t ∈ R.
+   We shall prove this result in Appendix A after the proof of Proposition A.1.
+Strategy and heuristic for the t4/3 bound. At a heuristic level, it is easy to see why (1.11) does
+not give the optimal upper bound: in the eroding dipole model of Childress, the quantity ∥rω θ ∥L1
+measured locally on the leading dipole should decay in time due to filamentation. The question
+was how to make this observation precise and obtain the t4/3 bound.
+   To begin with, while the inequality (1.11) is interesting in its own, it is wasteful in the sense
+that for the growth of the vorticity maximum, we only need to obtain a bound on ur (t, ·) at the
+maximal support radius of ω θ (t, ·), which we denote by R(t).
+   The support of vorticity is contained in the “rectangle” (r, z) ∈ [0, R(t)]×R, and it turns out to be
+useful to divide the rectangle into two regions: axial regime ((I1 ) in Figure 2) and two-dimensional
+regime ((I21 ) ∪ (I22 ) in Figure 2).
+   First, estimating the contribution to ur coming from the axial regime is easier for two reasons:
+this region is relatively far away from the point (R(t), 0) and the axisymmetric Biot–Savart kernel
+enjoys enhanced decay relative to the two-dimensional one (see Lemma 2.1). Furthermore, we have
+bounds on ∥r−1 ω θ ∥Lp -norms, which says that the vorticity is small for r small. Based on these, we
+were able to bound the contribution to ∥ur ∥L∞ coming from the axial regime simply by
+                                                    1/3             2/3
+                                               ωθ              ωθ
+                                               r    L∞ (R3 )   r    L1 (R3 )
+
+   6An elementary algebraic computation shows that 1/6 is the smallest power of ∥rω θ ∥ 1 that one can use, under
+                                                                                                  L
+the assumption that on the right hand side, one is using ∥rω θ ∥L1 together with ∥u∥L2 and ∥r−1 ω θ ∥Lp for all possible
+values of p.
+                                                           6
+which is conserved in time: this regime cannot contribute to any superlinear growth of R(t).
+   Therefore, the key was to understand the two-dimensional regime in detail. For this purpose, it
+is actually very helpful to consider the two-dimensional Euler equations. Denoting ω2D : R2 → R
+as the scalar vorticity on the plane and u2D the corresponding velocity given by
+                                             (x − y)⊥
+                                       ZZ
+                                    1
+                         u2D (x) =                    ω (y)dy,
+                                                     2 2D
+                                                                   x ∈ R2 ,
+                                   2π     R2 |x − y|
+
+as a warm up one can actually prove the following:
+                                                              1/2               1/2
+                                ∥u2D ∥L∞ (R2 ) ≲ ∥u2D ∥L2 (R2 ) ∥ω2D ∥L∞ (R2 ) .
+
+Believing in this inequality and two-dimensionalization of the axisymmetric Biot–Savart kernel, one
+may expect to have something like
+                                                              1/2         1/2
+                                       ∥ur ∥L∞ (U ) ≲ ∥u∥L2 (U ) ∥ω θ ∥L∞ (U )
+
+where U ⊂ Π is a small ball centered at (R(t), 0). Now to turn the L2 (U ) norm into the L2 norm
+measured in R3 , we need to incorporate the metric factor:
+                                1/2                           1/2                     1/2
+                           ∥u∥L2 (U ) ∼ R−1/4 ∥r1/2 u∥L2 (U ) ≲ R−1/4 ∥u∥L2 (R3 ) .
+                               1/2                        1/2                               1/2
+Moreover, noting that ∥ω θ ∥L∞ (U ) ∼ R1/2 ∥r−1 ω θ ∥L∞ (U ) ≲ R1/2 ∥r−1 ω θ ∥L∞ (R3 ) , one obtains
+                              1/2           1/2                     1/2               1/2
+                          ∥u∥L2 (U ) ∥ω θ ∥L∞ (U ) ≲ R1/4 ∥u∥L2 (R3 ) ∥r−1 ω θ ∥L∞ (R3 ) ,
+
+which says that the contribution coming from the two-dimensional regime is bounded by R1/4 .
+  Therefore, if one could justify all these heuristic discussions, one would obtain the inequality
+                               d
+                                  R(t) ∼ sup ur (t, R(t), z) ≲ 1 + (R(t))1/4 ,
+                               dt        z∈R
+
+which finally gives the t4/3 bound. The formal statement and proof for this key inequality are given
+in §3.1 below.
+
+1.5. Growth rates in higher dimensions and related models. Our new bounds on the ax-
+isymmetric velocity can be readily extended to the case of higher dimensional axisymmetric Euler
+equations, which were studied for instance in [44, 27, 11, 32, 21].
+   One can compute that the d-dimensional Euler equations under the assumption of axisymmetric
+without swirl take the form
+                                                                      (d − 2)ur
+(1.12)                                ∂t ω + (ur ∂r + uz ∂z )ω =                ω
+                                                                          r
+with a scalar vorticity ω for any d ≥ 3.
+Theorem 1.3. Assume that ω0 is compactly supported and ∥r−(d−2) ω0 ∥L∞ (Rd ) is bounded. Then,
+for 3 ≤ d ≤ 6, the corresponding local-in-time unique solution of (1.12) is actually global-in-time
+and satisfies
+                                  (
+                                   A1 (1 + |t|)4/(6−d) , d = 3, 4, 5,
+              ∥ω(t, ·)∥L∞ (Rd ) ≤      A   |t|
+                                                                      for all t ∈ R
+                                   A2 e  3     ,         d = 6,
+
+for some constants A1 (d, ω0 ), A2 (ω0 ), A3 (ω0 ) > 0.
+                                                          7
+   This seems to be the first global regularity result for dimensions 5 and 6, without a sign assump-
+tion on the vorticity. With the single sign assumption, global regularity was proved in [32] for any
+d ≥ 3. Without the sign assumption, global regularity for d = 4 was obtained in [11], under the
+assumption ∥r−2 ω0 ∥L∞ < ∞.7 However, in [11], the upper bound on ∥ω(t, ·)∥L∞ was exponential
+in time.
+   Lastly, we expect our new estimates to be useful for some other models, including the lake
+equations ([30, 2]), bi-rotational Euler equations ([12]) and high dimensional axisymmetric Navier–
+Stokes equations.
+
+1.6. Organization of the paper. The rest of this paper is organized as follows. In §2, we first
+collect notations and recall estimates for the axisymmetric Biot–Savart kernel. The main results are
+proved in §3. In §3.1, we prove the key R1/4 estimate on the velocity, which allows us to conclude
+Theorem 1.1 in §3.2. Theorem 1.3 which concerns higher dimensional case is proved in §3.3. In
+the appendix, we include the proof of the global velocity estimate (1.11), which could be of its own
+interest.
+
+Acknowledgments. I.-J. Jeong was supported by Samsung Science and Technology Foundation
+under Project Number SSTF-BA2002-04. D. Lim was supported by the National Research Foun-
+dation of Korea grant RS-2024-00350427. We sincerely thank the anonymous referee for the careful
+reading of our manuscript and for their valuable comments, and in particular for encouraging us
+to make Theorem 1.2 into a separate statement. We also thank Kwan Woo for finding a few typos
+in the earlier version.
+
+
+                                               2. Preliminaries
+2.1. Notations. We collect the notations used throughout the paper.
+• It is convenient to introduce the half-plane Π := {(r, z) : r ≥ 0, z ∈ R}, as ω θ , ur , uz are functions
+   defined on Π.
+• Let us write ω instead of ω θ from now on.
+• We use the letter R to denote the maximal support radius of ω, namely R is the smallest
+   non-negative number satisfying ω(r, z) = 0 whenever r > R. We write R(t) when ω is time
+   dependent.
+• We write Dr,z (r, z) =D(r, z, r̄, z̄) := ((r − r)2 + (z − z)2 )1/2 as the distance between the points
+   (r, z) and (r̄, z̄) in Π.
+• For any k > 0 and any point (r, z) ∈ Π, we denote the disc centered at the point (r, z) with
+   radius k as
+                             Bk (r, z) := {(r, z) ∈ Π : D(r, z, r, z) < k}.
+• We denote χ ∈ Cc∞ ([0, ∞); [0, 1]) as a non-increasing function that satisfies χ ≡ 1 on [0, 1/2] and
+  χ ≡ 0 on (1, ∞).
+• For non-negative expressions A and B, we write A ≲ B if there is an absolute constant C > 0
+  such that A ≤ CB. We write A ∼ B if A ≲ B and B ≲ A.
+
+2.2. Axisymmetric Biot–Savart law. We recall a very convenient form of the axisymmetric
+Biot–Savart law derived in Feng–Sverak [20]. To begin with, we introduce the elliptic integral
+                                  Z π
+                                              cos α
+(2.1)                     F(s) :=                           dα, s > 0.
+                                   0  [2(1 − cos α) + s]1/2
+
+   7Note that unfortunately this assumption is not automatically satisfied by simply assuming sufficient smoothness
+on the vorticity. The situation is the same for higher dimensions.
+                                                          8
+Then, under axisymmetry, (1.2) can be represented in the form
+                                                                    −(z − z) ′ D2
+                    ZZ                                                             
+          r              r             θ              r
+         u (r, z) =     F (r, z, r, z)ω (r, z)dzdr, F (r, z, r, z) = 3/2 1/2 F
+                      Π                                             πr r         rr
+where we recall from §2.1 that Π = {(r, z) : r ≥ 0} and D(r, z, r̄, z̄) = ((r − r)2 + (z − z)2 )1/2 .
+Similarly, one can write
+                                       ZZ
+                             z
+                            u (r, z) =     F z (r, z, r, z)ω θ (r, z)dzdr
+                                                     Π
+where
+                                          2
+                                                   r1/2
+                                                           2
+                                                                      2D2 ′ D2
+                                                                                  
+               z               r−r      ′ D                   D
+             F (r, z, r, z) = 3/2 1/2 F         +         F         −      F          .
+                             πr r         rr      4πr3/2       rr      rr       rr
+Later, we shall obtain bounds on the kernel F r and its derivatives by the following result.
+Lemma 2.1 ([20, Corollary 2.9]). For any integer ℓ ≥ 1, the ℓ-th derivative of F satisfies
+                                       |F (ℓ) (s)| ≲ℓ min{s−ℓ , s−(ℓ+3/2) }.
+
+Remark 2.2. Although we shall not use this fact, one has |F(s)| ≲ min{| log(s)| + 1, s−3/2 }. More
+precisely, for 0 < s ≪ 1, we have that F(s) = c0 log(s) + O(1), F ′ (s) = c0 s−1 + O(s−2 ) and so on,
+for an absolute constant c0 ̸= 0.
+
+
+                                       3. Proof of the main result
+3.1. The R1/4 estimate. In this section, we prove the key estimate, which bounds the radial
+velocity on the maximal support radius of the vorticity.
+Proposition 3.1. Let ω be compactly supported with maximal radius of the support R > 0. Then
+we have
+                                              1/3            2/3                                 1/2
+                                          ω              ω                           1/2     ω
+(3.1)              sup |ur (R, z)| ≲                                    + R1/4 ∥u∥L2 (R3 )                  .
+                   z∈R                    r   L∞ (R3 )   r   L1 (R3 )                        r   L∞ (R3 )
+
+Proof. We fix some z ∈ R, and define using χ from §2.1 the rescaled cutoff functions
+                                                          
+                                              D(R, z,r, z)
+(3.2)                        Φk (r, z) := χ                  , k > 0.
+                                                  k
+   To begin with, using k = R/2, we split ur (R, z) into
+        ZZ                                                ZZ
+               r
+                                                              F r (R, z, r, z)ΦR/2 (r, z)ω(r, z)dzdr .
+                                           
+             F (R, z, r, z) 1 − ΦR/2 (r, z) ω(r, z)dzdr +
+(3.3)   |  Π
+                               {z                     } |   Π
+                                                                               {z                  }
+                                =:(I1 )                                                      =:(I2 )
+
+To ease notation, let us abbreviate integrals (I1 ) and (I2 ) as
+                                ZZ                              ZZ
+                                      r
+                        (I1 ) =     F (1 − ΦR/2 )ω, (I2 ) =        F r ΦR/2 ω.
+                                       Π                                         Π
+  Below, we shall further split (I2 ) into (I21 ) and (I22 ), see Figure 2.
+Estimate of (I1 ). In the term (I1 ), the integrand is supported on the region Π \ BR/4 (R, z). To
+estimate this term, we use the estimate
+                                                          |z − z| (Rr)5/2   Rr2
+                               |F r (R, z, r, z)| ≲                  5    ≤  4 ,
+                                                         R3/2 r1/2 DR,z     DR,z
+                                                             9
+                                     z̄
+                                                           (I1)
+                                                                                         R
+                                                                      (I21)
+                                                                              (I22)      2
+
+                                    O
+                                                                              (R,0)              r̄
+                                                                                         lR
+                                                                                          2
+
+
+
+
+         Figure 2. A diagram showing of (I1 ) from (3.3) and (I21 ) from (3.6) when l < 1,
+         with z = 0. The darkest region represents (I22 ), which is (I2 ) minus (I21 ).
+
+
+which holds on the region Π \ BR/4 (R, z). Then we have, using r ≤ R ≤ 4DR,z ,8
+
+                                                                     1/3
+                                 Rr2                  1/3
+                ZZ                                                          ZZ
+                                         2/3    1/3 r        1/3 ω                        1
+        |(I1 )| ≲                 4   |ω| |ω|         1/3
+                                                          ≲R                                  |ω|2/3
+                    Π\BR/4 (R,z) DR,z               r              r L∞ (Π) Π\BR/4 (R,z) DR,z
+                          1/3     ZZ                     1/3  Z Z                 2/3
+                   1/3 ω                               1
+                ≤R                                     3                         |ω|
+                       r L∞ (Π)        Π\BR/4 (R,z) DR,z            Π\BR/4 (R,z)
+                           1/3                                         1/3            2/3
+                       ω                             2/3          ω               ω
+(3.4)         ≲ R1/3                R−1/3 ∥ω∥L1 (Π) ∼
+                       r   L∞ (Π)                                 r    L∞ (R3 )   r   L1 (R3 )
+
+
+
+Estimate of (I2 ): splitting further. To estimate (I2 ), we introduce the ratio
+                                                                                  −1/2
+                                                      1       1/2      ω
+(3.5)                                         l :=        ∥u∥ L2 (R3 )
+                                                     R7/4              r          L∞ (R3 )
+
+and further split (I2 ) into
+                                 ZZ                                       ZZ
+                                          r
+(3.6)                                F (1 − ΦlR )ΦR/2 ω +                       F r ΦlR ΦR/2 ω .
+                                   Π                                          Π
+                                 |        {z          } |                           {z       }
+                                               =:(I21 )                            =:(I22 )
+
+Note that l is a non-dimensional parameter. (When l ≥ 1, we simply have that (I21 ) = 0.)
+Throughout estimates of (I21 ) and (I22 ), we shall use the estimate
+
+                                                             |z − z| Rr       1 r1/2
+(3.7)                            |F r (R, z, r, z)| ≲                  2   ≤           ,
+                                                            R3/2 r1/2 DR,z   R1/2 DR,z
+
+that holds on the region BR/2 (R, z).
+
+
+  8This is the only place where we really need that R is the maximal support radius of ω.
+                                                                  10
+Estimate of (I22 ). Let us first estimate (I22 ), which is simpler. We can bound using ¯l := min{l, 1}:
+                                                                         r1/2
+                             ZZ                          ZZ
+                                            r        1                            r
+                  |(I22 )| ≤              |F ω| ≲ 1/2                         |ω|
+                               Bl̄R (R,z)          R         Bl̄R (R,z) D R,z     r
+                                                    ZZ
+                              1      ω                               1         ω         ¯lR
+                           ≲ 1/2               R3/2                      ≲R
+                             R       r  L∞ (Π)         Bl̄R (R,z)  D R,z        r L∞ (Π)
+                                                                                1/2
+                                    ω                            1/2        ω
+(3.8)                        ∼ ¯lR2                ≤R   1/4
+                                                              ∥u∥L2 (R3 )                  .
+                                    r   L∞ (R3 )                            r   L∞ (R3 )
+
+In the last inequality, we have just used ¯l ≤ l and the definition of l.
+Estimate of (I21 ). In the estimate of (I21 ), we may assume l < 1 since otherwise it simply vanishes.
+Now we use integration by parts to write
+           ZZ h
+                                                                         i
+                    ∂z F r (1 − ΦlR )ΦR/2 ur − ∂r F r (1 − ΦlR )ΦR/2 uz
+                                             
+  (I21 ) =
+           ZZ Π                             ZZ                         ZZ
+         =     (∂z F r )(1 − ΦlR )ΦR/2 ur −     F r (∂z ΦlR )ΦR/2 ur +    F r (1 − ΦlR )(∂z ΦR/2 )ur
+           | Π            {z            } | Π          {z          } | Π           {z              }
+                       =:(I211 )                          =:(I212 )                               =:(I213 )
+              ZZ                                   ZZ                                 ZZ
+          −       (∂r F r )(1 − ΦlR )ΦR/2 uz +        F r (∂r ΦlR )ΦR/2 uz −                 F r (1 − ΦlR )(∂r ΦR/2 )uz .
+              | Π            {z            } |      Π
+                                                             {z          } |               Π
+                                                                                                      {z              }
+                          =:(I214 )                           =:(I215 )                             =:(I216 )
+
+Now let us estimate each term. First, we use the estimate
+                                                      (z − z)2 (Rr)2      1 r1/2
+                                                                    
+                    r                  1       Rr
+               |∂z F (R, z, r, z)| ≲ 3/2 1/2    2   +            4     ≲       2
+                                    R r        DR,z      Rr    DR,z      R1/2 DR,z
+to get, using r ≤ R,
+                                                  r1/2 r
+                          ZZ
+                    1
+        |(I211 )| ≲ 1/2                            2 |u |
+                   R     BR/2 (R,z)\B(lR)/2 (R,z) DR,z
+                       ZZ                              1/2  Z Z                                1/2
+                  1                                  1                                        r 2
+                ≲ 1/2                                4                                     r|u |
+                 R        BR/2 (R,z)\B(lR)/2 (R,z) DR,z           BR/2 (R,z)\B(lR)/2 (R,z)
+                   1 1 1/2                 1
+                ≲  1/2
+                           ∥r u∥L2 (Π) ∼ 3/2 ∥u∥L2 (R3 ) .
+                 R lR                    lR
+Next, using the estimate (3.7) and that DR,z ∼ lR on the support of ∂z ΦlR , we have
+                                             r1/2 1
+                                                                   
+                                                                        |z − z| r
+                                ZZ
+                             1                             ′ DR,z
+                |(I212 )| ≲ 1/2                          χ                     |u |
+                            R     BR/2 (R,z) DR,z lR            lR       DR,z
+                                                            r1/2 r
+                                ZZ
+                             1                                              1
+                          ≲ 1/2                               2   |u | ≲ 3/2 ∥u∥L2 (R3 ) .
+                            R     BR/2 (R,z)\B(lR)/2 (R,z) DR,z           lR
+Similarly, using DR,z ∼ R on the support of ∂z ΦR/2 , we get
+                                                   r1/2 1 ′ 2DR,z |z − z| r
+                                 ZZ                                   
+                             1
+                 |(I213 )| ≲ 1/2                            χ                 |u |
+                            R      Π\B(lR)/2 (R,z) DR,z R          R     DR,z
+                                                            r1/2 r
+                                 ZZ
+                             1                                            1
+                           ≲ 1/2                              2  |u | ≲ 3/2 ∥u∥L2 (R3 ) .
+                            R      BR/2 (R,z)\B(lR)/2 (R,z) DR,z        lR
+                                                         11
+Now observe that
+                                 |(r − R)(r + R) − (z − z)2 | ≲ RDR,z
+holds on the disc BR/2 (R, z), which gives
+                                                                                    2
+                                                                                     
+                 r                 |z − z|       Rr                           2 (Rr)
+            |∂r F (R, z, r, z)| ≲             Rr 2 + |(r − R)(r + R) − (z − z) | 4
+                                  (Rr)5/2       DR,z                            DR,z
+                                                         
+                                      1        1      R          1     R
+                                ≲       1/2
+                                                   + 2      ≲      1/2 2 .
+                                  (Rr)        DR,z   DR,z     (Rr) DR,z
+Using this, we have
+                                      ZZ                                             1/2
+                              1                                        1   R     z r
+                  |(I214 )| ≲ 1/2                                     1/2 D 2
+                                                                               |u |
+                             R             BR/2 (R,z)\B(lR)/2 (R,z) r      R,z      r1/2
+                                                                    r1/2 z
+                                      ZZ
+                            1                                                    1
+                          ≲ 1/2                                      2   |u | ≲ 3/2 ∥u∥L2 (R3 ) .
+                           R               BR/2 (R,z)\B(lR)/2 (R,z) DR,z       lR
+Similarly, we can get
+                                                                    1
+                                      |(I215 )| + |(I216 )| ≲           ∥u∥L2 (R3 ) ,
+                                                                  lR3/2
+concluding that
+                                                                                           1/2
+                                        1                          1/2      ω
+(3.9)                    |(I21 )| ≲      3/2
+                                             ∥u∥L2 (R3 ) ≲ R1/4 ∥u∥L2 (R3 )                           ,
+                                      lR                                    r              L∞ (R3 )
+
+where we have simply used the definition of l from (3.5).
+Conclusion. Combining (3.9) with (3.8), we get that
+                                                                            1/2
+                                                            1/2        ω
+(3.10)                                 |(I2 )| ≲ R1/4 ∥u∥L2 (R3 )                      .
+                                                                       r    L∞ (R3 )
+
+Therefore, combining (3.4) and (3.10), the proof is complete.                                                  □
+
+3.2. Rate of vortex stretching. In this section, we complete the proof of Theorem 1.1.
+Proof of Theorem 1.1. We denote the maximal radial support of the solution ω(t) of (1.4) with
+initial data ω0 as R(t), with R0 := R(0). Then for any t ≥ 0, using the estimate (3.1), we have
+         d
+            R(t) ≤ sup |ur (t, R, z)|
+         dt        z∈R
+
+                        ω(t, ·) 1/3      ω(t, ·) 2/3                          1/2      ω(t, ·) 1/2
+                  ≤C                                      + CR1/4 (t)∥u(t, ·)∥L2 (R3 )
+                          r     L∞ (R3 )   r     L1 (R3 )                                r     L∞ (R3 )
+
+                  ≤ C(c1 (ω0 ) + c2 (ω0 )R1/4 (t)),
+using conservations of the kinetic energy ∥u∥L2 and the Lp -norms of r−1 ω with p ∈ [1, ∞]. This
+gives us the bound
+                                           R(t) ≲ω0 (1 + t)4/3 ,           t ≥ 0.
+From this, we obtain
+                                       ω(t, ·)                 ω0
+              ∥ω(t, ·)∥L∞ (R3 ) ≤                       R(t) =                         R(t) ≲ω0 (1 + t)4/3 ,
+                                         r     L∞ (R3 )        r            L∞ (R3 )
+                                                           12
+which finishes the proof.                                                                                                     □
+
+3.3. Higher dimensions. In this section, we present generalizations of the 3D axisymmetric Biot–
+Savart law from §2.2 and the key estimate (3.1) from Proposition 3.1 to higher dimensions d ≥ 3.
+After that, we will prove Theorem 1.3.
+
+Axisymmetric Biot–Savart law in higher dimensions. First, for any integer d ≥ 3, we define the
+elliptic integral
+                                  Z π
+                                          cos α sind−3 α
+                      F(d) (s) :=                       d/2−1
+                                                              dα, s > 0,
+                                   0 [2(1 − cos α) + s]
+
+which is a high dimensional extension of F = F(3) from (2.1). Then, the axisymmetric Biot–Savart
+formula can be written in the form ([21, 32])
+                                                                                              2
+                                                                         rd/2−2 (z − z) ′
+                ZZ
+                     r                                                                        D
+    ur (r, z) =     F(d) (r, z, r, z)ω(r, z)dzdr,   r
+                                                  F(d) (r, z, r, z) = cd        d/2
+                                                                                       F (d)     ,
+                  Π                                                           r               rr
+for some constant cd > 0. We will use the following extension of Lemma 2.1 to higher dimensions.
+Lemma 3.2. For any integer ℓ ≥ 1, the ℓ-th derivative of F satisfies
+                                           (ℓ)
+                                       |F(d) (s)| ≲ℓ min{s−ℓ , s−(ℓ+d/2) }.
+
+Proof. For the case ℓ = 1, we refer the reader to [11, Lem. 2.2] and its proof. The remaining cases
+can be shown in a similar way.                                                                   □
+
+The Rd/4−1/2 estimate. Next, we extend the key estimate (3.1) to high dimensional cases. From
+this estimate, the radial velocity is bounded on the maximal support radius of the vorticity.
+Proposition 3.3. Let ω be compactly supported with maximal radius of the support R > 0. Then
+                                            1/d                  1−1/d                                         1/2
+                                       ω                ω                                    1/2         ω
+(3.11)       sup |ur (R, z)| ≲                                              + Rd/4−1/2 ∥u∥L2 (Rd )                        .
+              z∈R                  rd−2     L∞ (Rd )   rd−2      L1 (Rd )                               rd−2   L∞ (Rd )
+
+Proof. We use the rescaled cutoff function (3.2) once more to extend the proof of Proposition 3.1
+to higher dimensions. First, we split ur (R, z) into
+      ZZ                                                  ZZ
+            r                                                 r
+                                           
+          F(d) (R, z, r, z) 1 − ΦR/2 (r, z) ω(r, z)dzdr +    F(d) (R, z, r, z)ΦR/2 (r, z)ω(r, z)dzdr,
+      | Π                     {z                      } | Π                   {z                   }
+                            =:(I1′ )                                                         =:(I2′ )
+
+and abbreviate integrals (I1′ ) and (I2′ ) as
+                                ZZ                                              ZZ
+                         ′
+                      (I1 ) =         r
+                                    F(d)  (1 − ΦR/2 )ω,              (I2′ ) =           r
+                                                                                       F(d) ΦR/2 ω.
+                                       Π                                           Π
+
+
+
+Estimate of (I1′ ). Recall from the 3D case that the term (I1′ ) is supported on the region Π \
+BR/4 (R, z). Then using the estimate
+
+                           r                      rd/2−2 |z − z| (Rr)d/2+1   Rrd−1
+                         |F(d) (R, z, r, z)| ≲                      d+2
+                                                                           ≤   d+1
+                                                                                   ,
+                                                      Rd/2         DR,z      DR,z
+                                                            13
+that holds on the region Π \ BR/4 (R, z), and using r ≤ R ≤ 4DR,z , we can estimate this term as
+
+                                  Rrd−1 1−1/d 1/d r1−2/d
+                       ZZ
+          |(I1′ )| ≲                d+1
+                                        |ω|     |ω|
+                     Π\BR/4 (R,z) DR,z                  r1−2/d
+                             ω 1/d
+                                        ZZ
+                                                          1
+                 ≲ R1−2/d d−2                                 |ω|1−1/d
+                          r        ∞
+                                  L (Π)    Π\BR/4 (R,z) D R,z
+                                  1/d    ZZ                    1/d  Z Z                 1−1/d
+                    1−2/d    ω                              1
+                 ≤R                                                                     |ω|
+                          rd−2 L∞ (Π)                       d
+                                             Π\BR/4 (R,z) DR,z             Π\BR/4 (R,z)
+                                              1/d                                                     1/d                    1−1/d
+                                     ω                                         1−1/d           ω                       ω
+                 ≲ R1−2/d                                R−(1−2/d) ∥ω∥L1 (Π) ∼                                                          .
+                                 rd−2         L∞ (Π)                                          rd−2    L∞ (Rd )        rd−2   L1 (Rd )
+
+
+
+
+Estimate of (I2′ ): splitting further. As we did in the case d = 3, we take the ratio
+
+                                                                                                   −1/2
+                                                                           1/2            ω
+(3.12)                                l := R−(3d)/4+1/2 ∥u∥L2 (Rd )                                           ,
+                                                                                       rd−2        L∞ (Rd )
+
+
+and further split the term (I2′ ) as
+                                 ZZ                                              ZZ
+                                              r                                            r
+                                             F(d) (1 − ΦlR )ΦR/2 ω +                      F(d) ΦlR ΦR/2 ω .
+                                      Π                                               Π
+                                 |                      {z                 }     |            {z        }
+                                                        ′ )
+                                                    =:(I21                                      ′ )
+                                                                                            =:(I22
+
+                                            ′ ) = 0 for the case l ≥ 1.) We often use the estimate
+(We remind the reader that we simply have (I21
+
+                              r                                rd/2−2 |z − z| Rr    rd/2−1 1
+(3.13)                      |F(d) (R, z, r, z)| ≲                              2  ≤             ,
+                                                                   Rd/2      DR,z   Rd/2−1 DR,z
+
+                                                             ′ ) and (I ′ ).
+which holds on the region BR/2 (R, z), during estimates of (I21        22
+
+              ′ ). The estimate of (I ′ ) is easily done by using l¯ := min{l, 1}:
+Estimate of (I22                     22
+
+
+                                                                                           rd/2−1 rd−2
+                                 ZZ                                                  ZZ
+                      ′                                   r                1
+                   |(I22 )| ≤                           |F(d) ω| ≲                                |ω| d−2
+                                      Bl̄R (R,z)                     Rd/2−1     Bl̄R (R,z) DR,z      r
+                                                                               ZZ
+                                         1              ω                                      1
+                             ≲                                       R(3d)/2−3
+                                 Rd/2−1             rd−2      L∞ (Π)               Bl̄R (R,z) DR,z
+                                   1     ω
+                            ≲                                           R(3d)/2−3 ¯lR
+                                 Rd/2−1 rd−2                  L∞ (Π)
+                                                                                                                      1/2
+                                                    ω                                          1/2                ω
+                             ∼ ¯lRd−1                                   ≤ Rd/4−1/2 ∥u∥L2 (Rd )                                   ,
+                                               rd−2          L∞ (Rd )                                       rd−2      L∞ (Rd )
+
+
+where we simply used ¯l ≤ l and the definition of l in the last inequality.
+                                                                          14
+Estimate of (I21′ ). Since (I ′ ) becomes zero when l ≥ 1, we only consider the case l < 1. We use
+                             21
+integration by parts once more to write
+
+          ZZ h
+  ′
+                                                                       i
+                       r
+                          (1 − ΦlR )ΦR/2 ur − ∂r F(d)r
+                                                       (1 − ΦlR )ΦR/2 uz
+                                          
+(I21 )=         ∂z F(d)
+        ZZ Π                              ZZ                         ZZ
+                                               r                         r
+      =          r
+            (∂z F(d) )(1 − ΦlR )ΦR/2 ur −    F(d) (∂z ΦlR )ΦR/2 ur +    F(d) (1 − ΦlR )(∂z ΦR/2 )ur
+        | Π             {z            } | Π         {z           } | Π            {z              }
+                             ′ )
+                         =:(I211                                 ′ )
+                                                             =:(I212                             ′ )
+                                                                                             =:(I213
+            ZZ                                    ZZ                            ZZ
+                                                            r                           r
+        −            r
+                (∂r F(d) )(1 − ΦlR )ΦR/2 uz +              F(d) (∂r ΦlR )ΦR/2 uz −     F(d) (1 − ΦlR )(∂r ΦR/2 )uz .
+            | Π            {z             } |            Π
+                                                                  {z           } |   Π
+                                                                                                 {z              }
+                              ′ )
+                          =:(I214                                 ′ )
+                                                              =:(I215                             ′ )
+                                                                                              =:(I216
+
+              ′ ), we use the estimate
+To estimate (I211
+
+                                           rd/2−2               (z − z)2 (Rr)2     rd/2−1 1
+                                                                              
+                       r                                 Rr
+                  |∂z F(d) (R, z, r, z)| ≲                2   +            4     ≲         2 .
+                                            Rd/2         DR,z      Rr    DR,z      Rd/2−1 DR,z
+
+Using this and r ≤ R, we have
+
+                                                 rd/2−1 r
+                           ZZ
+       ′             1
+    |(I211 )| ≲                                     2   |u |
+              Rd/2−1    BR/2 (R,z)\B(lR)/2 (R,z) DR,z
+                      ZZ                               1/2  Z Z                                  1/2
+                1                                    1                                      d−2 r 2
+             ≲ d/2−1                                  4                                    r |u |
+              R          BR/2 (R,z)\B(lR)/2 (R,z) DR,z            BR/2 (R,z)\B(lR)/2 (R,z)
+                     1     1                           1
+             ≲                  ∥rd/2−1 u∥L2 (Π) ∼         ∥u∥L2 (Rd ) .
+                  Rd/2−1 lR                          lRd/2
+Next, we use the estimate (3.13) and the relation DR,z ∼ lR, which holds on the support of ∂z ΦlR ,
+to get
+
+                                                 rd/2−1 1
+                                                                       
+                                                                            |z − z| r
+                                        ZZ
+                     ′             1                            ′ DR,z
+                  |(I212 )| ≲ d/2−1
+                                                              χ                    |u |
+                            R         BR/2 (R,z)  D R,z   lR        lR       DR,z
+                                                               rd/2−1 r
+                                    ZZ
+                               1                                                1
+                           ≲ d/2−1                                2   |u | ≲ d/2 ∥u∥L2 (Rd ) .
+                            R         BR/2 (R,z)\B(lR)/2 (R,z) DR,z           lR
+
+Likewise, we use DR,z ∼ R on the support of ∂z ΦR/2 , which gives us
+
+                                                     rd/2−1 1 ′ 2DR,z |z − z| r
+                                        ZZ                                
+                     ′             1
+                  |(I213 )| ≲                                   χ                 |u |
+                            Rd/2−1   Π\B(lR)/2 (R,z) DR,z R            R     DR,z
+                                                              rd/2−1 r
+                                   ZZ
+                              1                                               1
+                           ≲ d/2−1                               2   |u | ≲ d/2 ∥u∥L2 (Rd ) .
+                            R        BR/2 (R,z)\B(lR)/2 (R,z) DR,z          lR
+
+                  ′ ), we use the inequality
+Now to estimate (I214
+
+                                       |(r − R)(r + R) − (z − z)2 | ≲ RDR,z ,
+                                                             15
+which holds on the disc BR/2 (R, z), to get
+                                      d/2−4 |z − z|                                        2
+                                                                                                         
+              r                   r                Rr                               2 (Rr)
+         |∂r F(d) (R, z, r, z)| ≲               Rr  2   + |(r − R)(r + R) − (z − z)  |  4
+                                     Rd/2+1        DR,z                                DR,z
+                                  rd/2−2                    rd/2−2 R
+                                                      
+                                            1      R
+                                 ≲ d/2−1        + 2      ≲ d/2−1 2 .
+                                  R        DR,z   DR,z      R     DR,z
+This gives us
+                                        ZZ
+                    ′            1                                               R
+                 |(I214 )| ≲                                           rd/2−2        z
+                                                                                 2 |u |
+                               Rd/2−1       BR/2 (R,z)\B(lR)/2 (R,z)            DR,z
+                                                                     rd/2−1 z
+                                        ZZ
+                                 1                                                 1
+                         ≲                                              2  |u | ≲ d/2 ∥u∥L2 (Rd ) .
+                               Rd/2−1       BR/2 (R,z)\B(lR)/2 (R,z) DR,z        lR
+Similarly, we have
+                                           ′           ′            1
+                                        |(I215 )| + |(I216 )| ≲         ∥u∥L2 (Rd ) .
+                                                                  lRd/2
+As a result, using the definition of l from (3.12), we obtain
+                                                                                          1/2
+                         ′           1                              1/2        ω
+                      |(I21 )| ≲      d/2
+                                          ∥u∥L2 (Rd ) ≲ Rd/4−1/2 ∥u∥L2 (Rd ) d−2                     .
+                                   lR                                        r            L∞ (Rd )
+
+                                                                                                                        □
+
+Rate of vortex stretching. We may now complete the proof of Theorem 1.3.
+
+Proof of Theorem 1.3. We use the same notation of R(t) from the proof of Theorem 1.1. Then for
+any t ≥ 0, we use the estimate (3.11) to obtain
+
+      d           ω(t, ·) 1/d   ω(t, ·) 1−1/d      d/4−1/2             1/2     ω(t, ·) 1/2
+         R(t) ≤ C                             + CR         (t)∥u(t, ·)∥L2 (Rd ) d−2
+      dt          rd−2 L∞ (Rd ) rd−2 L1 (Rd )                                   r      L∞ (Rd )
+
+                ≤ C(c1 (ω0 ) + c2 (ω0 )Rd/4−1/2 (t)),
+
+where we used conservations of the kinetic energy ∥u∥L2 and the Lp -norms of r−(d−2) ω. From this,
+we have
+                               (
+                                 A1 (d)(1 + t)4/(6−d) ,  d = 3, 4, 5,
+                     R(t) ≲ω0                                         t ≥ 0,
+                                 A2 e A 3 t ,            d = 6,
+which gives us
+                                                                               (
+                     ω(t, ·)                  ω0                                A1 (1 + t)4/(6−d) ,      d = 3, 4, 5,
+ ∥ω(t, ·)∥L∞ (Rd ) ≤                  R(t) = d−2                      R(t) ≲ω0
+                     r d−2
+                             L∞ (Rd )        r               L∞ (Rd )           A2 eA3 t ,               d = 6.
+This finishes the proof.                                                                                                □
+
+                    Appendix A. Global estimate for the radial velocity
+   In this section, we provide proofs of the inequality (1.11) and Theorem 1.2 which we introduced
+in §1.
+                                                            16
+Proposition A.1. Let ω satisfy r−1 ω ∈ L∞ (R3 ) and rω ∈ L1 (R3 ). Furthermore, assume that the
+corresponding velocity u = (ur , uz ) belongs to L2 (R3 ). Then, ur is uniformly bounded in space, with
+                                                                            1/2
+                                                         1/3            ω                     1/6
+                                  ∥ur ∥L∞ (R3 ) ≤ C∥u∥L2 (R3 )                         ∥rω∥L1 (R3 )
+                                                                        r   L∞ (R3 )
+
+for a universal constant C > 0.
+
+Remark A.2. Due to invariances of the Biot–Savart formula with respect to the following scaling
+and translation in z
+
+        u(r, z) 7→ u(λr, λz + z0 )         and ω(r, z) 7→ λω(λr, λz + z0 )                  for any         (λ, z0 ) ∈ R>0 × R,
+
+to prove Proposition A.1, it suffices to show
+                                                                        1/2
+                                                      1/3           ω                     1/6
+(A.1)                               |ur (1, 0)| ≲ ∥u∥L2 (R3 )                       ∥rω∥L1 (R3 ) .
+                                                                    r   L∞ (R3 )
+
+A.1. Proof of Proposition A.1. Our goal is to prove (A.1) from Remark A.2. To do this, we
+define the rescaled cutoff functions
+                                                              
+                                                 D(1, 0, r, z)
+                                ϕk (r, z) := χ                   , k > 0.
+                                                      k
+
+Proof of Proposition A.1. Using the function ϕ1/2 , where we took k = 1/2, we split the term ur (1, 0)
+into
+        ZZ                                               ZZ
+              r
+                                                             F r (1, 0, r, z)ϕ1/2 (r, z)ω(r, z)dzdr .
+                                          
+            F (1, 0, r, z) 1 − ϕ1/2 (r, z) ω(r, z)dzdr +
+          Π                                                Π
+        |                     {z                     } |                      {z                  }
+                                   =:(I1′′ )                                                        =:(I2′′ )
+
+
+For notational convenience, let us simply write (I1′′ ) and (I2′′ ) as
+                                ZZ                                ZZ
+                          ′′          r                   ′′
+                        (I1 ) =      F (1 − ϕ1/2 )ω, (I2 ) =           F r ϕ1/2 ω.
+                                               Π                                        Π
+
+In addition, we simplify D(1, 0, r, z) as D1,0 .
+
+Estimate of (I1′′ ). We are going to estimate (I1′′ ) , which is supported on Π \ B1/4 (1, 0), in two
+different ways, and combine the inequalities by splitting (I1′′ ) = (I1′′ )1/3 (I1′′ )2/3 . The first estimate
+follows by using the estimate
+                                                           2 
+                              r                1 z      ′
+                                                           D1,0    |z| r5/2    r2
+(A.2)                       |F (1, 0, r, z)| =        F         ≲        5  ≤   4 .
+                                               π r1/2       r     r1/2 D1,0   D1,0
+
+Using this, we have
+                                                                              3/4
+                                      r2                  3/4                                            r9/4 1/2 1/4
+                       ZZ                                                              ZZ
+                                                    1/4 r       ω
+         |(I1′′ )| ≲                   4  |ω|3/4
+                                                 |ω|      3/4
+                                                              ≤                                            4 (r  |ω| ).
+                        Π\B1/4 (1,0) D1,0               r       r             L∞ (Π)        Π\B1/4 (1,0) D1,0
+                                                               17
+Here, we use the inequality r ≲ D1,0 , which holds on the region Π \ B1/4 (1, 0), to finish the first
+estimate of (I1′′ ):
+              ω 3/4                     r9/4 1/2 1/4           ω 3/4
+                         ZZ                                                 ZZ
+       ′′                                                                             1
+    |(I1 )| ≲                             4  (r |ω| ) ≲                                   (r1/2 |ω|1/4 )
+              r L∞ (Π) Π\B1/4 (1,0) D1,0                       r L∞ (Π) Π\B1/4 (1,0) D7/4
+                                                                                      1,0
+                     3/4  ZZ                   3/4  Z Z                    1/4
+              ω                             1
+            ≤                               7/3
+                                                                        r2 |ω|
+              r L∞ (Π)       Π\B1/4 (1,0) D1,0             Π\B1/4 (1,0)
+                       3/4                              3/4
+               ω                        1/4        ω                         1/4
+           ≲                      ∥r2 ω∥L1 (Π) ∼                      ∥rω∥L1 (R3 ) .
+               r       L∞ (Π)                      r    L∞ (R3 )
+
+  Another estimate of (I1′′ ) follows from an integration by parts, which gives a representation
+
+            ZZ h
+                                                               i
+ (I1′′ ) =          ∂z F r (1 − ϕ1/2 ) ur − ∂r F r (1 − ϕ1/2 ) uz
+                                         
+
+          ZZ Π                          ZZ                  ZZ                         ZZ
+                     r             r          r          r            r             z
+         =     (∂z F )(1 − ϕ1/2 )u −        F (∂z ϕ1/2 )u −      (∂r F )(1 − ϕ1/2 )u +      F r (∂r ϕ1/2 )uz .
+             Π                            Π                    Π                          Π
+          |            {z          } |          {z       } |            {z          } |          {z        }
+                           ′′ )
+                       =:(I11                              ′′ )
+                                                       =:(I12                              ′′ )
+                                                                                       =:(I13         ′′ )
+                                                                                                  =:(I14
+
+We compute
+                                                                2              2 
+                                                       1 1       ′
+                                                                   D1,0   2z 2 ′′ D1,0
+(A.3)                         ∂z F r (1, 0, r, z) =            F        +     F        ,
+                                                       π r1/2       r      r       r
+and
+                                                   2                                2 
+                                                   D1,0                               D1,0
+                                           
+                   r               1 z          ′                             2   ′′
+(A.4)       ∂r F (1, 0, r, z) = −            rF         − 2[(r − 1)(r + 1) − z ]F          .
+                                  2π r 5/2          r                                  r
+For the term (A.3), we have the estimate
+                                                               5/2
+                                                                      z 2 r7/2      r2
+                                                                               
+                                         r                     r  1
+                                    |∂z F (1, 0, r, z)| ≲ 1/2    5  +       7    ≲   5 ,
+                                                         r     D1,0   r D1,0       D1,0
+which holds on the region Π \ B1/4 (1, 0). We use this to get
+                               r3/2 1/2 r
+                ZZ                                ZZ
+        ′′                                                           1
+     |(I11 )| ≲                  5  (r |u |) ≲                       7/2
+                                                                         (r1/2 |ur |)
+                  Π\B1/4 (1,0) D1,0                 Π\B1/4 (1,0) D1,0
+                 ZZ                   1/2  Z Z                    1/2
+                                   1                             r 2
+              ≤                    7                          r|u |        ≲ ∥r1/2 u∥L2 (Π) ∼ ∥u∥L2 (R3 ) .
+                    Π\B1/4 (1,0) D 1,0           Π\B1/4 (1,0)
+
+Next, we us the estimate (A.2) to get
+                    Z Z 3/2
+                                        |z| 1/2 r
+                                                         ZZ
+            ′′           r     ′                                                   1     1/2 r
+         |(I12 )| ≲        4 χ (2D1,0 ) D     (r |u |) ≲                            4 (r    |u |).
+                       Π D 1,0            1,0               B1/2 (1,0)\B1/4 (1,0) D 1,0
+
+The second inequality follows from the fact that the integrand above is supported on the region
+D1,0 ∼ 1. Finishing this estimate, we have
+                   ZZ                            1/2  Z Z                              1/2
+          ′′                                  1                                       r 2
+       |(I12 )| ≲                             8                                    r|u |       ≲ ∥u∥L2 (R3 ) .
+                       B1/2 (1,0)\B1/4 (1,0) D1,0            B1/2 (1,0)\B1/4 (1,0)
+                                                                        18
+To estimate the term (A.4), we use the inequality
+
+                                            |(r − 1)(r + 1) − z 2 |1/2 ≲ D1,0 ,
+which holds on the region Π \ B1/4 (1, 0). We use this to estimate the term (A.4) as
+                                          5/2                          7/2
+                                                                            
+                    r                |z|   r                        2 r         r
+               |∂r F (1, 0, r, z)| ≲ 5/2 r 5 + |(r − 1)(r + 1) − z | 7        ≲ 4 ,
+                                    r      D1,0                       D1,0     D1,0
+where it holds on the region Π \ B1/4 (1, 0) as well. Using this, we get
+
+                                   r1/2 1/2 z
+                    ZZ                              ZZ
+            ′′                                                      1
+         |(I13 )| ≲                  4   (r |u |) ≲                 7/2
+                                                                        (r1/2 |uz |) ≲ ∥u∥L2 (R3 ) .
+                      Π\B1/4 (1,0) D 1,0              Π\B1/4 (1,0) D1,0
+
+Lastly, we obtain
+                 Z Z 3/2
+                                         |r − 1| 1/2 z                             r1/2 |uz |
+                                                            ZZ
+         ′′           r      ′
+      |(I14 )| ≲        4  χ   (2D 1,0 )        (r  |u |) ≲                            4      ≲ ∥u∥L2 (R3 ) .
+                    Π D1,0                D1,0                B1/2 (1,0)\B1/4 (1,0) D1,0
+
+Now we may collect the estimates above to conclude
+                                                                                           3/4                       2/3
+                                                               1/3                      ω                  1/4
+                    |(I1′′ )| = |(I1′′ )|1/3 |(I1′′ )|2/3 ≲ ∥u∥L2 (R3 )                                ∥rω∥L1 (R3 )
+                                                                                        r   L∞ (R3 )
+                                                        1/2
+                                    1/3         ω                            1/6
+(A.5)                       = ∥u∥L2 (R3 )                          ∥rω∥L1 (R3 ) .
+                                                r       L∞ (R3 )
+
+
+Estimate of (I2′′ ): splitting further. To estimate (I2′′ ), we define the ratio
+                                                                         −1/2
+                                                          2/3       ω                        −1/6
+                                         k = ∥u∥L2 (R3 )                               ∥rω∥L1 (R3 ) ,
+                                                                    r    L∞ (R3 )
+
+and split (I2′′ ) into
+                                       ZZ                                      ZZ
+                                                r
+                                           F (1 − ϕk )ϕ1/2 ω +                           F r ϕk ϕ1/2 ω .
+                                         Π                                             Π
+                                       |       {z          } |                             {z        }
+                                                         ′′ )
+                                                     =:(I21                                  ′′ )
+                                                                                         =:(I22
+
+
+              ′′ ). We define k̄ := min{k, 1} and estimate (I ′′ ) as
+Estimate of (I22                                                       22
+
+                                                         r1/2 3/4 1/4 r3/4
+                     ZZ                     ZZ
+              ′′
+           |(I22 )|≤              |F r ω| ≲                   |ω| |ω|
+                        Bk̄ (1,0)              Bk̄ (1,0) D1,0              r3/4
+                       ω 3/4
+                                           ZZ                 3/4  Z Z                1/4
+                                                           1                        2
+                    ≲                                      4/3
+                                                                                   r |ω|
+                       r L∞ (B (1,0))          Bk̄ (1,0) D1,0            Bk̄ (1,0)
+                                   k̄
+
+                      p ω 3/4                                        p ω 3/4
+                                                      1/4                                    1/4
+                    ≲ k̄                     ∥r2 ω∥L1 (B (1,0)) ≲ k̄                   ∥rω∥L1 (R3 )
+                             r L∞ (B (1,0))                k̄             r L∞ (R3 )
+                                                k̄
+                                                    1/2
+                                 1/3        ω                         1/6
+(A.6)                    ≤ ∥u∥L2 (R3 )                          ∥rω∥L1 (R3 ) .
+                                            r       L∞ (R3 )
+
+                                                                        19
+Estimate of (I21′′ ). Let us assume k < 1 because (I ′′ ) just vanishes otherwise. We use integration
+                                                        21
+by parts to get
+              ZZ h
+       ′′
+                                                                        i
+                        ∂z F r (1 − ϕk )ϕ1/2 ur − ∂r F r (1 − ϕk )ϕ1/2 uz
+                                                
+     (I21 )=
+             ZZ Π                             ZZ                      ZZ
+                         r                r          r             r
+           =       (∂z F )(1 − ϕk )ϕ1/2 u −        F (∂z ϕk )ϕ1/2 u +     F r (1 − ϕk )(∂z ϕ1/2 )ur
+                Π                                Π                      Π
+             |             {z             } |          {z          } |            {z              }
+                                   ′′ )
+                               =:(I211                             ′′ )
+                                                               =:(I212                                    ′′ )
+                                                                                                      =:(I213
+                   ZZ                                   ZZ                                ZZ
+               −       (∂r F r )(1 − ϕk )ϕ1/2 uz +           F r (∂r ϕk )ϕ1/2 uz −               F r (1 − ϕk )(∂r ϕ1/2 )uz .
+                                                           Π                                   Π
+                   | Π           {z            } |                 {z          } |                       {z              }
+                                     ′′ )
+                                 =:(I214                               ′′ )
+                                                                   =:(I215                                 ′′ )
+                                                                                                       =:(I216
+
+Now let us estimate each term. First, we get
+                                          r1/2 r
+                 ZZ
+        ′′
+     |(I211 )| ≲                            2 |u |
+                   B1/2 (1,0)\Bk/2 (1,0) D1,0
+                  ZZ                            1/2  Z Z                              1/2
+                                              1                                      r 2       1
+               ≤                              4                                   r|u |       ≲ ∥u∥L2 (R3 ) .
+                      B1/2 (1,0)\Bk/2 (1,0) D1,0            B1/2 (1,0)\Bk/2 (1,0)              k
+Next, we have
+                               r1/2 1 ′ D1,0 |z| r
+                      ZZ                                      ZZ
+           ′′                                                                              1 1/2 r
+        |(I212 )| ≲                   χ                 |u | ≲                             2 r    |u |.
+                    B1/2 (1,0) D1,0 k        k     D1,0             B1/2 (1,0)\Bk/2 (1,0) D1,0
+                   ZZ                           1/2  Z Z                              1/2
+                                             1                                       r 2        1
+                ≤                             4                                   r|u |        ≲ ∥u∥L2 (R3 ) .
+                      B1/2 (1,0)\Bk/2 (1,0) D1,0            B1/2 (1,0)\Bk/2 (1,0)               k
+In the second inequality, we used the relation D1,0 ∼ k, which holds because of the term ∂z ϕk .
+Also, we use the relation D1,0 ∼ 1 coming from the term ∂z ϕ1/2 to get
+
+                             r1/2 ′          |z| r
+              ZZ                                         ZZ
+     ′′                                                                           1 1/2 r     1
+  |(I213 )| ≲                     χ (2D1,0 )      |u | ≲                          2   r |u | ≲ ∥u∥L2 (R3 ) .
+                Π\Bk/2 (1,0) D1,0            D1,0          B1/2 (1,0)\Bk/2 (1,0) D1,0         k
+
+Now we can use the inequality |(r − 1)(r + 1) − z 2 | ≲ D1,0 on the disc B1/2 (1, 0) to get
+                                                                r2
+                                                                    
+                              |z|    r                                    1       1        1
+      |∂r F r (1, 0, r, z)| ≲ 5/2 r 2 + |(r − 1)(r + 1) − z 2 | 4      ≲       + 2 ≲ 2 .
+                             r      D 1,0                      D 1,0     D 1,0  D  1,0   D 1,0
+
+Using this, we have
+                  ZZ                                          ZZ
+         ′′                                       1    z                               1 1/2 z   1
+      |(I214 )| ≲                                  2 |u | ≲                             2 r |u |≲ ∥u∥L2 (R3 )
+                           B1/2 (1,0)\Bk/2 (1,0) D 1,0          B1/2 (1,0)\Bk/2 (1,0) D 1,0      k
+and similarly, we get
+                                                ′′          ′′         1
+                                             |(I215 )| + |(I216 )| ≲     ∥u∥L2 (R3 ) .
+                                                                       k
+Thus, gathering all the estimates above, we obtain
+                                                                              1/2
+                                 ′′       1                  1/3      ω                         1/6
+(A.7)                         |(I21 )|≲     ∥u∥L2 (R3 ) ≤ ∥u∥L2 (R3 )                    ∥rω∥L1 (R3 ) .
+                                          k                           r       L∞ (R3 )
+
+We used the definition of k in the last inequality.
+                                                              20
+Conclusion. Summing up (A.6) and (A.7), we have
+                                                                 1/2
+                                                 1/3        ω                     1/6
+(A.8)                            |(I2′′ )| ≲ ∥u∥L2 (R3 )                    ∥rω∥L1 (R3 ) .
+                                                            r    L∞ (R3 )
+
+Hence, adding (A.5) and (A.8), the proof is done.                                                           □
+
+  Now we prove Theorem 1.2 using Proposition A.1.
+
+Proof of Theorem 1.2. We let t ≥ 0, and we define the length function L(t) as
+                                           Z t
+                               L(t) := 1 +     ∥ur (s, ·)∥L∞ (R3 ) ds.
+                                                        0
+
+Claim. We have the estimates
+                                                                                      
+                                                       ω0
+(A.9)                     ∥rω(t, ·)∥L1 (R3 ) ≤                         + ∥rω0 ∥L1 (R3 ) L(t)2 ,
+                                                       r    L1 (R3 )
+                                                                                     
+                                                       ω0
+(A.10)                    ∥ω(t, ·)∥L∞ (R3 ) ≤                          + ∥ω0 ∥L∞ (R3 ) L(t).
+                                                       r    L∞ (R3 )
+
+Once this Claim is shown, then (A.9) and conservation of ∥u∥L2 and the Lp -norms of r−1 ω with
+p ∈ [1, ∞] imply that we have
+         d
+            L(t) = ∥ur (t, ·)∥L∞ (R3 )
+         dt
+                             1/3      ω(t, ·) 1/2                1/6
+                 ≲ ∥u(t, ·)∥L2 (R3 )                   ∥rω(t, ·)∥L1 (R3 )
+                                         r    L∞ (R3 )
+                                       1/2                                    1/6
+                        1/3      ω0               ω0
+                 ≤ ∥u0 ∥L2 (R3 )                              + ∥rω0 ∥L1 (R3 )      L(t)1/3 ≲ω0 L(t)1/3 .
+                                  r L∞ (R3 )      r L1 (R3 )
+From this, we have
+                                              L(t) ≲ω0 (1 + t)3/2 ,
+where this and the second estimate (A.10) from our claim give us the desired estimate
+                                       ∥ω(t, ·)∥L∞ (R3 ) ≲ω0 (1 + t)3/2 .
+  It only remains to prove the Claim. To do this, we use the flow map Φt which solves the ODE
+                                    d
+                                       Φt (a) = u(t, Φt (a)),            Φ0 (a) = a.
+                                    dt
+We let x ∈ R3 and use notations rx := (x21 + x22 )1/2 and zx := x3 . In addition, we denote Φrt and
+Φzt as the radial and vertical component of Φt , respectively. Also, we take y = (Φt )−1 (x), where
+(Φt )−1 is the inverse map of Φt . Then note that we have the following equality:
+                                          Z t                      Z t
+                    x = Φt (y) = Φ0 (y) +     u(s, Φs (y))ds = y +     u(s, Φs (y))ds,
+                                                 0                                  0
+where its radial component would be written as
+                                                              Z t
+                                   rx = Φrt (y) = ry +               ur (s, Φs (y))ds.
+                                                                 0
+                                                            21
+Additionally, we can use the fact that the quantity r−1 ω is conserved in time along the flow map
+Φt :
+                                          ω(t, x)   ω(t, Φt (y))   ω0 (y)
+(A.11)                                            =      r       =        .
+                                            rx        Φt (y)        ry
+To prove the first estimate (A.9), we define the set Ω(t) := {x ∈ R3 : rx ≤ L(t)} and split the
+integral range of the L1 -norm of rω(t, ·) into
+                                        Z                     Z
+                      ∥rω(t)∥L1 (R3 ) =      rx |ω(t, x)|dx +   rx |ω(t, x)|dx .
+                                                  Ω(t)                            Ω(t)c
+                                              |            {z             }   |            {z           }
+                                                          =:(A)                           =:(B)
+
+The term (A) is estimated as
+                                                                     Z                
+                                    |ω(t, x)| 2                            |ω(t, x)|
+                                 Z
+                         (A) =               rx dx ≤                                 dx L(t)2
+                               Ω(t)    rx                             Ω(t)    rx
+(A.12)
+                                     ω0
+                             ≤                        L(t)2 .
+                                     r     L1 (R3 )
+
+To estimate the term (B), we observe that we have the relation
+                (Φt )−1 (Ω(t)c ) = {(Φt )−1 (x) ∈ R3 : x ∈ Ω(t)c } = {y ∈ R3 : rx > L(t)}
+                                 ⊂ {y ∈ R3 : ry > 1}.
+Also, in the region {y ∈ R3 : ry > 1}, we have the inequality
+                               1 t r
+                                                          Z t
+                 Φrt (y)
+                                 Z
+(A.13)                   =1+        u (s, Φs (y))ds ≤ 1 +     ur (s, Φs (y))ds ≤ L(t).
+                   ry          ry 0                        0
+
+Using these two observations, we can estimate the term (B):
+                                  |ω(t, x)| 2                     |ω0 (y)| r
+                          Z                        Z
+                   (B) =                   rx dx =                        [Φt (y)]2 dy
+                           Ω(t) c    rx                  −1    c
+                                                    (Φt ) (Ω(t) )   r y
+(A.14)                                          r 2
+                                    |ω0 (y)| 2 Φt (y)
+                          Z
+                       ≤                    ry           dy ≤ ∥rω0 ∥L1 (R3 ) L(t)2 .
+                           {ry >1}     ry        ry
+Gathering estimates (A.12) and (A.14), we have shown the first estimate (A.9). Now to prove the
+second estimate (A.10), we consider the case x ∈ Ω(t) and x ∈ Ω(t)c . For the first case x ∈ Ω(t),
+we use the conservation (A.11) to get
+                                      |ω(t, x)|      |ω0 (y)|        ω0
+(A.15)                 |ω(t, x)| =              rx ≤          L(t) ≤                                  L(t).
+                                         rx            ry            r                     L∞ (R3 )
+
+For the other case x ∈ Ω(t)c , we use the conservation (A.11) and the inequality (A.13) to get
+                                     |ω(t, x)|              Φr (y)
+(A.16)                 |ω(t, x)| =             rx = |ω0 (y)| t     ≤ ∥ω0 ∥L∞ (R3 ) L(t).
+                                        rx                   ry
+Summing up estimates (A.15) and (A.16), we obtain the second estimate (A.10). This finishes the
+proof.                                                                                       □
+
+
+Data availability statement. Data sharing is not applicable to this article as no new data were
+created or analyzed in this study.
+                                                                22
+                                                   References
+ [1] Hammadi Abidi, Taoufik Hmidi, and Sahbi Keraani. On the global well-posedness for the axisymmetric Euler
+     equations. Math. Ann., 347(1):15–41, 2010.
+ [2] Bilal Al Taki and Christophe Lacave. Degenerate lake equations: classical solutions and vanishing viscosity limit.
+     Nonlinearity, 36(1):653–678, 2023.
+ [3] Jean Bourgain and Dong Li. Strong ill-posedness of the incompressible Euler equation in borderline Sobolev
+     spaces. Invent. Math., 201(1):97–157, 2015.
+ [4] Jean Bourgain and Dong Li. Strong ill-posedness of the 3D incompressible Euler equation in borderline spaces.
+     Int. Math. Res. Not. IMRN, (16):12155–12264, 2021.
+ [5] Michael Carley. https://people.bath.ac.uk/ensmjc/research/vortex/headon.html, 2020.
+ [6] Stephen Childress. Models of vorticity growth in Euler flows I, Axisymmetric flow without swirl and II, Almost
+     2-D dynamics. AML reports 05-07 and 06-07, Courant institute of mathematical sciences, 2007.
+ [7] Stephen Childress. Growth of anti-parallel vorticity in Euler flows. Phys. D, 237(14-17):1921–1925, 2008.
+ [8] Stephen Childress and Andrew D. Gilbert. Eroding dipoles and vorticity growth for Euler flows in R3 : the hairpin
+     geometry as a model for finite-time blowup. Fluid Dyn. Res., 50(1):011418, 40, 2018.
+ [9] Stephen Childress, Andrew D. Gilbert, and Paul Valiant. Eroding dipoles and vorticity growth for Euler flows
+     in R3 : axisymmetric flow without swirl. J. Fluid Mech., 805:1–30, 2016.
+[10] Kyudong Choi and In-Jee Jeong. On vortex stretching for anti-parallel axisymmetric flows. Amer. J. Math., to
+     appear, arXiv:2110.09079.
+[11] Kyudong Choi, In-Jee Jeong, and Deokwoo Lim. Global regularity for some axisymmetric Euler flows in Rd .
+     Proc. Amer. Math. Soc., to appear, arXiv:2212.11461.
+[12] Kyudong Choi, In-Jee Jeong, and Deokwoo Lim. On global regularity of some bi-rotational euler flows in R4 . J.
+     Differential Equations, 425:627–660, 2025.
+[13] Kyudong Choi, In-Jee Jeong, and Young-Jin Sim. On existence of Sadovskii vortex patch: A touching pair of
+     symmetric counter-rotating uniform vortex. arXiv:2406.11379.
+[14] C. Chu, C. Wang, C. Chang, R. Chang, and W. Chang. Head-on collision of two coaxial vortex rings: Experiment
+     and computation. Journal of Fluid Mechanics, 296:39–71, 1995.
+[15] Diego Córdoba, Luis Martı́nez-Zoroa, and Fan Zheng. Finite time singularities to the 3d incompressible euler
+     equations for solutions in C ∞ (R3 \ {0}) ∩ C 1,α ∩ L2 . arXiv:2308.12197.
+[16] R. Danshen. Axisymmetric incompressible flows with bounded vorticity. Uspekhi Mat. Nauk, 62(3(375)):73–94,
+     2007.
+[17] T Drivas and T Elgindi. Singularity formation in the incompressible Euler equation in finite and infinite time.
+     EMS Surv. Math. Sci., 10 (2023), no. 1, 1–100.
+[18] Tarek Elgindi. Finite-time singularity formation for C 1,α solutions to the incompressible Euler equations on R3 .
+     Ann. of Math. (2), 194(3):647–727, 2021.
+[19] Tarek M. Elgindi, Tej-Eddine Ghoul, and Nader Masmoudi. On the stability of self-similar blow-up for C 1,α
+     solutions to the incompressible Euler equations on R3 . Camb. J. Math., 9(4):1035–1075, 2021.
+[20] H. Feng and V. Šverák. On the Cauchy problem for axi-symmetric vortex rings. Arch. Ration. Mech. Anal.,
+     215:89–123, 2015.
+[21] Stephen Gustafson, Evan Miller, and Tai-Peng Tsai. Growth rates for anti-parallel vortex tube Euler flows in
+     three and higher dimensions. arXiv:2303.12043.
+[22] Ernst Hölder. über die unbeschränkte Fortsetzbarkeit einer stetigen ebenen Bewegung in einer unbegrenzten
+     inkompressiblen Flüssigkeit. Math. Z., 37(1):727–738, 1933.
+[23] De Huang and Jiajun Tong. Steady Contiguous Vortex-Patch Dipole Solutions of the 2D Incompressible Euler
+     Equation. arXiv:2406.09849.
+[24] Quansen Jiu, Jitao Liu, and Dongjuan Niu. Global existence of weak solutions to the incompressible axisymmetric
+     Euler equations without swirl. J. Nonlinear Sci., 31(2):Paper No. 36, 24, 2021.
+[25] Tosio Kato. Remarks on the Euler and Navier-Stokes equations in R2 . In Nonlinear functional analysis and its
+     applications, Part 2 (Berkeley, Calif., 1983), volume 45 of Proc. Sympos. Pure Math., pages 1–7. Amer. Math.
+     Soc., Providence, RI, 1986.
+[26] Tosio Kato and Gustavo Ponce. Commutator estimates and the Euler and Navier-Stokes equations. Comm. Pure
+     Appl. Math., 41(7):891–907, 1988.
+[27] Boris Khesin and Cheng Yang. Higher-dimensional Euler fluids and Hasimoto transform: counterexamples and
+     generalizations. Nonlinearity, 34(3):1525–1542, 2021.
+[28] Junha Kim and In-Jee Jeong. A simple ill-posedness proof for incompressible Euler equations in critical Sobolev
+     spaces. J. Funct. Anal., 283(10):Paper No. 109673, 34, 2022.
+[29] A. Leonard. Three dimensional vortex flows. Ann. Rev. Fluid Mech., 17:523–559, 1985.
+                                                          23
+[30] C. David Levermore, Marcel Oliver, and Edriss S. Titi. Global well-posedness for models of shallow water in a
+     basin with a varying bottom. Indiana Univ. Math. J., 45(2):479–510, 1996.
+[31] Leon Lichtenstein. über einige Existenzprobleme der Hydrodynamik. Math. Z., 32(1):608–640, 1930.
+[32] Deokwoo Lim. Global regularity of some axisymmetric, single-signed vorticity in any dimension. Commun. Math.
+     Sci., 23(1):279–298, 2025.
+[33] T. T. Lim and T. B. Nickels. Instability and reconnection in the head-on collision of two vortex rings. Nature,
+     357:225–227, 1992.
+[34] Carlotta Maffei and Carlo Marchioro. A confinement result for axisymmetric fluids. Rend. Sem. Mat. Univ.
+     Padova, 105:125–137, 2001.
+[35] Andrew J. Majda and Andrea L. Bertozzi. Vorticity and incompressible flow, volume 27 of Cambridge Texts in
+     Applied Mathematics. Cambridge University Press, Cambridge, 2002.
+[36] X. Saint Raymond. Remarks on axisymmetric solutions of the incompressible Euler system. Comm. Partial
+     Differential Equations, 19(1-2):321–334, 1994.
+[37] K. Shariff and A. Leonard. Vortex Rings. Ann. Rev. Fluid Mech., 24:235–279, 1992.
+[38] Karim Shariff, Anthony Leonard, and Joel H. Ferziger. A contour dynamics algorithm for axisymmetric flow. J.
+     Comput. Phys., 227(21):9044–9062, 2008.
+[39] Karim Shariff, Anthony Leonard, Norman J. Zabusky, and Joel H. Ferziger. Acoustics and dynamics of coaxial
+     interacting vortex rings. Fluid Dynamics Research, 3(1):337–343, 1988.
+[40] Taira Shirota and Taku Yanagisawa. Note on global existence for axially symmetric solutions of the Euler system.
+     Proc. Japan Acad. Ser. A Math. Sci., 70(10):299–304, 1994.
+[41] S. Stanaway, K. Shariff, and F. Hussain. Head-on collision of viscous vortex rings. Proceedings of the Summer
+     Program, Center for Turbulence Research, 1988.
+[42] M. R. Ukhovskii and V. I. Iudovich. Axially symmetric flows of ideal and viscous fluids filling the whole space.
+     J. Appl. Math. Mech., 32:52–61, 1968.
+[43] W. Wolibner. Un theorème sur l’existence du mouvement plan d’un fluide parfait, homogène, incompressible,
+     pendant un temps infiniment long. Math. Z., 37(1):698–726, 1933.
+[44] Cheng Yang. Vortex motion of the Euler and lake equations. J. Nonlinear Sci., 31(3):Paper No. 48, 21, 2021.
+[45] V. I. Yudovich. Non-stationary flows of an ideal incompressible fluid. Ž. Vyčisl. Mat i Mat. Fiz., 3:1032–1066,
+     1963.
+
+  The Research Institute of Basic Sciences, Seoul National University, 1 Gwanak-ro, Gwanak-gu,
+Seoul 08826, Republic of Korea.
+  Email address: dwlim95@snu.ac.kr
+
+  Department of Mathematical Sciences and RIM, Seoul National University, 1 Gwanak-ro, Gwanak-
+gu, Seoul 08826, and School of Mathematics, Korea Institute for Advanced Study, Republic of Korea.
+  Email address: injee j@snu.ac.kr
+
+
+
+
+                                                         24
+

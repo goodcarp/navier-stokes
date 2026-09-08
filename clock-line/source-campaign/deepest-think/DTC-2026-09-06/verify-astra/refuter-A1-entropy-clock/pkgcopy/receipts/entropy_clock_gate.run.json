@@ -1,0 +1,17 @@
+{
+  "source": "entropy_clock_gate.py",
+  "source_sha256": "9ee1c4e031795e7fc6f4a96b24cf5bdcff7732bb7ac27530bb6cf258df91a3f1",
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "entropy_clock_gate.py"
+  ],
+  "cwd": "~/<core-line-working-tree>/2026-09-06/new-chat/outputs/navier-stokes-pass8",
+  "exit_code": 0,
+  "python": "3.9.6",
+  "sympy": "1.14.0",
+  "completed_utc": "2026-09-06T12:23:28.210418+00:00",
+  "elapsed_seconds": 2.423460544,
+  "stdout_sha256": "0400943cda9170322f8a8742bb8f657600ca9efc942b873d4197236c579645a7",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Exact entropy/scaling and auxiliary scalar kernel controls only; the analytical record-clock proof is separate."
+}

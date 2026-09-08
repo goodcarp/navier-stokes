@@ -1,0 +1,293 @@
+{
+  "status": "COMPLETED FINITE-CYLINDER DIAGNOSTIC; NOT WHOLE-SPACE NS VALIDATION",
+  "complete": true,
+  "parameters": {
+    "nr": 192,
+    "nz": 2049,
+    "R": 8.0,
+    "L": 16.0,
+    "mapping": 4.0,
+    "J": 4,
+    "nu": 0.001,
+    "T": 0.001,
+    "dt": 0.0001,
+    "steps": 10,
+    "dealias": "padding",
+    "backend": "fast",
+    "fft_workers": 4
+  },
+  "source_sha256": {
+    "evolve_full_mac.py": "2e671a3599fc05ed3d0fdef657a75bb0e9dceeab05fb1b96c4c5fc7243a7fe95",
+    "fast_full_mac.py": "3a7f76fcdaa98ccc39a3215380236f1154b09677bda7afca96c728ce1a5eca75",
+    "initial_full_field.py": "0834a5f75d2f84ec6bec5300191cb84ebb21d4b0236a0b8591e6d9d52eae2f0a",
+    "run_resolved_mac.py": "c14cec3ed65826dfa61cff9024efd48d1dac893732240c03dc4f1d48eb6b8b45"
+  },
+  "initial_reconstruction": {
+    "sampled_initial_energy": 81037.93945834224,
+    "sampled_initial_core_Omega": 0.9999999999999997,
+    "removed_axial_mode_count": 0,
+    "sampled_initial_divergence_L2": 30.522645684814968,
+    "projection_and_axial_filter_correction_L2": 1.8015756206939315,
+    "projected_initial_derivatives": {
+      "Omega_t": 1.9968441269771982,
+      "b_t": 2.2064354234708143,
+      "beta_t": 0.20960037304767892,
+      "mean_G_fixed_t": 90.69349713914669,
+      "K_t": 428.6565044349648,
+      "energy_t": -4518.329638272178
+    }
+  },
+  "history": [
+    {
+      "time": 0,
+      "energy": 81036.31662098368,
+      "K": 6.456397545226193,
+      "discrete_dissipation": 4518329.638272349,
+      "divergence_L2": 4.3641597610025147e-11,
+      "core_b": 0.9999954545504665,
+      "core_Omega": 0.9999999999999202,
+      "core_beta": 0.9999954545505463,
+      "mean_G_fixed": 41.87018130432929,
+      "mean_G_branch": 41.87018150423812,
+      "mean_G_branch_radius": 0.21547096370702848,
+      "scope": "Finite-cylinder discrete observables, not whole-space NS endpoint certificates.",
+      "angular_mode_energies": [
+        81029.86022343845,
+        6.456397545226196,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 0.0001,
+      "energy": 81035.86470679163,
+      "K": 6.499771292056694,
+      "discrete_dissipation": 4515941.183238004,
+      "divergence_L2": 4.352244426322812e-11,
+      "core_b": 1.000216169430973,
+      "core_Omega": 1.0001959818896922,
+      "core_beta": 1.0000201835856637,
+      "mean_G_fixed": 41.87859979828208,
+      "mean_G_branch": 41.87862003480852,
+      "mean_G_branch_radius": 0.21552180438461402,
+      "scope": "Finite-cylinder discrete observables, not whole-space NS endpoint certificates.",
+      "energy_balance_defect": -0.0002006509708704085,
+      "angular_mode_energies": [
+        81029.36493549956,
+        6.499359060952295,
+        0.0004121016952170029,
+        1.2933204627898567e-07,
+        7.714330633983747e-11
+      ]
+    },
+    {
+      "time": 0.0002,
+      "energy": 81035.4129513184,
+      "K": 6.544280843429464,
+      "discrete_dissipation": 4515471.813665294,
+      "divergence_L2": 4.352977040207158e-11,
+      "core_b": 1.0004363350448762,
+      "core_Omega": 1.0003924378056295,
+      "core_beta": 1.0000438800190683,
+      "mean_G_fixed": 41.88547201356108,
+      "mean_G_branch": 41.88575070996793,
+      "mean_G_branch_radius": 0.2156465453587449,
+      "scope": "Finite-cylinder discrete observables, not whole-space NS endpoint certificates.",
+      "energy_balance_defect": -0.0003854743558560081,
+      "angular_mode_energies": [
+        81028.86867047509,
+        6.5426418882667114,
+        0.001637029757192915,
+        1.9217832785350572e-06,
+        3.622287352196259e-09
+      ]
+    },
+    {
+      "time": 0.00030000000000000003,
+      "energy": 81034.96115992707,
+      "K": 6.589394193555024,
+      "discrete_dissipation": 4516963.921997124,
+      "divergence_L2": 4.343028106663692e-11,
+      "core_b": 1.0006549249436345,
+      "core_Omega": 1.0005973692602743,
+      "core_beta": 1.0000575213218907,
+      "mean_G_fixed": 41.890151370746004,
+      "mean_G_branch": 41.891462438949624,
+      "mean_G_branch_radius": 0.2158453047772908,
+      "scope": "Finite-cylinder discrete observables, not whole-space NS endpoint certificates.",
+      "energy_balance_defect": -0.0005550789023420766,
+      "angular_mode_energies": [
+        81028.3717657336,
+        6.585738585484615,
+        0.0036463585102099205,
+        9.214327552294206e-06,
+        3.523264490563051e-08
+      ]
+    },
+    {
+      "time": 0.0004,
+      "energy": 81034.50913202271,
+      "K": 6.634509662818864,
+      "discrete_dissipation": 4520482.654827962,
+      "divergence_L2": 4.337258081540799e-11,
+      "core_b": 1.0008709332332033,
+      "core_Omega": 1.0008035606679049,
+      "core_beta": 1.000067318470823,
+      "mean_G_fixed": 41.89160821745154,
+      "mean_G_branch": 41.89560225055285,
+      "mean_G_branch_radius": 0.2161195413066148,
+      "scope": "Finite-cylinder discrete observables, not whole-space NS endpoint certificates.",
+      "energy_balance_defect": -0.0007106544256010316,
+      "angular_mode_energies": [
+        81027.87462235997,
+        6.62808120263067,
+        0.006400704320105174,
+        2.758200983600204e-05,
+        1.738582584567439e-07
+      ]
+    },
+    {
+      "time": 0.0005,
+      "energy": 81034.05665897044,
+      "K": 6.679051797251635,
+      "discrete_dissipation": 4526113.040301742,
+      "divergence_L2": 4.363727661843775e-11,
+      "core_b": 1.001083372700106,
+      "core_Omega": 1.001005447254091,
+      "core_beta": 1.0000778471747869,
+      "mean_G_fixed": 41.88839228157633,
+      "mean_G_branch": 41.897981186617415,
+      "mean_G_branch_radius": 0.21647255343502586,
+      "scope": "Finite-cylinder discrete observables, not whole-space NS endpoint certificates.",
+      "energy_balance_defect": -0.0008539219371486162,
+      "angular_mode_energies": [
+        81027.37760717321,
+        6.669131563530283,
+        0.00985599078780953,
+        6.365436538001932e-05,
+        5.885681635484061e-07
+      ]
+    },
+    {
+      "time": 0.0006000000000000001,
+      "energy": 81033.60352235328,
+      "K": 6.722583781495166,
+      "discrete_dissipation": 4533956.852038327,
+      "divergence_L2": 4.343899096726858e-11,
+      "core_b": 1.0012912951050819,
+      "core_Omega": 1.001206667373521,
+      "core_beta": 1.0000845257371118,
+      "mean_G_fixed": 41.878584031857514,
+      "mean_G_branch": 41.89839767997113,
+      "mean_G_branch_radius": 0.21691002594055905,
+      "scope": "Finite-cylinder discrete observables, not whole-space NS endpoint certificates.",
+      "energy_balance_defect": -0.0009870444778696807,
+      "angular_mode_energies": [
+        81026.88093857179,
+        6.708487310368167,
+        0.013970253950277876,
+        0.00012464556961131837,
+        1.5716071116777185e-06
+      ]
+    },
+    {
+      "time": 0.0007,
+      "energy": 81033.14949256694,
+      "K": 6.7649090380697485,
+      "discrete_dissipation": 4544129.040431489,
+      "divergence_L2": 4.344931062868944e-11,
+      "core_b": 1.0014938167847225,
+      "core_Omega": 1.001404751135459,
+      "core_beta": 1.0000889407097007,
+      "mean_G_fixed": 41.85973589305247,
+      "mean_G_branch": 41.89668504511651,
+      "mean_G_branch_radius": 0.2174405304345913,
+      "scope": "Finite-cylinder discrete observables, not whole-space NS endpoint certificates.",
+      "energy_balance_defect": -0.001112536196667957,
+      "angular_mode_energies": [
+        81026.38458352884,
+        6.745976828084057,
+        0.018710421477715077,
+        0.00021821204531244956,
+        3.5764626637768674e-06
+      ]
+    },
+    {
+      "time": 0.0008,
+      "energy": 81032.69432778032,
+      "K": 6.806138629030806,
+      "discrete_dissipation": 4556753.44790895,
+      "divergence_L2": 4.357832199086959e-11,
+      "core_b": 1.001690123697812,
+      "core_Omega": 1.0016029422104082,
+      "core_beta": 1.0000870419641652,
+      "mean_G_fixed": 41.828804996836425,
+      "mean_G_branch": 41.89278808594689,
+      "mean_G_branch_radius": 0.21807586821899083,
+      "scope": "Finite-cylinder discrete observables, not whole-space NS endpoint certificates.",
+      "energy_balance_defect": -0.0012331983970339522,
+      "angular_mode_energies": [
+        81025.88818915137,
+        6.781720111103153,
+        0.024058545103253164,
+        0.0003526950536392889,
+        7.277770773532948e-06
+      ]
+    },
+    {
+      "time": 0.0009000000000000001,
+      "energy": 81032.23777331664,
+      "K": 6.846709062609384,
+      "discrete_dissipation": 4571957.738877945,
+      "divergence_L2": 4.3435508917161273e-11,
+      "core_b": 1.0018794009512964,
+      "core_Omega": 1.0018027147188613,
+      "core_beta": 1.0000765482378,
+      "mean_G_fixed": 41.78208041033392,
+      "mean_G_branch": 41.886869532262345,
+      "mean_G_branch_radius": 0.21883111082903842,
+      "scope": "Finite-cylinder discrete observables, not whole-space NS endpoint certificates.",
+      "energy_balance_defect": -0.001352102743878092,
+      "angular_mode_energies": [
+        81025.39106425407,
+        6.816140659961269,
+        0.030016930966163875,
+        0.0005377959575422861,
+        1.3675724399139039e-05
+      ]
+    },
+    {
+      "time": 0.001,
+      "energy": 81031.7795614561,
+      "K": 6.887351121792248,
+      "discrete_dissipation": 4589868.380755373,
+      "divergence_L2": 4.350917912974978e-11,
+      "core_b": 1.0020609213301481,
+      "core_Omega": 1.0019948799258196,
+      "core_beta": 1.0000659099219482,
+      "mean_G_fixed": 41.715109560549756,
+      "mean_G_branch": 41.87943915370823,
+      "mean_G_branch_radius": 0.21972419102877475,
+      "scope": "Finite-cylinder discrete observables, not whole-space NS endpoint certificates.",
+      "energy_balance_defect": -0.0014726572943857263,
+      "angular_mode_energies": [
+        81024.89221033435,
+        6.849929143066622,
+        0.036612037856420476,
+        0.0007856694783492487,
+        2.4271390852025954e-05
+      ]
+    }
+  ],
+  "remaining_errors": [
+    "finite radial no-slip wall and periodic axial images",
+    "initial sampling and weighted projection",
+    "continuous divergence and smooth axis reconstruction",
+    "angular/radial/axial truncation",
+    "time discretization",
+    "whole-space tails and space-time residual",
+    "endpoint successor class"
+  ],
+  "seconds": 477.120516723
+}

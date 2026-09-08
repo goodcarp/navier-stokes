@@ -1,0 +1,35 @@
+nsring.py sha256 = 3c8e93b2da7c8f5437f74c3c39e67fb7b5ef6b29d92e01204e3176d817969f03
+
+V1  Hill spherical vortex control, exactly as sharp/viscous-numerics validate.py
+    (exact monopole Dirichlet data; C2 operator control 3/r -> 1/r must FIRE)
+   h = 0.080  rel err psi1 = 6.116e-03   a_nose = 0.17061 (exact 1/5)   axis peak/U = 2.48320 (exact 5/2)   BAD-OP rel err = 1.826e+00
+   h = 0.040  rel err psi1 = 1.677e-03   a_nose = 0.18030 (exact 1/5)   axis peak/U = 2.49410 (exact 5/2)   BAD-OP rel err = 1.835e+00
+   h = 0.020  rel err psi1 = 4.405e-04   a_nose = 0.19446 (exact 1/5)   axis peak/U = 2.49832 (exact 5/2)   BAD-OP rel err = 1.847e+00
+   Richardson a_nose -> 0.19918   exact 0.20000
+   C3 exact-Hill: PASS    C2 operator control: FIRES
+
+V2  strain log-law on the datum's own support:  a(s) = kappa log(R/s) + c
+    fitted on the ray phi = 45 deg over s in [2 rho0, R/4], N = 6 octaves
+   delta = 30.0 deg   kappa = 0.45317   c = -0.21836   maxresid = 1.23e-02   [independent instrument: 0.48363]
+   delta = 15.0 deg   kappa = 0.47481   c = -0.19829   maxresid = 1.25e-02   [independent instrument: 0.49781]
+   delta =  7.5 deg   kappa = 0.48137   c = -0.19141   maxresid = 1.26e-02   [independent instrument: 0.49972]
+    -- equatorial mollification sweep at delta = 7.5 deg (w -> 0 is bang-bang in z)
+       w = 0.30   kappa = 0.45717
+       w = 0.20   kappa = 0.48137
+       w = 0.12   kappa = 0.49609
+       w = 0.08   kappa = 0.50091
+   viscous-numerics datum A (-M sin 2phi)  kappa = 0.40529   [that seat's probe_cone: 0.411]
+
+V3  grid convergence of kappa (delta = 15 deg)
+   h = 1/4  grid 192x192  kappa = 0.48427
+   h = 1/8  grid 384x384  kappa = 0.48103
+   h = 1/16  grid 768x768  kappa = 0.48021
+
+V4  energy and Re_E of the tapered datum  (E = ||u||_2^2, no 1/2)
+   N = 3  R =   8.0  E = 4646.61   E/(M^2 R^5) = 1.418032e-01   [sharp shell: 1.724040e-01]
+   N = 4  R =  16.0  E = 148781   E/(M^2 R^5) = 1.418891e-01   [sharp shell: 1.724040e-01]
+   N = 5  R =  32.0  E = 4.76121e+06   E/(M^2 R^5) = 1.418952e-01   [sharp shell: 1.724040e-01]
+   N = 6  R =  64.0  E = 1.5236e+08   E/(M^2 R^5) = 1.418961e-01   [sharp shell: 1.724040e-01]
+   (the tapered/mollified datum has less energy than the sharp shell -- taper + the
+    tanh(cos phi/w) equatorial smoothing both remove vorticity -- which RAISES log Re_E
+    only logarithmically and is accounted for by measuring E, never assuming it.)

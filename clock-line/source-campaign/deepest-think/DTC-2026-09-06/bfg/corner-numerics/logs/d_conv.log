@@ -1,0 +1,10 @@
+[shell N=6 h=1/6 Re0=400 lam=1.5 sign=+1] grid 576x576  R=64  E=1.1e+08 l=40.57 ReE=6.585e+05 logReE=13.398
+    T32=0.27189432847746486  T2=0.44322842709186616  ommax_final=2.0034 at t=0.4440  sup|eta| ratio=0.80114  steps=167  218.6s
+    at T32: s*=1.799 (octave 0.85)  a*=1.7863   T32*M*logReE=3.6428   T32*M*log(R)=1.1308
+[shell N=6 h=1/6 Re0=1 lam=1.5 sign=+1] grid 576x576  R=64  E=1.1e+08 l=40.57 ReE=1646 logReE=7.406
+    T32=0.5385475440807217  T2=1.035235975292082  ommax_final=2.0008 at t=1.0361  sup|eta| ratio=0.13248  steps=746  867.6s
+    at T32: s*=7.945 (octave 2.99)  a*=1.0777   T32*M*logReE=3.9886   T32*M*log(R)=2.2398
+[shell N=6 h=1/12 Re0=400 lam=1.5 sign=+1] grid 1152x1152  R=64  E=1.1e+08 l=40.57 ReE=6.585e+05 logReE=13.398
+    T32=0.2645187006650925  T2=0.4288648882385343  ommax_final=2.0002 at t=0.4289  sup|eta| ratio=0.93730  steps=323  1883.3s
+    at T32: s*=1.769 (octave 0.82)  a*=1.7622   T32*M*logReE=3.5440   T32*M*log(R)=1.1001
+wrote ~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/bfg/corner-numerics/results_d_conv.json

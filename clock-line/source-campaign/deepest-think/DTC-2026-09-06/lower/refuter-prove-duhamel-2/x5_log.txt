@@ -1,0 +1,69 @@
+====================================================================================================
+Sign of the strain kernel: at the origin vs at a point of the equatorial material plane
+====================================================================================================
+datum sign: omega^theta = -M sgn(z).  Sign-definiteness means  K * omega^theta >= 0,
+i.e.  sgn K(rs,zs) = -sgn(zs)  for every source.
+
+field point: (r,z) = (1.0, 0) -- the innermost shell on the material equatorial plane
+     rs      zs      K_origin  sgnOK@orig     K_offaxis  sgnOK@shell
+   0.60    0.05     -0.045262        True     -0.008180         True
+   0.60    0.20     -0.141551        True     -0.025630         True
+   0.60    0.50     -0.123219        True     -0.026145         True
+   0.60    1.00     -0.033204        True     -0.011593         True
+   0.60    2.00     -0.003609        True     -0.002278         True
+   0.60    5.00     -0.000111        True     -0.000101         True
+   0.90    0.05     -0.009027        True     -0.104923         True
+   0.90    0.20     -0.032256        True     -0.100856         True
+   0.90    0.50     -0.046433        True     -0.041297         True
+   0.90    1.00     -0.024374        True     -0.014395         True
+   0.90    2.00     -0.004234        True     -0.002948         True
+   0.90    5.00     -0.000159        True     -0.000145         True
+   1.00    0.05     -0.005931        True     -0.504592         True
+   1.00    0.20     -0.021644        True     -0.121255         True
+   1.00    0.50     -0.034165        True     -0.041713         True
+   1.00    1.00     -0.021101        True     -0.014480         True
+   1.00    2.00     -0.004271        True     -0.003079         True
+   1.00    5.00     -0.000173        True     -0.000159         True
+   1.10    0.05     -0.004055        True     -0.095174         True
+   1.10    0.20     -0.015032        True     -0.092036         True
+   1.10    0.50     -0.025490        True     -0.038566         True
+   1.10    1.00     -0.018084        True     -0.014139         True
+   1.10    2.00     -0.004238        True     -0.003163         True
+   1.10    5.00     -0.000187        True     -0.000171         True
+   1.50    0.05     -0.001176        True     -0.003554         True
+   1.50    0.20     -0.004512        True     -0.012174         True
+   1.50    0.50     -0.009059        True     -0.016210         True
+   1.50    1.00     -0.009403        True     -0.010143         True
+   1.50    2.00     -0.003667        True     -0.003105         True
+   1.50    5.00     -0.000231        True     -0.000214         True
+   2.00    0.05     -0.000372        True     -0.000640         True
+   2.00    0.20     -0.001455        True     -0.002443         True
+   2.00    0.50     -0.003206        True     -0.004827         True
+   2.00    1.00     -0.004271        True     -0.005120         True
+   2.00    2.00     -0.002638        True     -0.002498         True
+   2.00    5.00     -0.000264        True     -0.000247         True
+   4.00    0.05     -0.000023        True     -0.000026         True
+   4.00    0.20     -0.000093        True     -0.000104         True
+   4.00    0.50     -0.000224        True     -0.000252         True
+   4.00    1.00     -0.000401        True     -0.000442         True
+   4.00    2.00     -0.000534        True     -0.000561         True
+   4.00    5.00     -0.000222        True     -0.000217         True
+   8.00    0.05     -0.000001        True     -0.000002         True
+   8.00    0.20     -0.000006        True     -0.000006         True
+   8.00    0.50     -0.000014        True     -0.000015         True
+   8.00    1.00     -0.000028        True     -0.000029         True
+   8.00    2.00     -0.000050        True     -0.000051         True
+   8.00    5.00     -0.000064        True     -0.000064         True
+
+sources where the ORIGIN kernel has the wrong sign : 0 (proved: sgn K = -sgn z)
+sources where the SHELL  kernel has the wrong sign : 0 of 48
+
+Consequence: L2's 'every material element contributes with the same sign, for all time'
+and L4's 'P1 >= 0' are properties of the ORIGIN ONLY.  At the material innermost shell the
+kernel is sign-INDEFINITE, so the analogue of P1 has no sign, and the reduction of (H2) to
+one inequality on one integral does not transfer.  GAP 2 is not the O(1/L) size step the
+NOTE describes; it is the loss of the entire sign structure the argument is built on.
+
+What DOES transfer (confirmed): the SIZE.  For the sharp shell the origin value is
+a(0) = (M/2) log(R/rho0) EXACTLY (x4b), and the frame's material-shell value is
+(M/2) log(R/rho0) + 0.216773 M, so the difference is exactly the constant 0.216773 M.

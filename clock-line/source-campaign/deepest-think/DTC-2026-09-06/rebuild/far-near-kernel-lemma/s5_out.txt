@@ -1,0 +1,41 @@
+exact piecewise split of a(x) for the bang-bang cap (rho0=1, R=4096, M=1)
+    rho phi(deg)     far(x)     far(0)  |far-far0|      C1    collar  bnd 4/s+pi/8      inner      C2in        sum  (M/2)lnR/2rho
+    8.0     10.0    2.75849    2.77259    0.014102  0.2920   0.05816        23.428  -1.18e-02   0.01475    2.80481        2.77259
+    8.0     45.0    2.75933    2.77259    0.013262  0.2920   0.16650         6.050  -4.69e-03   0.01475    2.92114        2.77259
+    8.0     90.0    2.78288    2.77259    0.010291  0.2920   0.60880         4.393   3.23e-03   0.01475    3.39491        2.77259
+   64.0     10.0    1.71879    1.73287    0.014073  0.2920   0.05816        23.428  -1.18e-02   0.01475    1.76510        1.73287
+   64.0     45.0    1.71962    1.73287    0.013251  0.2920   0.16650         6.050  -4.69e-03   0.01475    1.88143        1.73287
+   64.0     90.0    1.74315    1.73287    0.010283  0.2920   0.60880         4.393   3.23e-03   0.01475    2.35519        1.73287
+  512.0     10.0    0.68086    0.69315    0.012288  0.2920   0.05816        23.428  -1.18e-02   0.01475    0.72717        0.69315
+  512.0     45.0    0.68062    0.69315    0.012523  0.2920   0.16650         6.050  -4.69e-03   0.01475    0.84243        0.69315
+  512.0     90.0    0.70294    0.69315    0.009794  0.2920   0.60880         4.393   3.23e-03   0.01475    1.31498        0.69315
+KILL K4 did not fire    KILL K5 did not fire
+
+K5': near part (collar+inner) vs log(rho/rho0) at phi = 45 deg (must be flat)
+   rho=    2.0  near = +0.166500
+   rho=    4.0  near = +0.161956
+   rho=    8.0  near = +0.161814
+   rho=   16.0  near = +0.161810
+   rho=   32.0  near = +0.161809
+   rho=   64.0  near = +0.161809
+   fitted d(near)/d log(rho/rho0) = -0.00099  (threshold 0.02)
+KILL K5' did not fire
+
+inner-edge plateau constant c_edge(phi) = a(rho0+,phi) - (M/2) log(R/rho0),  R -> inf
+   phi=  1.0 deg   c_edge = +0.787068
+   phi=  2.0 deg   c_edge = +0.613980
+   phi=  3.0 deg   c_edge = +0.512899
+   phi=  5.0 deg   c_edge = +0.386077
+   phi=  7.5 deg   c_edge = +0.286389
+   phi= 10.0 deg   c_edge = +0.216773
+   phi= 15.0 deg   c_edge = +0.121857
+   phi= 20.0 deg   c_edge = +0.058823
+   phi= 30.0 deg   c_edge = -0.017395
+   phi= 45.0 deg   c_edge = -0.061664
+   phi= 60.0 deg   c_edge = -0.050386
+   phi= 75.0 deg   c_edge = +0.008488
+   phi= 90.0 deg   c_edge = +0.115901
+   (c_edge grows without bound as phi -> 0: the bang-bang cap's inner-edge CORNER on the axis,
+    where eta = omega^theta/r is unbounded -- the same inadmissibility the sharp-clock refuter found.)
+
+elapsed 134.6s  SCRIPT-SHA256 7943f0fd4ed6796eae930f057e7a2dbe4e6fb730a67a6795a570bcb15ecd888b

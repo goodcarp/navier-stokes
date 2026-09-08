@@ -1,0 +1,84 @@
+{
+ "rows": [
+  {
+   "delta_deg": "3",
+   "P_h_1": 0.9999641458864071,
+   "P_h_1p5": 1.49798979101601,
+   "seat_P_h_1p5": 1.49799,
+   "my_minus_seat": 2.0898398989110945e-07,
+   "ratio_Phi_h": 1.4980435020378993,
+   "synthesis_Phi_h": 1.498,
+   "resid_unnormalised": 6.8150760947641e-06,
+   "resid_normalised": 2.9040078704451186e-05
+  },
+  {
+   "delta_deg": "5",
+   "P_h_1": 0.9998342781997912,
+   "P_h_1p5": 1.4911461440273879,
+   "seat_P_h_1p5": 1.491146,
+   "my_minus_seat": 1.4402738779395463e-07,
+   "ratio_Phi_h": 1.491393300409951,
+   "synthesis_Phi_h": 1.4914,
+   "resid_unnormalised": 0.00017021320411169538,
+   "resid_normalised": 4.492148349841116e-06
+  },
+  {
+   "delta_deg": "7.5",
+   "P_h_1": 0.9994424610421773,
+   "P_h_1p5": 1.4727334519219526,
+   "seat_P_h_1p5": 1.472733,
+   "my_minus_seat": 4.5192195252674594e-07,
+   "ratio_Phi_h": 1.473555016250007,
+   "synthesis_Phi_h": 1.4736,
+   "resid_unnormalised": 0.0005880483700104671,
+   "resid_normalised": 3.052643186275453e-05
+  },
+  {
+   "delta_deg": "10",
+   "P_h_1": 0.9986842851802807,
+   "P_h_1p5": 1.4425170072839808,
+   "seat_P_h_1p5": 1.442517,
+   "my_minus_seat": 7.283980751893182e-09,
+   "ratio_Phi_h": 1.444417448727132,
+   "synthesis_Phi_h": 1.4444,
+   "resid_unnormalised": 0.0013036504541810478,
+   "resid_normalised": 1.2080259714796633e-05
+  },
+  {
+   "delta_deg": "15",
+   "P_h_1": 0.9956154899429137,
+   "P_h_1p5": 1.3537207391307702,
+   "seat_P_h_1p5": 1.353721,
+   "my_minus_seat": 2.608692297734194e-07,
+   "ratio_Phi_h": 1.3596822797608235,
+   "synthesis_Phi_h": 1.3597,
+   "resid_unnormalised": 0.004397485378561249,
+   "resid_normalised": 1.3032462437637176e-05
+  },
+  {
+   "delta_deg": "20",
+   "P_h_1": 0.9897902709765801,
+   "P_h_1p5": 1.245538651545808,
+   "seat_P_h_1p5": 1.245539,
+   "my_minus_seat": 3.4845419194518e-07,
+   "ratio_Phi_h": 1.2583864360647765,
+   "synthesis_Phi_h": 1.2584,
+   "resid_unnormalised": 0.010220397690870913,
+   "resid_normalised": 1.0778715212530558e-05
+  },
+  {
+   "delta_deg": "30",
+   "P_h_1": 0.9672504699638694,
+   "P_h_1p5": 1.032402625583975,
+   "seat_P_h_1p5": 1.032403,
+   "my_minus_seat": 3.7441602485088765e-07,
+   "ratio_Phi_h": 1.06735810179812,
+   "synthesis_Phi_h": 1.0674,
+   "resid_unnormalised": 0.0327874971107596,
+   "resid_normalised": 3.925257811499145e-05
+  }
+ ],
+ "max_resid_unnormalised": 0.0327874971107596,
+ "max_resid_normalised": 3.925257811499145e-05,
+ "max_my_minus_seat": 4.5192195252674594e-07
+}

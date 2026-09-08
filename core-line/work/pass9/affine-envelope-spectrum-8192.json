@@ -1,0 +1,92 @@
+{
+  "status": "EXPLORATORY Fourier quadrature of exact linear rotating-affine envelope model; not a rigorous enclosure",
+  "n": 8192,
+  "length": 2.0,
+  "A": 960.0,
+  "B": 0.8841161740187493,
+  "h": 18.563588907046046,
+  "Omega": 848.7515270579993,
+  "c": 1.4,
+  "nu": 0.001,
+  "initial_energy": 44.81237968795825,
+  "initial_enstrophy": 211749.20245067478,
+  "enstrophy_energy_cap": 13.711971172106761,
+  "maximum_sampled_energy_ratio": 2.8642018076306703,
+  "sampled_peak_time": 0.0037600000000000003,
+  "first_sample_break_of_joint_positive_energy_rate_and_flat_force": 0.00079,
+  "samples": [
+    {
+      "t": 0.0,
+      "energy_ratio": 1.0,
+      "energy_rate": 46179.050734461685,
+      "local_covariance": 77.5771592165874,
+      "initial_radius_times_flat_force": 2032.1766812877574,
+      "integrated_covariance": 27.527504995756058
+    },
+    {
+      "t": 0.0001,
+      "energy_ratio": 1.1115137959288637,
+      "energy_rate": 53841.7201322336,
+      "local_covariance": 117.56276388960862,
+      "initial_radius_times_flat_force": 2101.951563760529,
+      "integrated_covariance": 32.04796035679842
+    },
+    {
+      "t": 0.00025,
+      "energy_ratio": 1.3116809863622747,
+      "energy_rate": 65742.75202610304,
+      "local_covariance": 194.71436591821737,
+      "initial_radius_times_flat_force": 2115.201418528183,
+      "integrated_covariance": 39.07101496971477
+    },
+    {
+      "t": 0.0005,
+      "energy_ratio": 1.7268637252976633,
+      "energy_rate": 81423.95848142228,
+      "local_covariance": 362.5292453990549,
+      "initial_radius_times_flat_force": 1645.8143003685514,
+      "integrated_covariance": 48.335469636442134
+    },
+    {
+      "t": 0.001,
+      "energy_ratio": 2.552817094779542,
+      "energy_rate": 47497.29946529599,
+      "local_covariance": 630.145847964501,
+      "initial_radius_times_flat_force": -1813.058301887746,
+      "integrated_covariance": 28.40332219757322
+    },
+    {
+      "t": 0.002,
+      "energy_ratio": 2.3981524484591326,
+      "energy_rate": 22433.429754110683,
+      "local_covariance": 426.37735260109116,
+      "initial_radius_times_flat_force": -4297.316267932341,
+      "integrated_covariance": 13.615771734040468
+    },
+    {
+      "t": 0.005,
+      "energy_ratio": 2.280926503111097,
+      "energy_rate": -17357.096006157186,
+      "local_covariance": -305.61560069690216,
+      "initial_radius_times_flat_force": -2698.202786831588,
+      "integrated_covariance": -9.85743313437262
+    },
+    {
+      "t": 0.01,
+      "energy_ratio": 0.18480802472590718,
+      "energy_rate": 587.5404983864618,
+      "local_covariance": 46.32327364431417,
+      "initial_radius_times_flat_force": 616.7268317611615,
+      "integrated_covariance": 0.504505877853275
+    },
+    {
+      "t": 0.02,
+      "energy_ratio": 0.002216789869084501,
+      "energy_rate": -50.0281190528921,
+      "local_covariance": -0.033678517319545305,
+      "initial_radius_times_flat_force": 11.464475756972583,
+      "integrated_covariance": -0.014891639675161142
+    }
+  ],
+  "scope": "flat momentum-flux divergence at the central model ray; not actual cylindrical angular-momentum torque"
+}

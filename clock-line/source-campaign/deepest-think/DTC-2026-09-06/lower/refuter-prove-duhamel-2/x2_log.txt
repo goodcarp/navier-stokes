@@ -1,0 +1,22 @@
+nsring.py sha256 = 3c8e93b2da7c8f5437f74c3c39e67fb7b5ef6b29d92e01204e3176d817969f03
+
+========================================================================================================
+Q: is  a >= 0  on supp(omega)?   (the premise 'P1 >= 0' rests on)
+========================================================================================================
+ N       L  min a on supp  max a on supp  #nodes a<0  frac of supp         P1  P1(a<0) part
+ 3  2.0794      -0.447430       1.035944        3184       0.56155    0.41783      -0.01121
+ 4  2.7726      -0.449811       1.375503       12775       0.55984    0.78105      -0.01121
+ 5  3.4657      -0.450433       1.714883       51165       0.55902    1.25936      -0.01121
+ 6  4.1589      -0.450635       2.054217      204824       0.55858    1.85278      -0.01121
+
+   N=3: a<0 on 3184 support nodes (56.16% of supp), min a = -0.44743, rho in [4.002,10.762] (R=8.0), |omega| there up to 0.9994
+   N=4: a<0 on 12775 support nodes (55.98% of supp), min a = -0.44981, rho in [7.876,21.525] (R=16.0), |omega| there up to 0.9989
+   N=5: a<0 on 51165 support nodes (55.90% of supp), min a = -0.45043, rho in [15.750,43.046] (R=32.0), |omega| there up to 0.9987
+   N=6: a<0 on 204824 support nodes (55.86% of supp), min a = -0.45063, rho in [31.375,86.090] (R=64.0), |omega| there up to 0.9987
+
+threshold sensitivity (support cut at thr*max|omega|), N = 5:
+   thr = 1e-01   min a on supp = -0.448919   #(a<0) = 28617   P1(a<0) = -1.107e-02
+   thr = 1e-02   min a on supp = -0.450433   #(a<0) = 39676   P1(a<0) = -1.121e-02
+   thr = 1e-03   min a on supp = -0.450433   #(a<0) = 51165   P1(a<0) = -1.121e-02
+   thr = 1e-04   min a on supp = -0.450433   #(a<0) = 63794   P1(a<0) = -1.121e-02
+   thr = 1e-06   min a on supp = -0.450433   #(a<0) = 86306   P1(a<0) = -1.121e-02

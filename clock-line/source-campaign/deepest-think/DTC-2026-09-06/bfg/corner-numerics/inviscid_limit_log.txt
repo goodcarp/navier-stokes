@@ -1,0 +1,27 @@
+THE nu -> 0 LIMIT AT FIXED DATUM (does M T_d saturate?)
+  N=5 (parent resweep):
+     Re0=1       nu=1        M T_d=0.9567
+     Re0=2       nu=0.5      M T_d=0.6859   change -28.31%
+     Re0=4       nu=0.25     M T_d=0.5405   change -21.19%
+     Re0=16      nu=0.0625   M T_d=0.3911   change -27.64%
+     Re0=100     nu=0.01     M T_d=0.3379   change -13.60%
+     Re0=400     nu=0.0025   M T_d=0.3289   change  -2.68%
+     Re0=1600    nu=0.000625 M T_d=0.3268   change  -0.63%
+     => over the last factor 16 in nu, M T_d moved 3.29%   (saturating; the inviscid value)
+  N=6 (mine):
+     Re0=1       nu=1        M T_d=0.5385
+     Re0=4       nu=0.25     M T_d=0.3812   change -29.23%
+     Re0=16      nu=0.0625   M T_d=0.3011   change -20.99%
+     Re0=25      nu=0.04     M T_d=0.2896   change  -3.84%
+     Re0=100     nu=0.01     M T_d=0.2716   change  -6.20%
+     Re0=400     nu=0.0025   M T_d=0.2659   change  -2.10%
+     => over the last factor 4 in nu, M T_d moved 2.10%   (saturating; the inviscid value)
+  N=7 (mine):
+     Re0=6.25    nu=0.16     M T_d=0.2753
+     Re0=100     nu=0.01     M T_d=0.2272   change -17.47%
+     Re0=400     nu=0.0025   M T_d=0.2232   change  -1.73%
+     => over the last factor 4 in nu, M T_d moved 1.73%   (saturating; the inviscid value)
+
+So for a FIXED datum shape the doubling time has a POSITIVE nu->0 limit.
+Driving M T_d down requires more octaves, not less viscosity.
+Smallest M T_d reached anywhere: 0.2232. BFG's shape needs it below ~1/c(3/2).

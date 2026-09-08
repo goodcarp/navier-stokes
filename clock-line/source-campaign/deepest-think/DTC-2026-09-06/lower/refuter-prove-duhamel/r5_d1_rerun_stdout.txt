@@ -1,0 +1,111 @@
+==============================================================================
+PART A -- symbolic re-derivation of the identities (sympy)
+==============================================================================
+(I1) residual  e_r . [NS] - claimed  =  0
+omega^theta = Derivative(ur(R, Z, T), Z) - Derivative(uz(R, Z, T), R)   (expected d_z u^r - d_r u^z)
+(I2a) residual  e_theta . [vorticity eq] - claimed w-equation  =  0
+(I2b) residual  [w-eq with w=r eta] - r*[eta-eq with 5D Laplacian]  =  0
+(I3a) residual  D_t(u^r/r) - [D_t(u^r)/r - a^2]  =  0
+(I3b) residual  D_t a - [-a^2 + beta + nu V]  (after using I1)  =  0
+ALL SYMBOLIC IDENTITIES VERIFIED (residual identically 0).
+
+==============================================================================
+PART B -- the three clock routes and their exact constants
+==============================================================================
+Notation: a0 = a(x0,0), theta = a0 T_d, and asymptotically
+          c2 := M T_d log Re_E = (2/kappa) theta   (kappa = strain per e-fold;
+          kappa = 1/2 for the bang-bang plateau, so c2 = 4 theta).
+
+R0 frozen strain a(t) == a0 :   theta = log(3/2) = 0.4054651   c2 = 1.6218604
+   *** R0 is NOT a valid route for an UPPER bound on T_d: a(t) is only constant if
+       beta == a^2 exactly.  beta < a^2 makes a decay, so exp(a0 t) OVERSTATES the
+       growth and log(3/2)/a0 UNDERSTATES T_d.  The frame's c2 = 4 log(3/2) = 1.62186
+       is the value of an idealisation, not of a bound.
+
+R1 Taylor/Duhamel, hypothesis  sup|beta| <= C a0^2  on the window:
+   need  1 + x - (3/4) C x^2 >= 3/2 ,  x = a0 tau .  Solvable iff C <= 2/3.
+   C_max = 0.6666667  (at C = C_max the only root is x = 2/(3C) = 1.0000, c2 = 4.0000)
+   C = 0.0000  theta = 0.500000   c2 = 2.000000
+   C = 0.0500  theta = 0.509744   c2 = 2.038976
+   C = 0.1000  theta = 0.520304   c2 = 2.081215
+   C = 0.2000  theta = 0.544467   c2 = 2.177866
+   C = 0.3333  theta = 0.585786   c2 = 2.343146
+   C = 0.5000  theta = 0.666667   c2 = 2.666667
+   C = 0.6000  theta = 0.759747   c2 = 3.038988
+   C = 0.6667  theta = 1.000000   c2 = 4.000000
+   C = 0.7000  theta = FAILS   c2 = --
+   C = 1.0000  theta = FAILS   c2 = --
+   C = 4.0000  theta = FAILS   c2 = --
+
+   TRANSLATION INTO THE FRAME'S UNITS.  a0 = (M/2)L, L = log(R/rho0), so a0^2 = M^2L^2/4,
+   and |d_t^2 omega| = |beta||omega| <= C a0^2 (3/2)M = (3/8) C M^3 L^2.
+   C <= 2/3  <=>  |d_t^2 omega| <= 0.2500 M^3 log^2(R/rho0)  on the window.
+   A bound |d_t^2 omega| <~ M^3 log^2 with an O(1) constant is therefore NOT enough:
+   at the constant 1 (C = 4) the O(tau^2) remainder is 1.5 x the O(tau) gain already at
+   x = 1/2, and no x reaches 3/2 at all; the route closes only below the constant 1/4,
+   i.e. C = 4 is 6 x the largest admissible C = 2/3.
+
+   remainder/gain at x = theta:   (3/4) C x^2 / x = (3/4) C x
+     C = 0.250  at x = 1/2 :  remainder/gain = 0.0938
+     C = 0.500  at x = 1/2 :  remainder/gain = 0.1875
+     C = 0.667  at x = 1/2 :  remainder/gain = 0.2500
+     C = 1.000  at x = 1/2 :  remainder/gain = 0.3750
+     C = 2.000  at x = 1/2 :  remainder/gain = 0.7500
+     C = 4.000  at x = 1/2 :  remainder/gain = 1.5000
+
+R2 Riccati, hypothesis  beta + nu V >= -q^2 a0^2  along the trajectory:
+   a' >= -a^2 - B  =>  int_0^t a >= log[cos(th0 - sqrt(B) t)/cos th0],  th0 = arctan(1/q)
+   solvable iff cos th0 <= 2/3, i.e. q <= sqrt(4/5) = 0.8944272
+   q = 0.0000 (B/a0^2 = 0.00000)  theta = 0.500000   c2 = 2.000000
+   q = 0.1000 (B/a0^2 = 0.01000)  theta = 0.501467   c2 = 2.005869
+   q = 0.2000 (B/a0^2 = 0.04000)  theta = 0.505979   c2 = 2.023916
+   q = 0.3000 (B/a0^2 = 0.09000)  theta = 0.513894   c2 = 2.055575
+   q = 0.4000 (B/a0^2 = 0.16000)  theta = 0.525916   c2 = 2.103664
+   q = 0.5000 (B/a0^2 = 0.25000)  theta = 0.543334   c2 = 2.173335
+   q = 0.6000 (B/a0^2 = 0.36000)  theta = 0.568598   c2 = 2.274393
+   q = 0.7000 (B/a0^2 = 0.49000)  theta = 0.607033   c2 = 2.428132
+   q = 0.8000 (B/a0^2 = 0.64000)  theta = 0.674152   c2 = 2.696610
+   q = 0.8500 (B/a0^2 = 0.72250)  theta = 0.737493   c2 = 2.949974
+   q = 0.8940 (B/a0^2 = 0.79924)  theta = 0.915286   c2 = 3.661142
+   q = 0.8944 (B/a0^2 = 0.80000)  theta = FAILS   c2 = --
+   q = 0.9000 (B/a0^2 = 0.81000)  theta = FAILS   c2 = --
+   q = 1.0000 (B/a0^2 = 1.00000)  theta = FAILS   c2 = --
+
+   *** q = 0 (i.e. beta + nu V >= 0) gives theta = 1/2 exactly and  c2 = 2  exactly. ***
+
+   ODE cross-check of the closed form (trapezoid on RK4, a0 = 1): int_0^theta a should be log(3/2)
+     q = 0.00  int a = 0.405465108  target 0.405465108  rel 7.13e-13
+     q = 0.30  int a = 0.405465108  target 0.405465108  rel 8.09e-13
+     q = 0.60  int a = 0.405465108  target 0.405465108  rel 1.25e-12
+     q = 0.80  int a = 0.405465108  target 0.405465108  rel 2.14e-12
+
+Viscous correction (R2 + eta-loss e^{-lambda t}):  (1+theta) e^{-eps theta} = 3/2, eps = lambda/a0
+   eps = 0.000  theta = 0.500000   c2 = 2.000000
+   eps = 0.020  theta = 0.515546   c2 = 2.062186
+   eps = 0.050  theta = 0.541140   c2 = 2.164558
+   eps = 0.100  theta = 0.591383   c2 = 2.365532
+   eps = 0.200  theta = 0.738880   c2 = 2.955519
+   eps = 0.300  theta = 1.064104   c2 = 4.256418
+   eps = 0.400  theta = FAILS   c2 = --
+   eps = 0.500  theta = FAILS   c2 = --
+   eps = 0.600  theta = FAILS   c2 = --
+   eps = lambda/a0 with lambda = nu/r_*^2 = O(M) and a0 = (M/2)L  =>  eps = O(1/L),
+   so the viscous cost is O(1/log Re) in c2 and vanishes asymptotically.
+   d theta/d eps at eps = 0 = 0.750001  (analytic 3/4 = 0.75)
+
+Exact c2 for the plateau with the measured offsets (kappa = 1/2, a0 = (M/2)L + 0.216773 M,
+log Re_E = 2L - 0.7031660), R2 route with q = 0, no viscous loss:
+   L = 5         a0/M = 2.71677     M T_d = 0.184042    log Re_E = 9.2968      c2 = 1.711007
+   L = 10        a0/M = 5.21677     M T_d = 0.095845    log Re_E = 19.2968     c2 = 1.849499
+   L = 20        a0/M = 10.21677    M T_d = 0.048939    log Re_E = 39.2968     c2 = 1.923153
+   L = 40        a0/M = 20.21677    M T_d = 0.024732    log Re_E = 79.2968     c2 = 1.961164
+   L = 80        a0/M = 40.21677    M T_d = 0.012433    log Re_E = 159.2968    c2 = 1.980478
+   L = 160       a0/M = 80.21677    M T_d = 0.006233    log Re_E = 319.2968    c2 = 1.990212
+   L = 10000     a0/M = 5000.21677  M T_d = 0.000100    log Re_E = 19999.2968  c2 = 1.999843
+   c2 rises monotonically to 2 from below; c2 <= 2 for every L > 0 here.
+
+HEADLINE:  the Duhamel/Taylor route needs a SIZE bound on beta (C <= 2/3) that a
+           generic 'M^3 log^2' estimate does not deliver; the Riccati route needs only
+           the SIGN (beta + nu V >= 0) and then gives c2 = 2 exactly.
+
+[d1 done]

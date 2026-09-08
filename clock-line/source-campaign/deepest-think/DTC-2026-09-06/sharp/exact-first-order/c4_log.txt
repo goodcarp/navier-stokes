@@ -1,0 +1,44 @@
+
+N=4, s=0.1:  a_inner/M = 6.29796899e-02   u(core0) = (+5.14227e-02, -3.88441e-01)
+   grad u at core0 =
+[[ 0.07960377 -0.48809642]
+ [ 0.51128227 -0.14258173]]
+   incompressibility residual  d_r u^r + u^r/r + d_z u^z = +1.727e-06   (scale 7.960e-02)
+   deform=False  tau=4e-03  D_t a = -1.35038151e-03   beta = D_t a + a^2 = +2.61605984e-03   [check D_t(u^r)/r = +2.61605980e-03, rel 1.3e-08]
+   deform=False  tau=2e-03  D_t a = -1.35038153e-03   beta = D_t a + a^2 = +2.61605981e-03   [check D_t(u^r)/r = +2.61605980e-03, rel 3.2e-09]
+   deform=False  tau=1e-03  D_t a = -1.35038154e-03   beta = D_t a + a^2 = +2.61605980e-03   [check D_t(u^r)/r = +2.61605980e-03, rel 7.9e-10]
+   deform=True  tau=4e-03  D_t a = -1.96673406e-03   beta = D_t a + a^2 = +1.99970728e-03   [check D_t(u^r)/r = +1.99972284e-03, rel 7.8e-06]
+   deform=True  tau=2e-03  D_t a = -1.96673226e-03   beta = D_t a + a^2 = +1.99970908e-03   [check D_t(u^r)/r = +1.99971297e-03, rel 1.9e-06]
+   deform=True  tau=1e-03  D_t a = -1.96673181e-03   beta = D_t a + a^2 = +1.99970953e-03   [check D_t(u^r)/r = +1.99971050e-03, rel 4.9e-07]
+   a^2 = 3.966441e-03   D_t a = -1.966732e-03   beta = +1.999710e-03
+   -> beta/a^2 = +0.50416    t* := 2a/|beta| = 62.988838/M ;  t_d = ln2/a = 11.005884/M ;  t*/t_d = 5.72320
+
+N=8, s=0.1:  a_inner/M = 1.34614998e-01   u(core0) = (+1.09913e-01, -5.49574e+00)
+   grad u at core0 =
+[[ 0.1513101  -0.48646438]
+ [ 0.51291431 -0.28592336]]
+   incompressibility residual  d_r u^r + u^r/r + d_z u^z = +1.732e-06   (scale 1.513e-01)
+   deform=False  tau=4e-03  D_t a = -4.08530715e-03   beta = D_t a + a^2 = +1.40358905e-02   [check D_t(u^r)/r = +1.40358850e-02, rel 3.9e-07]
+   deform=False  tau=2e-03  D_t a = -4.08530969e-03   beta = D_t a + a^2 = +1.40358880e-02   [check D_t(u^r)/r = +1.40358866e-02, rel 9.8e-08]
+   deform=False  tau=1e-03  D_t a = -4.08531033e-03   beta = D_t a + a^2 = +1.40358873e-02   [check D_t(u^r)/r = +1.40358870e-02, rel 2.5e-08]
+   deform=True  tau=4e-03  D_t a = -1.03731374e-02   beta = D_t a + a^2 = +7.74806029e-03   [check D_t(u^r)/r = +7.74812520e-03, rel 8.4e-06]
+   deform=True  tau=2e-03  D_t a = -1.03731310e-02   beta = D_t a + a^2 = +7.74806666e-03   [check D_t(u^r)/r = +7.74808289e-03, rel 2.1e-06]
+   deform=True  tau=1e-03  D_t a = -1.03731294e-02   beta = D_t a + a^2 = +7.74806825e-03   [check D_t(u^r)/r = +7.74807231e-03, rel 5.2e-07]
+   a^2 = 1.812120e-02   D_t a = -1.037313e-02   beta = +7.748068e-03
+   -> beta/a^2 = +0.42757    t* := 2a/|beta| = 34.748016/M ;  t_d = ln2/a = 5.149108/M ;  t*/t_d = 6.74836
+
+N=12, s=0.1:  a_inner/M = 2.05083321e-01   u(core0) = (+1.67450e-01, -8.59926e+01)
+   grad u at core0 =
+[[ 0.22177864 -0.48635267]
+ [ 0.51302602 -0.42686023]]
+   incompressibility residual  d_r u^r + u^r/r + d_z u^z = +1.732e-06   (scale 2.218e-01)
+   deform=False  tau=4e-03  D_t a = -2.38637972e-03   beta = D_t a + a^2 = +3.96727889e-02   [check D_t(u^r)/r = +3.96727441e-02, rel 1.1e-06]
+   deform=False  tau=2e-03  D_t a = -2.38638887e-03   beta = D_t a + a^2 = +3.96727798e-02   [check D_t(u^r)/r = +3.96727686e-02, rel 2.8e-07]
+   deform=False  tau=1e-03  D_t a = -2.38639116e-03   beta = D_t a + a^2 = +3.96727775e-02   [check D_t(u^r)/r = +3.96727747e-02, rel 7.1e-08]
+   deform=True  tau=4e-03  D_t a = -1.91604452e-02   beta = D_t a + a^2 = +2.28987234e-02   [check D_t(u^r)/r = +2.28988360e-02, rel 4.9e-06]
+   deform=True  tau=2e-03  D_t a = -1.91604540e-02   beta = D_t a + a^2 = +2.28987147e-02   [check D_t(u^r)/r = +2.28987428e-02, rel 1.2e-06]
+   deform=True  tau=1e-03  D_t a = -1.91604562e-02   beta = D_t a + a^2 = +2.28987125e-02   [check D_t(u^r)/r = +2.28987195e-02, rel 3.1e-07]
+   a^2 = 4.205917e-02   D_t a = -1.916046e-02   beta = +2.289871e-02
+   -> beta/a^2 = +0.54444    t* := 2a/|beta| = 17.912214/M ;  t_d = ln2/a = 3.379832/M ;  t*/t_d = 5.29974
+
+elapsed 1630.8s  SHA256 8ceafd26d906a38abc8c8d5665b9ced02aef2e2d37f08ef046726333f5cafe58

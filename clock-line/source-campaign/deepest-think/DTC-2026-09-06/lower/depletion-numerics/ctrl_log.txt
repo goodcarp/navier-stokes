@@ -1,0 +1,7 @@
+[shell N=5 h=1/8 Re0=100 lam=1.5 sign=-1 D3-sign] grid 384x384 R=32 ReE=4.116e+04 logReE=10.625
+    T32=3.8526  T2=--  T4=--  T8=--
+    stop=horizon peak=1.5832 t_final=4.0042 C(0)=0.2817 C(end)=0.6745 eta_ratio=0.51728 steps=1084 320.9s
+[shell N=4 h=1/8 Re0=100 lam=3 sign=+1 D5-box] grid 384x384 R=16 ReE=1.045e+04 logReE=9.255
+    T32=0.4448  T2=0.7380  T4=2.0057  T8=--
+    stop=horizon peak=5.7351 t_final=4.0067 C(0)=1.1175 C(end)=0.0906 eta_ratio=0.22145 steps=557 241.2s
+wrote ~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/lower/depletion-numerics/dep_ctrl.json

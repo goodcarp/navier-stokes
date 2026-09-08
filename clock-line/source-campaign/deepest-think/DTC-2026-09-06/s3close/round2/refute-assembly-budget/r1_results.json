@@ -1,0 +1,157 @@
+{
+ "a1_CE_bangbang_Linf_readonly": 0.17240398490992329,
+ "a1_CE_design_Linf_readonly": 0.17032563295410327,
+ "dictionary": {
+  "2log s + 0.4 log C_E  (s=1/delta)": 3.358630597860925,
+  "2log s + 0.4 log C_E  (s=1/sin)": 3.3643454402462654,
+  "assembly_quoted_3.3643455": 3.3643455,
+  "c2=4log(3/2)": 1.6218604324326575,
+  "difference": 0.005714842385339998,
+  "half_energy_shift": -0.2772588722239781,
+  "s=1/(7.5deg in rad)": 7.639437268410977,
+  "s=1/sin(7.5deg)": 7.66129757554039
+ },
+ "kernel_checks": {
+  "G_closed_vs_brute_r=0.3_rp=2.5_dz=3": [
+   0.03939376660042491,
+   0.0393937666004239
+  ],
+  "G_closed_vs_brute_r=1_rp=1.05_dz=0.02": [
+   5.909637543830948,
+   5.909637543830825
+  ],
+  "G_closed_vs_brute_r=1_rp=1.3_dz=0.1": [
+   2.465231114861915,
+   2.4652311148619
+  ],
+  "G_closed_vs_brute_r=1_rp=2_dz=0.5": [
+   0.763410079809441,
+   0.7634100798094403
+  ]
+ },
+ "my_modal_vs_a1_design_rel": 4.166611994381354e-08,
+ "record_bangbang_target_quoted": 0.172403978,
+ "route_A_ring_vs_modal_at_L=3ln2": {
+  "bangbang": {
+   "modal_CE_Linf": 0.17240314091214232,
+   "modal_CE_finiteL": 0.17234451144157986,
+   "ring_CE_n=24": 0.1646550448817282,
+   "ring_CE_n=36": 0.16849066520960113,
+   "ring_CE_n=48": 0.17000428826040617
+  },
+  "design_d7.5_dm5": {
+   "modal_CE_Linf": 0.17032562585729502,
+   "modal_CE_finiteL": 0.17026754227398708,
+   "ring_CE_n=24": 0.16294473165407752,
+   "ring_CE_n=36": 0.16651836267987807,
+   "ring_CE_n=48": 0.167951627627594
+  },
+  "sin2phi": {
+   "modal_CE_Linf": 0.10723302924253163,
+   "modal_CE_finiteL": 0.10719573196752313,
+   "ring_CE_n=24": 0.10254883531656575,
+   "ring_CE_n=36": 0.10486112266356529,
+   "ring_CE_n=48": 0.10577598358768049
+  }
+ },
+ "route_B_runs_implied_CE": [
+  {
+   "C_E_implied_full_energy": 0.10123241822850357,
+   "C_E_implied_if_half_energy": 0.20246483645700714,
+   "N": 2,
+   "Re0": 100
+  },
+  {
+   "C_E_implied_full_energy": 0.10238291152149079,
+   "C_E_implied_if_half_energy": 0.20476582304298158,
+   "N": 3,
+   "Re0": 100
+  },
+  {
+   "C_E_implied_full_energy": 0.10243267719000226,
+   "C_E_implied_if_half_energy": 0.20486535438000453,
+   "N": 4,
+   "Re0": 100
+  },
+  {
+   "C_E_implied_full_energy": 0.10243267719000226,
+   "C_E_implied_if_half_energy": 0.20486535438000453,
+   "N": 5,
+   "Re0": 100
+  },
+  {
+   "C_E_implied_full_energy": 0.10237047237155024,
+   "C_E_implied_if_half_energy": 0.20474094474310048,
+   "N": 6,
+   "Re0": 100
+  },
+  {
+   "C_E_implied_full_energy": 0.10240934772617688,
+   "C_E_implied_if_half_energy": 0.20481869545235376,
+   "N": 7,
+   "Re0": 100
+  },
+  {
+   "C_E_implied_full_energy": 0.10242080462997945,
+   "C_E_implied_if_half_energy": 0.2048416092599589,
+   "N": 6,
+   "Re0": 1
+  },
+  {
+   "C_E_implied_full_energy": 0.10242224848675172,
+   "C_E_implied_if_half_energy": 0.20484449697350343,
+   "N": 6,
+   "Re0": 4
+  },
+  {
+   "C_E_implied_full_energy": 0.10242369236387847,
+   "C_E_implied_if_half_energy": 0.20484738472775693,
+   "N": 6,
+   "Re0": 16
+  },
+  {
+   "C_E_implied_full_energy": 0.10240283494311572,
+   "C_E_implied_if_half_energy": 0.20480566988623145,
+   "N": 6,
+   "Re0": 100
+  },
+  {
+   "C_E_implied_full_energy": 0.10240427854656395,
+   "C_E_implied_if_half_energy": 0.2048085570931279,
+   "N": 6,
+   "Re0": 400
+  },
+  {
+   "C_E_implied_full_energy": 0.10240427854656395,
+   "C_E_implied_if_half_energy": 0.2048085570931279,
+   "N": 7,
+   "Re0": 100
+  },
+  {
+   "C_E_implied_full_energy": 0.10240572217036302,
+   "C_E_implied_if_half_energy": 0.20481144434072604,
+   "N": 7,
+   "Re0": 400
+  },
+  {
+   "C_E_implied_full_energy": 0.10242699490816824,
+   "C_E_implied_if_half_energy": 0.20485398981633648,
+   "N": 5,
+   "Re0": 100
+  },
+  {
+   "C_E_implied_full_energy": 0.10242699490816824,
+   "C_E_implied_if_half_energy": 0.20485398981633648,
+   "N": 7,
+   "Re0": 6.25
+  }
+ ],
+ "route_B_summary": {
+  "max": 0.10243267719000226,
+  "mean": 0.10233322358208524,
+  "min": 0.10123241822850357,
+  "modal_sin2phi_Linf": 0.1072330292425316,
+  "synthesis_quoted_0.1418961_is_for": "prove-duhamel's own mollified datum d2, not the runs' datum (grep in lower/)"
+ },
+ "sin2phi_exact_l1_only": 0.1072330292425316
+}

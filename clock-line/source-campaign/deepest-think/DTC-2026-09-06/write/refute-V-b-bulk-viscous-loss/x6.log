@@ -1,0 +1,13 @@
+ L    T-a (as written)  T-b (CS repaired)  T-c (affine only)  T-d (seat sec5)   1/L      eps_bulk
+   10   1.7643e+01       1.7462e+01        2.2539e+00       4.8678e-01    0.10000  3.4735e-03
+   20   1.1164e+01       1.1076e+01        3.7533e-01       8.8903e-02    0.05000  1.7367e-03
+   40   4.3874e+00       4.3409e+00        1.5748e-02       2.9654e-03    0.02500  8.6836e-04
+   80   7.4238e-01       7.2371e-01        4.2027e-05       3.2993e-06    0.01250  4.3418e-04
+  160   3.3795e-02       3.0446e-02        4.1200e-10       4.0840e-12    0.00625  2.1709e-04
+  320   2.1052e-04       8.1377e-05        5.5528e-20       6.2577e-24    0.00313  1.0855e-04
+  640   2.8398e-07       7.9840e-10        1.4386e-39       1.4692e-47    0.00156  5.4273e-05
+  L_min (theorem as written        ) vs 1/L:   216.785   vs eps_bulk:   349.680
+  L_min (Cauchy-Schwarz repaired   ) vs 1/L:   209.344   vs eps_bulk:   310.884
+  L_min (affine-only (no coupling) ) vs 1/L:    36.389   vs eps_bulk:    62.364
+  L_min (seat sec-5 1-D model      ) vs 1/L:    24.603   vs eps_bulk:    48.337
+WROTE x6_results.json

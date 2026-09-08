@@ -1,0 +1,15 @@
+route	url	http	bytes	content_type	saved
+sciencedirect-landing	https://www.sciencedirect.com/science/article/pii/S0022039603001530	403	1207997	text/html; charset=UTF-8
+sciencedirect-pdf	https://www.sciencedirect.com/science/article/pii/S0022039603001530/pdf	403	1208009	text/html; charset=UTF-8
+sciencedirect-pdfft	https://www.sciencedirect.com/science/article/pii/S0022039603001530/pdfft	403	1208015	text/html; charset=UTF-8
+doi-resolve	https://doi.org/10.1016/S0022-0396(03)00153-0	200	2712	text/html;charset=UTF-8
+elsevier-api-doi	https://api.elsevier.com/content/article/doi/10.1016/S0022-0396(03)00153-0	406	162	text/xml
+openaire	https://api.openaire.eu/search/publications?doi=10.1016/S0022-0396(03)00153-0	200	46493	application/xml;charset=UTF-8
+core-search	https://api.core.ac.uk/v3/search/works?q=%22bounded%20initial%20data%22%20Kukavica	429	0	text/html; charset=UTF-8
+base-search	https://www.base-search.net/Search/Results?lookfor=Kukavica+bounded+initial+data	200	7851	text/html; charset=utf-8
+fatcat-doi	https://api.fatcat.wiki/v0/release/lookup?doi=10.1016/s0022-0396(03)00153-0&expand=files	000		-
+scholar-archive	https://scholar.archive.org/search?q=%22bounded+initial+data%22+Kukavica	200	4428	text/html; charset=UTF-8
+researchgate	https://www.researchgate.net/search/publication?q=Kukavica%20bounded%20initial%20data	403	21115	text/html; charset=UTF-8
+s2-openaccess	https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/S0022-0396(03)00153-0?fields=title,openAccessPdf,externalIds	200	404	application/json
+openalex	https://api.openalex.org/works/doi:10.1016/s0022-0396(03)00153-0	200	10942	application/json
+unpaywall	https://api.unpaywall.org/v2/10.1016/S0022-0396(03)00153-0?email=contact@example.invalid	200	2363	application/json

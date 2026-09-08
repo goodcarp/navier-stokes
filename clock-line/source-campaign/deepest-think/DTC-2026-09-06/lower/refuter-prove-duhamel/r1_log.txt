@@ -1,0 +1,87 @@
+==============================================================================
+A. L1 kernel a(0,0) = int K omega^theta dV, derived from 3D Biot-Savart
+==============================================================================
+   d_z0 [ r/(r^2+(z0-z)^2)^{3/2} ] at z0=0  =  3*r*z/(r**2 + z**2)**(5/2)
+   residual vs 3 r z / rho^5 : 0
+   => a(0,0) = -(1/2)(1/4pi) int omega^theta * 3 r z/rho^5 dV = int K omega^theta dV
+      with K = -(3/(8 pi)) r z / rho^5.   L1 CONFIRMED (independent derivation).
+
+   numeric confirmation on a smooth compactly-supported test vorticity:
+   kernel form   a(0,0) = 0.23260118
+   direct BS     a(0,0) = 0.23260117     rel diff = 2.719e-08
+
+==============================================================================
+B. sharp plateau omega^theta = -M sgn z on rho0<rho<R : a(0,0) in closed form
+==============================================================================
+   int_0^pi sin^2 phi |cos phi| dphi = 2/3
+   a(0,0) = (3/4) M log(R/rho0) * 2/3 = 1/2 M log(R/rho0)
+   => EXACTLY (M/2) log(R/rho0), with NO O(1) offset, for the sharp plateau at the ORIGIN.
+      (the frame's +0.216773 M is the offset at the material innermost SHELL, not the origin)
+
+==============================================================================
+C. FLOOR IDENTITY  --  audit of 'H2 is EQUIVALENT to a(1+a0 t)/a0 >= 1'
+==============================================================================
+   D_t a = -a^2 + B,  B := beta + nu V.  Put h = 1/a (a>0). Then h' = 1 - B/a^2, so
+       h(t) = 1/a0 + t - int_0^t B/a^2 ds ,
+   and  a(t) >= a0/(1+a0 t)  <=>  h(t) <= 1/a0 + t  <=>  int_0^t B/a^2 ds >= 0 .
+   Therefore  F(t) >= 1 for all t  <=>  (H2')  int_0^t B/a^2 ds >= 0 for all t,
+   which is STRICTLY WEAKER than the pointwise (H2) B >= 0.  The attempt's 'equivalent'
+   is a one-way implication.
+   counterexample: B(t) = +1.6 / -0.9 / +1.6 on [0,.3)/[.3,.45)/[.45,1]
+     min_t B(t) = -0.9 < 0   (H2 FAILS)   but   min_t F(t) = 1.000000 >= 1  (floor HOLDS)
+
+==============================================================================
+D. the reversed control: what F = a(1+a0 t)/a0 does when a0 < 0
+==============================================================================
+   For a0 < 0, dividing by a0 REVERSES the inequality:
+       F(t) >= 1  <=>  a(t) <= a0/(1+a0 t)  <=>  int_0^t B/a^2 ds <= 0 .
+   So with B >= 0 (i.e. (H2) HOLDING) and a0 < 0 the statistic necessarily reports F < 1.
+     a0 = -1, B == +0.0 (>=0, so (H2) HOLDS):  min_t F = 1.0000  -> statistic 'FIRES'
+     a0 = -1, B == +2.0 (>=0, so (H2) HOLDS):  min_t F = -0.0693  -> statistic 'FIRES'
+     a0 = -1, B == +3.0 (>=0, so (H2) HOLDS):  min_t F = -0.2651  -> statistic 'FIRES'
+   => the reversed-datum control fires by SIGN CONVENTION, not because (H2) fails.
+      Their own d3 log records beta/a^2 in [+2.115,+3.251] on the reversed run, i.e. (H2)
+      HOLDS there, while the floor statistic reports 0.1130.  The control is NOT diagnostic
+      of (H2); it is a run where (H2) holds and the gate says 'violated'.
+
+==============================================================================
+E. Taylor route: does the brief's 'M^3 log^2 with an O(1) constant' mean C = 4?
+==============================================================================
+   attempt's own translation:  |d_t^2 omega| = |beta||omega| <= C a0^2 * (3/2)M = (3/8) C M^3 L^2
+   (using a0 = (M/2)L and |omega| <= (3/2)M).  So constant kappa_2 := (3/8) C, i.e. C = (8/3) kappa_2.
+     kappa_2 = 0.25  ->  C = 0.6667   remainder/gain at x=1/2 = 0.2500
+     kappa_2 =  1.0  ->  C = 2.6667   remainder/gain at x=1/2 = 1.0000
+     kappa_2 =  1.5  ->  C = 4.0000   remainder/gain at x=1/2 = 1.5000
+   The attempt states 'at the brief's suggested O(1) constant (C = 4)'.  C = 4 corresponds to
+   kappa_2 = 3/2, NOT 1.  At kappa_2 = 1 the correct value is C = 8/3 and the remainder/gain
+   at x = 1/2 is 1.000, not the attempt's headline 1.5.
+     C = 0.6667:  max_x [1 + x - (3/4)C x^2] = 1.500000   (needs >= 1.5)
+     C = 2.6667:  max_x [1 + x - (3/4)C x^2] = 1.125000   (needs >= 1.5)
+     C = 4.0000:  max_x [1 + x - (3/4)C x^2] = 1.083333   (needs >= 1.5)
+   The QUALITATIVE conclusion (the Taylor route fails at an O(1) constant) survives;
+   the headline number 1.5x does not track the attempt's own translation formula.
+
+==============================================================================
+F. the corollary constant c2, recomputed with the attempt's OWN measured offset
+==============================================================================
+   as published (kappa = 1/2, c_a = +0.216773, imported from the SHARP-plateau elliptic instrument):
+     L = 5/10/20/40/80/160/1e4 :  1.7110 / 1.8495 / 1.9232 / 1.9612 / 1.9805 / 1.9902 / 1.9998   (rises to 2 from BELOW)
+   with the attempt's OWN d2 fit for the ADMISSIBLE datum it actually integrates
+   (delta = 7.5 deg, w = 0.20:  kappa = 0.48137, c = -0.19141):
+     L = 5/10/20/40/80/160/1e4 :  2.0982 / 2.0874 / 2.0823 / 2.0798 / 2.0786 / 2.0780 / 2.0774   (falls to 2.077 from ABOVE)
+   with the w = 0.12 datum actually used in every run, using the run's own measured a0:
+     N3: L=2.0794  a0(tracer, measured) = 0.65478   formula (M/2)L+0.216773 = 1.25647   ratio = 0.521
+     N4: L=2.7726  a0(tracer, measured) = 0.99303   formula (M/2)L+0.216773 = 1.60307   ratio = 0.619
+     N5: L=3.4657  a0(tracer, measured) = 1.33209   formula (M/2)L+0.216773 = 1.94962   ratio = 0.683
+   => 'c2 <= 2 at every finite L, approached from below' is an artefact of substituting an
+      offset measured on the SHARP (inadmissible) plateau for the one the attempt itself
+      measured on the admissible tapered datum.  With its own constant the limit is 2.077
+      and the approach is from ABOVE.
+
+==============================================================================
+G. dimensions of the theorem's headline conclusion
+==============================================================================
+   Theorem D concludes (1 + a0 tau) >= 3/2, i.e. tau >= 1/(2 a0), so  T_d <= 1/(2 a0).
+   The attempt writes 'M0 T_d <= 1/(2 a0)'.  [M0 T_d] = 1 (dimensionless), [1/(2a0)] = time.
+   Correct statement:  T_d <= 1/(2 a0), equivalently M0 T_d <= M0/(2 a0).  Typo, not a hole:
+   every downstream number (theta = a0 T_d <= 1/2, c2 = 2 theta/kappa) uses the correct form.

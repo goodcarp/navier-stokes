@@ -1,0 +1,187 @@
+{
+  "status": "PASS numerical sensitivity checks",
+  "scope": "Tracked radial spline critical branch and finite-radius planar energies; no compact 3D evolution or rigorous continuum error enclosure",
+  "runs": {
+    "slice-768.json": {
+      "parameters": {
+        "nr": 768,
+        "nphi": 48,
+        "R": 0.8,
+        "dt": 1e-06,
+        "nu": 0.001,
+        "c": 1.4,
+        "A": 950.0,
+        "lam": 0.25,
+        "T": 0.004
+      },
+      "at_t_001": {
+        "branch_value_increment": 0.0761215413839551,
+        "branch_value_fractional_gain": 0.0019520576978193649,
+        "branch_radius_displacement": 0.00023660007245759895,
+        "fixed_receiver_increment": 0.07561588221298621,
+        "fluctuation_energy_fractional_gain": 0.13272702760554989,
+        "material_slice_weighted_energy_fractional_gain": 0.1295598280768313,
+        "torque": 71.2964646565797
+      },
+      "sampled_peak_time": 0.0023,
+      "sampled_peak_increment": 0.11365138167315791,
+      "last_fixed_receiver_increment": -0.011593788961953067,
+      "final_torque": -109.97776001625286,
+      "relative_energy_balance_diagnostic": -1.365121524793671e-06
+    },
+    "slice-1536.json": {
+      "parameters": {
+        "nr": 1536,
+        "nphi": 48,
+        "R": 0.8,
+        "dt": 5e-07,
+        "nu": 0.001,
+        "c": 1.4,
+        "A": 950.0,
+        "lam": 0.25,
+        "T": 0.004
+      },
+      "at_t_001": {
+        "branch_value_increment": 0.07625854234652252,
+        "branch_value_fractional_gain": 0.001955523274570048,
+        "branch_radius_displacement": 0.00023550773385411228,
+        "fixed_receiver_increment": 0.07575995027866611,
+        "fluctuation_energy_fractional_gain": 0.13254772293908923,
+        "material_slice_weighted_energy_fractional_gain": 0.12938102476121816,
+        "torque": 71.33272566071
+      },
+      "sampled_peak_time": 0.0023,
+      "sampled_peak_increment": 0.1147290168014905,
+      "last_fixed_receiver_increment": -0.012267184907152284,
+      "final_torque": -109.78283129349072,
+      "relative_energy_balance_diagnostic": -3.5360982383421183e-07
+    },
+    "slice-angular-check.json": {
+      "parameters": {
+        "nr": 768,
+        "nphi": 72,
+        "R": 0.8,
+        "dt": 1e-06,
+        "nu": 0.001,
+        "c": 1.4,
+        "A": 950.0,
+        "lam": 0.25,
+        "T": 0.001
+      },
+      "at_t_001": {
+        "branch_value_increment": 0.0761215413839551,
+        "branch_value_fractional_gain": 0.0019520576978193649,
+        "branch_radius_displacement": 0.00023660007245759895,
+        "fixed_receiver_increment": 0.07561588221298621,
+        "fluctuation_energy_fractional_gain": 0.13272702760554766,
+        "material_slice_weighted_energy_fractional_gain": 0.12955982807682886,
+        "torque": 71.2964646565641
+      },
+      "sampled_peak_time": 0.001,
+      "sampled_peak_increment": 0.0761215413839551,
+      "last_fixed_receiver_increment": 0.07561588221298621,
+      "final_torque": 71.2964646565641,
+      "relative_energy_balance_diagnostic": -1.7362743335425849e-07
+    },
+    "slice-boundary-check.json": {
+      "parameters": {
+        "nr": 1152,
+        "nphi": 48,
+        "R": 1.2,
+        "dt": 1e-06,
+        "nu": 0.001,
+        "c": 1.4,
+        "A": 950.0,
+        "lam": 0.25,
+        "T": 0.001
+      },
+      "at_t_001": {
+        "branch_value_increment": 0.07612154138213612,
+        "branch_value_fractional_gain": 0.0019520576977727355,
+        "branch_radius_displacement": 0.00023660007247738868,
+        "fixed_receiver_increment": 0.07561588221108195,
+        "fluctuation_energy_fractional_gain": 0.13272775137627102,
+        "material_slice_weighted_energy_fractional_gain": 0.1295605498238288,
+        "torque": 71.29646465317772
+      },
+      "sampled_peak_time": 0.001,
+      "sampled_peak_increment": 0.07612154138213612,
+      "last_fixed_receiver_increment": 0.07561588221108195,
+      "final_torque": 71.29646465317772,
+      "relative_energy_balance_diagnostic": -1.724465932830176e-07
+    },
+    "slice-fixed-A1020.json": {
+      "parameters": {
+        "nr": 1536,
+        "nphi": 48,
+        "R": 0.8,
+        "dt": 5e-07,
+        "nu": 0.001,
+        "c": 1.4,
+        "A": 1020.0,
+        "lam": 0.25,
+        "T": 0.001
+      },
+      "at_t_001": {
+        "branch_value_increment": 0.07337725833529873,
+        "branch_value_fractional_gain": 0.0017525055577487514,
+        "branch_radius_displacement": 0.00024447532335969413,
+        "fixed_receiver_increment": 0.07280374242275656,
+        "fluctuation_energy_fractional_gain": 0.14640158125899227,
+        "material_slice_weighted_energy_fractional_gain": 0.14319614653429857,
+        "torque": 68.18693071624061
+      },
+      "sampled_peak_time": 0.001,
+      "sampled_peak_increment": 0.07337725833529873,
+      "last_fixed_receiver_increment": 0.07280374242275656,
+      "final_torque": 68.18693071624061,
+      "relative_energy_balance_diagnostic": -4.216403693384076e-08
+    },
+    "slice-fixed-A1020-coarse.json": {
+      "parameters": {
+        "nr": 768,
+        "nphi": 48,
+        "R": 0.8,
+        "dt": 1e-06,
+        "nu": 0.001,
+        "c": 1.4,
+        "A": 1020.0,
+        "lam": 0.25,
+        "T": 0.001
+      },
+      "at_t_001": {
+        "branch_value_increment": 0.07325337651626995,
+        "branch_value_fractional_gain": 0.0017495894758396968,
+        "branch_radius_displacement": 0.0002454647324453829,
+        "fixed_receiver_increment": 0.0726724862024426,
+        "fluctuation_energy_fractional_gain": 0.14659129715493768,
+        "material_slice_weighted_energy_fractional_gain": 0.14338533196872816,
+        "torque": 68.15503631039073
+      },
+      "sampled_peak_time": 0.001,
+      "sampled_peak_increment": 0.07325337651626995,
+      "last_fixed_receiver_increment": 0.0726724862024426,
+      "final_torque": 68.15503631039073,
+      "relative_energy_balance_diagnostic": -1.6580114653727032e-07
+    }
+  },
+  "radial_and_time_refinement_differences": {
+    "branch_value_increment": 0.0001370009625674129,
+    "branch_value_fractional_gain": 3.4655767506830415e-06,
+    "branch_radius_displacement": 1.0923386034866756e-06,
+    "fixed_receiver_increment": 0.00014406806567990316,
+    "fluctuation_energy_fractional_gain": 0.00017930466646065568,
+    "material_slice_weighted_energy_fractional_gain": 0.00017880331561315188,
+    "torque": 0.03626100413029576
+  },
+  "selected_amplitude_refinement_differences": {
+    "branch_value_increment": 0.0001238818190287816,
+    "branch_value_fractional_gain": 2.9160819090545687e-06,
+    "branch_radius_displacement": 9.89409085688786e-07,
+    "fixed_receiver_increment": 0.00013125622031395778,
+    "fluctuation_energy_fractional_gain": 0.00018971589594540816,
+    "material_slice_weighted_energy_fractional_gain": 0.00018918543442958402,
+    "torque": 0.0318944058498829
+  }
+}
+

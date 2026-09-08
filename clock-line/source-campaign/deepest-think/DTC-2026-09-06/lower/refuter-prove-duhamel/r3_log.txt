@@ -1,0 +1,32 @@
+runs read (read-only) from ~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/lower/prove-duhamel: 16
+
+========================================================================================================
+(1) forward tracers where B = beta + nu V goes NEGATIVE while the gate says HOLDS
+========================================================================================================
+             run   s0        a0  min B/a^2 (all t)  min F_a (t>0)       gate
+        N3-Re0=1  1.5   0.65478            -0.1632       1.001054      HOLDS
+        N3-Re0=1  2.0   0.49344            -0.2366       1.001062      HOLDS
+   -> 2 forward tracers have B < 0 somewhere; every one of them is passed by the gate.
+      Under 'H2 is EQUIVALENT to F_a >= 1' this cannot happen.  The gate tests the WEAKER
+      integral condition int_0^t B/a^2 ds >= 0, not the pointwise (H2).
+
+========================================================================================================
+(2) the reversed control: does (H2) actually fail there?
+========================================================================================================
+  N4-REVERSED(control) s0=1.5  a0=-0.99303  B/a^2 in [+2.115,+3.251]  min F_a = 0.1130   -> (H2) HOLDS, gate says VIOLATED
+  N4-REVERSED(control) s0=2.0  a0=-0.83081  B/a^2 in [+2.269,+3.623]  min F_a = 0.1715   -> (H2) HOLDS, gate says VIOLATED
+  N4-REVERSED(control) s0=3.0  a0=-0.62600  B/a^2 in [+2.538,+4.431]  min F_a = 0.2491   -> (H2) HOLDS, gate says VIOLATED
+   -> on every tracer of the control, B >= 0 (indeed B >= 2 a^2): (H2) HOLDS, and the
+      gate reports VIOLATED.  The control fires because a0 < 0 flips the sense of the
+      statistic, not because the hypothesis fails.  The declared diagnosticity certificate
+      ('the reversed control must violate the floor, or the test is not diagnostic') is void.
+
+========================================================================================================
+(3) the control that WOULD have been diagnostic: forward a0 > 0 with sustained B < 0
+========================================================================================================
+   a0=+1, B == +0.00:  min_t>0 F_a = 1.000000  -> gate HOLDS
+   a0=+1, B == -0.05:  min_t>0 F_a = 0.967626  -> gate FIRES
+   a0=+1, B == -0.20:  min_t>0 F_a = 0.868982  -> gate FIRES
+   a0=+1, B == -0.50:  min_t>0 F_a = 0.664490  -> gate FIRES
+   The statistic DOES respond to a sustained negative B at a0 > 0 -- so TEST 1 is a
+   genuine test of the integral condition.  It is the published CONTROL that is invalid.

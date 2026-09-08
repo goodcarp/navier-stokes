@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: "Finite-time blow-up for the three-dimensional incompressible Euler equations with smooth force — Lean 4 formalisation"
+  description: >-
+    There exist a time T > 0, a smooth force f on [0, T) × ℝ³ with every mixed space–time derivative bounded up
+    to T and support in a fixed ball, and a classical solution (u, p) of the three-dimensional incompressible Euler
+    equations with that force, whose initial velocity is smooth, compactly supported and of finite energy, such
+    that the vorticity ω = curl u satisfies ‖ω(t, ·)‖_∞ → +∞ as t ↑ T and ∫₀^T ‖ω‖_∞ dt = +∞, and such that for
+    every T′ < T the solution lies in the finite-energy Lipschitz class on [0, T′] and is unique there among weak
+    solutions in that class with the same data and force. The proof is complete Lean 4 over Mathlib, with no sorry
+    and no axiom beyond propext, Classical.choice and Quot.sound; one step evaluates interval-arithmetic
+    certificates over exact rational and fixed-point tables inside the kernel (decide; native_decide is not used).
+    The formal statement certifies blow-up and no particular rate.
+  authors:
+    - "Claude"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - "Levent Alpöge"
+
+classification:
+  arxiv: [math.AP]
+  msc2020: ["35Q31", "35B44", "76B03"]
+
+sources:
+  - title: "Accompanying manuscript (title to be determined)"
+    authors: ["Levent Alpöge", "Tristan Buckmaster"]
+    type: original-proof
+    relationship: other
+    note: >-
+      Manuscript in preparation (2026) presenting the result; its title is not yet fixed. The formal proof makes
+      every constant explicit and certifies the resulting inequalities inside the Lean kernel.
+    author_endorsement: n/a
+
+related_formalizations: []
+
+status:
+  # Counts for the proof development; the deliberate sorry of Challenge.lean, which states the theorem with a
+  # placeholder proof by design, is excluded.
+  scope: >-
+    A complete Lean 4 proof over Mathlib of the single proposition stated in the Mathlib-only module
+    Challenge.lean, checked by comparator against that statement with the three standard
+    axioms permitted.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: [propext, Classical.choice, Quot.sound]
+  main_results:
+    - declaration: euler_smooth_force_blowup
+      file: Challenge.lean
+      sorry_count: 0
+      axioms: [propext, Classical.choice, Quot.sound]
+      comparator_config: comparator.json
+      literature_dependencies: []
+
+automation:
+  methods:
+    - method: autonomous
+      models: [Claude]
+  notes: "All Lean code, including the certificate generators and the statement layer, was written by Claude (Anthropic) under human direction."
+
+fidelity:
+  divergences: >-
+    The certified proposition asserts finite-time blow-up of the vorticity, the divergence of ∫ ‖ω‖_∞ dt, finite
+    energy, class membership and uniqueness. Neither sup-norm appears literally in the Lean statement: unboundedness
+    is rendered as a minorant g(t) → +∞ attained at some point x at each instant, and the divergence of ∫₀^T ‖ω‖_∞ dt
+    as, for every M, a non-negative integrable minorant on some [0, T′] with integral at least M. No rate of blow-up
+    is certified. Uniqueness is stated in pressure-free weak form against all finite-energy
+    Lipschitz competitors.
+
+review:
+  status: author-verified
+  reviewers: ["Levent Alpöge"]
+  notes: "Levent Alpöge (an author of the accompanying manuscript) read the challenge module Challenge.lean at the released revision — its definition layer and the statement euler_smooth_force_blowup — and confirmed it states the manuscript's blow-up theorem in the form given in project.description and fidelity.divergences."
+
+alignment:
+  namespace: ""
+  statements:
+    - source: >-
+        Finite-time blow-up for the three-dimensional incompressible Euler equations driven by a smooth,
+        compactly supported force whose mixed derivatives of every order stay bounded up to the blow-up time:
+        the vorticity becomes unbounded as t ↑ T, within the finite-energy Lipschitz uniqueness class.
+      lean: euler_smooth_force_blowup
+      module: Challenge
+      status: proved
+
+acknowledgements: "Built on Lean 4 and Mathlib."

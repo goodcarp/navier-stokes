@@ -1,0 +1,17 @@
+# Generated caches and separately downloadable large research arrays.
+**/__pycache__/
+**/*.pyc
+**/.DS_Store
+**/.lake/
+/core-line/outputs/euler-ns-transfer/pass11/data/resolved-192-2049-dt100.npz
+/core-line/outputs/euler-ns-transfer/pass11/data/resolved-192-2049-dt50.npz
+/core-line/outputs/euler-ns-transfer/pass12/data/compact-fit-144.npz
+/core-line/outputs/euler-ns-transfer/pass12/data/compact-fit-96.npz
+/core-line/outputs/euler-ns-transfer/pass12/data/continuous-fit-144.npz
+/core-line/outputs/euler-ns-transfer/pass12/data/continuous-fit-96.npz
+/core-line/work/pass11/resolved-192-2049-dt100.npz
+/core-line/work/pass11/resolved-192-2049-dt50.npz
+/core-line/work/pass12/compact-fit-144.npz
+/core-line/work/pass12/compact-fit-96.npz
+/core-line/work/pass12/continuous-fit-144.npz
+/core-line/work/pass12/continuous-fit-96.npz

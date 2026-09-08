@@ -1,0 +1,10 @@
+{
+ "F1_expr_equals_Re_to_minus_half": true,
+ "F1_expr_is_dimensionless": true,
+ "F2_ratio_is_c_div": 0.0036229743218317728,
+ "F3a_limit": 2.772588722239781,
+ "F3b_cancellation_holds_for_arbitrary_X": true,
+ "ReE_test": 69.95367503349908,
+ "t_star_test": 1.39975812375092e-05,
+ "c_div": 0.0036229743218317728
+}

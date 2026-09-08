@@ -1,0 +1,16 @@
+{
+ "i_div3": "0",
+ "i_div5_minus_2a1": "0",
+ "i_ur_minus_a1r": "0",
+ "i_uz_plus_2a1z": "0",
+ "ii_commutator_zero": true,
+ "iii_e_r_residual": "0",
+ "iii_e_z_residual": "0",
+ "iv_holds": true,
+ "iv_max_|Te|/(lam|e|)": 0.9999999999997135,
+ "iv_min_|Tx|/(lam^-2|x|)": 1.0001704819160018,
+ "v_15pi_over_4": 11.780972450961723,
+ "v_3pi": 9.42477796076938,
+ "v_assembly_coefficient_matches_2pi(3/2+3/8)": true,
+ "v_muJ_frozen_coefficient_over_assembly": 0.8
+}

@@ -1,0 +1,14 @@
+tau_*            = 2**(1/5)*3**(4/5)*B**(4/5)/(2*A**(4/5))
+min_tau f(tau)   = 5*2**(3/5)*3**(2/5)*A**(3/5)*B**(2/5)/6
+f_min / (A^(3/5) B^(2/5)) = 5*2**(3/5)*3**(2/5)/6  =  0
+gamma            = (3/2)^(2/5) + (2/3)^(3/5) = 1.960131704207789
+||u||_inf bound  = 5*2**(9/10)*3**(2/5)*E**(1/5)*M**(3/5)/(6*pi**(3/5))
+C_u (symbolic)   = 5*2**(9/10)*3**(2/5)/(6*pi**(3/5))
+C_u              = 1.214239420800536   (symbolic)
+C_u              = 1.214239420800536   (numeric 1-D minimisation, M=E=1, tau_*=0.1042175951)
+C_u closed form  = gamma*(4/sqrt(pi))^(3/5)*(8pi)^(-3/10) = 1.214239420800536
+scaling residual (E^{1/5}M^{3/5} is exactly of velocity dimension): 0
+||K_tau||_2      = 2**(3/4)/(4*pi**(3/4)*tau**(1/4))
+||u||_inf <= C_w M^{1/3}||omega||_2^{2/3},  C_w = 3*2**(1/6)/(2*pi**(2/3)) = 0.784927737928
+
+s3: LEMMA U constant derived two independent ways and asserted equal

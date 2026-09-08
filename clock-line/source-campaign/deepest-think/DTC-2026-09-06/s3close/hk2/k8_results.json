@@ -1,0 +1,61 @@
+{
+ "points": [
+  {
+   "label": "tracked point (phi0=30 deg, rho=rho0)",
+   "r": 0.5,
+   "z": 0.86603,
+   "K2_measured": 2.190264677603387,
+   "K2_bound": 66.62100407946112,
+   "d": 0.15,
+   "grad_a_b": 4.595057286386768,
+   "hess_a_b": 31.00909184907934,
+   "pde_residual": 9.268051164107393e-13
+  },
+  {
+   "label": "inside the equatorial layer (z = 0.05 rho0)",
+   "r": 0.9,
+   "z": 0.05,
+   "K2_measured": 1.3877700048766244,
+   "K2_bound": 60.74235586481909,
+   "d": 0.4,
+   "grad_a_b": 4.122335275812445,
+   "hess_a_b": 15.787413036145846,
+   "pde_residual": 8.671615229239656e-14
+  },
+  {
+   "label": "equatorial plane exactly (z = 0)",
+   "r": 0.9,
+   "z": 0.0,
+   "K2_measured": 1.3836150854185911,
+   "K2_bound": 60.87626241313782,
+   "d": 0.4,
+   "grad_a_b": 4.1251982870277235,
+   "hess_a_b": 15.797446683684464,
+   "pde_residual": 2.647729610940708e-13
+  },
+  {
+   "label": "near the axis taper (phi = 3 deg)",
+   "r": 0.0523,
+   "z": 1.0,
+   "K2_measured": 3.02019221242635,
+   "K2_bound": 52.6816780043489,
+   "d": 0.04184,
+   "grad_a_b": 7.516246475841623,
+   "hess_a_b": 140.40347670655416,
+   "pde_residual": 1.184221923857118e-11
+  },
+  {
+   "label": "inner radial edge on the mid-latitude ray",
+   "r": 0.7071,
+   "z": 0.7071,
+   "K2_measured": 2.1760173021256692,
+   "K2_bound": 56.62187561370979,
+   "d": 0.225,
+   "grad_a_b": 3.8705794514092124,
+   "hess_a_b": 18.726116840039715,
+   "pde_residual": 2.679180211530575e-13
+  }
+ ],
+ "K2_measured_max": 3.02019221242635,
+ "K2_bound_max": 66.62100407946112
+}

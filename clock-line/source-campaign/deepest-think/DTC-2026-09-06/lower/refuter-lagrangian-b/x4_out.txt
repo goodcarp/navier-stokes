@@ -1,0 +1,149 @@
+{
+ "baseline_rc": 0,
+ "baseline_last_line": "ALL 0 CHECKS PASS",
+ "printed_check_lines": 87,
+ "static_unfalsifiable_checks": [
+  [
+   "NO_STORED_INPUT",
+   "name, got, want, tol, rel=True):\n    d = abs(got-want)/(abs(want) if (rel and want!=0) else 1.0"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "f'route2 P1({L})', val, L, 2e-11"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "f'route3 Eulerian a(0)/(ML) lam={L}', val, 0.5*L, 2e-4"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "'taper 7.5 D_true at 1.5', t['7.5deg']['D_true_at_1_5'], 0.027267, 1e-4"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "'taper 7.5 D_bound at 1.5', t['7.5deg']['D_bound_at_1_5'], 0.100421, 1e-5"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "'taper 7.5 Phi(1.5)', t['7.5deg']['Phi_at_1_5'], 1.4736, 1e-4"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "'taper 30 Phi(1.5)', t['30.0deg']['Phi_at_1_5'], 1.0674, 1e-4"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "'closed form vs tail integral (theta<=2, trapezoid)', mx, 0.0, 2e-9, rel=False"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "'method-of-lines vs closed form', mx2, 0.0, 3e-9, rel=False"
+  ],
+  [
+   "MASKED_TO_ZERO",
+   "'sum |H| ||C||/l^2 (lam=1)', s5['sum_absH_over_l2_tail_from_3']*0+0.3958, 0.3958, 1e-9"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "f'{k}: a(0) - (M/2)logR', v['a_origin_minus_halflogR'], 0.0, 2e-9, rel=False"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "f'{k}: material offset (R-dependent, -> 0.2167783)', v['offset_vs_halflogR'], 0.216773, 2e-4"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "f\"kappa(lam={r['lam']}) = lam/2\", r['kappa'], r['lam']/2, 1e-7"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "f\"L3 remainder bound lam={lam}\", r['worstcase_Lemma3_bound'], want, 2e-3"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "'log-rho excursion 2 log(3/2)', 2*np.log(1.5), 0.8109302162163288, 1e-14"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "'phi0=30deg -> after lam=1.5', np.rad2deg(np.arctan(np.tan(np.deg2rad(30))*1.5**3)), 62.833, 1e-4"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "'model Dt a / (M^2 L^2) = 1/8', 1/8, 0.125, 0"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "'beta/(M^2L^2) = 3/8', 1/8+1/4, 0.375, 0"
+  ],
+  [
+   "NO_STORED_INPUT",
+   "'measured T32 M a* / log(3/2)', 0.479/np.log(1.5), 1.1814, 1e-4"
+  ]
+ ],
+ "stored_numbers": 416,
+ "gate_catches": 95,
+ "gate_blind_to": 321
+}
+
+STATIC unfalsifiable:
+  [NO_STORED_INPUT] name, got, want, tol, rel=True): d = abs(got-want)/(abs(want) if (rel and want!=0) else 1.0
+  [NO_STORED_INPUT] f'route2 P1({L})', val, L, 2e-11
+  [NO_STORED_INPUT] f'route3 Eulerian a(0)/(ML) lam={L}', val, 0.5*L, 2e-4
+  [NO_STORED_INPUT] 'taper 7.5 D_true at 1.5', t['7.5deg']['D_true_at_1_5'], 0.027267, 1e-4
+  [NO_STORED_INPUT] 'taper 7.5 D_bound at 1.5', t['7.5deg']['D_bound_at_1_5'], 0.100421, 1e-5
+  [NO_STORED_INPUT] 'taper 7.5 Phi(1.5)', t['7.5deg']['Phi_at_1_5'], 1.4736, 1e-4
+  [NO_STORED_INPUT] 'taper 30 Phi(1.5)', t['30.0deg']['Phi_at_1_5'], 1.0674, 1e-4
+  [NO_STORED_INPUT] 'closed form vs tail integral (theta<=2, trapezoid)', mx, 0.0, 2e-9, rel=False
+  [NO_STORED_INPUT] 'method-of-lines vs closed form', mx2, 0.0, 3e-9, rel=False
+  [MASKED_TO_ZERO] 'sum |H| ||C||/l^2 (lam=1)', s5['sum_absH_over_l2_tail_from_3']*0+0.3958, 0.3958, 1e-9
+  [NO_STORED_INPUT] f'{k}: a(0) - (M/2)logR', v['a_origin_minus_halflogR'], 0.0, 2e-9, rel=False
+  [NO_STORED_INPUT] f'{k}: material offset (R-dependent, -> 0.2167783)', v['offset_vs_halflogR'], 0.216773, 2e-4
+  [NO_STORED_INPUT] f"kappa(lam={r['lam']}) = lam/2", r['kappa'], r['lam']/2, 1e-7
+  [NO_STORED_INPUT] f"L3 remainder bound lam={lam}", r['worstcase_Lemma3_bound'], want, 2e-3
+  [NO_STORED_INPUT] 'log-rho excursion 2 log(3/2)', 2*np.log(1.5), 0.8109302162163288, 1e-14
+  [NO_STORED_INPUT] 'phi0=30deg -> after lam=1.5', np.rad2deg(np.arctan(np.tan(np.deg2rad(30))*1.5**3)), 62.833, 1e-4
+  [NO_STORED_INPUT] 'model Dt a / (M^2 L^2) = 1/8', 1/8, 0.125, 0
+  [NO_STORED_INPUT] 'beta/(M^2L^2) = 3/8', 1/8+1/4, 0.375, 0
+  [NO_STORED_INPUT] 'measured T32 M a* / log(3/2)', 0.479/np.log(1.5), 1.1814, 1e-4
+
+first 40 stored numbers the gate cannot see:
+   s1_results.json    route2_P1_vs_lam/0/2                                         1.542121985664835e-11
+   s1_results.json    route2_P1_vs_lam/1/2                                         8.704955947988227e-12
+   s1_results.json    route2_P1_vs_lam/2/2                                         4.04281053079103e-12
+   s1_results.json    route2_P1_vs_lam/3/2                                         1.3538799710962242e-12
+   s1_results.json    route2_P1_vs_lam/4/2                                         5.367135307616471e-13
+   s1_results.json    route2_P1_vs_lam/5/2                                         2.4091839634365897e-13
+   s1_results.json    route2_P1_vs_lam/6/2                                         2.102022259956963e-14
+   s1_results.json    route3_eulerian_flat/0/2                                     0.4999999999922894
+   s1_results.json    route3_eulerian_flat/0/3                                     0.00010813811084431357
+   s1_results.json    route3_eulerian_flat/1/2                                     0.6249999999974732
+   s1_results.json    route3_eulerian_flat/1/3                                     1.3667623441904197e-07
+   s1_results.json    route3_eulerian_flat/2/2                                     0.7499999999989846
+   s1_results.json    route3_eulerian_flat/2/3                                     9.75973234821718e-07
+   s1_results.json    route3_eulerian_flat/3/2                                     0.9999999999997591
+   s1_results.json    route3_eulerian_flat/3/3                                     1.7959226749075796e-06
+   s1_results.json    route3_eulerian_taper7.5/0/0                                 1.0
+   s1_results.json    route3_eulerian_taper7.5/0/1                                 0.4997752691062887
+   s1_results.json    route3_eulerian_taper7.5/0/2                                 0.49972123051304634
+   s1_results.json    route3_eulerian_taper7.5/0/3                                 0.00010813747734291498
+   s1_results.json    route3_eulerian_taper7.5/1/0                                 1.25
+   s1_results.json    route3_eulerian_taper7.5/1/1                                 0.6225228958491946
+   s1_results.json    route3_eulerian_taper7.5/1/2                                 0.6225229834789869
+   s1_results.json    route3_eulerian_taper7.5/1/3                                 1.4076555346059613e-07
+   s1_results.json    route3_eulerian_taper7.5/2/0                                 1.5
+   s1_results.json    route3_eulerian_taper7.5/2/1                                 0.7363660071770864
+   s1_results.json    route3_eulerian_taper7.5/2/2                                 0.7363667259472368
+   s1_results.json    route3_eulerian_taper7.5/2/3                                 9.761035161847664e-07
+   s1_results.json    Pprime1/flat/0                                               1.0000000000192764
+   s1_results.json    Pprime1/sin2phi/0                                            1.1428571428571432
+   s1_results.json    Pprime1/taper7.5/0                                           0.9944816443305093
+   s2_results.json    taper_table/30.0deg/kappa                                    0.48362523497974136
+   s2_results.json    taper_table/30.0deg/Phi_min                                  1.0
+   s2_results.json    taper_table/30.0deg/D_true_at_1_5                            0.4675973744177806
+   s2_results.json    taper_table/30.0deg/D_bound_at_1_5                           1.0563141713009472
+   s2_results.json    taper_table/20.0deg/kappa                                    0.4948951354866097
+   s2_results.json    taper_table/20.0deg/Phi_min                                  1.0
+   s2_results.json    taper_table/20.0deg/Phi_at_1_5                               1.2583864360724806
+   s2_results.json    taper_table/20.0deg/D_true_at_1_5                            0.2544613484507956
+   s2_results.json    taper_table/20.0deg/D_bound_at_1_5                           0.6996296053595288
+   s2_results.json    taper_table/15.0deg/kappa                                    0.4978077449693703

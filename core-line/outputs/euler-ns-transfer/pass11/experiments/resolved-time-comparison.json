@@ -1,0 +1,187 @@
+{
+  "status": "SAME-GRID DISCRETE ENDPOINT COMPARISON; NOT A CONTINUUM ERROR BOUND",
+  "orientation": "Signed observable differences are B minus A; relative norms use B as denominator.",
+  "definitions": {
+    "full_L2": "sqrt(2*pi*L/Nz * sum_j angular_factor_j * sum mass * |B_j-A_j|^2)",
+    "seed_L2": "The same norm restricted to all nonzero angular modes, including generated harmonics.",
+    "angular_factor": "1 at m=0, 2 for positive m; complex coefficient differences retain phase.",
+    "receiver": "The driver cubic radial interpolation at physical z=4; branch candidates have .18<r<.3, not a global maximum."
+  },
+  "A": {
+    "json": "work/pass11/resolved-192-2049-dt100.json",
+    "checkpoint": "work/pass11/resolved-192-2049-dt100.npz",
+    "parameters": {
+      "nr": 192,
+      "nz": 2049,
+      "R": 8.0,
+      "L": 16.0,
+      "mapping": 4.0,
+      "J": 4,
+      "nu": 0.001,
+      "T": 0.001,
+      "dt": 0.0001,
+      "steps": 10,
+      "dealias": "padding",
+      "backend": "fast",
+      "fft_workers": 4
+    },
+    "observables": {
+      "energy": 81031.77956145613,
+      "K": 6.887351121792244,
+      "core_b": 1.0020609213301481,
+      "core_Omega": 1.0019948799258196,
+      "core_beta": 1.0000659099219482,
+      "mean_G_fixed": 41.715109560549756,
+      "mean_G_branch": 41.87943915370823,
+      "mean_G_branch_radius": 0.21972419102877475
+    },
+    "gain_margins": {
+      "same_run_discrete_initial_differences": {
+        "K": 0.4309535765660506,
+        "mean_G_fixed": -0.15507174377953703,
+        "mean_G_branch": 0.00925764947011487,
+        "core_b": 0.0020654667796816684,
+        "core_Omega": 0.0019948799258994176,
+        "core_beta": 7.045537140193403e-05
+      },
+      "numerical_whole_space_initial_comparisons": {
+        "K_minus_reference": 0.4435793552171434,
+        "fixed_mean_minus_reference": -0.1551453899302473,
+        "branch_mean_minus_reference": 0.009184203228230103,
+        "b_minus_one": 0.0020609213301481244,
+        "Omega_minus_one": 0.0019948799258195926,
+        "b_minus_Omega": 6.604140432853178e-05,
+        "beta_minus_one": 6.59099219482151e-05
+      },
+      "reference_values": {
+        "K": 6.4437717665751,
+        "mean_G": 41.87025495048,
+        "core_b": 1.0,
+        "core_Omega": 1.0
+      },
+      "scope": "Numerical diagnostic differences only; no interval lower bounds or whole-space endpoint validation."
+    }
+  },
+  "B": {
+    "json": "work/pass11/resolved-192-2049-dt50.json",
+    "checkpoint": "work/pass11/resolved-192-2049-dt50.npz",
+    "parameters": {
+      "nr": 192,
+      "nz": 2049,
+      "R": 8.0,
+      "L": 16.0,
+      "mapping": 4.0,
+      "J": 4,
+      "nu": 0.001,
+      "T": 0.001,
+      "dt": 5e-05,
+      "steps": 20,
+      "dealias": "padding",
+      "backend": "fast",
+      "fft_workers": 4
+    },
+    "observables": {
+      "energy": 81031.78112799257,
+      "K": 6.888747384487302,
+      "core_b": 1.0020609175192279,
+      "core_Omega": 1.0019957264661787,
+      "core_beta": 1.000065061208673,
+      "mean_G_fixed": 41.71511341081851,
+      "mean_G_branch": 41.8794499053482,
+      "mean_G_branch_radius": 0.21972428733813337
+    },
+    "gain_margins": {
+      "same_run_discrete_initial_differences": {
+        "K": 0.4323498392611089,
+        "mean_G_fixed": -0.15506789351078254,
+        "mean_G_branch": 0.009268401110084312,
+        "core_b": 0.0020654629687614223,
+        "core_Omega": 0.0019957264662585628,
+        "core_beta": 6.960665812671962e-05
+      },
+      "numerical_whole_space_initial_comparisons": {
+        "K_minus_reference": 0.44497561791220175,
+        "fixed_mean_minus_reference": -0.1551415396614928,
+        "branch_mean_minus_reference": 0.009194954868199545,
+        "b_minus_one": 0.0020609175192278784,
+        "Omega_minus_one": 0.0019957264661787377,
+        "b_minus_Omega": 6.519105304914063e-05,
+        "beta_minus_one": 6.506120867300069e-05
+      },
+      "reference_values": {
+        "K": 6.4437717665751,
+        "mean_G": 41.87025495048,
+        "core_b": 1.0,
+        "core_Omega": 1.0
+      },
+      "scope": "Numerical diagnostic differences only; no interval lower bounds or whole-space endpoint validation."
+    }
+  },
+  "full_L2_absolute": 0.0026354951790348064,
+  "seed_L2_absolute": 0.0026214320479522636,
+  "full_L2_A": 402.5711851622173,
+  "full_L2_B": 402.5711890535451,
+  "seed_L2_A": 3.711428598745298,
+  "seed_L2_B": 3.7118047859464003,
+  "full_L2_relative_to_B": 6.546656220557962e-06,
+  "seed_L2_relative_to_B": 0.0007062418955537491,
+  "per_mode": [
+    {
+      "m": 0,
+      "L2_absolute": 0.0002718986147160506,
+      "L2_relative_to_B": 6.754337625061534e-07,
+      "energy_A": 81024.89221033435,
+      "energy_B": 81024.89238060807,
+      "energy_B_minus_A": 0.00017027372086886317
+    },
+    {
+      "m": 4,
+      "L2_absolute": 0.001624054919336341,
+      "L2_relative_to_B": 0.00043874082550364094,
+      "energy_A": 6.849929143066622,
+      "energy_B": 6.851021507465404,
+      "energy_B_minus_A": 0.0010923643987821308
+    },
+    {
+      "m": 8,
+      "L2_absolute": 0.0016654313712943889,
+      "L2_relative_to_B": 0.0061315296586336955,
+      "energy_A": 0.036612037856420476,
+      "energy_B": 0.03688806036305397,
+      "energy_B_minus_A": 0.00027602250663349287
+    },
+    {
+      "m": 12,
+      "L2_absolute": 0.0010358188767301943,
+      "L2_relative_to_B": 0.025717238583050177,
+      "energy_A": 0.0007856694783492487,
+      "energy_B": 0.0008111272262914344,
+      "energy_B_minus_A": 2.5457747942185722e-05
+    },
+    {
+      "m": 16,
+      "L2_absolute": 0.0006227111715141445,
+      "L2_relative_to_B": 0.0852318645198508,
+      "energy_A": 2.4271390852025954e-05,
+      "energy_B": 2.668943255234202e-05,
+      "energy_B_minus_A": 2.418041700316065e-06
+    }
+  ],
+  "observables_B_minus_A": {
+    "energy": 0.0015665364335291088,
+    "K": 0.0013962626950583257,
+    "core_b": -3.810920246039018e-09,
+    "core_Omega": 8.465403591451093e-07,
+    "core_beta": -8.487132752144078e-07,
+    "mean_G_fixed": 3.850268754490571e-06,
+    "mean_G_branch": 1.075163996944184e-05,
+    "mean_G_branch_radius": 9.63093586270336e-08
+  },
+  "source_sha256": {
+    "evolve_full_mac.py": "2e671a3599fc05ed3d0fdef657a75bb0e9dceeab05fb1b96c4c5fc7243a7fe95",
+    "fast_full_mac.py": "3a7f76fcdaa98ccc39a3215380236f1154b09677bda7afca96c728ce1a5eca75",
+    "initial_full_field.py": "0834a5f75d2f84ec6bec5300191cb84ebb21d4b0236a0b8591e6d9d52eae2f0a",
+    "run_resolved_mac.py": "c14cec3ed65826dfa61cff9024efd48d1dac893732240c03dc4f1d48eb6b8b45"
+  },
+  "limitation": "Same-grid time-step agreement does not bound spatial/domain errors or the whole-space residual; the numerical initial references are not intervals."
+}

@@ -1,0 +1,32 @@
+==========================================================================================
+(a) where a < 0 on supp(omega):  radial profile of a on the ray phi = 45 deg
+==========================================================================================
+   N=5  R=32  domain L=n/a  grid 384x384
+          s   a(s,45deg)    |omega|
+        1.0      1.56828    0.50442
+        1.5      1.33209    0.98057
+        2.0      1.16966    1.00166
+        3.0      0.96424    1.00068
+        4.0      0.82281    1.00018
+        6.0      0.62475    0.99983
+        8.0      0.48502    0.99971
+       12.0      0.28999    0.99962
+       16.0      0.15449    0.99955
+       20.0      0.05277    0.99902
+       24.0     -0.02627    0.99287
+       28.0     -0.08584    0.92364
+       32.0     -0.10985    0.49979
+       40.0     -0.05392    0.00670
+       48.0     -0.02284    0.00005
+   min rho with a<0 on {|omega|>0.1M} = 15.752   (rho0=1, R=32)
+   that is log(rho_switch/rho0) = 2.757 of the L = 3.466 octave range
+
+==========================================================================================
+(b) L1: is the 3-6e-3 grid-vs-quadrature gap a quadrature-truncation artefact?
+==========================================================================================
+   N=4  window [log rho0 - 1.5, log R + 0.8]  a_quad = 1.369700   shift vs attempt's window = +0.000e+00
+   N=4  window [log rho0 - 3.0, log R + 2.0]  a_quad = 1.370373   shift vs attempt's window = +4.914e-04
+   N=4  window [log rho0 - 8.0, log R + 4.0]  a_quad = 1.371266   shift vs attempt's window = +1.144e-03
+   N=4  window [log rho0 - 20.0, log R + 8.0]  a_quad = 1.373237   shift vs attempt's window = +2.583e-03
+   grid solver values from the attempt's own d5 (h=1/8..1/32, N=4): 1.363171/1.363678/1.363517/1.363480
+   -> the grid value is h-STABLE to 4e-4 and sits ~0.3-0.6% BELOW the exact representation.

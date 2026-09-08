@@ -1,0 +1,59 @@
+{
+  "commit": "d0124689230b58b4f86e7b90ac59de06404b3b6b",
+  "files": [
+    {
+      "path": "Challenge.lean",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/Challenge.lean",
+      "bytes": 3454,
+      "sha256": "470a2468cc22abe02b56fe77061ef379150363da4cb6af2e66bcd66cb6f07cc5"
+    },
+    {
+      "path": "Solution.lean",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/Solution.lean",
+      "bytes": 1348,
+      "sha256": "579ee0830b3083f78efef039c5abf581ba7d880fc1ee41467ed0437995519880"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/README.md",
+      "bytes": 5052,
+      "sha256": "5925a6eec362a04ecc115bd4a0f53ca9510260faa3a7f57dc7a41b0706b05b16"
+    },
+    {
+      "path": "formalization.yaml",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/formalization.yaml",
+      "bytes": 4436,
+      "sha256": "e4e3b2715e9d0e39eb0a9be714b35051c63b8b898b8c6070a97fd627dce91b56"
+    },
+    {
+      "path": "comparator.json",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/comparator.json",
+      "bytes": 238,
+      "sha256": "9dfc55a88c6a5b19ded16a18df26a9f9a7a7aaf8c4996191efbbe8cae7f8bab4"
+    },
+    {
+      "path": "scripts/PrintAxioms.lean",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/scripts/PrintAxioms.lean",
+      "bytes": 107,
+      "sha256": "a1b802777e8c7112944f7b5f86c0d616bfae85ce12e78e41fa0925a937b8c016"
+    },
+    {
+      "path": "EulerBlowup/Main.lean",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/EulerBlowup/Main.lean",
+      "bytes": 4887,
+      "sha256": "3ccb4fc2af310fd09fec9257722a41b9973cc2d42c1d24cb72d17730ffb5408f"
+    },
+    {
+      "path": "EulerBlowup/Theorem01Prime.lean",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/EulerBlowup/Theorem01Prime.lean",
+      "bytes": 4989,
+      "sha256": "4b54b01e3b092e863db0b5fcaf8bd536bd8d0aa4455921e328bfd7da4266fdc7"
+    },
+    {
+      "path": "EulerBlowup/Theorem01.lean",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/EulerBlowup/Theorem01.lean",
+      "bytes": 145499,
+      "sha256": "b5e8a782739b8034f03a8e71068c1c3c5fb011708751c8f722440a4bd4b6829d"
+    }
+  ]
+}

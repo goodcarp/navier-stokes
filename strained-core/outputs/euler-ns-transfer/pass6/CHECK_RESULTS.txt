@@ -1,0 +1,88 @@
+CHECK verify_circulation_return_obstruction.py
+PASS exact Gamma equation, cylindrical diffusion, and weighted force source.
+PASS Gamma and viscosity scale by the same q^alpha factor.
+PASS receiver-radius cancellation and an exact sample d_chi=2/9.
+PASS finite cap example: 16 returns possible under the bound; stage 17 excluded.
+PASS fixed-core Taylor lower bound G >= omega*a^2/2.
+PASS finite-time forcing-budget scaling.
+The note proves the maximum principle and return implications; this is an algebraic checker.
+CHECK verify_escape_route_audit.py
+PASS: quotient PDE identities, scaling, interpolation, recurrence, and layer budget
+CHECK verify_nonaxisymmetric_torque.py
+PASS: full cylindrical and Cartesian angular-momentum diffusion identity.
+PASS: conservative mean Reynolds torque and periodic-derivative reduction.
+PASS: compact-envelope solenoidal Fourier seed and selected-sign mean torque.
+PASS: exact complex-mode covariance and local energy bound.
+Scope: exact identities and initial seed; no persistence or return map.
+CHECK verify_rotational_receiver_torque.py
+PASS: compact rotational test is solenoidal; exact pressure-free stress contraction.
+PASS: mean-zero mode, covariance and strict-sign receiver torque kernel.
+PASS: geometric energy inequality independent of carrier frequency.
+PASS: explicit collar support, fourfold symmetry and inversion parity parameters.
+Initial transfer and necessary budget only; no evolved transfer or return.
+CHECK verify_three_dimensional_initial_gate.py
+PASS: H4 pressure-pairing counting constant and full derivative Lipschitz polynomial.
+PASS: exact amplitude retuning and retained half-margin beta second derivative.
+PASS: fourfold central matrix constraints and actual neutral jet algebra.
+PASS: nonzero norm-form seed interval and full retuned distance budget.
+Depends on analytic estimates and pass5 interval certificate; no return or blowup.
+PASS: 5 finite checks. No return or NS blowup certified.
+CHECK verify_outer_mean_maximum.py
+{
+  "status": "PASS",
+  "scope": "initial mean maximum and neutral pressure only; full pressure-derivative gate untested",
+  "cutoff_jets": {
+    "panels": 64,
+    "dps": 35,
+    "first_derivative_display": "[-2.879917644649260685216992398082229293221, 0.0]",
+    "second_derivative_display": "[-27.93684079393522123826176999281128382559, 27.93684079393522123826176999281128310337]",
+    "first_derivative_exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "957016789705688082696064857596359727",
+        "exponent": -118
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "0",
+        "exponent": 0
+      }
+    },
+    "second_derivative_exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "1160450965533899752011326882935170753",
+        "exponent": -115
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "1160450965533899752011326882935170723",
+        "exponent": -115
+      }
+    }
+  },
+  "seed_pressure_upper": "2029200/1419857",
+  "seed_amplitude_interval": [
+    "3/4",
+    "1"
+  ],
+  "retuned_swirl_amplitude_bounds": [
+    "780",
+    "1020"
+  ],
+  "mean_maximum_derivative_lower": "626/35",
+  "unit_seed_derivative_lower": "27509/315"
+}
+CHECK verify_outer_pressure_compatibility.py
+PASS: exact rotation/degree selection leaves lambda²(D_nu+A E).
+PASS: existing radial bound and retuning yield the correct sufficient inequality.
+Threshold for D_nu+A_(3/4)E: 5093339/210000 = 24.25399523809524
+Same amplitude already passes the mean-maximum test; interaction bound remains unevaluated.
+PASS: all seven packaged finite check programs executed successfully.
+PASS: outer mean-maximum cutoff ranges recomputed; exact derivative lower bound 626/35.
+PASS: 16 local artifact links resolve; no invalid control characters.
+pass2: 17 archived hashes unchanged
+pass3: 16 archived hashes unchanged
+pass4: 33 archived hashes unchanged
+pass5: 39 archived hashes unchanged
+LIMIT: new finite-amplitude full pressure interactions D_nu and E remain unevaluated; no return or blowup.

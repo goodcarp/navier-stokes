@@ -1,0 +1,582 @@
+                                                 Lower bounds on the blowup rate of vorticity in the Euler equations
+                                                                                 Benjamin Ingimarson and Igor Kukavica
+
+
+
+
+arXiv:2603.17431v2 [math.AP] 21 Mar 2026
+                                                   A BSTRACT. Under the assumption that a solution to the 3D incompressible Euler equations blows up at a
+                                                   time T∗ and that T∗ is the first such time, we establish lower bounds on the rate of blow-up of theR t maximum
+                                                   norm of the vorticity. In particular, when the domain is R3 or T3 , we provide lower bounds on 0 ∥ω∥L∞ ds
+                                                   and sups∈[0,t] ∥ω∥L∞ for t sufficiently close to T∗ . Notably, this gives a quantitative description of the BKM
+                                                   blow-up criterion. Moreover, we provide pointwise-in-time lower bounds on ∥Dk ω∥L∞ . Finally, we state
+                                                   some consequences on the blow-up rate of the derivative of the deformation tensor.
+
+
+
+
+                                                                                                  1. Introduction
+                                               We consider the 3D incompressible Euler equations,
+                                                                                  ut + u · ∇u + ∇p = 0,
+                                                                                                                                                                     (1.1)
+                                                                                               div u = 0,
+                                           in Ω × [0, T ] for the case that Ω = R3 or T3 . The classical local existence theorem, see [EM, K, T], states
+                                           that for an initial velocity field u0 ∈ H r , with r > 2.5, where ∥u0 ∥H r ≤ M for some M > 0, there exists a
+                                           time T = T (M ) > 0 such that (1.1) has a solution in the class,
+                                                                             u ∈ C([0, T ]; H r (Ω)) ∩ C 1 ([0, T ]; H r−1 (Ω)).                                     (1.2)
+                                           A classical result by Beale, Kato, and Majda [BKM] asserts that if such a solution leaves the class (1.2) at
+                                           a time T∗ and that T∗ is the first such time, then the spatial L∞ norm of the vorticity blows up as t → T∗− .
+                                           More precisely,
+                                                                                       Z T∗
+                                                                                             ∥ω(t)∥L∞ = ∞,                                        (1.3)
+                                                                                              0
+                                           and, consequently,
+                                                                                           lim sup ∥ω(t)∥L∞ = ∞,                                                     (1.4)
+                                                                                            t→T∗−
+                                           where ω = curl u denotes the vorticity, see also [BV, Theorem 2.6] and [MB, Theorem 4.3]. In other words,
+                                           the solution u stays smooth provided the maximum norm of the vorticity is time-integrable.
+                                                However, not much is known regarding the rate at which either of the two quantities (1.3)Ror (1.4) blow
+                                                                                                                                           t
+                                           up. In this paper, we prove lower bounds on the blow up rate of the accumulation of vorticity, 0 ∥ω(s)∥L∞ ,
+                                           and sups≤t ∥ω(s)∥L∞ , for t sufficiently close to T∗ . We also provide pointwise-in-time lower bounds on
+                                           the higher-order derivatives, ∥Dk ω(s)∥L∞ . We end the paper with some consequences on the blow-up of
+                                           ∥Dσ∥L∞ , where σ denotes the deformation tensor.
+                                                In previous literature, several variants of the BKM criterion have been shown to hold. Indeed, Fer-
+                                           rari [F] proved the criterion (1.3) in the case of a bounded domain, see also [SY, Z]. As for different
+                                           quantities in place of the maximum norm of the vorticity, Ponce [P] proved that it can be replaced with the
+                                           maximum norm of the deformation tensor. Then, Constantin, Fefferman, and Majda [CFM] established a
+                                           blow-up criterion involving the vorticity direction and the maximum norm of the velocity. In a result which
+                                           directly improves the BKM criterion, Kozono and Taniuchi [KT] demonstrated that the L∞ norm in (1.3)
+                                                                                                         1
+                                        LOWER BOUNDS ON BLOWUP RATE                                              2
+
+
+can be replaced by the BMO norm. With Ogawa [KOT], they further improved this result by replacing the
+BMO norm with Ḃ∞,∞  0    . Finally, we note that Aydin [A] established that the breakdown of a solution u is
+                     2
+contingent on the L integrability of only its tangential derivatives.
+     These results are, of course, a priori in nature; whether or not solutions to (1.1) with smooth initial
+data blow up in finite time remains an open problem. However, under assumptions with initial data in
+lower regularity spaces, there have been major advances in recent years. Elgindi [E] established finite-time
+singularity formation in the axisymmetric no-swirl class for initial data in C 1,α for sufficiently small α > 0.
+We also note the work by Córdoba, Martinez-Zoroa, and Yang [CMZ] in which they established finite-time
+blow-up for a class of initial data in C ∞ (R3 \ {0}) ∩ C 1,α ∩ L2 , with α > 0 sufficiently small. Recently,
+Shkoller [S] obtained a threshold result by showing finite-time Type-I blow-up in the axisymmetric no-
+swirl class with initial data in C 1,1/3− ∩ L2 , constructing solutions satisfying ∥ω(t)∥L∞ ∼ (T∗ − t)−1
+as t → T∗− . Finally, we note the paper by Jeong, Martı́nez-Zoroa, and Ożański [JMO], in which they
+proved instantaneous and continuous-in-time loss of supercritical Sobolev regularity for (1.1).
+     Assuming a solution blows up at a time T∗ , a natural question concerns the rate at which the singularity
+forms. Under the assumption of blow-up, one can prove a lower bound on the blow-up rate if the quantity
+satisfies, say, a Riccati-type inequality of the form, ẋ ≲ xβ , where β > 1. For a solution u to the 3D
+incompressible Euler equations which leaves the class (1.2) at a time T∗ , Chen and Pavlović [CP] proved
+pointwise lower bounds on u in the H r norm for t sufficiently close to T∗ of the order (T∗ − t)−2δ/5−1 .
+     Recently, there has been interest in the rate of blow-up of the vorticity itself. Motivated by solutions with
+self-similar blow-up, Constantin, Ignatova, and Vicol [CIV] established a criterion for the rate of blow-up
+of ∥Dω∥L∞ . Assuming ω0 ∈ C 1 and that a solution to (1.1) with finite initial kinetic energy blows up at a
+time T∗ , they proved
+                                      sup (T∗ − t)1+γ ∥Dω∥L∞ (R3 ) = ∞                                       (1.5)
+                                    t∈[0,T∗ )
+
+for all γ < 2/5.
+     In this paper, we improve on the classical
+                                              Rt      BKM criterion with explicit lower bounds on the blow
+up rate of the accumulation of vorticity, 0 ∥ω(s)∥L∞ , and non-integrable lower bounds on the quantity,
+sups≤t ∥ω(s)∥L∞ , for t sufficiently close to T∗ . Moreover, we obtain the lower bound (1.5) with γ = 2/5.
+Also, for any k ∈ N, we provide pointwise lower bounds on the quantity ∥Dk ω(t)∥L∞ . Finally, we detail
+some consequences on the blow-up rate of the deformation tensor. These results are detailed in Section 2.
+     In Section 3, we prove Theorem 2.1, which provides lower bounds on ω. To establish the estimate on
+the accumulation of vorticity, we first derive a Gronwall-type inequality of the form (3.6) for ∥ω(t)∥L∞ on
+the interval [0, T∗ ). However, it turns out that the differential inequality contains an exponential of the accu-
+          Rt
+mulation 0 ∥ω∥L∞ , which does not seem amenable to a barrier argument. To bypass this, we parameterize
+time in terms of the accumulation of the vorticity, called τ , see (3.7) below. We then reformulate our expo-
+nential inequality for (d/dt)∥ω(t)∥L∞ in terms of the new parameter. The lower bound on the accumulation
+is then obtained after considering dt/dτ .
+     In Section 4, we prove Theorems 2.5, 2.6, and 2.7. Theorem 2.5 provides pointwise-in-time lower
+bounds on the blow-up of ∥Dω∥L∞ . The proof starts with a lemma stating an interpolation inequality
+relating ∥D1/2 ω∥L8 and ∥Dω∥L∞ . We then derive a Riccati-type inequality for the L8 norm, from which we
+deduce a lower bound on ∥Dω∥L∞ . We note that this lower bound is at the critical exponent γ = 2/5. This
+result implies that the singularity for ∥Dω∥L∞ develops as a pointwise limit to infinity. In Theorem 2.6, we
+demonstrate that Theorem 2.5 may be extended to analogous pointwise-in-time lower bounds for ∥Dk ω∥L∞ .
+Finally, in Theorem 2.7, we provide lower bounds on the uniform norm of the derivative of the stress
+σ = ∇u + (∇u)T considered by Ponce in [P].
+
+                                                2. Main results
+    The first theorem provides lower bounds on the blow-up rate of ω when Ω = R3 or T3 .
+                                        LOWER BOUNDS ON BLOWUP RATE                                           3
+
+
+    T HEOREM 2.1. Let u be a solution to the Euler equations (1.1) for Ω = R3 or T3 in the regularity
+class (1.2) with r = 3. Suppose there is a time T∗ > 0 such that the solution cannot be continued in this
+class to T = T∗ and that T∗ is the first such time. Then, we have
+                         Z t
+                                                1            1                1
+                             ∥ω(s)∥L∞ ds ≥ log log               ,    T∗ − t < ,                    (2.1)
+                          0                     C         T∗ − t              C
+and, moreover,                                              
+                                                        1                   1
+                             lim sup (T∗ − t) log              ∥ω(t)∥L∞ ≥ ,                         (2.2)
+                               t→T∗−                  T∗ − t               C
+where C denotes a constant depending on ∥u0 ∥H 3 .
+    R EMARK 2.2. We note that the proof shows that the constant in C can be made arbitrarily close to the
+constant in the inequality (3.3) below.
+   R EMARK 2.3. We also note that Theorem 2.1 holds for solutions in the regularity class (1.2) with
+r > 5/2, and the constant appearing in (3.3) depends on r.
+   R EMARK 2.4. The statement and proof apply directly to the case of a bounded smooth domain with
+impermeable boundary condition, using the inequality for ∥∇u∥L∞ (Ω) in [F, SY].
+    The second theorem gives pointwise-in-time lower bounds on ∥Dω∥L∞ .
+    T HEOREM 2.5. Assume the hypothesis of Theorem 2.1 for Ω = R3 and r > 7/2. Then, we have
+                                                1
+                          ∥Dω(t)∥L∞ ≥                   ,    t ∈ [0, T∗ ),                   (2.3)
+                                           C(T∗ − t)7/5
+where C depends on ∥u0 ∥L2 . When Ω = T3 , the lower bound (2.3) holds for t sufficiently close to T∗ .
+    We also give pointwise-in-time lower bounds on the blow-up of ∥Dk ω∥L∞ for k ≥ 2.
+    T HEOREM 2.6. Assume the hypothesis of Theorem 2.1 for Ω = R3 and r > 5/2 + m, where m ∈
+{3, 4, . . .}. Then, we have
+                                                 1
+                             ∥Dk ω(t)∥L∞ ≥                 , t ∈ [0, T∗ )                (2.4)
+                                           C(T∗ − t)2k/5+1
+for k = 2, . . . , m, where C depends on ∥u0 ∥L2 . When Ω = T3 , the lower bound (2.4) holds for t sufficiently
+close to T∗ .
+    Finally, we state the blow-up rate for the stress tensor σ = ∇u + (∇u)T addressed in [P].
+    T HEOREM 2.7. Assume the hypothesis of Theorem 2.1 for Ω = R3 or T3 for r > 7/2. Then, we have
+                                                         1
+                                   ∥Dσ(t)∥L∞ ≥
+                                                  C(T∗ − t)7/5
+for all t sufficiently close to T∗ , where C depends on ∥u0 ∥L2 .
+    Analogous bounds to (2.4) also apply for ∥Dk σ(t)∥L∞ for any k ≥ 2.
+
+                              3. Lower bounds on the blow-up rate of ∥ω∥L∞
+    In this section we prove Theorem 2.1.
+    P ROOF OF T HEOREM 2.1. Let t ∈ [0, T∗ ). We begin with the vorticity equation corresponding to (1.1),
+                                           ∂t ω + u · ∇ω = ω · ∇u.                                        (3.1)
+Following Lagrangian trajectories, we obtain
+                                      d
+                                         ∥ω∥L∞ ≲ ∥Du∥L∞ ∥ω∥L∞ .                                           (3.2)
+                                      dt
+                                       LOWER BOUNDS ON BLOWUP RATE                                           4
+
+
+In conjunction with the bound,
+                              ∥Du∥L∞ ≤ e
+                                       C(1 + ∥ω∥L∞ (1 + log+ ∥u∥H 3 )),                                  (3.3)
+see [KT], the estimate (3.2) becomes
+                            d
+                              ∥ω∥L∞ ≲ ∥ω∥L∞ + ∥ω∥2L∞ (1 + log+ ∥u∥H 3 ),                          (3.4)
+                           dt
+where we denote log+ a = max{log a, 0} for a > 0. Next, we bound ∥u∥H 3 in terms of ∥ω∥L∞ . From (1.1),
+we have
+                  d
+                    ∥u∥H 3 ≲ ∥Du∥L∞ ∥u∥H 3 ≲ (1 + ∥ω∥L∞ (1 + log+ ∥u∥H 3 ))∥u∥H 3 .
+                 dt
+Hence,
+                       +
+                        d
+                              (1 + log+ ∥u∥H 3 ) ≲ 1 + ∥ω∥L∞ (1 + log+ ∥u∥H 3 ),
+                        dt
+where (d/dt)+ denotes the upper right derivative. Thus, Gronwall’s inequality gives
+                                                Z t                
+                   1 + log+ ∥u(t)∥H 3 ≲ exp C     e    ∥ω(s)∥L∞ ds ,         t < T∗ ,
+                                                       0
+
+where C
+      e denotes the constant from (3.3). Substituting this into (3.4), we arrive at
+                                                       Z t               
+                  d
+                     ∥ω∥L∞ ≲ ∥ω∥L∞ + ∥ω∥2L∞ exp C        e     ∥ω∥L∞ ds ,          t < T∗ ,              (3.5)
+                  dt                                         0
+
+where the implicit constant depends on ∥u0 ∥H 3 and T∗ .
+   For brevity, we denote x(t) = ∥ω(t)∥L∞ and rewrite (3.5) as
+                                                         Z t     
+                                                   2
+                                        ẋ ≲ x + x exp        x ds ,
+                                                                0                                        (3.6)
+                                       x(0) = ∥ω(0)∥L∞ ,
+
+where we assume C   e = 1 with no loss of generality, otherwise, we can include it in the following reparam-
+eterization (3.7). Next, we convert (3.6) into an inequality in terms of the accumulation of vorticity, which
+we denote as
+                                               Z t
+                                      τ (t) =      x(s) ds,     t < T∗ .                                 (3.7)
+                                                0
+Since x(t) = ∥ω(t)∥L∞ has positive initial data, we have x(t) > 0 for all t ∈ [0, T∗ ). Hence, τ : [0, T∗ ) →
+[0, ∞) is a C 1 diffeomorphism. This enables us to parameterize the time as t = t(τ ), where
+                                   lim t(τ ) = T∗    and       lim t(τ ) = 0.                            (3.8)
+                                  τ →∞                      τ →0+
+
+Denoting X(τ ) = x(t(τ )), we have
+                                       dτ                  dt    1
+                                          = x(t)    and       =
+                                       dt                  dτ   X(τ )
+with X(0) = x(0). Therefore, the differential inequality (3.6) can be recast as
+                                             dX
+                                                 ≲ 1 + Xeτ ,
+                                             dτ
+and applying Gronwall’s inequality on the interval [0, τ ] gives
+                                                           τ
+                                     X(τ ) ≤ C(1 + τ )eCe ,         τ ≥ 0,
+                                        LOWER BOUNDS ON BLOWUP RATE                                           5
+
+
+where C ≥ 1 denotes a constant depending on ∥u0 ∥H 3 and T∗ . Next, we recover an explicit relationship
+between the quantity T∗ − t and the accumulation τ . For τ0 ≥ 0, we denote t0 = t(τ0 ). Recalling (3.8), we
+have
+                Z ∞            Z ∞                    Z ∞
+                      dt              1                                  τ                1
+     T∗ − t0 =           dτ =            dτ ≥ C   −1
+                                                          (1 + τ )−1 e−Ce dτ ≥                  τ +1 .
+                 τ0 dτ          τ0 X(τ )               τ0                       C(1 + τ0 )eCe 0
+To obtain the last inequality, we estimate the integral bounds with [τ0 , τ0 + 1] and bound the integrand from
+below with its minimum on [τ0 , τ0 + 1]. Next, we drop the subscripts, invert the inequality, and bound
+            τ +1
+2 + τ ≤ ee       for τ ≥ 0, arriving at
+                                                τ +1         1
+                                      e(1+C)e        ≥              ,     τ ≥ 0.
+                                                        C(T∗ − t)
+We then apply a logarithm, which leads to
+                                                                             
+                                                                       1
+                                       (1 + C)eτ +1 ≥ log                       .
+                                                                  C(T∗ − t)
+Taking a second logarithm gives
+                                                    
+                                            1                                               1
+                        τ ≥ log log                    − log(1 + C) − 1,          T∗ − t ≤ .
+                                       C(T∗ − t)                                            C
+Thus, we have obtained
+                   Z t                                                
+                                          1                     1                                1
+                        ∥ω(s)∥L∞ ds ≥         log log                    − C3 ,      T∗ − t <      ,      (3.9)
+                     0                   C1               C2 (T∗ − t)                           C4
+where C1 , C2 , C3 , C4 are positive constants. The right-hand side of (3.9) may be rewritten as
+                                                                                      
+                              1             1          1                   log C2
+                                 log log            +     log 1 +                        .
+                              C1         T∗ − t C1                    log(1/(T∗ − t))
+Note that the second term converges to 0 as t → T∗ , and thus, by possibly increasing C4 , we derive
+                       Z t                                         
+                                             1                  1                             1
+                           ∥ω(s)∥L∞ ds ≥          log log              − C3 ,      T∗ − t <      .
+                        0                   C  1            T ∗ − t                          C 4
+Finally, by increasing C1 and C4 , we may also, without loss of generality, set C3 = 0, and (2.1) is proven.
+    We now prove (2.2). Towards a contradiction, we suppose
+                                                                  
+                                                               1
+                                 lim sup (T∗ − t) log                 ∥ω(t)∥L∞ ≤ δ,                      (3.10)
+                                   t→T∗−                    T∗ − t
+for some δ ∈ [0, 1) and claim that this leads to a contradiction if δ is sufficiently small. Denote y(t) =
+sups≤t ∥ω(s)∥L∞ . By monotonicity, the equation (3.10) implies
+                                                2δ
+                               y(t) ≤                             ,   t0 ≤ t < T∗ ,
+                                                             1
+                                        (T∗ − t) log       T∗ −t
+
+where t0 is a fixed number chosen such that (2.1) holds for all t ≥ t0 . Thus,
+                   Z t        Z t0            Z t
+                                                            1
+                       y ds ≤      y ds + 2δ                           ds
+                     0         0               t0 (T∗ − s) log     1
+                                                                 T∗ −s
+                              Z t0                                                                  (3.11)
+                                                         1                          1
+                            =      y ds + 2δ log log             − 2δ log log              .
+                               0                       T∗ − t                    T∗ − t0
+However, from (2.1), we have the lower bound,
+                                      Z t                            
+                                                  1              1
+                                          y ds ≥ log log                .                               (3.12)
+                                       0          C           T∗ − t
+                                         LOWER BOUNDS ON BLOWUP RATE                                             6
+
+
+Upon combining (3.11) and (3.12), we infer
+                                                Z t0
+                       1                   1                                1
+                          − 2δ log log          ≤      y ds − 2δ log log         ,
+                       C                 T∗ − t    0                     T∗ − t0
+for t sufficiently close to T∗ , which is a contradiction if δ > 0 is sufficiently small.                       □
+
+                            4. Lower bounds on the blow-up rate of ∥Dk ω∥L∞
+    First, we prove lower bounds on ∥Dω∥L∞ . The argument relies on the following lemma.
+    L EMMA 4.1. Assume the hypothesis of Theorem 2.5. Then, in the case that Ω = R3 ,
+                                                                 1/4          3/4
+                                        ∥D1/2 ω∥L8 ≲ ∥u∥L2 ∥Dω∥L∞ ,                                          (4.1)
+while if Ω = T3 , we have
+                                                           1/4         3/4
+                                   ∥D1/2 ω∥L8 ≲ ∥u∥L2 ∥Dω∥L∞ + ∥u∥L2 .                                       (4.2)
+     P ROOF. First, we consider the case Ω = R3 . Using the fractional Gagliardo-Nirenberg inequali-
+ties [BM, Theorem 1], we get
+                                                         1/2  1/2
+                                        ∥ω∥W 1/2,8 ≲ ∥ω∥L4 ∥ω∥W 1,∞ .                          (4.3)
+To estimate the first term on the right-hand side, we have
+                                 1/2           1/2               1/2               1/2         1/2    1/2
+     ∥ω∥L4 ≲ ∥u∥W 1,4 ≲ ∥u∥W 1/2,8/3 ∥u∥W 3/2,8 ≲ ∥u∥W 1/2,8/3 ∥ω∥W 1/2,8 + ∥u∥W 1/2,8/3 ∥u∥L8 ,             (4.4)
+where, after the third inequality, we used the Calderón-Zygmund theorem, see [St]. After rescaling, (4.4)
+gives
+                                                       1/2        1/2
+                                    ∥ω∥L4 ≲ ∥D1/2 u∥L8/3 ∥D1/2 ω∥L8 .                                (4.5)
+Again, by the fractional Gagliardo-Nirenberg inequality, we have
+                                           1/2       1/2           1/2        1/2        1/2    1/2
+                      ∥u∥W 1/2,8/3 ≲ ∥u∥L2 ∥u∥W 1,4 ≲ ∥u∥L2 ∥ω∥L4 + ∥u∥L2 ∥u∥L4 ,                            (4.6)
+and, in particular,
+                                                                   1/2       1/2
+                                         ∥D1/2 u∥L8/3 ≲ ∥u∥L2 ∥ω∥L4 .                                        (4.7)
+Substituting (4.7) into (4.5), we get
+                                                           1/3               2/3
+                                         ∥ω∥L4 ≲ ∥u∥L2 ∥D1/2 ω∥L8 .                                          (4.8)
+Furthermore, replacing (4.8) into (4.3) gives us
+                                                                 1/4     3/4
+                                        ∥D1/2 ω∥L8 ≲ ∥u∥L2 ∥ω∥W 1,∞ .                                        (4.9)
+After rescaling to eliminate the lower order term in (4.9), we obtain (4.1). Also, by considering the projection
+onto divergence-free vector fields, the estimate (4.1) is valid for ω̃ = curl ũ where ũ is not divergence free.
+     Now, we consider the case Ω = T3 . Let φ be a smooth cut-off function equal to 1 on the cell [0, 1]3 and
+0 outside of some neighborhood containing the cell. Then, we may interpret uφ as a function on R3 . In all
+that follows, Lp denotes a norm over T3 unless noted otherwise. First, we note that
+ ∥D1/2 ω∥L8 ≲ ∥φD1/2 ω∥L8 (R3 ) ≲ ∥D1/2 curl(uφ)∥L8 (R3 ) + ∥φD1/2 curl u − D1/2 curl(uφ)∥L8 (R3 ) .
+                                                                                              (4.10)
+We focus on the first term on the far-right side of (4.10). By (4.1), we have
+                                         1/4                       3/4
+      ∥D1/2 curl(uφ)∥L8 (R3 ) ≲ ∥uφ∥L2 (R3 ) ∥D curl(uφ)∥L∞ (R3 )
+                                                                                  
+                 1/4           3/4                3/4             3/4     3/4
+          ≲ ∥u∥L2 ∥Dωφ∥L∞ (R3 ) + ∥DuDφ∥L∞ (R3 ) + ∥ωDφ∥L∞ (R3 ) + ∥uD2 φ∥L∞ (R3 )                          (4.11)
+                                                      
+                 1/4         3/4        3/4        3/4
+          ≲ ∥u∥L2 ∥Dω∥L∞ + ∥Du∥L∞ + ∥u∥L∞ .
+                                       LOWER BOUNDS ON BLOWUP RATE                                           7
+
+
+We estimate the lower order terms on the right-hand side. Indeed, by the Gagliardo-Nirenberg inequalities,
+                                             3/7            4/7       3/7     4/7
+                              ∥u∥L∞ ≲ ∥u∥L2 ∥D3/2 u∥L8 + ∥u∥L2 ∥u∥L8 .
+However, we may bound ∥u∥L8 ≲ ∥u∥L∞ and use Young’s inequality to obtain
+                                    3/7            4/7
+                      ∥u∥L∞ ≲ ∥u∥L2 ∥D1/2 ω∥L8 + ∥u∥L2 ≲ ∥D1/2 ω∥L8 + ∥u∥L2 .                          (4.12)
+Next, we consider ∥Du∥L∞ on the far-right side of (4.11). Using similar reasoning as in (4.12), we have
+                                    1/21           20/21
+                   ∥Du∥L∞ ≲ ∥u∥L2 ∥D1/2 ω∥L8               + ∥u∥L2 ≲ ∥D1/2 ω∥L8 + ∥u∥L2 .              (4.13)
+Hence, (4.11), (4.12), and (4.13) imply
+                                               1/4          3/4      1/4            3/4
+                ∥D1/2 curl(uφ)∥L8 (R3 ) ≲ ∥u∥L2 ∥Dω∥L∞ + ∥u∥L2 ∥D1/2 ω∥L8 + ∥u∥L2 .                    (4.14)
+   Next, we consider the commutator term in (4.10). If ζ is a smooth cut-off function equivalent to 1 on
+supp(φ), we may replace u in the commutator term with ũ = uζ. Observe that
+                      ∥φD1/2 curl ũ − D1/2 curl(ũφ)∥L8 (R3 )
+                            ≲ ∥D1/2 ũ∥L8 (R3 ) + ∥ũ∥L8 (R3 ) ≲ ∥D1/2 u∥L8 + ∥u∥L8                    (4.15)
+                                 8/21       13/21   4/7        3/7
+                            ≲ ∥u∥L2 ∥D1/2 ω∥L8 + ∥u∥L2 ∥D1/2 ω∥L8 + ∥u∥L2 ,
+where, in the last inequality, we repeated the reasoning in (4.12) and (4.13).
+   Finally, we combine the estimates (4.10), (4.14), and (4.15) and use Young’s inequality to attain (4.2).
+                                                                                                         □
+    We now prove Theorem 2.5.
+    P ROOF OF T HEOREM 2.5. We first consider Ω = R3 . We perform Lp estimates on D1/2 ω, though, we
+will later fix p = 8. Let t ∈ [0, T∗ ). We claim that, for p > 6,
+                         d                                                       5
+                            ∥D1/2 ω∥Lp ≲ ∥D1/2 ω∥1+α
+                                                 Lp ,             where α =           ,                (4.16)
+                         dt                                                   6 − 6/p
+and the constant depends on ∥u0 ∥L2 and p. To see this, we differentiate the vorticity equation (3.1) and test
+the i-th component of the equation with |D1/2 ω|p−2 D1/2 ωi to obtain
+               d
+                  ∥D1/2 ω∥pLp ≲ ∥D1/2 ∇(uω) − uD1/2 ∇ω∥Lp ∥D1/2 ω∥p−1
+                                                                  Lp
+               dt
+                                 + ∥ω∥L∞ ∥D3/2 u∥Lp ∥D1/2 ω∥p−1           1/2
+                                                                              ω∥pLp                    (4.17)
+                                                            Lp + ∥Du∥L ∥D
+                                                                      ∞
+
+
+                              ≲ ∥Du∥L∞ ∥D1/2 ω∥pLp ,
+written symbolically, where we used the Kato-Ponce inequality, the Biot-Savart law, and the bound ∥ω∥L∞ ≲
+∥Du∥L∞ in the second inequality. Next, we use the Gagliardo-Nirenberg inequality and the Biot-Savart law
+to bound
+                                                                               5
+                          ∥Du∥L∞ ≲ ∥u∥1−α L2
+                                              ∥D1/2 ω∥αLp ,     where α =          .                   (4.18)
+                                                                           6 − 6/p
+Substituting this into (4.17) and using the conservation of energy completes the proof of the claim (4.16).
+    Now, we derive a pointwise lower bound on ∥D1/2 ω∥Lp . Denote z(t) = ∥D1/2 ω(t)∥Lp . Integration
+of (4.16) gives
+                              1            1
+                           − z(T )−α + z(t)−α ≤ C(T − t),             t < T < T∗ ,
+                              α            α
+from which we deduce
+                                                  1
+                               z(T )α ≤      −α
+                                                             ,     t < T < T∗ .
+                                         z(t) − C(T − t)
+                                        LOWER BOUNDS ON BLOWUP RATE                                       8
+
+
+Considering the denominator on the right-hand side, we note that z(T ) is bounded if T satisfies
+                                                          1/α
+                                                     1
+                                       z(t) <                    .                                  (4.19)
+                                                 C(T − t)
+However, by (4.18) and the bound ∥ω∥L∞ ≲ ∥Du∥L∞ , we have that z = ∥D1/2 ω∥L∞ blows up at T∗ .
+Hence, the estimate (4.19) must be false for T = T∗ , that is,
+                                                                1/α
+                                                             1
+                                     ∥Dω(t)∥Lp ≥                                       (4.20)
+                                                       C(T∗ − t)
+for all t ∈ [0, T∗ ).
+     Now, we fix p = 8. By Lemma 4.1, the estimate (4.20), and the conservation of energy, we obtain
+                                                  1
+                             ∥Dω(t)∥L∞ ≥                  ,      t ∈ [0, T∗ ),
+                                            C(T∗ − t)7/5
+where we note that 4/3α = 7/5 when p = 8. The proof in the case that Ω = R3 is complete.
+   Next, we consider Ω = T3 . Similarly as in (4.17), we derive
+                                 d
+                                   ∥D1/2 ω∥Lp ≲ ∥Dω∥L∞ ∥D1/2 ω∥Lp .                                 (4.21)
+                                dt
+The Gagliardo-Nirenberg inequality gives
+                                                                              5
+                   ∥Du∥L∞ ≲ ∥u∥1−α L2
+                                      ∥D1/2 ω∥αLp + ∥u∥L2 ,     where α =         .
+                                                                          6 − 6/p
+Hence, the estimate (4.21) becomes
+       d                                                                                     1+α
+         ∥D1/2 ω∥Lp ≲ ∥D1/2 ω∥Lp + ∥D1/2 ω∥1+αLp   ≲ 1 + ∥D 1/2
+                                                                ω∥ 1+α
+                                                                   Lp   ≲   1 +   ∥D 1/2
+                                                                                         ω∥Lp      .
+      dt
+Repeating the same analysis performed for Ω = R3 , we deduce the lower bound
+                                                    1/α
+                            1/2               1
+                        ∥D ω(t)∥L ≥ p                     − C,       t ∈ [0, T∗ ),                   (4.22)
+                                           C(T∗ − t)
+where C is a constant depending on ∥u0 ∥L2 . By Lemma 4.1, the above lower bound with p = 8 gives
+                                                              4/3
+                                     ∥Dω∥L∞ ≥ C∥D1/2 ω∥Lp − C.
+Finally, in conjunction with (4.22), we obtain
+                                                         1
+                                    ∥Dω(t)∥L∞ ≥                  − C.                               (4.23)
+                                                    C(T∗ − t)7/5
+By considering T∗ − t < 1/C where C depends on ∥u0 ∥L2 , we may neglect the constant on the right-hand
+side of (4.23) to complete the proof.                                                               □
+    Next, we prove lower bounds on the higher order derivatives ∥Dk ω∥L∞ . We begin with a lemma.
+    L EMMA 4.2. Assume the hypothesis of Theorem 2.6, and let k ≥ 2 be a positive integer. For Ω = R3
+or T3 , we have
+                                                 1/(k+1)        k/(k+1)
+                           ∥Dk−1 ω∥L2(k+1) ≲ ∥u∥L2       ∥Dk ω∥L∞       .
+    P ROOF. Define the exponents
+                                   2(k + 1)
+                                 pj =       ,      j = 0, 1, . . . , k − 1,
+                                     k−j
+and pk = ∞. By the Gagliardo-Nirenberg inequalities, we have
+                                            1/2            1/2
+                   ∥Dj ω∥Lpj ≲ ∥Dj−1 ω∥Lpj−1 ∥Dj+1 ω∥Lpj+1 ,          j = 1, . . . , k − 1.         (4.24)
+                                           LOWER BOUNDS ON BLOWUP RATE                                       9
+
+
+Also, note that
+                                                         1/2         1/2
+                                        ∥ω∥Lp0 ≲ ∥u∥L2 ∥Dω∥Lp1 ,                                       (4.25)
+which is derived by integrating by parts from ω = ∇ × u and using Hölder’s inequality. We then re-
+place (4.25) into (4.24) for j = 1. Substituting the resulting bound into (4.24) for j = 2 and repeating this
+process up to j = k − 1 completes the proof.                                                               □
+    We now prove Theorem 2.6.
+    T HEOREM 2.6. We only present the proof for Ω = R3 as the proof for T3 is analogous. In a similar
+fashion as in (4.16), we have
+                                   d
+                                      ∥Dk−1 ω∥Lp ≲ ∥Du∥L∞ ∥Dk−1 ω∥Lp .                         (4.26)
+                                   dt
+By the Gagliardo-Nirenberg inequality and the Biot-Savart law, we have
+                                                                             5
+                      ∥Du∥L∞ ≲ ∥u∥1−α  L2
+                                           ∥Dk−1 ω∥αLp ,     where α =               .
+                                                                        2k + 3 − 6/p
+Substituting this into (4.26), we have, by the conservation of energy,
+                                        d
+                                          ∥Dk−1 ω∥Lp ≲ ∥Dk−1 ω∥1+α Lp .
+                                       dt
+As in the proof of Theorem 2.5, we derive the lower bound,
+                                                                   1/α
+                                         k−1                  1
+                                     ∥D ω(t)∥Lp ≥
+                                                          C(T∗ − t)
+for all t ∈ [0, T∗ ). Now, we fix p = 2(k + 1). By Lemma 4.2, we get
+                                                    1
+                                ∥Dk ω∥L∞ ≳                   ,    t ∈ [0, T∗ ),
+                                             C(T∗ − t)2k/5+1
+where we note that ((k + 1)/k)(1/α) = 2k/5 + 1, completing the proof.                                       □
+    Finally, we prove Theorem 2.7.
+    P ROOF OF T HEOREM 2.7. First, we consider the case Ω = R3 , for which we claim that
+                                                             1/4          3/4
+                                       ∥D1/2 ω∥L8 ≲ ∥u∥L2 ∥Dσ∥L∞ .                                     (4.27)
+To prove this inequality, we first write
+                                                             1/2          1/2
+                                       ∥D1/2 σ∥L8 ≲ ∥σ∥L4 ∥Dσ∥L∞ ,
+noting that the lower-order terms can be scaled away. By the Calderón-Zygmund theorem, we then get
+                                                             1/2          1/2
+                                       ∥D1/2 ω∥L8 ≲ ∥ω∥L4 ∥Dσ∥L∞ .
+The rest of the proof proceeds exactly as the proof of Lemma 4.1, thus leading to (4.27). Then, using (4.27),
+we invoke Theorem 2.1 and the conservation of energy to get
+                                                                    4/3
+                                             ∥Dσ∥L∞ ≳ ∥D1/2 ω∥L8 ,
+and the proof for the case R3 is complete. For Ω = T3 , we obtain
+                                                       1/4         3/4
+                                   ∥D1/2 ω∥L8 ≲ ∥u∥L2 ∥Dσ∥L∞ + ∥u∥L2
+instead of (4.27); the estimates are similar to those in R3 but include lower order terms, which can be easily
+controlled. We omit further details.                                                                        □
+
+                                                Acknowledgments
+    The authors were supported in part by the NSF grant DMS-2205493.
+                                            LOWER BOUNDS ON BLOWUP RATE                                               10
+
+
+                                                       References
+[A]          M.S. Aydin, A BKM-type criterion for the Euler equations, arXiv:2505.18304.
+[BKM]        J.T. Beale, T. Kato, and A. Majda, Remarks on the breakdown of smooth solutions for the 3-D Euler
+             equations, Comm. Math. Phys. 94 (1984), no. 1, 61–66.
+[BM]         H. Brezis and P. Mironescu, Gagliardo-Nirenberg inequalities and non-inequalities: the full story, Ann.
+             Inst. H. Poincaré C Anal. Non Linéaire 35 (2018), no. 5, 1355–1376.
+[BV]         J. Bedrossian and V. Vicol, The mathematical analysis of the incompressible Euler and Navier-Stokes
+             equations—an introduction, Graduate Studies in Mathematics, vol. 225, American Mathematical Society,
+             Providence, RI, [2022] ©2022.
+[CFM]        P. Constantin, C. Fefferman, and A.J. Majda, Geometric constraints on potentially singular solutions for
+             the 3-D Euler equations, Comm. Partial Differential Equations 21 (1996), no. 3-4, 559–571.
+[CIV]        P. Constantin, M. Ignatova, and V. Vicol, On putative self-similarity for incompressible 3D Euler,
+             arXiv:2602.17570.
+[CMZ]        D. Córdoba, L. Martinez-Zoroa, and F. Zheng, Finite time singularities to the 3D incompressible Euler
+             equations for solutions in C ∞ (R3 \ {0}) ∩ C 1,α ∩ L2 , Ann. PDE 11 (2025), no. 2, Paper No. 19, 56.
+[CP]         T. Chen and N. Pavlović, A lower bound on blowup rates for the 3D incompressible Euler equation and a
+             single exponential Beale-Kato-Majda type estimate, Comm. Math. Phys. 314 (2012), no. 1, 265–280.
+[E]          T. Elgindi, Finite-time singularity formation for C 1,α solutions to the incompressible Euler equations on
+             R3 , Ann. of Math. (2) 194 (2021), no. 3, 647–727.
+[EM]         D.G. Ebin and J. Marsden, Groups of diffeomorphisms and the motion of an incompressible fluid, Ann. of
+             Math. (2) 92 (1970), 102–163.
+[F]          A.B. Ferrari, On the blow-up of solutions of the 3-D Euler equations in a bounded domain, Comm. Math.
+             Phys. 155 (1993), no. 2, 277–294.
+[JMO]        I.-J. Jeong, L. Martı́nez-Zoroa, and W.S. Ożański, Instantaneous continuous loss of Sobolev regularity for
+             the 3D incompressible Euler equation, arXiv:2508.06333.
+[K]          T. Kato, On classical solutions of the two-dimensional nonstationary Euler equation, Arch. Rational Mech.
+             Anal. 25 (1967), 188–200.
+[KOT]        H. Kozono, T. Ogawa, and Y. Taniuchi, The critical Sobolev inequalities in Besov spaces and regularity
+             criterion to some semi-linear evolution equations, Math. Z. 242 (2002), no. 2, 251–278.
+[KT]         H. Kozono and Y. Taniuchi, Limiting case of the Sobolev inequality in BMO, with application to the Euler
+             equations, Comm. Math. Phys. 214 (2000), no. 1, 191–200.
+[MB]         A.J. Majda and A.L. Bertozzi, Vorticity and incompressible flow, Cambridge Texts in Applied Mathematics,
+             vol. 27, Cambridge University Press, Cambridge, 2002.
+[P]          G. Ponce, Remarks on a paper: “Remarks on the breakdown of smooth solutions for the 3-D Euler equa-
+             tions” by J. T. Beale, T. Kato and A. Majda, Comm. Math. Phys. 98 (1985), no. 3, 349–353.
+                                                                   1
+[S]          S. Shkoller, Incompressible Euler blowup at the C 1, 3 threshold, arXiv:2603.10945.
+[St]         E.M. Stein, Singular integrals and differentiability properties of functions, Princeton Mathematical Series,
+             vol. No. 30, Princeton University Press, Princeton, NJ, 1970.
+[SY]         T. Shirota and T. Yanagisawa, A continuation principle for the 3-D Euler equations for incompressible
+             fluids in a bounded domain, Proc. Japan Acad. Ser. A Math. Sci. 69 (1993), no. 3, 77–82.
+[T]          R. Temam, On the Euler equations of incompressible perfect fluids, Séminaire Goulaouic-Lions-Schwartz
+             1974–1975: Équations aux dérivées partielles linéaires et non linéaires, École Polytech., Paris, 1975,
+             pp. Exp. No. 10, 15.
+[Z]          W.M. Zajaczkowski, Remarks on the breakdown of smooth solutions for the 3-d Euler equations in a
+             bounded domain, Bull. Polish Acad. Sci. Math. 37 (1989), no. 1-6, 169–181.
+
+       D EPARTMENT OF M ATHEMATICS , U NIVERSITY OF S OUTHERN C ALIFORNIA , L OS A NGELES , CA 90089
+       Email address: ingimars@usc.edu
+
+       D EPARTMENT OF M ATHEMATICS , U NIVERSITY OF S OUTHERN C ALIFORNIA , L OS A NGELES , CA 90089
+       Email address: kukavica@usc.edu
+

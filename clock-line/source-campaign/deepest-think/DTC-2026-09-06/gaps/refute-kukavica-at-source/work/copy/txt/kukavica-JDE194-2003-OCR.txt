@@ -1,0 +1,377 @@
+=== png/ku/p-01.png ===
+On local uniqueness of weak solutions of the
+Navier-Stokes system with bounded initial data
+Igor Kukavica
+address:
+Igor Kukavica
+Department of Mathematics
+University of Southern California
+Los Angeles, CA 90089
+e-mail: kukavica@math.usc.edu
+telephone: (213) 740-3781
+fax: (213) 740-2424
+Keywords: Navier-Stokes equations, weak solutions, mild solutions, nonunique-
+ness
+2000 Mathematics Subject Classifications: 35Q30, 76D05, 35K15
+Proposed running head: Local uniqueness with bounded initial data
+=== png/ku/p-02.png ===
+Abstract
+We ad dress local uniqueness of weak solutions of the Navier-Stokes system
+with initial data in L°°(Rn). We show that uniqueness of solutions does
+not hold. We classify all solutions as all those which can be obtained from
+the solution of the integral equation (mild solution) by means of a certain
+tran sfor mation.
+=== png/ku/p-03.png ===
+1 Introduction
+In this paper, we address uniqueness of solutions of the Navier-Stokes system
+дти - Ди+u•Vu+ V*=0
+V• =0
+(1.1)
+with the initial datum
+(1.2)
+и(x, 0) = uo(x)
+which belongs to L°°(Rn).
+Fabes, Jones, and Riviere proved in [F.JR] existence and uniqueness of local
+mild solutions of the Navier-Stokes system if n < P ≤ 00 (p = 00 included).
+They showed that the integral form of (1.1) (1.2) is
+«(, t) =/ k*(u8u)ds+e110
+(where etAuo denotes the solution of the heat equation with the initial datum
+uo) with a kernel k which satisfies
+C(n)
+k(x, t)| ≤
+(x,t) E R" x (0,00).
+(22| +t1/2)2+1:
+Because of this fact, the mild solution may be constructed using a fixed point
+argument in the space L°°(0,T,LP(Rn)) for a suitable I > 0 (as it was done
+for the nonlinear heat equation in (W). On the other hand, one also wishes
+to consider weak solutions when uo E IP(R"). This was done in [FJR] by
+establishing that every solution u E L9(O,T, IP(Rº)) is weak if and only if it is
+mild—provided 2 < q ≤ 00 and 2 ≤ p < 00 (p = 00 is not included). (Koch and
+Tataru have recently established local well-posedness for mild solutions with
+much more general initial data in BMOñ, cf. [KT]; Kato considered in [K] the
+case p = n.)
+The present note covers the case p = ∞. As it turns out, p = oo is indeed
+different from the case p < oo in the sense that uniqueness of weak solutions
+oes not hold. Namely, u1(x,t) = (t,O,...,0) and uz(x,t) = (0,0,..., 0), fc
+≥ 0, are both weak solutions of the Navier-Stokes system withthe initial datur
+20 = (0,0,..., 0). Moreover, every initial datum leads to infinite number of weak
+solutions: Ifu(x,t) is a solution, so is its transga lilean transform u (2- Ф(t), t) +
+ф(t) where d is sufficiently regular with ф(0) = 0 and where Ф(t) = fo((s)ds
+=== png/ku/p-04.png ===
+(FMRT, p. 31]). Our main result is that all solutions can be obtained in this
+manner. Namely, there exists a solution which may be constructed (essentially)
+as in [F.JR]; every weak solution of the initial value problem can then be obtained
+from this solution by means of the transformation described above.
+The paper is organized as follows. Section 2 contains a definition of weak
+solutions of the initial value problem and the main result. Section 3 recalls
+some well-known facts about the space BMO. Then we briefly sketch the proof
+of existence of mild solutions. Lemma 3.3 is the main step in the proof of the
+theorem, which is then given in the second part of Section 3.
+2 The Main Theorem
+Consider the Navier-Stokes system
+дъик - Дик + дj(4jUk) + дk1=0, k=1,...,n
+дjuj =0.
+(2.1)
+(The summation convention on repeated indices is used throughout.) It is
+straight-forward to consider the case of non-zero forcing as well. The initial
+condition is
+2 (х, 0) =20(x) = (201 (2),., 20n(2)),
+xERn
+(2.2)
+where uo E L°(Rn) and V - 2o = 0 holds in D'(Rn).
+Definition 2.1 We say that u is a weak solition of the initial value problem
+(2.1)-(2.2) on [0,T) if
+(i) U E Loc(0,T,L°°(Rn));
+(ii) we have
+Jsa u4(04k +443 +2450344) =0
+for all
+4 =(21,.,4n) E {OE CO(ST,R2): V•0=0}
+where ST = R° x (0,T);
+4
+=== png/ku/p-05.png ===
+(iii) the initial condition is satisfied in the following sense: The function t +
+U(•,t) - et uo is continuous at t = 0 (as an L°°(Rn)-valued function) and
+its value at 0 is 0.
+We shall refer to the weak solutions defined above simply as solutions of the
+initial value problem.
+It will turn out that instead of (iii) we may assume equivalent ly
+(ii)' u(•,t) →uo in D' as t → 0+;
+(cf. Remark 3.5 below).
+Theorem 2.2 There exists at least one solution u of the initial value problem
+on [0, T) where I > 1/Cl|volli,°(Rn). Also, й is a sohition of the initial value
+problem on (0,T) if and only if there exists a function d E Lioc ((O,T), Rº) with
+lim+→0+ Ф(t) = ф(0) = 0 such that
+й(x, t) = u(x - @(t),t) + dt),
+a.e. (x,t) E ST
+where Ф(t) = Jo ((s)ds.
+Here and in the sequel, C denotes a generic positive constant depending only
+on n. The theorem is proven in Section 3.
+3 Proof of the Main Theorem
+For any distributional solution of (2.1), the pressure i satisfies the equation
+- Дт =dij(UUj). Fi,j E {1,...,n} and f € LP(R"), where p € (1,00), the
+equation
+-Дт =dijf
+(3.1)
+has a unique solution n € L'(R"), which is independent of p. The formula for
+TT is
+T(x) = -0ijf + P.V./ Ki (3)f (2° - 11) dy
+(3.2)
+where
+Ki(x) = 2ij- np
+XER\{0}
+Wnl22+1
+where wn = 277/2 /nI(n/2) is the volume of the unit ball in R". Moreover, the
+Calderón-Zygmund theorem states
+Cpz
+P-IfleRn),
+|aIP(Rn) {
+PE (1,00)
+=== png/ku/p-06.png ===
+(cf. [St1]). If f € L"º(R"), then the equation (3.1) has a unique solution
+which belongs to
+BMO = 20€ Loc (R) :
+Su 15l JPCa) - TEl JoldE = lelleRno <00}
+where the supremum is taken over all balls in Rn; the functions differing by a
+constant almost everywhere are considered the same. The formula (3.2) has to
+be modified slightly (cf. [F]) in such a way that it agrees (modulo a constant) if
+fE LP(Rn) NL°(Rn) for some p E (1,00). Also, the estimate
+|7 вмо < Cllf||[∞(Rn)
+holds. The solution i constructed above will be denoted simply by
+T= Kijf=di(-A)-djf.
+Also, we recall a fact concerning the problem
+ди-Ди =V•f
+(3.3)
+where f = (f1,..., fn) € L°° (0,T,BMO).
+Lemma 3.1 Let T > 0 and fj E L°°(0, T, BMO) for j = 1,...,n. Then the
+integral
+JJg|TG(a-y,t =1) ((u») dyds
+is finite for every (x,t) E ST = Rn x (0, T). The function
+4(2, t) = //0G(-3,t -s)5(0,s) dbds
+satisfies u E C'(0, T),L°(Rn)) with
+|ke(e t)l|200 (R0) ≤ Ct1/2 llfllzx (0,7,BMO) •
+The function u solves (3.3) in D'(ST).
+This lemma is a simple consequence of the inequality
+(TG(x, t) 5 (la1 +1/2)9781
+(x,t) € R' x (0,00)
+6
+=== png/ku/p-07.png ===
+and the estimate
+- dx ≤ C|lf||вмо
+|x/2+1 +1
+where By is the ball centered at 0 with radius 1 (cf. [S, Lemma 3.9] or [St2,
+p. 141).
+The existence of mild (integral) solutions is known. For completeness sake,
+we state the result and sketch the iteration argument.
+Let uo E L°°(Rn) with V • uo = 0. Then u is a mild solution of the Navier-
+Stokes initial value problem if u E C'((0, T), L°° (Rn)) and if
+un(2:0 =10-610-811-8746 s)enlu,s)duds
+-JoJOxG(e-3,t=9)7(9,5) dyds
++/G(I -31, Đeok (s) dy
+(3.4)
+where
+П =Kij (4;2;)
+(3.5)
+holds for every (x,t) E ST = Rº x (0,T). Denote Mo = ||uo||I∞.
+Proposition 3.2 There exists a mild solution u of the Navier-Stokes system
+on (0,T) where
+1
+I> СM}
+This solution is unique within the dass of mild solutions and continuity with
+respect to initial data holds.
+The above states that the Navier-Stokes initial value problem is locally well-
+posed within the class of mild solutions. This proposition is proven in [FJR];
+however, for completness sake, we include the proof of existence.
+Proof (sketch) As in [GK], let
+emt ( 0 = -Jo f0, 0(8-111- 8'( D(ys)dyds
+-1oJ 24G(0-31, +-8) m3)(y, 5) deydes
+=== png/ku/p-08.png ===
++/ G(x -3, truoR(1) das
+for k = 1,...,n with the first two terms on the right hand side removed if
+m = 0. The pressure is computed from
+T(m) =Kij(u!") un)
+for m =1,2,.... By Lemma 3.1, we have
+u(m) - e→uo E C(O,T),L°°(Rn))
+with value 0 at t = 0, and n(m) € Cb((0,T), BMO) for all T > 0. Moreover,
+le(mt'llIo(50) < Ct12l|2(ml2(S) + CoMo,
+t>0
+for m € N and
+1e4110(50) =CoMo,
+t>0
+for some fixed constant Co = Co(n). Using induction, we get
+1am110(57) < 2C6Mo
+m E N provided
+O<I≤CM8
+(3.6)
+with C sufficiently large. Similarly,
+lkelmt)) emil (5) (() -m-12(57)
+holds for m = 2,3, ... provided (3.6) holds with a suitable C. A fixed point
+argument then concludes the proof.
+Next, we proceed toward establishing a relationship between solutions of
+the initial value problem and mild solutions. The following lemma is the main
+lemma needed in the proof of Theorem 2.2.
+Lemma 3.3 Assume that u is a solution of the initial value problem (in the
+sense of Definition 2.1) on (0,T). Then there exists a function
+p= (ф1,...,Фn) € Lioc(O, T), Rn)
+with limt +0+ ф(t) = ф(0) = 0 such that the equation
+—Ди +д(4+дkто+Ф(t)=0
+(3.7)
+where no = Kij(Uilj), holds in D'(ST) for all k = 1,...,n.
+=== png/ku/p-09.png ===
+Proof By de Rham's theorem [CF, T], there exists I E D'(ST) such that the
+first equation in (2.1) holds in D'(St). Denote To = Kij(UjUj) and Th = П - По.
+Note that Anh = 0 in D'(St) by taking the divergence of the first equation in
+(2.1). First, we claim that
+др =0, l,k =1,...,n.
+(3.8)
+Let a E D(O, T) and B E D(Rn) be test functions such that & is radial and
+f B = 1. Also, let
+BA(D)FRB(E): &ERN
+for R > 0. Then, testing the first equation in (2.1) with 4(x) = a(t)VBR(x),
+we get
+(OklTh, Q(t) BR(x)) = —(uk,a'(t)ZBR(2)) - (uki,a(t)Ad1BR(x))
+-(UUk, alt)d4gBR(x)) -(To,a(t)0kBR(x))
+where (;-) denotes the D'(ST)-D(St) duality. By the mean value theorem and
+since A(a(t) dkl Th) = 0 in D'(ST), we get
+(дkTh, a(t)BR(x)) = (@kTh;a(t)B(x)) .
+Therefore,
+(OK1Th, Q(t)B (2))
+=PnHT (UK, Q' (0)218(8/)) - -+5 (24, 0(t)420,3(7/R))
+Rnt2 (Uj2k, C(t)OniB(x/R)) - Rn+2(TO, 0k13 (x/R)).
+The right hand side of the above equality converges to 0 as R → ∞o, and we
+obtain (2kl Th, a(t) B(x) ) =0 for all a E D(O, T) and radial 3 E D(R") such that
+f B = 1. Translating in the x-variable, this implies (@klTh, a(t)3(x-a)) = 0 for
+all a and ß as above and all a E R". It is now elementary to deduce (3.8). We
+conclude that, for every k € {1,...,n}, Okth is a distribution which depends
+only on t; more precisely, there exists @k € D'(0,T) such that
+(OKTha) = (Dx, / a(y,) dy)
+=== png/ku/p-10.png ===
+for all a E D(ST) where the brackets on the right hand side denote the D'(St)-
+D(St) duality. It remains to be shown that § = (71,.., n) is a distributional
+derivative of a function o described in the statement.
+Let a E D(O,T) and B E D(RN) (not necessarily radial) with { ß = 1. Then
+<Ök, 0> = (OKTh,Q (t)B(2))
+=Js undg-s)a(D)86a) dyds + J/ u4s-S)0(9)1348) dyds
++J5 41,(14, 9)461 5) a(s) , s) dyds
++Jss Tole, D)a(B)D S(Le) dyds.
+The function we are seeking is therefore
+(a(0) = Jo / u4 (2,5)413(89) deyds + J ( us(1, 5) 24(21, 9),31(1) dyds
++fo f Toles, 812a3() dy ds - (u (u) )3(9) dey
++/ 2ox (21) 3(1) d31
+(3.9)
+for k = 1,..., n and for any fixed B E D(R') with { B = 1.
+Lemma 3.4 Assume that u is a solution of the initial value problem on [0,T).
+Then there exists a function
+ф= (ф1,...,Фn) E Lioc(P, T), Rn)
+with limt-+0+ Ф(t) = ф(0) = 0 such that
+(x,t) E ST
+u(x,t) = й(x - Ф(t),t) + Qt),
+where @(t) = Jo d(s) ds and where й is a mild solution on (0, T). A solution of
+the initial vahue problem is a mild solution if and only if the associated pressure
+I satisfies n = Kij(Uillj).
+Proof of Lemma 3.4 Assume that u is a solution of the initial value prob-
+lem on [O,T). Let ф = (ф,...,фn) be as in the statement of Lemma 3.3; in
+10
+=== png/ku/p-11.png ===
+particular, (3.7) holds in D'(ST) with no = Kij(villj). Let @(t) = Jö Ф(т) dт.
+Consider
+й(x, t) = ux — Ф(t), t) + ф(t)
+which is also a solution of the initial value problem with the same initial datum
+and with the associated pressure
+Ã(x,t) = по(х -Ф(t),t)
+as it can be readily checked (we need p = o(1) and @ = o(t1/2) as t → 0).
+We now proceed by showing that й is a mild solution. This part follows [FJR]
+rather closely except that we work with the heat instead of the Oseen kernel.
+Let Or(y) = A(y/R) for R > 0 and y E R", where • E D(R") is identically 1
+in a neighborhood of 0. Let 4 E Co(R) be such that 0 ≤ 4 ≤ 1, 4 ≥ 0 with
+4(s) = 0 for s ≤ 1 and 4(s) = 1 for s ≥ 2. For every fixed (x, t) E ST and
+€ > 0, let
+4(,)=4(₴)4(223) 804(8-gt-s), (0,8) EST
+for any € > 0. Using & as a test function and sending R → oo, we get
+-Jsunle 94 (7)9 (2) 618-14-8)dyds
+tNaloo (a) + (2) 0-11 sduds
+- S a tu 0540 910 (7) () o640-11-s)dyds
+- Js, Toe-20 (a) (=) @1cr-11-s)duds=0.
+(3.10)
+If 0 < € {t/4, the second term on the left hand side equals
+'e ean(o s)' (e) G(-2,1-8) deyds
+and this expression may be rewritten as
+ES " (e) do / (in (19,8) - / G(u-u, 5)ua (20) deu)
+xG(x-Y,t-s) dy
++/G(X - 4, t) 20k (1) dey.
+(3.11)
+11
+=== png/ku/p-12.png ===
+The first term in this expression converges to 0 uniformly in r as € → 0+;
+therefore, as € → 0+, the equality (3.10) becomes
+йк.(2, t) - й0x (3)G(7 - 3, t)ds
++fo fu, (es, s)ua (2 s)a, Ga - g,t =s) dy ds
++Jo /ao(e, 8)02G(x-y,t=s) dyds =0
+for k = 1,... ,n for almost every (x,t) E St. Since ñ0 = Kij(Uiuj), we get
+that й is a mild solution. The last claim follows by using uniqueness of mild
+solutions.
+Proof of Theorem 2.2 First, by Proposition 3.2, there exists a (unique)
+mild solution u on (0, T). The function u is then a solution of the initial value
+problem by Lemma 3.1.
+Now, let й be a solution of the initial value problem. Then, by Lemma 3.4,
+there exists a mild solution u such that
+й (T, t) = H(x - Ф (t),t) + ф(t) , (x,t) E ST
+where o and @ are as in the statement of Lemma 3.4. By uniqueness of mild
+solutions, u =u, and the proof is complete.
+Remark 3.5 This remark addresses substitution of (iii) by (ii)' in the defini-
+tion of solutions of the initial value problem. In this case, all the statements
+rema in precisely the same. There are only two places where (iii) was used. The
+first instance was at the end of the proof of Lemma 3.3. Assuming (ii), we
+concluded from (3.9) that lims-›0+ Ф(s) = 0. However, this is clearly the case
+if (iii)' is assumed instead. Namely, the sum of the last two terms on the right
+hand side of (3.9) converges to O by (ifi)', while the same can be shown for the
+(only non-trivial) third term by an easy computation. The second instance of
+use of (iii) was when we showed that the first term in (3.11) converges to 0.
+This term can be rewritten as
+1" (2) 45/ (44(98) -/Gu-W0, S)u0K(a)dw0) A(G(I - y, D) dy)
+12
+=== png/ku/p-13.png ===
+t (3) d8 (anlo,) - ( - 24 3)010) de) (1-@9 ()) G(a - , t7) d)
++.4 (6) ds / (i4(,5) - ( Cl -1u, 5)0k (20) deo)
+x (G(x- y,t - s) - G(x - y, t)) dy
+for every R > 0 where Or is as in the proof of Lemma 3.4. The second term
+can be made arbitrarily smal if R is sufficiently large provided x belongs to a
+bounded set. For any fixed R> 0, the first and the third term converge to 0 as
+E → 0 in L(R").
+ACKNOWLEDGEMENT: The author thanks Professor V. Sverák for a
+stimulating discussion. The work was supported in part by the NSF grant
+DMS-0072662 while the author was an Alfred P. Sloan fellow.
+References
+[CF] P. Constantin and C. Foias, "Navier-Stokes Equations," Chicago Lec-
+tures in Mathematics, Chicago/London, 1988.
+[F]
+C. Fefferman, Characterizations of bounded mean oscillation, Bull.
+Amer. Math. Soc. 77 (1971), 587-588.
+[FJR] E.B. Fabes, B.F. Jones, and N.M. Riviere, The initial vahie problem
+for the Navier-Stokes equations with data in IP, Arch. Rational Mech.
+Anal. 45 (1972), 222-240.
+[FMRT| C. Foias, O. Manley, R. Rosa, and R. Temam, "Navier-Stokes Equa-
+tions and Turbulence" Encyclopedia of Mathematics and its Applica-
+tions, 83, Cambridge University Press, Cambridge, 2001.
+[GK] Z. Grujié and I. Kukavica, Space analyticity for the Navier-Stokes and
+related equations with initial data in L', J. Funct. Anal. 152 (1998),
+447-466.
+[K T. Kato, Strong LP-solutions of the Navier-Stokes equation in Rm, with
+applications to weak solutions, Math. Z. 187 (1984), 471-480.
+13
+=== png/ku/p-14.png ===
+[KT] Well-posedness for the Navier-Stokes equations, Adv. Math. 157 (2001),
+22-35.
+C. Sadosky, "Interpolation of Operators and Singular Integrals: An
+IS]
+Introduction to Harmonic Analysis," Marcel Dekker, Inc., New York
+and Basel, 1979.
+[St1] E.M. Stein, "Singular Integrals and Differentiability Properties of Func-
+tions," Princeton University Press, Princeton, New Jersey, 1970.
+[St2] E.M. Stein, "Harmonic Analysis: Real-Variable Methods, Orthogonal
+ity, and Oscillatory Integrals," Princeton University Press, Princeton,
+New Jersey, 1993.
+[T] R. Temam, "Navier-Stokes Equations, Theory and Numerical Analysis,"
+3rd rev. ed., North-Holland, Amsterdam, 1981.
+[W] F.B. Weissler, Existence and nonexistence of global solitions for a semi-
+linear heat equation, Israel J. Math. 38 (1981), 29-40.
+14

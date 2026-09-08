@@ -1,0 +1,2283 @@
+                                                   On the local pressure expansion for the Navier-Stokes
+                                                                         equations
+                                                                        Zachary Bradshaw and Tai-Peng Tsai
+
+
+
+
+arXiv:2001.11526v1 [math.AP] 30 Jan 2020
+                                                                                    February 3, 2020
+
+
+                                                                                           Abstract
+                                                      We show that the pressure associated with a distributional solution of the Navier-
+                                                  Stokes equations on the whole space satisfies a local expansion defined as a distribution
+                                                  if and only if the solution is mild. This gives a new perspective on Lemarié-Rieusset’s
+                                                  “equivalence theorem.” Here, the Leray projection operator composed with a gradient
+                                                  is defined without using the Littlewood-Paley decomposition. Prior sufficient conditions
+                                                  for the local expansion assumed spatial decay or estimates on the gradient and imply
+                                                  the considered solution is mild. An important tool is an explicit description of the
+                                                  bounded mean oscillation solution to a Poisson equation, which we examine in detail.
+                                                  As applications we include an improvement of a uniqueness criteria by the authors in
+                                                  Morrey spaces and revisit a proof of a regularity criteria in dynamically restricted local
+                                                  Morrey spaces due to Grujić and Xu.
+
+
+                                           1     Introduction
+                                           The Navier-Stokes equations describe the evolution of a viscous incompressible fluid’s ve-
+                                           locity field u and associated scalar pressure p. In particular, u and p are required to satisfy
+                                                                              ∂t u − ∆u + u · ∇u + ∇p = 0,
+                                                                                                                                               (1.1)
+                                                                              ∇ · u = 0,
+
+                                           in the sense of distributions. For our purpose, (1.1) is applied on R3 × (0, ∞) and u evolves
+                                           from a prescribed, divergence free initial data u0 : R3 → R3 .
+                                               In the classical paper [30], J. Leray constructed global-in-time weak solutions to (1.1)
+                                           on R4+ = R3 × (0, ∞) for any divergence free vector field u0 ∈ L2 (R3 ). Leray’s solution u
+                                           satisfies the following properties:
+                                               1. u ∈ L∞ (0, ∞; L2 (R3 )) ∩ L2 (0, ∞; Ḣ 1 (R3 )),
+                                               2. u satisfies the weak form of (1.1),
+                                                        ZZ
+                                                              −u∂t ζ + ∇u : ∇ζ + (u · ∇)u · ζ = 0,       ∀ζ ∈ Cc∞ (R4+ ; R3 ),    div ζ = 0,
+
+                                               3. u(t) → u0 in L2 (R3 ) as t → 0+ ,
+
+                                               4. u satisfies the global energy inequality: For all t > 0,
+                                                                Z                     Z tZ                      Z
+                                                                    |u(x, t)|2 dx + 2       |∇u(x, t)|2 dx ds ≤           |u0 (x)|2 dx.
+                                                                 R3                    0    R3                       R3
+
+
+                                                                                                 1
+The above existence result was extended to domains by Hopf in [17].
+    In his book [28], Lemarié-Rieusset introduced a local analogue of Leray-Hopf weak
+solutions called local Leray solutions. These solutions evolve from uniformly locally square
+integrable data u0 ∈ L2uloc . Here, for 1 ≤ q ≤ ∞, Lquloc is the space of functions on R3 with
+finite norm
+                              ku0 kLq := sup ku0 kLq (B(x,1)) < ∞.
+                                               uloc
+                                                         x∈R3
+
+We can also define parabolic versions of the uniform local Lp spaces: u ∈ Lpuloc (R3 × (0, T ))
+if and only if                                Z Z                         T
+                      kukpLp            (R3 ×(0,T ))
+                                                       := sup                            |u|p dx dt < ∞.
+                                 uloc                    x0 ∈R3       0       B1 (x0 )
+
+Because we work elusively with R3 , we adopt the shorthand Lpuloc (0, T ) for Lpuloc (R3 ×(0, T )).
+Note also that f ∈ Lploc (R3 ×(0, T )) means f ∈ Lp (BR ×(ǫ, T −ǫ)) for all R > 0 and 0 < ǫ ≪ 1
+while f ∈ Lploc (R3 × [0, T ]) means f ∈ Lp (BR × (0, T )) for all R > 0.
+    Having a notion of weak solution in a broader class than Leray’s is useful when analyzing
+initial data in critical spaces such as the Lebesgue space L3 , the Lorentz space L3,∞ , or
+the Morrey space M 2,1 , all of which embed in L2uloc but not in L2 (see [19] for an example
+where this was crucial). By critical spaces we mean spaces for which the norm of u is scaling
+invariant. It is in such spaces that many arguments break down. For example, L∞ (0, T ; L3 )
+is a regularity class for Leray-Hopf solutions [7], but this in unknown for L∞ (0, T ; L3,∞ ).
+    The following definition is motivated by those found in [28, 22, 18, 19]. Note that, at
+this point, we do not include an assumption on the pressure nor on the decay of the solution.
+
+Definition 1.1 (Local Leray solutions). Fix 0 < T < ∞. A vector field u ∈ L2loc (R3 ×[0, T ])
+is a local Leray solution to (1.1) with divergence free initial data u0 ∈ L2uloc (R3 ) (denoted
+u ∈ N (u0 )) if:
+                       3/2
+  1. for some p ∈ Lloc (R3 × [0, T ]), the pair (u, p) is a distributional solution to (1.1),
+
+  2. for any R > 0, v satisfies
+                                                                                Z R2 ∧T Z
+                                          1
+                             Z
+         ess sup    sup                     |u(x, t)|2 dx + sup                                         |∇u(x, t)|2 dx dt < ∞,
+        0≤t<R2 ∧T   x0 ∈R3       BR (x0 ) 2                x0 ∈R3                 0          BR (x0 )
+
+
+  3. for all compact subsets K of R3 we have u(t) → u0 in L2 (K) as t → 0+ ,
+
+  4. u is suitable in the sense of [6], i.e., for all cylinders Q compactly supported in R3 ×
+     (0, T ) and all non-negative φ ∈ Cc∞ (Q), we have the local energy inequality
+                      ZZ
+                    2    |∇u|2 φ dx dt
+                       ZZ                            ZZ
+                              2
+                     ≤     |u| (∂t φ + ∆φ) dx dt +        (|u|2 + 2p)(u · ∇φ) dx dt.
+
+                             R
+  5. the function t 7→           u(x, t)·w(x) dx is continuous on [0, T ) for any compactly supported
+     w ∈ L2 (R3 ).
+
+
+
+
+                                                                  2
+   In application, it is useful to have the following a priori bound originally due to Lemarié-
+Rieusset [28] and extended to all scales in [18]: For all u ∈ N (u0 ) and r > 0 we have
+                                                               Z σr2 Z
+                                         |u|2
+                             Z
+           ess sup sup                        dx + sup                             |∇u|2 dx dt < CA0 (r),   (1.2)
+           0≤t≤σr 2 x0 ∈R3       Br (x0 ) 2       x0 ∈R3        0       Br (x0 )
+                                                                    Z
+                                   A0 (r) = rNr0 = sup                         |u0 |2 dx,
+                                                         x0 ∈R3     Br (x0 )
+
+and
+                                       σ = σ(r) = c0 min (Nr0 )−2 , 1 ,
+                                                        
+
+for a small universal constant c0 > 0. This bound has been used to study existence,
+regularity and uniqueness problems for the Navier-Stokes equations in [19, 18, 28, 29, 3, 4, 5]
+and other papers.
+    To prove this a priori bound, the pressure on the right hand side of the local energy
+inequality must be expressed in terms of u. This is a delicate matter when u is not decaying.
+In [18], this a priori bound is established provided u and p satisfy the following: For any
+R > 0, x0 ∈ R3 , and T > 0, there exists a function of time cx0 ,R (t) ∈ L3/2 (0, T ) so that, for
+every 0 < t < T and x ∈ B2R (x0 )
+
+                      p(x, t) = T1 [(u ⊗ u)(·, t)χ4R (· − x0 )](x)
+                                                                                                            (1.3)
+                         + T2 [(u ⊗ u)(·, t)(1 − χ4R (· − x0 ))](x) + cx0 ,R (t),
+
+where T1 is a Calderon-Zygmund operator, T2 is an integral operator the kernel of which
+has stronger decay at spatial infinity than T1 (by an order of 1; this will be made clear in
+(1.7)), and χ4R (x) is the characteristic function for B4R .
+    The existence of parasitic solutions (see [13, 25] and comments following Theorem 1.5)
+implies this pressure formula cannot hold for every non-decaying solution. This raises the
+problem of finding optimal sufficient conditions for (1.3). Jia and Šverák state the following
+sufficient condition in [18]: If u ∈ N (u0 ) and
+                                       Z R2 Z
+                                 lim                     |u|2 dx dt = 0,           ∀R > 0,                  (1.4)
+                             |x0 |→∞ 0        BR (x0 )
+
+then p satisfies (1.3). That is, (1.3) follows from a mild assumption on the spatial decay
+of the solution. A proof of this fact is given in [21] based on ideas in [32]. In turn, (1.4)
+can be derived from u0 ∈ E 2 , see [22, 21]. In [29], Lemarié-Rieusset references this pressure
+expansion in the context of Oseen solutions. These are solutions where u · ∇u + ∇p is
+replaced by P∇ · (u ⊗ u) and P is defined using Littlewood-Paley. We discuss this further
+in Comment 2 following the statements of our main theorems.
+    This paper is concerned with establishing necessary and sufficient conditions for the
+pressure formula (1.3), or a weaker version of it, that do not assume decay at spatial
+infinity or require knowledge of spatial gradients. We will do this for a larger class than
+local Leray solution, but emphasize local Leray solutions because they have proven useful
+in a number of recent papers. We introduce some notation before formulating our main
+result.
+    Let
+                                       1
+                                                        Z
+                   Gij f = Ri Rj f = − δij f (x) + p.v. Kij (x − y)f (y)dy,                (1.5)
+                                       3
+
+                                                           3
+                    1
+with Rj = (−∆)− 2 ∂j the j-th Riesz transform and
+
+                                                  1     −δij |y|2 + 3yi yj
+                             Kij (y) = ∂i ∂j          =                    .
+                                                4π|y|         4π|y|5
+
+The principle-value integral in (1.5) converges in Lq (Rn ) (see [36, page 35]) if f ∈ Lq (Rn ),
+q < ∞. If q = ∞, then (1.5) is understood as an element of BM O via duality with H1 . We
+elaborate on this in Section 2.
+    Fix a function Θ ∈ Cc∞ so that Θ = 1 on B2 (0) and supp Θ ⊂ B4 (0). Let θR (x) =
+Θ(x/R) so that θR = 1 on B2R (0) and supp θR ⊂ B4R (0). Also let
+                                      2R
+                                     Kij (x) = Kij (x)(1 − θR (x)),
+
+and
+                        1
+                                            Z
+           GB
+            ij f (x) = − δij f (x) + lim
+                                                                          2R
+                                                          (Kij (x − y) − Kij (x0 − y))f (y) dy.   (1.6)
+                        3            ǫ→0        |x−y|>ǫ
+
+Note that, for x ∈ B,
+                      1
+                                          Z
+                                                             2R
+      GB (f
+       ij ij )(x) = −   δ  f
+                         ij ij (x) + p.v.   (Kij (x − y) − Kij  (x0 − y))fij (y) dy
+                      3
+                      1
+                                      Z
+                  = − δij fij + p.v. Kij (x − y)fij (y)θ(x0 − y) dy
+                      3
+                      Z
+                    +                               2R
+                                   (Kij (x − y) − Kij  (x0 − y))fij (y)(1 − θ(x0 − y)) dy         (1.7)
+                        |x0 −y|≥2R
+                          −1
+                  = [−∆ div div]ij (fij θR (x0 − ·))(x)
+                      Z
+                    + (Kij (x − y) − Kij (x0 − y))(1 − θR (x0 − y))fij (y) dy,
+
+which matches the structure of (1.3) modulo a constant. Unlike (1.5), the principle-value
+integral in (1.6) converges in Lq (Rn ) if fij ∈ L∞ (Rn ) because the argument is localized.
+The remaining part converges pointwise due to the extra decay of the kernel in the far-field.
+
+Definition 1.2. Assume u ∈ L2uloc (0, T ) ∩ Lqloc (R3 × (0, T )) for some T > 0 and q > 2, is
+a distributional solution to (1.1) and p is the associated pressure. We say that p satisfies
+the local pressure expansion (abbreviated LPE) (1.8) if, for every R > 0, t ∈ (0, T ) and
+x0 ∈ R3 , there exists cx0 ,R (t) ∈ L1 (0, T ) so that
+                                           B (x0 )
+                                     p = GijR        (ui uj ) + cx0 ,R (·),                       (1.8)
+
+in Lq/2 (BR (x0 ) × (0, T )). If u ∈ N (u0 ) for some u0 ∈ L2uloc and the associated pressure p
+satisfies the LPE, then we say u is a local energy solution.
+
+    It is worth explicitly noting that the a prior bound (1.2) is valid for local energy so-
+lutions (see [5]). The assumption that u ∈ Lqloc (R3 × (0, T )) is needed to make sense
+of [−∆−1 div div]ij (ui uj θ(x0 − ·))(x). Without this assumption, the most we know about
+ui uj θ(x0 − ·) is that it is in L1 at almost every time. Since the Riesz transforms are not
+bounded on L1 , it is not obvious that [−∆−1 div div]ij (ui uj θ(x0 − ·))(x) is defined at almost
+every time. To get around this, we will use a weaker notion of the local pressure expansion.
+
+                                                       4
+Definition 1.3. Let u ∈ L2uloc (0, T ) and p be a distribution on R3 × (0, T ) for some T > 0
+be a distributional solution to (1.1). We say that p satisfies the distributional local
+pressure expansion (abbreviated DLPE) if, for every x0 ∈ R3 and R > 0, there exists
+cx0 ,R (t) ∈ L1 (0, T ) so that for all ψ ∈ D(BR (x0 ) × (0, T )),
+
+  hp − cx0 ,R (t), ψi = hpnear , ψi + hpfar , ψi
+      Z TZ
+   :=          ui (x, t)uj (x, t)θR (x0 − x)Ri Rj ψ(x, t) dx dt
+       0                                                                                         (1.9)
+     Z TZ Z
+   +             (Kij (x − y) − Kij (x0 − y))(1 − θR (x0 − y))(ui uj )(y, t) dy ψ(x, t) dx dt.
+       0
+
+    We emphasize that in Definition 1.2, the pressure is a function whereas in Definition
+1.3, the pressure is only defined as a distribution.
+    We are often interested in the distribution ∇p = ∇pnear + ∇pfar which is defined by the
+mapping
+       Z TZ
+ ψ 7→        ui (x, t)uj (x, t)θR (x0 − x)Ri Rj (∇ · ψ)(x, t) dx dt
+        0
+          Z TZ Z
+       +           (Kij (x − y) − Kij (x0 − y))(1 − θR (x0 − y))(ui uj )(y, t) dy∇ · ψ(x, t) dx dt
+           0
+       =: h∇pnear , ψi + h∇pfar , ψi,
+
+where θR and x0 are as above and ψ ∈ D(R3 × (0, T ))3 . The difference here compared to
+(1.9) is that the constant has disappeared because ∇ · ψ has mean zero.
+    We now turn our attention to better understanding when solutions satisfy the local
+pressure expansions. Note that P = (Pij )1≤i,j≤3 where Pij = δij + Ri Rj .
+Theorem 1.4. Let u0 ∈ L1loc (R3 ; R3 ) be divergence free and satisfy et∆ u0 ∈ L1uloc (0, T ). Let
+u : R3 × (0, T ) → R3 be given so that u ∈ L2uloc (0, T ) and
+                                            Z t
+                     u(x, t) = et∆ u0 (x) −     e(t−s)∆ P(∇ · (u ⊗ u))(s) ds                (1.10)
+                                               0
+
+in L1uloc (0, T ). Then, there exists p̄ ∈ D ′ (R3 ×(0, T )) so that u and p̄ solve the Navier-Stokes
+equations distributionally and p̄ satisfies the DLPE. Additionally:
+                                                                 q/2
+   • if u ∈ Lqloc (R3 × [0, T )) for some q > 2, then p̄ ∈ Lloc (R3 × [0, T )) and satisfies the
+     LPE;
+
+   • if u0 ∈ L2uloc and u ∈ N (u0 ), then u is a local energy solution. That is, any mild local
+     Leray solution is a local energy solution.
+     Note that we state a precise definition (from [33], see also [28]) of the operator et∆ P∇·
+in Section 4 to ensure the integral formula above is meaningful.
+     We will refer to any solution satisfying (1.10) as a mild solution. On the other hand,
+if u is a solution and there exists a pressure p so that p satisfies the DLPE, we will refer to
+u as a DLPE solution. The main assertion of Theorem 1.4 is that any mild solution in
+L2uloc (0, T ) is a DLPE solution. Furthermore, any mild local Leray solution is a local energy
+solution.
+     The next theorem is roughly a converse to Theorem 1.4.
+
+                                                   5
+Theorem 1.5. Let u0 : R3 → R3 and u : R3 × (0, T ] → R3 be given divergence free vector
+fields so that u0 ∈ L2loc , et∆ u0 ∈ L1uloc (0, T ), u ∈ L2uloc (0, T ) and, for every compact set K,
+
+                                      ku(t) − u0 kL2 (K) → 0,
+
+as t → 0+ . Assume that u and p solve the Navier-Stokes as distributions and p satisfies the
+DLPE. Then, u satisfies the integral formula
+                                          Z t
+                   u(x, t) = et∆ u0 (x) −     e(t−s)∆ P(∇ · (u ⊗ u))(s) ds,
+                                              0
+
+where equality is understood in L1loc (R3 × (0, T )). It follows that every local energy solution
+is mild.
+
+
+   Comments on Theorems 1.4 and 1.5
+
+   1. This paper provides a new approach to ideas in [28] and [29]. The major difference is
+      the definition of P∇ · (u ⊗ u). In [28, Ch. 11] and [29, Ch. 6], Lemarié-Rieusset defines
+      P∇ · (u ⊗ u) in D ′ (R3 × (0, T )) using the Littlewood-Paley decomposition in the space
+      variable under the assumption that u ∈ L2uloc (0, T ). He additionally shows that there
+      exists a distribution P so that P∇ · (u ⊗ u) = ∇ · (u ⊗ u) + ∇P . Again, P is defined
+      using the Littlewood-Paley decomposition. Consequently, if u solves
+
+                             ∂t u − ∆u + P∇ · (u ⊗ u) = 0,         ∇ · u = 0,                 (1.11)
+
+      as a distribution then u and P also solve
+
+                          ∂t u − ∆u + ∇ · (u ⊗ u) + ∇P = 0,           ∇ · u = 0,
+
+      as distributions. This is the content of [28, Theorem 11.1.i]. In [28, Theorem 11.2],
+      Lemarié-Rieusset proves that, assuming u ∈ L2uloc (0, T ), u is a distributional solution
+      to (1.11) if and only if there exists a divergence free u0 ∈ S ′ (R3 ) so that u is a
+      distributional solution to
+                                          Z t
+                                   t∆
+                              u = e u0 −      e(t−s)∆ P∇ · (u ⊗ u) ds.
+                                                  0
+
+      Taking these results together, Lemarié-Rieusset roughly proved that u ∈ L2uloc (0, T )
+      is mild if and only if there exists a distribution P defined using Littlewood-Paley so
+      that u and P solve the Navier-Stokes equations as distributions.
+      We are essentially re-proving Lemarié-Rieusset’s theorems via a different approach
+      which we hope will prove useful in applications. In particular, we define the pressure
+      via the DLPE, instead of using Littlewood-Paley. Put differently, we can define the
+      operator P∇· directly as
+
+                                      P∇ · (u ⊗ u) = u · ∇u + ∇p,
+
+      where p satisfies the DLPE. The motivation for this are applications where the local
+      pressure expansion is more appropriate. Indeed, the local pressure expansion has
+      been used to good effect in a variety of papers (see e.g. [5, 18, 19, 21] and others),
+
+                                                      6
+     but has not been examined in the full generality of Lemarié-Rieusset’s equivalence
+     theorem. Additionally, we expect that by avoiding the Littlewood-Paley approach
+     entirely, i.e. by not using Lemarié-Rieusset’s existing equivalence theorem and its
+     associated definition of the pressure, our approach will prove useful on the half-space
+     where a similar pressure formulation has been given [32].
+     Lemarié-Rieusset explores the local pressure expansion [29, Lemma 6.4], but requires
+     estimates on the gradient of u to makes sense of it, which we do not. Indeed, [29,
+     Lemma 6.4] essentially corresponds to the last sentence in Theorem 1.4. It does not
+     reach the full generality of Theorem 1.4 nor Theorem 1.5.
+     Note that Lemarié-Rieusset includes a forcing in [29] and we do not consider this here.
+     Also, in Lemarié-Rieusset’s equivalence theorem [28, Ch. 11], the initial data is not
+     mentioned explicitly (some conditions are implicit because et∆ u0 must make sense).
+     In contrast, in Theorem 1.4, we assume the solution converges locally to the initial
+     data.
+
+  2. The condition from [19] implies u is a mild solution. Hence Theorem 1.4 can be seen
+     as a generalization of it.
+
+  3. In Theorem 1.5, the continuity assumption at t = 0 can be replaced by the assumption
+     that u ∈ L∞ (0, T ; L2uloc ). This condition implies u ∈ L2uloc (0, T ).
+
+  4. Local Leray solutions satisfy the assumption in Theorems 1.4 and 1.5 and hence local
+     Leray solutions are mild if and only if they are local energy solutions.
+
+  5. A condition along the lines of (1.10) is necessary because there exist solutions to the
+     Navier-Stokes equations for which the local pressure expansion is not valid. Such
+     solutions are called “parasitic” in the literature. In particular, let u(x, t) = g(t) where
+     g is continuous and g(0) = 0 and p(x, t) = x · g′ (t). Then u and p meet all the
+     conditions in Theorem 1.4 except (1.10), but the conclusion fails. On the other hand,
+     the trivial solution u = p = 0 satisfies (1.10) and the conclusion holds.
+
+  6. In the first theorem we require et∆ u0 ∈ L1uloc (0, T ). This holds for data u0 in L1uloc or
+     BM O−1 . We also require u ∈ L2uloc (0, T ). This is a very weak assumption and holds
+     e.g. for the small data mild solutions in [23] (see also [28, 13, 33, 26]).
+
+    The main tool used to prove Theorem 1.4 is a result on the structure of solutions to a
+Poisson equation belonging to BM O. This result is stated in Section 2. In Section 3 we
+establish several properties of the DLPE. The precise definition of mild solutions is recalled
+in Section 4. To connect the Poisson equation of Section 2 to the Navier-Stokes equations, we
+approximate the nonlinearity by bounded fields. This approximation is explored in Section
+5. We prove Theorems 1.4 and 1.5 respectively in Sections 6 and 7. The main idea is that
+the LPE and DLPE are equivalent to the mild formulation at the level of the approximated
+problem, and, upon taking limits, this equivalence also holds for a given solution. Finally
+we include several applications in Section 8.
+    Note that one can try to approximate the nonlinearity with bounded, compactly sup-
+ported terms as in [27] instead of just bounded fields. The benefit is an easier analysis of
+the auxiliary Poisson equation (just use the L2 theory), with a more complicated approx-
+imation of the nonlinearity. We choose to emphasize the BM O approach to the Poisson
+equation since it is interesting in its own right and simplifies bootstrapping arguments. It
+
+
+                                               7
+also justifies the pressure expansion for the mollified equation used in [28, Ch. 32]. Finally,
+several other papers which rigorously establish the local pressure expansion do so using
+decaying solutions as a foundation [21, 27] in their approximation. Our approach shows
+this decay is not essential.
+    Regarding notation, we do not distinguish between spaces of scalars and vectors, e.g.
+we will say φ ∈ Cc∞ (R3 × (0, T )) even when φ is a vector and we should technically say
+φ ∈ (Cc∞ (R3 × (0, T )))3 .
+    We finally note that P. G. Fernández-Dalgo and P. G. Lemarié-Rieusset very recently
+released an elegant paper [9] which addresses questions about the pressure representation
+of distributional solutions in a very large class based on a weighted L2 space appearing in
+[10, 11]. Our comments in the introduction do not reflect developments in [9].
+
+
+2     A Poisson equation with non-decaying source
+In the note [8], C. Fefferman states that, for g ∈ L∞ , the Riesz transforms can be defined
+by
+                                    Z
+                   Rj0 (g)(x) = lim        [Kj (x − y) − Kj0 (−y)] g(y) dy,
+                               δ→0 δ<|x−y|
+
+
+where j = 1, 2, 3,
+                                                         yj
+                                       Kj (y) = c            ,
+                                                        |y|4
+and                                          ( y
+                                              c |y|j4     if y > 1
+                                 Kj0 (y) =
+                                               0          if y ≤ 1.
+Note that for g ∈ Lp , the classical Riesz transforms are defined differently (namely, without
+Kj0 ). The modification here ensures Rj0 (g) makes sense when g is not decaying. It agrees
+with the usual definition modulo a constant when g has compact support. This representa-
+tion resembles the structure of the LPE, but with obvious differences. A related discussion
+can be found in [37, p. 156-157], where an equivalent characterization is given using duality.
+In particular, if ψ is bounded, compactly supported and has mean zero (implying it is in
+H1 ), and f ∈ L∞ , then the Riesz transform of f satisfies
+                                                Z
+                                  [Ri f ](ψ) = − f (Ri ψ) dx.
+
+Note that, on the right hand side, the Riesz transform is defined using the classical for-
+mula. In this section, we examine the Riesz transforms understood using duality and their
+relationship to the BM O solution of a Poisson equation. In particular we establish the
+LPE directly from the duality definition of Riesz transforms and check that the properties
+relating to a Poisson equation of the classical Riesz transforms remain valid for the modified
+transforms.
+    If p is the associated pressure for a solution u of the Navier-Stokes equations, then p
+solves the Poisson equation
+
+                                       −∆p = ∂i ∂j fij ,                                  (2.1)
+
+
+
+                                                   8
+in the distributional sense where f = (fij ) = (ui uj ) and we are implicitly summing over
+1 ≤ i, j ≤ 3. A distribution p solves (2.1) if and only if
+                                      Z
+                        hp, ∆φi = − fij ∂i ∂j φ dx, ∀φ ∈ Cc∞ (R3 ),                  (2.2)
+
+where h·, ·i represents the duality pairing for D ′ and D. If p ∈ L1loc , we let
+                                                Z
+                                      hp, ψi = p ψ dx.
+
+The right hand side of (2.2) can be altered using [36, p. 59] which says ∂i ∂j φ = −Ri Rj ∆φ
+where Ri Rj are the classical Riesz transforms. In particular, this means a distribution p
+solves (2.1) if and only if
+                                   Z                Z
+                       hp, ∆φi = − fij ∂i ∂j φ dx = fij Ri Rj ∆φ dx.                    (2.3)
+
+    We are interested in solutions u of (1.1) which are non-decaying. The case u ∈ L∞ is a
+natural foundation to begin studying such solutions. This leads us to consider the problem
+(2.3) where fij ∈ L∞ for 1 ≤ i, j ≤ 3.
+    Above we specified what a solution p to the Poisson equation should do when tested
+against ∆φ. We now construct a solution p ∈ BM O to (2.1) given fij ∈ L∞ for 1 ≤ i, j ≤ 3.
+Recall that Ha1 is the dense subspace of H1 consisting of finite linear combinations of H1
+atoms. Note that this subspace consists of all bounded functions with compact support and
+mean zero [37, p. 112]. Let l be the bounded linear function on H1 given by
+                                           Z
+                   l(h) = Ri Rj (fij )(h) = fij Ri Rj h dx, for all h ∈ H1 .
+
+Since Ri Rj h may not be in Ha1 , the above integral may not converge in general (see [37,
+p. 142]), but it does here because fij ∈ L∞ . In particular we have
+           Z
+               fij Ri Rj h dx ≤ kf k∞ kRi Rj hkL1 . kf k∞ kRi Rj hkH1 . kf k∞ khkH1 .
+
+This confirms that l is a bounded linear functional on H1 . Thus, by [37, p. 142], there exists
+p ∈ BM O so that               Z
+                                   p h dx = l(h) for all h ∈ Ha1 .
+
+     Whenever φ ∈ Cc∞ , ∆φ has mean zero and is compactly supported and bounded. Hence
+it is in Ha1 . So, for all φ ∈ Cc∞ and letting h = ∆φ in the above identity, we have
+                                  Z            Z
+                                     p∆φ dx = fij Ri Rj ∆φ dx,
+
+i.e. p satisfies the Poisson equation in the sense of distributions. Furthermore, note that if
+φ ∈ (C01 )3 , then ∇ · φ has mean zero by the divergence theorem. Hence ∇ · φ ∈ Ha1 and,
+therefore,                     Z              Z
+                                 p∇ · φ dx =        fij Ri Rj ∇ · φ dx.
+
+   The following theorem elaborates on the above formula. In particular, it gives an explicit
+formula for solutions to (2.1) and allows us to move the integral operators from ∇ · φ to fij .
+
+                                                9
+Theorem 2.1. Assume that p ∈ BM O solves the Poisson equation
+
+                                          ∆p = −∂i ∂j fij ,                               (2.4)
+
+in the distributional sense where fij ∈ L∞ ∩ Cloc
+                                              α , for some α > 0 and 1 ≤ i, j ≤ 3 (we
+
+implicitly sum over i and j).
+    Define p̄ as follows:
+                                  B (0)
+   • If x ∈ B1 (0) then p̄(x) = Gij2      fij (x).
+                                  B       (0)
+   • If x ∈ Bn (0) then p̄(x) = Gijn+1 fij (x) + nk=2 ck , where
+                                                 P
+                                               Z
+                   B (0)      B    (0)             2k           2(k+1)     
+             ck = Gijk fij − Gijk+1 fij = −       Kij (−y) − Kij       (−y) fij (y) dy,
+
+     is a constant.
+Then, p̄ is a well defined distributional solution to (2.4) and, for any ball B,
+                          Z            Z                    Z
+                              p ψ dx =     (GB  f
+                                              ij ij )ψ dx =    p̄ ψ dx,                   (2.5)
+                          R3               R3                   R3
+
+for all ψ which are bounded, supported in B, and have mean zero (i.e. ψ ∈ Ha1 ). This
+implies p = p̄ in BM O.
+Comments on Theorem 2.1.
+  1. By construction, p̄ ∈ Lqloc for any q < ∞ using fij ∈ L∞ . It is indeed in L∞
+                                                                                 loc using
+            ∞    α
+     fij ∈ L ∩ Cloc .
+                                                                        α assumption
+  2. We will apply this theorem to smooth approximations and hence the Cloc
+     is not an obstacle.
+  3. Assuming a distributional solution p of (2.4) is in BM O is equivalent to assuming
+     p = Ri Rj fij . This is because Ri Rj fij is in BM O and is also a solution to the Poisson
+     equation. Uniqueness in BM O implies p = Ri Rj fij [25]. That p̄ ∈ BM O follows
+     from the fact that p and p̄ behave the same as functionals on a dense subset of H1 .
+     This implies that Ri Rj fij = p̄ in BMO.
+  4. In Theorem 2.1, we are checking that the dual characterization of p agrees in BM O
+     with the explicit formula for p̄. Understanding p ∈ BM O when u ∈ L∞ is classical;
+     see for example [25, 26, 13, 38]. We include a detailed proof under general conditions
+     and explicitly check that the properties of classical Riesz transforms extend to the
+     modified formulas because we cannot find these details concisely contained in the
+     literature.
+  5. We may replace the sum appearing in the definition of p̄ by
+            n                                    Z
+                      B2 (0)    Bn+1 (0)                         2(n+1)
+            X
+                                                      2
+                                                                            
+      c̃n =    ck = Gij fij − Gij        fij = −   Kij  (−y) − Kij      (−y) fij (y) dy.
+              k=2
+
+     Clearly c̃n . ln(n) whenever fij is in L∞ because
+                                                                      1
+                                                   Z
+                       B2 (0)     Bn+1 (0)
+                     Gij fij − Gij         fij ≤ C                      3
+                                                                          dy . ln n,
+                                                          1≤|y|≤4n+4 |y|
+
+     as n → ∞. This is consistent with p̄ ∈ BM O.
+
+                                                     10
+   The proof of Theorem 2.1 is conceptually straightforward: Expand the integral operator
+and use Fubini’s theorem to move the operator from the test function to fij . There are,
+however, several applications of the dominated convergence theorem, the justification for
+which gets rather technical. We check that the premises of the dominated convergence
+theorem are satisfied in the following lemma.
+
+Lemma 2.2. Fix x0 ∈ R3 and R > 0. For 1 ≤ Ri, j ≤ 3, assume that fij ∈ L∞ ∩ Cloc
+                                                                               α and
+       α for some α > 0, supp ψ ⊂ B (x ), and
+ψ ∈ Cloc                                      ψ dx = 0. Then, there exist non-negative
+                                       R 0
+integrable functions F1 , F2 , so that
+
+  1. |F1N (x)| ≤ F1 (x) for all x ∈ R3 and N > 0, where
+                                   Z
+                                                            2R
+                 F1N (x) = fij (x)          (Kij (x − y) − Kij (x − x0 ))ψ(y) dy,
+                                         N −1 <|x−y|
+
+     for any 1 ≤ i, j ≤ 3 (in other words, there exists a single function F1 (x) so that, for
+     any choice of i and j, F1N (x) is bounded).
+
+  2. |F2N,M (y)| ≤ F2 (y) for all y ∈ R3 , N ∈ (0, ∞] and M ≥ 2R, where, for N < ∞
+                             Z
+             N,M                                                  2R
+                                                                              
+           F2 (y) = ψ(y)                           Kij (x − y) − Kij (x − x0 ) fij (x) dx,
+                                    N −1 <|x−y|;|x−x0|<M
+
+     and for N = ∞
+                                     Z
+        F2N,M (y) = ψ(y)                                                              2R
+                                                                                                  
+                             lim                                       Kij (x − y) − Kij (x − x0 ) fij (x) dx,
+                            N →∞ N −1 <|x−y|;|x−x0|<M
+
+
+     for any 1 ≤ i, j ≤ 3 (in other words, there exists a single function F2 (y) so that, for
+     any choice of i and j, F2N,M (y) is bounded).
+
+    The functions F1N , F1 , F2N,M and F2 are everywhere defined because fij , ψ ∈ Cloc
+                                                                                      α . The
+
+definitions of F1 and F2 depend on kf kC α (B2R (x0 )) and kψkC α . Since the proof of Lemma
+2.2 is technical, we postpone it until after the proof of Theorem 2.1.
+
+Proof of Theorem 2.1. We first show p̄ is well defined. Fix x and let n be the smallest
+natural number so that x ∈ Bn (0). On one hand we have defined
+                                                                             n
+                                                B          (0)
+                                                                             X
+                                     p̄(x) = Gijn+1              fij (x) +          ck .
+                                                                             k=2
+
+For p̄ to be well defined this must agree with
+                                                                      m
+                                          B         (0)
+                                                                      X
+                                         Gijm+1           fij (x) +          ck .
+                                                                      k=2
+
+for all m > n. Letting m = n + 1 we have
+                                              n+1                                          n
+                    B       (0)                                  B    (0)
+                                              X                                            X
+                   Gijn+2         fij (x) +         ck − Gijn+1             fij (x) −            ck = 0,
+                                              k=2                                          k=2
+
+
+
+                                                            11
+by the definition of cn+1 . For induction assume for some m > n that
+                                                    m                                       n
+                        B         (0)                            B       (0)
+                                                    X                                       X
+                       Gijm+1           fij (x) +         ck = Gijn+1          fij (x) +          ck .
+                                                    k=2                                     k=2
+
+Then
+                                             m+1                                      n
+                   B       (0)                               B    (0)
+                                             X                                        X
+                  Gijm+2         fij (x) +          ck − Gijn+1         fij (x) +           ck
+                                             k=2                                      k=2
+                                               m+1                                          m
+                     B    (0)                                   B    (0)
+                                                X                                           X
+                  = Gijm+2 fij (x) +                      ck − Gijm+1 fij (x) +                   ck = 0,
+                                                 k=2                                        k=2
+
+implying p̄ is unambiguously defined.
+   Next, assume that ψ : R3 → R with supp ψ ⊂ B = BR (0), ψ ∈ Cloc
+                                                               α , and
+                                                                       R
+                                                                         ψ dx = 0.
+We will first prove     Z            Z           Z
+                                      p ψ dx =           (GB
+                                                           ij fij )ψ dx =             p̄ ψ dx,
+                                 R3                 R3                           R3
+
+under these assumptions on ψ and then extend this to ψ ∈ Ha1 .
+   Since ψ is supported in B, GB                                                 2R
+                                ij (ψ) = Gij (ψ). This is obvious given that Kij (−y) = 0
+whenever ψ(y) 6= 0.
+   Note that ψ ∈ Ha1 ⊂ H1 because it is bounded, compactly supported and has mean zero.
+Hence Gij (ψ) ∈ H1 ⊂ L1 . Due to this, and the fact that fij ∈ L∞ , the integral
+                                       Z
+                                         fij Gij ψ dx
+
+converges absolutely by Hölder’s inequality. We also claim that
+                                    Z
+                                      GBij (fij )ψ dx < ∞.
+
+
+Indeed, we have
+        Z
+          GBij (fij )ψ dx
+                                Z                                                
+            δij
+                 Z                      Z
+        =−           fij ψ dx +     lim          Kij (x − y)fij (y)χB2R (0) (y) dy ψ(x) dx
+             3                      ǫ→0 |x−y|>ǫ
+          Z Z                                                          
+                                     2R
+        +           (Kij (x − y) − Kij (−y))fij (y)(1 − χB2R (0) (y)) dy ψ(x) dx.
+
+The first term is finite by Hölder’s inequality. Since f χB2R (0) is in L∞ , the singular integral
+term above is in BM O. Furthermore, ψ ∈ Ha1 implying
+         Z        Z                                         
+              lim           Kij (x − y)fij (y)χB2R (0) (y) dy ψ(x) dx ≤ CkψkH1 kf kL∞ .
+              ǫ→0 |x−y|>ǫ
+
+
+For the last term note that, by the extra decay of the kernel when y ∈/ B2R (0) and x ∈ BR (0),
+     Z   Z                                                     
+                              2R
+             (Kij (x − y) − Kij  (−y))f (y)(1 − χB2R (0) (y)) dy ψ(x) dx ≤ CkψkL1 kf kL∞ .
+
+
+                                                            12
+   We now show that, for fixed i, j (not summed),
+                            Z               Z
+                              fij Gij ψ dx = GB ij (fij )ψ dx.
+
+
+This statement is equivalent to
+                              Z                           Z
+                                        fij G̃ij ψ dx =       G̃B
+                                                                ij (fij )ψ dx,                        (2.6)
+
+                                                                                             1
+where G̃ij and G̃B                                            B
+                   ij are the integral parts of Gij and Gij , respectively, Gij f = G̃ij f + 3 δij f ,
+                       1
+and GB         B
+      ij f = G̃ij f + 3 δij f . The indices i, j are not summed.
+   Using this definition we have
+                                        Z
+                                           |fij G̃ij ψ| dx < ∞,
+
+                             |fij Gij ψ| dx, and 13 |fij δij ψ| dx is obviously finite. Hence,
+                         R                          R
+since this is true for
+                               Z                       Z
+                                   fij G̃ij ψ dx = lim             fij G̃ij ψ dx.
+                                                    M →∞ |x−0|<M
+
+
+   Note that for any N, M > 0,
+                    Z                    Z
+                                  2R
+                          fij (x)Kij (x)                              ψ(y) dy dx < ∞,
+                             |x|<M                      N −1 <|x−y|
+
+because the regions of integration and the integrands are all bounded. Furthermore, for any
+M > 0, because ψ is integrable and mean zero,
+                     Z                     Z
+                                                       2R
+                             fij (x) lim              Kij (x)ψ(y) dy dx
+                      |x|<M           N →∞   N <|x−y|
+                                              −1
+                        Z                           Z
+                                          2R
+                     =           fij (x)Kij (x) lim              ψ(y) dy dx
+                         |x|<M                  N →∞ N −1 <|x−y|
+                        Z                       Z
+                                          2R
+                     =           fij (x)Kij (x) ψ(y) dy dx = 0.
+                              |x|<M
+
+   We are ready to establish (2.6). We have
+            Z                                                         Z
+              fij (x)G̃ij ψ(x) dx = lim IM ,                  IM =             fij (x)G̃ij ψ(x) dx.
+                                           M →∞                        |x|<M
+
+
+Using the definition of G̃ij ,
+                       Z                            Z
+                 IM =                 fij (x) lim                  Kij (x − y)ψ(y) dy dx.
+                              |x|<M         N →∞     N −1 <|x−y|
+
+The last limit is valid in Lq and also pointwise since ψ ∈ C α . By equation (2), the dominated
+convergence theorem with limit in N → ∞ (noting the integrability and pointwise bounds
+
+
+
+
+                                                         13
+established in part 1 of Lemma 2.2 with fij , ψ ∈ Cloc    α ), we have
+
+                 Z                      Z
+                                                                      2R
+           IM =           fij (x) lim              (Kij (x − y) − Kij    (x))ψ(y) dy dx
+                   |x|<M         N →∞ N −1 <|x−y|
+                        Z        Z
+                                                                      2R
+               = lim                        fij (x)(Kij (x − y) − Kij    (x))ψ(y) dy dx
+                 N →∞ |x|<M N −1 <|x−y|
+                        Z Z
+               = lim           χBM (x) (x)χR3 \BN −1 (x) (y)fij (x)
+                  N →∞
+                                                 2R
+                               × (Kij (x − y) − Kij (x))ψ(y) dy dx.
+
+For M and N fixed,
+                                                                    2R
+               |χBM (0) (x)χR3 \BN −1 (x) (y)fij (x)(Kij (x − y) − Kij (x))ψ(y)|
+                                                                         2R ∞
+                                                                               
+                ≤ kfij kL∞ χBM (0) (x)|ψ(y)| kKij χR3 \BN −1 (0) kL∞ + kKij kL .
+
+The product of two measurable functions each depending on only one variable is measurable
+in the product measure. Since the support of Kij χR3 \BN −1 (0) is bounded away from zero
+and χBM (0) (x) and |ψ0 (y)| are bounded and compactly supported, the above function is
+integrable in the product measure. We may therefore use Fubini’s theorem to obtain
+                              Z      Z
+                  IM = lim        ψ(y) χBM (0) (x)χR3 \BN −1 (y) (x)
+                        N →∞
+                                                                         
+                                                            2R
+                                   × fij (x)(Kij (x − y) − Kij (x)) dx dy .
+
+   Considering the above limits, part 2 of Lemma 2.2 and the dominated convergence
+theorem allow us to pass the limit in N through the outside integral. Hence,
+             Z            Z
+                                                                        2R
+       IM = ψ(y) lim                  χBM (0) (x)fij (x)(Kij (x − y) − Kij (x)) dx dy.
+                       N →∞   |x−y|>N −1
+
+We furthermore have
+      Z
+        fij (x)G̃ij ψ(x) dx = lim IM
+                             M →∞
+         Z                   Z
+                                                                       2R
+       = ψ(y) lim lim                χBM (0) (x)fij (x)(Kij (x − y) − Kij (x)) dx dy
+                   M →∞ N →∞ |x−y|>N −1
+
+
+where we used the dominated convergence theorem and Lemma 2.2 (part 2 with N = ∞)
+to move the limit in M through the outside integral. To conclude we must show that, for
+almost every y,
+                        Z
+                                                                       2R
+              lim lim               χBM (0) (x)fij (x)(Kij (x − y) − Kij  (x)) dx
+             M →∞ N →∞ |x−y|>N −1
+                     Z                                                             (2.7)
+                                                         2R
+              = lim            fij (x)(Kij (x − y) − Kij    (x)) dx = G̃B f
+                                                                        ij ij (y).
+                 N →∞ |x−y|>N −1
+
+
+Note that for M fixed and M > 2R, the limits in N are both convergent pointwise, which
+follows because the singularities of the inside integrals are depleted by Hölder continuity
+
+
+                                                14
+while the tails are integrable. We can therefore take the difference of the terms in (2.7) to
+obtain, for almost every y,
+                     Z
+                                                                        2R
+                lim             (χBM (0) (x) − 1)fij (x)(Kij (x − y) − Kij (x)) dx
+               N →∞ |x−y|>N −1
+
+                                                  1
+                             Z
+              ≤ CRkfij kL∞ (χBM (0) (x) − 1) 4 dx,
+                                                 |x|
+where we used the fact that y ∈ BR (0) and |x| > 2R. This clearly vanishes as M → ∞,
+and so (2.7) holds for all y. We have shown (2.6) for fixed i, j.
+   This proves that, when ψ : R3 → R with supp ψ ⊂ BR (0), ψ ∈ Cloc     α , and
+                                                                                R
+                                                                                  ψ dx = 0, we
+have (now suming in i, j)
+                   Z           Z                     Z
+                      pψ dx = fij (x)Gij ψ(x) dx = GB     ij fij (y)ψ(y) dy,
+
+where the first equality is from the definition of p ∈ BM O.
+   Finally, let n be large enough that B ⊂ Bn (0). Then,
+
+                                      GB
+                                       ij fij = p̄(x) + cB ,
+
+for a constant cB depending on B (this follows from a straightforward calculation). Since
+ψ has mean zero, we obtain
+               Z         Z                      Z                  Z
+                  pψ dx = GB   f
+                             ij ij (y)ψ(y) dy =   (p̄ + cB )ψ dx =   p̄ψ dx.
+
+    We next prove (2.5) for all ψ ∈ Ha1 . By [37, Ch. IV, Section 1.2, Theorem 1], this
+will imply that p = p̄ in BM O. Let η be a mollifier and let ψ ∈ Ha1 be given. Let
+ψǫ = ǫ−3 η(·/ǫ) ∗ ψ. Then, ψǫ → ψ in H1 . Furthermore, ψǫ is bounded, has mean zero and
+is compactly supported and locally Hölder continuous. Thus
+                                 Z            Z
+                                    p ψǫ dx = p̄ ψǫ dx.
+
+Because fij ∈ L∞ ∩ Clocα , it is easy to see that p̄ ∈ L∞ (just use Hölder continuity to deplete
+                                                        loc
+the singular part uniformly on a given compact set and note that the far-field part of the
+integral is bounded by a constant depending on the given compact set and the bound for
+fij ). Let n ∈ N be such that supp ψ, supp ψǫ ⊂ Bn (0) for ǫ < 1. Then, p − p̄χBn (0) ∈ BM O.
+Thus
+                       Z                     Z
+                          (p − p̄)ψ dx =       (p − p̄)(ψ − ψǫ ) dx
+
+                                       ≤ kp − p̄χBn (0) kBM O kψ − ψǫ kH1 ,
+
+where we note that, while the above estimates are not true for general H1 -BM O pairings,
+they do hold when ψ, ψǫ ∈ Ha1 (see [37, p.142]), which is the case. Since the right hand side
+of the above vanishes as ǫ → 0, we conclude that
+                                    Z
+                                       (p − p̄)ψ dx = 0,
+
+for all ψ ∈ Ha1 . Since Ha1 is dense in H1 , this implies p = p̄ in BM O. This finishes the proof
+of Theorem 2.1.
+
+                                               15
+   We now return to the proof of Lemma 2.2.
+
+Proof of Lemma 2.2. 1. We will show that for all N > 0, the function
+                              Z
+              N                                        2R
+             F1 (x) = fij (x)         (Kij (x − y) − Kij  (x − x0 ))ψ(y) dy
+                                       N −1 <|x−y|
+
+is dominated by an integrable function. Let χ1 (x) = χB2R (x0 ) (x) and χ2 (x) = 1 − χ1 (x).
+                                   2R (x − x ) = 0. Hence we have
+Note that, if x ∈ B2R (x0 ), then Kij       0
+                                                  Z                          
+            F1N (x) = (χ1 + χ2 )(x)fij (x)                              ···       dy =: I1 + I2 ,
+                                                      N −1 <|x−y|
+                                        Z
+              I1 (x) = χ1 (x)fij (x)                      Kij (x − y)ψ(y) dy,
+                                            N −1 <|x−y|
+                                        Z
+                                                                          2R
+              I2 (x) = χ2 (x)fij (x)                      (Kij (x − y) − Kij (x − x0 ))ψ(y) dy.
+                                            N −1 <|x−y|
+
+   We first consider I1 . For all x ∈ B2R (x0 ) we have
+            Z                                    Z
+                        Kij (x − y)ψ(y) dy =                                         Kij (x − y)ψ(y) dy
+                N −1 <|x−y|                                    N −1 <|x−y|<3R
+                  Z
+            =                    Kij (x − y)[ψ(y) − ψ(x)] dy
+                      N −1 <|x−y|<3R
+                                                 1
+                                  Z
+            ≤ CkψkC α (B3R (x0 ))                  3−α
+                                                       dy ≤ CRα kψkC α (B3R (x0 )) ,
+                                    B3R (x) |x − y|
+
+where we used the fact that the integral of Kij over any sphere centered at the origin is
+                              α (R3 ). Thus
+zero, and the assumption ψ ∈ Cloc
+
+                              |I1 (x)| ≤ CRα kf kL∞ kψkC α (B3R (x0 )) · χ1 (x).
+
+   For I2 , if x ∈
+                 / B2R (x0 ) and y ∈ BR (x0 ), then
+
+                                               2R                                CR
+                               |Kij (x − y) − Kij (x − x0 )| ≤                          ,                         (2.8)
+                                                                              |x0 − x|4
+
+which can be proved directly for 2R < |x − x0 | < 4R and by mean value theorem for
+|x − x0 | ≥ 4R. Thus,
+
+                                              CR|ψ(y)|                          χ2 (x)
+                                   Z
+          |I2 (x)| ≤ kf kL∞ χ2 (x)                    4
+                                                        dy ≤ CR4 kf kL∞ kψkL∞           .
+                                     BR (x0 ) |x0 − x|                        |x0 − x|4
+
+We conclude
+
+        |F1N (x)| ≤ |I1 | + |I2 | ≤ F1 (x),
+                                                                                                      χ2 (x)
+          F1 (x) = CRα kf kL∞ kψkC α (B3R (x0 )) · χ1 (x) + CR4 kf kL∞ kψkL∞                                  .
+                                                                                                    |x0 − x|4
+
+Since F1 is clearly integrable and does not depend on N , we are done with the first part.
+
+
+
+                                                          16
+   2. For any M ∈ [2R, ∞) and N ∈ (0, ∞] (N = ∞ is allowed), we will show that, as a
+function of y,
+                       Z
+          N,M                                            2R
+                                                                     
+        F2 (y) = ψ(y)                     Kij (x − y) − Kij (x − x0 ) fij (x) dx
+                                 N −1 <|x−y|;|x−x0|<M
+
+is dominated by an integrable function. Decompose its integration domain to 2 regions:
+                                                                           2R (x − x )
+|x − x0 | < 2R in region 1 and 2R ≤ |x − x0 | ≤ M in region 2. Since ψ(y)Kij        0
+vanishes in region 1, we have
+
+      F2N,M (y) = I1 + I2 ,
+                        Z
+          I1 (y) = ψ(y)                         χB2R (x0 ) (x)Kij (x − y)fij (x) dx,
+                          N −1 <|x−y|;|x−x0|<2R
+                        Z
+                                                                       2R
+                                                                                   
+          I2 (y) = ψ(y)                             Kij (x − y) − Kij     (x − x0 ) fij (x) dx.
+                             N −1 <|x−y|;2R<|x−x0 |<M
+
+For I2 , by using (2.8)
+
+                                                                          R
+                                        Z
+     |I2 (y)| ≤ C|ψ(y)|kfij k     L∞                                            dx ≤ Ckfij kL∞ |ψ(y)|,
+                                            N −1 <|x−y|;2R<|x−x0|<M   |x0 − x|4
+
+with C independent of N and M . For I1 , note that
+                    Z
+    |I1 (y)| ≤ ψ(y)           Kij (x − y)χB2R (x0 ) (x)fij (x) dx
+                       N −1 <|x−y|<R
+                            Z
+                 + ψ(y)                                 Kij (x − y)χB2R (x0 ) (x)fij (x) dx =: I1a + I1b .
+                                N −1 <|x−y|;|x−y|≥R
+
+When y ∈ BR (x0 ) and |x − y| < R, then |x − x0 | < 2R and so χB2R (x0 ) (x) = 1. Thus
+                                    Z
+                   I1a = ψ(y)                           Kij (x − y)(fij (x) − fij (y)) dx .
+                                        N −1 <|x−y|<R
+
+             α , we have
+Since fij ∈ Cloc
+
+                                                           1
+                                              Z
+      I1a ≤ |ψ(y)|kfij kC α (B2R (x0 ))                      3−α
+                                                                 dx = CRα|ψ(y)|kfij kC α (B2R (x0 )) .
+                                               BR (y) |x − y|
+
+On the other hand, if y ∈ BR (x0 ) and x ∈ B2R (x0 ), then |x − y| ≤ 3R. Hence,
+
+                                                      1
+                                   Z
+            I1b ≤ C|ψ(y)|kfij kL ∞                          dx ≤ C|ψ(y)|kfij kL∞ .
+                                    B3R (y)\BR (y) |x − y|3
+
+Combining these estimates
+
+                          |F2N,M (y)| ≤ I1a + I1b + |I2 | ≤ F2 (y),
+                                 F2 (y) = C(kf kL∞ + kf kC α (B2R (x0 )) ) |ψ(y)|,
+
+and F2 (y) is clearly integrable. We have shown the correct bound for N < ∞ and M < ∞.
+
+
+
+                                                          17
+   We still need to treat the case when N = ∞. Note that F2N,M (y) → F2∞,M (y) everywhere
+because, for any y ∈ R3 and 1 ≪ N1 < N2 ,
+
+                     |F2N1 ,M − F2N2 ,M |(y)
+                               Z
+                      ≤ ψ(y)                            Kij (x − y)((fij )(x) − (fij )(y)) dx
+                                   N2−1 <|x−y|<N1−1
+                                                                                1
+                                                        Z
+                      ≤ kψk   L∞   kfij kC α (B1 (y))                                 dx.
+                                                        N2−1 <|x−y|<N1−1   |x − y|3−α
+
+The above can be made arbitrarily small by taking N1 sufficiently large. Since this is
+Cauchy, F2N,M (y) converges to F2∞,M (y). We know that |F2N,M (y)| ≤ F2 (y) for every y and
+since F2N,M → F2∞,M everywhere, it follows that |F2∞,M | ≤ F2 everywhere as well.
+
+   The following lemma ensures that, for the functions considered in Theorem 2.1, the LPE
+and DLPE are equivalent.
+
+Lemma 2.3. Let f be as in Theorem 2.1. Let θ ∈ Cc∞ be given. Then
+                     Z                       Z
+                          fij θ Ri Rj ψ dx =   Ri Rj (fij θ) ψ dx,
+                                   R3                            R3
+
+for all ψ ∈ Cc∞ .
+
+Proof. Clearly fij θ ∈ L2 . The result then follows from the skew adjointness of Riesz trans-
+forms in L2 .
+
+
+3     The distributional local pressure expansion
+We first show that Definition 1.3 is meaningful. Fix a function Θ ∈ Cc∞ so that Θ = 1 on
+B2 (0) and supp Θ ⊂ B4 (0). Let θR (x) = Θ(x/(R + 1)) so that θR = 1 on B2R+2 (0) and
+supp θR ⊂ B4R+4 (0).
+
+Lemma 3.1. Let u ∈ L2uloc (0, T ) for some T > 0. Fix R > 0 and x0 ∈ R3 and let
+B = BR (x0 ). Consider the mapping for ψ ∈ D(B × (0, T )),
+           Z TZ
+    ψ 7→        ui (x, t)uj (x, t)θR (x0 − x)Ri Rj ψ(x, t) dx dt
+            0
+             Z TZ Z
+           +          (Kij (x − y) − Kij (x0 − y))(1 − θR (x0 − y))(ui uj )(y, t) dy ψ(x, t) dx dt
+                0
+           =: hp̄B              B
+                 near , ψi + hp̄far , ψi.
+
+Then p̄B := p̄B        B      ′
+              near + p̄far ∈ D (B × (0, T )).
+
+Proof. We first check that the mapping is finitely valued. The second term is fine by
+known estimates  R for the local pressure expansion (e.g. [22]). For the first, since Ri Rj ψ =
+− 13 δij ψ + p.v. Kij (· − y)ψ(y) dy (see (1.5)) and the kernel Kij has mean zero on spheres,
+
+
+
+
+                                                            18
+we have
+                           1
+                                                  Z
+        |Ri Rj ψ(x)| = − δij ψ + p.v.                 Kij (x − y)ψ(y) dy
+                           3
+                                     Z
+                     ≤ |ψ(x)| + p.v.                      Kij (x − y)(ψ(y) − ψ(x)) dy
+                                                |x−y|<1
+                                  Z
+                            +                   Kij (x − y)ψ(y) dy
+                                      |x−y|≥1
+                                                                       Z                          1/p′
+                                       Ck∇ψkL∞                                         1
+                                          Z
+                      ≤ kψkL∞ +                2
+                                                 dy +                                     3p′
+                                                                                                           kψkLp
+                                |x−y|<1 |x − y|                            |x−y|≥1 |x − y|
+                      ≤ C(kψkW 1,∞ + kψkLp )
+
+where p and p′ are Hölder conjugates and p > 1. Since ψ ∈ D this implies Ri Rj (ψ) ∈ L∞ .
+Hence
+                    Z TZ
+                            ui (x)uj (x)θR (x0 − x)Ri Rj (ψ)(x, t) dx dt
+                             0
+                          ≤ CR3 (kψkL∞ W 1,∞ + kψkL∞ Lp )kuk2L2                           < ∞.
+                                                                            uloc (0,T )
+
+
+   We now check that the map gives a distribution. Fix λ ∈ R and ψ1 , ψ2 ∈ D(B × (0, T )).
+Then, by linearity of Riesz transforms and the Lebesgue integral,
+                             Z TZ
+         B
+      hp̄near , λψ1 + ψ2 i =       ui (x, t)uj (x, t)θR (x0 − x)Ri Rj (λψ1 + ψ2 )(x, t) dx dt
+                              0
+                               Z TZ
+                           =λ         ui (x, t)uj (x, t)θR (x0 − x)Ri Rj ψ1 (x, t) dx dt
+                                0
+                             Z TZ
+                           +       ui (x, t)uj (x, t)θR (x0 − x)Ri Rj ψ2 (x, t) dx dt
+                                      0
+                                 = λhp̄B                B
+                                       near , ψ1 i + hp̄near , ψ2 i.
+
+For the same reason,
+
+hp̄B
+   far , λψ1 + ψ2 i
+     Z TZ Z
+ =             (Kij (x − y) − Kij (x0 − y))(1 − θR (x0 − y))(ui uj )(y, t) dy (λψ1 + ψ2 )(x, t) dx dt
+    0
+                      B
+= λhp̄B
+      far , ψ1 i + hp̄far , ψ2 i.
+
+Therefore the map is linear.
+   Let {ψk }∞          ∞
+              k=1 ⊂ Cc (K) which converges to zero in the topology of D where K is
+a compact subset of BR (x0 ) × (0, T ). Convergence of ψk in the topology on D implies
+kψk kL∞ W 1,∞ + kψk kL∞ Lp → 0 as k → 0. Hence
+                          Z TZ
+                                      ui (x)uj (x)θR (x0 − x)Ri Rj (ψk )(x) dx dt
+                            0
+                         ≤ CR3 (kψk kL∞ W 1,∞ + kψk kL∞ Lp )kuk2L2                          → 0.
+                                                                              uloc (0,T )
+
+
+That the remaining term vanishes follows from standard estimates (e.g. [22, 27]).
+
+                                                            19
+    Lemma 3.1 only defines the pressure in D ′ (BR (x0 ) × (0, T )). We need to define a
+distribution in D ′ (R3 × (0, T )). To do this, we build upon Lemma 3.1 using the following
+recursive procedure:
+    (
+      hp̄(x), ψi := hp̄B1 (0) , ψi               if ψ ∈ D(B1 (0) × (0, T )),
+                       B  (0)
+                                   P n                                                 (3.1)
+      hp̄(x), ψi := hp̄ n , ψi + h k=2 ck , ψi if n ≥ 2 and ψ ∈ D(Bn (0) × (0, T )),
+
+where                          Z
+                  ck (t) = −       Kij (x − y)(θk (−y) − θk−1 (−y))(ui uj )(y, t) dy,
+
+which, after unraveling notation, is the same constant appearing in Theorem 2.1.
+   We need to check that (3.1) defines a distribution.
+
+Lemma 3.2. Assume u ∈ L2uloc (0, T ) for some T > 0. Let p̄ be defined by (3.1). Then
+p̄ ∈ D ′ (R3 × (0, T )).
+
+Proof. We abbreviate p̄Bn (0) by p̄n and do the same for the components of p̄n . Note that
+cn ∈ L1 (0, T ), which follows from the fact that u ∈ L2uloc (0, T ).
+   We first check the map is well defined. Fix ψ ∈ D ′ (R3 × (0, T )). Let n be a natural
+number so that ψ ∈ D ′ (Bn (0) × (0, T )). To prove the map is well defined, it suffices to show
+
+                                     Xn                          n+1
+                                                                  X
+                        hp̄n , ψi + h   ck , ψi = hp̄n+1 , ψi + h    ck , ψi.
+                                       k=2                              k=2
+
+This reduces to                                          Z TZ
+                                   n      n+1
+                               hp̄ − p̄         , ψi =          cn+1 (t)ψ dx dt.
+                                                         0
+We first compute the near-field part of the left hand side which is
+             Z TZ
+                    ui (x, t)uj (x, t)θn (−x)Ri Rj ψ(x, t) dx dt
+               0
+                 Z TZ
+             −         ui (x, t)uj (x, t)θn+1 (−x)Ri Rj ψ(x, t) dx dt                       (3.2)
+                  0
+                 Z TZ
+              =         ui (x, t)uj (x, t)(θn (−x) − θn+1 (−x))Ri Rj ψ(x, t) dx dt.
+                    0
+
+For the far-field part we have
+  Z TZ Z
+            (Kij (x − y) − Kij (−y))(1 − θn (−y))(ui uj )(y, t) dy ψ(x, t) dx dt
+   0
+     Z TZ Z
+  −            (Kij (x − y) − Kij (−y))(1 − θn+1 (−y))(ui uj )(y, t) dy ψ(x, t) dx dt
+      0
+     Z TZ Z
+  =            (Kij (x − y) − Kij (−y))(θn+1 (−y) − θn (−y))(ui uj )(y, t) dy ψ(x, t) dx dt (3.3)
+      0
+     Z TZ Z
+  =             Kij (x − y)(θn+1 (−y) − θn (−y))(ui uj )(y, t) dy ψ(x, t) dx dt
+      0
+     Z TZ Z
+  −            Kij (−y)(θn+1 (−y) − θn (−y))(ui uj )(y, t) dy ψ(x, t) dx dt.
+        0
+
+
+                                                         20
+Now, fix x ∈ supp ψ ⊂ Bn , and consider the integral
+                    Z
+                       Kij (x − y)(θn+1 (−y) − θn (−y))(ui uj )(y, t) dy.
+
+Because θn+1 − θn ≡ 0 in B2n (0) and x ∈ Bn , we are integrating over the region where
+|x − y| ≥ n. This is important because it means that above integral is not principally
+valued, it is just a convolution operator. Therefore,
+           Z
+              Kij (x − y)(θn+1 (−y) − θn (−y))(ui uj )(y, t) dy
+                   Z
+           = p.v. Kij (x − y)(θn+1 (−y) − θn (−y))(ui uj )(y, t) dy
+                                                  1
+           = Ri Rj ((θn+1 (−·) − θn (−·))ui uj ) − δij (θn+1 (−x) − θn (−x))ui uj (x, t)
+                                                  3
+           = Ri Rj ((θn+1 (−·) − θn (−·))ui uj ),
+
+where we again used θn+1 − θn ≡ 0 in B2n (0) in the last step. Using this and Fubini’s
+Theorem to move the Riesz transforms (noting that they reduce to non-principally valued
+convolution operators as observed above), we obtain
+               Z TZ Z
+                           Kij (x − y)(θn+1 (−y) − θn (−y))(ui uj )(y, t) dy ψ(x, t) dx dt
+                0
+                    Z TZ
+               =           Ri Rj ((θn+1 (−·) − θn (−·))ui uj )(x, t)ψ(x, t) dx dt
+                      0
+                    Z TZ
+               =           (θn+1 − θn )(−x)(ui uj )(x, t)(Ri Rj ψ)(x, t) dx dt.
+                      0
+
+Comparing this to (3.2) and adding (3.2) and (3.3) gives
+                             Z TZ Z
+     n        n+1
+   hp̄ − p̄         , ψi = −         Kij (−y)(θn+1 (−y) − θn (−y))(ui uj )(y, t) dy ψ(x, t) dx dt
+                              0
+                           Z TZ
+                         =      cn+1 (t)ψ(x, t) dx dt,
+                            0
+
+which proves the map is well-defined.
+    We now check that the map defines a distribution. It is easy to see that it is finitely
+valued and linear, so we only prove continuity. Let {ψk }∞      ∞
+                                                         k=1 ⊂ Cc (K) where K is a compact
+           3                                              3
+subset of R × (0, T ) and ψk → 0 in the topology on D(R × (0, T )). Then there exists n ∈ N
+so that ψk ∈ D(Bn (0) × (0, T )) for all k. We certainly have ψk → 0 in the topology on
+D(Bn (0) × (0, T )). We also have
+
+                                                               Xn
+                                    hp̄, ψk i = hp̄n , ψk i + h   cj , ψk i.
+                                                              j=2
+
+Because p̄n is a distribution on Bn (0) × (0, T ),
+
+                                              |hp̄n , ψk i| → 0.
+
+
+
+                                                      21
+On the other hand, since
+                                         n
+                                         X
+                                                  cj ∈ L1 (0, T ),
+                                         j=2
+                      Pn                              ′  3
+integrating against     j=2 cj defines an element of D (R × (0, T )). Therefore
+
+                                           Xn
+                                         |h   cj , ψk i| → 0,
+                                             j=2
+
+as well. This proves that the mapping ψ 7→ hp̄, ψi is in D ′ (R3 × (0, T )).
+
+
+4    The mild formulation
+In this section we elaborate on [33, Remark 3.1] and state some useful facts about the mild
+formulation. In particular, mild solutions are in L1uloc (0, T ) whenever et∆ u0 ∈ L1uloc (0, T )
+and u ∈ L2uloc (0, T ). This is enough to make sense of the mild formulation as a distribution.
+    Recall that et∆ P is the Oseen tensor. Let S denote its kernel. We have the following
+pointwise estimate for S,
+                                                               Ck,m
+                               |∂tm ∇kx S(x, t)| ≤             √         ,                       (4.1)
+                                                         (|x| + t)3+k+2m
+
+see the original work of Oseen [34] and the more recent references [28, 33, 35]. Then, given
+F = (Fij )1≤i,j≤3 ∈ L2uloc (0, T ) we understand the operation
+                                             Z t
+                               F (x, t) 7→         e(t−s)∆ P∇ · F (x, s) ds,
+                                              0
+
+in L1uloc (0, T ) where et∆ P is the Oseen tensor.
+     A similar definition is [33, Definition 3.1]. The difference between these is that we are
+considering the operation in space and time as opposed to at a fixed time. This allows us to
+apply it to elements of L2uloc (0, T ) instead of just elements of L∞ (0, T ; L2uloc ). The distinction
+does not lead to technical challenges. Indeed, we will prove the operation is meaningful in
+the sense of distributions using the above pointwise estimate for the Oseen tensor, which
+are also used in [33]. This will allow us to prove that the mild formulation converges in
+L1loc (R3 × (0, T )) and, additionally, ends up in L1uloc (0, T ) whenever u ∈ L2uloc (0, T ) and
+et∆ u0 ∈ L1uloc respectively. This is the content of the next lemma. A recurring theme is
+that these estimates match the far-field decay of the kernel in the LPE. We can therefore
+use methods resembling the pressure estimates in [22]. Also note that this result is not new;
+it is roughly a re-statement of [28, Lemma 11.3]. We include a detailed proof for the sake
+of completeness.
+
+Lemma 4.1. If et∆ u0 ∈ L1uloc (0, T ) and u ∈ L2uloc (0, T ) then, letting
+                                                  Z t
+                           ū = et∆ u0 (x) −            e(t−s)∆ P∇ · (u ⊗ u) ds,
+                                                   0
+
+we have ū ∈ L1uloc (0, T ). Consequently ū ∈ L1loc (R3 × (0, T )) and is therefore defined in
+D ′ (R3 × (0, T )).
+
+                                                        22
+Proof. We will use the following estimate from [33, (1.10)]: For F ∈ (Lpuloc (R3 ))3×3 and
+1 ≤ q ≤ p ≤ ∞, we have
+                                                                  1             1
+                           ket∆ P∇ · F kLp
+                                                                                        
+                                                         ≤C            + (3/q−3/p)/2+1/2 kF kLq .               (4.2)
+                                                  uloc         t1/2     t                     uloc
+
+
+     We work with a fixed ball centered at x0 of radius 1, and rewrite the integral part of u
+as
+              Z t                                              Z t
+                       (t−s)∆
+                       e               P∇ · (u ⊗ u) ds =              e(t−s)∆ P∇ · (u ⊗ uχB2 (x0 ) ) ds
+               0                                                0
+                                                               Z t
+                                                           +          e(t−s)∆ P∇ · (u ⊗ u(1 − χB2 (x0 ) )) ds
+                                                                0
+                                                           =: Inear + Ifar .
+
+For the near-field part, by (4.2),
+                                                         Z TZ t
+            kInear kL1 (B1 (x0 )×(0,T )) ≤                   ke(t−s)∆ P∇ · (u ⊗ uχB2 (x0 ) )kL1 ds dt
+                                                                                                   uloc
+                                                     0    0
+                                                       Z TZ t
+                                                                    1
+                                                   ≤C                  1/2
+                                                                            ku(s)χB2 (x0 ) k2L2 ds dt
+                                                        0    0 (t − s)                        uloc
+                                                       Z T                         Z T
+                                                                                            1
+                                                   ≤C       ku(s)χB2 (x0 ) k2L2                1/2
+                                                                                                     dt ds
+                                                        0                     uloc
+                                                                                    s (t − s)
+                                                   ≤ CT 1/2 kuk2L2                    ,
+                                                                        uloc (0,T )
+
+
+where we used Tonelli’s theorem. For the far-field part, letting B = B1 (x0 ) we have
+            Z TZ Z t
+                         e(t−s)∆ P∇ · (u ⊗ u(1 − χB2 (x0 ) ))(s) ds dx dt
+                   0           B       0
+                       Z T Z Z tZ
+                                                                  C
+               ≤                                                    √     4
+                                                                            |u ⊗ u|(y, s) dy ds dx dt
+                           0       B       0   |x0 −y|>2 (|x − y| + t − s)
+
+where we have used the kernel estimates (4.1). Note that since x ∈ B1 (x0 ) and |x0 − y| ≥ 2,
+we have |x0 − y| ≤ 2|x − y|. Hence
+                                              Z TZ
+                                                                  C
+             kIfar kL1 (B1 (x0 )×(0,T )) ≤ CT                         4
+                                                                        |u|2 (y, s) dy ds,
+                                               0   |x0 −y|>2 |x 0 − y|
+
+where we dropped the integral in the x-variable because nothing depended on x anymore.
+Thus
+                                       ∞ Z T Z
+                                      X                                       C
+      kIfar kL1 (B1 (x0 )×(0,T )) ≤ C                                             4
+                                                                                    |u|2 (y, s) dy ds
+                                                   i            (i+1)    |x 0 − y|
+                                      i=0 0       2 2<|x0 −y|≤2        2
+                                       ∞                 T
+                                                1
+                                      X               Z     Z
+                                  ≤C                                                |u|2 (y, s) dy ds
+                                           (2 2)4 0 2i 2<|x0 −y|≤2(i+1) 2
+                                              i+1
+                                      i=0
+                                              Z T                             X 1
+                                  ≤ C sup          ku2 kL1 (B1 (x0 )) (s) ds       i
+                                                                                      ≤ Ckuk2L2 (0,T ) .
+                                      x0 ∈R 3  0                                  2              uloc
+                                                                                          i=0
+
+     Combining the estimates for Inear and Ifar shows that ū ∈ L1uloc (0, T ).
+
+                                                                      23
+5    Bootstrapping scheme
+To use Theorem 2.1, we need to approximate solutions to the Navier-Stokes equations by
+L∞ vector fields. This is done by first mollifying the nonlinearity, then obtaining a pressure
+for the mollified nonlinearity, and finally solving a nonhomogeneous heat equation. In this
+section we describe this scheme and establish several convergence properties.
+    Given a vector field u : R3 × (0, ∞) → R3 , p̄ represents a local pressure expansion of u.
+If u is such that fij = ui uj satisfies the assumptions of Theorem 2.1, then p̄ is defined as
+in Theorem 2.1 at every time t. It is a function and satisfies the LPE. By Lemma 2.3 it
+also satisfies the DLPE and agrees the construction (3.1) in D ′ . If we only know that the
+given vector field u is in L2uloc (0, T ), then we define p̄ as a distribution according to Lemma
+3.1 and (3.1). It satisfies Definition 1.3, i.e. p̄ satisfies the DLPE. The same convention is
+taken for vector fields uǫ and associated pressures p̄ǫ . In this association of p̄ to u, u does
+not need to be a solution of the Navier-Stokes equations.
+    Let F = u ⊗ u be the matrix with entries Fij = ui uj . Let ηǫ (x, t) = ǫ−4 η(x/ǫ, t/ǫ),
+where η is a mollifier in R4 supported in B(0, 1) × [0, 1]. Let
+
+                                   F ǫ (x, t) = ηǫ ∗ (u ⊗ u)(x, t),
+                                                     x,t
+
+where we are extending u ⊗ u by zero to negative times and times greater than T , and the
+convolution is in both space and time. Then, Fijǫ ∈ C ∞ (R4 ). Furthermore, for x0 ∈ R3 ,
+r > 0, and ǫ . r, we have for every 1 ≤ p < ∞,
+                   Z                         Z
+                                 ǫ p
+                              |Fij | dx dt =           |ηǫ ∗ (Fij χQ∗r (x0 ) )|p dx dt
+                     Qr (x0 )                 Qr (x0 )
+                                             Z
+                                           ≤        |ηǫ ∗ (Fij χQ∗r (x0 ) )|p dx dt,
+                                                 R3+1
+
+where Qr (x0 ) = Br (x0 ) × [0, T ] and Q∗r (x0 ) = B2r (x0 ) × [−r, T + r]. Therefore, by Young’s
+inequality, if ǫ . r, then
+
+                     kFijǫ kLp (Qr (x0 )) ≤ CkFij kLp (Q∗r (x0 ))   (1 ≤ p < ∞).               (5.1)
+
+Note that C is independent of ǫ provided ǫ . r. Taking r = 1, it follows that if u ∈
+L2uloc (0, T ), then F ǫ ∈ L1uloc (0, T ). Under this assumption we also have F ǫ ∈ L∞ (R3 ×[0, T ]).
+Indeed, because η has compact support, if (x, t) ∈ R3 × (0, T ), then
+                          Z
+            |Fǫ (x, t)| ≤                   ηǫ (x − y, t − s)|u(y, s)|2 dy ds ≤ Cǫ kuk2L2 (0,T ) .
+                                                                                   uloc
+                       B2 (0)×[−1,T +1]
+
+    Since Fǫ (t) ∈ L∞ (R3 ) for each t ∈ (0, T ) and is locally Hölder continuous due to proper-
+ties of mollifiers, we can apply Theorem 2.1 to obtain a distributional solution pǫ ∈ BM O
+to the Poisson equation
+
+                                           ∆pǫ = −∂i ∂j Fijǫ .
+
+Then, pǫ = Ri Rj Fijǫ in BM O. By Lemma 2.3, pǫ agrees with the construction (3.1) of
+a pressure satisfying the DLPE referenced in Lemma 3.2 where ui uj is replaced by Fijǫ .
+Furthermore, pǫ ∈ L∞ (0, T ; BM O) since F ǫ ∈ L∞ (R3 × (0, T )) and the Riesz transforms
+are bounded from L∞ to BM O (see [37, p. 156]).
+
+                                                     24
+    Let uǫ0 (x) = (η̄ǫ ∗ u0 )(x) where η̄ is a spatial mollifier and
+                                                    Z t
+                              ǫ          t∆ ǫ
+                             u (x, t) = e u0 (x) −      e(t−s)∆ P∇ · F ǫ ds.                             (5.2)
+                                                                 0
+
+Because F ǫ , pǫ ∈ L∞ (0, T ; BM O), it follows that uǫ solves the heat equation
+
+                                        ∂t uǫ − ∆uǫ + ∇ · F ǫ + ∇pǫ = 0,                                 (5.3)
+
+as a distribution [25, Lemma 3.1] (see also [13]). In summary, for every ǫ > 0, there exists
+a pair uǫ and pǫ so that uǫ is mild, pǫ satisfies the DLPE (for F ǫ ) and uǫ solves (5.3).
+The proofs of Theorems 1.4 and 1.5 will bootstrap these relationships to solutions to the
+Navier-Stokes equations.
+    Before addressing this we deal with two preliminary convergence questions.
+
+Lemma 5.1. Assume u0 ∈ L1loc (R3 ), is divergence free and et∆ u0 ∈ L1uloc (0, T ). Let u ∈
+L2uloc (0, T ) be given. Then for uǫ defined by (5.2),
+                                               Z t
+                          ǫ          t∆
+                         u (x, t) → e u0 (x) −     e(t−s)∆ P · ∇(u ⊗ u) ds,
+                                                            0
+
+as ǫ → 0 in L1loc (R3 × [0, T ]) and, therefore, in D ′ (R3 × (0, T )).
+
+Proof. We first show et∆ uǫ0 → et∆ u0 in L1loc (R3 × [0, T ]). Fix x0 ∈ R3 and consider B1 (x0 ) ×
+(0, T ). We will show
+                     Z TZ
+                                |et∆ uǫ0 − et∆ u0 | dx dt → 0, as ǫ → 0.                    (5.4)
+                          0       B1 (x0 )
+
+Let Gt be the kernel of et∆ , et∆ u0 = Gt ∗ u0 . We have
+
+                       et∆ uǫ0 = Gt ∗ (η̄ǫ ∗ u0 ) = η̄ǫ ∗ (Gt ∗ u0 ) = η̄ǫ ∗ (et∆ u0 ).
+
+Since et∆ u0 ∈ L1uloc (0, T ), for almost every t we have et∆ u0 ∈ L1 (B2 (x0 )). By properties of
+mollifiers, et∆ uǫ0 = η̄ǫ ∗ (et∆ u0 ) → et∆ u0 in L1 (B1 (x0 )) for a.e. t. Also note that in B1 (x0 )
+
+                                    η̄ǫ ∗ (Gt ∗ u0 ) = η̄ǫ ∗ (χB2 (x0 ) Gt ∗ u0 ),
+
+provided ǫ ≪ 1. By Young’s inequality we therefore have
+Z
+       |η̄ǫ ∗ (Gt ∗ u0 )| dx ≤ Ckη̄ǫ k1 kGt ∗ u0 kL1 (B2 (x0 )) = Ckη̄ǫ k1 ket∆ u0 kL1 (B2 (x0 )) ∈ L1 (0, T ),
+ B1 (x0 )
+
+by our assumption that et∆ u0 ∈ L1uloc (0, T ). Then, by the dominated convergence theorem,
+we get (5.4).
+   We next show      Z t
+                         e(t−s)∆ P∇ · (F − F ǫ ) ds → 0, as ǫ → 0,
+                              0
+
+in L1 (B1 (x0 ) × [0, T ]) for any x0 by showing that
+                              Z TZ              Z t
+                                                      e(t−s)∆ P∇ · (F − F ǫ ) ds dx dt                   (5.5)
+                              0      B1 (x0 )    0
+
+
+                                                            25
+can be made arbitrarily small by taking ǫ sufficiently small. Let R > 4 and R > 2|x0 | be
+given. We split the term we are bounding as
+               Z TZ       Z t
+       (5.5) ≤                e(t−s)∆ P∇ · ((F − F ǫ )χBR (0) ) ds dx dt
+                  0     B1 (x0 )    0
+                 Z TZ              Z t
+             +                           e(t−s)∆ P∇ · ((F − F ǫ )(1 − χBR (0) )) ds dx dt=: J1 + J2 .
+                 0      B1 (x0 )    0
+
+Using (4.2) and Tonelli’s theorem,
+                       Z TZ t
+               J1 ≤ C          ke(t−s)∆ P∇ · (F ǫ − F )(s)χBR (0) kL1 ds dt
+                                                                      uloc
+                         0   0
+                           Z TZ t
+                                        1
+                  ≤ C(R)                   1/2
+                                               k(F ǫ − F )(s)χBR (0) kL1 ds dt
+                            0   0  (t − s)                              uloc
+                           Z T                               Z T
+                                                                      1
+                  = C(R)       k(F ǫ − F )(s)χBR (0) kL1                 1/2
+                                                                             dt ds
+                                                              s (t − s)
+                                                        uloc
+                            0
+                              Z TZ
+                  ≤ C(R, T )              |(F ǫ − F )(x, s)| dx ds.
+                                          0   BR (0)
+
+By properties of mollifiers, this can be made small by taking ǫ sufficiently small.
+   For the far-field part, using the Oseen tensor estimate (4.1)
+                 Z TZ         Z tZ
+                                                 C
+          J2 ≤                                     √     4
+                                                           |F − F ǫ |(y) dy ds dx dt.
+                  0   B1 (x0 ) 0  |y|>R (|x − y| + t − s)
+
+Since x ∈ B1 (x0 ) and |y| ≥ R ≥ |x0 |/2,
+                    Z TZ         Z tZ
+                                              C
+              J2 ≤                              4
+                                                  |F − F ǫ |(y, s) dy ds dx dt
+                     0   B1 (x0 ) 0   |y|>R  |y|
+                        Z TZ
+                                     C
+                 ≤ CT                   4
+                                          |F − F ǫ |(y, s) dy ds
+                         0    |y|>R |y|
+                         ∞          Z TZ                                                                (5.6)
+                        X       1
+                 ≤ CT                                       |F − F ǫ |(y, s) dy ds
+                            (2i R)4 0 2i R<|y|<2i+1 R
+                            i=0
+                       CT                       CT
+                     ≤    kF − F ǫ kL1 (0,T ) .    (kF kL1 (0,T ) + kF ǫ kL1 (0,T ) ).
+                       R             uloc       R        uloc              uloc
+
+
+Using the uniform bound (5.1), we can first take R sufficiently large to make J2 small, then
+take ǫ sufficiently small to make J1 small. Hence limǫ→0 (5.5) = 0.
+   We have shown                         Z t
+                           uǫ → et∆ u0 −     e(t−s)∆ P∇ · (u ⊗ u) ds,
+                                             0
+in L (B1 (x0 ) × [0, T ]) for every x0 . Convergence in L1loc (R3 × [0, T ]) follows.
+    1
+
+
+    On the other hand, we need to prove that pǫ converges to p̄ in some sense.
+Lemma 5.2. Assume u ∈ L2uloc (0, T ). Let pǫ be defined as above, and let p̄ be defined by
+Lemma 3.1 and (3.1). Then we have
+                                       pǫ → p̄,
+as distributions in D ′ (R3 × (0, T )). Consequently, ∇pǫ → ∇p̄ in D ′ (R3 × (0, T )) as well.
+
+                                                        26
+    This lemma makes no assumption on u0 , and u need not be a solution to (1.1).
+
+Proof. Let φ ∈ Cc∞ (R3 × (0, T )) be given. Fix a ball B = Bn (0) and τ > 0 so that
+B × [0, T − τ ] contains the support of φ. Then,
+                                          hp̄, φi = hp̄n , φi + hc̃n , φi,
+where p̄n = p̄Bn (0) and c̃n is the sum appearing in (3.1). By Lemma 2.3, we have the
+corresponding equality for pǫ , namely
+                                         hpǫ , φi = hpǫ,n , φi + hc̃ǫn , φi.
+    We clearly have
+                   hp̄nnear − pǫ,n
+                               near , φi
+                        Z TZ
+                    =          (Fij − Fijǫ )(x, t)(θn (−x))Ri Rj φ)(x, t) dx dt → 0,
+                        0
+
+by properties of mollifiers because Ri Rj (φ) ∈ L∞ (supp θn × (0, T )) (to see this use Lipschitz
+continuity to deplete the singularity of the kernel and Hölder’s inequality to account for the
+tail of the kernel) and θn is compactly supported.
+    Also by properties of mollifiers, we see that
+                                                        c̃ǫn → c̃n ,
+in D ′ (0, T ). Therefore
+                                               hc̃n − c̃ǫn , φi → 0.
+    For the far-field part we let
+                        Z
+           J (x, t) = (Kij (x − y) − Kij (−y))(1 − θn (−y))(Fij − Fijǫ )(y, t) dy.
+             ǫ,n
+
+
+For x ∈ Bn (0), we have
+                                                              C
+                                                   Z
+                            |J   ǫ,n
+                                       (x, t)| ≤                4
+                                                                  |F − F ǫ |(y, t) dy,
+                                                       |y|>n |y|
+
+which is essentially the inner integral of (5.6) where n has replaced R. Since there is no
+dependence on x we obtain
+                                  Z TZ
+            hp̄nfar − pǫ,n
+                       far , φi =       J ǫ,n φ dx dt
+                                   0
+                                       Z TZ
+                                                      1
+                                ≤ C(φ)                  4
+                                                          |F − F ǫ |(y, t) dy dt
+                                        0     |y|>n  |y|
+                                  CT                           CT
+                                ≤    kF − F ǫ kL1 (0,T ) ≤            |F | + |F ǫ | L1 (0,T ) ,
+                                   n               uloc         n                    uloc
+
+where we reasoned as in (5.6).
+    To conclude, we first make the far-field contribution arbitrarily small by taking n suffi-
+ciently large and then make the near-field and constant contributions arbitrarily small by
+taking ǫ sufficiently small. This shows that
+                                                hpǫ , φi → hp̄, φi,
+for every φ ∈ D(R3 × (0, T )), implying pǫ → p̄ in D ′ (R3 × (0, T )).
+
+                                                            27
+Remark 5.3. If u ∈ Lqloc (R3 × (0, T )), 2 < q < ∞, and p̄ satisfies the LPE (i.e. in the sense
+of Definition 1.2), then the above argument can be adapted to prove that pǫ → p in D ′
+using the boundedness of Calderon-Zygmund operators on Lq/2 to deal with the near-field
+part. The far-field part is treated the same.
+
+
+6    Mild solutions are DLPE solutions
+Proof of Theorem 1.4. Under the assumptions of Theorem 1.4, let F ǫ , uǫ , pǫ , p̄ be defined as
+in Section 5. In particular, p̄ is defined by (3.1). We know by Lemma 5.1 that uǫ converges
+to u in L1loc (R3 × [0, T ]).
+    We first show that u and p̄ satisfy
+
+                            ∂t u − ∆u + u · ∇u + ∇p̄ = 0;            ∇ · u = 0,
+
+with initial data u0 in the sense of distributions, i.e., for any φ ∈ (Cc∞ (R3 × (0, T ))),
+                     Z TZ
+                            u · (∂t +∆)φ + ui uj ∂i φj ) dx dt−h∇p̄, φi = 0,                (6.1)
+                        0
+
+where we have summed over i, j. By [25, Lemma 3.1], uǫ solves
+
+                                  ∂t uǫ − ∆uǫ + ∇ · F ǫ + ∇pǫ = 0,                           (6.2)
+
+distributionally. Using (6.2), the left hand side of (6.1) is equal to
+             Z TZ
+                    (u − uǫ ) · (∂t +∆)φ + (Fij − Fijǫ )∂i φj dx dt + hp̄ − pǫ , ∇ · φi.
+               0
+
+It suffices to show this
+                       R Tvanishes as ǫ → 0.
+    The first term is 0 (u − uǫ ) · (∂t +∆)φ dx dt, which vanishes by Lemma 5.1 and the
+                           R
+
+fact that u is mild. The nonlinear term,
+                                   Z tZ
+                                         (Fij − Fijǫ )∂i φj dx dt,
+                                       0
+
+vanishes by properties of mollifiers. The pressure term vanishes by Lemma 5.2. This proves
+the main part of the theorem.
+    Now assume that u ∈ Lqloc (R3 × [0, T )) for some q > 2. Let π be defined as in Theorem
+                         q/2
+2.1. We estimate π in Lloc (R3 × (0, T )). Let δ > 0 be given. For simplicity we do this over
+concentric shells. Fix n ∈ N. For x ∈ Bn+1 \ Bn we write π as
+
+                                     π(x, t) = p1 + p2 + c̃n+1 (t),
+
+where p1 is the Calderon-Zygmund part of GB   ij (ui uj ) from (1.7) where B = Bn+1 (0), p2 is
+the remaining term in (1.7) and c̃n+1 comes from the comments following Theorem 2.1. By
+the Calderon-Zygmund theory, we have
+
+                    kp1 kLq/2 (0,T −δ;Lq/2 (Bn+1 \Bn )) ≤ kuk2Lq (0,T −δ;Lq (Bn+1 (0))) .
+
+The right hand side is finite since u ∈ Lqloc (R3 × (0, T )). On the other hand, as before
+                                                     1
+                                           Z
+                             |p2 (x, t)| ≤             4
+                                                         |u(y, t)|2 dy,
+                                             |y|>2n |y|
+
+
+                                                     28
+implying
+                    Z T −δ Z
+                                          |p2 (x, t)|q/2 dx dt ≤ CT n3 kukqL2               .
+                     0         Bn+1 \Bn                                       uloc (0,T )
+
+
+Finally we consider the constant c̃n+1 (t). From Section 2, we know that
+                    Z
+                        2           2(n+2)                                 2/q
+        c̃n+1 (t) =   Kij (−y) − Kij       (−y) ui uj (y, t) dy ≤ C(n)ku(t)kLq (B4n (0)) .
+
+                                                    q/2
+This is certainly in Lq/2 (0, T ) because u ∈ Lloc (R3 × [0, T )). Since the above estimates hold
+                                             q/2
+for all n and δ > 0, it follows that π ∈ Lloc (R3 × [0, T )).
+                                                                                          q/2
+     Note that pǫ satisfies both the LPE and DLPE by Lemma 2.3. Since π ∈ Lloc (R3 ×
+                           ′            ǫ          ′                      ǫ           ′  3
+[0, T )), π is defined in D . We have p → p̄ in D by Lemma 5.2 and p → π in D (R ×(0, T ))
+by Remark 5.3. It follows that p̄ = π in D ′ (R3 ×(0, T )) and therefore p̄ = π a.e. in R3 ×(0, T ).
+                q/2
+Hence, p̄ ∈ Lloc (R3 × [0, T )).
+     Finally we show that if u ∈ N (u0 ), then u and p̄ satisfy the local energy inequality.
+Consequently, u is a local Leray solution with this choice of pressure p̄. If u ∈ N (u0 ),
+then there exists p so that u and p satisfy Definition 1.1. Since u satisfies (1.1) for both p
+and p̄, it follows that ∇p = ∇p̄ as distributions. Because u and p satisfy the local energy
+inequality, it suffices to show
+                          Z TZ                      Z TZ
+                                 p(u · ∇φ) dx dt =        p̄(u · ∇φ) dx dt,
+                          0                                  0
+
+where φ ∈ Cc∞ (Q) for some parabolic cylinder compactly embedded in R3 × (0, ∞), as this
+will establish the local energy inequality for u and p̄.
+    Note that u · ∇φ ∈ L3 (Q). We can therefore approximate u · ∇φ|Q in L3 (R3 × (0, ∞))
+by a sequence ∇ · Φn so that Φn ∈ Cc∞ (Q∗ ) where Q∗ is a neighborhood of Q that is still
+compact and bounded away from t = 0.
+    Since ∇p = ∇p̄ as distributions and Φn ∈ Cc∞ (R3 × (0, ∞)),
+                                Z TZ
+                                      (p − p̄)∇ · Φn dx dt = 0,
+                                    0
+
+for all n. So,
+             Z TZ                                 Z TZ
+                    (p − p̄)(u · ∇φ) dx dt =                 (p − p̄)(u · ∇φ − ∇ · Φn ) dx dt.
+               0                                    0
+
+                                   3/2
+This vanishes because p, p̄ ∈ Lloc (R3 × [0, T ]) and ∇ · Φn → u · ∇φ in L3 (R3 × (0, T )).
+    It follows that u and p̄ satisfy all elements of Definition 1.1. The structure of p̄ implies
+u is, additionally, a local energy solution.
+
+
+7    DLPE solutions are mild solutions
+Proof of Theorem 1.5. We work under the assumptions of Theorem 1.5 and let F ǫ , uǫ , pǫ
+be as in Section 5. So, the pressure p associated with u is defined and satisfies the DLPE.
+Note that this may not agree with the construction (3.1) in D ′ . However, if p̄ is defined
+according to (3.1), then ∇p = ∇p̄ in D ′ . This is because the definitions of p and p̄ only
+differ by constants.
+
+                                                        29
+      Note that ∇pǫ → ∇p as distributions by Lemma 5.2. By [25, Lemma 3.1], as for (5.3),
+                                              Z t
+                         ǫ         t∆ ǫ
+                       u (x, t) = e u0 (x) −      e(t−s)∆ P∇ · F ǫ ds,
+                                                                  0
+
+is a distributional solution to the non-homogeneous heat equation
+
+                                     ∂t uǫ − ∆uǫ = −∇ · F ǫ − ∇pǫ .
+
+Let                                                        Z t
+                                         t∆
+                           ū(x, t) = e u0 (x) −                 e(t−s)∆ P∇ · (u ⊗ u) ds.
+                                                            0
+By Lemma 5.1, uǫ → ū as distributions. As in the proof of Theorem 1.4, we see that ū is a
+distributional solution to the non-homogeneous heat equation
+
+                                         ∂t ū − ∆ū = −u · ∇u − ∇p.
+
+Also note ū ∈ L1uloc (0, T ) by Lemma 4.1. Thus
+
+                       ∂t ū − ∆ū + u · ∇u + ∇p = ∂t u − ∆u + u · ∇u + ∇p,
+
+implying
+                                         ∂t (ū − u) − ∆(ū − u) = 0,
+all in the distributional sense. We will show u = ū using uniqueness for the heat equation
+but first need to show that ū converges to u0 in L1loc (R3 ).
+     Note that we have assumed for every compact set K that
+                                 Z
+                                   |u(x, t) − u0 (x)|2 dx → 0.
+                                         K
+
+This implies that1                    Z
+                                                 |ū(x, t) − u0 (x)| dx → 0,
+                                          K
+as we now show. Certainly
+                                     Z
+                                             |et∆ u0 (x) − u0 (x)| dx → 0,
+                                         K
+
+and so it suffices to show                       Z
+                                                       |I(x, t)| dx → 0,
+                                                   K
+
+as t → 0+ where                                    Z t
+                                  I(x, t) =              e(t−s)∆ P∇ · (u ⊗ u) ds.
+                                                     0
+                                R + I R , where
+Let ε > 0 be given and let I = Inear far
+                                         Z t
+                               R
+                              Inear =             e(t−s)∆ P∇ · (u ⊗ uχB2R (0) ) ds,
+                                             0
+   1
+     It is in fact sufficient to have u → u0 in an L1loc sense if we also have lim supt→0+ ku(t)kL2 (K) < ∞ for
+every compact K.
+
+
+                                                             30
+and                                  Z t
+                             R
+                            Ifar =          e(t−s)∆ P∇ · (u ⊗ u(1 − χB2R (0) )) ds.
+                                       0
+By taking R ∈ N sufficiently large we have K ⊂ BR (0).
+   Following a familiar argument we have for any γ > 0 that
+                       Z
+                             R
+                  sup      |Ifar (x, t)| dx
+                       0<t<γ   K
+                                     Z Z tZ
+                                                C
+                       ≤ C sup                     4
+                                                     |u|2 (y) dy ds dx
+                          0<t<γ K 0     |y|>R |y|
+                                     ∞ Z tZ
+                                    X                               C
+                       ≤ C(K) sup                                     4
+                                                                        |u|2 (y, s) dy ds
+                              0<t<γ           i           (i+1)   |y|
+                                    i=0 0    2 R<|y|≤2          R
+                                 ∞                t
+                                        1
+                                X             Z     Z
+                       ≤ C sup        i+1   4
+                                                                          |u|2 (y) dy ds
+                          0<t<γ i=0 (2    R)    0      i
+                                                      2 R<|y|≤2   (i+1) R
+                                    Z TZ
+                       ≤ CR−1 sup                |u|2 (x, t) dx dt.
+                                   x0 ∈R3    0    B1 (x0 )
+
+By taking R large this can be made less than ε/2. Fix R so that this is true. For the other
+part, with γ < 1
+                                       Z t
+                     R
+              sup kInear kL1 (K) ≤ sup     ke(t−s)∆ P∇ · (u ⊗ uχB2R (0) )kL1 ds
+                  0<t<γ                       0<t<γ    0
+                                                           Z t
+                                                                    1
+                                           ≤ C sup                    1/2
+                                                                          ku(s)χB2R (0) k2L2 ds.
+                                                 0<t<γ       0 (t − s)
+
+Since ku(s) − u0 kL2 (B2R (0)) → 0, there exists γ∗ < 1 so that sup0<s<γ∗ ku(s)k2L2 (B2R (0)) <
+2ku0 k2L2 (B2R (0)) . Hence, for γ < γ∗ ,
+
+                                     R
+                               sup kInear kL1 (K) ≤ 2Cγ 1/2 ku0 k2L2 (B2R (0)) .
+                               0<t<γ
+
+By taking γ sufficiently small we can ensure
+                                                   R
+                                             sup kInear kL1 (K) < ε/2.
+                                            0<t<γ
+
+This proves that K |ū(x, t) − u0 (x)| dx → 0.2
+                  R
+
+    We will now prove that u = ū. Let w = u − ū and let ηǫ be the space-time mollifier
+from Section 5, supported in Bǫ (0) × [0, ǫ]. Let wǫ = ηǫ ∗ w where w is extended by zero
+when required. We will check that wǫ is a bounded solution to the heat equation in the
+distributional sense on R3 × (0, T ) and wǫ |t=0 = 0. By uniqueness, it follows that wǫ = 0
+and, in turn, w = 0.
+  2
+      This conclusion also appears in [28, Lemma 11.3]. We include the details for completeness.
+
+
+
+
+                                                             31
+    We first show that wǫ solves the heat equation. Let ψ ∈ Cc∞ (R3 × (0, T )). Note that ηǫ
+is zero except possibly at times in [0, ǫ]. Then
+              Z TZ
+                    (∂t + ∆)ψ(x, t)wǫ (x, t) dx dt
+               0
+                 Z ǫZ            Z TZ
+              =        ηǫ (y, s)      (∂t + ∆)ψ(x, t)w(x − y, t − s) dx dt dy ds
+                  0               0
+                 Z ǫZ            Z TZ
+              =        ηǫ (y, s)      (∂τ + ∆z )ψ(z + y, τ + s)w(z, τ ) dz dτ dy ds,
+                  0              0
+
+where we have let z = x − y and τ = t − s and used the fact that w(z, τ ) = 0 for τ ≤ 0.
+We would like to conclude that the inside integral is zero but cannot immediately because
+the test function (as a function of z, τ ) is not compactly supported in R3 × (0, T ). Indeed,
+it is possibly nonzero at τ = 0. For γ > 0 let σγ (t) = 1 for t ∈ [0, γ/3], decrease to 0 with
+gradient bounded in absolute value by Cγ −1 over [γ/3, 2γ/3] and equal zero for t ≥ 2γ/3.
+We take C to be independent of γ, e.g. define σγ = σ1 (x/γ) for a fixed function σ1 . Let
+ψ = ψ1 + ψ2 where ψ1 (z, τ ) = σγ (τ )ψ(z + y, τ + s) and ψ2 (z, τ ) = ψ(z + y, τ + s) − ψ1 (z, τ ).
+Then,
+                Z ǫZ            Z TZ
+                      ηǫ (y, s)       (∂τ + ∆z )ψ2 (z, τ )w(z, τ ) dz dτ dy ds = 0,
+                  0              0
+
+because ψ2 is a test function on (0, T ) × R3 . On the other hand, let B contain the spatial
+support of ψ. Then, ψ1 (z, τ )w(z, τ ) 6= 0 implies z + y = x ∈ B, i.e., z ∈ (B − y). Since
+|y| < ǫ and assuming ǫ ≪ 1, we therefore have ψ1 (z, τ )w(z, τ ) 6= 0 only if z ∈ 2B, regardless
+of y. Hence,
+           Z ǫZ            Z TZ
+                 ηǫ (y, s)        (∂τ + ∆z )ψ1 (z, τ )w(z, τ ) dz dτ dy ds
+             0              0
+                                                Z γZ
+              C γ
+                Z Z
+           ≤             |w(z, τ )| dz dτ + C            |w(z, τ )| dz dτ
+               γ 0 2B                             0   2B
+                              Z
+           ≤ C(1 + γ) sup           |w(z, τ )| dz
+                        0<τ <γ 2B
+                              Z                               Z                            
+           ≤ C(1 + γ) sup             |u(z, τ ) − u0 (z)| dz +       |ū(z, τ ) − u0 (z)| dz .
+                        0<τ <γ       2B                       2B
+
+By assumption, the above clearly vanishes as γ → 0+ . This implies
+                        Z TZ
+                               (∂t + ∆)ψ(x, t)wǫ (x, t) dx dt = 0,
+                             0
+
+for all ψ ∈ Cc∞ (R3 ×(0, ∞)) and so wǫ solves the heat equation distributionally. Furthermore,
+we have                              Z Z
+                         wǫ (x, 0) =      ηǫ (x − y, 0 − s)w(y, s) dy ds.
+                                          R   R3
+The integrand is nonzero only if 0 < 0 − s < ǫ, in which case s < 0 and so w(y, s) = 0.
+This implies wǫ (x, 0) = 0. That wǫ is bounded follows from the fact that w ∈ L1uloc (0, T ).
+We have thus shown that wǫ is a bounded distributional solution of the heat equation with
+initial data identically zero. It follows that w = 0 and u = ū.
+
+                                                   32
+Remark 7.1. We can clearly weaken the continuity assumption to the following: for every
+compact set K,
+                              lim ku(t) − u0 kL1 (K) = 0,
+                                  t→0+
+however we also need to assume lim supt→0 ku(t)kL2 (K) < ∞.
+    On the other hand, the continuity assumption at t = 0 can be replaced by u ∈
+L (0, T ; L2uloc ). This would imply ū ∈ L∞ (0, T ; L1uloc ) and, therefore, mollifying only in
+  ∞
+
+space, we get wǫ is bounded and wǫ (x, 0) = 0 immediately.
+
+
+8     Applications
+In this section we give applications of Theorems 1.4 and 1.5 to highlight their usefulness.
+
+8.1   An improved uniqueness criteria
+This application highlights the fact that, due to Theorem 1.5, we can use properties of mild
+solutions to study local energy solutions.
+    In [5], the authors establish a local uniqueness criteria [5, Theorem 1.7] which involves
+                                                                   L2
+several assumptions on the initial data, namely u0 ∈ E 2 = Cc∞ uloc or
+                                       1
+                                          Z
+                           lim sup               |u0 (x)|2 dx = 0.
+                          R→∞ x0 ∈R3 R2 BR (x0 )
+
+The assumptions on the initial data imply the solution in view is mild (as is checked in [5]),
+which is used to prove uniqueness. However, Theorem 1.5 states that every local energy
+solution is mild, and therefore these assumptions are overkill. This leads to the following
+improvement of [5, Theorem 1.7].
+Theorem 8.1. Assume u0 ∈ L2uloc and is divergence free. Let u and v be local energy
+solutions with initial data u0 . There exist universal constants ǫ > 0 and c1 > 0 such that,
+if for some R > 0,
+                                            1
+                                              Z
+                                sup sup                 |u0 |2 dx ≤ ǫ,
+                              0<r≤R x0 ∈R 3 r  Br (x0 )
+
+then u = v as distributions on R3 × (0, T ), T = c1 R2 .
+    To prove Theorem 8.1, it suffices to inspect [5, Proof of Theorem 1.7].
+
+8.2   A regularity criteria in dynamically restricted local Morrey spaces
+This application highlights the fact that, due to Theorem 1.4, we can use properties of local
+energy solutions to study mild solutions. To illustrate this, we give a new proof of a recent
+result of Grujić and Xu [15]. In [15], Grujić and Xu establish a regularity criteria for smooth
+mild solutions which are possibly blowing up at time T0 and belong to L∞ (R3 × [0, T )) for
+all T < T0 . The regularity criteria is novel in that it only involves Morrey type quantities
+computed at scales above a time-dependent threshold. This is similar to a result in [2]
+that used Littlewood-Paley modes to determine similar scales in a Besov space context. A
+remarkable aspect of the argument in [15] is that it only depends on Grujić’s geometric
+regularity criteria from [14], which is self-contained in that it does not rely on previous
+regularity results for the Navier-Stokes equations as does ours.
+    The following theorem is essentially an analogue of [15, Theorem 4.1].
+
+                                               33
+Theorem 8.2. Assume et∆ u0 , u ∈ L2uloc (0, T0 ) ∩ Cwk ((0, T0 ); L∞ ), T0 > 0, u and u0 are
+divergence free, and u is a mild solution in the sense of Lemma 4.1 on R3 × (0, T0 ) that
+satisfies the restriction property: for any t0 ∈ (0,√T0 ), u(t)|t∈(t0 ,T0 ) is a mild solution with
+                                                                     √
+initial data u(t0 ).3 For 0 < t < T0 , let r(t) = T0 − t/(2 c0 ) where c0 is the constant
+appearing in (1.2). There exists a small universal constant ǫ > 0 so that if there exists
+t ∈ (0, T0 ) so that
+                                      1
+                                         Z
+                               sup                    |u(x, t)|2 dx < ǫ,
+                              x0 ∈R3 r(t) Br(t) (x0 )
+
+then u can be extended to a bounded solution past time T0 .
+
+     We now connect this to [15, Theorem 4.1] by explaining how r(t) relates to the L∞
+norms of u and the vorticity ω. For the velocity, if T0 is a singular time, then ku(t)k∞ ≥
+c1 /(T0 − t)1/2 for a small constant c1 , implying r(t) ≥ cku(t)k−1
+                                                                 ∞ . This leads to a velocity-
+level analogue of [15, Theorem 4.1].
+     The scales in [15, Theorem 4.1] are, however, pegged to the L∞ norm of ω. Theorem
+8.2 can easily be extended to give this by additionally assuming ω0 ∈ L2 ∩ L∞ . If u blows
+up at time T0 , then so does ω. On the other hand, since u is smooth prior to T0 , T0 is
+the first possible blow up time for ω. If ω blows up at time T0 and the other assumptions
+                                                       −1/2
+in [15, Theorem 4.1] are met, then r(t) ≥ c2 kω(t)kL∞ for a small constant c2 or else we
+could re-solve the vorticity system using a local well posedness result from [1] to obtain
+boundedness of the vorticity past time T0 . The local well-posedness result from [1] uses
+ω0 ∈ L2 ∩ L∞ . The range of scales over which smallness is needed at certain times t in [15]
+             −1/2
+is [c∗ kω(t)kL∞ , 1] for a constant c∗ appearing in the argument from [15]. Up to a possible
+revision of the constant c∗ , the scale r(t) appearing in Theorem 8.2 is in the range from
+[15].
+     Theorem 8.2 improves [15, Theorem 4.1] slightly in that we do not need to restrict the
+times considered to be related to escape times (times t so that ku(s)k∞ ≥ ku(t)k∞ for
+t ≤ s < T0 ) and we do not need smallness to hold across a range of scales, it is sufficient at
+a single scale. On the other hand, [15, Theorems 4.2 and 4.3] illustrate that the approach
+in [15] can be extended to other Morrey-type spaces (ours is confined to L2 -based norms)
+as well as the more general Zα framework of [1] (see also [16] for an interesting extension
+of the ideas in [1]).
+
+Proof. Let u be mild with data u0 and satisfy u, et∆ u0 ∈ L2uloc (0, T0 ) ∩ Cwk ((0, T0 ); L∞ ).
+We also assume that u satisfies the restriction property.
+    For t0 ∈ (0, T0 ), let ũ = u|t∈(t0 ,T0 ) . Then, ũ is a local energy solution with initial
+data u(t0 ) as we now check. Note that ũ ∈ Cwk ([t0 , T0 ); L∞ ), which is a uniqueness
+class for mild solutions, see [13] and also [25, 33]. Therefore ũ agrees with the strong
+solutions constructed in [13, 25, 24, 39] for initial data u(t0 ) on R3 × (t0 , T1 ), for some
+T1 ∈ (t0 , T0 ] with T1 − t0 ≥ C(kukL∞ (t0 , 1 (t0 +T0 ); L∞ ) ) > 0 if T1 ≤ 12 (t0 + T0 ). This implies
+                                                    2
+(t − t0 )1/2 ∇ũ ∈ L∞ (t0 , T1 (t0 ); L∞ ) (see [24]) and, since this is true for all t0 , it follows that
+∇u ∈ L∞                   ∞                         ∞               2                     2
+          loc ((0, T0 ); L ). Therefore, u ∈ L (t0 , T0 − δ; Luloc ) and ∇u ∈ Luloc (t0 , T0 − δ)
+for any 0 < δ ≪ 1. The LPE on (t0 , T0 ) is satisfied because ũ is mild by the restriction
+property, gradient estimates and Theorem 1.4. This also ensures that u and the pressure
+satisfy (1.1) in D ′ . By weak time continuity we have for any w ∈ L2 with compact support
+   3
+       These assumptions are satisfied if u ∈ L∞ ([0, T0 ); L∞ ) is a strong, mild solution as in [15].
+
+
+
+
+                                                         34
+that the function                                Z
+                                          t 7→       u(x, t) · w(x) dx,
+
+is continuous. The local energy inequality    follows because ũ ∈ L4loc (R3 ×(0, T0 )). Smoothness
+of strong solutions implies that K |u(x, t) − u(x, t0 )|2 dx → 0 as t → t+ whenever K is
+                                   R
+
+compact. This all implies ũ is a local energy solution with data u(t0 ) on R3 × [t0 , T0 −δ]
+for all 0 < δ ≪ 1.
+    Using the above, for t ∈ (0, T ), we consider u on (t, T −δ) as a local energy solution
+evolving from u(t) for every 0 < δ ≪ 1. Hence, if ǫ0 is the universal constant from the
+Caffarelli-Kohn-Nirenberg type theorem in [31], ǫ < ǫ0 and for some ρ > 0
+
+                                       1
+                                         Z
+                                sup                |u(x, t)|2 dx < ǫ,
+                               x0 ∈R 3 ρ  Bρ (x0 )
+
+then we can use [5, Lemma 2.1] (see also [18] and [21, Lemma 3.5] when u0 ∈ E 2 ) to obtain
+           Z t+c0 ρ2 Z                                   Z t+c0 ρ2 Z
+       1                          3                 1
+ sup 2                            |u| dx ds + sup 2                               |p − cx0 ,ρ (s)|3/2 dx ds < Cǫ3/2 ,
+x0 ∈R3 ρ    t            Bρ (x0 )            x0 ∈R3 ρ      t           Bρ (x0 )
+
+provided (t, t + c0 ρ2 ) ⊂ (0, T0 ). This implies, by the Caffarelli-Kohn-Nirenberg criteria type
+theorem in [31], that
+                                                                    1
+                                kukL∞ (R3 ×(t+3c0 ρ2 /4,t+c0 ρ2 )) < σ(ǫ),
+                                                                    ρ
+where σ(ǫ) is a function of ǫ satisfying σ(ǫ) → 0 as ǫ → 0. Let tρ = T0 − 4c    2
+                                                                            p0 ρ , so that
+r(tρ ) = ρ. Applying the above observations implies, if there exists 0 < ρ < T0 /(4c0 ) so
+that
+                                     1
+                                       Z
+                              sup                 |u(x, tρ )|2 dx < ǫ,
+                             x0 ∈R 3 ρ   Bρ (x0 )
+
+then
+                                                                              1
+                                kukL∞ (R3 ×[T0 −13c0 ρ2 /4,T0 −3c0 ρ2 ]) <      σ(ǫ).
+                                                                              ρ
+We can re-solve starting at T0 − 3c0 ρ2 to obtain a new, strong solution on a time interval of
+length equal to Cρ2 /σ(ǫ)2 by the local existence theory for small mild solutions in L∞ ; see
+[13, Theorem 1.1 and its Remark (iii)] as well as [25, Proposition 3.2]. By the uniqueness of
+mild solutions in Cwk (I; L∞ ) where I is a time interval, the strong solution agrees with u at
+times when both are defined and the time interval of existence of the strong solution
+                                                                                    p extends
+                             2    2      2
+up to at least time T0 −3c0 ρ +Cρ /σ(ǫ) . This is bigger than T0 provided σ(ǫ) < C/(3c0 ).
+Letting t in the theorem equal tρ we have ρ = r(t) and the proof is complete.
+
+
+Acknowledgments
+The research of Bradshaw was partially supported by the Simons Foundation. The research
+of Tsai was partially supported by NSERC grant RGPIN-2018-04137.
+
+
+
+
+                                                        35
+References
+ [1] Bradshaw, Z., Farhat, A. and Grujić, Z., An algebraic reduction of the ‘scaling gap’
+     in the Navier-Stokes regularity problem. Arch. Ration. Mech. Anal. 231 (2019), no.
+     3, 1983-2005.
+
+ [2] Bradshaw, Z. and Grujić, Z., Frequency localized regularity criteria for the 3D Navier-
+     Stokes equations. Arch. Ration. Mech. Anal. 224 (2017), no. 1, 125-133.
+
+ [3] Bradshaw, Z. and Tsai, T.-P., Forward Discretely Self-Similar Solutions of the Navier-
+     Stokes Equations II. Ann. Henri Poincaré 18 (2017), no. 3, 1095-1119.
+
+ [4] Bradshaw, Z. and Tsai, T.-P., Discretely self-similar solutions to the Navier-Stokes
+     equations with data in L2loc satisfying the local energy inequality, Anal. PDE 12 (2019),
+     no. 8, 1943-1962.
+
+ [5] Bradshaw, Z. and Tsai, T.-P., Global existence, regularity, and uniqueness of infinite
+     energy solutions to the Navier-Stokes equations, arXiv:1907.00256.
+
+ [6] Caffarelli, L., Kohn, R. and Nirenberg, L., Partial regularity of suitable weak solutions
+     of the Navier-Stokes equations. Comm. Pure Appl. Math. 35 (1982), no. 6, 771-831.
+
+ [7] Escauriaza, L., Seregin, G. A., Šverák, V., L3,∞ -solutions of Navier-Stokes equations
+     and backward uniqueness. (Russian) Uspekhi Mat. Nauk 58 (2003), no. 2(350), 3–44;
+     translation in Russian Math. Surveys 58 (2003), no. 2, 211–250.
+
+ [8] Fefferman, C., Characterizations of bounded mean oscillation. Bull. Amer. Math. Soc.
+     77 1971 587-588.
+
+ [9] Fernández-Dalgo, P. G. and Lemarié-Rieusset, P. G., Characterisation of the
+     pressure term in the incompressible Navier-Stokes equations on the whole space,
+     arXiv:2001.10436.
+
+[10] Fernández-Dalgo, P. G. and Lemarié-Rieusset, P. G., Weak solutions for Navier-Stokes
+     equations with initial data in weighted L2 spaces, arxiv:1906.11038.
+
+[11] Fernández-Dalgo, P. G. and Jarrı́n, O., Existence of infinite-energy and discretely
+     self-similar global weak solutions for 3D MHD equations, arXiv:1910.11267.
+
+[12] Gallay, T., Infinite energy solutions of the two-dimensional Navier-Stokes equations.
+     Ann. Fac. Sci. Toulouse Math. (6) 26 (2017), no. 4, 979-1027.
+
+[13] Giga, Y., Inui, K. and Matsui, S., On the Cauchy problem for the Navier-Stokes
+     equations with nondecaying initial data. Advances in fluid dynamics, 27-68, Quad.
+     Mat., 4, Dept. Math., Seconda Univ. Napoli, Caserta, 1999.
+
+[14] Grujić, Z. A geometric measure-type regularity criterion for solutions to the 3D
+     Navier-Stokes equations. Nonlinearity 26 (2013), no. 1, 289-296.
+
+[15] Grujić, Z. and Xu, L., A Regularity Criterion for Solutions to the 3D NSE in ‘Dy-
+     namically Restricted’ Local Morrey Spaces. arXiv:1903.03833
+
+[16] Grujić, Z. and Xu, L., Asymptotic Criticality of the Navier-Stokes Regularity Problem.
+     arXiv:1911.00974
+
+                                             36
+[17] Hopf, E., Über die Anfangswertaufgabe für die hydrodynamischen Grundgleichungen,
+     Math. Nachr. 4 (1951), 213–231.
+[18] Jia, H. and Šverák, V., Minimal L3 -initial data for potential Navier-Stokes singulari-
+     ties. SIAM J. Math. Anal. 45 (2013), no. 3, 1448-1459.
+[19] Jia, H. and Šverák, V., Local-in-space estimates near initial time for weak solutions
+     of the Navier-Stokes equations and forward self-similar solutions. Invent. Math. 196
+     (2014), no. 1, 233-265.
+[20] Kato, T., Strong solutions of the Navier-Stokes equation in Morrey spaces. Bol. Soc.
+     Brasil. Mat. (N.S.) 22 (1992), no. 2, 127-155.
+[21] Kang, K., Miura, H. and Tsai, T.-P., Short time regularity of Navier-Stokes flows
+     with locally L3 initial data and applications. Int. Math. Res. Not. to appear. Preprint,
+     arXiv:1812.10509.
+[22] Kikuchi, N. and Seregin, G., Weak solutions to the Cauchy problem for the Navier-
+     Stokes equations satisfying the local energy inequality. Nonlinear equations and spec-
+     tral theory, 141-164, Amer. Math. Soc. Transl. Ser. 2, 220, Amer. Math. Soc., Provi-
+     dence, RI, 2007.
+[23] Koch, H. and Tataru, D., Well-posedness for the Navier-Stokes equations. Adv. Math.
+     157 (1), 22–35 (2001)
+[24] Kozono, H., Ogawa, T. and Taniuchi, Y., Navier-Stokes equations in the Besov space
+     near L∞ and BMO. Kyushu J. Math. 57 (2003), no. 2, 303-324.
+[25] Kukavica, I., On local uniqueness of weak solutions of the Navier-Stokes system with
+     bounded initial data. J. Differential Equations 194 (2003), no. 1, 39-50.
+[26] Kukavica, I. and Vicol, V., On local uniqueness of weak solutions to the Navier-Stokes
+     system with BM O−1 initial datum. J. Dynam. Differential Equations 20 (2008), no.
+     3, 719-732.
+[27] Kwon, H. and Tsai, T.-P., Global Navier-Stokes flows for non-decaying initial
+     data with slowly decaying oscillation. Comm. Math. Phys., to appear. Preprint,
+     arxiv:1811.03249.
+[28] Lemarié-Rieusset, P. G., Recent developments in the Navier-Stokes problem. Chapman
+     Hall/CRC Research Notes in Mathematics, 431. Chapman Hall/CRC, Boca Raton,
+     FL, 2002.
+[29] Lemarié-Rieusset, P. G., The Navier-Stokes problem in the 21st century. CRC Press,
+     Boca Raton, FL, 2016.
+[30] Leray, J., Sur le mouvement d’un liquide visqueux emplissant l’espace. (French) Acta
+     Math. 63 (1934), no. 1, 193-248.
+[31] Lin, F., A new proof of the Caffarelli-Kohn-Nirenberg theorem, Comm. Pure Appl.
+     Math. 51 (1998), no. 3, 241–257.
+[32] Maekawa, Y., Miura, H. and Prange, C., Local energy weak solutions for the Navier-
+     Stokes equations in the half-space, Comm. Math. Phys. 367 (2019), no. 2, 517-580.
+
+                                             37
+ [33] Maekawa, Y. and Terasawa, Y., The Navier-Stokes equations with initial data in
+      uniformly local Lp spaces. Differential Integral Equations 19 (2006), no. 4, 369-400.
+
+ [34] Oseen, C. W., “Neuere Methoden und Ergebnisse in der Hydrodynamik,” Akademis-
+      che Verlags-gesellschaft, Leipzig, 1927.
+
+ [35] Shibata, Y. and Shimizu, S., A decay property of the Fourier transform and its ap-
+      plication to the Stokes problem. J. Math. Fluid Mech. 3 (2001), no. 3, 213-230.
+
+ [36] Stein, E., Singular integrals and differentiability properties of functions. Princeton
+      Mathematical Series 30. Princeton University Press, Princeton, N.J. 1970.
+
+ [37] Stein, E., Harmonic analysis: real-variable methods, orthogonality, and oscillatory
+      integrals. With the assistance of Timothy S. Murphy. Princeton Mathematical Series
+      43. Princeton University Press, Princeton, NJ, 1993.
+
+ [38] Tsai, T.-P., On Leray’s self-similar solutions of the Navier-Stokes equations satisfying
+      local energy estimates, Arch. Rational Mech. Anal. 143 (1998), 29–51.
+
+ [39] Xu, L., Local-in-time solvability and space analyticity for the NavierStokes equations
+      with BMO-type initial data. Arch. Rational Mech. Anal. (2019).
+
+  Zachary Bradshaw, Department of Mathematics, University of Arkansas, Fayetteville,
+AR 72701, USA; e-mail: zb002@uark.edu
+  Tai-Peng Tsai, Department of Mathematics, University of British Columbia, Vancouver,
+BC V6T 1Z2, Canada; e-mail: ttsai@math.ubc.ca
+
+
+
+
+                                             38
+

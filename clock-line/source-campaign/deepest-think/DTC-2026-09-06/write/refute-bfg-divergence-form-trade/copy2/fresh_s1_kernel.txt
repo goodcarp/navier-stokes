@@ -1,0 +1,16 @@
+K1  int G_nu dx            = 1
+K2  int d_1 G_nu dx        = 0
+K3  int |grad G_nu| dx     = 2/(sqrt(pi)*sqrt(nu)*sqrt(t))
+    nu=1        t=1        quad=1.12837916709551256 exact=1.12837916709551256 relerr=0.00e+00
+    nu=1        t=0.01     quad=11.2837916709551251 exact=11.2837916709551251 relerr=0.00e+00
+    nu=7        t=3        quad=0.246232521229829082 exact=0.246232521229829082 relerr=1.00e-31
+    nu=0.001    t=5        quad=15.9576912160573077 exact=15.9576912160573077 relerr=0.00e+00
+K4  ||G(.,tau)||_2         = 2**(3/4)/(8*pi**(3/4)*tau**(3/4))
+K5  int_0^t (t-s)^-1/2 ds  = 2*sqrt(t)
+K6  sup |grad G|(|x|+1)^4  = 0.9231098781   at |x| = 2.810821027
+K7  sup G (|x|+1)^4        = 0.7109819927   at |x| = 2.372281323
+K8  int_{R^3}(|z|+A)^-4 dz = 4*pi/(3*A)
+K8  mean-zero Duhamel      = 8*pi*sqrt(t)/3   -> /sqrt(t) = 8pi/3 = 8.377580409573
+K8  mean-one  Duhamel      = 4*pi*t/3   -> /t       = 4pi/3 = 4.188790204786
+
+s1: ALL 8 IDENTITIES DERIVED AND ASSERTED

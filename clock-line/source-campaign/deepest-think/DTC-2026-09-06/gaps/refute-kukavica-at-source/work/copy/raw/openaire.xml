@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+	  <header>
+		    <query>(oaftype exact result) and (resulttypeid exact publication) and ((pidclassid exact "doi" and pid exact "10.1016/S0022-0396(03)00153-0"))</query>
+				  <locale>en_US</locale>	
+					<size>10</size>
+			   <page>1</page>
+			   <total>1</total>
+							<fields>
+							</fields>
+			</header>
+	  <results>
+										<result xmlns:dri="http://www.driver-repository.eu/namespace/dri"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <header>
+            <dri:objIdentifier>doi_dedup___::e5b70d093b4191e62c9eb9054942f6ee</dri:objIdentifier>
+            <dri:dateOfCollection>2026-08-19T06:45:20.461316999</dri:dateOfCollection>
+            <dri:dateOfTransformation/>
+         </header>
+         <metadata>
+            <oaf:entity xmlns:oaf="http://namespace.openaire.eu/oaf"
+                        xsi:schemaLocation="http://namespace.openaire.eu/oaf https://www.openaire.eu/schema/1.0/oaf-1.0.xsd">
+               <oaf:result>
+                  <collectedfrom name="CORE (RIOXX-UK Aggregator)"
+                                 id="openaire____::0a836ef43dcb67bb7cbd4dd509b11b73"/> 
+                  <collectedfrom name="BASE (Open Access Aggregator)"
+                                 id="openaire____::df45502607927471ecf8a6ae83683ff5"/> 
+                  <collectedfrom name="UnpayWall" id="openaire____::8ac8380272269217cb09a928c8caa993"/> 
+                  <collectedfrom name="zbMATH Open" id="openaire____::1c7cbe234effd9945d7a4fefb90be48e"/> 
+                  <collectedfrom name="Crossref" id="openaire____::081b82f96300b6a6e3d282bad31cb6e2"/> 
+                  <collectedfrom name="Microsoft Academic Graph"
+                                 id="openaire____::5f532a3fc4f1ea403f37070f59a7a53a"/> 
+                  <originalId>S0022039603001530</originalId> 
+                  <originalId>10.1016/s0022-0396(03)00153-0</originalId> 
+                  <originalId>50|doiboost____|e5b70d093b4191e62c9eb9054942f6ee</originalId> 
+                  <originalId>50|base_oa_____::e5b70d093b4191e62c9eb9054942f6ee</originalId> 
+                  <originalId>oai:zbmath.org:2003922</originalId> 
+                  <originalId>50|c2b0b933574d::cf24d05c1b25dad560fe111917225e20</originalId> 
+                  <originalId>https://dev-openaire.d4science.org/RS/Elsevier/data/elsevier/pdf/5bd/aHR0cDovL2FwaS5lbHNldmllci5jb20vY29udGVudC9hcnRpY2xlL3BpaS9zMDAyMjAzOTYwMzAwMTUzMA%253D%253D.pdf</originalId> 
+                  <originalId>50|core_ac_uk__::3c8b2bae4b8a5a57870d63576b80aaff</originalId> 
+                  <originalId>2078022023</originalId> 
+                  <pid classid="doi" classname="Digital Object Identifier" schemeid="dnet:pid_types"
+                       schemename="dnet:pid_types">10.1016/s0022-0396(03)00153-0</pid> 
+                  <measure id="influence" score="3.350278E-9" class="C4"/> 
+                  <measure id="popularity" score="3.4502439E-9" class="C4"/> 
+                  <measure id="influence_alt" score="14" class="C4"/> 
+                  <measure id="citationCount" score="14" class="C4"/> 
+                  <measure id="popularity_alt" score="0.78061163" class="C5"/> 
+                  <measure id="impulse" score="2" class="C5"/> 
+                  <title classid="main title" classname="main title" schemeid="dnet:dataCite_title"
+                         schemename="dnet:dataCite_title">On local uniqueness of weak solutions of the Navier–Stokes system with bounded initial data</title> 
+                  <title classid="subtitle" classname="subtitle" schemeid="dnet:dataCite_title"
+                         schemename="dnet:dataCite_title"
+                         inferred="false"
+                         provenanceaction="sysimport:crosswalk:repository"
+                         trust="0.9">On local uniqueness of weak solutions of the Navier--Stokes system with bounded initial data.</title> 
+                  <title classid="main title" classname="main title" schemeid="dnet:dataCite_title"
+                         schemename="dnet:dataCite_title">on local uniqueness of weak solutions of the navier stokes system with bounded initial data</title> 
+                  <bestaccessright classid="OPEN" classname="Open Access" schemeid="dnet:access_modes"
+                                   schemename="dnet:access_modes"/> 
+                  <creator rank="1" name="Igor" surname="Kukavica">Kukavica, Igor</creator> 
+                  <dateofacceptance>2003-10-01</dateofacceptance> 
+                  <description>The author considers the Cauchy problem for the Navier-Stokes equations in \(\mathbb{R}^n\), i.e. \[ \begin{alignedat}{2} u_t-\Delta u+ (u\cdot\nabla)u+ \nabla\pi &amp;= 0\quad &amp;&amp;\text{in }\mathbb{R}^n\times (0,T),\\ \text{div\,}u &amp;= 0\quad &amp;&amp;\text{in }\mathbb{R}^n\times (0,T),\\ u(\cdot,0) &amp;= u_0\quad &amp;&amp;\text{in }\mathbb{R}^n,\end{alignedat} \] where the initial function \(u_0\) belongs to \(L^\infty(\mathbb{R}^n, \mathbb{R}^n)\). It is known that this problem has a unique local mild solution, while weak solutions are not unique. The main result of the paper states that \(\widetilde u\) is a weak solution on \([0,T)\) if and only if there exists a function \(\phi\in L^\infty_{\text{loc}}([0, T),\mathbb{R}^n)\) with \(\lim_{t\to 0^+} \phi(t)= 0\) such that \[ \widetilde u(x,t)= u(x- \Phi(t),t)+ \phi(t)\quad\text{a.e. in }\mathbb{R}^n\times (0,T), \] where \(\Phi(t)= \int^t_0 \phi(s)\,ds\).</description> 
+                  <subject classid="keyword" classname="keyword"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="false"
+                           provenanceaction="sysimport:crosswalk:repository"
+                           trust="0.9">Mild solutions</subject> 
+                  <subject classid="keyword" classname="keyword"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="false"
+                           provenanceaction="sysimport:crosswalk:repository"
+                           trust="0.9">Cauchy problem</subject> 
+                  <subject classid="keyword" classname="keyword"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="false"
+                           provenanceaction="sysimport:crosswalk:repository"
+                           trust="0.9">Navier-Stokes equations for incompressible viscous fluids</subject> 
+                  <subject classid="keyword" classname="keyword"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="false"
+                           provenanceaction="sysimport:crosswalk:repository"
+                           trust="0.9">mild solutions</subject> 
+                  <subject classid="FOS" classname="Fields of Science and Technology classification"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="true"
+                           inferenceprovenance="update"
+                           provenanceaction="subject:fos">01 natural sciences</subject> 
+                  <subject classid="keyword" classname="keyword"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="false"
+                           provenanceaction="sysimport:crosswalk:repository"
+                           trust="0.9">Weak solutions</subject> 
+                  <subject classid="keyword" classname="keyword"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="false"
+                           provenanceaction="sysimport:crosswalk:repository"
+                           trust="0.9">Navier–Stokes equations</subject> 
+                  <subject classid="FOS" classname="Fields of Science and Technology classification"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="true"
+                           inferenceprovenance="update"
+                           provenanceaction="subject:fos">0103 physical sciences</subject> 
+                  <subject classid="keyword" classname="keyword"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="false"
+                           provenanceaction="sysimport:crosswalk:repository"
+                           trust="0.9">weak solutions</subject> 
+                  <subject classid="keyword" classname="keyword"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="false"
+                           provenanceaction="sysimport:crosswalk:repository"
+                           trust="0.9">nonuniqueness</subject> 
+                  <subject classid="FOS" classname="Fields of Science and Technology classification"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="true"
+                           inferenceprovenance="update"
+                           provenanceaction="subject:fos">0101 mathematics</subject> 
+                  <subject classid="keyword" classname="keyword"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="false"
+                           provenanceaction="sysimport:crosswalk:repository"
+                           trust="0.9">Navier-Stokes equations</subject> 
+                  <subject classid="keyword" classname="keyword"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="false"
+                           provenanceaction="sysimport:crosswalk:repository"
+                           trust="0.9">Initial value problems for second-order parabolic equations</subject> 
+                  <subject classid="keyword" classname="keyword"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="false"
+                           provenanceaction="sysimport:crosswalk:repository"
+                           trust="0.9">Analysis</subject> 
+                  <subject classid="keyword" classname="keyword"
+                           schemeid="dnet:subject_classification_typologies"
+                           schemename="dnet:subject_classification_typologies"
+                           inferred="false"
+                           provenanceaction="sysimport:crosswalk:repository"
+                           trust="0.9">Nonuniqueness</subject> 
+                  <language classid="eng" classname="English" schemeid="dnet:languages"
+                            schemename="dnet:languages"/> 
+                  <relevantdate classid="created" classname="created" schemeid="dnet:dataCite_date"
+                                schemename="dnet:dataCite_date">2003-09-03</relevantdate> 
+                  <relevantdate classid="published-print" classname="published-print"
+                                schemeid="dnet:dataCite_date"
+                                schemename="dnet:dataCite_date">2003-10-01</relevantdate> 
+                  <relevantdate classid="issued" classname="issued" schemeid="dnet:dataCite_date"
+                                schemename="dnet:dataCite_date"
+                                inferred="false"
+                                provenanceaction="sysimport:crosswalk:repository"
+                                trust="0.9">2003-01-01</relevantdate> 
+                  <publisher>Elsevier BV</publisher> 
+                  <source>Crossref</source> 
+                  <format>application/xml</format> 
+                  <resulttype classid="publication" classname="publication" schemeid="dnet:result_typologies"
+                              schemename="dnet:result_typologies"/> 
+                  <resourcetype classid="publication" classname="publication" schemeid="dnet:result_typologies"
+                                schemename="dnet:result_typologies"/> 
+                  <isgreen>false</isgreen> 
+                  <openaccesscolor>hybrid</openaccesscolor> 
+                  <isindiamondjournal>false</isindiamondjournal> 
+                  <publiclyfunded>false</publiclyfunded> 
+                  <journal issn="0022-0396" ep="50" sp="39" vol="194">Journal of Differential Equations</journal> 
+                  <datainfo>
+                     <inferred>true</inferred>
+                     <deletedbyinference>false</deletedbyinference>
+                     <trust>0.8</trust>
+                     <inferenceprovenance>dedup-result-decisiontree-v4</inferenceprovenance>
+                     <provenanceaction classid="sysimport:dedup" classname="Inferred by OpenAIRE"
+                                       schemeid="dnet:provenanceActions"
+                                       schemename="dnet:provenanceActions"/>
+                  </datainfo> 
+                  <rels>
+                     <rel inferred="true" trust="0.9" inferenceprovenance="iis::document_affiliations"
+                          provenanceaction="iis">
+                        <to class="hasAuthorInstitution" scheme="dnet:result_organization_relations"
+                            type="organization">pending_org_::764aa969bc09551bda634337bc1d71a1</to>
+                        <legalname>University of Southern California</legalname> 
+                        <country classid="US" classname="United States" schemeid="dnet:countries"
+                                 schemename="dnet:countries"/> 
+                        <legalshortname>University of Southern California</legalshortname> 
+                     </rel> 
+                     <rel inferred="true" trust="0.8994" inferenceprovenance="iis::document_affiliations"
+                          provenanceaction="iis">
+                        <to class="hasAuthorInstitution" scheme="dnet:result_organization_relations"
+                            type="organization">openorgs____::87fc7c7445685efcbb9d0b8f82751f30</to>
+                        <legalname>University of Southern California</legalname> 
+                        <websiteurl>http://www.usc.edu/</websiteurl> 
+                        <legalshortname>USC</legalshortname> 
+                        <country classid="US" classname="United States" schemeid="dnet:countries"
+                                 schemename="dnet:countries"/> 
+                     </rel> 
+                     <rel inferred="true" trust="0.7348"
+                          inferenceprovenance="iis::document_referencedProjects"
+                          provenanceaction="iis">
+                        <to class="isProducedBy" scheme="dnet:result_project_relations" type="project">nsf_________::c1c1a09e94cecd6b813e5d8af5991e15</to>
+                        <funding>
+                           <funder id="nsf_________::NSF" shortname="NSF" name="National Science Foundation"
+                                   jurisdiction="US"/>
+                           <funding_level_0 name="Directorate for Mathematical &amp; Physical Sciences">nsf_________::NSF::MPS/OAD</funding_level_0>
+                           <funding_level_1 name="Division of Mathematical Sciences">nsf_________::NSF::MPS/OAD::MPS/DMS</funding_level_1>
+                        </funding> 
+                        <title>Small Scales in the Navier-Stokes Equations</title> 
+                        <code>0072662</code> 
+                     </rel> 
+                     <rel inferred="false" trust="0.9" inferenceprovenance=""
+                          provenanceaction="sysimport:actionset">
+                        <to class="hasAuthorInstitution" scheme="dnet:result_organization_relations"
+                            type="organization">pending_org_::a96641377fb0460b5e1de690b7c5b8f6</to>
+                        <legalshortname>UNIV. S. CALIF. ISI</legalshortname> 
+                        <legalname>UNIVERSITY OF SOUTHERN CALIFORNIA</legalname> 
+                        <country classid="US" classname="United States" schemeid="dnet:countries"
+                                 schemename="dnet:countries"/> 
+                     </rel> 
+                     <rel inferred="true" trust="1.0" inferenceprovenance="openaire:affiliation:iis"
+                          provenanceaction="result:organization:openaireinference">
+                        <to class="hasAuthorInstitution" scheme="dnet:result_organization_relations"
+                            type="organization">openorgs____::1ab266c0de559c3d795f5fc493b1f684</to>
+                        <legalshortname>University of California System</legalshortname> 
+                        <country classid="US" classname="United States" schemeid="dnet:countries"
+                                 schemename="dnet:countries"/> 
+                        <legalname>University of California System</legalname> 
+                        <websiteurl>http://www.universityofcalifornia.edu/</websiteurl> 
+                     </rel> 
+                     <rel inferred="true" trust="0.8994" inferenceprovenance="iis::document_affiliations"
+                          provenanceaction="iis">
+                        <to class="hasAuthorInstitution" scheme="dnet:result_organization_relations"
+                            type="organization">pending_org_::187571056287643d254c8d7a66b3d599</to>
+                        <legalname>University of Southern California</legalname> 
+                        <legalshortname>USC</legalshortname> 
+                        <websiteurl>https://www.usc.edu/</websiteurl> 
+                        <country classid="US" classname="United States" schemeid="dnet:countries"
+                                 schemename="dnet:countries"/> 
+                     </rel> 
+                     <rel inferred="true" trust="0.9" inferenceprovenance="iis::document_affiliations"
+                          provenanceaction="iis">
+                        <to class="hasAuthorInstitution" scheme="dnet:result_organization_relations"
+                            type="organization">pending_org_::04ce6ed480fcb9ccf6e6340a990b4342</to>
+                        <legalname>University of Southern California</legalname> 
+                        <country classid="US" classname="United States" schemeid="dnet:countries"
+                                 schemename="dnet:countries"/> 
+                        <legalshortname>University of Southern California</legalshortname> 
+                     </rel> 
+                  </rels>
+                  <children>
+                     <result objidentifier="base_oa_____::e5b70d093b4191e62c9eb9054942f6ee">
+            	           <instance>
+            	              <accessright classid="OPEN" classname="Open Access" schemeid="dnet:access_modes"
+                                        schemename="dnet:access_modes"/> 
+                           <hostedby name="Journal of Differential Equations"
+                                     id="issn___print::2f8f923f69ddb292bbd813cc6ff38b2f"/> 
+                           <dateofacceptance>2003-10-01</dateofacceptance> 
+                           <instancetype classid="0001" classname="Article" schemeid="dnet:publication_resource"
+                                         schemename="dnet:publication_resource"/> 
+                           <refereed classid="0002" classname="nonPeerReviewed" schemeid="dnet:review_levels"
+                                     schemename="dnet:review_levels"/> 
+                           <license>Elsevier Non-Commercial</license> 
+                           <url>http://dx.doi.org/10.1016/s0022-0396(03)00153-0</url> 
+            		             <webresource>
+            		                <url>http://dx.doi.org/10.1016/s0022-0396(03)00153-0</url>
+            		             </webresource> 
+            	           </instance> 
+                        <collectedfrom name="BASE (Open Access Aggregator)"
+                                       id="openaire____::df45502607927471ecf8a6ae83683ff5"/> 
+                        <resulttype classid="publication" classname="publication" schemeid="dnet:result_typologies"
+                                    schemename="dnet:result_typologies"/> 
+                        <publisher>Elsevier BV</publisher> 
+                        <title classid="main title" classname="main title" schemeid="dnet:dataCite_title"
+                               schemename="dnet:dataCite_title"
+                               inferred="false"
+                               provenanceaction="sysimport:crosswalk:repository"
+                               trust="0.9">On local uniqueness of weak solutions of the Navier–Stokes system with bounded initial data</title> 
+                        <creator>Kukavica, Igor</creator> 
+                        <dateofacceptance>2003-10-01</dateofacceptance> 
+                     </result> 
+                     <result objidentifier="core_ac_uk__::3c8b2bae4b8a5a57870d63576b80aaff">
+            	           <description>AbstractWe address local uniqueness of weak solutions of the Navier–Stokes system with initial data in L∞(Rn). We show that uniqueness of solutions does not hold. We classify all solutions as all those which can be obtained from the solution of the integral equation (mild solution) by means of a certain transformation.</description> 
+                        <instance>
+            	              <accessright classid="OPEN" classname="Open Access" schemeid="dnet:access_modes"
+                                        schemename="dnet:access_modes"/> 
+                           <hostedby name="Unknown Repository" id="openaire____::55045bd2a65019fd8e6741a755395c8c"/> 
+                           <instancetype classid="0001" classname="Article" schemeid="dnet:publication_resource"
+                                         schemename="dnet:publication_resource"/> 
+                           <refereed classid="0002" classname="nonPeerReviewed" schemeid="dnet:review_levels"
+                                     schemename="dnet:review_levels"/> 
+                           <url>http://dx.doi.org/10.1016/S0022-0396(03)00153-0</url> 
+            		             <webresource>
+            		                <url>http://dx.doi.org/10.1016/S0022-0396(03)00153-0</url>
+            		             </webresource> 
+            	           </instance> 
+                        <resulttype classid="publication" classname="publication" schemeid="dnet:result_typologies"
+                                    schemename="dnet:result_typologies"/> 
+                        <collectedfrom name="CORE (RIOXX-UK Aggregator)"
+                                       id="openaire____::0a836ef43dcb67bb7cbd4dd509b11b73"/> 
+                        <title classid="main title" classname="main title" schemeid="dnet:dataCite_title"
+                               schemename="dnet:dataCite_title"
+                               inferred="false"
+                               provenanceaction="sysimport:crosswalk:repository"
+                               trust="0.9">On local uniqueness of weak solutions of the Navier–Stokes system with bounded initial data</title> 
+                        <creator>Kukavica, Igor</creator> 
+                        <publisher>Elsevier Inc.</publisher> 
+                     </result> 
+                     <result objidentifier="c2b0b933574d::cf24d05c1b25dad560fe111917225e20">
+            	           <dateofacceptance>2003-01-01</dateofacceptance> 
+                        <description>The author considers the Cauchy problem for the Navier-Stokes equations in \(\mathbb{R}^n\), i.e. \[ \begin{alignedat}{2} u_t-\Delta u+ (u\cdot\nabla)u+ \nabla\pi &amp;= 0\quad &amp;&amp;\text{in }\mathbb{R}^n\times (0,T),\\ \text{div\,}u &amp;= 0\quad &amp;&amp;\text{in }\mathbb{R}^n\times (0,T),\\ u(\cdot,0) &amp;= u_0\quad &amp;&amp;\text{in }\mathbb{R}^n,\end{alignedat} \] where the initial function \(u_0\) belongs to \(L^\infty(\mathbb{R}^n, \mathbb{R}^n)\). It is known that this problem has a unique local mild solution, whil</description> 
+                        <instance>
+            	              <accessright classid="CLOSED" classname="Closed Access" schemeid="dnet:access_modes"
+                                        schemename="dnet:access_modes"/> 
+                           <hostedby name="zbMATH Open" id="openaire____::1c7cbe234effd9945d7a4fefb90be48e"/> 
+                           <dateofacceptance>2003-01-01</dateofacceptance> 
+                           <instancetype classid="0001" classname="Article" schemeid="dnet:publication_resource"
+                                         schemename="dnet:publication_resource"/> 
+                           <refereed classid="0002" classname="nonPeerReviewed" schemeid="dnet:review_levels"
+                                     schemename="dnet:review_levels"/> 
+                           <url>https://doi.org/10.1016/s0022-0396(03)00153-0</url> 
+                           <url>https://zbmath.org/2003922</url> 
+            		             <webresource>
+            		                <url>https://doi.org/10.1016/s0022-0396(03)00153-0</url>
+            		             </webresource> 
+                           <webresource>
+            		                <url>https://zbmath.org/2003922</url>
+            		             </webresource> 
+            	           </instance> 
+                        <publisher>Elsevier (Academic Press), San Diego, CA</publisher> 
+                        <resulttype classid="publication" classname="publication" schemeid="dnet:result_typologies"
+                                    schemename="dnet:result_typologies"/> 
+                        <title classid="subtitle" classname="subtitle" schemeid="dnet:dataCite_title"
+                               schemename="dnet:dataCite_title"
+                               inferred="false"
+                               provenanceaction="sysimport:crosswalk:repository"
+                               trust="0.9">On local uniqueness of weak solutions of the Navier--Stokes system with bounded initial data.</title> 
+                        <collectedfrom name="zbMATH Open" id="openaire____::1c7cbe234effd9945d7a4fefb90be48e"/> 
+                        <creator>Kukavica, Igor</creator> 
+                     </result> 
+                     <result objidentifier="doi_________::e5b70d093b4191e62c9eb9054942f6ee">
+            	           <creator>Igor Kukavica</creator> 
+                        <title classid="main title" classname="main title" schemeid="dnet:dataCite_title"
+                               schemename="dnet:dataCite_title">On local uniqueness of weak solutions of the Navier–Stokes system with bounded initial data</title> 
+                        <instance>
+            	              <accessright classid="OPEN" classname="Open Access" schemeid="dnet:access_modes"
+                                        schemename="dnet:access_modes"/> 
+                           <hostedby name="Journal of Differential Equations"
+                                     id="issn___print::2f8f923f69ddb292bbd813cc6ff38b2f"/> 
+                           <instancetype classid="0001" classname="Article" schemeid="dnet:publication_resource"
+                                         schemename="dnet:publication_resource"/> 
+                           <refereed classid="0002" classname="nonPeerReviewed" schemeid="dnet:review_levels"
+                                     schemename="dnet:review_levels"/> 
+                           <license>Elsevier Non-Commercial</license> 
+                           <url>https://doi.org/10.1016/s0022-0396(03)00153-0</url> 
+            		             <webresource>
+            		                <url>https://doi.org/10.1016/s0022-0396(03)00153-0</url>
+            		             </webresource> 
+            	           </instance> 
+                        <instance>
+            	              <accessright classid="CLOSED" classname="Closed Access" schemeid="dnet:access_modes"
+                                        schemename="dnet:access_modes"/> 
+                           <hostedby name="Journal of Differential Equations"
+                                     id="issn___print::2f8f923f69ddb292bbd813cc6ff38b2f"/> 
+                           <dateofacceptance>2003-10-01</dateofacceptance> 
+                           <instancetype classid="0001" classname="Article" schemeid="dnet:publication_resource"
+                                         schemename="dnet:publication_resource"/> 
+                           <refereed classid="0001" classname="peerReviewed" schemeid="dnet:review_levels"
+                                     schemename="dnet:review_levels"/> 
+                           <license>Elsevier Non-Commercial</license> 
+                           <url>https://doi.org/10.1016/s0022-0396(03)00153-0</url> 
+            		             <webresource>
+            		                <url>https://doi.org/10.1016/s0022-0396(03)00153-0</url>
+            		             </webresource> 
+            	           </instance> 
+                        <resulttype classid="publication" classname="publication" schemeid="dnet:result_typologies"
+                                    schemename="dnet:result_typologies"/> 
+                        <collectedfrom name="Crossref" id="openaire____::081b82f96300b6a6e3d282bad31cb6e2"/> 
+                        <pid classid="doi" classname="Digital Object Identifier" schemeid="dnet:pid_types"
+                             schemename="dnet:pid_types">10.1016/s0022-0396(03)00153-0</pid> 
+                        <collectedfrom name="UnpayWall" id="openaire____::8ac8380272269217cb09a928c8caa993"/> 
+                        <publisher>Elsevier BV</publisher> 
+                        <dateofacceptance>2003-10-01</dateofacceptance> 
+                     </result> 
+                     <instance>
+                        <accessright classid="OPEN" classname="Open Access" schemeid="dnet:access_modes"
+                                     schemename="dnet:access_modes"/> 
+                        <collectedfrom name="BASE (Open Access Aggregator)"
+                                       id="openaire____::df45502607927471ecf8a6ae83683ff5"/> 
+                        <collectedfrom name="Microsoft Academic Graph"
+                                       id="openaire____::5f532a3fc4f1ea403f37070f59a7a53a"/> 
+                        <collectedfrom name="zbMATH Open" id="openaire____::1c7cbe234effd9945d7a4fefb90be48e"/> 
+                        <collectedfrom name="Crossref" id="openaire____::081b82f96300b6a6e3d282bad31cb6e2"/> 
+                        <collectedfrom name="Microsoft Academic Graph"
+                                       id="openaire____::5f532a3fc4f1ea403f37070f59a7a53a"/> 
+                        <collectedfrom name="UnpayWall" id="openaire____::8ac8380272269217cb09a928c8caa993"/> 
+                        <hostedby name="Journal of Differential Equations"
+                                  id="issn___print::2f8f923f69ddb292bbd813cc6ff38b2f"/> 
+                        <hostedby name="Journal of Differential Equations"
+                                  id="issn___print::2f8f923f69ddb292bbd813cc6ff38b2f"/> 
+                        <hostedby name="Unknown Repository" id="openaire____::55045bd2a65019fd8e6741a755395c8c"/> 
+                        <hostedby name="Unknown Repository" id="openaire____::55045bd2a65019fd8e6741a755395c8c"/> 
+                        <hostedby name="Journal of Differential Equations"
+                                  id="issn___print::2f8f923f69ddb292bbd813cc6ff38b2f"/> 
+                        <hostedby name="zbMATH Open" id="openaire____::1c7cbe234effd9945d7a4fefb90be48e"/> 
+                        <dateofacceptance>2003-10-01</dateofacceptance> 
+                        <dateofacceptance>2003-01-01</dateofacceptance> 
+                        <instancetype classid="0001" classname="Article" schemeid="dnet:publication_resource"
+                                      schemename="dnet:publication_resource"/> 
+                        <pid classid="doi" classname="Digital Object Identifier" schemeid="dnet:pid_types"
+                             schemename="dnet:pid_types">10.1016/s0022-0396(03)00153-0</pid> 
+                        <pid classid="doi" classname="Digital Object Identifier" schemeid="dnet:pid_types"
+                             schemename="dnet:pid_types">10.1016/s0022-0396(03)00153-0</pid> 
+                        <alternateidentifier classid="doi" classname="Digital Object Identifier" schemeid="dnet:pid_types"
+                                             schemename="dnet:pid_types">10.1016/s0022-0396(03)00153-0</alternateidentifier> 
+                        <alternateidentifier classid="doi" classname="Digital Object Identifier" schemeid="dnet:pid_types"
+                                             schemename="dnet:pid_types">10.1016/s0022-0396(03)00153-0</alternateidentifier> 
+                        <alternateidentifier classid="doi" classname="Digital Object Identifier" schemeid="dnet:pid_types"
+                                             schemename="dnet:pid_types">10.1016/s0022-0396(03)00153-0</alternateidentifier> 
+                        <alternateidentifier classid="mag_id" classname="Microsoft Academic Graph Identifier"
+                                             schemeid="dnet:pid_types"
+                                             schemename="dnet:pid_types">2078022023</alternateidentifier> 
+                        <alternateidentifier classid="mag_id" classname="Microsoft Academic Graph Identifier"
+                                             schemeid="dnet:pid_types"
+                                             schemename="dnet:pid_types">2078022023</alternateidentifier> 
+                        <alternateidentifier classid="doi" classname="Digital Object Identifier" schemeid="dnet:pid_types"
+                                             schemename="dnet:pid_types">10.1016/s0022-0396(03)00153-0</alternateidentifier> 
+                        <refereed classid="0001" classname="peerReviewed" schemeid="dnet:review_levels"
+                                  schemename="dnet:review_levels"/> 
+                        <license>Elsevier Non-Commercial</license> 
+            	           <webresource>
+            	              <url>https://doi.org/10.1016/s0022-0396(03)00153-0</url>
+            	           </webresource> 
+                     </instance> 
+                     <instance>
+                        <accessright classid="OPEN" classname="Open Access" schemeid="dnet:access_modes"
+                                     schemename="dnet:access_modes"/> 
+                        <collectedfrom name="CORE (RIOXX-UK Aggregator)"
+                                       id="openaire____::0a836ef43dcb67bb7cbd4dd509b11b73"/> 
+                        <hostedby name="Unknown Repository" id="openaire____::55045bd2a65019fd8e6741a755395c8c"/> 
+                        <instancetype classid="0001" classname="Article" schemeid="dnet:publication_resource"
+                                      schemename="dnet:publication_resource"/> 
+                        <alternateidentifier classid="doi" classname="Digital Object Identifier" schemeid="dnet:pid_types"
+                                             schemename="dnet:pid_types">10.1016/s0022-0396(03)00153-0</alternateidentifier> 
+                        <refereed classid="0002" classname="nonPeerReviewed" schemeid="dnet:review_levels"
+                                  schemename="dnet:review_levels"/> 
+            	           <webresource>
+            	              <url>https://doi.org/10.1016/S0022-0396(03)00153-0</url>
+            	           </webresource> 
+                     </instance> 
+                  </children>
+               </oaf:result>
+               <extraInfo name="result reference list" typology="reference list"
+                          provenance="iis::document_referencedDocuments"
+                          trust="0.9">
+                  <references>
+                     <reference position="1">
+                        <rawText>[CF] P. Constantin, C. Foias, Navier-Stokes Equations, Chicago Lectures in Mathematics, University of Chicago, Chicago/London, 1988.</rawText>
+                     </reference>
+                     <reference position="2">
+                        <rawText>[F] C. Fefferman, Characterizations of bounded mean oscillation, Bull. Amer. Math. Soc. 77 (1971) 587-588.</rawText>
+                        <id value="doi_________::b0a0d52e9a3926bca7f971c8bee1276e" type="openaire"
+                            trustLevel="0.7108382"/>
+                     </reference>
+                     <reference position="3">
+                        <rawText>[FJR] E.B. Fabes, B.F. Jones, N.M. Riviere, The initial value problem for the Navier-Stokes equations with data in Lp; Arch. Rational Mech. Anal. 45 (1972) 222-240.</rawText>
+                     </reference>
+                     <reference position="4">
+                        <rawText>[FMRT] C. Foias, O. Manley, R. Rosa, R. Temam, Navier-Stokes Equations and Turbulence, Encyclopedia of Mathematics and its Applications, Vol. 83, Cambridge University Press, Cambridge, 2001.</rawText>
+                     </reference>
+                     <reference position="5">
+                        <rawText>[GK] Z. Gruji c´, I. Kukavica, Space analyticity for the Navier-Stokes and related equations with initial data in Lp; J. Funct. Anal. 152 (1998) 447-466.</rawText>
+                     </reference>
+                     <reference position="6">
+                        <rawText>[K] T. Kato, Strong Lp-solutions of the Navier-Stokes equation in Rm; with applications to weak solutions, Math. Z. 187 (1984) 471-480.</rawText>
+                     </reference>
+                     <reference position="7">
+                        <rawText>[KT] H. Koch, D. Tataru, Well-posedness for the Navier-Stokes equations, Adv. Math. 157 (2001) 22-35.</rawText>
+                        <id value="core_ac_uk__::083ffdccc441aa93b467abf9c808ad95" type="openaire"
+                            trustLevel="0.74779826"/>
+                     </reference>
+                     <reference position="8">
+                        <rawText>[S] C. Sadosky, Interpolation of Operators and Singular Integrals: An Introduction to Harmonic Analysis, Marcel Dekker, Inc., New York and Basel, 1979.</rawText>
+                     </reference>
+                     <reference position="9">
+                        <rawText>[St1] E.M. Stein, Singular Integrals and Differentiability Properties of Functions, Princeton University Press, Princeton, NJ, 1970.</rawText>
+                     </reference>
+                     <reference position="10">
+                        <rawText>[St2]</rawText>
+                     </reference>
+                  </references>
+               </extraInfo> 
+               <extraInfo name="result reference list" typology="reference list"
+                          provenance="iis::document_referencedDocuments"
+                          trust="0.9">
+                  <references>
+                     <reference position="1">
+                        <rawText>[CF] P. Constantin, C. Foias, Navier-Stokes Equations, Chicago Lectures in Mathematics, University of Chicago, Chicago/London, 1988.</rawText>
+                     </reference>
+                     <reference position="2">
+                        <rawText>[F] C. Fefferman, Characterizations of bounded mean oscillation, Bull. Amer. Math. Soc. 77 (1971) 587-588.</rawText>
+                        <id value="doi_________::b0a0d52e9a3926bca7f971c8bee1276e" type="openaire"
+                            trustLevel="0.7108382"/>
+                     </reference>
+                     <reference position="3">
+                        <rawText>[FJR] E.B. Fabes, B.F. Jones, N.M. Riviere, The initial value problem for the Navier-Stokes equations with data in Lp; Arch. Rational Mech. Anal. 45 (1972) 222-240.</rawText>
+                     </reference>
+                     <reference position="4">
+                        <rawText>[FMRT] C. Foias, O. Manley, R. Rosa, R. Temam, Navier-Stokes Equations and Turbulence, Encyclopedia of Mathematics and its Applications, Vol. 83, Cambridge University Press, Cambridge, 2001.</rawText>
+                     </reference>
+                     <reference position="5">
+                        <rawText>[GK] Z. Gruji c´, I. Kukavica, Space analyticity for the Navier-Stokes and related equations with initial data in Lp; J. Funct. Anal. 152 (1998) 447-466.</rawText>
+                     </reference>
+                     <reference position="6">
+                        <rawText>[K] T. Kato, Strong Lp-solutions of the Navier-Stokes equation in Rm; with applications to weak solutions, Math. Z. 187 (1984) 471-480.</rawText>
+                     </reference>
+                     <reference position="7">
+                        <rawText>[KT] H. Koch, D. Tataru, Well-posedness for the Navier-Stokes equations, Adv. Math. 157 (2001) 22-35.</rawText>
+                        <id value="core_ac_uk__::083ffdccc441aa93b467abf9c808ad95" type="openaire"
+                            trustLevel="0.74779826"/>
+                     </reference>
+                     <reference position="8">
+                        <rawText>[S] C. Sadosky, Interpolation of Operators and Singular Integrals: An Introduction to Harmonic Analysis, Marcel Dekker, Inc., New York and Basel, 1979.</rawText>
+                     </reference>
+                     <reference position="9">
+                        <rawText>[St1] E.M. Stein, Singular Integrals and Differentiability Properties of Functions, Princeton University Press, Princeton, NJ, 1970.</rawText>
+                     </reference>
+                     <reference position="10">
+                        <rawText>[St2]</rawText>
+                     </reference>
+                  </references>
+               </extraInfo> 
+               <extraInfo name="result reference list" typology="reference list"
+                          provenance="iis::document_referencedDocuments"
+                          trust="0.9">
+                  <references>
+                     <reference position="1">
+                        <rawText>[CF] P. Constantin, C. Foias, Navier-Stokes Equations, Chicago Lectures in Mathematics, University of Chicago, Chicago/London, 1988.</rawText>
+                     </reference>
+                     <reference position="2">
+                        <rawText>[F] C. Fefferman, Characterizations of bounded mean oscillation, Bull. Amer. Math. Soc. 77 (1971) 587-588.</rawText>
+                        <id value="doi_________::b0a0d52e9a3926bca7f971c8bee1276e" type="openaire"
+                            trustLevel="0.7108382"/>
+                     </reference>
+                     <reference position="3">
+                        <rawText>[FJR] E.B. Fabes, B.F. Jones, N.M. Riviere, The initial value problem for the Navier-Stokes equations with data in Lp; Arch. Rational Mech. Anal. 45 (1972) 222-240.</rawText>
+                     </reference>
+                     <reference position="4">
+                        <rawText>[FMRT] C. Foias, O. Manley, R. Rosa, R. Temam, Navier-Stokes Equations and Turbulence, Encyclopedia of Mathematics and its Applications, Vol. 83, Cambridge University Press, Cambridge, 2001.</rawText>
+                     </reference>
+                     <reference position="5">
+                        <rawText>[GK] Z. Gruji c´, I. Kukavica, Space analyticity for the Navier-Stokes and related equations with initial data in Lp; J. Funct. Anal. 152 (1998) 447-466.</rawText>
+                     </reference>
+                     <reference position="6">
+                        <rawText>[K] T. Kato, Strong Lp-solutions of the Navier-Stokes equation in Rm; with applications to weak solutions, Math. Z. 187 (1984) 471-480.</rawText>
+                     </reference>
+                     <reference position="7">
+                        <rawText>[KT] H. Koch, D. Tataru, Well-posedness for the Navier-Stokes equations, Adv. Math. 157 (2001) 22-35.</rawText>
+                        <id value="core_ac_uk__::083ffdccc441aa93b467abf9c808ad95" type="openaire"
+                            trustLevel="0.74779826"/>
+                     </reference>
+                     <reference position="8">
+                        <rawText>[S] C. Sadosky, Interpolation of Operators and Singular Integrals: An Introduction to Harmonic Analysis, Marcel Dekker, Inc., New York and Basel, 1979.</rawText>
+                     </reference>
+                     <reference position="9">
+                        <rawText>[St1] E.M. Stein, Singular Integrals and Differentiability Properties of Functions, Princeton University Press, Princeton, NJ, 1970.</rawText>
+                     </reference>
+                     <reference position="10">
+                        <rawText>[St2]</rawText>
+                     </reference>
+                  </references>
+               </extraInfo> 
+            </oaf:entity>
+         </metadata>
+      </result>
+						</results>
+	  <browseResults>
+								</browseResults>
+</response>

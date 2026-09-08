@@ -1,0 +1,10 @@
+{
+ "eps_bulk_L_using_sin_delta": 0.034734538322974726,
+ "eps_bulk_L_using_delta_radians": 0.03493360902185768,
+ "ratio": 1.0057312032488217,
+ "true_over_lagrangian": 0.694387749198131,
+ "lagrangian_over_true": 1.4401175728615399,
+ "gapV_upper_over_lagrangian": 28.01683816158692,
+ "gapV_upper_over_true": 40.34754097251913,
+ "gapV_quoted_factor_at_c_0p734": 22.756143366934058
+}

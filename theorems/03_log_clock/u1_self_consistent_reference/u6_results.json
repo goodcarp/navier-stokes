@@ -1,0 +1,47 @@
+{
+ "measured": {
+  "L_star_Vstrain_0.5": 601.1839198392918,
+  "L_star_conj_0.5": 1442.1759100039062,
+  "eps_Vstrain_L=160": Infinity,
+  "eps_Vstrain_L=2560": 0.0531697610533961,
+  "eps_Vstrain_L=40": Infinity,
+  "eps_Vstrain_L=640": 0.4322120097597697,
+  "eps_conj_L=160": Infinity,
+  "eps_conj_L=2560": 0.16878964656206175,
+  "eps_conj_L=40": Infinity,
+  "eps_conj_L=640": Infinity,
+  "logLambda_star_Vstrain_0.5": 1205.7321851785834,
+  "logLambda_star_conj_0.5": 2887.7161655078125,
+  "pc_conj_L=640": 0.04124785357496604
+ },
+ "proved": {
+  "L_star_Vstrain_0.5": 16163.287765681465,
+  "L_star_conj_0.5": 48986.446508966044,
+  "eps_Vstrain_L=160": Infinity,
+  "eps_Vstrain_L=2560": Infinity,
+  "eps_Vstrain_L=40": Infinity,
+  "eps_Vstrain_L=640": Infinity,
+  "eps_conj_L=160": Infinity,
+  "eps_conj_L=2560": Infinity,
+  "eps_conj_L=40": Infinity,
+  "eps_conj_L=640": Infinity,
+  "logLambda_star_Vstrain_0.5": 32329.93987686293,
+  "logLambda_star_conj_0.5": 97976.25736343209,
+  "pc_conj_L=640": 0.34678623569034717
+ },
+ "proved_Ca_measured": {
+  "L_star_Vstrain_0.5": 2397.083933985029,
+  "L_star_conj_0.5": 5587.947472374615,
+  "eps_Vstrain_L=160": Infinity,
+  "eps_Vstrain_L=2560": 0.44626868193935043,
+  "eps_Vstrain_L=40": Infinity,
+  "eps_Vstrain_L=640": Infinity,
+  "eps_conj_L=160": Infinity,
+  "eps_conj_L=2560": 6.513810888102951,
+  "eps_conj_L=40": Infinity,
+  "eps_conj_L=640": Infinity,
+  "logLambda_star_Vstrain_0.5": 4797.532213470058,
+  "logLambda_star_conj_0.5": 11179.25929024923,
+  "pc_conj_L=640": 0.04124785357496604
+ }
+}

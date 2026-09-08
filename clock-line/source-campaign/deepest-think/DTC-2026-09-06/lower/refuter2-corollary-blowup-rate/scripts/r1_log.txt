@@ -1,0 +1,60 @@
+==============================================================================
+P1  seed fragility of the attempt's own control
+    control = form (c) WITHOUT the min(c1,1) guard; attempt reports 11 violations
+    at seed 20260906.  Re-run over 40 seeds, same N = 4000000
+==============================================================================
+   seed  20260906   violations = 11
+   seed         1   violations = 11
+   seed         2   violations = 9
+   seed         3   violations = 7
+   seed         4   violations = 16
+   seed         5   violations = 18
+   over 40 seeds: min=6  median=13.0 max=22  mean=12.90
+   seeds returning ZERO violations (i.e. the control silently PASSES) = 0/40
+   detection rate per draw = 3.225e-06
+
+==============================================================================
+P2  power curve: exponent 1/5 -> 1/5+eps inside Re_* = E0^(2/5)/(nu s^(1/5))
+    (the exponent that actually carries the physics).  seed 20260906, N = 4000000
+==============================================================================
+    eps        exponent      violations   fires?
+          +0    0.200000            0   no
+     +0.0001    0.200100            0   no
+      +0.001    0.201000            0   no
+      +0.003    0.203000            0   no
+       +0.01    0.210000            0   no
+       +0.03    0.230000            4   YES
+       +0.05    0.250000            5   YES
+    -0.03333    0.166667           91   YES
+       +0.05    0.250000            5   YES
+       -0.05    0.150000          288   YES
+       -0.01    0.190000            1   YES
+      -0.001    0.199000            0   no
+     -0.0001    0.199900            0   no
+    NOTE: eps<0 shrinks Re_*, shrinks the denominator, STRENGTHENS the claim -> must fire.
+          eps>0 grows Re_*, WEAKENS the claim -> a true-but-weaker statement, never fires.
+
+==============================================================================
+P3  TRUE vs TRUE-BUT-WEAKER: does the gate see the constant at all?
+==============================================================================
+   (c) as stated, cc=min(c1,1)      violations =         0   PASSES
+   cc/2   (weaker, still true)      violations =         0   PASSES
+   cc/1e6 (absurdly weak, true)     violations =         0   PASSES
+   2*cc   (stronger, false?)        violations =     32899   FIRES
+   10*cc  (stronger, false?)        violations =    138639   FIRES
+   => every weakening passes. The gate certifies the DIRECTION of (c), not its constant.
+
+==============================================================================
+P4  how tight is the ensemble?  m = cc/(s(1+log+ Re_*)) is the (c) threshold.
+==============================================================================
+   draws with (b) true                       = 2053207
+   of those, M/m <=        1                 =         0   (0.0000% )
+   of those, M/m <=     1.01                 =       148   (0.0072% )
+   of those, M/m <=      1.1                 =      1938   (0.0944% )
+   of those, M/m <=        2                 =     32899   (1.6023% )
+   of those, M/m <=       10                 =    138639   (6.7523% )
+   of those, M/m <=      100                 =    293199   (14.2801% )
+   of those, M/m <=    10000                 =    599439   (29.1953% )
+   median M/m = 8.418e+06   geometric mean = 4.700e+07
+   => the ensemble is overwhelmingly far from the boundary; the '0 violations in
+      4,000,000' headline is carried by a vanishing fraction of informative draws.

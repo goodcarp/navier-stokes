@@ -1,0 +1,35 @@
+{
+  "status": "NUMERICAL INITIAL GRID DIAGNOSTIC ONLY",
+  "results": [
+    {
+      "nr": 384,
+      "nz": 4097,
+      "R": 8.0,
+      "L": 16.0,
+      "mapping": 4.0,
+      "sampled_initial_energy": 81037.59759829461,
+      "sampled_initial_core_Omega": 1.0,
+      "removed_axial_mode_count": 0,
+      "sampled_initial_divergence_L2": 8.197483403241353,
+      "projection_and_axial_filter_correction_L2": 0.426260628692208,
+      "time": 0,
+      "energy": 81037.50674923278,
+      "K": 6.444111394336945,
+      "discrete_dissipation": 4586757.30323513,
+      "divergence_L2": 8.570714528176617e-11,
+      "core_b": 0.9999991488298909,
+      "core_Omega": 0.9999999999997411,
+      "core_beta": 0.9999991488301498,
+      "mean_G_fixed": 41.87025127198303,
+      "mean_G_branch": 41.87025127630414,
+      "mean_G_branch_radius": 0.21547625357785144,
+      "scope": "Finite-cylinder discrete observables, not whole-space NS endpoint certificates.",
+      "discrete_Omega_prime": 1.9991828517979449,
+      "viscous_Omega_prime": -2.9312026702533775e-09,
+      "discrete_b_prime": 2.219698096013692,
+      "discrete_beta_prime": 0.22051694585997256,
+      "discrete_G_prime": 100.46856207705085,
+      "discrete_K_prime": 441.1948474761335
+    }
+  ]
+}

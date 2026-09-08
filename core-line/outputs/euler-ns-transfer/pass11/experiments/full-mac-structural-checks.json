@@ -1,0 +1,201 @@
+{
+  "status": "PASS bounded floating-point structural/manufactured MAC checks",
+  "solver_sha256": "2e671a3599fc05ed3d0fdef657a75bb0e9dceeab05fb1b96c4c5fc7243a7fe95",
+  "structural": [
+    {
+      "nr": 16,
+      "nz": 32,
+      "J": 2,
+      "dealias": "padding",
+      "nzpad": 48,
+      "gradient_negative_adjoint_relative": 1.0868502436852853e-15,
+      "gather_scatter_adjoint_relative": 5.895596652421096e-16,
+      "independent_gradient_gram_relative": 3.207542556586445e-17,
+      "minimum_generalized_viscous_eigenvalue": 0.36166176606310013,
+      "projection_idempotence_relative": 2.1630774395089447e-16,
+      "projected_divergence_L2": 1.1647009073633603e-13,
+      "projected_divergence_over_input_divergence": 1.9843972747695116e-16,
+      "projection_orthogonality_relative": 2.6806073447830223e-17,
+      "projected_norm_ratio": 0.7995522591758947,
+      "projection_self_adjoint_relative": 8.262269873359032e-18,
+      "raw_lamb_energy_work_relative": 4.207091628546971e-18,
+      "projected_lamb_energy_work_relative": 7.417481493091997e-19,
+      "nonlinear_rotation_equivariance_relative": 7.529286456396772e-16,
+      "nonlinear_axial_translation_relative": 8.032571439258595e-16,
+      "CN_energy_ratio": 0.9987513557883437,
+      "CN_midpoint_energy_identity_relative": 5.451387396363232e-17,
+      "CN_divergence_L2": 7.342188465660878e-14,
+      "direct_signed_k_stokes_relative": 5.189124200471587e-15,
+      "projection_odd_symmetry_relative": 1.994300357676615e-16,
+      "nonlinear_odd_symmetry_relative": 8.474352208233783e-16,
+      "CN_odd_symmetry_relative": 3.324182987926226e-16,
+      "one_split_step_divergence_L2": 7.544471522344942e-16,
+      "one_split_step_energy_ratio": 0.9999820498725968,
+      "mode_zero_imaginary_max": 0.0
+    },
+    {
+      "nr": 32,
+      "nz": 64,
+      "J": 2,
+      "dealias": "padding",
+      "nzpad": 96,
+      "gradient_negative_adjoint_relative": 6.462262601806068e-16,
+      "gather_scatter_adjoint_relative": 3.474406187708381e-16,
+      "independent_gradient_gram_relative": 1.6722596138643073e-16,
+      "minimum_generalized_viscous_eigenvalue": 0.3615022506556665,
+      "projection_idempotence_relative": 2.651556452452932e-16,
+      "projected_divergence_L2": 2.3049166549529255e-13,
+      "projected_divergence_over_input_divergence": 2.102321673043521e-16,
+      "projection_orthogonality_relative": 7.711709937294391e-17,
+      "projected_norm_ratio": 0.7992631514303602,
+      "projection_self_adjoint_relative": 3.3426692281877995e-18,
+      "raw_lamb_energy_work_relative": 2.7989112868590444e-18,
+      "projected_lamb_energy_work_relative": 2.031705696915079e-18,
+      "nonlinear_rotation_equivariance_relative": 8.126159490737127e-16,
+      "nonlinear_axial_translation_relative": 8.847604073231011e-16,
+      "CN_energy_ratio": 0.9956886816433983,
+      "CN_midpoint_energy_identity_relative": 5.4456049695255425e-17,
+      "CN_divergence_L2": 1.61362486355551e-13,
+      "direct_signed_k_stokes_relative": null,
+      "projection_odd_symmetry_relative": 3.0606211109230607e-16,
+      "nonlinear_odd_symmetry_relative": 1.0244804801181676e-15,
+      "CN_odd_symmetry_relative": 4.519635163199357e-16,
+      "one_split_step_divergence_L2": 1.6253577473344667e-15,
+      "one_split_step_energy_ratio": 0.999937910586862,
+      "mode_zero_imaginary_max": 0.0
+    },
+    {
+      "nr": 64,
+      "nz": 128,
+      "J": 2,
+      "dealias": "padding",
+      "nzpad": 192,
+      "gradient_negative_adjoint_relative": 1.539353351959546e-15,
+      "gather_scatter_adjoint_relative": 3.729878813603711e-16,
+      "independent_gradient_gram_relative": 2.3259718749511428e-16,
+      "minimum_generalized_viscous_eigenvalue": 0.361462400247091,
+      "projection_idempotence_relative": 3.0442149494297793e-16,
+      "projected_divergence_L2": 4.789737118538076e-13,
+      "projected_divergence_over_input_divergence": 2.2696573890933604e-16,
+      "projection_orthogonality_relative": 4.378645512278686e-17,
+      "projected_norm_ratio": 0.8085812643176016,
+      "projection_self_adjoint_relative": 6.632976184220729e-19,
+      "raw_lamb_energy_work_relative": 1.569866128061599e-18,
+      "projected_lamb_energy_work_relative": 3.305822888774728e-18,
+      "nonlinear_rotation_equivariance_relative": 8.750302105580047e-16,
+      "nonlinear_axial_translation_relative": 9.769683294040535e-16,
+      "CN_energy_ratio": 0.9835013814580049,
+      "CN_midpoint_energy_identity_relative": 7.099463252842688e-18,
+      "CN_divergence_L2": 3.390417396008122e-13,
+      "direct_signed_k_stokes_relative": null,
+      "projection_odd_symmetry_relative": 3.5040863796633454e-16,
+      "nonlinear_odd_symmetry_relative": 1.1213743721653866e-15,
+      "CN_odd_symmetry_relative": 5.192704651604899e-16,
+      "one_split_step_divergence_L2": 3.4596920881758917e-15,
+      "one_split_step_energy_ratio": 0.999760660875359,
+      "mode_zero_imaginary_max": 0.0
+    },
+    {
+      "nr": 16,
+      "nz": 32,
+      "J": 2,
+      "dealias": "filter",
+      "nzpad": 48,
+      "gradient_negative_adjoint_relative": 1.0868502436852853e-15,
+      "gather_scatter_adjoint_relative": 5.895596652421096e-16,
+      "independent_gradient_gram_relative": 3.207542556586445e-17,
+      "minimum_generalized_viscous_eigenvalue": 0.36166176606310013,
+      "projection_idempotence_relative": 2.2078998678380786e-16,
+      "projected_divergence_L2": 9.309606896215522e-14,
+      "projected_divergence_over_input_divergence": 1.5861547318484297e-16,
+      "projection_orthogonality_relative": 1.3073873567970762e-17,
+      "projected_norm_ratio": 0.6707238539572539,
+      "projection_self_adjoint_relative": 2.7540899577863436e-18,
+      "raw_lamb_energy_work_relative": 2.516992335866044e-18,
+      "projected_lamb_energy_work_relative": 1.0712983951352999e-17,
+      "nonlinear_rotation_equivariance_relative": 5.631916962434126e-16,
+      "nonlinear_axial_translation_relative": 4.596204733642242e-16,
+      "CN_energy_ratio": 0.9991095625635075,
+      "CN_midpoint_energy_identity_relative": 5.14844616622795e-17,
+      "CN_divergence_L2": 6.015730904816203e-14,
+      "direct_signed_k_stokes_relative": 4.962631110101602e-15,
+      "projection_odd_symmetry_relative": 2.0028195674052876e-16,
+      "nonlinear_odd_symmetry_relative": 5.883314595509834e-16,
+      "CN_odd_symmetry_relative": 3.0489393353154424e-16,
+      "one_split_step_divergence_L2": 6.15690438569457e-16,
+      "one_split_step_energy_ratio": 0.9999871871389501,
+      "mode_zero_imaginary_max": 0.0
+    }
+  ],
+  "manufactured_curl": [
+    {
+      "nr": 16,
+      "dealias": "padding",
+      "results": {
+        "0": {
+          "curl_relative_L2": 0.03650738607630335,
+          "first_four_rows_absolute_error": 0.0069620390469355975,
+          "max_absolute_error": 0.03291668925263705
+        },
+        "4": {
+          "curl_relative_L2": 0.09390351971328657,
+          "first_four_rows_absolute_error": 0.0008877882111167812,
+          "max_absolute_error": 0.01402169947995466
+        },
+        "rigid_core_first_four_cells_vorticity_error": 0.0
+      },
+      "scope": "Smooth wall-compatible manufactured m0 and m4 toroidal fields; sampled before projection. Rigid-core test excludes the incompatible outer wall."
+    },
+    {
+      "nr": 32,
+      "dealias": "padding",
+      "results": {
+        "0": {
+          "curl_relative_L2": 0.009355023180137615,
+          "first_four_rows_absolute_error": 0.0015170309183809572,
+          "max_absolute_error": 0.009671813252240917
+        },
+        "4": {
+          "curl_relative_L2": 0.042984649307144636,
+          "first_four_rows_absolute_error": 0.0001873301120730354,
+          "max_absolute_error": 0.0055186625202594125
+        },
+        "rigid_core_first_four_cells_vorticity_error": 2.220446049250313e-16
+      },
+      "scope": "Smooth wall-compatible manufactured m0 and m4 toroidal fields; sampled before projection. Rigid-core test excludes the incompatible outer wall."
+    },
+    {
+      "nr": 64,
+      "dealias": "padding",
+      "results": {
+        "0": {
+          "curl_relative_L2": 0.0023744744123001156,
+          "first_four_rows_absolute_error": 0.00036225520353871943,
+          "max_absolute_error": 0.0025469952595345777
+        },
+        "4": {
+          "curl_relative_L2": 0.012856009285631237,
+          "first_four_rows_absolute_error": 4.5086673769195806e-05,
+          "max_absolute_error": 0.002775895598970102
+        },
+        "rigid_core_first_four_cells_vorticity_error": 0.0
+      },
+      "scope": "Smooth wall-compatible manufactured m0 and m4 toroidal fields; sampled before projection. Rigid-core test excludes the incompatible outer wall."
+    }
+  ],
+  "dealiasing": {
+    "dealias": "padding",
+    "angular_J_low": 2,
+    "angular_J_reference": 4,
+    "nz_low": 32,
+    "nz_reference": 96,
+    "nz_product_grid": 48,
+    "input_energy_fraction_beyond_old_filter": 0.3094507767681858,
+    "largest_retained_axial_integer": 15,
+    "resample_adjoint_relative": 5.1429777948536835e-18,
+    "retained_nonlinearity_relative": 9.257451805359302e-16,
+    "scope": "Same radial operators and input coefficients, independent larger angular/axial product grid."
+  },
+  "seconds": 23.728441172,
+  "scope": "Discrete adjoints, projection, Gram viscosity, constrained CN, Lamb energy work, symmetries, and radial curl consistency only. No whole-space reconstruction, interval residual, axis high-derivative enclosure, or research endpoint is certified."
+}

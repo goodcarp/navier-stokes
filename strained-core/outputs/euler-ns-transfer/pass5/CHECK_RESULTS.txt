@@ -1,0 +1,87 @@
+CHECK verify_angular_tail_budget.py
+PASS: Cartesian fourth-derivative kernel -> spherical block.
+PASS: Q S_eta has radial degrees 0,2,4 and tangent degrees 2,4 only.
+PASS: explicit coefficient contraction and angular Sobolev weights.
+No interval norms, full-gate sign, or subsequent dynamics were certified.
+CHECK verify_core_exterior_pressure_response.py
+PASS degree 0: angular contraction = 0, contact = 0
+PASS degree 2: angular contraction = 16*p1*r**2/5 + 32*p2*r**4/35, contact = 4*b
+PASS degree 4: angular contraction = 144*p*r**2/5 + 1536*p1*r**4/35 + 64*p2*r**6/7, contact = 0
+PASS degree 6: angular contraction = 0, contact = 0
+PASS degree 8: angular contraction = 0, contact = 0
+PASS radial integration and contact: response = 36*H2*b/7 - 8*H4*b*moment/5
+PASS independent polynomial-profile checks of all five radial moments.
+PASS derivative form: (18/7)b p_zz - (b moment/15) p_zzzz.
+All exact algebraic checks passed. No numerical pressure sign is certified.
+CHECK verify_finite_feedback_corollary.py
+PASS: beta and excess-strain initial jets, including Omega second jet.
+PASS: quotient third-derivative majorant and exact reservoir margin.
+PASS: uniform receiving-mode restrictions, energy and smaller-radius gain.
+No numerical duration, inherited-profile closure, or blowup was certified.
+CHECK verify_full_gate_bound.py
+PASS exact saved dyadic endpoints: C300<66, tWb<4, Cv>0, dv/Cv<901.
+PASS exact support bounds: kcore<-12/5, kpump<-31/2.
+PASS exact neutral tuning H=204/35, pzz=-8 and b'=2.
+Full gate strict upper bound: -290649/8750 = -33.21702857142857
+beta'' strict lower bound: 290649/17500 = 16.608514285714286
+PASS rescaling to viscosity one: gate times 10^9, beta'' times 10^6.
+Aggregation only: analytic identities and interval range enclosures remain explicit dependencies.
+CHECK verify_interval_cutoff.py
+{"status": "PASS", "checks": ["exact plateau and midpoint cutoff jets", "known cutoff mass 5/8 enclosed", "fundamental-theorem derivative integral -1 enclosed"], "cutoff_mass": {"interval": "[0.6234351016099743022209023099250883606225, 0.6265648983900256977790976900749116408821]", "exact_dyadic_bounds": {"lower": {"sign": 0, "mantissa": "828687390614991520721680654299593665", "exponent": -120}, "upper": {"sign": 0, "mantissa": "832847604116153320408078171050837057", "exponent": -120}}, "panels": 185, "strictly_positive": true, "strictly_negative": false, "width_display": 0.0031297967800513952}, "cutoff_derivative_integral": {"interval": "[-1.014251562821043316771101365186891721269, -0.9855937995888281342654479552690742365757]", "exact_dyadic_bounds": {"lower": {"sign": 1, "mantissa": "674085786035167051267765329950164263", "exponent": -119}, "upper": {"sign": 1, "mantissa": "1310078870885498062842097094461172235", "exponent": -120}}, "panels": 512, "strictly_positive": false, "strictly_negative": true, "width_display": 0.02865776323221518}}
+CHECK verify_local_swirl_feedback_kernel.py
+PASS signs and coefficients of Qtheta, K_loc, and S_theta=K_loc/R².
+PASS decreasing positive F and G on [0,1/16].
+PASS exact support endpoints and cutoff moment M=5/8.
+K/Q range: -30 to -30134114372415/1022453805739 = -29.47234799584411
+core/Cv range: -72293765997170443165798/28803445800475159076977 to -87238/35287 = -2.5098999091274643 -2.472241902116927
+PASS radial core-swirl source has only modes 0,2 and zero exterior monopole.
+PASS exact annular cancellation against exterior R^-3 P2: tWc=0.
+All algebraic checks passed. The note proves integration and positivity steps.
+CHECK verify_plateau_pump_bound.py
+PASS: local centripetal and swirl-advection kernel, including signs.
+PASS: pressure-kernel measure conversion and combined multiplier.
+PASS: monotonic upper envelope and exact packet/plateau support.
+Exact multiplier upper bound: -358640696595957938134855826987/23085491673405775693824000000
+Decimal display: -15.53532849417749 ; strictly less than -31/2.
+This bounds the combined c*A^2 annular-swirl coefficient, not the full gate alone.
+CHECK verify_radial_annular_pressure_cutoff.py
+PASS fourth-derivative Newton kernel, including its sign away from zero.
+PASS exact q0, q2, q4 and zero projection onto every checked higher degree.
+PASS degree-four polynomial identity proves all higher projections vanish.
+PASS pointwise zero azimuthal pairing against axisymmetric pressure gradient.
+PASS radial functional coefficient -2/(2ell+1).
+All exact checks passed. Retained-mode numerical errors are not certified.
+CHECK verify_swirl_adjoint_kernel.py
+PASS: all three exact adjoint radial Poisson equations and source constants.
+PASS: radial Green symmetry, swirl-source radial/angular IBP signs.
+PASS: plateau adjoints and derivative-free w^2 kernel coefficients.
+No interval quadrature, numerical gate sign, or later dynamics was certified.
+PASS: 9 finite checks. No return map or blowup is certified.
+CHECK verify_actual_return_next_lemma.py
+PASS: exact full quartic-pressure lower bound 3693184/105861 >34.
+PASS: RMS normalization cancels the first-order central matrix change.
+PASS: cubic core jet survives normalization with its negative O(t) term.
+PASS: viscosity/energy scaling, ratio invariance and cubic core extension.
+No enlarged class, weighted pressure estimate, or inherited return was proved.
+CHECK verify_inherited_geometry.py
+PASS: azimuthal equation and angular-momentum density adjoint.
+PASS: mass, center, variance, transverse moment and aspect-ratio rates.
+PASS: moving-axis pump/rotation rates and pressure threshold.
+PASS: exact initial packet margins and normalized outer-stress rate > 226249/51000
+PASS: initial meridional-vorticity generation; coefficient exceeds 108800000/93
+Scope: exact initial identities; no quantitative return time or iteration.
+CHECK verify_robust_initial_data.py
+PASS exact nonneutral central second derivatives.
+PASS rational A=1100: H lies strictly between 13673/2000 and 33759/4000
+beta prime and S strict lower bound: 14111/28000
+beta second derivative strict lower bound: 651289489/28000000
+S prime strict lower bound: 679511489/28000000
+Initial local family only; no quantitative perturbation radius or return.
+PASS full interval recomputation: all four components; exact gate <= -290649/8750.
+PASS: all 12 packaged finite check programs executed successfully.
+PASS: all four interval integrals recomputed; exact initial gate upper bound -290649/8750.
+PASS: 18 local Markdown artifact links resolve; no invalid control characters remain.
+pass2: 17 archived hashes unchanged
+pass3: 16 archived hashes unchanged
+pass4: 33 archived hashes unchanged
+LIMIT: no formal kernel replay, invariant return class or NS blowup proof.

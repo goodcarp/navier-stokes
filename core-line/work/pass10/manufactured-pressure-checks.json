@@ -1,0 +1,770 @@
+{
+  "status": "COMPLETED numerical manufactured consistency tests",
+  "exact_profile": "p_m=(r/1.4)^m exp(-s/(1-s)) q(z), s=(r/1.4)^2<1, zero outside; q=1+.3 cos(2pi z/6)+.2 sin(4pi z/6)",
+  "nonzero_mode_complex_multiplier": "1+0.5i",
+  "source": "analytic -Delta_m p; no discrete-operator manufacture",
+  "results": {
+    "Cylinder": {
+      "runs": [
+        {
+          "nr": 96,
+          "nz": 64,
+          "R": 4.0,
+          "L": 6.0,
+          "mapping": 4.0,
+          "modes": {
+            "0": {
+              "pressure_relative_L2": 0.0014760303029790719,
+              "pressure_relative_Linf": 0.0019238672624463835,
+              "gradient_relative_L2": 0.006794222468264541,
+              "gradient_relative_Linf": 0.009531159574287561,
+              "analytic_sample_gradient_relative_L2": 0.0077999022526084915,
+              "solver_operator_relative_Linf": 1.6746812610183905e-12,
+              "div_pressure_gradient_plus_source_relative_L2": 0.08587362501114962,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.10381807700858425,
+              "scalar_laplacian_plus_source_relative_L2": 0.055808909229144964,
+              "axis_extrapolated_pressure_error": 1.1550066363996692e-05,
+              "analytic_axis_extrapolation_error": 2.220446049250313e-16,
+              "first_four_rows_gradient_max_error_over_global_scale": 0.00016474741923060864,
+              "first_cell_regularized_pressure": [
+                1.0000041306003193,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999952397545386
+            },
+            "4": {
+              "pressure_relative_L2": 0.007249386706864829,
+              "pressure_relative_Linf": 0.011676711848757336,
+              "gradient_relative_L2": 0.016372672723886504,
+              "gradient_relative_Linf": 0.02251663657776934,
+              "analytic_sample_gradient_relative_L2": 0.020899165531207572,
+              "solver_operator_relative_Linf": 7.288895294619109e-15,
+              "div_pressure_gradient_plus_source_relative_L2": 0.09336562735711092,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.12080852026564136,
+              "scalar_laplacian_plus_source_relative_L2": 0.061851132187992625,
+              "axis_extrapolated_pressure_error": 3.5373688317302875e-13,
+              "analytic_axis_extrapolation_error": 4.162383850802734e-18,
+              "first_four_rows_gradient_max_error_over_global_scale": 1.1590056187442456e-06,
+              "first_cell_regularized_pressure": [
+                3.0453571770207284,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999952397545386
+            },
+            "8": {
+              "pressure_relative_L2": 0.01431174515659754,
+              "pressure_relative_Linf": 0.01770543077725969,
+              "gradient_relative_L2": 0.03195686060611218,
+              "gradient_relative_Linf": 0.0543033634520233,
+              "analytic_sample_gradient_relative_L2": 0.03827370080894526,
+              "solver_operator_relative_Linf": 2.324386557663494e-15,
+              "div_pressure_gradient_plus_source_relative_L2": 0.09171321533574561,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.11268688445347025,
+              "scalar_laplacian_plus_source_relative_L2": 0.06340462510679314,
+              "axis_extrapolated_pressure_error": 9.077413519928173e-18,
+              "analytic_axis_extrapolation_error": 8.320306541528343e-18,
+              "first_four_rows_gradient_max_error_over_global_scale": 4.271442871761116e-12,
+              "first_cell_regularized_pressure": [
+                352.79223676850347,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999952397545386
+            }
+          },
+          "repairs_or_flux": [
+            {
+              "tag": "manufactured_m0",
+              "raw_mean_source_radial_integral": [
+                0.002450239907543228,
+                0.0
+              ],
+              "uniform_z_compatibility_repair_amplitude": [
+                0.0019604538528036537,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "nr": 192,
+          "nz": 64,
+          "R": 4.0,
+          "L": 6.0,
+          "mapping": 4.0,
+          "modes": {
+            "0": {
+              "pressure_relative_L2": 0.0004159635622525708,
+              "pressure_relative_Linf": 0.0005876925332033631,
+              "gradient_relative_L2": 0.0025414824460401986,
+              "gradient_relative_Linf": 0.00436910875536557,
+              "analytic_sample_gradient_relative_L2": 0.0008965965766216924,
+              "solver_operator_relative_Linf": 9.063673305245758e-12,
+              "div_pressure_gradient_plus_source_relative_L2": 0.01606272321707606,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.022928861725141376,
+              "scalar_laplacian_plus_source_relative_L2": 0.01870408788360114,
+              "axis_extrapolated_pressure_error": 6.054084657525216e-05,
+              "analytic_axis_extrapolation_error": 2.220446049250313e-16,
+              "first_four_rows_gradient_max_error_over_global_scale": 5.620828574491708e-06,
+              "first_cell_regularized_pressure": [
+                1.0000453804658036,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999988104571287
+            },
+            "4": {
+              "pressure_relative_L2": 0.0018946057987248943,
+              "pressure_relative_Linf": 0.003349575474148684,
+              "gradient_relative_L2": 0.004991452578567967,
+              "gradient_relative_Linf": 0.008397450965225914,
+              "analytic_sample_gradient_relative_L2": 0.002201759363862006,
+              "solver_operator_relative_Linf": 3.007865854186688e-14,
+              "div_pressure_gradient_plus_source_relative_L2": 0.02061119137994277,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.0362256891417428,
+              "scalar_laplacian_plus_source_relative_L2": 0.022851048136836947,
+              "axis_extrapolated_pressure_error": 5.4532657901320675e-15,
+              "analytic_axis_extrapolation_error": 1.6089306459832706e-20,
+              "first_four_rows_gradient_max_error_over_global_scale": 1.1899315148934947e-07,
+              "first_cell_regularized_pressure": [
+                3.013317004437463,
+                -1.7565371868740902e-16
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999988104571287
+            },
+            "8": {
+              "pressure_relative_L2": 0.0035472963908953865,
+              "pressure_relative_Linf": 0.005627676778155988,
+              "gradient_relative_L2": 0.006910726526248377,
+              "gradient_relative_Linf": 0.011855135296155702,
+              "analytic_sample_gradient_relative_L2": 0.0038581527389345044,
+              "solver_operator_relative_Linf": 8.777664075082848e-15,
+              "div_pressure_gradient_plus_source_relative_L2": 0.025131271173701127,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.04756325595249724,
+              "scalar_laplacian_plus_source_relative_L2": 0.026374078526668437,
+              "axis_extrapolated_pressure_error": 3.30916967089756e-20,
+              "analytic_axis_extrapolation_error": 3.2174316204613067e-20,
+              "first_four_rows_gradient_max_error_over_global_scale": 2.801111890418068e-14,
+              "first_cell_regularized_pressure": [
+                326.11100645670916,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999988104571287
+            }
+          },
+          "repairs_or_flux": [
+            {
+              "tag": "manufactured_m0",
+              "raw_mean_source_radial_integral": [
+                -2.981849313093976e-05,
+                0.0
+              ],
+              "uniform_z_compatibility_repair_amplitude": [
+                -2.3855650489753938e-05,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "nr": 384,
+          "nz": 64,
+          "R": 4.0,
+          "L": 6.0,
+          "mapping": 4.0,
+          "modes": {
+            "0": {
+              "pressure_relative_L2": 0.00010317821223187475,
+              "pressure_relative_Linf": 0.0001472008783820717,
+              "gradient_relative_L2": 0.0007223791700613249,
+              "gradient_relative_Linf": 0.001555833428916378,
+              "analytic_sample_gradient_relative_L2": 7.660486189533093e-05,
+              "solver_operator_relative_Linf": 2.7212185920004065e-11,
+              "div_pressure_gradient_plus_source_relative_L2": 0.004029190509791008,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.005569816308464337,
+              "scalar_laplacian_plus_source_relative_L2": 0.005143528267901758,
+              "axis_extrapolated_pressure_error": 1.1724746605823455e-05,
+              "analytic_axis_extrapolation_error": 2.220446049250313e-16,
+              "first_four_rows_gradient_max_error_over_global_scale": 1.6272177743819114e-06,
+              "first_cell_regularized_pressure": [
+                1.000008721691205,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999997026466809
+            },
+            "4": {
+              "pressure_relative_L2": 0.00046637137664333873,
+              "pressure_relative_Linf": 0.0008072273212854533,
+              "gradient_relative_L2": 0.0014797975034961496,
+              "gradient_relative_Linf": 0.0030355705632435235,
+              "analytic_sample_gradient_relative_L2": 0.0001931274966986227,
+              "solver_operator_relative_Linf": 1.1670739046422436e-13,
+              "div_pressure_gradient_plus_source_relative_L2": 0.00483138800450609,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.00868649969375963,
+              "scalar_laplacian_plus_source_relative_L2": 0.006359042022884257,
+              "axis_extrapolated_pressure_error": 8.48776423112595e-17,
+              "analytic_axis_extrapolation_error": 6.268498975742554e-23,
+              "first_four_rows_gradient_max_error_over_global_scale": 1.3925097458412737e-08,
+              "first_cell_regularized_pressure": [
+                3.0038775321529525,
+                -1.7569184143100918e-16
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999997026466809
+            },
+            "8": {
+              "pressure_relative_L2": 0.0008701754609731797,
+              "pressure_relative_Linf": 0.0014170331041691495,
+              "gradient_relative_L2": 0.0021545996479929094,
+              "gradient_relative_Linf": 0.003969680929606434,
+              "analytic_sample_gradient_relative_L2": 0.0003459529465606242,
+              "solver_operator_relative_Linf": 3.717381498418718e-14,
+              "div_pressure_gradient_plus_source_relative_L2": 0.005475330171345411,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.009718928033278314,
+              "scalar_laplacian_plus_source_relative_L2": 0.0074574169376475895,
+              "axis_extrapolated_pressure_error": 1.2644542512780523e-22,
+              "analytic_axis_extrapolation_error": 1.253635142750937e-22,
+              "first_four_rows_gradient_max_error_over_global_scale": 2.0607917897321121e-16,
+              "first_cell_regularized_pressure": [
+                318.2392585425312,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999997026466809
+            }
+          },
+          "repairs_or_flux": [
+            {
+              "tag": "manufactured_m0",
+              "raw_mean_source_radial_integral": [
+                4.1300420139389615e-07,
+                0.0
+              ],
+              "uniform_z_compatibility_repair_amplitude": [
+                3.304063230504315e-07,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "nr": 768,
+          "nz": 64,
+          "R": 4.0,
+          "L": 6.0,
+          "mapping": 4.0,
+          "modes": {
+            "0": {
+              "pressure_relative_L2": 2.5761750461373945e-05,
+              "pressure_relative_Linf": 3.666866227748206e-05,
+              "gradient_relative_L2": 0.00018767556960665757,
+              "gradient_relative_Linf": 0.00042926324315581085,
+              "analytic_sample_gradient_relative_L2": 5.248876604322917e-06,
+              "solver_operator_relative_Linf": 1.2299350242357613e-10,
+              "div_pressure_gradient_plus_source_relative_L2": 0.0012274246763712556,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.001736328659237701,
+              "scalar_laplacian_plus_source_relative_L2": 0.001324024263216643,
+              "axis_extrapolated_pressure_error": 2.9474905285375996e-06,
+              "analytic_axis_extrapolation_error": 2.220446049250313e-16,
+              "first_four_rows_gradient_max_error_over_global_scale": 4.0468535722333426e-07,
+              "first_cell_regularized_pressure": [
+                1.0000021929646419,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.999999925663695
+            },
+            "4": {
+              "pressure_relative_L2": 0.00011629351699504513,
+              "pressure_relative_Linf": 0.00020243850818810213,
+              "gradient_relative_L2": 0.00038912235424199787,
+              "gradient_relative_Linf": 0.0008619083895587009,
+              "analytic_sample_gradient_relative_L2": 1.3332001990005568e-05,
+              "solver_operator_relative_Linf": 5.862154684556741e-13,
+              "div_pressure_gradient_plus_source_relative_L2": 0.0015072360369827293,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.0026749136021444724,
+              "scalar_laplacian_plus_source_relative_L2": 0.0016435169217188137,
+              "axis_extrapolated_pressure_error": 1.3247392432502492e-18,
+              "analytic_axis_extrapolation_error": 2.4468471167082113e-25,
+              "first_four_rows_gradient_max_error_over_global_scale": 1.7054453850527768e-09,
+              "first_cell_regularized_pressure": [
+                3.001106177024468,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.999999925663695
+            },
+            "8": {
+              "pressure_relative_L2": 0.00021668109104250598,
+              "pressure_relative_Linf": 0.0003524641895525383,
+              "gradient_relative_L2": 0.0005750372924945113,
+              "gradient_relative_Linf": 0.0012225168335491656,
+              "analytic_sample_gradient_relative_L2": 2.4075681664179834e-05,
+              "solver_operator_relative_Linf": 1.9538200243082282e-13,
+              "div_pressure_gradient_plus_source_relative_L2": 0.0017539717883760255,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.0031630397925509687,
+              "scalar_laplacian_plus_source_relative_L2": 0.0019367867577407332,
+              "axis_extrapolated_pressure_error": 4.906349132471663e-25,
+              "analytic_axis_extrapolation_error": 4.893916992498228e-25,
+              "first_four_rows_gradient_max_error_over_global_scale": 1.5811397342816409e-18,
+              "first_cell_regularized_pressure": [
+                315.929521978589,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.999999925663695
+            }
+          },
+          "repairs_or_flux": [
+            {
+              "tag": "manufactured_m0",
+              "raw_mean_source_radial_integral": [
+                4.954594212680519e-08,
+                0.0
+              ],
+              "uniform_z_compatibility_repair_amplitude": [
+                3.9636842532713925e-08,
+                0.0
+              ]
+            }
+          ]
+        }
+      ],
+      "observed_orders": {
+        "0": {
+          "pressure_relative_L2": [
+            1.8271932790871488,
+            2.011318801853551,
+            2.001835824005635
+          ],
+          "gradient_relative_L2": [
+            1.4186381920642093,
+            1.8148420680104276,
+            1.944515431366929
+          ],
+          "div_pressure_gradient_plus_source_relative_L2": [
+            2.418498591025472,
+            1.99515457669346,
+            1.7148555280951103
+          ]
+        },
+        "4": {
+          "pressure_relative_L2": [
+            1.9359612440954572,
+            2.022346553648013,
+            2.0037085731713984
+          ],
+          "gradient_relative_L2": [
+            1.7137582258027573,
+            1.7540599499761393,
+            1.9271040024529784
+          ],
+          "div_pressure_gradient_plus_source_relative_L2": [
+            2.179463619376294,
+            2.0929182746756423,
+            1.6805323546605502
+          ]
+        },
+        "8": {
+          "pressure_relative_L2": [
+            2.0124078198485322,
+            2.0273416398545883,
+            2.0057330730575265
+          ],
+          "gradient_relative_L2": [
+            2.2092163924811388,
+            1.6814175663073143,
+            1.9056923968324617
+          ],
+          "div_pressure_gradient_plus_source_relative_L2": [
+            1.8676459861509225,
+            2.1984657772163456,
+            1.642320421150347
+          ]
+        }
+      }
+    },
+    "HighOrderCylinder": {
+      "runs": [
+        {
+          "nr": 96,
+          "nz": 64,
+          "R": 4.0,
+          "L": 6.0,
+          "mapping": 4.0,
+          "modes": {
+            "0": {
+              "pressure_relative_L2": 0.007567176177633483,
+              "pressure_relative_Linf": 0.0024626935545001357,
+              "gradient_relative_L2": 0.005122890772852297,
+              "gradient_relative_Linf": 0.01014241380844047,
+              "analytic_sample_gradient_relative_L2": 0.004902738635210547,
+              "solver_operator_relative_Linf": 4.275455317573531e-12,
+              "div_pressure_gradient_plus_source_relative_L2": 0.0805312053853014,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.08922099563926345,
+              "scalar_laplacian_plus_source_relative_L2": 5.07854233960763e-09,
+              "axis_extrapolated_pressure_error": 0.003243795313215614,
+              "analytic_axis_extrapolation_error": 2.220446049250313e-16,
+              "first_four_rows_gradient_max_error_over_global_scale": 0.0001388018793398601,
+              "first_cell_regularized_pressure": [
+                1.0024904673711315,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999952397545386
+            },
+            "4": {
+              "pressure_relative_L2": 0.002084493619825258,
+              "pressure_relative_Linf": 0.0016991608943855705,
+              "gradient_relative_L2": 0.014975909634546153,
+              "gradient_relative_Linf": 0.03407975573362332,
+              "analytic_sample_gradient_relative_L2": 0.014972754317206039,
+              "solver_operator_relative_Linf": 1.0255422384929121e-14,
+              "div_pressure_gradient_plus_source_relative_L2": 0.08762641055745089,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.12322142469944214,
+              "scalar_laplacian_plus_source_relative_L2": 8.408003788854556e-09,
+              "axis_extrapolated_pressure_error": 4.176035278544388e-18,
+              "analytic_axis_extrapolation_error": 4.162383850802734e-18,
+              "first_four_rows_gradient_max_error_over_global_scale": 4.719935947232156e-09,
+              "first_cell_regularized_pressure": [
+                1.0002152386806011,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999952397545386
+            },
+            "8": {
+              "pressure_relative_L2": 0.005360799054200456,
+              "pressure_relative_Linf": 0.006289709974050065,
+              "gradient_relative_L2": 0.031558008898676305,
+              "gradient_relative_Linf": 0.06660897001204956,
+              "analytic_sample_gradient_relative_L2": 0.029880193554562035,
+              "solver_operator_relative_Linf": 3.735855214510767e-15,
+              "div_pressure_gradient_plus_source_relative_L2": 0.08605487856555093,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.1165476436873915,
+              "scalar_laplacian_plus_source_relative_L2": 1.252587932658198e-08,
+              "axis_extrapolated_pressure_error": 8.320900468788184e-18,
+              "analytic_axis_extrapolation_error": 8.320306541528343e-18,
+              "first_four_rows_gradient_max_error_over_global_scale": 1.1577297459103852e-13,
+              "first_cell_regularized_pressure": [
+                390.3905501603567,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999952397545386
+            }
+          },
+          "repairs_or_flux": [
+            {
+              "tag": "manufactured_m0",
+              "source_repaired": false,
+              "raw_midpoint_mean_source_radial_integral": [
+                0.002450239907543228,
+                0.0
+              ],
+              "computed_outer_zero_mode_radial_flux": [
+                -0.002447276594853945,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "nr": 192,
+          "nz": 64,
+          "R": 4.0,
+          "L": 6.0,
+          "mapping": 4.0,
+          "modes": {
+            "0": {
+              "pressure_relative_L2": 8.46419244803806e-05,
+              "pressure_relative_Linf": 2.9352930340526452e-05,
+              "gradient_relative_L2": 0.0002480840490921459,
+              "gradient_relative_Linf": 0.0007087028312596392,
+              "analytic_sample_gradient_relative_L2": 0.00037329182658517193,
+              "solver_operator_relative_Linf": 1.2478045420875022e-11,
+              "div_pressure_gradient_plus_source_relative_L2": 0.012365642670273897,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.020408389882824823,
+              "scalar_laplacian_plus_source_relative_L2": 1.725408233016291e-12,
+              "axis_extrapolated_pressure_error": 2.9719271404937686e-05,
+              "analytic_axis_extrapolation_error": 2.220446049250313e-16,
+              "first_four_rows_gradient_max_error_over_global_scale": 8.56982232061668e-07,
+              "first_cell_regularized_pressure": [
+                0.999975949478356,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999988104571287
+            },
+            "4": {
+              "pressure_relative_L2": 9.845843562340307e-05,
+              "pressure_relative_Linf": 0.00010687853146139295,
+              "gradient_relative_L2": 0.0006142457335145836,
+              "gradient_relative_Linf": 0.0017467390278858076,
+              "analytic_sample_gradient_relative_L2": 0.0009434555864950837,
+              "solver_operator_relative_Linf": 5.3566664038227846e-14,
+              "div_pressure_gradient_plus_source_relative_L2": 0.016929742414890127,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.034989414134831004,
+              "scalar_laplacian_plus_source_relative_L2": 6.336731554144819e-12,
+              "axis_extrapolated_pressure_error": 1.610247598938728e-20,
+              "analytic_axis_extrapolation_error": 1.6089306459832706e-20,
+              "first_four_rows_gradient_max_error_over_global_scale": 1.075037792672962e-11,
+              "first_cell_regularized_pressure": [
+                0.9999945583557868,
+                1.7565371868740902e-16
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999988104571287
+            },
+            "8": {
+              "pressure_relative_L2": 0.00018655059705046254,
+              "pressure_relative_Linf": 0.0002289141614170371,
+              "gradient_relative_L2": 0.001181016840251576,
+              "gradient_relative_Linf": 0.0026020940111960984,
+              "analytic_sample_gradient_relative_L2": 0.0017392041735529722,
+              "solver_operator_relative_Linf": 1.9225053799061298e-14,
+              "div_pressure_gradient_plus_source_relative_L2": 0.021711745704997457,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.04184284495223161,
+              "scalar_laplacian_plus_source_relative_L2": 3.3119639016586298e-12,
+              "axis_extrapolated_pressure_error": 3.217423667313074e-20,
+              "analytic_axis_extrapolation_error": 3.2174316204613067e-20,
+              "first_four_rows_gradient_max_error_over_global_scale": 8.439717071944883e-16,
+              "first_cell_regularized_pressure": [
+                386.33396512857183,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999988104571287
+            }
+          },
+          "repairs_or_flux": [
+            {
+              "tag": "manufactured_m0",
+              "source_repaired": false,
+              "raw_midpoint_mean_source_radial_integral": [
+                -2.981849313093976e-05,
+                0.0
+              ],
+              "computed_outer_zero_mode_radial_flux": [
+                3.0614732844107944e-05,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "nr": 384,
+          "nz": 64,
+          "R": 4.0,
+          "L": 6.0,
+          "mapping": 4.0,
+          "modes": {
+            "0": {
+              "pressure_relative_L2": 6.341898746417912e-07,
+              "pressure_relative_Linf": 4.327563456887629e-07,
+              "gradient_relative_L2": 1.2780314141070468e-05,
+              "gradient_relative_Linf": 3.801965003017213e-05,
+              "analytic_sample_gradient_relative_L2": 1.720646074893942e-05,
+              "solver_operator_relative_Linf": 6.250902691534878e-11,
+              "div_pressure_gradient_plus_source_relative_L2": 0.0007344217242948623,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.0014643518505237845,
+              "scalar_laplacian_plus_source_relative_L2": 4.638465038445677e-12,
+              "axis_extrapolated_pressure_error": 2.3829865569702235e-07,
+              "analytic_axis_extrapolation_error": 2.220446049250313e-16,
+              "first_four_rows_gradient_max_error_over_global_scale": 8.25493034371085e-09,
+              "first_cell_regularized_pressure": [
+                0.9999998859533404,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999997026466809
+            },
+            "4": {
+              "pressure_relative_L2": 9.388627337221646e-07,
+              "pressure_relative_Linf": 2.7933519577557473e-06,
+              "gradient_relative_L2": 3.424992207171443e-05,
+              "gradient_relative_Linf": 8.785040745171483e-05,
+              "analytic_sample_gradient_relative_L2": 4.5960854009556114e-05,
+              "solver_operator_relative_Linf": 1.8913359440252764e-13,
+              "div_pressure_gradient_plus_source_relative_L2": 0.0010338632690565397,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.0023206264492122678,
+              "scalar_laplacian_plus_source_relative_L2": 9.95387545648134e-14,
+              "axis_extrapolated_pressure_error": 6.269705723924325e-23,
+              "analytic_axis_extrapolation_error": 6.268498975742554e-23,
+              "first_four_rows_gradient_max_error_over_global_scale": 8.288186241905814e-15,
+              "first_cell_regularized_pressure": [
+                0.9999997288474649,
+                -1.7569184143100918e-16
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999997026466809
+            },
+            "8": {
+              "pressure_relative_L2": 2.5833180854804174e-06,
+              "pressure_relative_Linf": 7.3336320086903975e-06,
+              "gradient_relative_L2": 6.541620268024535e-05,
+              "gradient_relative_Linf": 0.00018579978752580366,
+              "analytic_sample_gradient_relative_L2": 8.73295529029466e-05,
+              "solver_operator_relative_Linf": 6.597524369921175e-14,
+              "div_pressure_gradient_plus_source_relative_L2": 0.001382211851950183,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.0032967400512520116,
+              "scalar_laplacian_plus_source_relative_L2": 3.6919285497924515e-14,
+              "axis_extrapolated_pressure_error": 1.2536351600275829e-22,
+              "analytic_axis_extrapolation_error": 1.253635142750937e-22,
+              "first_four_rows_gradient_max_error_over_global_scale": 6.474354909748127e-18,
+              "first_cell_regularized_pressure": [
+                385.33337680141733,
+                2.8915206547868446e-14
+              ],
+              "exact_first_cell_regularized_pressure": 0.9999997026466809
+            }
+          },
+          "repairs_or_flux": [
+            {
+              "tag": "manufactured_m0",
+              "source_repaired": false,
+              "raw_midpoint_mean_source_radial_integral": [
+                4.1300420139389615e-07,
+                0.0
+              ],
+              "computed_outer_zero_mode_radial_flux": [
+                -2.1474228535143953e-07,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "nr": 768,
+          "nz": 64,
+          "R": 4.0,
+          "L": 6.0,
+          "mapping": 4.0,
+          "modes": {
+            "0": {
+              "pressure_relative_L2": 2.0381565128028646e-09,
+              "pressure_relative_Linf": 5.932564076714238e-09,
+              "gradient_relative_L2": 3.0580911638614716e-07,
+              "gradient_relative_Linf": 1.1773313949272174e-06,
+              "analytic_sample_gradient_relative_L2": 4.1095958224076053e-07,
+              "solver_operator_relative_Linf": 2.4719995373311374e-10,
+              "div_pressure_gradient_plus_source_relative_L2": 2.2389176585769545e-05,
+              "div_pressure_gradient_plus_source_relative_Linf": 5.87624050608858e-05,
+              "scalar_laplacian_plus_source_relative_L2": 1.951520485358094e-11,
+              "axis_extrapolated_pressure_error": 1.6471490837943747e-11,
+              "analytic_axis_extrapolation_error": 2.220446049250313e-16,
+              "first_four_rows_gradient_max_error_over_global_scale": 6.206881381447648e-13,
+              "first_cell_regularized_pressure": [
+                0.9999999256510246,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.999999925663695
+            },
+            "4": {
+              "pressure_relative_L2": 1.659139056179869e-08,
+              "pressure_relative_Linf": 5.474769222232156e-08,
+              "gradient_relative_L2": 8.288035932933406e-07,
+              "gradient_relative_Linf": 3.269461360368208e-06,
+              "analytic_sample_gradient_relative_L2": 1.1137570377003685e-06,
+              "solver_operator_relative_Linf": 8.44974372166009e-13,
+              "div_pressure_gradient_plus_source_relative_L2": 3.2161451589478275e-05,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.00010368961783674112,
+              "scalar_laplacian_plus_source_relative_L2": 4.57567363643073e-13,
+              "axis_extrapolated_pressure_error": 2.447970354703175e-25,
+              "analytic_axis_extrapolation_error": 2.4468471167082113e-25,
+              "first_four_rows_gradient_max_error_over_global_scale": 6.443276455958504e-20,
+              "first_cell_regularized_pressure": [
+                0.999999925657125,
+                0.0
+              ],
+              "exact_first_cell_regularized_pressure": 0.999999925663695
+            },
+            "8": {
+              "pressure_relative_L2": 4.959191993939015e-08,
+              "pressure_relative_Linf": 1.4120839393544958e-07,
+              "gradient_relative_L2": 1.598674635944131e-06,
+              "gradient_relative_Linf": 6.559308995609039e-06,
+              "analytic_sample_gradient_relative_L2": 2.1470365243752003e-06,
+              "solver_operator_relative_Linf": 2.659170514175938e-13,
+              "div_pressure_gradient_plus_source_relative_L2": 4.395225017572936e-05,
+              "div_pressure_gradient_plus_source_relative_Linf": 0.0001338174537229163,
+              "scalar_laplacian_plus_source_relative_L2": 1.3955386356102017e-13,
+              "axis_extrapolated_pressure_error": 4.893916992512222e-25,
+              "analytic_axis_extrapolation_error": 4.893916992498228e-25,
+              "first_four_rows_gradient_max_error_over_global_scale": 5.035998967194121e-20,
+              "first_cell_regularized_pressure": [
+                385.08332047905355,
+                1.156733768184757e-13
+              ],
+              "exact_first_cell_regularized_pressure": 0.999999925663695
+            }
+          },
+          "repairs_or_flux": [
+            {
+              "tag": "manufactured_m0",
+              "source_repaired": false,
+              "raw_midpoint_mean_source_radial_integral": [
+                4.954594212680519e-08,
+                0.0
+              ],
+              "computed_outer_zero_mode_radial_flux": [
+                1.3632960896126487e-11,
+                0.0
+              ]
+            }
+          ]
+        }
+      ],
+      "observed_orders": {
+        "0": {
+          "pressure_relative_L2": [
+            6.482238793873111,
+            7.0603137759402195,
+            8.281506191331728
+          ],
+          "gradient_relative_L2": [
+            4.368057248610749,
+            4.278833774750035,
+            5.385148072946899
+          ],
+          "div_pressure_gradient_plus_source_relative_L2": [
+            2.703210705928177,
+            4.073584677059458,
+            5.03573535869807
+          ]
+        },
+        "4": {
+          "pressure_relative_L2": [
+            4.404038328951349,
+            6.712456762684003,
+            5.822407532302746
+          ],
+          "gradient_relative_L2": [
+            4.6076838927183354,
+            4.164643321167021,
+            5.36892663744216
+          ],
+          "div_pressure_gradient_plus_source_relative_L2": [
+            2.3718057400765042,
+            4.033442719436943,
+            5.006569064863352
+          ]
+        },
+        "8": {
+          "pressure_relative_L2": [
+            4.844809175116808,
+            6.174197872960699,
+            5.702976404031681
+          ],
+          "gradient_relative_L2": [
+            4.739904742177232,
+            4.1742377107999395,
+            5.3546997605149045
+          ],
+          "div_pressure_gradient_plus_source_relative_L2": [
+            1.9867812542286438,
+            3.9734250686467734,
+            4.974897917317531
+          ]
+        }
+      }
+    }
+  },
+  "checks": {
+    "Cylinder": {
+      "all_modes_pressure_and_gradient_decrease": true,
+      "all_modes_operator_residual_below_1e_minus_8": true
+    },
+    "HighOrderCylinder": {
+      "all_modes_pressure_and_gradient_decrease": true,
+      "all_modes_operator_residual_below_1e_minus_8": true
+    }
+  },
+  "seconds": 7.242406845092773,
+  "scope": "Periodic-z compact-radial scalar pressure tests, m=0,4,8. Numerical convergence only; not a whole-space NS validation, no rigorous truncation-error enclosure. A small solve residual does not imply a commuting divergence/gradient projection."
+}

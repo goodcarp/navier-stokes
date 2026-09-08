@@ -1,0 +1,8 @@
+route	url	http	bytes	content_type	saved_as
+arxiv_author_search	http://export.arxiv.org/api/query?search_query=au:%22Kukavica%22+AND+abs:%22bounded+initial+data%22&max_results=30	200	770	application/atom+xml; charset=utf-8	raw/arxiv_kukavica.xml
+arxiv_listing_2003	http://export.arxiv.org/api/query?search_query=au:%22Kukavica_I%22&start=0&max_results=100&sortBy=submittedDate&sortOrder=ascending	200	6928	application/atom+xml; charset=utf-8	raw/arxiv_kukavica_all.xml
+researchgate	https://www.researchgate.net/search/publication?q=On%20local%20uniqueness%20of%20weak%20solutions%20of%20the%20Navier-Stokes%20system%20with%20bounded%20initial%20data	403	21115	text/html; charset=UTF-8	raw/rg.html
+ia_scholar	https://scholar.archive.org/search?q=%22On+local+uniqueness+of+weak+solutions+of+the+Navier-Stokes+system+with+bounded+initial+data%22	200	4428	text/html; charset=UTF-8	raw/ia_scholar.html
+openalex_oa	https://api.openalex.org/works/doi:10.1016/S0022-0396(03)00153-0	200	10942	application/json	raw/openalex.json
+usc_repository	https://digitallibrary.usc.edu/search?q=Kukavica%20Navier-Stokes	404	51594	text/html; charset=utf-8	raw/usc_repo.html
+wayback_index_live	https://web.archive.org/web/20170627135430/http://www-bcf.usc.edu/~kukavica/pdf/index.html	200	37785	text/html	raw/wb_index_rendered.html

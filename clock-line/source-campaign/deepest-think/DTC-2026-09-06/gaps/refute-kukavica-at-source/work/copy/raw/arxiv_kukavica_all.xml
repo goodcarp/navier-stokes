@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/C4NOKTY4qrOwF299WnjkTRigqik</id>
+  <title>arXiv Query: search_query=au:"Kukavica I"&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-09-06T18:14:58Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=au:%22Kukavica+I%22&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>4</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1511.02807v1</id>
+    <title>An anisotropic partial regularity criterion for the Navier-Stokes equations</title>
+    <updated>2015-11-09T19:13:52Z</updated>
+    <link href="https://arxiv.org/abs/1511.02807v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1511.02807v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, we address the partial regularity of suitable weak solutions of the incompressible Navier--Stokes equations. We prove an interior regularity criterion involving only one component of the velocity. Namely, if $(u,p)$ is a suitable weak solution and a certain scale-invariant quantity involving only $u_3$ is small on a space-time cylinder $Q_r(x_0,t_0)$, then $u$ is regular at $(x_0,t_0)$.</summary>
+    <category term="math.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-11-09T19:13:52Z</published>
+    <arxiv:comment>15 pages</arxiv:comment>
+    <arxiv:primary_category term="math.AP"/>
+    <author>
+      <name>I. Kukavica</name>
+    </author>
+    <author>
+      <name>W. Rusin</name>
+    </author>
+    <author>
+      <name>M. Ziane</name>
+    </author>
+    <arxiv:doi>10.1007/s00021-016-0278-1</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s00021-016-0278-1" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.17107v1</id>
+    <title>A unified theory of existence of suitable weak solutions to the 3D incompressible Navier-Stokes equations for non-decaying initial data</title>
+    <updated>2025-10-20T02:45:00Z</updated>
+    <link href="https://arxiv.org/abs/2510.17107v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.17107v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We consider any cover $\mathscr{C}$ of $\mathbb{R}^3$ by balls of radius bigger or equal $1$ satisfying two conditions: (i) any ball intersects at most $σ&gt;0$ other balls, and (ii) intersecting balls have comparable sizes. We consider a natural Morrey-type space such that the $L^2_{\mathrm{uloc}}$ setting of Lemarié-Rieusset (Recent Developments in the Navier-Stokes Problem, 2002) and the dyadic-type space considered by Bradshaw and Kukavica (J. Math. Fluid Mech., 22(1), 2020) are particular cases. We provide a priori estimates and prove local existence of weak solutions in two cases; first, when there exists $ε&gt;0$ such that $|B|^{1/3} \lesssim |x_B|^{1-ε}$ for all $B\in \mathscr{C}$, where $x_B$ denotes the center of~$B$, or when $|B|^{1/3} \gtrsim 1+ |x_B|$ for all $B\in\mathscr{C}$. In particular, we introduce a new non-divergence-free approach to the construction of weak solutions, which simplifies the existence proof in the $L^2_{\mathrm{uloc}}$ setting. In addition, for the dyadic setting, we do not require vanishing at the spatial infinity. The constructed solutions are suitable in the sense of Caffarelli, Kohn, and Nirenberg, thus allowing an application of the partial regularity theory.</summary>
+    <category term="math.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-20T02:45:00Z</published>
+    <arxiv:comment>36 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="math.AP"/>
+    <author>
+      <name>A. Balakrishna</name>
+    </author>
+    <author>
+      <name>I. Kukavica</name>
+    </author>
+    <author>
+      <name>W. S. Ożański</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.01117v2</id>
+    <title>The analytic method of constructing local-in-time solutions of the incompressible Euler equations in Sobolev spaces</title>
+    <updated>2026-07-11T22:48:50Z</updated>
+    <link href="https://arxiv.org/abs/2511.01117v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.01117v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We introduce a new method for constructing local-in-time solutions of the incompressible Euler equations in Sobolev spaces on an arbitrary Sobolev bounded domain. The method is based on a construction of an analytic solution in an analytically approximated domain, after which we apply analytic persistence to extend the analytic solution using given a priori bounds in Sobolev spaces. The method does not introduce any modification or regularization of the equations themselves and appears applicable to many other PDEs.</summary>
+    <category term="math.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-02T23:29:09Z</published>
+    <arxiv:comment>15 pages</arxiv:comment>
+    <arxiv:primary_category term="math.AP"/>
+    <author>
+      <name>I. Kukavica</name>
+    </author>
+    <author>
+      <name>W. S. Ożański</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.13430v1</id>
+    <title>Stabilization of an incompressible fluid-elastic structure system using a vacuum bubble</title>
+    <updated>2026-01-19T22:26:38Z</updated>
+    <link href="https://arxiv.org/abs/2601.13430v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.13430v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We prove a priori estimates for the system of partial differential equations modeling the interaction between an elastic body and an incompressible fluid in a 3D curved domain. The fluid is governed by the incompressible Navier-Stokes equations and contains a bubble whose interior is a vacuum. The elastic body is described by a damped wave equation, and interaction with the fluid takes place along a free interface whose initial domain is curved. We show that the presence of the vacuum bubble stabilizes the system in the sense that it provides control of the average of the pressure function, and hence allows global existence and exponential decay of smooth solutions for small data.</summary>
+    <category term="math.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-19T22:26:38Z</published>
+    <arxiv:primary_category term="math.AP"/>
+    <author>
+      <name>B. Ingimarson</name>
+    </author>
+    <author>
+      <name>I. Kukavica</name>
+    </author>
+    <author>
+      <name>W. S. Ożański</name>
+    </author>
+  </entry>
+</feed>

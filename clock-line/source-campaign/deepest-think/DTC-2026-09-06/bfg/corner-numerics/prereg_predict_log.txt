@@ -1,0 +1,34 @@
+parent-seat measured log Re_E at Re0=100 : {1: 5.027, 2: 6.4616, 3: 7.8523, 4: 9.2388, 5: 10.6252, 6: 12.0114, 7: 13.3977}
+parent-seat measured M*T32 at Re0=100    : {1: None, 2: 1.3446, 3: 0.6667, 4: 0.4477, 5: 0.3379, 6: 0.2716, 7: 0.2272}
+
+H_log check against the six primary points it was fitted to:
+   N=2  logReE= 6.4616  meas 1.3446  H_log 1.3438  resid  +0.06%
+   N=3  logReE= 7.8523  meas 0.6667  H_log 0.6714  resid  -0.69%
+   N=4  logReE= 9.2388  meas 0.4477  H_log 0.4479  resid  -0.05%
+   N=5  logReE=10.6252  meas 0.3379  H_log 0.3361  resid  +0.55%
+   N=6  logReE=12.0114  meas 0.2716  H_log 0.2689  resid  +1.01%
+   N=7  logReE=13.3977  meas 0.2272  H_log 0.2241  resid  +1.36%
+
+PLAN AND PREDICTIONS (M = rho0 = 1, so t is M*t):
+  leg  N  Re0        nu      log(R/rho0)  logRe_E   H_log MTd   H_oct MTd  (s*)
+   A  6       1         1     4.1589    7.4063     0.7997     0.5506  (8.680)
+   A  6       4      0.25     4.1589    8.7926     0.5016     0.4088  (4.340)
+   A  6      16    0.0625     4.1589   10.1789     0.3654     0.3250  (2.170)
+   A  6     100      0.01     4.1589   12.0114     0.2689     0.2720  (1.743)
+   A  6     400    0.0025     4.1589   13.3977     0.2241     0.2720  (1.743)
+   B  6      25      0.04     4.1589   10.6252     0.3361     0.2720  (1.743)
+   B  7    6.25      0.16     4.8520   10.6252     0.3361     0.3049  (3.472)
+   B  5     100      0.01     3.4657   10.6252     0.3361     0.3368  (1.743)
+   C  7     100      0.01     4.8520   13.3977     0.2241     0.2281  (1.743)
+   E  7     400    0.0025     4.8520   14.7840     0.1921     0.2281  (1.743)
+
+ISO-Re_E FAMILIES (the degeneracy breakers) -- H_log says the members are EQUAL:
+   logRe_E = 10.6252 :
+      N=5 Re0=100     log(R/rho0)=3.4657  H_log 0.3361   H_oct 0.3368 (s*=1.743)
+      N=6 Re0=25      log(R/rho0)=4.1589  H_log 0.3361   H_oct 0.2720 (s*=1.743)
+      N=7 Re0=6.25    log(R/rho0)=4.8520  H_log 0.3361   H_oct 0.3049 (s*=3.472)
+   logRe_E = 13.3977 :
+      N=6 Re0=400     log(R/rho0)=4.1589  H_log 0.2241   H_oct 0.2720 (s*=1.743)
+      N=7 Re0=100     log(R/rho0)=4.8520  H_log 0.2241   H_oct 0.2281 (s*=1.743)
+
+SCRIPT-SHA256 01a6786e471c173f520ed3d7d85b615e5263d0fbbf06c6de093f0b927eff5f8b

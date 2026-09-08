@@ -1,0 +1,15 @@
+
+=== (e) (D-B) near the origin: a(x) vs -3 alpha log|x|, and |grad a| ===
+  |x|= 0.300: a=4.755412  |grad a|=0.03243   (3 alpha/|x| = 0.00053)  [185s]
+  |x|= 0.100: a=4.758870  |grad a|=0.01397   (3 alpha/|x| = 0.00159)  [141s]
+  |x|= 0.030: a=4.759469  |grad a|=0.01128   (3 alpha/|x| = 0.00531)  [124s]
+  |x|= 0.010: a=4.759704  |grad a|=0.02205   (3 alpha/|x| = 0.01592)  [110s]
+  |x|= 0.003: a=4.759910  |grad a|=0.06610   (3 alpha/|x| = 0.05307)  [104s]
+  |x|= 0.001: a=4.760089  |grad a|=0.19379   (3 alpha/|x| = 0.15920)  [114s]
+     slope da/dlog|x| between 0.3 and 0.1: -0.003148   predicted -3alpha = -0.000159
+     slope da/dlog|x| between 0.1 and 0.03: -0.000497   predicted -3alpha = -0.000159
+     slope da/dlog|x| between 0.03 and 0.01: -0.000214   predicted -3alpha = -0.000159
+     slope da/dlog|x| between 0.01 and 0.003: -0.000172   predicted -3alpha = -0.000159
+     slope da/dlog|x| between 0.003 and 0.001: -0.000162   predicted -3alpha = -0.000159
+
+WROTE r3_results_e.json

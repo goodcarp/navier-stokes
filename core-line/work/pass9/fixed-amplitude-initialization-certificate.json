@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "selected_parameters": {
+    "A": "1020",
+    "lam": "1/4",
+    "nu": "1/1000"
+  },
+  "family_lam_interval": [
+    "1/8",
+    "1/4"
+  ],
+  "X_lower": "293913/50000",
+  "beta_prime_lower": "17391/700000",
+  "complete_pressure_T_upper": "-634112687/50000000",
+  "beta_second_lower": "4264878809/700000000",
+  "selected_mean_derivative_lower": "20499/200",
+  "uniform_mean_derivative_lower": "8871/800",
+  "uniform_fractional_fluctuation_energy_derivative_lower": "12853/2205",
+  "scope": "Actual initial identities and inequalities for an explicit amplitude; no full 3D time evolution, duration, inherited return or blowup.",
+  "dependencies": [
+    "pass5 all-amplitude T(H)<102-(23199/1000)H and C_v lower bound",
+    "pass8 leading torque, energy, D_L and E_L bounds",
+    "pass9 full off-neutral core identity and independent-amplitude mean-jet formula"
+  ]
+}

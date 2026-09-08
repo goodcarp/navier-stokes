@@ -1,0 +1,54 @@
+  L= 10.0 rho*=1.00 lam=1.00 phi=30.00 | K2_exact= 2.2239 reduction= 6.8500 BOUND=  7.8414 slack=  3.53 dbar=0.0100 C1=5.7e-07 C3=2.9e-08 C4=7.9e-16
+  L= 10.0 rho*=1.00 lam=1.25 phi=48.43 | K2_exact= 3.4026 reduction=10.6322 BOUND= 12.2972 slack=  3.61 dbar=0.0126 C1=3.8e-06 C3=1.0e-07 C4=3.6e-16
+  L= 10.0 rho*=1.00 lam=1.50 phi=62.83 | K2_exact= 5.3962 reduction=15.9140 BOUND= 19.5408 slack=  3.62 dbar=0.0151 C1=5.2e-05 C3=3.1e-08 C4=7.7e-16
+  L= 10.0 rho*=1.50 lam=1.00 phi=30.00 | K2_exact= 0.9432 reduction= 3.6884 BOUND=  4.4834 slack=  4.75 dbar=0.0151 C1=2.2e-06 C3=1.4e-07 C4=3.1e-16
+  L= 10.0 rho*=1.50 lam=1.25 phi=48.43 | K2_exact= 1.2011 reduction= 5.1011 BOUND=  6.3207 slack=  5.26 dbar=0.0189 C1=1.6e-05 C3=4.4e-07 C4=5.0e-16
+  L= 10.0 rho*=1.50 lam=1.50 phi=62.83 | K2_exact= 1.4508 reduction= 6.0318 BOUND=  9.4174 slack=  6.49 dbar=0.0225 C1=5.8e-04 C3=2.4e-05 C4=1.0e-15
+  L= 10.0 rho*=2.00 lam=1.00 phi=30.00 | K2_exact= 0.7122 reduction= 2.0735 BOUND=  2.6609 slack=  3.74 dbar=0.0202 C1=4.5e-06 C3=2.8e-07 C4=6.7e-16
+  L= 10.0 rho*=2.00 lam=1.25 phi=48.43 | K2_exact= 0.8469 reduction= 3.1091 BOUND=  3.9075 slack=  4.61 dbar=0.0253 C1=1.6e-05 C3=9.4e-07 C4=8.2e-16
+  L= 10.0 rho*=2.00 lam=1.50 phi=62.83 | K2_exact= 1.0445 reduction= 4.0414 BOUND=  5.2358 slack=  5.01 dbar=0.0303 C1=4.6e-04 C3=9.2e-06 C4=5.3e-16
+  L= 10.0 rho*=3.00 lam=1.00 phi=30.00 | K2_exact= 0.4857 reduction= 1.2652 BOUND=  1.6738 slack=  3.45 dbar=0.0303 C1=1.2e-05 C3=4.1e-07 C4=3.5e-16
+  L= 10.0 rho*=3.00 lam=1.25 phi=48.43 | K2_exact= 0.5733 reduction= 1.8991 BOUND=  2.4011 slack=  4.19 dbar=0.0377 C1=2.3e-05 C3=1.7e-06 C4=1.2e-16
+  L= 10.0 rho*=3.00 lam=1.50 phi=62.83 | K2_exact= 0.7246 reduction= 2.5156 BOUND=  3.3180 slack=  4.58 dbar=0.0450 C1=3.7e-04 C3=1.1e-05 C4=5.9e-16
+  L= 40.0 rho*=1.00 lam=1.00 phi=30.00 | K2_exact= 2.2239 reduction= 6.8500 BOUND=  7.8415 slack=  3.53 dbar=0.0100 C1=1.6e-05 C3=1.0e-06 C4=9.5e-16
+  L= 40.0 rho*=1.00 lam=1.25 phi=48.43 | K2_exact= 3.4026 reduction=10.6322 BOUND= 12.2972 slack=  3.61 dbar=0.0126 C1=1.1e-05 C3=3.5e-07 C4=1.1e-15
+  L= 40.0 rho*=1.00 lam=1.50 phi=62.83 | K2_exact= 5.3962 reduction=15.9141 BOUND= 19.5408 slack=  3.62 dbar=0.0151 C1=5.7e-05 C3=3.1e-07 C4=0.0e+00
+  L= 40.0 rho*=1.50 lam=1.00 phi=30.00 | K2_exact= 0.9432 reduction= 3.6885 BOUND=  4.4834 slack=  4.75 dbar=0.0151 C1=6.7e-05 C3=4.3e-06 C4=6.2e-16
+  L= 40.0 rho*=1.50 lam=1.25 phi=48.43 | K2_exact= 1.2011 reduction= 5.1011 BOUND=  6.3207 slack=  5.26 dbar=0.0189 C1=8.3e-05 C3=3.6e-06 C4=1.2e-16
+  L= 40.0 rho*=1.50 lam=1.50 phi=62.83 | K2_exact= 1.4508 reduction= 6.0318 BOUND=  9.4175 slack=  6.49 dbar=0.0225 C1=6.9e-04 C3=1.9e-05 C4=5.7e-16
+  L= 40.0 rho*=2.00 lam=1.00 phi=30.00 | K2_exact= 0.7122 reduction= 2.0735 BOUND=  2.6609 slack=  3.74 dbar=0.0202 C1=1.3e-04 C3=8.3e-06 C4=1.7e-16
+  L= 40.0 rho*=2.00 lam=1.25 phi=48.43 | K2_exact= 0.8469 reduction= 3.1091 BOUND=  3.9075 slack=  4.61 dbar=0.0253 C1=1.1e-04 C3=6.8e-06 C4=2.1e-16
+  L= 40.0 rho*=2.00 lam=1.50 phi=62.83 | K2_exact= 1.0445 reduction= 4.0415 BOUND=  5.2359 slack=  5.01 dbar=0.0303 C1=5.7e-04 C3=1.5e-05 C4=1.8e-16
+  L= 40.0 rho*=3.00 lam=1.00 phi=30.00 | K2_exact= 0.4856 reduction= 1.2652 BOUND=  1.6739 slack=  3.45 dbar=0.0303 C1=3.4e-04 C3=2.1e-05 C4=2.3e-16
+  L= 40.0 rho*=3.00 lam=1.25 phi=48.43 | K2_exact= 0.5733 reduction= 1.8992 BOUND=  2.4012 slack=  4.19 dbar=0.0377 C1=2.5e-04 C3=1.5e-05 C4=3.7e-16
+  L= 40.0 rho*=3.00 lam=1.50 phi=62.83 | K2_exact= 0.7246 reduction= 2.5157 BOUND=  3.3180 slack=  4.58 dbar=0.0450 C1=5.8e-04 C3=6.5e-07 C4=7.8e-16
+
+k7 summary: {
+ "max_bound_all": 19.54084211903222,
+ "max_exact_all": 5.396239931960105,
+ "max_bound_inset15": 9.417459368542547,
+ "max_exact_inset15": 1.4507830945654456,
+ "max_bound_inset20": 5.23585019588234,
+ "max_exact_inset20": 1.0445343467443207,
+ "min_slack": 3.4465107595680986,
+ "max_slack": 6.4913038780970345,
+ "worst_C1": 0.0006871322773890005,
+ "worst_C3": 2.4252648738750698e-05,
+ "worst_C4": 1.087486455389231e-15
+}
+
+k7  L-independence (L=40 / L=10):
+      rho*=1.0,lam=1.0       bound 1.000003   exact 1.000005
+      rho*=1.0,lam=1.25      bound 1.000002   exact 1.000004
+      rho*=1.0,lam=1.5       bound 1.000002   exact 1.000003
+      rho*=1.5,lam=1.0       bound 1.000008   exact 1.000005
+      rho*=1.5,lam=1.25      bound 1.000006   exact 1.000008
+      rho*=1.5,lam=1.5       bound 1.000006   exact 1.000007
+      rho*=2.0,lam=1.0       bound 1.000017   exact 0.999990
+      rho*=2.0,lam=1.25      bound 1.000013   exact 1.000015
+      rho*=2.0,lam=1.5       bound 1.000013   exact 1.000008
+      rho*=3.0,lam=1.0       bound 1.000040   exact 0.999959
+      rho*=3.0,lam=1.25      bound 1.000032   exact 1.000039
+      rho*=3.0,lam=1.5       bound 1.000024   exact 1.000009
+
+wrote k7_results.json

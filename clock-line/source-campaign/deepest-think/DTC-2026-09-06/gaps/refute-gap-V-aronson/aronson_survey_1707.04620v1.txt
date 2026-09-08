@@ -1,0 +1,249 @@
+arXiv:1707.04620v1 [math.AP] 14 Jul 2017
+
+GAUSSIAN ESTIMATES: A BRIEF HISTORY
+D.G.Aronson
+School of Mathematics
+University of Minnesota
+Minneapolis MN 55455
+e-mail: arons001@umn.edu
+ABSTRACT: Two-sided Gaussian estimates for the fundamental solution of a
+second order linear parabolic differential equation are upper and lower bounds
+in terms of the fundamental solution of the classical heat conduction equation.
+In his seminal 1958 paper Nash stated, without proof, two-sided non-Gaussian
+bounds for the fundamental solution of a uniformly parabolic divergence
+structure equation assuming only boundedness of the coefficients. In his
+1967-1968 papers Aronson derived truly Gaussian estimates for the
+fundamental solutions of a large class of linear parabolic equations (including
+the divergence structure equations) under minimal non-regularity assumptions
+on the coefficients. Subsequently in 1986 Fabes & Stroock derived Gaussian
+estimates for the divergence structure equation directly from the ideas of Nash
+and went on to prove Nash’s continuity theorem and the Harnack inequality as
+a consequence of their estimate. In this note I describe these results together
+with various extensions.
+Let Γ(x, t; ξ, τ ) denote the fundamental solution of the divergence structure
+second order linear parabolic equation
+N
+ N
+N
+P
+P
+P
+bj (x, t)∂xj u−c(x, t)u = 0, (1)
+∂xJ
+aij (x, t)∂xi u + aj (x, t)u −
+∂t u−
+j=1
+
+j=1
+
+i=1
+
+where (x, t) ∈ S = RN × (0, T ) for some T > 0. If the coefficients of (1) are
+smooth then the fundamental solution exists in the classical sense, otherwise it
+must be interpreted in the weak sense (cf. [2]). The two-sided Gaussian estimate
+for Γ is the following:
+Theorem: There exist positive constants α1 , α2 and C depending only on
+T and the structure of equation (1) such that
+C −1 g1 (x − ξ, t − τ ) ≤ Γ(x, t : ξ, τ ) ≤ Cg2 (x − ξ, t − τ )
+
+(2)
+
+for all (x, t), (ξ, τ ) ∈ S with t > τ , where gi (x, t) denotes the (Gaussian) fundamental solution of the heat equation αi ∆u = ∂t u for i = 1, 2.
+Note that this estimate does not require any smoothness assumption on the
+coefficients of equation (1).
+
+1
+
+The Gaussian estimate (2) was first proved in 1967 for the special case of
+the equation
+N
+
+N
+P
+P
+∂xj
+∂t u −
+(3)
+aij (x, t, )∂xi u = 0
+j=1
+
+i=1
+
+in [1] and subsequently extended to the general case of equation (1) in [2].
+In his seminal 1958 paper [10] John Nash considers equation (3) and proves
+Hölder continuity of solutions assuming only uniform parabolicity and bounded
+measurable coefficients (as is also done in [1]). In the appendix to his paper he
+states two-sided estimates for the fundamental solution, but his estimates are
+not Gaussian and complete proofs are not provided. He also points out that it is
+possible to derive the Harnack inequality from his bounds for the fundamental
+solution.
+There are two distinct methods of deriving Gaussian estimates for the fundamental solution of (3). In the original 1967 derivation [1] the estimates are
+obtained as a consequence of an energy estimate, along with the Harnack inequality and Hölder continuity of solutions proved in [9] and [3]. On the other
+hand in their 1986 paper, Fabes & Stroock made a detailed study of Nash’s work
+and discovered that his method can be made to yield the two-sided Gaussian
+estimate directly. They then showed that the estimate can be used to derive
+the Hölder continuity of solutions and the Harnack inequality. Neither Nash or
+Fabes & Stroock consider the full equation (1). Thus the Gaussian estimates
+for the full equation (1) are still only known as a consequence of the various
+properties of weak solutions proved in [9] and [3].
+In [1] it is assumed that the coefficients aij (x, t) in equation (3) are bounded
+and measurable in S, and that there exists a constant ν > 0 such that (with
+summation over repeated indices)
+aij (x, t)ζ i ζ j ≥ ν |ζ|2
+almost everywhere in S for all ζ ∈ RN . The existence of the weak fundamental
+solution Γ is proved under conditions which include these in [2]. The constants
+α1 , α2 and C in the estimate (2) depend only on ν, N, T and the bounds for the
+coefficients of (3). For the general equation (1) the Gaussian bounds are proved
+in [2] under the following assumptions on the structure of equation (3) which
+will be referred to collectively as (H). There exist constants 0 < ν, M < ∞ and
+0 ≤ M0 < ∞ such that the coefficients of equation (1) satisfy
+(H.1) For all ζ ∈ RN and for almost all (x, t) ∈ S
+2
+
+aij (x, t)ζ i ζ j ≥ ν |ζ| and |aij | ≤ M.
+(H.2) Each of the coefficient aj and bj belong to some Bochner space Lpq (S),
+where
+N
+1
+1
+2 < p, q ≤ ∞ and
++ < ,
+2p q
+2
+and |aj (x, t| , |bj (x, t| ≤ M0 almost everywhere in S.
+
+2
+
+(H.3) c ∈ Lpq (S), where
+1 < p, q ≤ ∞ and
+
+N
+1
++ <1
+2p q
+
+and c(x, t) ≤ M0 almost everywhere in S.
+existence of a weak fundamental solution under the hypothesis (H) is proved in
+[2]. The constants α1 , α2 and C in the estimate (2) depend only on N, T and
+the structure of equation (1), i.e., the hypothesis (H).
+The proof of the lower bound in (2) in both [1] and [2] rely heavily on
+consequences of the regularity of solutions and the pointwise Harnack inequality
+proved in [3] and [9]. On the other hand the proof of the upper bound does not
+involve the Harnack inequality or its consequences. Instead it uses the estimate
+(first proved by Nash in the special case of equation (3))
+Γ(x, t; ξ, τ ) ≤ C(t − τ )−N/2
+
+(4)
+
+in S × S for t > τ , where the constant C depends only on N, T and (H); a
+technical lemma which gives an estimate for the magnitude inside a ball of
+a solution which is initially supported in the exterior of that ball; and the
+semigroup (reproducing) property of the fundamental solution.
+In his book [4], Davis considers equation (3) in the case the coefficients
+aij are independent of t and depend only on x. He introduces a technique which
+enables him to sharpen the upper bound in (2) by replacing the Euclidian distance with the Riemannian distance associated with the coefficients. Fabes &
+Stroock [6] refine Nash’s sketch of the argument he indicated to establish his
+non-Gaussian upper bound and use it together with Davis’ method to prove the
+Gaussian upper bound (2) for the fundamental solution of equation (3). They
+point out “that the upper bound itself is an important tool for our understanding
+and simplification of those ideas of Nash needed to obtain the lower bound’ ” in
+(2). Although their procedure is basically due to Nash, the Gaussian upper
+bound allows them to simplify his argument and refine his lower bound. The
+derivation of the lower bound in [6] depends on two estimates,.both essentially
+due to Nash: the inequality (4) and the existence of a constant B < ∞ depending only on ν such that for all
+R
+2
+|x| ≤ 1 e−π|y| log Γ(x, 1; y, 0)dy ≥ −B.
+
+Using these estimates together with the semigroup property of the fundamental
+solution yield the Gaussian lower bound. Using the Gaussian bound (2), Fabes
+& Stroock go on to derive Nash’s Hölder continuity result and the Harnack inequality. For the latter result they use the methods of Krylov & Safonov [7]. It
+should be emphasized that Fabes & Stroock derive their bounds directly from
+equation (3) without any reference to regularity properties of the solution and,
+indeed derive the regularity results as a consequence of their bounds. Fabes [5]
+extended Nash’s ‘moment’ bound to estimate all of the moments of the fundamental solution of (3) and applies Davis’ techniques to prove Davis’ Riemannian
+3
+
+upper bound. He also shows that these methods can yield upper bounds for heat
+kernels on a class of complete Riemann manifolds.
+If the coefficients aij in equation (3) are independent of t and N ≥ 3, then
+Z ∞
+Γ(x, t; ξ, 0) = G(x, ξ),
+0
+
+where G(x, ξ) is the fundamental solution of the elliptic equation
+N
+P
+
+j=1
+
+∂xj
+
+N
+P
+
+aij (x)∂xi u = 0.
+
+i=1
+
+As noted in [1], in this case the constants in estimate (2) can be chosen independent of T and we can integrate these estimates over R+ to obtain the
+estimate
+2−N
+2−N
+K −1 |x − ξ|
+≤ G(x, ξ) ≤ K |x − ξ|
+.
+This estimate is not new having been derived directly from potential theoretic
+considerations by Littman, Stampacchia & Weinberger [8] and H. Royden [13].
+Porper & Eidel’man [12] consider a slight generalization of equations (1) and
+(3) involving a coefficient p(x) multiplying ∂t u. Using essentially the arguments
+employed in [1] and [2], they give a detailed account of the derivation of Hölder
+continuity, the Harnack inequality and the two-sided Gaussian estimate for the
+analogue of equation (3) and a very brief description of these results of the
+analogue of equation (1) under conditions similar to (H).
+In [11] Norris and Stroock consider the operator
+L ≡ ∇ · (A(x, t)∇ + AE(x, t) · ∇ − ∇ · (AÊ(x.t)) + C(x, t),
+where the coefficients of L are measurable functions on RN × R. Here A is an
+N × N positive-definite symmetric matrix, E and Ê are in RN and C is in
+R. Their main result is a very precise two-sided estimate for the fundamental
+solution of Lu = ∂t u based on energy functions associated with the coefficients
+of L. However they are forced to assume the uniform continuity of A and E − Ê.
+REFERENCES
+1. D.G.Aronson Bounds for the Fundamental Solution of a Parabolic Equation, Bull. AMS 73(1967), 890-896.
+2. D.G.Aronson Non-Negative Solutions of Linear Parabolic Equations,
+Ann. Scuola Norm. Sup. Pisa 22(1968), 607-694: Non-Negative Solutions of
+Linear Parabolic Equations: An Addendum, Ann. Scuola Norm. Sup. Pisa
+25(1971), 221-228.
+3. D.G.Aronson & J.Serrin, Local Behavior of Solutions of Quasilinear
+Parabolic Equations, Arch. Rat. Mech. Anal. 25(1967), 81-122.
+4. E.B.Davis Heat Kernels and Spectral Theory, Cambridge Tracts in
+Mathematics 92, Cambridge University Press 1989.
+4
+
+5. E.B.Fabes Gaussian Upper Bounds on the Fundamental Solution of
+Parabolic Equations: the Method of Nash, Lecture Notes in Mathematics 1563(1993),
+1-20, Springer-Verlag.
+6. E.B.Fabes & D.W.Stroock A New Proof of Moser’s Parabolic Harnack
+Inequality Using Old Ideas of Nash, Arch. Rat. Mech. Anal. 96(1986), 327-338.
+7. N.V.Krylov & M.V.Safonov A certain property of solutions of parabolic
+equations with measurable coefficients, Math. USSR Izv. 16(1981), 151-164.
+8. W.Littman, G.Stampacchia & H.F.Weinberger Regular Points for Elliptic
+Equations with Discontinuous Coefficients, Ann. Scuola Norm. Sup. Pisa
+17(1968), 43-77.
+9. J.Moser A Harnack Inequality for Parabolic Differential Equations Comm.
+Pure Appl. Math. 17(1964), 101-134; A Correction to “A Harnack Inequality
+for Parabolic Differential Equations”, Comm. Pure Appl. Math. 20(1967),
+231-236.
+10. J.Nash Continuity of Solutions of Parabolic and Elliptic Equations,
+Amer. J. Math. 80(1958), 931-954.
+11. James R. Norris & Daniel W. Stroock Estimates on the Fundamental Solution to Heat Flows with Uniformly Elliptic Coefficients, Proc. London Math.
+Soc. 62(1991), 373-402.
+12. F.O.Proper & S.D.Eidel’man Two-Sided Estimates of the Fundamental
+Solution of Second Order Parabolic Equations and Some Applications, Russian
+Math. Surveys 39(1984), 119-178.
+13. H.Royden The Growth of a Fundamental Solution of an Elliptic Divergence Structure Equation, Studies in Mathematical Analysis and Related
+Topics: Essays in Honor of George Polya, Stanford 1962, 333-340.
+
+5
+
+

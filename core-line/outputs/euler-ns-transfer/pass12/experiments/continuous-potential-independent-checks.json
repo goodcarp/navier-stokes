@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "scope": "Small dense-QR equivalence, exact polynomial Gram degree checks and a sample-norm counterexample; no production fit or residual enclosure.",
+  "source_sha256": {
+    "continuous_potential_fit.py": "62fc8b90f6832bec425c8d27417e2cd971ec3d618b6542006968502dd5fd97bf",
+    "compact_potential_reconstruction.py": "e5ea11ec43ce683aa5310cb3697dfe06d16a4633c3858622d0fee74daab85739",
+    "observe_compact_reconstruction.py": "b390e8bac8a690b04205872796334d62f2705e1e53e817e4fdef8117839ff845",
+    "check_continuous_potential_fit.py": "4ff1e5d86218088bd13bce93cf9ef84d25d1e38893832bdcc508b115e8aeff1b"
+  },
+  "results": [
+    {
+      "m": 0,
+      "mapping": 3.0,
+      "dense_QR_relative": 7.75947509173208e-14,
+      "normal_orthogonality": 1.2028185895622405e-15,
+      "maximum_continuous_projected_norm_ratio": 0.3539253408668392,
+      "cross_Gram_relative": 0.0,
+      "reported_backward": 3.848218128397396e-14
+    },
+    {
+      "m": 4,
+      "mapping": 3.0,
+      "dense_QR_relative": 8.668364835332971e-16,
+      "normal_orthogonality": 3.579335626710734e-17,
+      "maximum_continuous_projected_norm_ratio": 0.36424279616412014,
+      "cross_Gram_relative": 2.2317314691206627e-19,
+      "reported_backward": 5.082523637091157e-16
+    },
+    {
+      "m": 16,
+      "mapping": 3.0,
+      "dense_QR_relative": 3.905494548296808e-16,
+      "normal_orthogonality": 3.2806246619341534e-17,
+      "maximum_continuous_projected_norm_ratio": 0.4575195922943291,
+      "cross_Gram_relative": 4.0658321461764036e-20,
+      "reported_backward": 3.1875435832644663e-16
+    }
+  ],
+  "invisible_axis_bump": {
+    "epsilon": 0.009371986588394172,
+    "sampled_velocity_norm": 0.0,
+    "central_rotation": 1.0,
+    "exact_horizontal_L2_squared_factor": "pi*epsilon^4/380",
+    "interpretation": "Multiplying by any amplitude keeps all MAC velocity samples zero and scales actual energy by amplitude\u00b2; H4 and higher norms are also uncontrolled.",
+    "scope": "An admissible smooth-enough compact potential family, not a claim this exact bump lies in the fixed twelve-interval degree-nine trial space."
+  }
+}

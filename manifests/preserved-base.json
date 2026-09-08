@@ -1,0 +1,3611 @@
+{
+  "commit": "a37d92e6053a5c9de03cc078d65634cf01807f19",
+  "files": [
+    {
+      "original_path": "README.md",
+      "preserved_path": "provenance/original-root-readme-a37d92e.md",
+      "bytes": 1569,
+      "sha256": "1e0c98125e2c424ac2acf6366a2d07a2925e9b723cf1f312dc15d0c012b0dd37"
+    },
+    {
+      "original_path": "analysis/00_event_record_2026-09-08.md",
+      "preserved_path": "provenance/original-base-a37d92e/analysis/00_event_record_2026-09-08.md",
+      "bytes": 5706,
+      "sha256": "0191900b2848a88b34cdafad86d3fa3dc0b96fbcf1c8e819bf817f8010c22aaa"
+    },
+    {
+      "original_path": "analysis/01_dissipation_ceiling_of_the_layered_cascade.md",
+      "preserved_path": "analysis/01_dissipation_ceiling_of_the_layered_cascade.md",
+      "bytes": 32498,
+      "sha256": "cd6273e233e8b8268fe36711d04723e7752dac35d7afae57fcdebd708e1d8840"
+    },
+    {
+      "original_path": "audit/01_lean_statement_audit.md",
+      "preserved_path": "audit/01_lean_statement_audit.md",
+      "bytes": 16846,
+      "sha256": "5621228e7d5cd48ffc9d93bfcf583f38ce7082cb2f50f890461543ca8144e437"
+    },
+    {
+      "original_path": "audit/sources_SHA256SUMS.txt",
+      "preserved_path": "audit/sources_SHA256SUMS.txt",
+      "bytes": 311,
+      "sha256": "3cc3eff15425aa275334c0edf77672dbb18553fab196faf3f9c7379f44f88ff0"
+    },
+    {
+      "original_path": "lean/.gitignore",
+      "preserved_path": "lean/.gitignore",
+      "bytes": 7,
+      "sha256": "b3ad09fc93f83fdbd0bee771258dd4a58d3798fd7e6048611dde5a804bb43f1e"
+    },
+    {
+      "original_path": "lean/AXIOMS.txt",
+      "preserved_path": "lean/AXIOMS.txt",
+      "bytes": 10077,
+      "sha256": "578b2ed19c0aecb1f2c8be257cc4914bbef6486e57fa543196bfbbcb93e237ca"
+    },
+    {
+      "original_path": "lean/Axioms.lean",
+      "preserved_path": "lean/Axioms.lean",
+      "bytes": 4104,
+      "sha256": "b5efc1fa8bd806706ea27911180d0c0437d1c069ba959f771c5842b4635b624d"
+    },
+    {
+      "original_path": "lean/Cores.lean",
+      "preserved_path": "lean/Cores.lean",
+      "bytes": 137,
+      "sha256": "902f368d14738630b3feb2d54596ebf81f33eff05c8dc595d3f15af4143a360c"
+    },
+    {
+      "original_path": "lean/Cores/CeilingExponent.lean",
+      "preserved_path": "lean/Cores/CeilingExponent.lean",
+      "bytes": 6639,
+      "sha256": "68687516aa6f335e2994f347e6c5794f5a4fdd272097349d86ebaee23a7a6c8b"
+    },
+    {
+      "original_path": "lean/Cores/CircleMeasure.lean",
+      "preserved_path": "lean/Cores/CircleMeasure.lean",
+      "bytes": 9912,
+      "sha256": "e252b3582cd71a28653193609a6521b06cf9811edce243a77265afb44cdfd70e"
+    },
+    {
+      "original_path": "lean/Cores/CriticalityExponent.lean",
+      "preserved_path": "lean/Cores/CriticalityExponent.lean",
+      "bytes": 10461,
+      "sha256": "b1650ac183fc9f8f7aab3471b915f79fd9d6f75e6c3a0626ccdd6fcc12735d81"
+    },
+    {
+      "original_path": "lean/Cores/Receiver.lean",
+      "preserved_path": "lean/Cores/Receiver.lean",
+      "bytes": 17044,
+      "sha256": "f4e53f863b55d8112e4d85f28cc906d85fd29b663ba6dae42b1cf0fa4b141f43"
+    },
+    {
+      "original_path": "lean/Cores/StrainedCore.lean",
+      "preserved_path": "lean/Cores/StrainedCore.lean",
+      "bytes": 25623,
+      "sha256": "8d420e8d03b8f92d7f36db29bc86e60c7c796310d69a87f38bd8f93dc4c42fac"
+    },
+    {
+      "original_path": "lean/README.md",
+      "preserved_path": "lean/README.md",
+      "bytes": 22399,
+      "sha256": "9dcce456bb72462e4b1330229a3968176cb63c6fbc46d9ec87de8aaef1c14ca0"
+    },
+    {
+      "original_path": "lean/lake-manifest.json",
+      "preserved_path": "lean/lake-manifest.json",
+      "bytes": 3139,
+      "sha256": "c143631e02d2fe6b1771ed51371d55fb250adf68ad55997e1c3e86f07aafc9a3"
+    },
+    {
+      "original_path": "lean/lakefile.toml",
+      "preserved_path": "lean/lakefile.toml",
+      "bytes": 166,
+      "sha256": "4a459d94b84f78538e838fe2e0322616e5a26f0820214a1fa712459b91416de7"
+    },
+    {
+      "original_path": "lean/lean-toolchain",
+      "preserved_path": "lean/lean-toolchain",
+      "bytes": 25,
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "original_path": "page/forced-route-2026-09-08.html",
+      "preserved_path": "provenance/original-base-a37d92e/page/forced-route-2026-09-08.html",
+      "bytes": 69204,
+      "sha256": "5ed4a53a6fcaaa3235548c99df699101e256567a02cb22716445304a32cd88eb"
+    },
+    {
+      "original_path": "replication/README.md",
+      "preserved_path": "replication/README.md",
+      "bytes": 1676,
+      "sha256": "3e419d75382306337a054e3d1c4d091eac93d40e54c4b04b2d9fb85dad86700e"
+    },
+    {
+      "original_path": "strained-core/README.md",
+      "preserved_path": "provenance/original-base-a37d92e/strained-core/README.md",
+      "bytes": 786,
+      "sha256": "86a2e8a7d0d8974a66fff17e8f52b8ec00fec91c81d0dfe9107aba895dd51175"
+    },
+    {
+      "original_path": "strained-core/REPLICATION.md",
+      "preserved_path": "strained-core/REPLICATION.md",
+      "bytes": 41635,
+      "sha256": "8ba86cd4e30d5f9f1d63d104bb2113a77df99bdefbaf752c8a10eb0e56a86525"
+    },
+    {
+      "original_path": "strained-core/REPLICATION_RESULTS.json",
+      "preserved_path": "strained-core/REPLICATION_RESULTS.json",
+      "bytes": 63686,
+      "sha256": "cc80dd332052eaacef2b771d92216687106fa10c1256ed9f16e5abde1cae3474"
+    },
+    {
+      "original_path": "strained-core/SHA256SUMS",
+      "preserved_path": "strained-core/SHA256SUMS",
+      "bytes": 59226,
+      "sha256": "ef8dae1e888665b3944eec42c7051a0b60443cabd8ed1e591288551bb84b2bb2"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/CHECK_RESULTS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/CHECK_RESULTS.txt",
+      "bytes": 1660,
+      "sha256": "20375b9e4abc5c3185c4896bf4f0f5756b775476dc865ab22fe742c263c60505"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/NEXT_TARGET.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/NEXT_TARGET.md",
+      "bytes": 11172,
+      "sha256": "18850da3b0fac46ccc470f9b367e0a3f54b9867b8273844ea5869fd0521b8d90"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/REPORT.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/REPORT.md",
+      "bytes": 12218,
+      "sha256": "996f111c4d886e4400306930830bffbde6bceb13eaf0faef74e5dfa24a3401fa"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/SHA256SUMS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/SHA256SUMS.txt",
+      "bytes": 842,
+      "sha256": "886d39f06be0d61437c453fa4d40cb1e5fdd7d0dd522c6f40852a767c2d536e9"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/SOURCES.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/SOURCES.json",
+      "bytes": 5352,
+      "sha256": "f0905ca43918ac4558103c117e060b4ce097b2854afa4bf5c3d37ddf3578e3fe"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/STATUS.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/STATUS.md",
+      "bytes": 4258,
+      "sha256": "3e34f883c9106d866dc0f7a14771e30394dd31ba0134706a556ce9ac5854823e"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/VERIFICATION.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/VERIFICATION.md",
+      "bytes": 4175,
+      "sha256": "a63a82b172f061f5ad4aff794e668b5ac8907f6c225bbed6dcac95c99e0c5393"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/checks/direction_check.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/checks/direction_check.py",
+      "bytes": 1797,
+      "sha256": "2d96029bca4b6bf3c0d9163fc8766056cb8e3f6b46a1c13248bfd5e4599bcfb9"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/checks/phase_heat_check.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/checks/phase_heat_check.py",
+      "bytes": 2680,
+      "sha256": "ab6718aa9ba9da52cb3f76bb2fc85c69d3ef0d2f534789c9ca1cdfc5c172e975"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/checks/run_checks.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/checks/run_checks.py",
+      "bytes": 594,
+      "sha256": "043341a2e04017bffa2a4a7f1d1b9d3ae51b20d7aa26e0d4b96dac3c19ec4bbc"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/checks/viscosity_check.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/checks/viscosity_check.py",
+      "bytes": 2305,
+      "sha256": "b0e287cfabf5e8df8479122237797c12484e6c85806ee5675ba76249cd75de96"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/CHECK_RESULTS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/CHECK_RESULTS.txt",
+      "bytes": 2680,
+      "sha256": "bd2cf18f1d7c90e7ab4f050daabd8db1fc0ae3fd29e6d931496f437bbe8ecae7"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/REPORT.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/REPORT.md",
+      "bytes": 6204,
+      "sha256": "32891a4fc0319f9c166546996883228c654c180a8c87e842c0ce5b5326191bf8"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/SHA256SUMS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/SHA256SUMS.txt",
+      "bytes": 1546,
+      "sha256": "917934a9fd16a0ee05c9603b2ad3349f1dee003c1928397fe2f86e7fcd3b6ba0"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/SOURCES.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/SOURCES.json",
+      "bytes": 1099,
+      "sha256": "87f9edf9968071600f90d2bcbae650c0781f94ae60bcafd4d372e23cf5305d50"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/VERIFICATION.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/VERIFICATION.md",
+      "bytes": 2179,
+      "sha256": "c4d7e20c9c63e30fb8c6a924aef824add3a8d47a1f870a636b69b5bdcdf93aea"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/active-core-pressure.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/active-core-pressure.md",
+      "bytes": 6129,
+      "sha256": "ae7e7824545e6dd8fba503e6610fda63a98fe8ef020b7f316aa81650df9ce600"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/affine-stretch-gate.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/affine-stretch-gate.md",
+      "bytes": 12029,
+      "sha256": "5068d33be451ca7e94c66905d45d4c1ebd24ba8b30be4b9b4181f7b9670966d7"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/checks/run_checks.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/checks/run_checks.py",
+      "bytes": 421,
+      "sha256": "a44135df7f3f5d269c3a333b562376aff9c8b6f44a8172143a14ea8211b668d1"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/checks/verify_active_core_pressure.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/checks/verify_active_core_pressure.py",
+      "bytes": 2546,
+      "sha256": "0c7f7902cfc7fba937ec5841de4047848c29fa11fefa3776379a64ad4eb11d98"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/checks/verify_affine_stretch_gate.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/checks/verify_affine_stretch_gate.py",
+      "bytes": 3545,
+      "sha256": "df5d3797514b1b76937fbfc01d2d456f43583e2d796353a9dc939fb2fcb7f9af"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/checks/verify_correction_window.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/checks/verify_correction_window.py",
+      "bytes": 5373,
+      "sha256": "05743012a906f1a3b82df192cb7ad39456f0ea0a318eaa5718c039340222ea09"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/checks/verify_local_pressure_audit.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/checks/verify_local_pressure_audit.py",
+      "bytes": 2316,
+      "sha256": "d2be0113d5d2fc43396a011012d51795876e950ab411c5a7a48af77a89b1d146"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/correction-window-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/correction-window-independent-audit.md",
+      "bytes": 5394,
+      "sha256": "6ee9f48100f139ea31c861d63ff329f3ed8923d4560093555857eb4eea287286"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/correction-window.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/correction-window.md",
+      "bytes": 14492,
+      "sha256": "dc6a1e0c7104225b2233bb65fe5b272982522342f2380201af9bc002b6900e8e"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/jeong-yoneda-stage.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/jeong-yoneda-stage.md",
+      "bytes": 11127,
+      "sha256": "7e23e06b78ade5ba4839d9d6a293aece3e31ba2d36fdd45006421781eda62a83"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/local-pressure-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/local-pressure-independent-audit.md",
+      "bytes": 4485,
+      "sha256": "895aebd8d1db61ea10fc99b095841b6f1ba48b0ff4cb46689fe808f68dbcc4f8"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/mean-feedback.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/mean-feedback.md",
+      "bytes": 4804,
+      "sha256": "8666f0690e1be401d4d354c359b89e24e0d50714c1d28858ce3a5ac0f1e032b9"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass2/source-check.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass2/source-check.md",
+      "bytes": 5202,
+      "sha256": "c105ec72acba8d33392a942e12d820491b3b506de9587d7cd2c94a9972095e86"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/CHECK_RESULTS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/CHECK_RESULTS.txt",
+      "bytes": 3920,
+      "sha256": "d5b9de3985951b25a2ba9693d17fa442877f6882edd1c5a019616785e967dbea"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/REPORT.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/REPORT.md",
+      "bytes": 5632,
+      "sha256": "471b4aaf4dc3177882b2434a6cf805ed0f7e931782f3b61c2d4f98c2145a888d"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/SHA256SUMS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/SHA256SUMS.txt",
+      "bytes": 1471,
+      "sha256": "d1a2e45b794c2921258563b736569e7e34fd0db8e477bc59ba1a9cb749b1da6f"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/SOURCES.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/SOURCES.json",
+      "bytes": 1094,
+      "sha256": "b6b4aa5919ccca3adca1044d5851c51702e4426111707c4bea29608f122edd18"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/VERIFICATION.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/VERIFICATION.md",
+      "bytes": 2270,
+      "sha256": "abdc0bf03eed4f055e5128d8e37e19f5bdd81ee66d1773829873591927d088bb"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/checks/run_checks.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/checks/run_checks.py",
+      "bytes": 433,
+      "sha256": "a53971f9f18186b92effc801414e741f24c73f4de3167fb4f3873833b994a28a"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/checks/verify_material_core_transfer.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/checks/verify_material_core_transfer.py",
+      "bytes": 3826,
+      "sha256": "c5d0a23059aae24d39ecc8b9c343251fecf863a3c1b6c6a03677b36b2573e2d4"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/checks/verify_quantitative_core_stage.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/checks/verify_quantitative_core_stage.py",
+      "bytes": 3269,
+      "sha256": "d7ee40f917e5e4b693fa014942e54b6a59d16d0ff0a9470b2b4465f96e640eae"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/checks/verify_receiver_flux.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/checks/verify_receiver_flux.py",
+      "bytes": 2197,
+      "sha256": "e3a41a67161222bb60725a47498e28e1e7ed4ad63ea10416d3f97be1300b1066"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/checks/verify_rotational_receiver.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/checks/verify_rotational_receiver.py",
+      "bytes": 4490,
+      "sha256": "809b327a43248676d60320ab00eed6c68228a6630c538390a0da80bd8696e752"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/material-core-transfer.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/material-core-transfer.md",
+      "bytes": 10100,
+      "sha256": "1561b6d2f66f5b159fcc6c6a113836ee7961600d9f04fffb6d27ee360f3e4c10"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/quantitative-core-stage.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/quantitative-core-stage.md",
+      "bytes": 18731,
+      "sha256": "11aafad5d0f901c515e7ed1b7d79d7203c40a33b40ddb55377bc2b038ccdb66e"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/receiver-flux-budget.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/receiver-flux-budget.md",
+      "bytes": 4685,
+      "sha256": "2092041b9fd200f0e31708a3ac87ef0244f7450620fd1a494ebd6789bb6dac30"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/receiver-source-check.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/receiver-source-check.md",
+      "bytes": 4071,
+      "sha256": "ab333d2e8049acb9eeb8529b9bdd0089395a2c9fa2ea304359a15df6412e62a9"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/receiver-terminal-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/receiver-terminal-independent-audit.md",
+      "bytes": 4651,
+      "sha256": "66f398f95c683f5230f5b82d95a99b57465fa916139aa998bb0b2a848d5179c8"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/rotational-receiver.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/rotational-receiver.md",
+      "bytes": 11691,
+      "sha256": "bcfb0b74d9503370904c89b83ab9db42f7da39064d6d877b57b0ef1def45969b"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass3/terminal-profile-gap.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass3/terminal-profile-gap.md",
+      "bytes": 3998,
+      "sha256": "8566ec43ca950c326c80968d0f3b669a5adf2f888b2641cd3069ea42940131c5"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/CHECK_RESULTS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/CHECK_RESULTS.txt",
+      "bytes": 5601,
+      "sha256": "b3fa15e3dcb120fa304ccd9d5e4d702b88821ea213bac013740f95d0ac5506ba"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/REPORT.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/REPORT.md",
+      "bytes": 4150,
+      "sha256": "d74647851b170a6773a4be0e6d73475c812a9b88420bb87e333f852db7120133"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/SHA256SUMS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/SHA256SUMS.txt",
+      "bytes": 3200,
+      "sha256": "69d90f71f8507f8bb6403aa0cd7208eebf57470e57c2864a8ff52d082e8e37e5"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/SOURCES.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/SOURCES.json",
+      "bytes": 1112,
+      "sha256": "798a789233319165fa380d9dbe33424f976095add52d399c8fef547e6cfc7148"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/VERIFICATION.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/VERIFICATION.md",
+      "bytes": 2456,
+      "sha256": "1845e246d4b2f28d6a134344034076383a53f865fdcd7872961af18c6039d9cb"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/affine-core-pressure.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/affine-core-pressure.md",
+      "bytes": 12589,
+      "sha256": "bb4466ebdfce6a07166dda6a9184756ddc99664ab6b1403459a168f613388aa2"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/affine-feedback-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/affine-feedback-independent-audit.md",
+      "bytes": 5716,
+      "sha256": "88454ead8c5badca5b566477f5cc33b8cdb76c42cfdc3e0cf6c632cf493d5d2a"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/angular-residual-certificate.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/angular-residual-certificate.md",
+      "bytes": 9505,
+      "sha256": "a8e4f63e6feddc448f0123d80d1a4c8e5381c568023c7f8191626071cf35c636"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/derive_affine_core_pressure.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/derive_affine_core_pressure.py",
+      "bytes": 4292,
+      "sha256": "a5703a8fb4d7cac542987c4a3b4e8354baab08cacb84d09ca60dfe050126f662"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/derive_core_pressure_derivative.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/derive_core_pressure_derivative.py",
+      "bytes": 8390,
+      "sha256": "15fb7086ebfe56cc3f0019b4da2f18edde08ecd23f5b8c36fc94d6dedd282cfb"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/run_checks.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/run_checks.py",
+      "bytes": 747,
+      "sha256": "16f47ddf878b2458943fa29c74750db4b5df54db34c94dc972ff973f91fd42a9"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_affine_pressure_independent.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_affine_pressure_independent.py",
+      "bytes": 2669,
+      "sha256": "7ce06f7ddef1954396fef8eeb472076d8d4ad280ef1aa2049f732a2ad39a2de4"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_angular_residual_certificate.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_angular_residual_certificate.py",
+      "bytes": 4437,
+      "sha256": "22058e7eff22fc5343e14a8413d1df73a35a5da15ec1186be38e51e0d0d5038b"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_coefficient_expansion.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_coefficient_expansion.py",
+      "bytes": 4814,
+      "sha256": "470f58dee1e34aef095fd29d3a0cdf53645ed593ceff7a900c70513d3c5529fc"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_full_feedback_gate.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_full_feedback_gate.py",
+      "bytes": 1749,
+      "sha256": "529a94c9827612161d89e2015e5ca807bb1191f444b894dd5aee090dcff745e2"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_iteration_audit.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_iteration_audit.py",
+      "bytes": 1888,
+      "sha256": "fc691096033fa1288ec6bd4f7d50a93f00681c282d089cc16399a4949ce97dde"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_outer_reservoir.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_outer_reservoir.py",
+      "bytes": 2802,
+      "sha256": "c680df8911b79a8cc877acaada93c2f03bf7a2908241cbc185896b09cf6aa1a1"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_pressure_quadrature.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_pressure_quadrature.py",
+      "bytes": 1680,
+      "sha256": "5d748bfcdf95432fade3d45d01cc5d439c492e9edf4ffdf3dd56e0962ca68f7e"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_pressure_viscosity.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/checks/verify_pressure_viscosity.py",
+      "bytes": 5560,
+      "sha256": "1afb163204dc1df7d7b9e52a0fc0c96e176170f62902d02a737ae57e78a60c8a"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/coefficient-expansion-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/coefficient-expansion-audit.md",
+      "bytes": 8393,
+      "sha256": "7edc6902a7160e51be6f3204458e3fed0e026a02cc24b34480b62a342710c39c"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/core-pressure-derivative.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/core-pressure-derivative.md",
+      "bytes": 8251,
+      "sha256": "81c051d4f10bf5148172e17d8b212b2e3696acc4ae972533027e52e44100fae3"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/experiments/evaluate_core_pressure_radial.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/experiments/evaluate_core_pressure_radial.py",
+      "bytes": 1983,
+      "sha256": "876d2e0ef61300a029f23cae17f4b39c2e2c60b9e594fd486d18e602a16f88ce"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/experiments/evaluate_pressure_gate.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/experiments/evaluate_pressure_gate.py",
+      "bytes": 12110,
+      "sha256": "aeb7c90998c96494e33af213930966b3995a275fb4eea753a029fba392eeae61"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/experiments/pressure-split-1200.jsonl",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/experiments/pressure-split-1200.jsonl",
+      "bytes": 1917,
+      "sha256": "2770f924c880e443291c1d36836e0825a6bc8b1b29eb79961ef41ea599c7057a"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/experiments/pressure-split-1600.jsonl",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/experiments/pressure-split-1600.jsonl",
+      "bytes": 1906,
+      "sha256": "fc6bb7fdaf37eb6be256b1afac7c14e8312400d98e18c32e19875bec796cd537"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/full-feedback-gate-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/full-feedback-gate-audit.md",
+      "bytes": 4956,
+      "sha256": "88f54d5b3536b16401f11cf2c7555d42707720061cd401a237965d5411842adb"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/full-pressure-feedback-gate.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/full-pressure-feedback-gate.md",
+      "bytes": 7688,
+      "sha256": "0c18bf87d6fce7d0d317c0fc03602b5fb2061b76665e468c40a3cb3e18fc75e9"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/iteration-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/iteration-audit.md",
+      "bytes": 10598,
+      "sha256": "b9cc4bd325800c0f22da6d033cd20df7862831913d60ea5cc8653f8dc274eabd"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/meridional-pump-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/meridional-pump-audit.md",
+      "bytes": 9555,
+      "sha256": "2af5101d7faf51313801f4fa9ba110bf4c6cd5ecffe68b4574ab6ee6864f134d"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/numerical-pressure-evidence.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/numerical-pressure-evidence.md",
+      "bytes": 6726,
+      "sha256": "8e594e0094ea2333e6bef420b775113d13dd5e8c9a0814526a8d56f34aa42fbf"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/outer-pressure-reservoir.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/outer-pressure-reservoir.md",
+      "bytes": 9108,
+      "sha256": "051e5fc8ec5a9cf88a7a155cb4dd5f062851662986961335bcb0339013fa7c48"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/pressure-quadrature-method.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/pressure-quadrature-method.md",
+      "bytes": 14010,
+      "sha256": "7d082f9e8ac20a2406ee7ba3000b9c49ac3a28b4d77cc2669734a63a04de17b8"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/split-pressure-evaluation-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/split-pressure-evaluation-audit.md",
+      "bytes": 3586,
+      "sha256": "5020db54b20a42265ec94b0df74325df033dccd5f4508a70ebfcb08b3ceffddd"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass4/strained-receiver.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass4/strained-receiver.md",
+      "bytes": 8341,
+      "sha256": "6785a887a0448062d2fa22f959b7f68414283dd293feeaf0171f1b334c8a0d7b"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "bytes": 7382,
+      "sha256": "1328f3604408ab30e4acc2449ef4973beae3c12808c06f9ce7529085c441539d"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/CHECK_RESULTS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/CHECK_RESULTS.txt",
+      "bytes": 6624,
+      "sha256": "0c3edd29e6f553f4f03884628a7438143e7523a97ea17b38a77fdf65c9c5da7c"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/REPORT.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/REPORT.md",
+      "bytes": 3666,
+      "sha256": "bd7ca80c7026b9842f135085a1eb06c626029a17e44f7a0fc35aa1d61479b520"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/SHA256SUMS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/SHA256SUMS.txt",
+      "bytes": 3925,
+      "sha256": "b5a25c8c4af8fbfbfef9cc600692dd2f1b09ae745a25f843f5ee10cf335c55e1"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/SOURCES.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/SOURCES.json",
+      "bytes": 1258,
+      "sha256": "a508c73876cf60d5c7ead781c3ff2183b6d292705c53e6939e1af4eb7816fa71"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/VERIFICATION.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/VERIFICATION.md",
+      "bytes": 2437,
+      "sha256": "91114f975f4c15b046fa12f5ce0c6132579ca15429093541f2b12bbb7ce798fd"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/actual-return-next-lemma.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/actual-return-next-lemma.md",
+      "bytes": 12006,
+      "sha256": "c8e84dca6aec3d8d43b6e4aad357b7d23b3148725c3a75efb8e1bc0b36836849"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/angular-tail-budget.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/angular-tail-budget.md",
+      "bytes": 12723,
+      "sha256": "938e778e8a73bb71d5b06585c1b21ea67254928119667c1eb1243136d43ae86b"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/FULL_INITIAL_GATE_CERTIFICATE.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/FULL_INITIAL_GATE_CERTIFICATE.json",
+      "bytes": 6338,
+      "sha256": "200f75718c352363ba95ab12eb5dbb3a7e177064d4091dfffb356afa8106cabc"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/certify_core_twb.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/certify_core_twb.py",
+      "bytes": 2197,
+      "sha256": "e85051f9ec8bb7bfac507c455895fddb538aa58844e14bc85b3e82d4f46218bd"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/certify_full_initial_gate.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/certify_full_initial_gate.py",
+      "bytes": 3809,
+      "sha256": "c6e100fc25fd302db2a67dc915cfe0a9973360d53376fc828487702aba24f779"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/certify_radial_strain.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/certify_radial_strain.py",
+      "bytes": 3017,
+      "sha256": "c7c255c5b1db4373ea6b5c9ac0e6052b878044ac1582e4ee075a230fb9eb68a8"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/core-twb-interval.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/core-twb-interval.json",
+      "bytes": 1440,
+      "sha256": "006b1e74827f8da4c2588000d6f05d074878299a3d7f811dc7bc9fa8a3f5ec4a"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/interval_local_integrals.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/interval_local_integrals.py",
+      "bytes": 10186,
+      "sha256": "5cef7251e7477c94b5685b98623a05c05fad5ab07fe648e23cd4f676d14ad7ec"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/local-interval-results.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/local-interval-results.json",
+      "bytes": 1794,
+      "sha256": "b913c0c7f79cbf7b06d829441891438db12f4e71afb8ec24e330a3e5cfe3fec1"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/radial-strain-interval-1024.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/radial-strain-interval-1024.json",
+      "bytes": 1546,
+      "sha256": "f778b8521ecfffa7ee3826d0553493e0bb92954588ac8198787abf3fd8f9a309"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/run_checks.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/run_checks.py",
+      "bytes": 673,
+      "sha256": "a11f933b7b0eed6bf4e8ae4a517597e2efd121e738167fa7b2e30f584ccf7d82"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_actual_return_next_lemma.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_actual_return_next_lemma.py",
+      "bytes": 2130,
+      "sha256": "df0d0506e61f3702f9ce1b841ab105a8f4cf15a57fc13cfe128c8c54dbb6b0d8"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_angular_tail_budget.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_angular_tail_budget.py",
+      "bytes": 2527,
+      "sha256": "1bbfde5ebd578ad40a98b9890d397b263bc2f5c462b07a7fa46ec8b9d464963e"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_core_exterior_pressure_response.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_core_exterior_pressure_response.py",
+      "bytes": 5237,
+      "sha256": "3d319ebe2f24f14d3602bc66918aa4201883639f69022e9cbcb59ddbd206f0e8"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_finite_feedback_corollary.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_finite_feedback_corollary.py",
+      "bytes": 1871,
+      "sha256": "7aa3a817c3fad00202c59a1e8d30e19498c75795a1ed812d09606675064f4827"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_full_gate_bound.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_full_gate_bound.py",
+      "bytes": 2049,
+      "sha256": "f77e6821e5dcf208d8d753056fbc8816c852494af67ba73d26866c790282c6f7"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_inherited_geometry.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_inherited_geometry.py",
+      "bytes": 3702,
+      "sha256": "92831e7c60b8f910db765d74d0179483c748e92c8939884c528a2bdc2485ef97"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_interval_cutoff.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_interval_cutoff.py",
+      "bytes": 1852,
+      "sha256": "de59ff0527b88a2aab1e5d0935715c100f8f9f92c7f0cce018d3b0cfd677ca26"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_local_swirl_feedback_kernel.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_local_swirl_feedback_kernel.py",
+      "bytes": 3666,
+      "sha256": "f6d453531987abc95884c2e8ca631a3bd4b00a807dc0193d60f28e711af6c307"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_plateau_pump_bound.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_plateau_pump_bound.py",
+      "bytes": 2636,
+      "sha256": "8cd8af9516a1c6865cb7668958311f5d6377526ef5f213e0951c5dbe00e19b4b"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_radial_annular_pressure_cutoff.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_radial_annular_pressure_cutoff.py",
+      "bytes": 3332,
+      "sha256": "d99cd7c14ebf8de4961bd603f8a01d3c28baaffbace28436065151145530b6dc"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_robust_initial_data.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_robust_initial_data.py",
+      "bytes": 1423,
+      "sha256": "3e2606ff4c3703188f4e30dcb56e6ec8677f54feaf2790840f3df91d577e6bed"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_swirl_adjoint_kernel.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/certificate/verify_swirl_adjoint_kernel.py",
+      "bytes": 3171,
+      "sha256": "ac2b5c6705f1220ca04ffa58eda403e163a334e57be9a87e71037bb04665bf21"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/core-exterior-pressure-response.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/core-exterior-pressure-response.md",
+      "bytes": 6077,
+      "sha256": "00926adf51d1ff84267977d2eb672b213b40a8f3e2a452e372c49cab978bf8bb"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/finite-feedback-corollary.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/finite-feedback-corollary.md",
+      "bytes": 9471,
+      "sha256": "729c6c0cb6ea3a3d65629331454d31fbd71c2ecf6841c1aca903c6f6b0b88599"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/finite-feedback-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/finite-feedback-independent-audit.md",
+      "bytes": 10062,
+      "sha256": "fa1da233e8869802e554f49f0e7759ae484b823cce6ea76cf08be1119e6d3164"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/full-gate-certificate-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/full-gate-certificate-audit.md",
+      "bytes": 9045,
+      "sha256": "534cb92b7766a3896b297b27e049ddf831349ce2a14d782047f7373e0b25262b"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/inherited-geometry-first-variation.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/inherited-geometry-first-variation.md",
+      "bytes": 10721,
+      "sha256": "2b0747ca53106d0efe19e6dbf2d1bdd30b7c7b89600de33ed7695a5b6b25d757"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/local-interval-method.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/local-interval-method.md",
+      "bytes": 7840,
+      "sha256": "f1f33b0cde0fe6316828c264ee727dde2f2ad17e12a7e086cd5e840db342a56a"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/local-swirl-feedback-kernel.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/local-swirl-feedback-kernel.md",
+      "bytes": 7321,
+      "sha256": "261c4608d4ea1b992e0b3f976eb30cb639e9a9b4ec03b2471194c2eacfeb7648"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/radial-annular-pressure-cutoff.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/radial-annular-pressure-cutoff.md",
+      "bytes": 6875,
+      "sha256": "bf6f580ac18521ae9877c0c486559c72a32bbed3ebc5a41b7d2b1ab2b18ac881"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/robust-initial-data.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/robust-initial-data.md",
+      "bytes": 3049,
+      "sha256": "c530b7e0f2e42f26a683a587e1584763e1c5541775cf1b6f05860502229d6563"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/streaming-radial-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/streaming-radial-audit.md",
+      "bytes": 4186,
+      "sha256": "f4143b73199e3c5a26c6f559911ec92b1440b5f118504253c59f6cc77caa557e"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass5/swirl-adjoint-kernel.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass5/swirl-adjoint-kernel.md",
+      "bytes": 11296,
+      "sha256": "c9fefb78dca4aeda359b876367ae95af10dc145dafe40ed62ceab3d79d18a0d6"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/CHECK_RESULTS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/CHECK_RESULTS.txt",
+      "bytes": 4024,
+      "sha256": "c60c4dd93a35097cb29bbedf5c1359baa6e84c23b18e5f6135fac68e13fe5a0d"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/REPORT.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/REPORT.md",
+      "bytes": 5581,
+      "sha256": "270fe7bd4bd1276105d4464faff24499238efca5db0594e9af1bb7be7b613886"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/SHA256SUMS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/SHA256SUMS.txt",
+      "bytes": 2261,
+      "sha256": "821721cf044088756b03c8665664c311d5cdfc2b85bd28dbd792addc15727b12"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/SOURCES.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/SOURCES.json",
+      "bytes": 1702,
+      "sha256": "e90c45faf8e1d4d44f07a4b1c2f41fae9a58b8ae529cef4d5945260bb8972128"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/VERIFICATION.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/VERIFICATION.md",
+      "bytes": 2363,
+      "sha256": "4edd3d29d46e5400be22a92647dbf03a5f029a99d770dbaac2c008213a555f56"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/outer-mean-maximum-certificate.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/outer-mean-maximum-certificate.json",
+      "bytes": 1204,
+      "sha256": "5c323ebcc58f5172f6537b25ad95537d8c94a3440e7e76f9482cf1f862490edd"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/run_checks.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/run_checks.py",
+      "bytes": 524,
+      "sha256": "58cb8f8a300a180380b38487dde4580a4ebc0862db63a7a54a61d0634fa56f55"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/verify_circulation_return_obstruction.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/verify_circulation_return_obstruction.py",
+      "bytes": 2894,
+      "sha256": "edfd83de988989899eecd54f07a8cc0417f22b0be9902a6f53ef2d44b8817ce3"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/verify_escape_route_audit.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/verify_escape_route_audit.py",
+      "bytes": 2039,
+      "sha256": "f5634d428c54c53d7ebe9ac59f63859a301de1a45ab3c8ae695494374f3e2510"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/verify_nonaxisymmetric_torque.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/verify_nonaxisymmetric_torque.py",
+      "bytes": 3236,
+      "sha256": "bfc90f2e072ce9d5cbf59f1569db1ffcf270b9c47e55c7a78408e845b5002f27"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/verify_outer_mean_maximum.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/verify_outer_mean_maximum.py",
+      "bytes": 2765,
+      "sha256": "6a915fbdbe4778a8d3ee3cddab1403d59e87a97c04446a436b8dfb805f95ae89"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/verify_outer_pressure_compatibility.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/verify_outer_pressure_compatibility.py",
+      "bytes": 1502,
+      "sha256": "5079efd628dccf4ce9d78d09cb2c13cd0386927d3440f4291b2673dc432a4888"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/verify_rotational_receiver_torque.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/verify_rotational_receiver_torque.py",
+      "bytes": 2208,
+      "sha256": "ec14db4a74de1bb5b2eb7f624b22cd8db9f510b0712ab90994b17a962553b4f1"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/verify_three_dimensional_initial_gate.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/checks/verify_three_dimensional_initial_gate.py",
+      "bytes": 2218,
+      "sha256": "9c32091e7cca0e54bef4673c38cfff05e7aed4c86c7fffa3cf84274976c8c0e9"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/circulation-return-obstruction.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/circulation-return-obstruction.md",
+      "bytes": 11204,
+      "sha256": "7016be1ee7dbba198e9acdc3ebd1236579948328a9b241356529dfc02134d3f7"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/escape-route-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/escape-route-audit.md",
+      "bytes": 10464,
+      "sha256": "47229a85798c61bbf9402db9a2ebf7e59afd03dd8c301acb6083da6995b7b2bc"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/nonaxisymmetric-family-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/nonaxisymmetric-family-audit.md",
+      "bytes": 6369,
+      "sha256": "061c02105f3a4a2aa154e15cbe499297d48cb014803021f2b36ea4d664891c58"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/nonaxisymmetric-torque-budget.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/nonaxisymmetric-torque-budget.md",
+      "bytes": 10146,
+      "sha256": "e879c91a86e5795afd9a6db158a8c598dcaac9bc92c0a5648e95cf2802a6e20d"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/outer-compatibility-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/outer-compatibility-independent-audit.md",
+      "bytes": 4708,
+      "sha256": "aa3cc655541a883dcc522127c23f224a3eeec868d6c4dba5a1a2fe01c1324943"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/outer-mean-maximum-target.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/outer-mean-maximum-target.md",
+      "bytes": 8119,
+      "sha256": "82805ff39bda9a1a8ea187966a21f47f6b0730c365dc8665058647456146b9f9"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/outer-pressure-compatibility-test.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/outer-pressure-compatibility-test.md",
+      "bytes": 3878,
+      "sha256": "e53a12b668a73e829efdd74fe9c5072272566282f9e4adaa3daf0620d1d1f1af"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/rotational-receiver-torque.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/rotational-receiver-torque.md",
+      "bytes": 5609,
+      "sha256": "37afe7c52cce9765c52a31e7213ad31f8330f502daea4c27721ecc8df13dbb46"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/three-dimensional-gate-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/three-dimensional-gate-audit.md",
+      "bytes": 6007,
+      "sha256": "e120e9d31bb5d368e86c54aca3792dd0d64b5d21ed48b338f3759b5492ce042d"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass6/three-dimensional-initial-gate.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass6/three-dimensional-initial-gate.md",
+      "bytes": 6336,
+      "sha256": "4167307078c0536b1095b789b8a9b86287a78d294e6e427afee8288552c46e17"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/CHECK_RESULTS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/CHECK_RESULTS.txt",
+      "bytes": 6638,
+      "sha256": "64920e940a311923516308240a3f7aad37d47f1c64842123a81a9fa410ca772d"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/D-pressure-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/D-pressure-independent-audit.md",
+      "bytes": 4249,
+      "sha256": "0cdad841f7ca8496848f3a59a26f735b56f4e821eb28077aa7eefcb6c78a22f5"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/D-pressure-kernel.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/D-pressure-kernel.md",
+      "bytes": 8266,
+      "sha256": "dbb487c5e9810a6e5bdb03d66c7cde3975645fab406cc725b7b7679973a53c93"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/E-certificate-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/E-certificate-independent-audit.md",
+      "bytes": 5326,
+      "sha256": "733663833b22c02e3008742ec77012b0554f9bf1e9f8c660fdfb38437896f390"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/E-interaction-reduction.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/E-interaction-reduction.md",
+      "bytes": 8548,
+      "sha256": "14e60f743298748f9e6713eca1e9d9a54043c2aab02075074357c212ffc5ccc5"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/REPORT.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/REPORT.md",
+      "bytes": 3488,
+      "sha256": "2943e496c6971dcae4fde7d10910802d2ab507b151c8ea90a679f87beeeef6db"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/SHA256SUMS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/SHA256SUMS.txt",
+      "bytes": 1977,
+      "sha256": "95dd75c1b2f6d19e810550cf061be8a547d45d5ddaa5e8ee5a88ebe9a6825520"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/SOURCES.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/SOURCES.json",
+      "bytes": 1393,
+      "sha256": "adca524719d0fe40319545adca39da442c05f1a30b90264d058dbc2c582d30cd"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/VERIFICATION.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/VERIFICATION.md",
+      "bytes": 2062,
+      "sha256": "832c434c9d04092e539952260b865a0f45c97f616c7e99f0c0e7bb544f3be3c3"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/D-viscosity-certificate.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/D-viscosity-certificate.json",
+      "bytes": 1415,
+      "sha256": "2b03dbeb356f5e7a73b2a1b73e963473bd8b311ef8c79212fd4fa963d91047c2"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/certify_D_viscosity.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/certify_D_viscosity.py",
+      "bytes": 3053,
+      "sha256": "dd460c4de7544619cf9d0819ea7d3368cd682b2cb471856f3eb5ed865670b5b9"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/certify_outer_E.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/certify_outer_E.py",
+      "bytes": 6235,
+      "sha256": "60f2baa75512fdc500da69af81927380ef37fe237d17d29d67b05013566e5250"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/outer-E-certificate.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/outer-E-certificate.json",
+      "bytes": 9060,
+      "sha256": "c54753f8ff48d79d4b04b84039208d7a57a3f9b3dce0a6ce27573d9be34b42fe"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/run_checks.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/run_checks.py",
+      "bytes": 1606,
+      "sha256": "5d22a4f569f2501988e107e2924315fd48812b4222dcb96d930bf8d65a56409d"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/verify_D_pressure_kernels.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/verify_D_pressure_kernels.py",
+      "bytes": 3383,
+      "sha256": "7d918abde484e5ad961e026d712609d206981f858247c3cea06fe774ebde68ec"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/verify_E_certificate_audit.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/verify_E_certificate_audit.py",
+      "bytes": 1709,
+      "sha256": "e66ca20c1557dd45c5366de32ecbc1327df8fd195cf579b3a7e56d5f3b3171c8"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/verify_E_interaction_reduction.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/verify_E_interaction_reduction.py",
+      "bytes": 3600,
+      "sha256": "8e96e7498d1d154d6545a1062467874f94fbdc15c7965d32abc54986f30d05cb"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/verify_common_family.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/verify_common_family.py",
+      "bytes": 1580,
+      "sha256": "6bac336022444a43eb93d6a0f82a3f92880ede87d9bf88463a31c5079421c9b7"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/verify_next_stage_shear.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/checks/verify_next_stage_shear.py",
+      "bytes": 1345,
+      "sha256": "44f8f9bb7871008a9cf285e3e2241499ef8169e18f562c51dd7454ababca9500"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/common-family-feedback.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/common-family-feedback.md",
+      "bytes": 5284,
+      "sha256": "4a0399f81297adce23db4e7433bacea9821f6afbb1e411bfdd4b0edcca041ce8"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/next-stage-shear-diagnostic.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/next-stage-shear-diagnostic.md",
+      "bytes": 6737,
+      "sha256": "216542d85ed77696f8d4343d1a4f39493fdefdae48921b2563932f5a56fdd966"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass7/outer-E-interval-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass7/outer-E-interval-independent-audit.md",
+      "bytes": 8579,
+      "sha256": "452d87c072a428b4f7791f526a8b5d09550acb845d4a45b21bd0423a2c085c62"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/CHECK_RESULTS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/CHECK_RESULTS.txt",
+      "bytes": 18326,
+      "sha256": "bb712b5ad832c0c6a1f04d3b13c39240cfecdfaeadadd978cba2358cd74eaeeb"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/REPORT.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/REPORT.md",
+      "bytes": 3870,
+      "sha256": "7e1d356ee24b8910b32cdc671affd5d95d138ceb53576782358ff39587cff7e4"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/SHA256SUMS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/SHA256SUMS.txt",
+      "bytes": 3530,
+      "sha256": "47a2c2780819f5dafb8e4bbfd86d95667cf855cc70592537841da0bb89e244df"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/SOURCES.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/SOURCES.json",
+      "bytes": 2007,
+      "sha256": "5a9fb9f95a47f293dc67318f9bdf0b18a243d5d212ea9e77a1f5fa90b06d8ca2"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/VERIFICATION.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/VERIFICATION.md",
+      "bytes": 2029,
+      "sha256": "911cda6cd7d941b6f4a2194577615bfc41379c142456ddb0f396b07cff67dce8"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/actual-fluctuation-energy.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/actual-fluctuation-energy.md",
+      "bytes": 3277,
+      "sha256": "a85b1aad8a2fe120f4a6ca9a6a7f78bb23e33033d281b692328c862117c55b25"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/certify_fixed_circle_acceleration.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/certify_fixed_circle_acceleration.py",
+      "bytes": 6524,
+      "sha256": "1c45f079f2a594678545479c8778f7edd104c420519f42e28f98750d3ef9acb4"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/certify_leading_envelope.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/certify_leading_envelope.py",
+      "bytes": 4919,
+      "sha256": "44b5ce85d95f98174e7bf215b48a569513c3a4ef1897b39297e1e16998612a03"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/certify_leading_pressure.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/certify_leading_pressure.py",
+      "bytes": 4214,
+      "sha256": "b055961f23b51f20818560ed5785984f9d1cfae29d12bb3159036bdcc134f36a"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/exterior-dynamics-verify.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/exterior-dynamics-verify.py",
+      "bytes": 1659,
+      "sha256": "30fc74d65e605dabcf0fcdbe43ee25596ea6fcb7472e7afb9085b35666db422e"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/fixed-circle-acceleration-certificate.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/fixed-circle-acceleration-certificate.json",
+      "bytes": 8695,
+      "sha256": "3f9e9a0a048ed3ac3616af4018283d9375054d3ec9ad3015cf8d72d852709553"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/kelvin-covariance-check.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/kelvin-covariance-check.py",
+      "bytes": 2158,
+      "sha256": "2511b5b96ec5960b7b51ab26314de62af297e8049e40d44c808fd60b35d2d62b"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/leading-envelope-certificate.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/leading-envelope-certificate.json",
+      "bytes": 3533,
+      "sha256": "ec457188ed2f626565a932dd228b799e31885b9d6a42c6172664fa362be0021f"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/leading-pressure-certificate.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/leading-pressure-certificate.json",
+      "bytes": 4359,
+      "sha256": "b1f58c4744a7899c8bd8002ed7e4c0ed3e8c53f01dcfb53353c173f406b52753"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/run_checks.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/run_checks.py",
+      "bytes": 1668,
+      "sha256": "ac49691cdfdb15554bca1b2e44bb3e786ea1eed46fe750ff6b7304187f4ab8f0"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/verify_actual_fluctuation_energy.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/verify_actual_fluctuation_energy.py",
+      "bytes": 683,
+      "sha256": "ab8110c648928c783c49e1b9162e08f2a08abbf3880ccd8a21d787ef733f0429"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/verify_covariance_evolution.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/verify_covariance_evolution.py",
+      "bytes": 3949,
+      "sha256": "70e68a6443f544df6a39534f375d5c39889e197076fa7d572c592392a1727463"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/verify_covariance_pressure_slab.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/verify_covariance_pressure_slab.py",
+      "bytes": 2501,
+      "sha256": "29faca7358451ab72bf1683792598155a8bd29464c7a9a92ea2d74e898dcd9ac"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/verify_endcap_gradient_bound.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/verify_endcap_gradient_bound.py",
+      "bytes": 1955,
+      "sha256": "b9aca768d0226690a490889b14b053b049daf62673def7fc58e4145c91c06f41"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/verify_fixed_circle_acceleration_audit.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/verify_fixed_circle_acceleration_audit.py",
+      "bytes": 2962,
+      "sha256": "511acbf9cbb1200f50df1eee7458ba32ed129704f0ae31d192d01b9348a8937d"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/verify_leading_family_independent_audit.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/checks/verify_leading_family_independent_audit.py",
+      "bytes": 3018,
+      "sha256": "2e9aa15a4094ce271686f8f471bf286804abe588e575355dd7bccbf85db7e567"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/covariance-evolution-fixed-circle-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/covariance-evolution-fixed-circle-audit.md",
+      "bytes": 5666,
+      "sha256": "aeed9dafea705d9d5817267500c956199248dc97c45cc0f36355a3d812fe50db"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/covariance-evolution-pressure-slab.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/covariance-evolution-pressure-slab.md",
+      "bytes": 5980,
+      "sha256": "7ca5c424db00e9de441bbe2bf3e598df9ae10a0611b82dd9204b14aef81a4398"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/covariance-evolution.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/covariance-evolution.md",
+      "bytes": 9365,
+      "sha256": "bfdebe1c5f702ed9c6986445504678858de1d99c10ec505509239ee71226668e"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/endcap-gradient-bound.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/endcap-gradient-bound.md",
+      "bytes": 6275,
+      "sha256": "3f12ba5b863f1c4cb7c23c7d00cb15bb3d605469671ba72e4b7af1d381e2b240"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/experiments/exterior-dynamics-pressure-48.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/experiments/exterior-dynamics-pressure-48.json",
+      "bytes": 1154,
+      "sha256": "a7cda617ec512f51ac72748cce30cda17a54bb2bf75ce7740c13c0ea06242022"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/experiments/exterior-dynamics-pressure-96.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/experiments/exterior-dynamics-pressure-96.json",
+      "bytes": 1156,
+      "sha256": "59b14b61984ae0b3433701f4bb0f5a1150c78f000f25193d4a4dddc20c20b12c"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/experiments/exterior-dynamics-pressure.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/experiments/exterior-dynamics-pressure.py",
+      "bytes": 3323,
+      "sha256": "cc6595e5f9e18887a13703ac38d46fffc22dcfeaf18e5cb7679c404c3e9e5144"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/exterior-dynamics-pressure.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/exterior-dynamics-pressure.md",
+      "bytes": 9219,
+      "sha256": "9e775f072e28b18427b4db0aefd206371857de422e92aae9b4eaf0a830f81953"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/fixed-circle-acceleration-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/fixed-circle-acceleration-independent-audit.md",
+      "bytes": 5567,
+      "sha256": "23a8ecc0c47d1629bae1d58913300ba3f664521dcb64449bdc308849852f991b"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/initial-receiver-deceleration.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/initial-receiver-deceleration.md",
+      "bytes": 5421,
+      "sha256": "7a00241cb10fc1d74cd3194a4d835467d9959464735db893de9799cd6a4f5b9b"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/kelvin-covariance.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/kelvin-covariance.md",
+      "bytes": 7871,
+      "sha256": "88857fcedd35ccb81b073a173be2834c27aa8a7f12b91c021ef2cbf076924edc"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/leading-envelope-alternative.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/leading-envelope-alternative.md",
+      "bytes": 7700,
+      "sha256": "6f9fd6f2b7271ce1e5723c2ed613158f2556e73127caf50e9fe7226517835099"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/leading-envelope-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/leading-envelope-independent-audit.md",
+      "bytes": 5181,
+      "sha256": "476d73541f201e7ea46730a9ffe8462ed933283afa6eb2ea5248158ba7536544"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/leading-family-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/leading-family-independent-audit.md",
+      "bytes": 7369,
+      "sha256": "7d3c23d103c2d7184d15901246bcb90b22fd839ef212536e6474f44a886e97f8"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass8/leading-full-pressure-feedback.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass8/leading-full-pressure-feedback.md",
+      "bytes": 5129,
+      "sha256": "f826e4659139f376ff05cf62a15f8f76d178a6927e1d3fdb68a8fef50329c75a"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/CHECK_RESULTS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/CHECK_RESULTS.txt",
+      "bytes": 15265,
+      "sha256": "87759a9758eb6b69b8531921922f917a12f341d140617415dea46ce1aa898942"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/REPORT.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/REPORT.md",
+      "bytes": 5580,
+      "sha256": "27bc64c6e362228a661227b58197d7f6df1d0616631ecfd1baa3102d0cbf379c"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/SHA256SUMS.txt",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/SHA256SUMS.txt",
+      "bytes": 3934,
+      "sha256": "8245203c0c49e31ceb22ace163a96f84824b69e73f32980d19c5ead79a56a93b"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/SOURCES.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/SOURCES.json",
+      "bytes": 1937,
+      "sha256": "62375044de8ccd5295d4ee8c727f86cbe0c37c167de1a67fbb4ec6a09e670bfd"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/VERIFICATION.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/VERIFICATION.md",
+      "bytes": 2715,
+      "sha256": "4ded8f2abcb7d5fe76a0bf4e5cb9b450d250a10918459a2b02a7c18298fa7e6a"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/affine-envelope-budget.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/affine-envelope-budget.md",
+      "bytes": 9156,
+      "sha256": "dcdfd84f26d4c688bbaf56240a1933259f16ebaa505e8f77d90582f70f0ec95f"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/affine-envelope-budget-certificate.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/affine-envelope-budget-certificate.json",
+      "bytes": 1730,
+      "sha256": "965620ffe4b016f13c5bd791787b0cb904920dbb0791bc19f4ba957de64c39e5"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/certify_general_envelope_initial_jet.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/certify_general_envelope_initial_jet.py",
+      "bytes": 9642,
+      "sha256": "0c7d194c5f050803ae08e7959760707a4b8b421722e09f7f11066c3c8d48162b"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/check_slice_solver.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/check_slice_solver.py",
+      "bytes": 2215,
+      "sha256": "3f9d24d0fcabdd92f514e7687900da9b7a81b7fe2b63424ecb5d9746314e260d"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/compare_slice_runs.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/compare_slice_runs.py",
+      "bytes": 3729,
+      "sha256": "ce14bca31329990339f52359e093e6bffc5a6e4ece908b45d1ea1f69d4b9cf4a"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/fixed-amplitude-initialization-certificate.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/fixed-amplitude-initialization-certificate.json",
+      "bytes": 886,
+      "sha256": "af80382d5faf1a6eebca848e472f5259acb0b66b6294d96d3f61c45560ee5b3e"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/general-envelope-initial-jet-certificate.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/general-envelope-initial-jet-certificate.json",
+      "bytes": 14389,
+      "sha256": "26983e69154f6773136a4d79f501b394aa06eea6ade6018685fa017a23afc339"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/run_checks.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/run_checks.py",
+      "bytes": 1604,
+      "sha256": "4b80ddc276d242b5ffea2db746806818e41fe7ddd95e34d681b5d83666672dd1"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/slice-comparison.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/slice-comparison.json",
+      "bytes": 6828,
+      "sha256": "fde19b775c8bc972dac260d0024951fecde1094c78367fa1ba37a66460b7c448"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/verify_affine_envelope_budget.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/verify_affine_envelope_budget.py",
+      "bytes": 4089,
+      "sha256": "060f19d4313eb52a9bd5b11701c9b66f31fed5b5b10cb988077a383fd6e13b5a"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/verify_evolution_validation_bridge.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/verify_evolution_validation_bridge.py",
+      "bytes": 2441,
+      "sha256": "54b2f978357da894bfd24dee481577a41b8a616f896e5f2ce3d1c8afd02e7aa8"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/verify_fixed_amplitude_initialization.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/verify_fixed_amplitude_initialization.py",
+      "bytes": 1950,
+      "sha256": "25dda6a6e013331d340f39e39640854da924563c3ded30f7771c19a8193ba261"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/verify_general_envelope_initial_jet_certificate.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/verify_general_envelope_initial_jet_certificate.py",
+      "bytes": 1612,
+      "sha256": "8bb10fe45fb8c52a47e7557cca5fd8fffda854f11a28c49d6ecf8f97504fab0e"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/verify_general_envelope_jet.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/checks/verify_general_envelope_jet.py",
+      "bytes": 4762,
+      "sha256": "e36276a2fda913ec6210a71d407fc90be150bebb3776ab40407429230b9f1f5e"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/evolution-validation-bridge.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/evolution-validation-bridge.md",
+      "bytes": 18941,
+      "sha256": "82b589039c82a404338dc9ce56ab3e0b874244b74fbf3bb746573283ce24ce70"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/evolution-validation-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/evolution-validation-independent-audit.md",
+      "bytes": 4395,
+      "sha256": "1ae1e25c0266672e26aed33f87a19d93137acb5fcb6c69398d1788f5c683413d"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/affine-envelope-spectrum-16384.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/affine-envelope-spectrum-16384.json",
+      "bytes": 3154,
+      "sha256": "48c233ddc0336461957721deb2690b9a2f8707263020e480ed23d6d4fff7d98a"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/affine-envelope-spectrum-8192.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/affine-envelope-spectrum-8192.json",
+      "bytes": 3131,
+      "sha256": "b576037e3c4427c551f86a42a3e4400a1faba934b3f76c941deaf1e643dee2c7"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/affine-envelope-spectrum.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/affine-envelope-spectrum.py",
+      "bytes": 3962,
+      "sha256": "782a848fb6f5c6399b42349e8a01a7bbe26f64a2258605dd127d9092ac1b143e"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/evolve_circular_slice.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/evolve_circular_slice.py",
+      "bytes": 9482,
+      "sha256": "c5d029e5aaa4cbdf13605984508624cc1d8ed882e0b4cb7325e6c3ad78851f62"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/plot_slice_pulse.py",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/plot_slice_pulse.py",
+      "bytes": 2582,
+      "sha256": "4db55e42e6a2cb00447233ade1b8dafbb4504104729af998f1867195a2b161a3"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/slice-1536.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/slice-1536.json",
+      "bytes": 27994,
+      "sha256": "830ee81be710f045fd4f01dfa0d4541dd1fc8b702cf3275aeb18a07e5e8d4297"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/slice-768.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/slice-768.json",
+      "bytes": 27963,
+      "sha256": "25ec2b23928d59f14ae44510713441df43308e506fb4cb2a15e28fc43877d99b"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/slice-angular-check.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/slice-angular-check.json",
+      "bytes": 8099,
+      "sha256": "97f9eda63096dc3c8a2e4a1e0008a3d8b88023996facc439f082d47c7c9b31f2"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/slice-boundary-check.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/slice-boundary-check.json",
+      "bytes": 8098,
+      "sha256": "64d2e725fb796f70cbf1c72d8f956c64120f3525295478de3c330905622862fc"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/slice-fixed-A1020-coarse.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/slice-fixed-A1020-coarse.json",
+      "bytes": 14761,
+      "sha256": "9442740fab8031e7f5660d90a9a1b9bb78017a58af4258524472de43a3c2bc6b"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/slice-fixed-A1020.json",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/experiments/slice-fixed-A1020.json",
+      "bytes": 14767,
+      "sha256": "0b7754cabf7ed8e172c506b35935846c2f892d1d137973a03843ddfa89067e7d"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/figures/slice-pulse.png",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/figures/slice-pulse.png",
+      "bytes": 148813,
+      "sha256": "c0f0ae9bea8130ff8f573ba07edcda4ecfb0b18ec54310be4b58e176000efad2"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/figures/slice-pulse.svg",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/figures/slice-pulse.svg",
+      "bytes": 81269,
+      "sha256": "b92b64df621ea44e164faebebc60ab2553d76bed8d89c492805f3ad9554a93f9"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/fixed-amplitude-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/fixed-amplitude-independent-audit.md",
+      "bytes": 4310,
+      "sha256": "7a9e5528b241373a4f64f4d902ace71fbfc9fc4b97ecef78b18bb03a8646b972"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/fixed-amplitude-initialization.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/fixed-amplitude-initialization.md",
+      "bytes": 4266,
+      "sha256": "a4b7a8c810fdfe2e142ae4e9a58b0a7f5293b32e7d9ad797144d94dc4cd6a593"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/general-envelope-jet-evaluation.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/general-envelope-jet-evaluation.md",
+      "bytes": 4145,
+      "sha256": "bffc3a3d2dce580684279a4ea23e6950348948880049426ef5ae29aca6542572"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/general-envelope-jet-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/general-envelope-jet-independent-audit.md",
+      "bytes": 5501,
+      "sha256": "ffd6984df35de01154c0577f6b5a5e5dd9152205ffe56e5d3e974930be6c7188"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/general-envelope-jet.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/general-envelope-jet.md",
+      "bytes": 8366,
+      "sha256": "24072a63a5dc78f218696c8c20f2bb79548e854cc1de920578e19204d918256c"
+    },
+    {
+      "original_path": "strained-core/outputs/euler-ns-transfer/pass9/slice-solver-independent-audit.md",
+      "preserved_path": "strained-core/outputs/euler-ns-transfer/pass9/slice-solver-independent-audit.md",
+      "bytes": 5226,
+      "sha256": "927ede777992f3bc38dd431988da4213285ba6633643be92e655c03ae97566b4"
+    },
+    {
+      "original_path": "strained-core/work/direction-audit.md",
+      "preserved_path": "strained-core/work/direction-audit.md",
+      "bytes": 4628,
+      "sha256": "6a88f676c1030ba7f2213629f6e722865e53680205eb9a94056afb582310da0d"
+    },
+    {
+      "original_path": "strained-core/work/direction-scout.md",
+      "preserved_path": "strained-core/work/direction-scout.md",
+      "bytes": 12520,
+      "sha256": "2c0d7cc518f36a852d6a62e9c8ed171e46110d6af2a64032f68f4f178fcdacd3"
+    },
+    {
+      "original_path": "strained-core/work/fetch_proof_scope.py",
+      "preserved_path": "strained-core/work/fetch_proof_scope.py",
+      "bytes": 1365,
+      "sha256": "d1b5b52748ed4d1e0cd84c805531572a502a9509f62aee376c3e04331cc12af9"
+    },
+    {
+      "original_path": "strained-core/work/mechanism-transfer.md",
+      "preserved_path": "strained-core/work/mechanism-transfer.md",
+      "bytes": 12894,
+      "sha256": "16f0e815b3aa772be95dd4d6ce7bf98a7438d729788087baee86df15c454a9a3"
+    },
+    {
+      "original_path": "strained-core/work/package_transfer.py",
+      "preserved_path": "strained-core/work/package_transfer.py",
+      "bytes": 2665,
+      "sha256": "b329380a8ae0972a39b32c1f2c480ebac233e2aebe6f29d613faefce420a113d"
+    },
+    {
+      "original_path": "strained-core/work/pass2/REPORT.md",
+      "preserved_path": "strained-core/work/pass2/REPORT.md",
+      "bytes": 6204,
+      "sha256": "32891a4fc0319f9c166546996883228c654c180a8c87e842c0ce5b5326191bf8"
+    },
+    {
+      "original_path": "strained-core/work/pass2/VERIFICATION.md",
+      "preserved_path": "strained-core/work/pass2/VERIFICATION.md",
+      "bytes": 2179,
+      "sha256": "c4d7e20c9c63e30fb8c6a924aef824add3a8d47a1f870a636b69b5bdcdf93aea"
+    },
+    {
+      "original_path": "strained-core/work/pass2/active-core-pressure.md",
+      "preserved_path": "strained-core/work/pass2/active-core-pressure.md",
+      "bytes": 6129,
+      "sha256": "ae7e7824545e6dd8fba503e6610fda63a98fe8ef020b7f316aa81650df9ce600"
+    },
+    {
+      "original_path": "strained-core/work/pass2/affine-stretch-gate.md",
+      "preserved_path": "strained-core/work/pass2/affine-stretch-gate.md",
+      "bytes": 12029,
+      "sha256": "5068d33be451ca7e94c66905d45d4c1ebd24ba8b30be4b9b4181f7b9670966d7"
+    },
+    {
+      "original_path": "strained-core/work/pass2/correction-window-independent-audit.md",
+      "preserved_path": "strained-core/work/pass2/correction-window-independent-audit.md",
+      "bytes": 5394,
+      "sha256": "6ee9f48100f139ea31c861d63ff329f3ed8923d4560093555857eb4eea287286"
+    },
+    {
+      "original_path": "strained-core/work/pass2/correction-window.md",
+      "preserved_path": "strained-core/work/pass2/correction-window.md",
+      "bytes": 14492,
+      "sha256": "dc6a1e0c7104225b2233bb65fe5b272982522342f2380201af9bc002b6900e8e"
+    },
+    {
+      "original_path": "strained-core/work/pass2/jeong-yoneda-stage.md",
+      "preserved_path": "strained-core/work/pass2/jeong-yoneda-stage.md",
+      "bytes": 11127,
+      "sha256": "7e23e06b78ade5ba4839d9d6a293aece3e31ba2d36fdd45006421781eda62a83"
+    },
+    {
+      "original_path": "strained-core/work/pass2/jeong-yoneda.pdf",
+      "preserved_path": "strained-core/work/pass2/jeong-yoneda.pdf",
+      "bytes": 508821,
+      "sha256": "1b41200db25d53f39d0c3e76a41a7301062b5b782aaae7146545cd052ba30118"
+    },
+    {
+      "original_path": "strained-core/work/pass2/local-pressure-independent-audit.md",
+      "preserved_path": "strained-core/work/pass2/local-pressure-independent-audit.md",
+      "bytes": 4485,
+      "sha256": "895aebd8d1db61ea10fc99b095841b6f1ba48b0ff4cb46689fe808f68dbcc4f8"
+    },
+    {
+      "original_path": "strained-core/work/pass2/mean-feedback.md",
+      "preserved_path": "strained-core/work/pass2/mean-feedback.md",
+      "bytes": 4804,
+      "sha256": "8666f0690e1be401d4d354c359b89e24e0d50714c1d28858ce3a5ac0f1e032b9"
+    },
+    {
+      "original_path": "strained-core/work/pass2/package_pass2.py",
+      "preserved_path": "strained-core/work/pass2/package_pass2.py",
+      "bytes": 2869,
+      "sha256": "43f7470cd920660c341eaa391e8737b196f1fecbb24d690709ab1852413d1c8a"
+    },
+    {
+      "original_path": "strained-core/work/pass2/source-check.md",
+      "preserved_path": "strained-core/work/pass2/source-check.md",
+      "bytes": 5202,
+      "sha256": "c105ec72acba8d33392a942e12d820491b3b506de9587d7cd2c94a9972095e86"
+    },
+    {
+      "original_path": "strained-core/work/pass2/verify_active_core_pressure.py",
+      "preserved_path": "strained-core/work/pass2/verify_active_core_pressure.py",
+      "bytes": 2546,
+      "sha256": "0c7f7902cfc7fba937ec5841de4047848c29fa11fefa3776379a64ad4eb11d98"
+    },
+    {
+      "original_path": "strained-core/work/pass2/verify_affine_stretch_gate.py",
+      "preserved_path": "strained-core/work/pass2/verify_affine_stretch_gate.py",
+      "bytes": 3545,
+      "sha256": "df5d3797514b1b76937fbfc01d2d456f43583e2d796353a9dc939fb2fcb7f9af"
+    },
+    {
+      "original_path": "strained-core/work/pass2/verify_correction_window.py",
+      "preserved_path": "strained-core/work/pass2/verify_correction_window.py",
+      "bytes": 5373,
+      "sha256": "05743012a906f1a3b82df192cb7ad39456f0ea0a318eaa5718c039340222ea09"
+    },
+    {
+      "original_path": "strained-core/work/pass2/verify_local_pressure_audit.py",
+      "preserved_path": "strained-core/work/pass2/verify_local_pressure_audit.py",
+      "bytes": 2316,
+      "sha256": "d2be0113d5d2fc43396a011012d51795876e950ab411c5a7a48af77a89b1d146"
+    },
+    {
+      "original_path": "strained-core/work/pass3/REPORT.md",
+      "preserved_path": "strained-core/work/pass3/REPORT.md",
+      "bytes": 5632,
+      "sha256": "471b4aaf4dc3177882b2434a6cf805ed0f7e931782f3b61c2d4f98c2145a888d"
+    },
+    {
+      "original_path": "strained-core/work/pass3/VERIFICATION.md",
+      "preserved_path": "strained-core/work/pass3/VERIFICATION.md",
+      "bytes": 2270,
+      "sha256": "abdc0bf03eed4f055e5128d8e37e19f5bdd81ee66d1773829873591927d088bb"
+    },
+    {
+      "original_path": "strained-core/work/pass3/material-core-transfer.md",
+      "preserved_path": "strained-core/work/pass3/material-core-transfer.md",
+      "bytes": 10100,
+      "sha256": "1561b6d2f66f5b159fcc6c6a113836ee7961600d9f04fffb6d27ee360f3e4c10"
+    },
+    {
+      "original_path": "strained-core/work/pass3/package_pass3.py",
+      "preserved_path": "strained-core/work/pass3/package_pass3.py",
+      "bytes": 2736,
+      "sha256": "2502d9839794fc1b04809074ad36c391c958c51a423943815706bf0c633c98bb"
+    },
+    {
+      "original_path": "strained-core/work/pass3/quantitative-core-stage.md",
+      "preserved_path": "strained-core/work/pass3/quantitative-core-stage.md",
+      "bytes": 18731,
+      "sha256": "11aafad5d0f901c515e7ed1b7d79d7203c40a33b40ddb55377bc2b038ccdb66e"
+    },
+    {
+      "original_path": "strained-core/work/pass3/receiver-flux-budget.md",
+      "preserved_path": "strained-core/work/pass3/receiver-flux-budget.md",
+      "bytes": 4685,
+      "sha256": "2092041b9fd200f0e31708a3ac87ef0244f7450620fd1a494ebd6789bb6dac30"
+    },
+    {
+      "original_path": "strained-core/work/pass3/receiver-source-check.md",
+      "preserved_path": "strained-core/work/pass3/receiver-source-check.md",
+      "bytes": 4071,
+      "sha256": "ab333d2e8049acb9eeb8529b9bdd0089395a2c9fa2ea304359a15df6412e62a9"
+    },
+    {
+      "original_path": "strained-core/work/pass3/receiver-terminal-independent-audit.md",
+      "preserved_path": "strained-core/work/pass3/receiver-terminal-independent-audit.md",
+      "bytes": 4651,
+      "sha256": "66f398f95c683f5230f5b82d95a99b57465fa916139aa998bb0b2a848d5179c8"
+    },
+    {
+      "original_path": "strained-core/work/pass3/rotational-receiver.md",
+      "preserved_path": "strained-core/work/pass3/rotational-receiver.md",
+      "bytes": 11691,
+      "sha256": "bcfb0b74d9503370904c89b83ab9db42f7da39064d6d877b57b0ef1def45969b"
+    },
+    {
+      "original_path": "strained-core/work/pass3/terminal-profile-gap.md",
+      "preserved_path": "strained-core/work/pass3/terminal-profile-gap.md",
+      "bytes": 3998,
+      "sha256": "8566ec43ca950c326c80968d0f3b669a5adf2f888b2641cd3069ea42940131c5"
+    },
+    {
+      "original_path": "strained-core/work/pass3/verify_material_core_transfer.py",
+      "preserved_path": "strained-core/work/pass3/verify_material_core_transfer.py",
+      "bytes": 3826,
+      "sha256": "c5d0a23059aae24d39ecc8b9c343251fecf863a3c1b6c6a03677b36b2573e2d4"
+    },
+    {
+      "original_path": "strained-core/work/pass3/verify_quantitative_core_stage.py",
+      "preserved_path": "strained-core/work/pass3/verify_quantitative_core_stage.py",
+      "bytes": 3269,
+      "sha256": "d7ee40f917e5e4b693fa014942e54b6a59d16d0ff0a9470b2b4465f96e640eae"
+    },
+    {
+      "original_path": "strained-core/work/pass3/verify_receiver_flux.py",
+      "preserved_path": "strained-core/work/pass3/verify_receiver_flux.py",
+      "bytes": 2197,
+      "sha256": "e3a41a67161222bb60725a47498e28e1e7ed4ad63ea10416d3f97be1300b1066"
+    },
+    {
+      "original_path": "strained-core/work/pass3/verify_rotational_receiver.py",
+      "preserved_path": "strained-core/work/pass3/verify_rotational_receiver.py",
+      "bytes": 4490,
+      "sha256": "809b327a43248676d60320ab00eed6c68228a6630c538390a0da80bd8696e752"
+    },
+    {
+      "original_path": "strained-core/work/pass4/QUADRATURE_CONTROL.txt",
+      "preserved_path": "strained-core/work/pass4/QUADRATURE_CONTROL.txt",
+      "bytes": 384,
+      "sha256": "2fb7592598fe674e216d050096c9d2d5df93dbda8c67484e7ec2f2488a28e65d"
+    },
+    {
+      "original_path": "strained-core/work/pass4/REPORT.md",
+      "preserved_path": "strained-core/work/pass4/REPORT.md",
+      "bytes": 3815,
+      "sha256": "8cd003500df9913ace27239e7de8fb451c9eda0bf97e481c7be28dd2602b093e"
+    },
+    {
+      "original_path": "strained-core/work/pass4/VERIFICATION.md",
+      "preserved_path": "strained-core/work/pass4/VERIFICATION.md",
+      "bytes": 1999,
+      "sha256": "dc37f8e2eb0d8438957a064a0588631b553392fc77cceb58cc707fc06dd663e3"
+    },
+    {
+      "original_path": "strained-core/work/pass4/affine-core-pressure.md",
+      "preserved_path": "strained-core/work/pass4/affine-core-pressure.md",
+      "bytes": 12589,
+      "sha256": "bb4466ebdfce6a07166dda6a9184756ddc99664ab6b1403459a168f613388aa2"
+    },
+    {
+      "original_path": "strained-core/work/pass4/affine-feedback-independent-audit.md",
+      "preserved_path": "strained-core/work/pass4/affine-feedback-independent-audit.md",
+      "bytes": 5716,
+      "sha256": "88454ead8c5badca5b566477f5cc33b8cdb76c42cfdc3e0cf6c632cf493d5d2a"
+    },
+    {
+      "original_path": "strained-core/work/pass4/angular-residual-certificate.md",
+      "preserved_path": "strained-core/work/pass4/angular-residual-certificate.md",
+      "bytes": 9505,
+      "sha256": "a8e4f63e6feddc448f0123d80d1a4c8e5381c568023c7f8191626071cf35c636"
+    },
+    {
+      "original_path": "strained-core/work/pass4/coefficient-expansion-audit.md",
+      "preserved_path": "strained-core/work/pass4/coefficient-expansion-audit.md",
+      "bytes": 8393,
+      "sha256": "7edc6902a7160e51be6f3204458e3fed0e026a02cc24b34480b62a342710c39c"
+    },
+    {
+      "original_path": "strained-core/work/pass4/core-pressure-derivative.md",
+      "preserved_path": "strained-core/work/pass4/core-pressure-derivative.md",
+      "bytes": 8251,
+      "sha256": "81c051d4f10bf5148172e17d8b212b2e3696acc4ae972533027e52e44100fae3"
+    },
+    {
+      "original_path": "strained-core/work/pass4/derive_affine_core_pressure.py",
+      "preserved_path": "strained-core/work/pass4/derive_affine_core_pressure.py",
+      "bytes": 4292,
+      "sha256": "a5703a8fb4d7cac542987c4a3b4e8354baab08cacb84d09ca60dfe050126f662"
+    },
+    {
+      "original_path": "strained-core/work/pass4/derive_core_pressure_derivative.py",
+      "preserved_path": "strained-core/work/pass4/derive_core_pressure_derivative.py",
+      "bytes": 8390,
+      "sha256": "15fb7086ebfe56cc3f0019b4da2f18edde08ecd23f5b8c36fc94d6dedd282cfb"
+    },
+    {
+      "original_path": "strained-core/work/pass4/evaluate_core_pressure_radial.py",
+      "preserved_path": "strained-core/work/pass4/evaluate_core_pressure_radial.py",
+      "bytes": 1983,
+      "sha256": "876d2e0ef61300a029f23cae17f4b39c2e2c60b9e594fd486d18e602a16f88ce"
+    },
+    {
+      "original_path": "strained-core/work/pass4/evaluate_pressure_gate.py",
+      "preserved_path": "strained-core/work/pass4/evaluate_pressure_gate.py",
+      "bytes": 12110,
+      "sha256": "aeb7c90998c96494e33af213930966b3995a275fb4eea753a029fba392eeae61"
+    },
+    {
+      "original_path": "strained-core/work/pass4/full-feedback-gate-audit.md",
+      "preserved_path": "strained-core/work/pass4/full-feedback-gate-audit.md",
+      "bytes": 4956,
+      "sha256": "88f54d5b3536b16401f11cf2c7555d42707720061cd401a237965d5411842adb"
+    },
+    {
+      "original_path": "strained-core/work/pass4/full-pressure-feedback-gate.md",
+      "preserved_path": "strained-core/work/pass4/full-pressure-feedback-gate.md",
+      "bytes": 7688,
+      "sha256": "0c18bf87d6fce7d0d317c0fc03602b5fb2061b76665e468c40a3cb3e18fc75e9"
+    },
+    {
+      "original_path": "strained-core/work/pass4/iteration-audit.md",
+      "preserved_path": "strained-core/work/pass4/iteration-audit.md",
+      "bytes": 10598,
+      "sha256": "b9cc4bd325800c0f22da6d033cd20df7862831913d60ea5cc8653f8dc274eabd"
+    },
+    {
+      "original_path": "strained-core/work/pass4/meridional-pump-audit.md",
+      "preserved_path": "strained-core/work/pass4/meridional-pump-audit.md",
+      "bytes": 9555,
+      "sha256": "2af5101d7faf51313801f4fa9ba110bf4c6cd5ecffe68b4574ab6ee6864f134d"
+    },
+    {
+      "original_path": "strained-core/work/pass4/numerical-pressure-evidence.md",
+      "preserved_path": "strained-core/work/pass4/numerical-pressure-evidence.md",
+      "bytes": 6726,
+      "sha256": "8e594e0094ea2333e6bef420b775113d13dd5e8c9a0814526a8d56f34aa42fbf"
+    },
+    {
+      "original_path": "strained-core/work/pass4/outer-pressure-reservoir.md",
+      "preserved_path": "strained-core/work/pass4/outer-pressure-reservoir.md",
+      "bytes": 9108,
+      "sha256": "051e5fc8ec5a9cf88a7a155cb4dd5f062851662986961335bcb0339013fa7c48"
+    },
+    {
+      "original_path": "strained-core/work/pass4/pressure-evaluation-1200.jsonl",
+      "preserved_path": "strained-core/work/pass4/pressure-evaluation-1200.jsonl",
+      "bytes": 2086,
+      "sha256": "c06a987db527cd45fdccd3e99b4d81bd1e743e7149b7f9ba84f0e3b636d4bca2"
+    },
+    {
+      "original_path": "strained-core/work/pass4/pressure-evaluation-1600.jsonl",
+      "preserved_path": "strained-core/work/pass4/pressure-evaluation-1600.jsonl",
+      "bytes": 1369,
+      "sha256": "ccd208eadb91f6ccb1a23a929a4c1de24d2bc57942debebd3ccfabb97e4f7d3a"
+    },
+    {
+      "original_path": "strained-core/work/pass4/pressure-evaluation-600.jsonl",
+      "preserved_path": "strained-core/work/pass4/pressure-evaluation-600.jsonl",
+      "bytes": 1337,
+      "sha256": "92f490509bc06b452433190cd981721be78c13bd7f45642ab9f23169c86e00ee"
+    },
+    {
+      "original_path": "strained-core/work/pass4/pressure-evaluation-800.jsonl",
+      "preserved_path": "strained-core/work/pass4/pressure-evaluation-800.jsonl",
+      "bytes": 1584,
+      "sha256": "c531cb3b49b82b1372ada714db7cef0bb2813609afe5f42d86db3369546ff55a"
+    },
+    {
+      "original_path": "strained-core/work/pass4/pressure-quadrature-method.md",
+      "preserved_path": "strained-core/work/pass4/pressure-quadrature-method.md",
+      "bytes": 14010,
+      "sha256": "7d082f9e8ac20a2406ee7ba3000b9c49ac3a28b4d77cc2669734a63a04de17b8"
+    },
+    {
+      "original_path": "strained-core/work/pass4/pressure-split-1200.jsonl",
+      "preserved_path": "strained-core/work/pass4/pressure-split-1200.jsonl",
+      "bytes": 1917,
+      "sha256": "2770f924c880e443291c1d36836e0825a6bc8b1b29eb79961ef41ea599c7057a"
+    },
+    {
+      "original_path": "strained-core/work/pass4/pressure-split-1600.jsonl",
+      "preserved_path": "strained-core/work/pass4/pressure-split-1600.jsonl",
+      "bytes": 1906,
+      "sha256": "fc6bb7fdaf37eb6be256b1afac7c14e8312400d98e18c32e19875bec796cd537"
+    },
+    {
+      "original_path": "strained-core/work/pass4/reduce_core_cubic_scratch.py",
+      "preserved_path": "strained-core/work/pass4/reduce_core_cubic_scratch.py",
+      "bytes": 1377,
+      "sha256": "96010f2fb37b2fb8570e821d6e3ddeeee266ebc4a960ab4c41d347a2c099fb04"
+    },
+    {
+      "original_path": "strained-core/work/pass4/split-pressure-evaluation-audit.md",
+      "preserved_path": "strained-core/work/pass4/split-pressure-evaluation-audit.md",
+      "bytes": 3586,
+      "sha256": "5020db54b20a42265ec94b0df74325df033dccd5f4508a70ebfcb08b3ceffddd"
+    },
+    {
+      "original_path": "strained-core/work/pass4/strained-receiver.md",
+      "preserved_path": "strained-core/work/pass4/strained-receiver.md",
+      "bytes": 8341,
+      "sha256": "6785a887a0448062d2fa22f959b7f68414283dd293feeaf0171f1b334c8a0d7b"
+    },
+    {
+      "original_path": "strained-core/work/pass4/verify_affine_pressure_independent.py",
+      "preserved_path": "strained-core/work/pass4/verify_affine_pressure_independent.py",
+      "bytes": 2669,
+      "sha256": "7ce06f7ddef1954396fef8eeb472076d8d4ad280ef1aa2049f732a2ad39a2de4"
+    },
+    {
+      "original_path": "strained-core/work/pass4/verify_angular_residual_certificate.py",
+      "preserved_path": "strained-core/work/pass4/verify_angular_residual_certificate.py",
+      "bytes": 4437,
+      "sha256": "22058e7eff22fc5343e14a8413d1df73a35a5da15ec1186be38e51e0d0d5038b"
+    },
+    {
+      "original_path": "strained-core/work/pass4/verify_coefficient_expansion.py",
+      "preserved_path": "strained-core/work/pass4/verify_coefficient_expansion.py",
+      "bytes": 4814,
+      "sha256": "470f58dee1e34aef095fd29d3a0cdf53645ed593ceff7a900c70513d3c5529fc"
+    },
+    {
+      "original_path": "strained-core/work/pass4/verify_full_feedback_gate.py",
+      "preserved_path": "strained-core/work/pass4/verify_full_feedback_gate.py",
+      "bytes": 1749,
+      "sha256": "529a94c9827612161d89e2015e5ca807bb1191f444b894dd5aee090dcff745e2"
+    },
+    {
+      "original_path": "strained-core/work/pass4/verify_iteration_audit.py",
+      "preserved_path": "strained-core/work/pass4/verify_iteration_audit.py",
+      "bytes": 1888,
+      "sha256": "fc691096033fa1288ec6bd4f7d50a93f00681c282d089cc16399a4949ce97dde"
+    },
+    {
+      "original_path": "strained-core/work/pass4/verify_outer_reservoir.py",
+      "preserved_path": "strained-core/work/pass4/verify_outer_reservoir.py",
+      "bytes": 2802,
+      "sha256": "c680df8911b79a8cc877acaada93c2f03bf7a2908241cbc185896b09cf6aa1a1"
+    },
+    {
+      "original_path": "strained-core/work/pass4/verify_pressure_quadrature.py",
+      "preserved_path": "strained-core/work/pass4/verify_pressure_quadrature.py",
+      "bytes": 1680,
+      "sha256": "5d748bfcdf95432fade3d45d01cc5d439c492e9edf4ffdf3dd56e0962ca68f7e"
+    },
+    {
+      "original_path": "strained-core/work/pass4/verify_pressure_viscosity.py",
+      "preserved_path": "strained-core/work/pass4/verify_pressure_viscosity.py",
+      "bytes": 5560,
+      "sha256": "1afb163204dc1df7d7b9e52a0fc0c96e176170f62902d02a737ae57e78a60c8a"
+    },
+    {
+      "original_path": "strained-core/work/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "preserved_path": "strained-core/work/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "bytes": 7382,
+      "sha256": "1328f3604408ab30e4acc2449ef4973beae3c12808c06f9ce7529085c441539d"
+    },
+    {
+      "original_path": "strained-core/work/pass5/FULL_INITIAL_GATE_CERTIFICATE.json",
+      "preserved_path": "strained-core/work/pass5/FULL_INITIAL_GATE_CERTIFICATE.json",
+      "bytes": 6333,
+      "sha256": "e597b88603741b71a3766392b06bf5ebcad71c8cfe042ccb32289db1a1e33319"
+    },
+    {
+      "original_path": "strained-core/work/pass5/actual-return-next-lemma.md",
+      "preserved_path": "strained-core/work/pass5/actual-return-next-lemma.md",
+      "bytes": 12006,
+      "sha256": "c8e84dca6aec3d8d43b6e4aad357b7d23b3148725c3a75efb8e1bc0b36836849"
+    },
+    {
+      "original_path": "strained-core/work/pass5/angular-tail-budget.md",
+      "preserved_path": "strained-core/work/pass5/angular-tail-budget.md",
+      "bytes": 12723,
+      "sha256": "938e778e8a73bb71d5b06585c1b21ea67254928119667c1eb1243136d43ae86b"
+    },
+    {
+      "original_path": "strained-core/work/pass5/certify_core_twb.py",
+      "preserved_path": "strained-core/work/pass5/certify_core_twb.py",
+      "bytes": 2197,
+      "sha256": "e85051f9ec8bb7bfac507c455895fddb538aa58844e14bc85b3e82d4f46218bd"
+    },
+    {
+      "original_path": "strained-core/work/pass5/certify_full_initial_gate.py",
+      "preserved_path": "strained-core/work/pass5/certify_full_initial_gate.py",
+      "bytes": 3809,
+      "sha256": "c6e100fc25fd302db2a67dc915cfe0a9973360d53376fc828487702aba24f779"
+    },
+    {
+      "original_path": "strained-core/work/pass5/certify_radial_strain.py",
+      "preserved_path": "strained-core/work/pass5/certify_radial_strain.py",
+      "bytes": 3017,
+      "sha256": "c7c255c5b1db4373ea6b5c9ac0e6052b878044ac1582e4ee075a230fb9eb68a8"
+    },
+    {
+      "original_path": "strained-core/work/pass5/core-exterior-pressure-response.md",
+      "preserved_path": "strained-core/work/pass5/core-exterior-pressure-response.md",
+      "bytes": 6077,
+      "sha256": "00926adf51d1ff84267977d2eb672b213b40a8f3e2a452e372c49cab978bf8bb"
+    },
+    {
+      "original_path": "strained-core/work/pass5/core-twb-interval.json",
+      "preserved_path": "strained-core/work/pass5/core-twb-interval.json",
+      "bytes": 1440,
+      "sha256": "006b1e74827f8da4c2588000d6f05d074878299a3d7f811dc7bc9fa8a3f5ec4a"
+    },
+    {
+      "original_path": "strained-core/work/pass5/evaluate_radial_pump.py",
+      "preserved_path": "strained-core/work/pass5/evaluate_radial_pump.py",
+      "bytes": 5356,
+      "sha256": "cc5d0c9676e11a4599129926f3b14d131937c9efba70dcf4dec209651e27b0f7"
+    },
+    {
+      "original_path": "strained-core/work/pass5/finite-feedback-corollary.md",
+      "preserved_path": "strained-core/work/pass5/finite-feedback-corollary.md",
+      "bytes": 9441,
+      "sha256": "e756f510a828d47397cd4ff71ee412a2104b6ee6ce00f6cf662a21c43aec05f7"
+    },
+    {
+      "original_path": "strained-core/work/pass5/finite-feedback-independent-audit.md",
+      "preserved_path": "strained-core/work/pass5/finite-feedback-independent-audit.md",
+      "bytes": 10062,
+      "sha256": "fa1da233e8869802e554f49f0e7759ae484b823cce6ea76cf08be1119e6d3164"
+    },
+    {
+      "original_path": "strained-core/work/pass5/full-gate-certificate-audit.md",
+      "preserved_path": "strained-core/work/pass5/full-gate-certificate-audit.md",
+      "bytes": 9045,
+      "sha256": "534cb92b7766a3896b297b27e049ddf831349ce2a14d782047f7373e0b25262b"
+    },
+    {
+      "original_path": "strained-core/work/pass5/inherited-geometry-first-variation.md",
+      "preserved_path": "strained-core/work/pass5/inherited-geometry-first-variation.md",
+      "bytes": 10721,
+      "sha256": "2b0747ca53106d0efe19e6dbf2d1bdd30b7c7b89600de33ed7695a5b6b25d757"
+    },
+    {
+      "original_path": "strained-core/work/pass5/interval_local_integrals.py",
+      "preserved_path": "strained-core/work/pass5/interval_local_integrals.py",
+      "bytes": 10186,
+      "sha256": "5cef7251e7477c94b5685b98623a05c05fad5ab07fe648e23cd4f676d14ad7ec"
+    },
+    {
+      "original_path": "strained-core/work/pass5/local-interval-method.md",
+      "preserved_path": "strained-core/work/pass5/local-interval-method.md",
+      "bytes": 7840,
+      "sha256": "f1f33b0cde0fe6316828c264ee727dde2f2ad17e12a7e086cd5e840db342a56a"
+    },
+    {
+      "original_path": "strained-core/work/pass5/local-interval-results.json",
+      "preserved_path": "strained-core/work/pass5/local-interval-results.json",
+      "bytes": 1794,
+      "sha256": "b913c0c7f79cbf7b06d829441891438db12f4e71afb8ec24e330a3e5cfe3fec1"
+    },
+    {
+      "original_path": "strained-core/work/pass5/local-swirl-feedback-kernel.md",
+      "preserved_path": "strained-core/work/pass5/local-swirl-feedback-kernel.md",
+      "bytes": 7321,
+      "sha256": "261c4608d4ea1b992e0b3f976eb30cb639e9a9b4ec03b2471194c2eacfeb7648"
+    },
+    {
+      "original_path": "strained-core/work/pass5/package_pass5.py",
+      "preserved_path": "strained-core/work/pass5/package_pass5.py",
+      "bytes": 8618,
+      "sha256": "8c4b9fb5aefb5b697cb934398f163afb482939e32a8898917a277e8a54c1973f"
+    },
+    {
+      "original_path": "strained-core/work/pass5/radial-annular-pressure-cutoff.md",
+      "preserved_path": "strained-core/work/pass5/radial-annular-pressure-cutoff.md",
+      "bytes": 6875,
+      "sha256": "bf6f580ac18521ae9877c0c486559c72a32bbed3ebc5a41b7d2b1ab2b18ac881"
+    },
+    {
+      "original_path": "strained-core/work/pass5/radial-pump-800.jsonl",
+      "preserved_path": "strained-core/work/pass5/radial-pump-800.jsonl",
+      "bytes": 3707,
+      "sha256": "97839baf6d15ff5312f9b956ad5a984a88f1675b4c0794bd35564a89f867cf8f"
+    },
+    {
+      "original_path": "strained-core/work/pass5/radial-strain-interval-1024.json",
+      "preserved_path": "strained-core/work/pass5/radial-strain-interval-1024.json",
+      "bytes": 1546,
+      "sha256": "f778b8521ecfffa7ee3826d0553493e0bb92954588ac8198787abf3fd8f9a309"
+    },
+    {
+      "original_path": "strained-core/work/pass5/robust-initial-data.md",
+      "preserved_path": "strained-core/work/pass5/robust-initial-data.md",
+      "bytes": 3049,
+      "sha256": "c530b7e0f2e42f26a683a587e1584763e1c5541775cf1b6f05860502229d6563"
+    },
+    {
+      "original_path": "strained-core/work/pass5/streaming-radial-audit.md",
+      "preserved_path": "strained-core/work/pass5/streaming-radial-audit.md",
+      "bytes": 4186,
+      "sha256": "f4143b73199e3c5a26c6f559911ec92b1440b5f118504253c59f6cc77caa557e"
+    },
+    {
+      "original_path": "strained-core/work/pass5/swirl-adjoint-kernel.md",
+      "preserved_path": "strained-core/work/pass5/swirl-adjoint-kernel.md",
+      "bytes": 11296,
+      "sha256": "c9fefb78dca4aeda359b876367ae95af10dc145dafe40ed62ceab3d79d18a0d6"
+    },
+    {
+      "original_path": "strained-core/work/pass5/verify_actual_return_next_lemma.py",
+      "preserved_path": "strained-core/work/pass5/verify_actual_return_next_lemma.py",
+      "bytes": 2130,
+      "sha256": "df0d0506e61f3702f9ce1b841ab105a8f4cf15a57fc13cfe128c8c54dbb6b0d8"
+    },
+    {
+      "original_path": "strained-core/work/pass5/verify_angular_tail_budget.py",
+      "preserved_path": "strained-core/work/pass5/verify_angular_tail_budget.py",
+      "bytes": 2527,
+      "sha256": "1bbfde5ebd578ad40a98b9890d397b263bc2f5c462b07a7fa46ec8b9d464963e"
+    },
+    {
+      "original_path": "strained-core/work/pass5/verify_core_exterior_pressure_response.py",
+      "preserved_path": "strained-core/work/pass5/verify_core_exterior_pressure_response.py",
+      "bytes": 5237,
+      "sha256": "3d319ebe2f24f14d3602bc66918aa4201883639f69022e9cbcb59ddbd206f0e8"
+    },
+    {
+      "original_path": "strained-core/work/pass5/verify_finite_feedback_corollary.py",
+      "preserved_path": "strained-core/work/pass5/verify_finite_feedback_corollary.py",
+      "bytes": 1871,
+      "sha256": "7aa3a817c3fad00202c59a1e8d30e19498c75795a1ed812d09606675064f4827"
+    },
+    {
+      "original_path": "strained-core/work/pass5/verify_full_gate_bound.py",
+      "preserved_path": "strained-core/work/pass5/verify_full_gate_bound.py",
+      "bytes": 2049,
+      "sha256": "f77e6821e5dcf208d8d753056fbc8816c852494af67ba73d26866c790282c6f7"
+    },
+    {
+      "original_path": "strained-core/work/pass5/verify_inherited_geometry.py",
+      "preserved_path": "strained-core/work/pass5/verify_inherited_geometry.py",
+      "bytes": 3702,
+      "sha256": "92831e7c60b8f910db765d74d0179483c748e92c8939884c528a2bdc2485ef97"
+    },
+    {
+      "original_path": "strained-core/work/pass5/verify_interval_cutoff.py",
+      "preserved_path": "strained-core/work/pass5/verify_interval_cutoff.py",
+      "bytes": 1852,
+      "sha256": "de59ff0527b88a2aab1e5d0935715c100f8f9f92c7f0cce018d3b0cfd677ca26"
+    },
+    {
+      "original_path": "strained-core/work/pass5/verify_local_swirl_feedback_kernel.py",
+      "preserved_path": "strained-core/work/pass5/verify_local_swirl_feedback_kernel.py",
+      "bytes": 3666,
+      "sha256": "f6d453531987abc95884c2e8ca631a3bd4b00a807dc0193d60f28e711af6c307"
+    },
+    {
+      "original_path": "strained-core/work/pass5/verify_plateau_pump_bound.py",
+      "preserved_path": "strained-core/work/pass5/verify_plateau_pump_bound.py",
+      "bytes": 2636,
+      "sha256": "8cd8af9516a1c6865cb7668958311f5d6377526ef5f213e0951c5dbe00e19b4b"
+    },
+    {
+      "original_path": "strained-core/work/pass5/verify_radial_annular_pressure_cutoff.py",
+      "preserved_path": "strained-core/work/pass5/verify_radial_annular_pressure_cutoff.py",
+      "bytes": 3332,
+      "sha256": "d99cd7c14ebf8de4961bd603f8a01d3c28baaffbace28436065151145530b6dc"
+    },
+    {
+      "original_path": "strained-core/work/pass5/verify_robust_initial_data.py",
+      "preserved_path": "strained-core/work/pass5/verify_robust_initial_data.py",
+      "bytes": 1423,
+      "sha256": "3e2606ff4c3703188f4e30dcb56e6ec8677f54feaf2790840f3df91d577e6bed"
+    },
+    {
+      "original_path": "strained-core/work/pass5/verify_swirl_adjoint_kernel.py",
+      "preserved_path": "strained-core/work/pass5/verify_swirl_adjoint_kernel.py",
+      "bytes": 3171,
+      "sha256": "ac2b5c6705f1220ca04ffa58eda403e163a334e57be9a87e71037bb04665bf21"
+    },
+    {
+      "original_path": "strained-core/work/pass6/circulation-return-obstruction.md",
+      "preserved_path": "strained-core/work/pass6/circulation-return-obstruction.md",
+      "bytes": 11204,
+      "sha256": "7016be1ee7dbba198e9acdc3ebd1236579948328a9b241356529dfc02134d3f7"
+    },
+    {
+      "original_path": "strained-core/work/pass6/escape-route-audit.md",
+      "preserved_path": "strained-core/work/pass6/escape-route-audit.md",
+      "bytes": 10468,
+      "sha256": "343bd0e1fb50d9affb73b3bda76e62792c4ea7475a72cb8f7440bda28d2e673f"
+    },
+    {
+      "original_path": "strained-core/work/pass6/nonaxisymmetric-family-audit.md",
+      "preserved_path": "strained-core/work/pass6/nonaxisymmetric-family-audit.md",
+      "bytes": 6369,
+      "sha256": "061c02105f3a4a2aa154e15cbe499297d48cb014803021f2b36ea4d664891c58"
+    },
+    {
+      "original_path": "strained-core/work/pass6/nonaxisymmetric-torque-budget.md",
+      "preserved_path": "strained-core/work/pass6/nonaxisymmetric-torque-budget.md",
+      "bytes": 10146,
+      "sha256": "e879c91a86e5795afd9a6db158a8c598dcaac9bc92c0a5648e95cf2802a6e20d"
+    },
+    {
+      "original_path": "strained-core/work/pass6/outer-compatibility-independent-audit.md",
+      "preserved_path": "strained-core/work/pass6/outer-compatibility-independent-audit.md",
+      "bytes": 4708,
+      "sha256": "aa3cc655541a883dcc522127c23f224a3eeec868d6c4dba5a1a2fe01c1324943"
+    },
+    {
+      "original_path": "strained-core/work/pass6/outer-mean-maximum-certificate.json",
+      "preserved_path": "strained-core/work/pass6/outer-mean-maximum-certificate.json",
+      "bytes": 1204,
+      "sha256": "5c323ebcc58f5172f6537b25ad95537d8c94a3440e7e76f9482cf1f862490edd"
+    },
+    {
+      "original_path": "strained-core/work/pass6/outer-mean-maximum-target.md",
+      "preserved_path": "strained-core/work/pass6/outer-mean-maximum-target.md",
+      "bytes": 8119,
+      "sha256": "82805ff39bda9a1a8ea187966a21f47f6b0730c365dc8665058647456146b9f9"
+    },
+    {
+      "original_path": "strained-core/work/pass6/outer-pressure-compatibility-test.md",
+      "preserved_path": "strained-core/work/pass6/outer-pressure-compatibility-test.md",
+      "bytes": 3878,
+      "sha256": "e53a12b668a73e829efdd74fe9c5072272566282f9e4adaa3daf0620d1d1f1af"
+    },
+    {
+      "original_path": "strained-core/work/pass6/package_pass6.py",
+      "preserved_path": "strained-core/work/pass6/package_pass6.py",
+      "bytes": 10340,
+      "sha256": "405b7133a8e4ed07ff0e6ead28129d0cb895a2c7055283719fc8ce1cef54fd61"
+    },
+    {
+      "original_path": "strained-core/work/pass6/rotational-receiver-torque.md",
+      "preserved_path": "strained-core/work/pass6/rotational-receiver-torque.md",
+      "bytes": 5609,
+      "sha256": "37afe7c52cce9765c52a31e7213ad31f8330f502daea4c27721ecc8df13dbb46"
+    },
+    {
+      "original_path": "strained-core/work/pass6/three-dimensional-gate-audit.md",
+      "preserved_path": "strained-core/work/pass6/three-dimensional-gate-audit.md",
+      "bytes": 6007,
+      "sha256": "e120e9d31bb5d368e86c54aca3792dd0d64b5d21ed48b338f3759b5492ce042d"
+    },
+    {
+      "original_path": "strained-core/work/pass6/three-dimensional-initial-gate.md",
+      "preserved_path": "strained-core/work/pass6/three-dimensional-initial-gate.md",
+      "bytes": 6336,
+      "sha256": "4167307078c0536b1095b789b8a9b86287a78d294e6e427afee8288552c46e17"
+    },
+    {
+      "original_path": "strained-core/work/pass6/verify_circulation_return_obstruction.py",
+      "preserved_path": "strained-core/work/pass6/verify_circulation_return_obstruction.py",
+      "bytes": 2894,
+      "sha256": "edfd83de988989899eecd54f07a8cc0417f22b0be9902a6f53ef2d44b8817ce3"
+    },
+    {
+      "original_path": "strained-core/work/pass6/verify_escape_route_audit.py",
+      "preserved_path": "strained-core/work/pass6/verify_escape_route_audit.py",
+      "bytes": 2039,
+      "sha256": "f5634d428c54c53d7ebe9ac59f63859a301de1a45ab3c8ae695494374f3e2510"
+    },
+    {
+      "original_path": "strained-core/work/pass6/verify_nonaxisymmetric_torque.py",
+      "preserved_path": "strained-core/work/pass6/verify_nonaxisymmetric_torque.py",
+      "bytes": 3236,
+      "sha256": "bfc90f2e072ce9d5cbf59f1569db1ffcf270b9c47e55c7a78408e845b5002f27"
+    },
+    {
+      "original_path": "strained-core/work/pass6/verify_outer_mean_maximum.py",
+      "preserved_path": "strained-core/work/pass6/verify_outer_mean_maximum.py",
+      "bytes": 2765,
+      "sha256": "6a915fbdbe4778a8d3ee3cddab1403d59e87a97c04446a436b8dfb805f95ae89"
+    },
+    {
+      "original_path": "strained-core/work/pass6/verify_outer_pressure_compatibility.py",
+      "preserved_path": "strained-core/work/pass6/verify_outer_pressure_compatibility.py",
+      "bytes": 1502,
+      "sha256": "5079efd628dccf4ce9d78d09cb2c13cd0386927d3440f4291b2673dc432a4888"
+    },
+    {
+      "original_path": "strained-core/work/pass6/verify_rotational_receiver_torque.py",
+      "preserved_path": "strained-core/work/pass6/verify_rotational_receiver_torque.py",
+      "bytes": 2208,
+      "sha256": "ec14db4a74de1bb5b2eb7f624b22cd8db9f510b0712ab90994b17a962553b4f1"
+    },
+    {
+      "original_path": "strained-core/work/pass6/verify_three_dimensional_initial_gate.py",
+      "preserved_path": "strained-core/work/pass6/verify_three_dimensional_initial_gate.py",
+      "bytes": 2218,
+      "sha256": "9c32091e7cca0e54bef4673c38cfff05e7aed4c86c7fffa3cf84274976c8c0e9"
+    },
+    {
+      "original_path": "strained-core/work/pass7/D-pressure-independent-audit.md",
+      "preserved_path": "strained-core/work/pass7/D-pressure-independent-audit.md",
+      "bytes": 4249,
+      "sha256": "0cdad841f7ca8496848f3a59a26f735b56f4e821eb28077aa7eefcb6c78a22f5"
+    },
+    {
+      "original_path": "strained-core/work/pass7/D-pressure-kernel.md",
+      "preserved_path": "strained-core/work/pass7/D-pressure-kernel.md",
+      "bytes": 8266,
+      "sha256": "dbb487c5e9810a6e5bdb03d66c7cde3975645fab406cc725b7b7679973a53c93"
+    },
+    {
+      "original_path": "strained-core/work/pass7/D-viscosity-certificate.json",
+      "preserved_path": "strained-core/work/pass7/D-viscosity-certificate.json",
+      "bytes": 1415,
+      "sha256": "2b03dbeb356f5e7a73b2a1b73e963473bd8b311ef8c79212fd4fa963d91047c2"
+    },
+    {
+      "original_path": "strained-core/work/pass7/E-certificate-independent-audit.md",
+      "preserved_path": "strained-core/work/pass7/E-certificate-independent-audit.md",
+      "bytes": 5326,
+      "sha256": "733663833b22c02e3008742ec77012b0554f9bf1e9f8c660fdfb38437896f390"
+    },
+    {
+      "original_path": "strained-core/work/pass7/E-check-output.txt",
+      "preserved_path": "strained-core/work/pass7/E-check-output.txt",
+      "bytes": 3099,
+      "sha256": "d518420eca7e0b46b5b42a3f520acfbf7e8dafc278d6e218102ab7d8929c616a"
+    },
+    {
+      "original_path": "strained-core/work/pass7/E-interaction-reduction.md",
+      "preserved_path": "strained-core/work/pass7/E-interaction-reduction.md",
+      "bytes": 8548,
+      "sha256": "14e60f743298748f9e6713eca1e9d9a54043c2aab02075074357c212ffc5ccc5"
+    },
+    {
+      "original_path": "strained-core/work/pass7/alternative-direction.md",
+      "preserved_path": "strained-core/work/pass7/alternative-direction.md",
+      "bytes": 9879,
+      "sha256": "a8d2c2002f5ddc2254bc15a167639bbbfe3d0c3f0f8ca2e5b885061ebf1f7f08"
+    },
+    {
+      "original_path": "strained-core/work/pass7/certify_D_viscosity.py",
+      "preserved_path": "strained-core/work/pass7/certify_D_viscosity.py",
+      "bytes": 3053,
+      "sha256": "dd460c4de7544619cf9d0819ea7d3368cd682b2cb471856f3eb5ed865670b5b9"
+    },
+    {
+      "original_path": "strained-core/work/pass7/certify_outer_E.py",
+      "preserved_path": "strained-core/work/pass7/certify_outer_E.py",
+      "bytes": 6235,
+      "sha256": "60f2baa75512fdc500da69af81927380ef37fe237d17d29d67b05013566e5250"
+    },
+    {
+      "original_path": "strained-core/work/pass7/certify_outer_adjoint_norm.py",
+      "preserved_path": "strained-core/work/pass7/certify_outer_adjoint_norm.py",
+      "bytes": 2989,
+      "sha256": "a4d967425b280c28a2083dc5d1bb8a5f934e0865e5794f401b8776d87eaf2625"
+    },
+    {
+      "original_path": "strained-core/work/pass7/common-family-feedback.md",
+      "preserved_path": "strained-core/work/pass7/common-family-feedback.md",
+      "bytes": 5284,
+      "sha256": "4a0399f81297adce23db4e7433bacea9821f6afbb1e411bfdd4b0edcca041ce8"
+    },
+    {
+      "original_path": "strained-core/work/pass7/diagnostic-check-output.txt",
+      "preserved_path": "strained-core/work/pass7/diagnostic-check-output.txt",
+      "bytes": 91,
+      "sha256": "aceae84c3ea08e68b1a88dbcb295ca698a6f7febad57838ee1f6501055474418"
+    },
+    {
+      "original_path": "strained-core/work/pass7/evaluate_alternative_budget.py",
+      "preserved_path": "strained-core/work/pass7/evaluate_alternative_budget.py",
+      "bytes": 1893,
+      "sha256": "b242471ce7fe05b79046b889db6a1560fc05bf9f63fad7d25f25302a0b331d22"
+    },
+    {
+      "original_path": "strained-core/work/pass7/evaluate_horizontal_trial.py",
+      "preserved_path": "strained-core/work/pass7/evaluate_horizontal_trial.py",
+      "bytes": 1810,
+      "sha256": "d4657d3c669925c164ec5d9264c9581012456d5679e6514c8e2cc81513ed8c4e"
+    },
+    {
+      "original_path": "strained-core/work/pass7/evaluate_outer_E.py",
+      "preserved_path": "strained-core/work/pass7/evaluate_outer_E.py",
+      "bytes": 2920,
+      "sha256": "9748a93dfa8aec125af471a5faf67dee6957a13e6984d29a43a60a263f9cc7da"
+    },
+    {
+      "original_path": "strained-core/work/pass7/finalize_pass7.py",
+      "preserved_path": "strained-core/work/pass7/finalize_pass7.py",
+      "bytes": 3786,
+      "sha256": "d2d2cfbdf8f75def845668f8f7832c2bc79f95740e1d5e4c4bdfe2740bf90037"
+    },
+    {
+      "original_path": "strained-core/work/pass7/next-stage-shear-diagnostic.md",
+      "preserved_path": "strained-core/work/pass7/next-stage-shear-diagnostic.md",
+      "bytes": 6737,
+      "sha256": "216542d85ed77696f8d4343d1a4f39493fdefdae48921b2563932f5a56fdd966"
+    },
+    {
+      "original_path": "strained-core/work/pass7/outer-E-certificate.json",
+      "preserved_path": "strained-core/work/pass7/outer-E-certificate.json",
+      "bytes": 9060,
+      "sha256": "5f77d29dc78bd58e83868e40b4e85557eae8e342c8de2da75cc2adb32b44ce0f"
+    },
+    {
+      "original_path": "strained-core/work/pass7/outer-E-interval-independent-audit.md",
+      "preserved_path": "strained-core/work/pass7/outer-E-interval-independent-audit.md",
+      "bytes": 8579,
+      "sha256": "452d87c072a428b4f7791f526a8b5d09550acb845d4a45b21bd0423a2c085c62"
+    },
+    {
+      "original_path": "strained-core/work/pass7/outer-adjoint-norm-certificate.json",
+      "preserved_path": "strained-core/work/pass7/outer-adjoint-norm-certificate.json",
+      "bytes": 1215,
+      "sha256": "61d5bd183a9eefadb00a58239d20988c1a517d43e0105f1b3751c85b144729bb"
+    },
+    {
+      "original_path": "strained-core/work/pass7/package_pass7.py",
+      "preserved_path": "strained-core/work/pass7/package_pass7.py",
+      "bytes": 7779,
+      "sha256": "7bfcc03287c8096857c1851c70418482e3950116d8d51cc00ee0121b2d19fefa"
+    },
+    {
+      "original_path": "strained-core/work/pass7/run_checks.py",
+      "preserved_path": "strained-core/work/pass7/run_checks.py",
+      "bytes": 1606,
+      "sha256": "5d22a4f569f2501988e107e2924315fd48812b4222dcb96d930bf8d65a56409d"
+    },
+    {
+      "original_path": "strained-core/work/pass7/update_authoritative_state.py",
+      "preserved_path": "strained-core/work/pass7/update_authoritative_state.py",
+      "bytes": 6672,
+      "sha256": "b0135106a687e2bb37f027146325aa04fec09b592aba2ee71d1ab2101a617df3"
+    },
+    {
+      "original_path": "strained-core/work/pass7/verify_D_pressure_kernels.py",
+      "preserved_path": "strained-core/work/pass7/verify_D_pressure_kernels.py",
+      "bytes": 3383,
+      "sha256": "7d918abde484e5ad961e026d712609d206981f858247c3cea06fe774ebde68ec"
+    },
+    {
+      "original_path": "strained-core/work/pass7/verify_E_certificate_audit.py",
+      "preserved_path": "strained-core/work/pass7/verify_E_certificate_audit.py",
+      "bytes": 1709,
+      "sha256": "e66ca20c1557dd45c5366de32ecbc1327df8fd195cf579b3a7e56d5f3b3171c8"
+    },
+    {
+      "original_path": "strained-core/work/pass7/verify_E_interaction_reduction.py",
+      "preserved_path": "strained-core/work/pass7/verify_E_interaction_reduction.py",
+      "bytes": 3600,
+      "sha256": "8e96e7498d1d154d6545a1062467874f94fbdc15c7965d32abc54986f30d05cb"
+    },
+    {
+      "original_path": "strained-core/work/pass7/verify_alternative_direction.py",
+      "preserved_path": "strained-core/work/pass7/verify_alternative_direction.py",
+      "bytes": 1838,
+      "sha256": "71b35be35e8eeab5d47547b4a7cc855d1a105418b00d63080e1dae8a4f6891d1"
+    },
+    {
+      "original_path": "strained-core/work/pass7/verify_common_family.py",
+      "preserved_path": "strained-core/work/pass7/verify_common_family.py",
+      "bytes": 1580,
+      "sha256": "6bac336022444a43eb93d6a0f82a3f92880ede87d9bf88463a31c5079421c9b7"
+    },
+    {
+      "original_path": "strained-core/work/pass7/verify_next_stage_shear.py",
+      "preserved_path": "strained-core/work/pass7/verify_next_stage_shear.py",
+      "bytes": 1345,
+      "sha256": "44f8f9bb7871008a9cf285e3e2241499ef8169e18f562c51dd7454ababca9500"
+    },
+    {
+      "original_path": "strained-core/work/pass8/actual-fluctuation-energy.md",
+      "preserved_path": "strained-core/work/pass8/actual-fluctuation-energy.md",
+      "bytes": 3277,
+      "sha256": "a85b1aad8a2fe120f4a6ca9a6a7f78bb23e33033d281b692328c862117c55b25"
+    },
+    {
+      "original_path": "strained-core/work/pass8/certify_fixed_circle_acceleration.py",
+      "preserved_path": "strained-core/work/pass8/certify_fixed_circle_acceleration.py",
+      "bytes": 6524,
+      "sha256": "1c45f079f2a594678545479c8778f7edd104c420519f42e28f98750d3ef9acb4"
+    },
+    {
+      "original_path": "strained-core/work/pass8/certify_leading_envelope.py",
+      "preserved_path": "strained-core/work/pass8/certify_leading_envelope.py",
+      "bytes": 4919,
+      "sha256": "44b5ce85d95f98174e7bf215b48a569513c3a4ef1897b39297e1e16998612a03"
+    },
+    {
+      "original_path": "strained-core/work/pass8/certify_leading_pressure.py",
+      "preserved_path": "strained-core/work/pass8/certify_leading_pressure.py",
+      "bytes": 4214,
+      "sha256": "b055961f23b51f20818560ed5785984f9d1cfae29d12bb3159036bdcc134f36a"
+    },
+    {
+      "original_path": "strained-core/work/pass8/covariance-evolution-fixed-circle-audit.md",
+      "preserved_path": "strained-core/work/pass8/covariance-evolution-fixed-circle-audit.md",
+      "bytes": 5666,
+      "sha256": "aeed9dafea705d9d5817267500c956199248dc97c45cc0f36355a3d812fe50db"
+    },
+    {
+      "original_path": "strained-core/work/pass8/covariance-evolution-pressure-slab.md",
+      "preserved_path": "strained-core/work/pass8/covariance-evolution-pressure-slab.md",
+      "bytes": 5980,
+      "sha256": "7ca5c424db00e9de441bbe2bf3e598df9ae10a0611b82dd9204b14aef81a4398"
+    },
+    {
+      "original_path": "strained-core/work/pass8/covariance-evolution.md",
+      "preserved_path": "strained-core/work/pass8/covariance-evolution.md",
+      "bytes": 9365,
+      "sha256": "bfdebe1c5f702ed9c6986445504678858de1d99c10ec505509239ee71226668e"
+    },
+    {
+      "original_path": "strained-core/work/pass8/endcap-gradient-bound.md",
+      "preserved_path": "strained-core/work/pass8/endcap-gradient-bound.md",
+      "bytes": 6275,
+      "sha256": "3f12ba5b863f1c4cb7c23c7d00cb15bb3d605469671ba72e4b7af1d381e2b240"
+    },
+    {
+      "original_path": "strained-core/work/pass8/evaluate_mean_maximum_acceleration.py",
+      "preserved_path": "strained-core/work/pass8/evaluate_mean_maximum_acceleration.py",
+      "bytes": 3424,
+      "sha256": "04b9cdad55e5862dca57ca7064e88bcb35aecd37d171e82ee815d5e7e76c5bb3"
+    },
+    {
+      "original_path": "strained-core/work/pass8/exterior-dynamics-pressure-48.json",
+      "preserved_path": "strained-core/work/pass8/exterior-dynamics-pressure-48.json",
+      "bytes": 1154,
+      "sha256": "a7cda617ec512f51ac72748cce30cda17a54bb2bf75ce7740c13c0ea06242022"
+    },
+    {
+      "original_path": "strained-core/work/pass8/exterior-dynamics-pressure-96.json",
+      "preserved_path": "strained-core/work/pass8/exterior-dynamics-pressure-96.json",
+      "bytes": 1156,
+      "sha256": "59b14b61984ae0b3433701f4bb0f5a1150c78f000f25193d4a4dddc20c20b12c"
+    },
+    {
+      "original_path": "strained-core/work/pass8/exterior-dynamics-pressure.md",
+      "preserved_path": "strained-core/work/pass8/exterior-dynamics-pressure.md",
+      "bytes": 9219,
+      "sha256": "9e775f072e28b18427b4db0aefd206371857de422e92aae9b4eaf0a830f81953"
+    },
+    {
+      "original_path": "strained-core/work/pass8/exterior-dynamics-pressure.py",
+      "preserved_path": "strained-core/work/pass8/exterior-dynamics-pressure.py",
+      "bytes": 3323,
+      "sha256": "cc6595e5f9e18887a13703ac38d46fffc22dcfeaf18e5cb7679c404c3e9e5144"
+    },
+    {
+      "original_path": "strained-core/work/pass8/exterior-dynamics-verify.py",
+      "preserved_path": "strained-core/work/pass8/exterior-dynamics-verify.py",
+      "bytes": 1659,
+      "sha256": "30fc74d65e605dabcf0fcdbe43ee25596ea6fcb7472e7afb9085b35666db422e"
+    },
+    {
+      "original_path": "strained-core/work/pass8/finalize_pass8.py",
+      "preserved_path": "strained-core/work/pass8/finalize_pass8.py",
+      "bytes": 11659,
+      "sha256": "e455da3f7d5e357c4a047f3e11fc086d840f8a6b1fa3b21ab32b800b10b4b9b7"
+    },
+    {
+      "original_path": "strained-core/work/pass8/fixed-circle-acceleration-certificate.json",
+      "preserved_path": "strained-core/work/pass8/fixed-circle-acceleration-certificate.json",
+      "bytes": 8648,
+      "sha256": "62e8ddce0977d2406b9b7c2c1d45bc1ee2b1ae7d89833ba0408cd388ad80a6d2"
+    },
+    {
+      "original_path": "strained-core/work/pass8/fixed-circle-acceleration-independent-audit.md",
+      "preserved_path": "strained-core/work/pass8/fixed-circle-acceleration-independent-audit.md",
+      "bytes": 5567,
+      "sha256": "23a8ecc0c47d1629bae1d58913300ba3f664521dcb64449bdc308849852f991b"
+    },
+    {
+      "original_path": "strained-core/work/pass8/fixed-circle-check-output.txt",
+      "preserved_path": "strained-core/work/pass8/fixed-circle-check-output.txt",
+      "bytes": 8648,
+      "sha256": "62e8ddce0977d2406b9b7c2c1d45bc1ee2b1ae7d89833ba0408cd388ad80a6d2"
+    },
+    {
+      "original_path": "strained-core/work/pass8/initial-receiver-deceleration.md",
+      "preserved_path": "strained-core/work/pass8/initial-receiver-deceleration.md",
+      "bytes": 5421,
+      "sha256": "7a00241cb10fc1d74cd3194a4d835467d9959464735db893de9799cd6a4f5b9b"
+    },
+    {
+      "original_path": "strained-core/work/pass8/kelvin-covariance-check.py",
+      "preserved_path": "strained-core/work/pass8/kelvin-covariance-check.py",
+      "bytes": 2158,
+      "sha256": "2511b5b96ec5960b7b51ab26314de62af297e8049e40d44c808fd60b35d2d62b"
+    },
+    {
+      "original_path": "strained-core/work/pass8/kelvin-covariance.md",
+      "preserved_path": "strained-core/work/pass8/kelvin-covariance.md",
+      "bytes": 7871,
+      "sha256": "88857fcedd35ccb81b073a173be2834c27aa8a7f12b91c021ef2cbf076924edc"
+    },
+    {
+      "original_path": "strained-core/work/pass8/leading-envelope-alternative.md",
+      "preserved_path": "strained-core/work/pass8/leading-envelope-alternative.md",
+      "bytes": 7700,
+      "sha256": "6f9fd6f2b7271ce1e5723c2ed613158f2556e73127caf50e9fe7226517835099"
+    },
+    {
+      "original_path": "strained-core/work/pass8/leading-envelope-certificate.json",
+      "preserved_path": "strained-core/work/pass8/leading-envelope-certificate.json",
+      "bytes": 3452,
+      "sha256": "06ebb76f25ac0363426e53f75072fe2915fd7a49c629a0e20f13440cc0628446"
+    },
+    {
+      "original_path": "strained-core/work/pass8/leading-envelope-independent-audit.md",
+      "preserved_path": "strained-core/work/pass8/leading-envelope-independent-audit.md",
+      "bytes": 5181,
+      "sha256": "476d73541f201e7ea46730a9ffe8462ed933283afa6eb2ea5248158ba7536544"
+    },
+    {
+      "original_path": "strained-core/work/pass8/leading-family-independent-audit.md",
+      "preserved_path": "strained-core/work/pass8/leading-family-independent-audit.md",
+      "bytes": 7369,
+      "sha256": "7d3c23d103c2d7184d15901246bcb90b22fd839ef212536e6474f44a886e97f8"
+    },
+    {
+      "original_path": "strained-core/work/pass8/leading-full-pressure-feedback.md",
+      "preserved_path": "strained-core/work/pass8/leading-full-pressure-feedback.md",
+      "bytes": 5129,
+      "sha256": "f826e4659139f376ff05cf62a15f8f76d178a6927e1d3fdb68a8fef50329c75a"
+    },
+    {
+      "original_path": "strained-core/work/pass8/leading-pressure-certificate.json",
+      "preserved_path": "strained-core/work/pass8/leading-pressure-certificate.json",
+      "bytes": 4359,
+      "sha256": "b1f58c4744a7899c8bd8002ed7e4c0ed3e8c53f01dcfb53353c173f406b52753"
+    },
+    {
+      "original_path": "strained-core/work/pass8/leading-pressure-check-output.txt",
+      "preserved_path": "strained-core/work/pass8/leading-pressure-check-output.txt",
+      "bytes": 4359,
+      "sha256": "b1f58c4744a7899c8bd8002ed7e4c0ed3e8c53f01dcfb53353c173f406b52753"
+    },
+    {
+      "original_path": "strained-core/work/pass8/package_pass8.py",
+      "preserved_path": "strained-core/work/pass8/package_pass8.py",
+      "bytes": 8416,
+      "sha256": "b811f43fbe5c37a20ef0d941905e25ed3dc0485bc1c8fb75fa269e65a1d7332d"
+    },
+    {
+      "original_path": "strained-core/work/pass8/run_checks.py",
+      "preserved_path": "strained-core/work/pass8/run_checks.py",
+      "bytes": 1668,
+      "sha256": "ac49691cdfdb15554bca1b2e44bb3e786ea1eed46fe750ff6b7304187f4ab8f0"
+    },
+    {
+      "original_path": "strained-core/work/pass8/verify_actual_fluctuation_energy.py",
+      "preserved_path": "strained-core/work/pass8/verify_actual_fluctuation_energy.py",
+      "bytes": 683,
+      "sha256": "ab8110c648928c783c49e1b9162e08f2a08abbf3880ccd8a21d787ef733f0429"
+    },
+    {
+      "original_path": "strained-core/work/pass8/verify_covariance_evolution.py",
+      "preserved_path": "strained-core/work/pass8/verify_covariance_evolution.py",
+      "bytes": 3949,
+      "sha256": "70e68a6443f544df6a39534f375d5c39889e197076fa7d572c592392a1727463"
+    },
+    {
+      "original_path": "strained-core/work/pass8/verify_covariance_pressure_slab.py",
+      "preserved_path": "strained-core/work/pass8/verify_covariance_pressure_slab.py",
+      "bytes": 2501,
+      "sha256": "29faca7358451ab72bf1683792598155a8bd29464c7a9a92ea2d74e898dcd9ac"
+    },
+    {
+      "original_path": "strained-core/work/pass8/verify_endcap_gradient_bound.py",
+      "preserved_path": "strained-core/work/pass8/verify_endcap_gradient_bound.py",
+      "bytes": 1955,
+      "sha256": "b9aca768d0226690a490889b14b053b049daf62673def7fc58e4145c91c06f41"
+    },
+    {
+      "original_path": "strained-core/work/pass8/verify_fixed_circle_acceleration_audit.py",
+      "preserved_path": "strained-core/work/pass8/verify_fixed_circle_acceleration_audit.py",
+      "bytes": 2962,
+      "sha256": "511acbf9cbb1200f50df1eee7458ba32ed129704f0ae31d192d01b9348a8937d"
+    },
+    {
+      "original_path": "strained-core/work/pass8/verify_leading_family_independent_audit.py",
+      "preserved_path": "strained-core/work/pass8/verify_leading_family_independent_audit.py",
+      "bytes": 3018,
+      "sha256": "2e9aa15a4094ce271686f8f471bf286804abe588e575355dd7bccbf85db7e567"
+    },
+    {
+      "original_path": "strained-core/work/pass9/affine-envelope-budget-certificate.json",
+      "preserved_path": "strained-core/work/pass9/affine-envelope-budget-certificate.json",
+      "bytes": 1730,
+      "sha256": "965620ffe4b016f13c5bd791787b0cb904920dbb0791bc19f4ba957de64c39e5"
+    },
+    {
+      "original_path": "strained-core/work/pass9/affine-envelope-budget.md",
+      "preserved_path": "strained-core/work/pass9/affine-envelope-budget.md",
+      "bytes": 9156,
+      "sha256": "dcdfd84f26d4c688bbaf56240a1933259f16ebaa505e8f77d90582f70f0ec95f"
+    },
+    {
+      "original_path": "strained-core/work/pass9/affine-envelope-spectrum-16384.json",
+      "preserved_path": "strained-core/work/pass9/affine-envelope-spectrum-16384.json",
+      "bytes": 3154,
+      "sha256": "48c233ddc0336461957721deb2690b9a2f8707263020e480ed23d6d4fff7d98a"
+    },
+    {
+      "original_path": "strained-core/work/pass9/affine-envelope-spectrum-8192.json",
+      "preserved_path": "strained-core/work/pass9/affine-envelope-spectrum-8192.json",
+      "bytes": 3131,
+      "sha256": "b576037e3c4427c551f86a42a3e4400a1faba934b3f76c941deaf1e643dee2c7"
+    },
+    {
+      "original_path": "strained-core/work/pass9/affine-envelope-spectrum.py",
+      "preserved_path": "strained-core/work/pass9/affine-envelope-spectrum.py",
+      "bytes": 3962,
+      "sha256": "782a848fb6f5c6399b42349e8a01a7bbe26f64a2258605dd127d9092ac1b143e"
+    },
+    {
+      "original_path": "strained-core/work/pass9/certify_general_envelope_initial_jet.py",
+      "preserved_path": "strained-core/work/pass9/certify_general_envelope_initial_jet.py",
+      "bytes": 9642,
+      "sha256": "0c7d194c5f050803ae08e7959760707a4b8b421722e09f7f11066c3c8d48162b"
+    },
+    {
+      "original_path": "strained-core/work/pass9/check_slice_solver.py",
+      "preserved_path": "strained-core/work/pass9/check_slice_solver.py",
+      "bytes": 2215,
+      "sha256": "3f9d24d0fcabdd92f514e7687900da9b7a81b7fe2b63424ecb5d9746314e260d"
+    },
+    {
+      "original_path": "strained-core/work/pass9/compare_slice_runs.py",
+      "preserved_path": "strained-core/work/pass9/compare_slice_runs.py",
+      "bytes": 3729,
+      "sha256": "ce14bca31329990339f52359e093e6bffc5a6e4ece908b45d1ea1f69d4b9cf4a"
+    },
+    {
+      "original_path": "strained-core/work/pass9/evolution-validation-bridge.md",
+      "preserved_path": "strained-core/work/pass9/evolution-validation-bridge.md",
+      "bytes": 18941,
+      "sha256": "82b589039c82a404338dc9ce56ab3e0b874244b74fbf3bb746573283ce24ce70"
+    },
+    {
+      "original_path": "strained-core/work/pass9/evolution-validation-independent-audit.md",
+      "preserved_path": "strained-core/work/pass9/evolution-validation-independent-audit.md",
+      "bytes": 4395,
+      "sha256": "1ae1e25c0266672e26aed33f87a19d93137acb5fcb6c69398d1788f5c683413d"
+    },
+    {
+      "original_path": "strained-core/work/pass9/evolve_circular_slice.py",
+      "preserved_path": "strained-core/work/pass9/evolve_circular_slice.py",
+      "bytes": 9482,
+      "sha256": "c5d029e5aaa4cbdf13605984508624cc1d8ed882e0b4cb7325e6c3ad78851f62"
+    },
+    {
+      "original_path": "strained-core/work/pass9/figures/slice-pulse.png",
+      "preserved_path": "strained-core/work/pass9/figures/slice-pulse.png",
+      "bytes": 148813,
+      "sha256": "c0f0ae9bea8130ff8f573ba07edcda4ecfb0b18ec54310be4b58e176000efad2"
+    },
+    {
+      "original_path": "strained-core/work/pass9/figures/slice-pulse.svg",
+      "preserved_path": "strained-core/work/pass9/figures/slice-pulse.svg",
+      "bytes": 81269,
+      "sha256": "b92b64df621ea44e164faebebc60ab2553d76bed8d89c492805f3ad9554a93f9"
+    },
+    {
+      "original_path": "strained-core/work/pass9/finalize_pass9.py",
+      "preserved_path": "strained-core/work/pass9/finalize_pass9.py",
+      "bytes": 11932,
+      "sha256": "abdb2ad14f47a6d0bd456318f64e86429b94b147ccbc1a272292d95d96f697ef"
+    },
+    {
+      "original_path": "strained-core/work/pass9/fixed-amplitude-independent-audit.md",
+      "preserved_path": "strained-core/work/pass9/fixed-amplitude-independent-audit.md",
+      "bytes": 4310,
+      "sha256": "7a9e5528b241373a4f64f4d902ace71fbfc9fc4b97ecef78b18bb03a8646b972"
+    },
+    {
+      "original_path": "strained-core/work/pass9/fixed-amplitude-initialization-certificate.json",
+      "preserved_path": "strained-core/work/pass9/fixed-amplitude-initialization-certificate.json",
+      "bytes": 886,
+      "sha256": "af80382d5faf1a6eebca848e472f5259acb0b66b6294d96d3f61c45560ee5b3e"
+    },
+    {
+      "original_path": "strained-core/work/pass9/fixed-amplitude-initialization.md",
+      "preserved_path": "strained-core/work/pass9/fixed-amplitude-initialization.md",
+      "bytes": 4266,
+      "sha256": "a4b7a8c810fdfe2e142ae4e9a58b0a7f5293b32e7d9ad797144d94dc4cd6a593"
+    },
+    {
+      "original_path": "strained-core/work/pass9/general-envelope-initial-jet-certificate.json",
+      "preserved_path": "strained-core/work/pass9/general-envelope-initial-jet-certificate.json",
+      "bytes": 14333,
+      "sha256": "87d9dd12f370e02633f6564a23d09345bb42acaca886732040080885f872c457"
+    },
+    {
+      "original_path": "strained-core/work/pass9/general-envelope-jet-evaluation.md",
+      "preserved_path": "strained-core/work/pass9/general-envelope-jet-evaluation.md",
+      "bytes": 4145,
+      "sha256": "bffc3a3d2dce580684279a4ea23e6950348948880049426ef5ae29aca6542572"
+    },
+    {
+      "original_path": "strained-core/work/pass9/general-envelope-jet-independent-audit.md",
+      "preserved_path": "strained-core/work/pass9/general-envelope-jet-independent-audit.md",
+      "bytes": 5501,
+      "sha256": "ffd6984df35de01154c0577f6b5a5e5dd9152205ffe56e5d3e974930be6c7188"
+    },
+    {
+      "original_path": "strained-core/work/pass9/general-envelope-jet.md",
+      "preserved_path": "strained-core/work/pass9/general-envelope-jet.md",
+      "bytes": 8366,
+      "sha256": "24072a63a5dc78f218696c8c20f2bb79548e854cc1de920578e19204d918256c"
+    },
+    {
+      "original_path": "strained-core/work/pass9/package_pass9.py",
+      "preserved_path": "strained-core/work/pass9/package_pass9.py",
+      "bytes": 10889,
+      "sha256": "3f80ab917d60e4a378a53138a63fb2a3683c95ea114b3b320f69c60c2d70ec6e"
+    },
+    {
+      "original_path": "strained-core/work/pass9/plot_slice_pulse.py",
+      "preserved_path": "strained-core/work/pass9/plot_slice_pulse.py",
+      "bytes": 2582,
+      "sha256": "4db55e42e6a2cb00447233ade1b8dafbb4504104729af998f1867195a2b161a3"
+    },
+    {
+      "original_path": "strained-core/work/pass9/run_checks.py",
+      "preserved_path": "strained-core/work/pass9/run_checks.py",
+      "bytes": 1604,
+      "sha256": "4b80ddc276d242b5ffea2db746806818e41fe7ddd95e34d681b5d83666672dd1"
+    },
+    {
+      "original_path": "strained-core/work/pass9/slice-1536.json",
+      "preserved_path": "strained-core/work/pass9/slice-1536.json",
+      "bytes": 27994,
+      "sha256": "830ee81be710f045fd4f01dfa0d4541dd1fc8b702cf3275aeb18a07e5e8d4297"
+    },
+    {
+      "original_path": "strained-core/work/pass9/slice-768.json",
+      "preserved_path": "strained-core/work/pass9/slice-768.json",
+      "bytes": 27963,
+      "sha256": "25ec2b23928d59f14ae44510713441df43308e506fb4cb2a15e28fc43877d99b"
+    },
+    {
+      "original_path": "strained-core/work/pass9/slice-angular-check.json",
+      "preserved_path": "strained-core/work/pass9/slice-angular-check.json",
+      "bytes": 8099,
+      "sha256": "97f9eda63096dc3c8a2e4a1e0008a3d8b88023996facc439f082d47c7c9b31f2"
+    },
+    {
+      "original_path": "strained-core/work/pass9/slice-boundary-check.json",
+      "preserved_path": "strained-core/work/pass9/slice-boundary-check.json",
+      "bytes": 8098,
+      "sha256": "64d2e725fb796f70cbf1c72d8f956c64120f3525295478de3c330905622862fc"
+    },
+    {
+      "original_path": "strained-core/work/pass9/slice-comparison-output.txt",
+      "preserved_path": "strained-core/work/pass9/slice-comparison-output.txt",
+      "bytes": 6829,
+      "sha256": "6d88945390bee64842001e627531aaa45c4902a9f2d592ca676c9fb24d646a70"
+    },
+    {
+      "original_path": "strained-core/work/pass9/slice-comparison.json",
+      "preserved_path": "strained-core/work/pass9/slice-comparison.json",
+      "bytes": 6828,
+      "sha256": "fde19b775c8bc972dac260d0024951fecde1094c78367fa1ba37a66460b7c448"
+    },
+    {
+      "original_path": "strained-core/work/pass9/slice-fixed-A1020-coarse.json",
+      "preserved_path": "strained-core/work/pass9/slice-fixed-A1020-coarse.json",
+      "bytes": 14761,
+      "sha256": "9442740fab8031e7f5660d90a9a1b9bb78017a58af4258524472de43a3c2bc6b"
+    },
+    {
+      "original_path": "strained-core/work/pass9/slice-fixed-A1020.json",
+      "preserved_path": "strained-core/work/pass9/slice-fixed-A1020.json",
+      "bytes": 14767,
+      "sha256": "0b7754cabf7ed8e172c506b35935846c2f892d1d137973a03843ddfa89067e7d"
+    },
+    {
+      "original_path": "strained-core/work/pass9/slice-pilot.json",
+      "preserved_path": "strained-core/work/pass9/slice-pilot.json",
+      "bytes": 29418,
+      "sha256": "cdd32a655d3d88005de0f26bea2a3287a45e8386cfdfa9f47ca111b8414fde42"
+    },
+    {
+      "original_path": "strained-core/work/pass9/slice-solver-checks.json",
+      "preserved_path": "strained-core/work/pass9/slice-solver-checks.json",
+      "bytes": 971,
+      "sha256": "55ca81df9856a70422ea9efa5fdc00283eb47286bfab65f4d4316dca71656d80"
+    },
+    {
+      "original_path": "strained-core/work/pass9/slice-solver-independent-audit.md",
+      "preserved_path": "strained-core/work/pass9/slice-solver-independent-audit.md",
+      "bytes": 5226,
+      "sha256": "927ede777992f3bc38dd431988da4213285ba6633643be92e655c03ae97566b4"
+    },
+    {
+      "original_path": "strained-core/work/pass9/verify_affine_envelope_budget.py",
+      "preserved_path": "strained-core/work/pass9/verify_affine_envelope_budget.py",
+      "bytes": 4089,
+      "sha256": "060f19d4313eb52a9bd5b11701c9b66f31fed5b5b10cb988077a383fd6e13b5a"
+    },
+    {
+      "original_path": "strained-core/work/pass9/verify_evolution_validation_bridge.py",
+      "preserved_path": "strained-core/work/pass9/verify_evolution_validation_bridge.py",
+      "bytes": 2441,
+      "sha256": "54b2f978357da894bfd24dee481577a41b8a616f896e5f2ce3d1c8afd02e7aa8"
+    },
+    {
+      "original_path": "strained-core/work/pass9/verify_fixed_amplitude_initialization.py",
+      "preserved_path": "strained-core/work/pass9/verify_fixed_amplitude_initialization.py",
+      "bytes": 1950,
+      "sha256": "25dda6a6e013331d340f39e39640854da924563c3ded30f7771c19a8193ba261"
+    },
+    {
+      "original_path": "strained-core/work/pass9/verify_general_envelope_initial_jet_certificate.py",
+      "preserved_path": "strained-core/work/pass9/verify_general_envelope_initial_jet_certificate.py",
+      "bytes": 1612,
+      "sha256": "8bb10fe45fb8c52a47e7557cca5fd8fffda854f11a28c49d6ecf8f97504fab0e"
+    },
+    {
+      "original_path": "strained-core/work/pass9/verify_general_envelope_jet.py",
+      "preserved_path": "strained-core/work/pass9/verify_general_envelope_jet.py",
+      "bytes": 4762,
+      "sha256": "e36276a2fda913ec6210a71d407fc90be150bebb3776ab40407429230b9f1f5e"
+    },
+    {
+      "original_path": "strained-core/work/phase-heat-audit.md",
+      "preserved_path": "strained-core/work/phase-heat-audit.md",
+      "bytes": 8437,
+      "sha256": "2e5ae7352d8eb28592171f16daee614d0412dc5c28088c65234248baae21b294"
+    },
+    {
+      "original_path": "strained-core/work/phase_heat_check.py",
+      "preserved_path": "strained-core/work/phase_heat_check.py",
+      "bytes": 2680,
+      "sha256": "ab6718aa9ba9da52cb3f76bb2fc85c69d3ef0d2f534789c9ca1cdfc5c172e975"
+    },
+    {
+      "original_path": "strained-core/work/phase_heat_lemma.md",
+      "preserved_path": "strained-core/work/phase_heat_lemma.md",
+      "bytes": 5992,
+      "sha256": "7eef0fc60521ac6f49bef01ca2410f6a37bb567bf03e722e52cebbdc142799e8"
+    },
+    {
+      "original_path": "strained-core/work/sources/euler-page2.png",
+      "preserved_path": "strained-core/work/sources/euler-page2.png",
+      "bytes": 408018,
+      "sha256": "82fa20c7504811ddf20a705e98571bcec221a7bee7e44ec65e0759d96fc374c5"
+    },
+    {
+      "original_path": "strained-core/work/sources/euler-page95.png",
+      "preserved_path": "strained-core/work/sources/euler-page95.png",
+      "bytes": 409673,
+      "sha256": "50b40a93f9d6e1f95d0187e4f9ff8d540278bcbad4237bde4840d309746e7dde"
+    },
+    {
+      "original_path": "strained-core/work/sources/euler.pdf",
+      "preserved_path": "strained-core/work/sources/euler.pdf",
+      "bytes": 1105306,
+      "sha256": "97ef408bff09b4f6ed9f3867734d1eb2245f3f34e6334b28136c84c02d0ae8d8"
+    },
+    {
+      "original_path": "strained-core/work/sources/euler.txt",
+      "preserved_path": "strained-core/work/sources/euler.txt",
+      "bytes": 383159,
+      "sha256": "33b657b58e359ad3b68e3d8198055bfd00e1b74bd4b4e08f0d6f8e0b2f818fea"
+    },
+    {
+      "original_path": "strained-core/work/sources/fluid-commit.json",
+      "preserved_path": "strained-core/work/sources/fluid-commit.json",
+      "bytes": 1295210,
+      "sha256": "c81d3501c145c9831e0f2d9eab0898c3bb83d310d90c1377f2f00a466645fabc"
+    },
+    {
+      "original_path": "strained-core/work/sources/fluid-tree.json",
+      "preserved_path": "strained-core/work/sources/fluid-tree.json",
+      "bytes": 1330835,
+      "sha256": "444b89e879a4d3af9a3c2a2f120a7f1339cf5f76fd8afd3ab6b81c3206422a41"
+    },
+    {
+      "original_path": "strained-core/work/sources/proof-scope/Challenge.lean",
+      "preserved_path": "strained-core/work/sources/proof-scope/Challenge.lean",
+      "bytes": 3454,
+      "sha256": "470a2468cc22abe02b56fe77061ef379150363da4cb6af2e66bcd66cb6f07cc5"
+    },
+    {
+      "original_path": "strained-core/work/sources/proof-scope/EulerBlowup/Main.lean",
+      "preserved_path": "strained-core/work/sources/proof-scope/EulerBlowup/Main.lean",
+      "bytes": 4887,
+      "sha256": "3ccb4fc2af310fd09fec9257722a41b9973cc2d42c1d24cb72d17730ffb5408f"
+    },
+    {
+      "original_path": "strained-core/work/sources/proof-scope/EulerBlowup/Theorem01.lean",
+      "preserved_path": "strained-core/work/sources/proof-scope/EulerBlowup/Theorem01.lean",
+      "bytes": 145499,
+      "sha256": "b5e8a782739b8034f03a8e71068c1c3c5fb011708751c8f722440a4bd4b6829d"
+    },
+    {
+      "original_path": "strained-core/work/sources/proof-scope/EulerBlowup/Theorem01Prime.lean",
+      "preserved_path": "strained-core/work/sources/proof-scope/EulerBlowup/Theorem01Prime.lean",
+      "bytes": 4989,
+      "sha256": "4b54b01e3b092e863db0b5fcaf8bd536bd8d0aa4455921e328bfd7da4266fdc7"
+    },
+    {
+      "original_path": "strained-core/work/sources/proof-scope/README.md",
+      "preserved_path": "strained-core/work/sources/proof-scope/README.md",
+      "bytes": 5052,
+      "sha256": "5925a6eec362a04ecc115bd4a0f53ca9510260faa3a7f57dc7a41b0706b05b16"
+    },
+    {
+      "original_path": "strained-core/work/sources/proof-scope/Solution.lean",
+      "preserved_path": "strained-core/work/sources/proof-scope/Solution.lean",
+      "bytes": 1348,
+      "sha256": "579ee0830b3083f78efef039c5abf581ba7d880fc1ee41467ed0437995519880"
+    },
+    {
+      "original_path": "strained-core/work/sources/proof-scope/comparator.json",
+      "preserved_path": "strained-core/work/sources/proof-scope/comparator.json",
+      "bytes": 238,
+      "sha256": "9dfc55a88c6a5b19ded16a18df26a9f9a7a7aaf8c4996191efbbe8cae7f8bab4"
+    },
+    {
+      "original_path": "strained-core/work/sources/proof-scope/formalization.yaml",
+      "preserved_path": "strained-core/work/sources/proof-scope/formalization.yaml",
+      "bytes": 4436,
+      "sha256": "e4e3b2715e9d0e39eb0a9be714b35051c63b8b898b8c6070a97fd627dce91b56"
+    },
+    {
+      "original_path": "strained-core/work/sources/proof-scope/manifest.json",
+      "preserved_path": "strained-core/work/sources/proof-scope/manifest.json",
+      "bytes": 2839,
+      "sha256": "a2a7bcd4c1f51d64676995b4d3c7bf5e20570ef92deb805ed478950364bff2cb"
+    },
+    {
+      "original_path": "strained-core/work/sources/proof-scope/scripts/PrintAxioms.lean",
+      "preserved_path": "strained-core/work/sources/proof-scope/scripts/PrintAxioms.lean",
+      "bytes": 107,
+      "sha256": "a1b802777e8c7112944f7b5f86c0d616bfae85ce12e78e41fa0925a937b8c016"
+    },
+    {
+      "original_path": "strained-core/work/sources/statement-page3.png",
+      "preserved_path": "strained-core/work/sources/statement-page3.png",
+      "bytes": 275081,
+      "sha256": "50999425e1cfd78caf516019cb932376269134a89c7758811a174b02cb906509"
+    },
+    {
+      "original_path": "strained-core/work/sources/statement.pdf",
+      "preserved_path": "strained-core/work/sources/statement.pdf",
+      "bytes": 53497,
+      "sha256": "8d7723941bcda2fa55c1e74faa6298e04c706d17ff8abd2ad01878039c621f9d"
+    },
+    {
+      "original_path": "strained-core/work/sources/statement.txt",
+      "preserved_path": "strained-core/work/sources/statement.txt",
+      "bytes": 10579,
+      "sha256": "e5692c068f1af4583086c0cf983382193ce3de92d115b6a10d40ffa076ca8f0e"
+    },
+    {
+      "original_path": "strained-core/work/verify_direction_scout.py",
+      "preserved_path": "strained-core/work/verify_direction_scout.py",
+      "bytes": 1803,
+      "sha256": "5dbe914f83b5a26047c4687226f9dd4b5adf8006690aefaa1228d8d1dca6c107"
+    },
+    {
+      "original_path": "strained-core/work/viscosity-audit.md",
+      "preserved_path": "strained-core/work/viscosity-audit.md",
+      "bytes": 13207,
+      "sha256": "ca2fb542396721c601b062176d6c1d63c7eebac9ad4b449a612b12f3d2d0e540"
+    },
+    {
+      "original_path": "strained-core/work/viscosity-check.py",
+      "preserved_path": "strained-core/work/viscosity-check.py",
+      "bytes": 2311,
+      "sha256": "499306bd264e20f86bc6c76d7c9641ef6c9ffe0ebd1350bf4aff0657f595130c"
+    },
+    {
+      "original_path": "strained-core/work/viscosity-independent-audit.md",
+      "preserved_path": "strained-core/work/viscosity-independent-audit.md",
+      "bytes": 4943,
+      "sha256": "b66a7bbe73fe2d7ffacb9c24e62a0290acfb37f39dc4bdb21986fef5e953eb51"
+    },
+    {
+      "original_path": "theorems/01_two_fences.md",
+      "preserved_path": "theorems/01_two_fences.md",
+      "bytes": 45405,
+      "sha256": "a36b22a2cab1f0881e624229919fbe4d0c8fb2cac6b172d122bccf5a053ba58a"
+    },
+    {
+      "original_path": "theorems/02_REFEREE_REPORT.md",
+      "preserved_path": "theorems/02_REFEREE_REPORT.md",
+      "bytes": 27777,
+      "sha256": "290f801c6918516b74d9d61ede9eb2206e67ae19b64a24a7bcb38861361dad1f"
+    },
+    {
+      "original_path": "theorems/02_check_forced_axisym.py",
+      "preserved_path": "theorems/02_check_forced_axisym.py",
+      "bytes": 7118,
+      "sha256": "c0855b9f5cd5d36d08ee3b9147c626fba6f508497407095364e9cf849d25ab16"
+    },
+    {
+      "original_path": "theorems/02_forced_axisymmetric_on_axis_typeII.md",
+      "preserved_path": "theorems/02_forced_axisymmetric_on_axis_typeII.md",
+      "bytes": 70201,
+      "sha256": "a541c348af8a5ca42bc752d446afc737e2e072c6dc6844be4776d4dcf7eef06d"
+    },
+    {
+      "original_path": "theorems/03_log_clock/00_ASSEMBLY_round1.md",
+      "preserved_path": "theorems/03_log_clock/00_ASSEMBLY_round1.md",
+      "bytes": 58355,
+      "sha256": "f4c83ea55b5ef6a0208928721a2030ba12b1c6367fa6d4e8acb4931bae187dde"
+    },
+    {
+      "original_path": "theorems/03_log_clock/01_HK2_second_derivative_bound.md",
+      "preserved_path": "theorems/03_log_clock/01_HK2_second_derivative_bound.md",
+      "bytes": 44748,
+      "sha256": "bfc002dfc321f4e07611009fca06df664d757de47d14de3c23556ffa8b4c454e"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/SHA256SUMS",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/SHA256SUMS",
+      "bytes": 1374,
+      "sha256": "13faedf1f2a726494091474ea8546cf7835d71bdf31b1975400b2b43892b4679"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/THEOREM_S3.md",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/THEOREM_S3.md",
+      "bytes": 40486,
+      "sha256": "02c387b5a5ef1ae4dd2c4abad7d911bad7b90744b87c25a41596a103ca28c78e"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/check_constants.py",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/check_constants.py",
+      "bytes": 20867,
+      "sha256": "55c82be4fb7366d95a195d01090e70e510638fc9309fde2df525fda7c2aca6fd"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/copies/r4_CR_ORIGINAL.py",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/copies/r4_CR_ORIGINAL.py",
+      "bytes": 3679,
+      "sha256": "17255bc0a62d60f04d3579ef9ff4ccd17550deed07295ed0d4bcfc2333b96e8e"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/copies/r6_budget_sharp_ORIGINAL.py",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/copies/r6_budget_sharp_ORIGINAL.py",
+      "bytes": 989,
+      "sha256": "acba215b3502719746b602a21560d6f1920ca4490317a16d4706018a51078413"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/copies/u1_u2_results.json",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/copies/u1_u2_results.json",
+      "bytes": 3129,
+      "sha256": "270d80309f62abe8894a8cb859a66a85631bdb04ac86c24246ec1872624a8418"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/copies/u2_u2_results.json",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/copies/u2_u2_results.json",
+      "bytes": 1207,
+      "sha256": "a3d5fd6e17911df977b89a2da8cf7de08f4119177db4021a97d9c0d18bb00db5"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/copies/u2_u3_results.json",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/copies/u2_u3_results.json",
+      "bytes": 32976,
+      "sha256": "6631e3b639eb80c974026caf03568635e9a9ad518fed21752a80ab778ef8b2ea"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/copies/u5_budget_ORIGINAL.py",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/copies/u5_budget_ORIGINAL.py",
+      "bytes": 17487,
+      "sha256": "4c2cdbc32cb0866a894f6e1ba8853a2e5e81ba47677d3c6bea084cd40854c7b0"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/t1_datum.py",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/t1_datum.py",
+      "bytes": 14239,
+      "sha256": "5ca07b7d74bfd9b56e260354ff75e58444e8360e200196d1b3d8d2b65ccd943b"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/t1_results.json",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/t1_results.json",
+      "bytes": 2788,
+      "sha256": "990cee321076ea238734f2a80ddbd8417f3c3d3910f9c452494f564c0971d222"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/t2_gamma_CR.py",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/t2_gamma_CR.py",
+      "bytes": 13046,
+      "sha256": "6e68b55960cea1bcb8037595a52e69822337e82924fc370332101db7a1ecbe81"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/t2_results.json",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/t2_results.json",
+      "bytes": 4494,
+      "sha256": "c01ca849ca23f36e33bf85b96779c8ef69006ac4dfddc310f708f90299a5a71e"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/t3_budget.py",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/t3_budget.py",
+      "bytes": 16619,
+      "sha256": "b74a71054940d99fb50dbd79982d97c6d28b63530ea61feb259648990310ebc8"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/t3_results.json",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/t3_results.json",
+      "bytes": 19334,
+      "sha256": "c455c19c808e3dfd08a87261505082d9fffe82453cfbcd14bd7fb3a14c555ecf"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/t4_derived.py",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/t4_derived.py",
+      "bytes": 3235,
+      "sha256": "009314b35381f46ae6f69765e791fa7dfa6959178fd49ed5d3ff0d80927678dd"
+    },
+    {
+      "original_path": "theorems/03_log_clock/THEOREM_S3/t4_results.json",
+      "preserved_path": "theorems/03_log_clock/THEOREM_S3/t4_results.json",
+      "bytes": 1121,
+      "sha256": "e9a1ab7634762e4ffa46085611b550abf4434bbe923b993690f06398b00a4443"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_REFEREE/NOTE.md",
+      "preserved_path": "theorems/03_log_clock/u1_REFEREE/NOTE.md",
+      "bytes": 30991,
+      "sha256": "b0ba039274bcf8897e43d0fdea61eb352e7ae4fef551b000de31dfb4f41b8789"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_REFEREE/r1_constants.py",
+      "preserved_path": "theorems/03_log_clock/u1_REFEREE/r1_constants.py",
+      "bytes": 2862,
+      "sha256": "d9ea18d229dc9902f4cda0f42af71b7ba20942f630d11f7e86f2c3ad7a59ed39"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_REFEREE/r3_shells2.py",
+      "preserved_path": "theorems/03_log_clock/u1_REFEREE/r3_shells2.py",
+      "bytes": 2231,
+      "sha256": "81ad6510b16ac2c6ddf63f7e91fc474b717e7e89194843fc6a7b54ed62ea73af"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_REFEREE/r4_CR.py",
+      "preserved_path": "theorems/03_log_clock/u1_REFEREE/r4_CR.py",
+      "bytes": 3679,
+      "sha256": "17255bc0a62d60f04d3579ef9ff4ccd17550deed07295ed0d4bcfc2333b96e8e"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_REFEREE/r6_budget_sharp.py",
+      "preserved_path": "theorems/03_log_clock/u1_REFEREE/r6_budget_sharp.py",
+      "bytes": 989,
+      "sha256": "acba215b3502719746b602a21560d6f1920ca4490317a16d4706018a51078413"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/PROOF.md",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/PROOF.md",
+      "bytes": 46887,
+      "sha256": "2224622a8bd3d3b1f6ae26e1bc09c583267ef272bfa7831cb6ee5d1d6cb7e68e"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/SHA256SUMS",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/SHA256SUMS",
+      "bytes": 1838,
+      "sha256": "39b3f354248b9469a3157501222c0f67c85bd5b872f7639088f75663243e140f"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/check_constants.py",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/check_constants.py",
+      "bytes": 17740,
+      "sha256": "4634843241503b4874b778bdac7affb12bb84e376803f83eee74b6bc54ca1b61"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/gate_stats.json",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/gate_stats.json",
+      "bytes": 1155,
+      "sha256": "b1aa25c896869d552da89a191235543e5e9aaeae447e6a9c82d6c3c3fc70c68d"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u1_algebra.py",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u1_algebra.py",
+      "bytes": 8029,
+      "sha256": "2a0b11e02e91f8f2232991c619581fce63b3dedfe03542e3472a6476809812be"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u1_log.txt",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u1_log.txt",
+      "bytes": 1252,
+      "sha256": "827af18b6cbf4146bf107c119b99245585f2c682624332124261dd8968afdbad"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u1_results.json",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u1_results.json",
+      "bytes": 1034,
+      "sha256": "1d08570d596095d23555972c577e905ff4e62afdb532d4f57bb592cea0f1c657"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u2_constants.py",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u2_constants.py",
+      "bytes": 9398,
+      "sha256": "c6f978394cdb697b61e42e5adb29a4b5e3a79ed0584aab014d41bc13108fe628"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u2_log.txt",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u2_log.txt",
+      "bytes": 3039,
+      "sha256": "5c110958ba4f6d43fdebc511e5612dbd7a836d7aeb8701235c2d8f152199c8dd"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u2_results.json",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u2_results.json",
+      "bytes": 3129,
+      "sha256": "270d80309f62abe8894a8cb859a66a85631bdb04ac86c24246ec1872624a8418"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u3_bootstrap.py",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u3_bootstrap.py",
+      "bytes": 8227,
+      "sha256": "55b14c08106bf8d598528f8d68cc3eb1ab14cd50a87cffa6d432346a11c05910"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u3_log.txt",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u3_log.txt",
+      "bytes": 2825,
+      "sha256": "c6c5b26532e27d8f1a4e947a086d2fe4cb1ceff66bd84af5d5d1ee8af4831995"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u3_results.json",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u3_results.json",
+      "bytes": 9436,
+      "sha256": "f066a30cb0ccbc08084c3c10f2986dd153f8f9e9fc8314a326635ebd6f5eaa6b"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u4_log.txt",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u4_log.txt",
+      "bytes": 2750,
+      "sha256": "345c0751607d924715feed4503ededb25dcae7d0706b5db16ef21ed44250b296"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u4_results.json",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u4_results.json",
+      "bytes": 2749,
+      "sha256": "cfbae8417cfb420902efe5e926368db7f0751b5c9d43011939b407ad1d4e7e3e"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u4_shells.py",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u4_shells.py",
+      "bytes": 7011,
+      "sha256": "c7e7088396d0d03a38186c0e99df125a7e330098261348851886c00b1876fddb"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u5_budget.py",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u5_budget.py",
+      "bytes": 17487,
+      "sha256": "4c2cdbc32cb0866a894f6e1ba8853a2e5e81ba47677d3c6bea084cd40854c7b0"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u5_results.json",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u5_results.json",
+      "bytes": 52365,
+      "sha256": "48ab576d736371b58ead47ba993552037d73580e920dbb9441d8e4cd14488a8d"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u6_log.txt",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u6_log.txt",
+      "bytes": 1543,
+      "sha256": "bb776d13796d0ee791f1012db05052b8f7e1c05f99ed2b14ef4e210b42309e21"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u6_results.json",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u6_results.json",
+      "bytes": 1542,
+      "sha256": "5d5444da506ff77a58ddbdc281093e1482062ba22f8a8119f648337bf7f2e78a"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u6_variants.py",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u6_variants.py",
+      "bytes": 4998,
+      "sha256": "99795072d0163c27d9d0ba4e4aa4be1d12be5fa2f8b28ebbeb7e55b09f092d3f"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u7_cone.py",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u7_cone.py",
+      "bytes": 2808,
+      "sha256": "2c4e1724ab7c9a712d16d921c071a2372a69564333b7bd66ef412ee34afdc164"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u7_log.txt",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u7_log.txt",
+      "bytes": 606,
+      "sha256": "0b6117ceb055c5923799bb3c8bd3b1f5d7b5908b29d9eb60bfb854c7a3782ea8"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u1_self_consistent_reference/u7_results.json",
+      "preserved_path": "theorems/03_log_clock/u1_self_consistent_reference/u7_results.json",
+      "bytes": 605,
+      "sha256": "c96388835a6ca65023becf7c3d20f12995eb74553f9ff2d3840db9b49bd95d65"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_REFEREE/NOTE.md",
+      "preserved_path": "theorems/03_log_clock/u2_REFEREE/NOTE.md",
+      "bytes": 26403,
+      "sha256": "cf2b005bb77eaff2a0488c1a7a4d1616b15f6a4e0c95ad0b1171120fa9c58af7"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_REFEREE/SHA256SUMS",
+      "preserved_path": "theorems/03_log_clock/u2_REFEREE/SHA256SUMS",
+      "bytes": 323,
+      "sha256": "f281b830b932c8f0e436c82796d29e6afb6d691e4d4dd7e5706e4060dfd952e9"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_REFEREE/r1_riesz.py",
+      "preserved_path": "theorems/03_log_clock/u2_REFEREE/r1_riesz.py",
+      "bytes": 1098,
+      "sha256": "d7978d7e491ccb89a8a0dbe33f4dead22b97302e3e9406314c7b3e1f641aa2db"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_REFEREE/r2_datum_and_kappa.py",
+      "preserved_path": "theorems/03_log_clock/u2_REFEREE/r2_datum_and_kappa.py",
+      "bytes": 3208,
+      "sha256": "feaca1290b355eaab9f5423e2197438a0e3a53cb6084cae5962c1d855b2c3b42"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_REFEREE/r3_fixedpoint.py",
+      "preserved_path": "theorems/03_log_clock/u2_REFEREE/r3_fixedpoint.py",
+      "bytes": 3763,
+      "sha256": "bbd3e123afce12c0f8ad736c47a7bf1b6eaede1747973df311a01acfae475457"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/PROOF.md",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/PROOF.md",
+      "bytes": 45258,
+      "sha256": "f6b50a75d3afbeabef9cec294e7f64ffa26b67bd530ffbec69112ab0af5184ff"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/SHA256SUMS",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/SHA256SUMS",
+      "bytes": 1533,
+      "sha256": "c51532e237a797dde50415f49f7e439e020bfe867b7bb9fe6606f3c3f34c5681"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/check_constants.py",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/check_constants.py",
+      "bytes": 19573,
+      "sha256": "174d755c001c7021405f2d0effc634a7ce8fea9ee949ac1778e058791b3c7c10"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u1_algebra.py",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u1_algebra.py",
+      "bytes": 8309,
+      "sha256": "fb3b2650ccdd0501acc443b177f413a4bb60ce979edf147f825ad8ccd17ae938"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u1_results.json",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u1_results.json",
+      "bytes": 934,
+      "sha256": "0f1c4db9e6f34a63ecce6ec22b134d3c1efc3b4917f6bd5d7bdb9ed2e20fda01"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u2_datum.py",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u2_datum.py",
+      "bytes": 5492,
+      "sha256": "bcf829b152e9f89dfa7f09a00539a60cca300a87eb6218cd71b4ce61f5ac085a"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u2_results.json",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u2_results.json",
+      "bytes": 1207,
+      "sha256": "a3d5fd6e17911df977b89a2da8cf7de08f4119177db4021a97d9c0d18bb00db5"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u3_assemble.py",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u3_assemble.py",
+      "bytes": 9566,
+      "sha256": "3767b243b7025d3b646ec0938ad2d4b52a0423ba2231aae77ebb57ab722012ca"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u3_results.json",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u3_results.json",
+      "bytes": 32976,
+      "sha256": "6631e3b639eb80c974026caf03568635e9a9ad518fed21752a80ab778ef8b2ea"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u4_log.txt",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u4_log.txt",
+      "bytes": 3262,
+      "sha256": "5940d24c3b041008645bb6713772959e792f00f3c8ae24ccef45bfbaf1e2eb43"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u4_numerics.py",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u4_numerics.py",
+      "bytes": 11979,
+      "sha256": "b71b53f527a4c0c522b68cf25683905aa712a182206c1f9cd7e1031b368e7013"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u4_results.json",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u4_results.json",
+      "bytes": 42210,
+      "sha256": "c9e5cd1109aaae8c01ab68b08537db45f8315a581ce665207e3863836f0d24ec"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u5_radial_rate.py",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u5_radial_rate.py",
+      "bytes": 3955,
+      "sha256": "803546ad84cffeb510403229a4dee3e1542f5f0a79b12f36ff395ef7dac74f3a"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u5_results.json",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u5_results.json",
+      "bytes": 804,
+      "sha256": "f2243c7287d0f2efc9ef44244160b6cbc54a4b1e3c0edf806043c90ca848fbff"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u6_kappa.py",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u6_kappa.py",
+      "bytes": 2309,
+      "sha256": "4addadde5ab9d3a5c8252584eafb4e4b4f18c5fd9a5a085cdbb029a89cbdb463"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u6_results.json",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u6_results.json",
+      "bytes": 1214,
+      "sha256": "06ea42acbafaa3af765adba48e6792a8205a012e29aebd0110211439610291c6"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u7_log.txt",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u7_log.txt",
+      "bytes": 52,
+      "sha256": "40c3615f890a6c2e843d9fd9fb82d1de5f2f0122cb2d453747ea8055aaa1a848"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u7_mutate.py",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u7_mutate.py",
+      "bytes": 2774,
+      "sha256": "3aa5fd2692496fd0c2b14200fe33bc4454c4b75d7ed521f8d62cbfbe2e712e98"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u7_mutate_log.txt",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u7_mutate_log.txt",
+      "bytes": 94630,
+      "sha256": "a60336fd1c86a070bbb0f3ffcb2290405a87e1e82a9c8d317f5b08689f06de06"
+    },
+    {
+      "original_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u7_results.json",
+      "preserved_path": "theorems/03_log_clock/u2_gradient_bound_off_plateau/u7_results.json",
+      "bytes": 100757,
+      "sha256": "6249b11b72a9368e649b5b6040276d18f8b434a7d64132be05053724bf56ffed"
+    }
+  ]
+}

@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Forced Route</title>
+<meta name="description" content="Draft: what was released on 8 September 2026, and the two fences any forced Navier-Stokes blowup has to pass.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;900&family=Space+Grotesk:wght@400;500;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:wght@400;700&display=swap">
+<style>
+:root{
+  --ground:#FFFFFF; --ink:#000000; --ink-2:#2B2B2B; --muted:#6E6E6E; --rule:#DCDCDC; --rule-strong:#9C9C9C;
+  --red:#E8482B; --blue:#3DB4E0; --accent:var(--red); --sel:rgba(232,72,43,.22);
+  --accent-text:#D63E20; --mark-stroke:transparent; --grain-o:.09; --grain-url:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); --code:#F1F1F1;
+  --disp:'Inter Tight','Helvetica Neue',Helvetica,Arial,sans-serif;
+  --grot:'Space Grotesk','Helvetica Neue',Arial,sans-serif;
+  --serif:'Lora',Georgia,'Times New Roman',serif;
+  --mono:'Space Mono','SFMono-Regular',Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#000000; --ink:#FFFFFF; --ink-2:#D9D9D9; --muted:#8E8E8E; --rule:#262626; --rule-strong:#5A5A5A;
+    --red:#FF5738; --blue:#4CC4EE; --sel:rgba(255,87,56,.3); --code:#161616;
+    --accent-text:#FF5738; --mark-stroke:#000000; --grain-o:.13; --grain-url:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#000000; --ink:#FFFFFF; --ink-2:#D9D9D9; --muted:#8E8E8E; --rule:#262626; --rule-strong:#5A5A5A;
+  --red:#FF5738; --blue:#4CC4EE; --sel:rgba(255,87,56,.3); --code:#161616;
+  --accent-text:#FF5738; --mark-stroke:#000000; --grain-o:.13; --grain-url:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;isolation:isolate;background:var(--ground);color:var(--ink);font:400 18px/1.6 var(--serif);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.page{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:0 24px 64px}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:var(--grain-o);background:var(--grain-url)}
+::selection{background:var(--sel)}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+sub,sup{font-size:.72em;line-height:0}
+.m{font-style:italic}
+.hot{color:var(--accent);font-weight:700}
+code{font:400 .8em/1.5 var(--mono);background:var(--code);padding:.1em .4em;border-radius:3px;overflow-wrap:anywhere}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* draft banner: delete this rule and the one line of markup marked DRAFT BANNER */
+.draftbar{position:relative;z-index:2;background:var(--red);color:#fff;font:700 11.5px/1.5 var(--grot);letter-spacing:.1em;text-transform:uppercase;text-align:center;padding:11px 18px}
+.draftbar b{font-weight:700;letter-spacing:.14em}
+.draftbar span{text-transform:none;letter-spacing:.02em;font-weight:400;font-family:var(--serif);font-size:14px}
+
+/* mark */
+.mark,.lockup{display:inline-block;color:var(--ink)}
+
+/* top bar */
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0 0;font:700 11px/1 var(--disp);letter-spacing:.1em;text-transform:uppercase}
+.top .sites .bar{margin:0 .8em;color:var(--rule-strong);font-weight:500}
+.top .sites .red{color:var(--accent-text)}
+.top nav{display:flex;flex-wrap:wrap;gap:22px}
+.top a{padding:6px 0;border-bottom:2px solid transparent}
+.top a:hover{border-bottom-color:var(--accent)}
+
+/* masthead */
+.mast{display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(36px,5vw,60px) 0 0}
+.logo{display:flex;align-items:center}
+.logo .lockup{height:clamp(46px,6.4vw,70px);width:auto}
+.mast .sub{font:700 11px/1 var(--disp);letter-spacing:.2em;text-transform:uppercase;margin-top:12px}
+
+/* hero */
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(36px,5vw,60px) 0 0}
+.eyebrow{font:700 12px/1 var(--grot);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 20px;white-space:pre}
+.eyebrow b{color:var(--accent-text);font-weight:inherit}
+.eyebrow .sep{color:var(--rule-strong)}
+.hot-h{color:var(--accent);font-weight:inherit}
+h1{font:900 clamp(2.4rem,6.8vw,5.2rem)/.95 var(--disp);letter-spacing:-.02em;text-transform:uppercase;margin:0;max-width:14ch;text-wrap:balance}
+.standfirst{font:italic 400 clamp(1.15rem,1.9vw,1.4rem)/1.45 var(--serif);color:var(--ink-2);max-width:37em;margin:30px auto 0;text-wrap:pretty}
+
+/* plate */
+.plate{margin:clamp(32px,4vw,48px) 0 0;width:100%}
+.plate .frame{position:relative}
+.plate canvas{display:block;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;image-rendering:pixelated;width:100%;aspect-ratio:3/1;background:#E8482B;border-radius:6px}
+@media (max-width:640px){.plate canvas{aspect-ratio:4/3}}
+@media (max-width:480px){.plate-ui .alpha{display:none}}
+.plate-ui{position:absolute;inset:0;pointer-events:none}
+.plate-ui .pp{position:absolute;left:18px;top:14px;pointer-events:auto;cursor:pointer;display:inline-flex;align-items:center;min-height:44px;font:700 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.35);border-radius:3px;padding:0 14px}
+.plate-ui .pp:hover{background:#000}
+.plate-ui .pp:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.plate-ui .alpha{position:absolute;right:18px;top:20px;font:400 22px/1 var(--mono);color:rgba(255,255,255,.65)}
+figcaption{margin:14px auto 0;font:400 12.5px/1.65 var(--mono);color:var(--muted);max-width:80ch;text-align:left}
+figcaption .k{color:var(--ink);font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-right:.9em}
+
+/* sections */
+.section{margin-top:clamp(56px,8vw,96px)}
+section[id],article[id]{scroll-margin-top:24px}
+.prose a,.fields a,.meta a,td a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em}
+.seyebrow{text-align:center;font:700 11px/1 var(--grot);letter-spacing:.2em;text-transform:uppercase;color:var(--accent-text);margin:0 0 14px}
+.shead{text-align:center;font:400 clamp(1.5rem,3.1vw,2.35rem)/1.1 var(--grot);letter-spacing:.03em;text-transform:uppercase;margin:0 0 1em;text-wrap:balance}
+.prose{max-width:640px;margin-left:auto;margin-right:auto}
+.prose p{margin:0 0 1.2em}
+.lead{font-size:1.12rem}
+.note{font-style:italic;color:var(--ink-2)}
+.wide{max-width:720px;margin-left:auto;margin-right:auto}
+
+/* source list */
+.meta{display:grid;grid-template-columns:8.5rem 1fr;gap:.45em 1.2em;margin:1.8em auto 0;max-width:640px;font-size:.93rem;line-height:1.55}
+.meta dt{font:700 10.5px/1.9 var(--grot);letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+.meta dd{margin:0;color:var(--ink-2);min-width:0;overflow-wrap:anywhere}
+.meta a{border-bottom:1.5px solid var(--accent)}
+.meta a:hover{color:var(--accent)}
+.meta .sepr{color:var(--muted);margin:0 .5em}
+
+/* theorem boxes */
+.thm{max-width:720px;margin:2em auto 0;border:1px solid var(--rule-strong);border-left:4px solid var(--accent);border-radius:4px;padding:1.5em 1.7em}
+.thm .lbl{font:700 10.5px/1 var(--grot);letter-spacing:.18em;text-transform:uppercase;color:var(--accent-text);margin:0 0 .8em}
+.thm h3{font:700 1.22rem/1.3 var(--serif);margin:0 0 .8em;text-wrap:balance}
+.thm p{margin:0 0 1em}
+.thm p:last-child{margin-bottom:0}
+.thm .st{font:700 10.5px/1.9 var(--grot);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);display:block}
+.thm .said{color:var(--ink-2)}
+
+/* slot */
+.slot{max-width:720px;margin:2em auto 0;border:2px dashed var(--rule-strong);border-radius:4px;padding:1.4em 1.7em;background:transparent}
+.slot .lbl{font:700 10.5px/1 var(--grot);letter-spacing:.18em;text-transform:uppercase;color:var(--accent-text);margin:0 0 .7em}
+.slot .ph{font:700 .95rem/1.5 var(--mono);color:var(--ink);margin:0 0 1em}
+.slot p{margin:0 0 1em}
+.slot p:last-child{margin-bottom:0}
+
+/* checklist */
+.check{list-style:none;counter-reset:c;margin:1.6em auto 0;padding:0;max-width:720px}
+.check>li{counter-increment:c;display:grid;grid-template-columns:2.6rem 1fr;gap:0 .9rem;padding:1.15em 0;border-top:1px solid var(--rule)}
+.check>li:last-child{border-bottom:1px solid var(--rule)}
+.check>li::before{content:counter(c);font:900 1.5rem/1.1 var(--disp);color:var(--accent);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.check h3{font:700 1.05rem/1.35 var(--serif);margin:0 0 .35em;display:flex;flex-wrap:wrap;align-items:baseline;gap:.5em .8em}
+.check p{margin:0;color:var(--ink-2);font-size:.98rem;line-height:1.55}
+.pill{font:700 9.5px/1 var(--grot);letter-spacing:.14em;text-transform:uppercase;border:1px solid currentColor;border-radius:100px;padding:5px 9px;white-space:nowrap}
+.pill.dec{color:var(--accent-text)}
+.pill.flag{color:var(--muted)}
+
+/* tables */
+.tablewrap{overflow-x:auto;margin:1.6em auto 0;max-width:720px;-webkit-overflow-scrolling:touch}
+.tablewrap:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+table{border-collapse:collapse;width:100%;font-size:.95rem;line-height:1.45;font-variant-numeric:tabular-nums}
+caption{text-align:left;font:700 11px/1 var(--grot);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:0 0 14px}
+th{text-align:left;font:700 11px/1.3 var(--grot);letter-spacing:.12em;text-transform:uppercase;color:var(--ink);padding:0 16px 10px 0;border-bottom:2px solid var(--ink);vertical-align:bottom}
+td{padding:11px 16px 11px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+td.id{font:700 .82rem/1.6 var(--mono);color:var(--accent-text);white-space:nowrap}
+td.lv{font-weight:700;min-width:15rem}
+td.al{white-space:nowrap;font-family:var(--mono);font-size:.9rem}
+td.stt{color:var(--muted);white-space:nowrap;font:700 10px/1.6 var(--grot);letter-spacing:.1em;text-transform:uppercase}
+td.kind{color:var(--muted);white-space:nowrap;font:700 10px/1.6 var(--grot);letter-spacing:.1em;text-transform:uppercase}
+.ladder{min-width:520px}
+.findings{min-width:620px}
+
+footer{margin-top:clamp(80px,11vw,140px);padding-top:28px;border-top:2px solid var(--ink);display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+footer .mark{height:56px;width:auto}
+footer .think{font:700 1.15rem/1 var(--serif);margin:0}
+footer .think b{color:var(--accent)}
+footer .line{font:700 11px/1 var(--disp);letter-spacing:.12em;text-transform:uppercase;margin:0}
+footer .line .bar{margin:0 .8em;color:var(--rule-strong);font-weight:500}
+footer .tm{font:400 13px/1.6 var(--serif);color:var(--muted);max-width:62ch;margin:0}
+
+@media (max-width:768px){
+  .top{flex-direction:column;align-items:flex-start;gap:12px}
+  .top nav{gap:0 16px}
+  .top nav a{display:inline-flex;align-items:center;min-height:40px}
+}
+@media (max-width:640px){
+  .page{padding:0 16px 40px}
+  .mast{padding-top:32px}
+  .logo .lockup{height:auto;width:min(272px,100%)}
+  .hero{padding-top:32px}
+  .eyebrow{white-space:normal;line-height:1.6;letter-spacing:.06em}
+  h1{font-size:clamp(2.2rem,9vw,3rem)}
+  .section{margin-top:56px}
+  .thm,.slot{padding:1.2em 1.15em}
+  .check>li{grid-template-columns:2rem 1fr;gap:0 .6rem}
+  .meta{grid-template-columns:1fr;gap:.15em 0}
+  .meta dd{margin-bottom:.6em}
+  .plate-ui .pp{top:8px;left:8px}
+  .plate-ui .alpha{top:14px}
+}
+</style>
+</head>
+<body>
+<div class="draftbar" role="note"><b>Draft</b> &nbsp;<span>Working title and copy are placeholders for the author&rsquo;s pass. Delete this line to publish.</span></div>
+<div class="page">
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false"><symbol id="oh-mark" viewBox="0 0 243.53 288.05"><g transform="matrix(0.001968504,0,0,0.001968504,-233.9508,-69.6552)"><path d="M175470.78 79182C175470.78 63249.69 188453.64 50334 204468.78 50334 212159.53 50334 219535.3 53373.337 224973.47 58783.384 230411.66 64193.435 233466.78 71531.03 233466.78 79182 233466.78 95114.31 220483.94 108030 204468.78 108030 188453.64 108030 175470.78 95114.31 175470.78 79182Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M128871.79 77885C128871.79 61952.69 141854.64 49037 157869.78 49037 165560.53 49037 172936.3 52076.337 178374.47 57486.384 183812.66 62896.435 186867.78 70234.03 186867.78 77885 186867.78 93817.31 173884.94 106733 157869.78 106733 141854.64 106733 128871.79 93817.31 128871.79 77885Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M169738 178319C169738 176725.11 170971 175433 172492 175433 173222.4 175433 173922.89 175737.07 174439.38 176278.3 174955.85 176819.52 175246 177553.58 175246 178319 175246 179912.89 174013 181205 172492 181205 170971 181205 169738 179912.89 169738 178319Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M186868 178319C186868 176725.11 188101 175433 189622 175433 190352.4 175433 191052.89 175737.07 191569.38 176278.3 192085.85 176819.52 192376 177553.58 192376 178319 192376 179912.89 191143 181205 189622 181205 188101 181205 186868 179912.89 186868 178319Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M153882 64750C153882 48817.69 166864.85 35902 182880 35902 190570.75 35902 197946.5 38941.337 203384.69 44351.384 208822.86 49761.435 211878 57099.037 211878 64750 211878 80682.31 198895.16 93598 182880 93598 166864.85 93598 153882 80682.31 153882 64750Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M123458.79 79582C123458.79 63649.69 136441.64 50734 152456.78 50734 160147.53 50734 167523.3 53773.337 172961.47 59183.384 178399.66 64593.435 181454.78 71931.03 181454.78 79582 181454.78 95514.31 168471.94 108430 152456.78 108430 136441.64 108430 123458.79 95514.31 123458.79 79582Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M177903.78 88250C177903.78 72317.69 190886.64 59402 206901.78 59402 214592.53 59402 221968.3 62441.337 227406.47 67851.38 232844.66 73261.43 235899.78 80599.03 235899.78 88250 235899.78 104182.31 222916.94 117098 206901.78 117098 190886.64 117098 177903.78 104182.31 177903.78 88250Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M182880 86421C182880 70044.66 196126.11 56769 212466 56769 220312.69 56769 227838.02 59893.044 233386.47 65453.87 238934.9 71014.699 242052 78556.8 242052 86421 242052 102797.34 228805.89 116073 212466 116073 196126.11 116073 182880 102797.34 182880 86421Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M119355 113701C119355 97447.26 132789.14 84271 149361 84271 157319.1 84271 164951.24 87371.65 170578.46 92890.84 176205.66 98410.05 179367 105895.68 179367 113701 179367 129954.74 165932.86 143131 149361 143131 132789.14 143131 119355 129954.74 119355 113701Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M144962 135714C144962 119781.69 158208.11 106866 174548 106866 182394.7 106866 189920.02 109905.339 195468.47 115315.38 201016.92 120725.43 204134 128063.03 204134 135714 204134 151646.32 190887.9 164562 174548 164562 158208.11 164562 144962 151646.32 144962 135714Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M176728 123028C176728 106774.26 189974.11 93598 206314 93598 214160.69 93598 221686.02 96698.65 227234.47 102217.84 232782.9 107737.05 235900 115222.68 235900 123028 235900 139281.74 222653.89 152458 206314 152458 189974.11 152458 176728 139281.74 176728 123028Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M136548 55699.958 140014.49 35892.857 155292 50647.958Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M203522.1 52880.005 222121.16 36263.466 225638.1 62108.005Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M153881.78 101831C153881.78 85898.69 166864.64 72983 182879.78 72983 190570.53 72983 197946.3 76022.339 203384.47 81432.38 208822.66 86842.43 211877.78 94180.03 211877.78 101831 211877.78 117763.31 198894.94 130679 182879.78 130679 166864.64 130679 153881.78 117763.31 153881.78 101831Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M171574 77885C171574 61952.69 184820.11 49037 201160 49037 209006.7 49037 216532.02 52076.337 222080.47 57486.384 227628.92 62896.435 230746 70234.03 230746 77885 230746 93817.31 217499.9 106733 201160 106733 184820.11 106733 171574 93817.31 171574 77885Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M126571.738 77028C126571.738 61095.69 139817.85 48180 156157.74 48180 164004.44 48180 171529.75 51219.337 177078.2 56629.384 182626.64 62039.435 185743.74 69377.03 185743.74 77028 185743.74 92960.31 172497.63 105876 156157.74 105876 139817.85 105876 126571.738 92960.31 126571.738 77028Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M153294 111557C153294 95624.69 166540.11 82709 182880 82709 190726.7 82709 198252.02 85748.339 203800.47 91158.38 209348.92 96568.43 212466 103906.03 212466 111557 212466 127489.31 199219.9 140405 182880 140405 166540.11 140405 153294 127489.31 153294 111557Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/></g></symbol><symbol id="oh-lockup" viewBox="0 0 474.74 80.53"><g transform="scale(0.279586)"><g transform="matrix(0.001968504,0,0,0.001968504,-233.9508,-69.6552)"><path d="M175470.78 79182C175470.78 63249.69 188453.64 50334 204468.78 50334 212159.53 50334 219535.3 53373.337 224973.47 58783.384 230411.66 64193.435 233466.78 71531.03 233466.78 79182 233466.78 95114.31 220483.94 108030 204468.78 108030 188453.64 108030 175470.78 95114.31 175470.78 79182Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M128871.79 77885C128871.79 61952.69 141854.64 49037 157869.78 49037 165560.53 49037 172936.3 52076.337 178374.47 57486.384 183812.66 62896.435 186867.78 70234.03 186867.78 77885 186867.78 93817.31 173884.94 106733 157869.78 106733 141854.64 106733 128871.79 93817.31 128871.79 77885Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M169738 178319C169738 176725.11 170971 175433 172492 175433 173222.4 175433 173922.89 175737.07 174439.38 176278.3 174955.85 176819.52 175246 177553.58 175246 178319 175246 179912.89 174013 181205 172492 181205 170971 181205 169738 179912.89 169738 178319Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M186868 178319C186868 176725.11 188101 175433 189622 175433 190352.4 175433 191052.89 175737.07 191569.38 176278.3 192085.85 176819.52 192376 177553.58 192376 178319 192376 179912.89 191143 181205 189622 181205 188101 181205 186868 179912.89 186868 178319Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M153882 64750C153882 48817.69 166864.85 35902 182880 35902 190570.75 35902 197946.5 38941.337 203384.69 44351.384 208822.86 49761.435 211878 57099.037 211878 64750 211878 80682.31 198895.16 93598 182880 93598 166864.85 93598 153882 80682.31 153882 64750Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M123458.79 79582C123458.79 63649.69 136441.64 50734 152456.78 50734 160147.53 50734 167523.3 53773.337 172961.47 59183.384 178399.66 64593.435 181454.78 71931.03 181454.78 79582 181454.78 95514.31 168471.94 108430 152456.78 108430 136441.64 108430 123458.79 95514.31 123458.79 79582Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M177903.78 88250C177903.78 72317.69 190886.64 59402 206901.78 59402 214592.53 59402 221968.3 62441.337 227406.47 67851.38 232844.66 73261.43 235899.78 80599.03 235899.78 88250 235899.78 104182.31 222916.94 117098 206901.78 117098 190886.64 117098 177903.78 104182.31 177903.78 88250Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M182880 86421C182880 70044.66 196126.11 56769 212466 56769 220312.69 56769 227838.02 59893.044 233386.47 65453.87 238934.9 71014.699 242052 78556.8 242052 86421 242052 102797.34 228805.89 116073 212466 116073 196126.11 116073 182880 102797.34 182880 86421Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M119355 113701C119355 97447.26 132789.14 84271 149361 84271 157319.1 84271 164951.24 87371.65 170578.46 92890.84 176205.66 98410.05 179367 105895.68 179367 113701 179367 129954.74 165932.86 143131 149361 143131 132789.14 143131 119355 129954.74 119355 113701Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M144962 135714C144962 119781.69 158208.11 106866 174548 106866 182394.7 106866 189920.02 109905.339 195468.47 115315.38 201016.92 120725.43 204134 128063.03 204134 135714 204134 151646.32 190887.9 164562 174548 164562 158208.11 164562 144962 151646.32 144962 135714Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M176728 123028C176728 106774.26 189974.11 93598 206314 93598 214160.69 93598 221686.02 96698.65 227234.47 102217.84 232782.9 107737.05 235900 115222.68 235900 123028 235900 139281.74 222653.89 152458 206314 152458 189974.11 152458 176728 139281.74 176728 123028Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M136548 55699.958 140014.49 35892.857 155292 50647.958Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M203522.1 52880.005 222121.16 36263.466 225638.1 62108.005Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M153881.78 101831C153881.78 85898.69 166864.64 72983 182879.78 72983 190570.53 72983 197946.3 76022.339 203384.47 81432.38 208822.66 86842.43 211877.78 94180.03 211877.78 101831 211877.78 117763.31 198894.94 130679 182879.78 130679 166864.64 130679 153881.78 117763.31 153881.78 101831Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M171574 77885C171574 61952.69 184820.11 49037 201160 49037 209006.7 49037 216532.02 52076.337 222080.47 57486.384 227628.92 62896.435 230746 70234.03 230746 77885 230746 93817.31 217499.9 106733 201160 106733 184820.11 106733 171574 93817.31 171574 77885Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M126571.738 77028C126571.738 61095.69 139817.85 48180 156157.74 48180 164004.44 48180 171529.75 51219.337 177078.2 56629.384 182626.64 62039.435 185743.74 69377.03 185743.74 77028 185743.74 92960.31 172497.63 105876 156157.74 105876 139817.85 105876 126571.738 92960.31 126571.738 77028Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/><path d="M153294 111557C153294 95624.69 166540.11 82709 182880 82709 190726.7 82709 198252.02 85748.339 203800.47 91158.38 209348.92 96568.43 212466 103906.03 212466 111557 212466 127489.31 199219.9 140405 182880 140405 166540.11 140405 153294 127489.31 153294 111557Z" fill-rule="evenodd" vector-effect="non-scaling-stroke" style="fill:currentColor;stroke:var(--mark-stroke,transparent);stroke-width:1;stroke-linejoin:round"/></g></g><g fill="currentColor" transform="translate(-86.4167,-103.1387)"><path d="M.3857422-.009765625C.31966148-.009765625 .25984703 .0045572917 .20629883 .033203126 .15275066 .061848958 .11035156 .10392252 .07910156 .15942383 .047851564 .21492513 .032226564 .2828776 .032226564 .36328126 .032226564 .44433595 .047851564 .5126953 .07910156 .5683594 .11035156 .62402346 .15275066 .666097 .20629883 .6945801 .25984703 .7230632 .31966148 .7373047 .3857422 .7373047 .4518229 .7373047 .51155599 .7230632 .5649414 .6945801 .61832687 .666097 .6607259 .62402346 .6921387 .5683594 .72355148 .5126953 .7392578 .44433595 .7392578 .36328126 .7392578 .2825521 .72355148 .21443685 .6921387 .15893555 .6607259 .10343424 .61832687 .06144206 .5649414 .032958986 .51155599 .0044759118 .4518229-.009765625 .3857422-.009765625M.3857422 .16210938C.41861979 .16210938 .44620768 .1698405 .46850587 .18530274 .49080406 .20076497 .5076497 .22347005 .51904299 .25341798 .5304362 .28336589 .5361328 .31998698 .5361328 .36328126 .5361328 .40690104 .5304362 .44376628 .51904299 .47387696 .5076497 .5039876 .49080406 .5267741 .46850587 .5422363 .44620768 .55769857 .41861979 .5654297 .3857422 .5654297 .3531901 .5654297 .32576499 .55769857 .3034668 .5422363 .2811686 .5267741 .26424156 .5039876 .25268556 .47387696 .24112956 .44376628 .23535156 .40690104 .23535156 .36328126 .23535156 .31998698 .24112956 .28336589 .25268556 .25341798 .26424156 .22347005 .2811686 .20076497 .3034668 .18530274 .32576499 .1698405 .3531901 .16210938 .3857422 .16210938Z" transform="matrix(77,0,0,-77,153.17334,171.41606)"/><path d="M.03515625 0V.72753909H.3486328C.40266929 .72753909 .44995118 .71687826 .49047853 .69555667 .53100588 .67423507 .56258139 .64420577 .5852051 .60546877 .6078288 .56673178 .6191406 .5214844 .6191406 .46972657 .6191406 .41764323 .60758468 .37263999 .58447268 .3347168 .56136068 .2967936 .5289714 .26749674 .4873047 .24682617 .44563804 .2261556 .3971354 .21582031 .34179688 .21582031H.15429688V.36914063H.3017578C.3251953 .36914063 .34521485 .37329103 .3618164 .3815918 .37841798 .38989259 .39111329 .40152995 .39990235 .4165039 .4086914 .43147788 .41308595 .44921876 .41308595 .46972657 .41308595 .4908854 .4086914 .5088704 .39990235 .52368167 .39111329 .53849288 .37841798 .5498047 .3618164 .5576172 .34521485 .5654297 .3251953 .56933596 .3017578 .56933596H.23242188V0H.03515625Z" transform="matrix(77,0,0,-77,212.54035,171.41606)"/><path d="M.03515625 0V.72753909H.5595703V.5683594H.23242188V.4453125H.53222659V.29003907H.23242188V.15917969H.5576172V0H.03515625Z" transform="matrix(77,0,0,-77,261.20436,171.41606)"/><path d="M.6640625 .72753909V0H.5L.23730469 .38183595H.23242188V0H.03515625V.72753909H.203125L.4609375 .3466797H.46679688V.72753909H.6640625Z" transform="matrix(77,0,0,-77,307.25038,171.41606)"/><path d="M.03515625 0V.72753909H.23242188V.44335938H.49414063V.72753909H.69140627V0H.49414063V.2841797H.23242188V0H.03515625Z" transform="matrix(77,0,0,-77,361.07337,171.41606)"/><path d="M.03515625 0V.72753909H.5595703V.5683594H.23242188V.4453125H.53222659V.29003907H.23242188V.15917969H.5576172V0H.03515625Z" transform="matrix(77,0,0,-77,416.97538,171.41606)"/><path d="M.03515625 0V.72753909H.23242188V.15917969H.5263672V0H.03515625Z" transform="matrix(77,0,0,-77,463.02134,171.41606)"/><path d="M.03515625 0V.72753909H.23242188V.15917969H.5263672V0H.03515625Z" transform="matrix(77,0,0,-77,505.14036,171.41606)"/></g></symbol></svg>
+
+<header class="top">
+  <div class="sites"><span>OpenHell.dev</span><span class="bar">|</span><span class="red">Daemons.md</span></div>
+  <nav>
+    <a href="#happened">What happened</a>
+    <a href="#fences">Fences</a>
+    <a href="#ceiling">Ceiling</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#clock">Clock</a>
+    <a href="#core">Core</a>
+    <a href="#method">Method</a>
+  </nav>
+</header>
+
+<div class="mast" id="top">
+  <a class="logo" href="#top" aria-label="OpenHell"><svg class="lockup" aria-hidden="true" focusable="false" viewBox="0 0 474.74 80.53"><use href="#oh-lockup"/></svg></a>
+  <span class="sub">Reading</span>
+</div>
+
+<section class="hero">
+  <p class="eyebrow">8 September 2026  <span class="sep">|</span>  <b>Navier&ndash;Stokes</b></p>
+  <h1>The <b class="hot-h">Forced</b> Route</h1>
+  <p class="standfirst">Three forced blowup papers were released on 8 September 2026, with Lean certificates and a four page statement reporting an unseen full Navier&ndash;Stokes construction. Two <span class="hot">fences</span>, one proved here and one assembled from the partial regularity theory, say that the released mechanism is not the one that gets there.</p>
+
+  <figure class="plate">
+    <div class="frame">
+      <canvas id="plate" role="img" aria-label="A stack of wave profiles, dithered white on red. Each row down the stack carries one more layer at a higher frequency and a smaller amplitude, so the envelope stays the same height while the slope grows."></canvas>
+      <div class="plate-ui"><button class="pp" type="button" aria-controls="plate">Pause</button><span class="alpha" aria-hidden="true">&alpha;</span></div>
+    </div>
+    <figcaption><span class="k">Figure LC-0908</span>The layered cascade, printed as a relief. Each row down the stack adds one layer at a higher frequency and a smaller amplitude. The envelope does not grow and the slope does, which is the whole design of the family both released papers use, and the exact property that shuts it out above dissipation order one.</figcaption>
+  </figure>
+</section>
+
+<section class="section" id="happened">
+  <p class="seyebrow">Release</p>
+  <h2 class="shead">What happened</h2>
+  <div class="prose">
+    <p class="lead">On 8 September 2026 Levent Alp&ouml;ge and Tristan Buckmaster posted four documents on Buckmaster&rsquo;s page at the Courant Institute: a 112 page paper on forced Euler, a 76 page paper on forced Boussinesq, a 57 page paper on incompressible porous media written with Coiculescu, and a four page statement. A Lean repository, <code>fluid_lean</code>, was pushed the same day at a single commit.</p>
+    <p>The Euler theorem is a finite time blowup for the forced axisymmetric equations with swirl on three dimensional space. The data are smooth and compactly supported in a solid torus away from the axis, the force is smooth in space and time and supported in the same torus, and the solution is smooth up to the blowup time and unique in the locally Lipschitz finite energy class. Circulation and meridional velocity stay bounded. What diverges is the gradient of the circulation and the supremum of the vorticity, whose time integral is infinite. The mechanism is the C&oacute;rdoba and Mart&iacute;nez-Zoroa layered cascade: <span class="hot">bounded</span> amplitude, growing derivatives.</p>
+    <p>The Boussinesq paper runs the same mechanism in two dimensions, with a force that stays smooth through the blowup time, the temperature bounded and its gradient unbounded. The porous media paper is on the two dimensional torus, with a space and time smooth force, gradient blowup, and the density converging in H&ouml;lder class for every exponent below one.</p>
+    <p>The statement makes two further claims. The first is a hypo-dissipative Navier&ndash;Stokes blowup whose Lean formalization is unfinished and was not released. The second is reported, not asserted: the statement says that OpenAI told its author that an internal model had produced a forced full Navier&ndash;Stokes blowup on three dimensional space and on the torus with a smooth force, which is Fefferman&rsquo;s options (C) and (D), running to about a hundred pages and prompted in the past few days. That manuscript has not been seen, here or anywhere public.</p>
+    <p>Two honesty notes belong with the above. A search on the day of the release found nothing posted for the reported full Navier&ndash;Stokes claim, so nothing on this page depends on it. And the released Euler paper was not found on arXiv either: the index for the author was current through 2 September 2026 and returned no such paper, so everything said here about the released results is taken from the posted documents and treated as reported rather than as a cited theorem.</p>
+  </div>
+  <dl class="meta">
+    <dt>Released</dt><dd><a href="https://cims.nyu.edu/~tristanb/statement.pdf">statement.pdf</a><span class="sepr">&middot;</span><a href="https://cims.nyu.edu/~tristanb/euler.pdf">euler.pdf</a><span class="sepr">&middot;</span><a href="https://cims.nyu.edu/~tristanb/boussinesq.pdf">boussinesq.pdf</a><span class="sepr">&middot;</span><a href="https://cims.nyu.edu/~tristanb/ipm.pdf">ipm.pdf</a></dd>
+    <dt>Lean</dt><dd><a href="https://github.com/tristanbuckmaster/fluid_lean">github.com/tristanbuckmaster/fluid_lean</a></dd>
+    <dt>Dissipative</dt><dd>C&oacute;rdoba, Mart&iacute;nez-Zoroa and Zheng, <a href="https://arxiv.org/abs/2407.06776">arXiv:2407.06776</a>, published in Archive for Rational Mechanics and Analysis, 2026.</dd>
+  </dl>
+</section>
+
+<section class="section" id="fences">
+  <p class="seyebrow">Fences</p>
+  <h2 class="shead">Two fences</h2>
+  <div class="prose">
+    <p>Both claims can be tested before anyone reads a hundred pages. What follows are two necessary conditions on any forced blowup for the full equations, with the proof status of each stated plainly. They are conditions on the solution rather than on the construction, so they apply to any route to it. The dissipation is written as the fractional operator of order <span class="m">&alpha;</span>, with <span class="m">&alpha;</span> equal to two the Navier&ndash;Stokes case.</p>
+  </div>
+
+  <div class="thm">
+    <p class="lbl">Lemma A &middot; proved here</p>
+    <h3>Bounded velocity continues, for every dissipation order above one.</h3>
+    <p><span class="st">Statement</span>Let <span class="m">&alpha;</span> lie in the interval from one to two, viscosity positive, and let <span class="m">u</span> be the strong solution with smooth divergence free data of finite energy and a force integrable in time with values in <span class="m">L</span><sup>2</sup> and square integrable in time with values in <span class="m">H<sup>s</sup></span>, on an interval reaching past the candidate blowup time. If the supremum of <span class="m">u</span> is bounded up to that time, then the <span class="m">H<sup>s</sup></span> norm is bounded too, and the solution extends past it as a classical solution.</p>
+    <p><span class="st">Proof in words</span>The scale invariant Lebesgue exponent is three over <span class="m">&alpha;</span> minus one, so the supremum norm is critical exactly at order one and has room to spare above it. Pair the equation with the fractional derivative of the solution, which kills the pressure, bound the nonlinear term by the endpoint Kato&ndash;Ponce estimate, and split the derivatives so that Young&rsquo;s inequality absorbs it into the dissipation. That absorption is available <span class="hot">precisely</span> when the order exceeds one. Gr&ouml;nwall closes the bound, and a Kato type local existence argument carries the solution past the time.</p>
+    <p><span class="st">Scope</span><span class="said">Proved in full here for orders above one and up to two, using one external ingredient, the Kato&ndash;Ponce product estimate, quoted with its hypotheses checked on both the whole space and the torus. At order two the conclusion is classical and the Clay problem description states it; what is new is the fractional range and the explicit force class. The honest hypothesis is that force class, not the words smooth and bounded: a constant force is smooth and bounded and is not in it.</span></p>
+    <p><span class="st">Consequence</span>The released family keeps the velocity bounded, by construction and in the dissipative paper by conclusion. It is therefore shut out for every order above one, and so at Navier&ndash;Stokes, whatever force is chosen, as long as the force lies in that class. The naive ladder from forced Euler to hypo-dissipative to full is closed at the second rung.</p>
+  </div>
+
+  <div class="thm">
+    <p class="lbl">Lemma B &middot; assembled from CKN</p>
+    <h3>Axisymmetric full Navier&ndash;Stokes singularities lie on the axis.</h3>
+    <p><span class="st">Statement</span>At order two, let <span class="m">u</span> be an axisymmetric classical solution with smooth axisymmetric divergence free data of finite energy and a smooth axisymmetric force that is divergence free and lies in <span class="m">L<sup>q</sup></span> for some <span class="m">q</span> above five halves, and let the first singular time be reached. Then every blowup point lies on the axis of symmetry.</p>
+    <p><span class="st">Proof in words</span>On backward cylinders inside the smooth region the solution is a suitable weak solution, so the Caffarelli&ndash;Kohn&ndash;Nirenberg regularity criterion applies at every candidate point, and the covering argument gives one dimensional parabolic measure zero for the singular set at that time. Axisymmetry makes the set invariant under rotation about the axis, so a single off-axis singular point would drag an entire circle in with it, and a circle has positive one dimensional measure.</p>
+    <p><span class="st">Scope</span><span class="said">Assembled from cited theorems, with the rotation invariance step proved here. The localisation itself is a standard remark attributed to Caffarelli, Kohn and Nirenberg and is not claimed as new. On the whole space the first step needs a decay input at spatial infinity, which is a real condition and is flagged rather than papered over. The partial regularity input was verified against a secondary source; the 1982 paper was not accessed directly.</span></p>
+    <p><span class="st">Consequence</span>The fence excludes an off-axis singular set, and not off-axis support of the data and the force: with viscosity the support spreads at once, so the singular point may still sit on the axis. Below order two the same statement degrades by a measured amount, since the Tang and Yu bound gives dimension at most five minus twice the order, which exceeds one everywhere below two. That is exactly why the off-axis torus geometry is available for Euler and in the hypo-dissipative range, and not at Navier&ndash;Stokes.</p>
+  </div>
+
+  <div class="slot" id="slot-typeII">
+    <p class="lbl">Theorem &middot; refereed 2026-09-08</p>
+    <p>In the axisymmetric sub-class of Fefferman&rsquo;s (C), with the solution taken in the strong class (continuous into every Sobolev space up to the singular time, the class the two fences already live in): every point of the blow-up set lies on the <span class="hot">axis</span>; the self-similar rate is impossible in the Chen&ndash;Strain&ndash;Tsai&ndash;Yau form, and, under the decay hypothesis Koch, Nadirashvili, Seregin and &Scaron;ver&aacute;k themselves use, in their form as well, so the blowup is Type II; and swirl-free data driven by a swirl-free force never break down, so any winning construction carries swirl.</p>
+    <p>The force enters the rescaling only through Fefferman&rsquo;s decay condition on it, which is the load-bearing hypothesis; smoothness alone would not do, for the trivial reason Koch and coauthors already record. Every step at which the force appears is written out; the ancient limit that the Liouville theorems judge is genuinely unforced. One more thing came out of the periodic case: a continuous periodic axisymmetric divergence-free field is a constant vertical field, so the axisymmetric sub-class of (D) is trivial and any periodic statement has to be about locally axisymmetric solutions. The strong-class hypothesis is not discharged here; discharging it needs a uniqueness theorem in the Clay class itself, and that is the largest open item in this stack.</p>
+  </div>
+
+  <div class="prose" style="margin-top:2.4em">
+    <p><span class="st" style="font:700 10.5px/1.9 var(--grot);letter-spacing:.14em;text-transform:uppercase;display:block">Fefferman&rsquo;s two options, restated</span>Option (C), &ldquo;breakdown of Navier-Stokes solutions&rdquo; on three dimensional space, asks for a smooth divergence free initial field and a smooth force, both satisfying the problem description&rsquo;s decay conditions, for which no solution exists that is smooth with bounded energy for all time. Option (D) asks the same in the periodic case, with the force satisfying the periodic decay condition and the solution required to be smooth and periodic, pressure included.</p>
+    <p>Two features of the pair matter for a cascade. The decay conditions are strong: every space and time derivative of the force has to decay faster than every polynomial rate, uniformly, which a force summed from layers of growing frequency and shrinking support must be checked against jointly and not layer by layer. And both options ask for non-existence in the class, not for one solution that breaks down, so a construction delivers them only together with a uniqueness statement in that class. The problem description itself notes that uniqueness of weak solutions is not known.</p>
+  </div>
+</section>
+
+<section class="section" id="checklist">
+  <p class="seyebrow">Checklist</p>
+  <h2 class="shead">What a winning construction must show</h2>
+  <div class="prose">
+    <p>Six questions, in order. A failure of item 1, of item 3 in the axisymmetric case with the decay input noted above, of item 5 or of item 6 is <span class="hot">decisive</span>. Items 2 and 4 are expected but unproved when a force is present, so a failure there is a red flag rather than a refutation. The labels below are the note&rsquo;s own.</p>
+  </div>
+  <ol class="check">
+    <li>
+      <div>
+        <h3>Is the supremum of the velocity bounded up to the blowup time?<span class="pill dec">Decisive</span></h3>
+        <p>If it is, the claim is false by Lemma A, provided the force lies in the class that Fefferman&rsquo;s decay conditions imply. This is the fence that the layered cascade fails, and the fence that the reported Euler mechanism fails. Ask for the claimed growth rate of the supremum explicitly.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>Does the <span class="m">L</span><sup>3</sup> norm diverge?<span class="pill flag">Red flag</span></h3>
+        <p>Necessary without a force on the whole space, by Escauriaza, Seregin and &Scaron;ver&aacute;k and by Seregin&rsquo;s later paper. Both are stated for the unforced Cauchy problem, and no periodic version is cited, so this is unproved with a force and unproved on the torus. A proof that produces a bounded norm here should be put to its authors rather than dismissed.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>Where is the singular point, and is the flow axisymmetric?<span class="pill dec">Decisive</span></h3>
+        <p>If it is axisymmetric, every blowup point sits on the axis by Lemma B, so a singular set containing an off-axis point, a circle for instance, is excluded at order two. Off-axis support of the data or the force is not by itself excluded, so ask where the singular point is. Check the force too: in <span class="m">L<sup>q</sup></span> for some <span class="m">q</span> above five halves, and divergence free after Leray projection.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>What is the rate?<span class="pill flag">Red flag</span></h3>
+        <p>In the axisymmetric case a Type I rate is excluded for the unforced equations only. A claimed forced blowup at that rate must either extend those theorems or explain why the force breaks them, and the decay hypothesis they carry has to be checked for the claimed solution. Leray&rsquo;s lower bound from the other side is likewise an unforced statement.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>Does the energy add up?<span class="pill dec">Decisive</span></h3>
+        <p>Bounded energy is never the obstruction: under the force conditions the <span class="m">L</span><sup>2</sup> norm stays bounded on the whole interval, so Fefferman&rsquo;s energy condition is satisfied for free. The checkable request is the energy budget of the cascade layer by layer, with the sum of the layer energies shown to stay bounded.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>Is it actually the Clay problem?<span class="pill dec">Decisive</span></h3>
+        <p>Does the force satisfy the decay conditions with the quantifiers honoured jointly, with periodic pressure on the torus? Is the data in the class? Is the conclusion non-existence in the class rather than breakdown of one solution, with the uniqueness step supplied? Is the viscosity fixed throughout, with no vanishing limit, and is the final force a single function of space and time in the class? Data and force may depend on the viscosity, which both options allow.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section class="section" id="ceiling">
+  <p class="seyebrow">Ceiling</p>
+  <h2 class="shead">The ceiling of the layered cascade</h2>
+  <div class="prose">
+    <p>The other question is how far the mechanism itself can be pushed if a dissipation term is added to the momentum equation. A scout note works inside the amplitude system of the released papers, under two assumptions stated up front: damping enters as a diagonal decay at the layer&rsquo;s own frequency, and nothing else in the construction changes. Its results are exponent conditions, reproduced by a numerical toy to four digits. None of them is a theorem, and the second assumption is where the released proof would break first.</p>
+  </div>
+  <div class="tablewrap" tabindex="0">
+    <table class="ladder">
+      <caption>The ladder, in the convention where the dissipation is the fractional operator of order &alpha;</caption>
+      <thead><tr><th class="lv">Level</th><th class="al">Order &alpha;</th><th class="stt">Status</th></tr></thead>
+      <tbody>
+        <tr><td class="lv">C&oacute;rdoba, Mart&iacute;nez-Zoroa and Zheng, with a force rough in time</td><td class="al">&lt; 0.0927</td><td class="stt">Theorem</td></tr>
+        <tr><td class="lv">The same mechanism re-optimized, both fields damped</td><td class="al">&lt; 1/2</td><td class="stt">Derived, checked</td></tr>
+        <tr><td class="lv">Bounded velocity</td><td class="al">= 1</td><td class="stt">Lemma A</td></tr>
+        <tr><td class="lv">Navier&ndash;Stokes</td><td class="al">= 2</td><td class="stt">The target</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="prose" style="margin-top:2em">
+    <p>The proved value at the top is exactly twenty two minus eight root seven, over nine, or 0.0927, and the force there is rough in time. The one half on the second line is a supremum of the amplitude system and not a construction; reaching it needs a limit that the released correction budget does not permit, on two separate counts.</p>
+    <p>The three gaps are of different kinds. From 0.0927 to one half is a gap in optimization: both endpoints obey the same inequality, damping at most growth, and both are the same mechanism tuned differently. From one half to one is a gap in mechanism, since closing it needs a growth rate proportional to the frequency rather than to its square root, which a two field Rayleigh&ndash;Taylor pair does not give. From one to two needs unbounded velocity, which no construction in this family has.</p>
+    <p>Taken as written, the released schedules do worse than any line of that table. Both hard-wire a scale separation exponent that grows from stage to stage, so the stage ceiling falls to zero and no fixed positive order survives every stage. The small numbers that come out of the arithmetic, about 1.5 &times; 10<sup>&minus;6</sup> for the Boussinesq schedule and 5.7 &times; 10<sup>&minus;14</sup> for the Euler schedule, are earliest stage values and not schedule ceilings.</p>
+    <p>A second obstruction has a narrower scope and is worth stating exactly. A smooth force needs the number of uniformly controlled derivatives to grow without bound, and the papers&rsquo; own correction budgets cap that number by a fixed fraction of the scale separation exponent, one part in 120 as written for Boussinesq and visibly relaxable to about one in 20, one part in 8192 for Euler. So inside the released correction scheme a smooth force and a fixed positive dissipation order cannot both be had, and a force of finite order buys at most an order inversely proportional to it. The scope: this is a statement about that correction scheme under the two assumptions above, not about all schemes, and for the released schedules it is <span class="hot">redundant</span>, because the schedules already send the stage ceiling to zero on their own.</p>
+    <p>One prediction is on the record, made while the hypo-dissipative paper was still unreleased. It cannot be the released architecture with damping added. Expect either a different scheme or a force of finite regularity.</p>
+  </div>
+</section>
+
+<section class="section" id="certificates">
+  <p class="seyebrow">Certificates</p>
+  <h2 class="shead">The certificates</h2>
+  <div class="prose">
+    <p class="lead">The Lean repository holds three projects. Each states its theorem over Mathlib alone in a challenge file, proves it in a solution file, and restricts the permitted axioms to the standard three. There are exactly three deliberate placeholders and no axiom declarations. Thirty three agents read the projects across four lenses, and every finding that survived carried two independent refutation votes.</p>
+    <p>The verdict: the three statement files certify sound and non-trivial weakenings of the papers&rsquo; headline theorems, not the theorems as printed. No loophole was found. Every cheap object that would satisfy a statement without doing any work, the zero solution, a solution already singular everywhere, junk derivative values, a vacuous integral, an empty competitor class, is excluded by an accompanying clause, and the definitions in the challenge files are text identical to the library originals. Nothing certified is false; the certified propositions are corollaries of the papers&rsquo; theorems. What the certificates leave out is undocumented, and that is the finding.</p>
+  </div>
+  <div class="tablewrap" tabindex="0">
+    <table class="findings">
+      <caption>Surviving findings, condensed</caption>
+      <thead><tr><th class="id">Id</th><th class="kind">Kind</th><th>Corrected claim</th></tr></thead>
+      <tbody>
+        <tr><td class="id">E-01</td><td class="kind">Fidelity</td><td>The Euler certificate drops everything axisymmetric and geometric in the paper&rsquo;s Theorem 1.1: the quantified radii, axisymmetry, non-zero swirl, torus support of data, force and fields, the bound on circulation, and the blowup of its gradient. What remains is the theorem&rsquo;s substance and is rendered faithfully; the divergence list does not record the omissions.</td></tr>
+        <tr><td class="id">B-01</td><td class="kind">Fidelity</td><td>The Boussinesq certificate takes an existential datum, with no Biot&ndash;Savart clause, no support ball for the state and a universal diffusivity. It is not the paper&rsquo;s Theorem 1.1, and the paper&rsquo;s own note says the verified solution is not the printed one. The project that states Theorem 1.1&rsquo;s form is the third one.</td></tr>
+        <tr><td class="id">P1</td><td class="kind">Provenance</td><td>No hash binding anywhere. The porous media announcement&rsquo;s two hash fields are unfilled placeholders in the shipped file, no paper names a commit, tag or URL, the remote carries a single untagged commit, and all three papers predate it.</td></tr>
+        <tr><td class="id">P4</td><td class="kind">Replication</td><td>The third project&rsquo;s default build compiles neither the challenge nor the solution file, so the expected output in its own readme cannot appear and the axiom printing script fails without an extra build step. No comparator output is committed in any project, and one comparator run is recorded as still pending.</td></tr>
+        <tr><td class="id">A-01</td><td class="kind">Minor</td><td>That project localizes temperature, vorticity and forces in a fixed ball but not the velocity itself at positive times, where the paper puts the velocity&rsquo;s support in a ball. The other clauses do not imply it.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="prose" style="margin-top:2em">
+    <p>Nothing was typechecked. There are no prebuilt objects for the pinned toolchain, so the audit&rsquo;s conclusions rest on reading, on textual identity and on a keyword census. An independent replication build is running locally; no independent replication existed when the audit closed.</p>
+    <p>A replicator needs the pinned toolchain, a build of Mathlib from source at roughly 100 to 150 gigabytes of memory and hours on 24 to 36 cores, an extra build of the challenge and solution files in the third project, the axiom printing script returning the three standard axioms, and the comparator built and run against each project&rsquo;s configuration. Then the challenge file should be diffed against the clause list above before any headline description of what has been certified is trusted.</p>
+  </div>
+</section>
+
+<section class="section" id="clock">
+  <p class="seyebrow">Clock</p>
+  <h2 class="shead">The clock</h2>
+  <div class="prose">
+    <p>Everything above is a fence around someone else&rsquo;s construction. The line this campaign runs itself points the other way: instead of asking what a construction might do, it asks how fast the quantity a blowup needs can actually double.</p>
+  </div>
+  <div class="slot" id="slot-clock">
+    <p class="lbl">Theorem &middot; assembled 2026-09-08, modulo eight named items</p>
+    <p>Take a tapered, mollified vortex ring of amplitude <span class="m">M</span>, shell aspect ratio <span class="m">L</span> equal to the logarithm of outer over inner radius, and inner radius a fixed multiple of the viscous length. For <span class="m">L</span> above an explicit threshold, the first time the vorticity maximum reaches three halves of <span class="m">M</span> satisfies <span class="m">M&thinsp;T<sub>d</sub></span> at most <span class="m">c</span><sub>2</sub>(1+<span class="m">&epsilon;</span>(<span class="m">L</span>))/2<span class="m">L</span>, with <span class="m">c</span><sub>2</sub> = 2&thinsp;log(3/2)/<span class="m">&kappa;</span><sub>&delta;</sub> = 1.629 and <span class="m">&epsilon;</span> decreasing to the strain deficit of the mollified profile. In energy Reynolds number the doubling time is at most <span class="m">c</span><sub>2</sub>(1+<span class="m">&epsilon;</span>)/log&thinsp;<span class="m">&Lambda;</span> once log&thinsp;<span class="m">&Lambda;</span> exceeds 623,027 on proved constants, or 848 on measured ones. With the lower bound already on the record, the clock is pinned on both sides: <span class="hot">one</span> over the amplitude times the logarithm of the Reynolds number.</p>
+    <p>What moved today. The bootstrap that compares the true flow to a reference strain carried an amplification of e<sup>34</sup> in the previous assembly, because the reference strain was fixed in advance and its error fed back through a Lipschitz constant. Defining the reference from the true solution&rsquo;s own exterior strain removes that term as an <span class="hot">identity</span>, and the amplification becomes 3.4. The gradient bound off the exact profile, the other block, is proved on all of space by two weighted maximum principles and one Riesz composition, with no logarithm, and with the homogeneity machinery of the earlier record off the critical path. Both pieces went through single referees; the referee reports are in the repository beside the proofs.</p>
+    <p>Status, exactly. The chain is complete modulo eight named items. One, the approximate-maximum step inside the two maximum principles, is routine and carries most of the others; one, the exact-plateau hypothesis of the viscous lemma, needs a one-line restatement; one is the strong-solution class every note on this page shares. The viscous column of the budget is numerically dead. Granting the list, the family violates the absolute, log-free lower bound of Bradshaw, Farhat and Gruji&#263;&rsquo;s Theorem 10, whose every stated hypothesis it satisfies, so that theorem is <span class="hot">false</span> as stated. Not triggered until the routine step is written out.</p>
+  </div>
+</section>
+
+<section class="section" id="core">
+  <p class="seyebrow">Construction</p>
+  <h2 class="shead">The strained core</h2>
+  <div class="prose">
+    <p class="lead">The other half of the day ran in a second harness, on the constructive side of the same problem: ordinary unforced Navier&ndash;Stokes at viscosity one over a thousand, nine passes between two and eight in the morning, every pass with a report, a verification note, an independent audit and its own check scripts. Its first finding was the two fences above, reached on its own: the released Euler velocity cannot be reused because bounded velocity gives a uniform gradient bound and continuation, and a suitable axisymmetric solution cannot carry an off-axis singular point. From there it stopped transferring and started <span class="hot">building</span>.</p>
+    <p>What it holds, in its own words. A compact smooth datum, one fixed field, for which the initial pressure feedback of a rotating strained core is certified by outward-rounded interval arithmetic, with the gate value enclosed below minus thirty three and the core ratio acceleration above sixteen. A numerical lead, reproduced here to the digit, in which the pressure derivative that decides whether strain grows against rotation sits near minus two hundred and forty one against a threshold of zero, stable to one part in a thousand under refinement. A finite transfer theorem: on one actual solution, every rotating test mode inside the initial rigid core gains by an explicit factor, and one smaller receiver can be chosen so that velocity, local Reynolds number and local energy scale with exponents that match a candidate budget at <span class="m">a</span> = 1/4. An exact affine model of the whole leading envelope with a certified energy gain above fifteen percent. And an explicit next datum with a strict initial core cone and audited initial derivatives.</p>
+    <p>What it does not hold, also in its own words: no persistence interval for the compact three dimensional field, no inherited return of the evolved state to a class it can restart from, no repeated stage, and no blowup. The return problem is now explicit. The evolved field carries a symmetric strain of first order in time that no isotropic rescaling removes, so the finite gain does not bring the field back to the rigid core. That is the same block the clock line met this morning under another name, and the fix that worked there, defining the reference from the evolved state so the mismatch is a coordinate rather than an error, is the direction its own status note already names.</p>
+    <p>Two things are worth saying about where this sits. Its exponent window is exactly the one the fences allow: velocity per stage scaling like <span class="m">q</span><sup>&minus;(1+<span class="m">a</span>)</sup> with advective stage times makes the velocity run faster than the self-similar rate precisely when <span class="m">a</span> is positive, finite energy needs <span class="m">a</span> below one half, and <span class="m">a</span> = 1/4 sits in the middle. And every one of its hundred check scripts was re-run on a second machine this morning, ninety four executed and ninety four passed, with the interval certificates of five passes agreeing bit for bit; the three mismatches found are a wording revision and two grid index picks near a sign crossing, none a <span class="hot">number</span>. The elementary core of the line is in Lean as well: the two coefficients of the core pressure, eighteen sevenths and two fifths, are theorems for every cutoff profile in the stated class, since the profile moments cancel under integration by parts, and the receiver exponent identities and the Type II window are checked against Mathlib with the standard axioms only, alongside the cores of the two fences.</p>
+  </div>
+</section>
+
+<section class="section" id="method">
+  <p class="seyebrow">Method</p>
+  <h2 class="shead">On method</h2>
+  <div class="prose">
+    <p>Everything on this page came through the same pipeline. A reading or a proof, then adversarial review by models that saw neither the author&rsquo;s reasoning nor each other&rsquo;s work, then a written grade against a rubric pinned before the run. The two fence notes went through three lenses and two lenses and absorbed twenty and sixteen corrections between them, each correction re-checked against the source before it was applied. The certificate audit took thirty three agents and required two independent refutations for every surviving finding.</p>
+    <p>Sources were read at source: the Clay problem description, the arXiv records and the author copies of the papers behind each citation, the released documents, and the Lean projects, which were read and not built. Where a source could not be reached, the note says so and names the secondary source it used instead. Grades are internal to this campaign and mean nothing outside it. Nothing here is a solution of the Millennium problem, and nothing here claims to be.</p>
+  </div>
+</section>
+
+<footer>
+  <svg class="mark" viewBox="0 0 243.53 288.05" aria-hidden="true"><use href="#oh-mark"/></svg>
+  <p class="think">Think <b>small.</b></p>
+  <p class="line">Hell Labs<span class="bar">|</span>Hudson Intelligence Laboratories &copy; 2026</p>
+  <p class="line">2026-09-08 13:20Z<span class="bar">|</span>Draft for the author&rsquo;s copy pass</p>
+  <p class="tm">A skunkworks division of Hudson Intelligence Labs.</p>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  var c = document.getElementById('plate');
+  if (!c || !c.getContext) return;
+  var ctx = c.getContext('2d');
+  var off = document.createElement('canvas');
+  var o = off.getContext('2d', { willReadFrequently: true });
+  if (!ctx || !o) return;
+  var mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var W = 0, H = 0, w = 0, h = 0, phase = 0, raf = 0, last = 0, onScreen = true;
+  // The layered cascade: row j carries layers 0..K(j). Layer q has amplitude AR^q
+  // and frequency LR^q, so the envelope is bounded by 1/(1-AR) while the slope of
+  // layer q grows like (AR*LR)^q. Bounded amplitude, growing derivatives.
+  var ROWS = 18, KMAX = 6, AR = 0.70, LR = 2.00, XSPAN = 7.2, AMPL = 0.19;
+  var PH = [0.0, 1.7, 0.6, 2.9, 1.2, 2.2, 0.3, 1.9, 2.6, 0.9];
+  var PAL = [[232,72,43],[243,138,112],[250,199,183],[255,255,255]];
+  var BAYER = [[0,8,2,10],[12,4,14,6],[3,11,1,9],[15,7,13,5]];
+
+  function frame() {
+    o.globalCompositeOperation = 'source-over';
+    o.fillStyle = '#000'; o.fillRect(0, 0, w, h);
+    o.globalCompositeOperation = 'lighter';
+    o.strokeStyle = 'rgba(255,255,255,0.55)'; o.lineWidth = 1;
+    var pad = h * 0.07, span = (h - 2 * pad) / (ROWS - 1);
+    for (var j = 0; j < ROWS; j++) {
+      var K = 1 + Math.round(j * (KMAX - 1) / (ROWS - 1));
+      var y0 = pad + j * span, fq = 1, aq = 1;
+      o.beginPath();
+      for (var i = 0; i <= w; i++) {
+        var x = (i / w) * XSPAN, s = 0;
+        fq = 1; aq = 1;
+        for (var q = 0; q < K; q++) {
+          s += aq * Math.sin(fq * x + phase * (1 + 0.42 * q) + PH[q]);
+          aq *= AR; fq *= LR;
+        }
+        var y = y0 - s * AMPL * span;
+        if (i === 0) o.moveTo(i, y); else o.lineTo(i, y);
+      }
+      o.stroke();
+    }
+    var img = o.getImageData(0, 0, w, h), d = img.data, L = PAL.length - 1;
+    for (var y2 = 0; y2 < h; y2++) {
+      var by = BAYER[y2 & 3];
+      for (var x2 = 0; x2 < w; x2++) {
+        var k = (y2 * w + x2) * 4, t = Math.pow(d[k] / 255, 0.8);
+        var q2 = Math.min(L, Math.floor(t * L + (by[x2 & 3] + 0.5) / 16));
+        var p = PAL[q2]; d[k] = p[0]; d[k + 1] = p[1]; d[k + 2] = p[2]; d[k + 3] = 255;
+      }
+    }
+    o.putImageData(img, 0, 0);
+    ctx.imageSmoothingEnabled = false;
+    ctx.drawImage(off, 0, 0, w, h, 0, 0, W, H);
+  }
+
+  function resize(entry) {
+    var dpr = Math.min(window.devicePixelRatio || 1, 2), r = (entry && entry.contentRect) ? entry.contentRect : c.getBoundingClientRect();
+    W = Math.max(2, Math.round(r.width)); H = Math.max(2, Math.round(r.height));
+    var px = W > 700 ? 3 : 2;
+    w = Math.ceil(W / px); h = Math.ceil(H / px);
+    off.width = w; off.height = h;
+    c.width = Math.round(W * dpr); c.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    frame();
+  }
+
+  var paused = mq.matches;
+  var pp = c.parentNode.querySelector('.pp');
+  function label() { if (!pp) return; pp.textContent = paused ? 'Play' : 'Pause'; }
+  var played = 0, lastNow = 0;
+  function tick(now) {
+    raf = 0;
+    if (paused || !onScreen || document.hidden) { lastNow = 0; return; }
+    if (!lastNow) lastNow = now;
+    played += now - lastNow; lastNow = now;
+    if (now - last > 55) { last = now; phase = played * 0.00035; frame(); }
+    raf = window.requestAnimationFrame(tick);
+  }
+  function start() { if (!raf) raf = window.requestAnimationFrame(tick); }
+  if (pp) { pp.addEventListener('click', function () { paused = !paused; lastNow = 0; label(); start(); }); }
+  label();
+
+  resize();
+  if (window.ResizeObserver) new ResizeObserver(function (es) { resize(es[0]); }).observe(c);
+  else window.addEventListener('resize', resize);
+  if (window.IntersectionObserver) {
+    new IntersectionObserver(function (es) { onScreen = es[0].isIntersecting; start(); }).observe(c);
+  }
+  document.addEventListener('visibilitychange', start);
+  if (mq.addEventListener) mq.addEventListener('change', function () { paused = mq.matches; label(); frame(); start(); });
+  start();
+})();
+</script>
+</body>
+</html>

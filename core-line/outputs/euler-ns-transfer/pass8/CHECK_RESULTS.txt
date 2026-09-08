@@ -1,0 +1,471 @@
+RUN verify_covariance_evolution.py
+PASS: covariance production and viscosity, pressure/axial flux collapse, fixed-circle Gtt, and exact global fluctuation-energy production.
+
+PASS verify_covariance_evolution.py
+RUN verify_covariance_pressure_slab.py
+PASS: saved residual ne<85/4, positive Bessel derivative weight, harmonic-slab energy normalization, whole-space |pressure_r-P'|<5, and exact derivative-reduced Green gradient.
+
+PASS verify_covariance_pressure_slab.py
+RUN certify_fixed_circle_acceleration.py
+{
+  "status": "PASS",
+  "panels": 2048,
+  "dps": 40,
+  "unique_global_radial_maximum_interval": [
+    "1077377876667/5000000000000",
+    "269344469167/1250000000000"
+  ],
+  "G_jets": [
+    {
+      "display": "[0.0410492695592208214938610550042590576986697397, 0.0410492695593732258468677689324417058439749344]",
+      "exact": {
+        "lower": {
+          "sign": 0,
+          "mantissa": "28607165657061968872565543451901864441671",
+          "exponent": -139
+        },
+        "upper": {
+          "sign": 0,
+          "mantissa": "28607165657168179205176469757284834711319",
+          "exponent": -139
+        }
+      }
+    },
+    {
+      "display": "[-0.00000000000582498947825980487455872150614678831597328583, 0.00000000000518012162759409288676565253708000891269255826]",
+      "exact": {
+        "lower": {
+          "sign": 1,
+          "mantissa": "1014856297959326118508586899807",
+          "exponent": -137
+        },
+        "upper": {
+          "sign": 0,
+          "mantissa": "451252236384271889254985075073",
+          "exponent": -136
+        }
+      }
+    },
+    {
+      "display": "[-18.4055637794270044761530711870001648787242884, -18.4055637783754109548876187362152281612586164]",
+      "exact": {
+        "lower": {
+          "sign": 1,
+          "mantissa": "50104710459021718669124840443949874537721",
+          "exponent": -131
+        },
+        "upper": {
+          "sign": 1,
+          "mantissa": "1565772201754969025296418164954473040929",
+          "exponent": -126
+        }
+      }
+    },
+    {
+      "display": "[-77.2104926745215452123289518404252316805606928, -77.2104924727001860964406005657974625020910336]",
+      "exact": {
+        "lower": {
+          "sign": 1,
+          "mantissa": "1642085574901123238109455058966063880887",
+          "exponent": -124
+        },
+        "upper": {
+          "sign": 1,
+          "mantissa": "13136684564870861017298036110805709437355",
+          "exponent": -127
+        }
+      }
+    },
+    {
+      "display": "[29717.7108413306293000904487531040475499125935, 29717.7109234242649948245463492286630618876899]",
+      "exact": {
+        "lower": {
+          "sign": 0,
+          "mantissa": "39501613220937578462373441925892349014237",
+          "exponent": -120
+        },
+        "upper": {
+          "sign": 0,
+          "mantissa": "4937701666257342162947734531612842378643",
+          "exponent": -117
+        }
+      }
+    }
+  ],
+  "C": {
+    "display": "[0.88411617401778477434042771146628836610630692, 0.884116174019426011260484144409202262456536131]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "19254345236982791674521155898570058228023",
+        "exponent": -134
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "4813586309254633662371646319645254018215",
+        "exponent": -132
+      }
+    }
+  },
+  "Green_pressure_radial_real": {
+    "display": "[-20.602847469507603037039168205486465470643789, -20.435208642665993857146267183795599658218953]",
+    "exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "28043142808940458831884325830158307731589",
+        "exponent": -130
+      },
+      "upper": {
+        "sign": 1,
+        "mantissa": "27814964661798410341525964772477920802853",
+        "exponent": -130
+      }
+    }
+  },
+  "Green_pressure_radial_imag": {
+    "display": "[-23.1473042639439011795817720638460719672719385, -22.8712576305536295454899986587862990996927224]",
+    "exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "31506477931095848027255967941259472869323",
+        "exponent": -130
+      },
+      "upper": {
+        "sign": 1,
+        "mantissa": "62261485447866910491071062653377582213443",
+        "exponent": -131
+      }
+    }
+  },
+  "complete_pressure_radial_error_norm_bound": "5",
+  "mean_transport_diffusion_coefficient": {
+    "display": "[-1.59911922665696791858921192293814074175579263, -1.59911922635231506513937337462076111169682612]",
+    "exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "34825732827879277901813780626395100251139",
+        "exponent": -134
+      },
+      "upper": {
+        "sign": 1,
+        "mantissa": "17412866410622263140950766976068903210609",
+        "exponent": -133
+      }
+    }
+  },
+  "seed_coefficient_before_error": {
+    "display": "[-1096.04321568032892015374668128936427447154516, -1069.93858587159870032463601948806558539048657]",
+    "exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "2913782653744835777705001674443431783053",
+        "exponent": -121
+      },
+      "upper": {
+        "sign": 1,
+        "mantissa": "11377538576888417975679940857323194774869",
+        "exponent": -123
+      }
+    }
+  },
+  "seed_coefficient_upper_expression": {
+    "display": "[-691.827423217777803427243238072383555737886301, -665.722793408678139426475961917478087533420839]",
+    "exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "7356771033542476510390978222395094682465",
+        "exponent": -123
+      },
+      "upper": {
+        "sign": 1,
+        "mantissa": "56633431963580982167713184500662544333887",
+        "exponent": -126
+      }
+    }
+  },
+  "viscous_torque_factor": {
+    "display": "[-24.6346255037889794464506653193327016195980382, -24.6346255023496230399588997540814465565464885]",
+    "exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "1047841084330028756277335753367048416049",
+        "exponent": -125
+      },
+      "upper": {
+        "sign": 1,
+        "mantissa": "2095682168537610611343712900876167964859",
+        "exponent": -126
+      }
+    }
+  },
+  "Gtt_upper_expression": {
+    "display": "[-304786.594933592446230202556004150034858572597, -293333.188604612339424175039523497704572402962]",
+    "exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "6330169917588876275959331646350788551399",
+        "exponent": -114
+      },
+      "upper": {
+        "sign": 1,
+        "mantissa": "48738335798263447933787750851418185948109",
+        "exponent": -117
+      }
+    }
+  },
+  "Gtt_upper_strictly_below_minus_250000": true,
+  "Gt_interval": {
+    "display": "[85.6465125470615141262294034129150102935027932, 171.279549323398698324019039360862838176865749]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "58287996016075892081006458334744658154079",
+        "exponent": -129
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "29141705224458866601803757221152178439293",
+        "exponent": -127
+      }
+    }
+  },
+  "Gtr_interval": {
+    "display": "[3475.70182363086842977350342890086043577665127, 5187.14444216443141746440174245381619716436667]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "73920002703533382301843350627572861632345",
+        "exponent": -124
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "27579590442820370564203362939767288047085",
+        "exponent": -122
+      }
+    }
+  },
+  "moving_radial_maximum_correction": {
+    "display": "[643.480998333543479967933349311408571990111319, 1874.18714921754211618052611881385869122765067]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "54741309295396658600133453252984603093679",
+        "exponent": -126
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "9964888112321114272527530226096585505859",
+        "exponent": -122
+      }
+    }
+  },
+  "moving_radial_maximum_Gtt_upper_expression": {
+    "display": "[-304143.113935258902750234622654838626286584543, -291459.001455394797307994513404683845881169857]",
+    "exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "50534442720993438608846267519921572858275",
+        "exponent": -117
+      },
+      "upper": {
+        "sign": 1,
+        "mantissa": "24213466522376706556385632765926333825525",
+        "exponent": -116
+      }
+    }
+  },
+  "initial_radial_maximum_speed": {
+    "display": "[0.242102226949945160007763523153316380932204917, 0.276298829449412587170391225533047029104772814]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "84360313675118136838178865141998365327657",
+        "exponent": -138
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "48138045267215775704265214608157237239719",
+        "exponent": -137
+      }
+    }
+  },
+  "moving_radial_maximum_Gtt_upper_below_minus_240000": true,
+  "initial_Gt_between_85_and_186": true,
+  "radial_speed_above_one_fifth": true,
+  "seconds": 21.55557680130005,
+  "scope": "Actual initial fixed-circle and fixed-axial-plane radial critical-branch derivatives; uses independently proved whole-space slab error. Not acceleration of an unrestricted global maximum or a bound on positive-time duration."
+}
+
+PASS certify_fixed_circle_acceleration.py
+RUN verify_fixed_circle_acceleration_audit.py
+PASS: logistic/g jets through order four, full source and phase signs, moving radial branch formulas, and saved exact initial-jet inequalities.
+
+PASS verify_fixed_circle_acceleration_audit.py
+RUN verify_actual_fluctuation_energy.py
+PASS: full initial strain contraction and rational fractional fluctuation-energy drain; no positive-time decay rate inferred.
+
+PASS verify_actual_fluctuation_energy.py
+RUN kelvin-covariance-check.py
+PASS: exact rotating Kelvin equations, polarization, viscosity, stress depletion, and integrated budget
+PASS: actual initial fluctuation-energy constants; no positive-time propagation asserted
+
+PASS kelvin-covariance-check.py
+RUN verify_endcap_gradient_bound.py
+PASS: positive Bessel weight, Hankel coefficient, mode Green jump, tails, and slab prefactor
+
+PASS verify_endcap_gradient_bound.py
+RUN exterior-dynamics-verify.py
+PASS: exact Newton derivative kernels and harmonicity.
+PASS: radial density gives the actual swirl pressure source.
+PASS: conservative kernel derivative and reflected-packet bounds.
+No interval accuracy or positive-time interpretation of diagnostics is asserted.
+
+PASS exterior-dynamics-verify.py
+RUN certify_leading_envelope.py
+{"status": "PASS", "scope": "actual initial mean maximum and net fluctuation-energy gain; exact central pressure neutrality; this subcertificate does not assess the full pressure derivative; companion leading-pressure certificate does", "parameters": {"radial_center": "7/50", "radial_width": "1/10", "m": 4, "k": -20, "seed_amplitude_interval": ["1/8", "1/4"], "nu": "1/1000"}, "root_interval": ["1077377876667/5000000000000", "269344469167/1250000000000"], "root_certificate_dependency": "fixed-circle-acceleration-certificate.json", "cutoff_derivative_certificate_dependency": "../../pass6/checks/outer-mean-maximum-certificate.json", "seed_value": {"display": "[0.6464515259224868868281496235673302194175, 0.6464515259303458545921043920684730163398]", "exact": {"lower": {"sign": 0, "mantissa": "859281466174047833751820086135435311", "exponent": -120}, "upper": {"sign": 0, "mantissa": "107410183273061774215204993110433243", "exponent": -117}}}, "seed_derivative": {"display": "[-39.29483882083868323597495331331924872371, -39.29483881870900177547770769507748250375]", "exact": {"lower": {"sign": 1, "mantissa": "816121872664292341404189041331737281", "exponent": -114}, "upper": {"sign": 1, "mantissa": "816121872620060587976110193226560897", "exponent": -114}}}, "unit_mean_torque": {"display": "[1954.599521999362422509283385653581911783, 1954.599522139793306975354810144738709359]", "exact": {"lower": {"sign": 0, "mantissa": "634303809860685325717248830788730345", "exponent": -108}, "upper": {"sign": 0, "mantissa": "634303809906257753233151954657508269", "exponent": -108}}}, "R1": {"interval": "[154278.6422641070164361793701028804422644, 175257.3100341986565244852148553171403894]", "exact_dyadic_bounds": {"lower": {"sign": 0, "mantissa": "782285653873966160148775058053216031", "exponent": -102}, "upper": {"sign": 0, "mantissa": "444330068518473636878969827711243139", "exponent": -101}}, "panels": 1024, "strictly_positive": true, "strictly_negative": false, "width_display": 20978.667770091637}, "radial_extraction": {"interval": "[0.02196178344685765685795724681084006528738, 0.02438365289314620584089211100546093441205]", "exact_dyadic_bounds": {"lower": {"sign": 0, "mantissa": "934150956637726230413285417672042519", "exponent": -125}, "upper": {"sign": 0, "mantissa": "129645736260287186507814417377809551", "exponent": -122}}, "panels": 122, "strictly_positive": true, "strictly_negative": false, "width_display": 0.0024218694462885488}, "R1_coarse_upper": 200000, "extraction_coarse_lower": "1/50", "R0_upper": "392/5", "Cw_upper": "1764000/1419857", "retuned_A_bounds": ["900", "1020"], "mean_derivative_lower": "8871/800", "fluctuation_energy_derivative_lower_over_pi_lambda_squared": "205648/375", "fluctuation_energy_fractional_derivative_lower": "12853/2205", "trust_base": "existing certified root interval and cutoff-jet ranges; new one-dimensional outward-rounded range quadratures"}
+
+PASS certify_leading_envelope.py
+RUN certify_leading_pressure.py
+{
+  "status": "PASS",
+  "panels": 1024,
+  "dps": 35,
+  "dependency": "leading-envelope-certificate.json",
+  "range_integrals": {
+    "radial_A": {
+      "interval": "[0.02611950725832029811222068622190644933708, 0.02749287473730600586705416643269084731601]",
+      "exact_dyadic_bounds": {
+        "lower": {
+          "sign": 0,
+          "mantissa": "277750242270933222135929510907488639",
+          "exponent": -123
+        },
+        "upper": {
+          "sign": 0,
+          "mantissa": "1169417561133920244902086880789701963",
+          "exponent": -125
+        }
+      },
+      "panels": 498,
+      "strictly_positive": true,
+      "strictly_negative": false,
+      "width_display": 0.0013733674789857076
+    },
+    "axial_A": {
+      "interval": "[0.00000000990173267575435902716099159351444002154, 0.00000001042081687606767184586694581269413810353]",
+      "exact_dyadic_bounds": {
+        "lower": {
+          "sign": 0,
+          "mantissa": "883264069703851206406336346034801399",
+          "exponent": -146
+        },
+        "upper": {
+          "sign": 0,
+          "mantissa": "929567927654932082511618183036832249",
+          "exponent": -146
+        }
+      },
+      "panels": 120,
+      "strictly_positive": true,
+      "strictly_negative": false,
+      "width_display": 5.190842003133128e-10
+    },
+    "radial_B": {
+      "interval": "[0.00051069382399460238377219380851961705284, 0.0005373740526865021537456432076811981077322]",
+      "exact_dyadic_bounds": {
+        "lower": {
+          "sign": 0,
+          "mantissa": "173780103200788455949066303992233965",
+          "exponent": -128
+        },
+        "upper": {
+          "sign": 0,
+          "mantissa": "731435658280240174107428151703664311",
+          "exponent": -130
+        }
+      },
+      "panels": 104,
+      "strictly_positive": true,
+      "strictly_negative": false,
+      "width_display": 2.6680228691899767e-05
+    },
+    "axial_B": {
+      "interval": "[0.000003252184057659157154487440646155376605014, 0.000003423151676464015366512925666145930229979]",
+      "exact_dyadic_bounds": {
+        "lower": {
+          "sign": 0,
+          "mantissa": "141652593766758375303106675084941373",
+          "exponent": -135
+        },
+        "upper": {
+          "sign": 0,
+          "mantissa": "298198567627917749222968490486776581",
+          "exponent": -136
+        }
+      },
+      "panels": 652,
+      "strictly_positive": true,
+      "strictly_negative": false,
+      "width_display": 1.709676188048582e-07
+    }
+  },
+  "d_weighted_norm_upper_expression": {
+    "display": "[0.002196164393788516357443798099527907278408, 0.002311335665922136904611205499025841062319]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "747316018065844312069247144435690783",
+        "exponent": -128
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "196626692787192058599861453192164961",
+        "exponent": -126
+      }
+    }
+  },
+  "full_cross_pressure_absolute_upper_expression": {
+    "display": "[0.2669767481743433908607489890374036275872, 0.2809775451111765835024960675222013520399]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "177436483948478331606809661746012889",
+        "exponent": -119
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "23342701196793439829205057460342703",
+        "exponent": -116
+      }
+    }
+  },
+  "local_absolute_upper": "[0.02263496134082394909923588898480451047336, 0.02263496134082394909923588898480451049687]",
+  "E_absolute_upper_expression": {
+    "display": "[0.2896117095151673399599848780222081378255, 0.3036125064520005326017319565070058626543]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "384959992194689133161755457314059755",
+        "exponent": -120
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "807140486892855014430834106375034451",
+        "exponent": -121
+      }
+    }
+  },
+  "E_absolute_upper_strictly_below_one_third": true,
+  "nu_d_rational_upper": "9078400/1419857",
+  "nu_d_upper_below_seven": true,
+  "common_T_negative_margin": "12493177/1120000",
+  "beta_second_lower": "12493177/2240000",
+  "scope": "Full actual initial pressure-derivative gate for the separate leading-envelope family, including viscosity and the nonlocal strong-swirl cross pressure; no sustained gain or return."
+}
+
+PASS certify_leading_pressure.py
+RUN verify_leading_family_independent_audit.py
+PASS: non-flat leading covariance/torque, exact retuning and energy margins, full-pressure E<1/3, and common actual initial T<-11.
+
+PASS verify_leading_family_independent_audit.py
+PASS: 11 finite programs; all three new interval certificates recomputed. Model diagnostics remain separate from actual initial identities. No NS time integration, formal replay, quantitative stage duration, inherited return, or blowup proof.

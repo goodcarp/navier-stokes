@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "r": 0.5,
+   "z": 0.866,
+   "scaled_worst_rel": 3.2049023488280674e-09
+  },
+  {
+   "r": 2.5,
+   "z": 4.33,
+   "scaled_worst_rel": 1.2399370105436666e-05
+  },
+  {
+   "r": 1.2,
+   "z": 0.3,
+   "scaled_worst_rel": 4.955747931124965e-10
+  },
+  {
+   "r": 0.9,
+   "z": -1.4,
+   "scaled_worst_rel": 1.5767408419565555e-10
+  },
+  {
+   "r": 1.5,
+   "z": 2.0,
+   "scaled_worst_rel": 8.651859005117347e-10
+  },
+  {
+   "r": 0.2,
+   "z": 0.05,
+   "scaled_worst_rel": 3.617914738809653e-07
+  }
+ ],
+ "worst_scaled_rel": 1.2399370105436666e-05,
+ "note": "scaling convention copied from hk2/k2_datum.py section 1"
+}

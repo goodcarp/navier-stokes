@@ -1,0 +1,31 @@
+{
+  "status": "PASS: equivalent nonlinear outputs; timing diagnostic only",
+  "parameters": {
+    "nr": 96,
+    "nz": 256,
+    "J": 4,
+    "dealias": "padding"
+  },
+  "source_sha256_before": "cf27bb0a8e1becbda7605255da2559a412ec62c00412aeda6336547bacf295f2",
+  "source_sha256_after": "cf27bb0a8e1becbda7605255da2559a412ec62c00412aeda6336547bacf295f2",
+  "imported_nonlinear_source": "    def nonlinear(self,U,project=True):\n        state=resample(U,self.nzpad,axis=-1) if self.dealias=='padding' else U\n        nwork=state.shape[-1]\n        uc=np.stack([self.gather(a) for a in state]);wc=np.stack([self.curl_cells(a,j) for j,a in enumerate(state)])\n        F=np.empty_like(state)\n        cell_force=np.zeros_like(uc)\n        for i in range(0,self.nr,24):\n            sl=slice(i,min(i+24,self.nr));shape=(3,sl.stop-sl.start,nwork,self.nphi)\n            us=np.zeros(shape,complex);ws=np.zeros(shape,complex)\n            for j in range(self.J+1):\n                us[...,j]=uc[j,:,sl];ws[...,j]=wc[j,:,sl]\n                if j:us[...,-j]=uc[j,:,sl].conj();ws[...,-j]=wc[j,:,sl].conj()\n            up=ifft(us,axis=-1,norm='forward').real;wp=ifft(ws,axis=-1,norm='forward').real\n            cross=np.stack((up[1]*wp[2]-up[2]*wp[1],up[2]*wp[0]-up[0]*wp[2],up[0]*wp[1]-up[1]*wp[0]))\n            coeff=fft(cross,axis=-1,norm='forward')\n            for j in range(self.J+1):cell_force[j,:,sl]=coeff[...,j]\n        for j in range(self.J+1):F[j]=self.scatter(cell_force[j])\n        if self.dealias=='padding':F=resample(F,self.nz,axis=-1)\n        return self.project(F) if project else F\n",
+  "samples_seconds": {
+    "1": [
+      0.5410946660000002,
+      0.5057131580000007,
+      0.4747277959999998
+    ],
+    "4": [
+      0.3605514380000008,
+      0.38094954099999967,
+      0.3818597619999995
+    ]
+  },
+  "medians_seconds": {
+    "1": 0.5057131580000007,
+    "4": 0.38094954099999967
+  },
+  "four_vs_one_speedup": 1.3275069361482736,
+  "relative_output_difference": 0.0,
+  "note": "Same fixed initialized state. Alternating workers, warmed FFT calls, no cProfile. Concurrent load uncontrolled; no PDE error conclusion."
+}

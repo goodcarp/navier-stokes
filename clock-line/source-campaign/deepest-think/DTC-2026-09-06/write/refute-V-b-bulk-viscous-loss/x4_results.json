@@ -1,0 +1,102 @@
+{
+ "A_r3_Lap5_inv_r": "-1",
+ "A_r3_Lap5_inv_r_cyl": "-1",
+ "A_2_2_residual": "0",
+ "B_hess_eigs": "{0: 1, -1/R0**3: 3, 2/R0**3: 1}",
+ "B_hess_trace_r3": "-1",
+ "C_legendre_residuals": {
+  "1": "0",
+  "2": "0",
+  "3": "0",
+  "4": "0",
+  "5": "0",
+  "6": "0"
+ },
+ "D_Delta_y_k_coeffs": [
+  "-1",
+  "-3",
+  "-45",
+  "-1575"
+ ],
+ "E_propagator_note": "Psi_s = diag(e^{-mu(s)}x4, e^{2mu(s)}), mu(s)=int_{tau-s}^{tau} a; Psi_tau Psi_p^{-1} = diag(lam(tau-p)^{-1} x4, lam(tau-p)^2), lam(u)=exp int_0^u a  -- verified by direct substitution below",
+ "E_prop_residual_y": "0",
+ "E_prop_residual_z": "0",
+ "E_half_C_contract": "M*sigma_y/R0**3",
+ "E_identification_residual": "0",
+ "E_dsigma_z": "0",
+ "F_V_affine_n3": [
+  "0",
+  "0",
+  "0"
+ ],
+ "F_V_curved_n3_linear_in_eps": [
+  "-2*epsilon",
+  "0",
+  "0"
+ ],
+ "inset_comparison": [
+  {
+   "L": 10,
+   "f_seat": 0.25972,
+   "f_theorem_eps": null,
+   "phi_eps": null,
+   "f_theorem_1L": 0.5076972822670149,
+   "phi_1L": 45.0,
+   "f_gapV": 0.9131
+  },
+  {
+   "L": 20,
+   "f_seat": 0.19228,
+   "f_theorem_eps": 0.590587187929948,
+   "phi_eps": 75.0,
+   "f_theorem_1L": 0.37636092251960546,
+   "phi_1L": 45.0,
+   "f_gapV": 0.659
+  },
+  {
+   "L": 40,
+   "f_seat": 0.14189,
+   "f_theorem_eps": 0.3960737613177298,
+   "phi_eps": 75.0,
+   "f_theorem_1L": 0.2752757189297324,
+   "phi_1L": 30.0,
+   "f_gapV": 0.4694
+  },
+  {
+   "L": 80,
+   "f_seat": 0.10441,
+   "f_theorem_eps": 0.27874606054517953,
+   "phi_eps": 45.0,
+   "f_theorem_1L": 0.20323505876469117,
+   "phi_1L": 30.0,
+   "f_gapV": 0.3382
+  },
+  {
+   "L": 160,
+   "f_seat": 0.07663,
+   "f_theorem_eps": 0.19661907976994247,
+   "phi_eps": 30.0,
+   "f_theorem_1L": 0.1500621905476369,
+   "phi_1L": 30.0,
+   "f_gapV": 0.2437
+  },
+  {
+   "L": 320,
+   "f_seat": null,
+   "f_theorem_eps": 0.13879052263065764,
+   "phi_eps": 30.0,
+   "f_theorem_1L": 0.11061135283820955,
+   "phi_1L": 30.0,
+   "f_gapV": null
+  },
+  {
+   "L": 640,
+   "f_seat": null,
+   "f_theorem_eps": 0.09982975743935985,
+   "phi_eps": 30.0,
+   "f_theorem_1L": 0.08120700175043762,
+   "phi_1L": 30.0,
+   "f_gapV": null
+  }
+ ]
+}

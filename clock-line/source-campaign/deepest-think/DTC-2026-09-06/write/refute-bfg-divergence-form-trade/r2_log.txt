@@ -1,0 +1,88 @@
+=== Lemma U probe:  Phi = ||u||_inf / (E^{1/5} M^{3/5})  must be <= C_u = 1.21423942080054 ===
+  gauss iso a=b=c=2      ||u||=0.4289     E=7.875       M=1           Phi=0.283851   (rel div 1.1e-13)
+  gauss oblate 3,3,1     ||u||=0.2859     E=3.937       M=0.4445      Phi=0.353593   (rel div 1.6e-13)
+  gauss prolate 1,1,4    ||u||=0.8576     E=15.75       M=4           Phi=0.215089   (rel div 8.7e-14)
+  gauss 4,1,1            ||u||=0.8487     E=8.367       M=2.126       Phi=0.352978   (rel div 7.9e-14)
+  gauss aniso 3,1,2      ||u||=0.8487     E=13.12       M=2.222       Phi=0.314092   (rel div 7.5e-14)
+  gauss iso a=1          ||u||=0.8576     E=3.937       M=4           Phi=0.283811   (rel div 7.2e-14)
+  gauss wide a=4         ||u||=0.2144     E=15.75       M=0.2512      Phi=0.283067   (rel div 3.0e-13)
+  random blobs #0        ||u||=1.519      E=25.09       M=4.396       Phi=0.327863   (rel div 6.9e-14)
+  random blobs #1        ||u||=0.6597     E=5.589       M=1.666       Phi=0.344283   (rel div 9.9e-14)
+  random blobs #2        ||u||=1.493      E=108.1       M=4.232       Phi=0.246183   (rel div 9.2e-14)
+  random blobs #3        ||u||=3.044      E=70.44       M=10.97       Phi=0.308898   (rel div 6.0e-14)
+  random blobs #4        ||u||=1.112      E=41.39       M=3.392       Phi=0.253848   (rel div 9.4e-14)
+  random blobs #5        ||u||=2.469      E=76.64       M=7.251       Phi=0.315852   (rel div 6.6e-14)
+  random blobs #6        ||u||=1.118      E=45.71       M=3.155       Phi=0.261215   (rel div 7.5e-14)
+  random blobs #7        ||u||=2.273      E=161.5       M=5.421       Phi=0.298118   (rel div 9.0e-14)
+  random blobs #8        ||u||=2.341      E=122.8       M=6.655       Phi=0.286867   (rel div 6.9e-14)
+  random blobs #9        ||u||=0.8514     E=23.61       M=2.093       Phi=0.290442   (rel div 8.9e-14)
+  random blobs #10       ||u||=0.5317     E=34.43       M=1.158       Phi=0.239858   (rel div 1.2e-13)
+  random blobs #11       ||u||=3.081      E=106.5       M=7.251       Phi=0.369032   (rel div 6.6e-14)
+  random blobs #12       ||u||=1.572      E=97.54       M=4.479       Phi=0.255743   (rel div 9.4e-14)
+  random blobs #13       ||u||=0.7099     E=22.44       M=1.594       Phi=0.288112   (rel div 9.2e-14)
+  random blobs #14       ||u||=2.131      E=117.1       M=5.324       Phi=0.301326   (rel div 7.9e-14)
+  random blobs #15       ||u||=0.9869     E=40.37       M=2.21        Phi=0.292720   (rel div 9.8e-14)
+  random blobs #16       ||u||=0.8835     E=15.68       M=2.176       Phi=0.319586   (rel div 7.3e-14)
+  random blobs #17       ||u||=1.61       E=60.17       M=2.922       Phi=0.372777   (rel div 8.8e-14)
+  random blobs #18       ||u||=2.646      E=124.5       M=8.201       Phi=0.285204   (rel div 8.4e-14)
+  random blobs #19       ||u||=1.975      E=35.05       M=10.14       Phi=0.241506   (rel div 6.0e-14)
+  random blobs #20       ||u||=0.7021     E=32.87       M=1.235       Phi=0.307583   (rel div 1.0e-13)
+  random blobs #21       ||u||=0.8178     E=10.54       M=2.354       Phi=0.305544   (rel div 6.7e-14)
+  random blobs #22       ||u||=1.834      E=82.63       M=3.728       Phi=0.344397   (rel div 7.0e-14)
+  random blobs #23       ||u||=2.083      E=84.58       M=5.304       Phi=0.315142   (rel div 5.6e-14)
+  random blobs #24       ||u||=3.385      E=149.4       M=11.01       Phi=0.294835   (rel div 5.6e-14)
+  random blobs #25       ||u||=0.2623     E=5.269       M=0.4626      Phi=0.298748   (rel div 1.0e-13)
+  random blobs #26       ||u||=1.833      E=117.5       M=6.346       Phi=0.233171   (rel div 8.3e-14)
+  random blobs #27       ||u||=1.989      E=97.03       M=5.26        Phi=0.294161   (rel div 8.7e-14)
+  random blobs #28       ||u||=0.3264     E=10          M=0.5932      Phi=0.281706   (rel div 1.3e-13)
+  random blobs #29       ||u||=1.905      E=130.6       M=4.017       Phi=0.312149   (rel div 7.2e-14)
+  WORST Phi = 0.372777  (random blobs #17)   vs C_u = 1.214239   ->  Lemma U SURVIVES this probe
+
+=== scale/amplitude invariance of Phi (sanity that one probe per shape suffices) ===
+   Phi(u) = 0.2838505214   Phi(3.7 u) = 0.2838505214
+
+=== near-half probe: ||u - e^{tau Lap}u||_inf <= (4/sqrt(pi)) M sqrt(tau) ===
+   gauss iso a=2  tau=0.001   lhs=0.00089484   rhs=0.071365     ratio=0.012539
+   gauss iso a=2  tau=0.01    lhs=0.0088298    rhs=0.22568      ratio=0.039126
+   gauss iso a=2  tau=0.1     lhs=0.077775     rhs=0.71365      ratio=0.108982
+   gauss iso a=2  tau=0.5     lhs=0.24814      rhs=1.5958       ratio=0.155501
+   gauss iso a=2  tau=2       lhs=0.39073      rhs=3.1915       ratio=0.122427
+   gauss 1,1,4    tau=0.001   lhs=0.0055956    rhs=0.28546      ratio=0.019602
+   gauss 1,1,4    tau=0.01    lhs=0.053531     rhs=0.9027       ratio=0.059301
+   gauss 1,1,4    tau=0.1     lhs=0.36923      rhs=2.8546       ratio=0.129347
+   gauss 1,1,4    tau=0.5     lhs=0.73438      rhs=6.3831       ratio=0.115052
+   gauss 1,1,4    tau=2       lhs=0.8443       rhs=12.766       ratio=0.066136
+   random         tau=0.001   lhs=0.0073789    rhs=0.24415      ratio=0.030223
+   random         tau=0.01    lhs=0.070665     rhs=0.77207      ratio=0.091526
+   random         tau=0.1     lhs=0.49154      rhs=2.4415       ratio=0.201327
+   random         tau=0.5     lhs=1.0657       rhs=5.4594       ratio=0.195213
+   random         tau=2       lhs=1.3707       rhs=10.919       ratio=0.125535
+   max ratio = 0.201327  -> near-half estimate SURVIVES
+
+=== far-half probe: ||e^{tau Lap}u||_inf <= (8 pi tau)^{-3/4} E^{1/2} ===
+   gauss iso a=2  tau=0.05   lhs=0.38899     rhs=2.3644      ratio=0.164525
+   gauss iso a=2  tau=0.2    lhs=0.29783     rhs=0.83593     ratio=0.356293
+   gauss iso a=2  tau=1      lhs=0.10722     rhs=0.25        ratio=0.428882
+   gauss iso a=2  tau=4      lhs=0.017155    rhs=0.088388    ratio=0.194089
+   random         tau=0.05   lhs=1.7212      rhs=7.4026      ratio=0.232508
+   random         tau=0.2    lhs=0.87436     rhs=2.6172      ratio=0.334080
+   random         tau=1      lhs=0.24105     rhs=0.78273     ratio=0.307956
+   random         tau=4      lhs=0.047758    rhs=0.27674     ratio=0.172574
+   max ratio = 0.428882 -> far-half estimate SURVIVES
+
+=== full split at the optimal tau: is C_u attained/approached by any shape? ===
+   gauss iso a=b=c=2      ||u||_inf=0.4289      Lemma-U bound=1.835       slack factor 4.278
+   gauss oblate 3,3,1     ||u||_inf=0.2859      Lemma-U bound=0.9819      slack factor 3.434
+   gauss prolate 1,1,4    ||u||_inf=0.8576      Lemma-U bound=4.842       slack factor 5.645
+   gauss 4,1,1            ||u||_inf=0.8487      Lemma-U bound=2.919       slack factor 3.440
+   gauss aniso 3,1,2      ||u||_inf=0.8487      Lemma-U bound=3.281       slack factor 3.866
+   gauss iso a=1          ||u||_inf=0.8576      Lemma-U bound=3.669       slack factor 4.278
+   gauss wide a=4         ||u||_inf=0.2144      Lemma-U bound=0.9199      slack factor 4.290
+   random blobs #0        ||u||_inf=1.519       Lemma-U bound=5.624       slack factor 3.704
+   random blobs #1        ||u||_inf=0.6597      Lemma-U bound=2.327       slack factor 3.527
+   random blobs #2        ||u||_inf=1.493       Lemma-U bound=7.362       slack factor 4.932
+   random blobs #3        ||u||_inf=3.044       Lemma-U bound=11.97       slack factor 3.931
+   random blobs #4        ||u||_inf=1.112       Lemma-U bound=5.32        slack factor 4.783
+   best (||u||_inf / Lemma-U bound) over probes = 0.2912
+
+r2: probe complete

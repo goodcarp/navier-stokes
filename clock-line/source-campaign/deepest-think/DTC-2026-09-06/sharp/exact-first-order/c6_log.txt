@@ -1,0 +1,42 @@
+exact H_l: [(1, -5/6), (3, 3/40), (5, -247/1680), (7, 1513/40320), (9, -2773/42240)]
+  H_1: exact -0.83333333333333   quad -0.83333333333333
+  H_5: exact -0.14702380952381   quad -0.14702380952381
+  H_21: exact -0.01894243917523   quad -0.01894243917523
+  H_61: exact -0.00374267325544   quad -0.00374267325544
+
+R/rho0 = 2^8 = 256
+   modes with NEGATIVE Dirichlet energy (must be 0): 0
+   partial sums / E at l = 11,41,81,141,201: 0.9986516, 0.9999643, 0.9999951, 0.9999993, 1.0000000
+   last term/E = 1.291e-08   (tail is positive and ~l^-3; truncation bias < 1.3e-06)
+   E = 1.8956017824e+11    E/(M^2 R^5) = 1.72403978e-01    E/(M^2 R^5 log(R/rho0)) = 3.10907955e-02
+   a_inner = (M/2)log(R/rho0) = 2.772589   log Re_E = 10.387189  [2 log(R/rho0) = 11.090355]
+   t_d = ln2/a = 0.25000000/M     c1 = t_d M log Re_E = 2.596797     [4 ln 2 = 2.772589]
+
+R/rho0 = 2^12 = 4096
+   modes with NEGATIVE Dirichlet energy (must be 0): 0
+   partial sums / E at l = 11,41,81,141,201: 0.9986516, 0.9999643, 0.9999951, 0.9999993, 1.0000000
+   last term/E = 1.291e-08   (tail is positive and ~l^-3; truncation bias < 1.3e-06)
+   E = 1.9876825346e+17    E/(M^2 R^5) = 1.72403978e-01    E/(M^2 R^5 log(R/rho0)) = 2.07271970e-02
+   a_inner = (M/2)log(R/rho0) = 4.158883   log Re_E = 15.932366  [2 log(R/rho0) = 16.635532]
+   t_d = ln2/a = 0.16666667/M     c1 = t_d M log Re_E = 2.655394     [4 ln 2 = 2.772589]
+
+R/rho0 = 2^16 = 65536
+   modes with NEGATIVE Dirichlet energy (must be 0): 0
+   partial sums / E at l = 11,41,81,141,201: 0.9986516, 0.9999643, 0.9999951, 0.9999993, 1.0000000
+   last term/E = 1.291e-08   (tail is positive and ~l^-3; truncation bias < 1.3e-06)
+   E = 2.0842362014e+23    E/(M^2 R^5) = 1.72403978e-01    E/(M^2 R^5 log(R/rho0)) = 1.55453977e-02
+   a_inner = (M/2)log(R/rho0) = 5.545177   log Re_E = 21.477544  [2 log(R/rho0) = 22.180710]
+   t_d = ln2/a = 0.12500000/M     c1 = t_d M log Re_E = 2.684693     [4 ln 2 = 2.772589]
+
+R/rho0 = 2^20 = 1.04858e+06
+   modes with NEGATIVE Dirichlet energy (must be 0): 0
+   partial sums / E at l = 11,41,81,141,201: 0.9986516, 0.9999643, 0.9999951, 0.9999993, 1.0000000
+   last term/E = 1.291e-08   (tail is positive and ~l^-3; truncation bias < 1.3e-06)
+   E = 2.1854800592e+29    E/(M^2 R^5) = 1.72403978e-01    E/(M^2 R^5 log(R/rho0)) = 1.24363182e-02
+   a_inner = (M/2)log(R/rho0) = 6.931472   log Re_E = 27.022721  [2 log(R/rho0) = 27.725887]
+   t_d = ln2/a = 0.10000000/M     c1 = t_d M log Re_E = 2.702272     [4 ln 2 = 2.772589]
+
+E(R) = C M^2 R^5 (1 + O(1/log)) : log Re_E = 2 log(R/rho0) + (2/5) log C + o(1),
+so c1 -> (ln2) * 2 log(R/rho0) / ((1/2) log(R/rho0)) = 4 ln 2 = 2.7725887222 exactly.
+
+elapsed 43.2s  SHA256 8e0c5230eaed398bea855e94ec2594aa053951fa4d817a1e47593149fb5f4bac

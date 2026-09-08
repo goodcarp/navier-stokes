@@ -1,0 +1,1 @@
+PASS: initial shear, mean gradient, frozen winding/damping, and Kelvin pressure constraint

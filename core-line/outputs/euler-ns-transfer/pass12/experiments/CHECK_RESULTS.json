@@ -1,0 +1,24 @@
+{
+  "status": "PASS_WITH_EXPLICIT_SCOPE",
+  "checks": {
+    "c4_exact_algebra": 37,
+    "comoving_exact_algebra": 26,
+    "sampled_potential_manufactured_and_QR": "PASS at final source revision",
+    "continuous_potential_QR_and_counterexample": "PASS at final source revision",
+    "canonical_sibling_imports": "PASS",
+    "four_potential_fits": "completed; two sampled selectors rejected",
+    "continuous144_quadrature_refinement_K_difference": 7.105427357601002e-15
+  },
+  "reviewed_final_source_sha256": {
+    "c4-adapted-reference.md": "1b56d38a8095b1d6328035c5136f6ff5df374322c75be569c45de10ed1871bec",
+    "comoving-gradient-decay.md": "8c55ee014c350637cb6d08967ee15c24b0d3df0da24e03388e62c44811214319",
+    "comoving-gradient-independent-audit.md": "68dc77e09fd70f63a3a19840332dd862abfd9286a3f19b6081d57b41cb708896",
+    "whole-space-reconstruction-audit.md": "92b49f84a37afd5fe372d8674f935c5bd6bff6f8aa7c622cabbdfbf90be18dca",
+    "REPORT.md": "62d1f5ef7660c9ee00df4a83a761d341347c2adab6b48d7c71a3887d1278dfa2",
+    "VERIFICATION.md": "eaf551e09f498e222ad04e4c81fa65da5e69ec1443680aa8d049959a2175a666",
+    "compact_potential_reconstruction.py": "e5ea11ec43ce683aa5310cb3697dfe06d16a4633c3858622d0fee74daab85739",
+    "continuous_potential_fit.py": "62fc8b90f6832bec425c8d27417e2cd971ec3d618b6542006968502dd5fd97bf",
+    "observe_compact_reconstruction.py": "b390e8bac8a690b04205872796334d62f2705e1e53e817e4fdef8117839ff845"
+  },
+  "scope": "Written conditional proofs, internal independent review, finite algebra, floating reconstruction diagnostics, package integrity. No NS residual enclosure, actual retained endpoint, completed S3, return, or blowup result."
+}

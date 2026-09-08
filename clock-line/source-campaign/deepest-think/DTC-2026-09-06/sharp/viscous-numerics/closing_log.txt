@@ -1,0 +1,18 @@
+ell/R over the primary sweep : ['0.6174', '0.6325', '0.6339', '0.6340', '0.6340', '0.6340', '0.6340']   mean 0.63371  spread 1.49e-03
+viscosity-limited branch (Re0 <= 16): s*/sqrt(nu/M) = ['9.12', '8.22', '8.34', '9.03']  mean 8.677
+=> log(R/s*) = (1/2) log Re_E - 1.7046     [offset = log(s*/sqrt(nu/M)) + log(ell/R)]
+   Re0=1     measured log(R/s*) = 1.2553   predicted 1.3054   diff -0.0501
+   Re0=2     measured log(R/s*) = 1.7061   predicted 1.6520   diff 0.0541
+   Re0=4     measured log(R/s*) = 2.0380   predicted 1.9986   diff 0.0394
+   Re0=16    measured log(R/s*) = 2.6510   predicted 2.6917   diff -0.0408
+
+PRIMARY invariant Q' = T32*M*log(R/s*) : mean 0.9880  sd 0.0184  range [0.9710, 1.0263]
+VISCOSITY-LIMITED  Q' : ['1.201', '1.170', '1.102', '1.037']  mean 1.1274
+
+=> in the viscosity-limited regime the measured law reads
+   T32 * M * [ (1/2) log Re_E - 1.705 ] = 1.127   (mean over Re0 <= 16 at N = 5)
+   i.e.  T32 = 2.255 / ( M ( log Re_E - 3.409 ) )
+
+P = T32*M*log Re_E on the primary sweep: ['8.688', '5.235', '4.136', '3.590', '3.263', '3.044']
+   monotone decreasing: True ; asymptote 2*Q' = 1.976
+SCRIPT-SHA256 86c6960897cd8c7506e0311190643b14cb2e748ee514a552bfabc942be73539d

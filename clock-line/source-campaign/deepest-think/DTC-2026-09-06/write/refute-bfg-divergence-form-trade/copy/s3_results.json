@@ -1,0 +1,9 @@
+{
+ "gamma": 1.9601317042077893,
+ "tau_star_formula": "(3B/(2A))^(4/5)",
+ "C_u": 1.2142394208005358,
+ "C_u_closed_form": "((3/2)^(2/5)+(2/3)^(3/5)) * (4/sqrt(pi))^(3/5) * (8*pi)^(-3/10)",
+ "scaling_residual": 0,
+ "C_w_enstrophy_variant": 0.7849277379282986,
+ "note_enstrophy": "enstrophy is not non-increasing under NS; energy is. This variant cannot propagate."
+}

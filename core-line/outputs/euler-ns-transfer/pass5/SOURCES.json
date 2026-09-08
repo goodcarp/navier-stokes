@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-08",
+  "inherited_manifests": [
+    {
+      "path": "../SOURCES.json",
+      "sha256": "f0905ca43918ac4558103c117e060b4ce097b2854afa4bf5c3d37ddf3578e3fe"
+    },
+    {
+      "path": "../pass3/SOURCES.json",
+      "sha256": "b6b4aa5919ccca3adca1044d5851c51702e4426111707c4bea29608f122edd18"
+    },
+    {
+      "path": "../pass4/SOURCES.json",
+      "sha256": "798a789233319165fa380d9dbe33424f976095add52d399c8fef547e6cfc7148"
+    }
+  ],
+  "new_external_sources": [],
+  "derivations": "Explicit radial datum, full initial NS pressure identity, adjoint kernels, interval range integration and local smooth-solution corollary.",
+  "verification": {
+    "python": "3.9.6 (default, Jan  9 2026, 11:03:41) \n[Clang 17.0.0 (clang-1700.6.4.2)]",
+    "formal_kernel_replay": false,
+    "NS_time_evolution": false,
+    "full_initial_pressure_inequality_interval_certified": true,
+    "local_positive_interval_proved": true,
+    "numerical_useful_duration_certified": false,
+    "terminal_profile_return_proved": false,
+    "NS_blowup_proved": false,
+    "finite_check_programs_passed": 12,
+    "all_four_interval_integrals_recomputed": true,
+    "mpmath_version": "1.3.0",
+    "sympy_version": "1.14.0",
+    "earlier_packages_unchanged": true
+  }
+}

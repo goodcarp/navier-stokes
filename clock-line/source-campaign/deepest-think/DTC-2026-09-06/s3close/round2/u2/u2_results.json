@@ -1,0 +1,53 @@
+{
+ "delta_deg": 7.5,
+ "w_eq": 0.2,
+ "eps_r": 0.25,
+ "datum_L10": {
+  "E0": 7.66060196237754,
+  "G0": 20.919707021704003,
+  "F0": 8.494612736878054,
+  "G0_at": [
+   160.7529798494782,
+   6.660000053055891
+  ],
+  "F0_at": [
+   1.2291478777176945,
+   4.860000054201807
+  ]
+ },
+ "datum_L40": {
+  "E0": 7.66060196237754,
+  "G0": 20.919707021704003,
+  "F0": 8.493247248343048,
+  "G0_at": [
+   1659563567782076.5,
+   6.660000053055891
+  ],
+  "F0_at": [
+   1.2231912213839713,
+   4.770000054259103
+  ]
+ },
+ "E0_axis_closed": 7.66060196237754,
+ "one_over_sin_delta": 7.66129757554039,
+ "J_shell_ac_campaign": 65.62590995517674,
+ "note_J": "hk2 (D-B) delta=7.5 w=0.20 reports 65.625910 for the a.c. shell density",
+ "strain_lam1.0": {
+  "exact_rho_eta_factor": 1.0,
+  "maxprin_rho_eta_factor": 1.0,
+  "exact_rho2_grad_factor": 1.0,
+  "maxprin_rho2_grad_factor": 1.0
+ },
+ "strain_lam1.25": {
+  "exact_rho_eta_factor": 1.25,
+  "maxprin_rho_eta_factor": 1.5625,
+  "exact_rho2_grad_factor": 2.44140625,
+  "maxprin_rho2_grad_factor": 3.8146972656250004
+ },
+ "strain_lam1.5": {
+  "exact_rho_eta_factor": 1.5,
+  "maxprin_rho_eta_factor": 2.25,
+  "exact_rho2_grad_factor": 5.0625,
+  "maxprin_rho2_grad_factor": 11.390625
+ }
+}

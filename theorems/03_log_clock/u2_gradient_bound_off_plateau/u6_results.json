@@ -1,0 +1,21 @@
+{
+ "bang_bang": 0.5,
+ "sharp_taper_7.5_only": 0.49972123052108863,
+ "tanh_taper_7.5_only": 0.498496420871447,
+ "eq_tanh_w0.20_only": 0.47623771558833855,
+ "eq_linear_dm5_only": 0.49810120766582716,
+ "eq_linear_dm11.5_only": 0.49006941223475736,
+ "campaign_D-C (tanh taper 7.5 + tanh eq w=0.20)": 0.47473435538836034,
+ "ASSEMBLY_1.1 (sharp taper 7.5 + linear dm=5)": 0.4978224381869156,
+ "deficit_1_minus_2kappa__bang_bang": 0.0,
+ "deficit_1_minus_2kappa__sharp_taper_7.5_only": 0.0005575389578227341,
+ "deficit_1_minus_2kappa__tanh_taper_7.5_only": 0.0030071582571059574,
+ "deficit_1_minus_2kappa__eq_tanh_w0.20_only": 0.0475245688233229,
+ "deficit_1_minus_2kappa__eq_linear_dm5_only": 0.003797584668345677,
+ "deficit_1_minus_2kappa__eq_linear_dm11.5_only": 0.019861175530485276,
+ "deficit_1_minus_2kappa__campaign_D-C (tanh taper 7.5 + tanh eq w=0.20)": 0.05053128922327932,
+ "deficit_1_minus_2kappa__ASSEMBLY_1.1 (sharp taper 7.5 + linear dm=5)": 0.004355123626168855,
+ "clock_floor_eps__sharp_taper_7.5_only": 0.0005578499809197175,
+ "clock_floor_eps__campaign_D-C (tanh taper 7.5 + tanh eq w=0.20)": 0.053220594475347986,
+ "clock_floor_eps__ASSEMBLY_1.1 (sharp taper 7.5 + linear dm=5)": 0.004374173693365799
+}

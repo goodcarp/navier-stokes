@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "scope": "Manufactured saved fields and metadata only; no NS run used.",
+  "source_sha256": {
+    "compare_mac_endpoints.py": "4ce3d2d3d0b5cb7cb8fc6abe95d51ff823391342236438ad635c80839ba87267",
+    "check_compare_mac_endpoints.py": "2fd7d6f49dc1982242fa3c1907f36225dbaf81db38bcbe8558ab7a93a513b92e",
+    "evolve_full_mac.py": "2e671a3599fc05ed3d0fdef657a75bb0e9dceeab05fb1b96c4c5fc7243a7fe95"
+  },
+  "results": [
+    {
+      "nz": 32,
+      "analytical_errors": {
+        "full_L2": 1.490254115748636e-16,
+        "seed_L2": 1.5530245733910657e-16,
+        "seed_relative": 1.1102230246251565e-16,
+        "core_Omega_difference": 8.326672684688674e-17,
+        "physical_z_receiver_difference": 9.75781955236954e-18,
+        "K_difference": 1.3877787807814457e-17
+      },
+      "rejection_tests": [
+        {
+          "case": "viscosity",
+          "reason": "Run A/run B: incompatible parameters {'nu': (0.001, 0.002)}"
+        },
+        {
+          "case": "final_time",
+          "reason": "Time step times step count differs from T"
+        },
+        {
+          "case": "angular_truncation",
+          "reason": "Invalid field shape/grid size"
+        },
+        {
+          "case": "dealias",
+          "reason": "Expected run_resolved_mac fast/padding metadata"
+        },
+        {
+          "case": "unknown_extra_parameter",
+          "reason": "Run A/run B: parameter key sets differ"
+        },
+        {
+          "case": "JSON_npz_dt_disagreement",
+          "reason": "JSON/checkpoint: incompatible parameters {'dt': (0.001, 0.003)}"
+        },
+        {
+          "case": "physical_z_origin",
+          "reason": "Physical axial origin/grid does not match the driver"
+        },
+        {
+          "case": "radial_coordinates",
+          "reason": "Cell radii disagree with saved faces"
+        },
+        {
+          "case": "incomplete",
+          "reason": "/var/folders/kq/17r93krx6fs800t8qmx1xd1w0000gn/T/mac-endpoint-check-asvzh96j/b.json: run is not complete"
+        },
+        {
+          "case": "different_source",
+          "reason": "Source hashes differ; this is not an isolated time-step comparison"
+        },
+        {
+          "case": "nonfinite",
+          "reason": "Nonfinite checkpoint"
+        },
+        {
+          "case": "nonreal_mode_zero",
+          "reason": "Mode zero is not a real physical axial field"
+        },
+        {
+          "case": "checkpoint_history_mismatch",
+          "reason": "Checkpoint/JSON endpoint mismatch in energy: 111.08789532307166 versus 87.58806410866629"
+        },
+        {
+          "case": "different_initial_observable",
+          "reason": "Initial history differs in K"
+        }
+      ],
+      "full_L2": 0.43156374613132914,
+      "seed_L2": 0.42275227700063917,
+      "seed_relative": 0.7175573951853421,
+      "phase_preserved": true
+    },
+    {
+      "nz": 33,
+      "analytical_errors": {
+        "full_L2": 1.490254115748636e-16,
+        "seed_L2": 1.5530245733910657e-16,
+        "seed_relative": 1.1102230246251565e-16,
+        "core_Omega_difference": 8.326672684688674e-17,
+        "physical_z_receiver_difference": 1.1058862159352145e-17,
+        "K_difference": 1.3877787807814457e-17
+      },
+      "rejection_tests": [
+        {
+          "case": "viscosity",
+          "reason": "Run A/run B: incompatible parameters {'nu': (0.001, 0.002)}"
+        },
+        {
+          "case": "final_time",
+          "reason": "Time step times step count differs from T"
+        },
+        {
+          "case": "angular_truncation",
+          "reason": "Invalid field shape/grid size"
+        },
+        {
+          "case": "dealias",
+          "reason": "Expected run_resolved_mac fast/padding metadata"
+        },
+        {
+          "case": "unknown_extra_parameter",
+          "reason": "Run A/run B: parameter key sets differ"
+        },
+        {
+          "case": "JSON_npz_dt_disagreement",
+          "reason": "JSON/checkpoint: incompatible parameters {'dt': (0.001, 0.003)}"
+        },
+        {
+          "case": "physical_z_origin",
+          "reason": "Physical axial origin/grid does not match the driver"
+        },
+        {
+          "case": "radial_coordinates",
+          "reason": "Cell radii disagree with saved faces"
+        },
+        {
+          "case": "incomplete",
+          "reason": "/var/folders/kq/17r93krx6fs800t8qmx1xd1w0000gn/T/mac-endpoint-check-6wymxk08/b.json: run is not complete"
+        },
+        {
+          "case": "different_source",
+          "reason": "Source hashes differ; this is not an isolated time-step comparison"
+        },
+        {
+          "case": "nonfinite",
+          "reason": "Nonfinite checkpoint"
+        },
+        {
+          "case": "nonreal_mode_zero",
+          "reason": "Mode zero is not a real physical axial field"
+        },
+        {
+          "case": "checkpoint_history_mismatch",
+          "reason": "Checkpoint/JSON endpoint mismatch in energy: 111.08789532307166 versus 87.58806410866629"
+        },
+        {
+          "case": "different_initial_observable",
+          "reason": "Initial history differs in K"
+        }
+      ],
+      "full_L2": 0.43156374613132914,
+      "seed_L2": 0.42275227700063917,
+      "seed_relative": 0.7175573951853421,
+      "phase_preserved": true
+    }
+  ]
+}

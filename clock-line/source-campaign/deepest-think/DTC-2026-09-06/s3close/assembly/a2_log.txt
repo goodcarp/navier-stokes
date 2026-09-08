@@ -1,0 +1,57 @@
+kappa=0.4997212305 r_h=0.981822 C_E=0.170325633 s=7.661298 c*=0.8113826
+logReE - 2L = 3.364345 ; c2 = 1.6218604
+
+--- eps at c = c* (doubling window), f = 0 ---
+proved             L=       10  mu=        1 muJ=    0.446 epsT=      inf eps_a=      inf eps_v= 2.38e+11  eps=      inf  closed=False
+proved             L=       40  mu=        1 muJ=     0.33 epsT=      inf eps_a=      inf eps_v=     31.8  eps=      inf  closed=False
+proved             L=      160  mu=        1 muJ=    0.294 epsT=      inf eps_a=      inf eps_v=     16.4  eps=      inf  closed=False
+proved             L=      640  mu=        1 muJ=    0.283 epsT=      inf eps_a=      inf eps_v= 0.000296  eps=      inf  closed=False
+proved             L= 2.56e+03  mu=        1 muJ=     0.28 epsT=      inf eps_a=      inf eps_v= 1.88e-05  eps=      inf  closed=False
+proved             L=    1e+06  mu=        1 muJ=    0.278 epsT=      inf eps_a=      inf eps_v= 9.56e-09  eps=      inf  closed=False
+proved             L=    1e+12  mu=        1 muJ=    0.278 epsT=      inf eps_a=      inf eps_v= 9.47e-15  eps=      inf  closed=False
+proved             L=    1e+18  mu=  1.1e-05 muJ= 4.04e-06 epsT= 0.000116 eps_a= 0.000116 eps_v= 9.47e-21  eps=0.0006736  closed=True
+proved_oddonly     L=       10  mu=        1 muJ=    0.435 epsT=      inf eps_a=      inf eps_v= 9.45e+06  eps=      inf  closed=False
+proved_oddonly     L=       40  mu=        1 muJ=    0.325 epsT=      inf eps_a=      inf eps_v=     17.9  eps=      inf  closed=False
+proved_oddonly     L=      160  mu=        1 muJ=    0.292 epsT=      inf eps_a=      inf eps_v=     5.29  eps=      inf  closed=False
+proved_oddonly     L=      640  mu=        1 muJ=    0.282 epsT=      inf eps_a=      inf eps_v= 0.000275  eps=      inf  closed=False
+proved_oddonly     L= 2.56e+03  mu=        1 muJ=    0.279 epsT=      inf eps_a=      inf eps_v= 1.85e-05  eps=      inf  closed=False
+proved_oddonly     L=    1e+06  mu=        1 muJ=    0.278 epsT=      inf eps_a=      inf eps_v= 9.56e-09  eps=      inf  closed=False
+proved_oddonly     L=    1e+12  mu=        1 muJ=    0.278 epsT=      inf eps_a=      inf eps_v= 9.47e-15  eps=      inf  closed=False
+proved_oddonly     L=    1e+18  mu=  1.1e-05 muJ= 4.04e-06 epsT= 0.000116 eps_a= 0.000116 eps_v= 9.47e-21  eps=0.0006736  closed=True
+proved_sharpsens   L=       10  mu=        1 muJ=     0.52 epsT=      inf eps_a=      inf eps_v= 9.45e+06  eps=      inf  closed=False
+proved_sharpsens   L=       40  mu=        1 muJ=    0.394 epsT=      inf eps_a=      inf eps_v=     17.9  eps=      inf  closed=False
+proved_sharpsens   L=      160  mu=        1 muJ=    0.348 epsT=      inf eps_a=      inf eps_v=     5.29  eps=      inf  closed=False
+proved_sharpsens   L=      640  mu=        1 muJ=    0.333 epsT=      inf eps_a=      inf eps_v= 0.000275  eps=      inf  closed=False
+proved_sharpsens   L= 2.56e+03  mu=        1 muJ=    0.329 epsT=      inf eps_a=      inf eps_v= 1.85e-05  eps=      inf  closed=False
+proved_sharpsens   L=    1e+06  mu=  0.00241 muJ=  0.00151 epsT=  0.00446 eps_a=  0.00449 eps_v= 9.56e-09  eps= 0.005069  closed=True
+proved_sharpsens   L=    1e+12  mu= 2.39e-09 muJ=  1.5e-09 epsT= 4.37e-09 eps_a=  4.4e-09 eps_v= 9.47e-15  eps=0.0005579  closed=True
+proved_sharpsens   L=    1e+18  mu= 2.39e-15 muJ=  1.5e-15 epsT= 4.37e-15 eps_a=  4.4e-15 eps_v= 9.47e-21  eps=0.0005578  closed=True
+measured           L=       10  mu=        1 muJ=    0.446 epsT=      inf eps_a=      inf eps_v=     5.46  eps=      inf  closed=False
+measured           L=       40  mu=        1 muJ=    0.356 epsT=      inf eps_a=      inf eps_v=   0.0818  eps=      inf  closed=False
+measured           L=      160  mu=        1 muJ=    0.334 epsT=      inf eps_a=      inf eps_v=  0.00402  eps=      inf  closed=False
+measured           L=      640  mu=        1 muJ=    0.329 epsT=      inf eps_a=      inf eps_v= 0.000249  eps=      inf  closed=False
+measured           L= 2.56e+03  mu=        1 muJ=    0.328 epsT=      inf eps_a=      inf eps_v= 1.81e-05  eps=      inf  closed=False
+measured           L=    1e+06  mu= 0.000348 muJ= 0.000218 epsT= 0.000637 eps_a=  0.00064 eps_v= 9.56e-09  eps= 0.001199  closed=True
+measured           L=    1e+12  mu= 3.47e-10 muJ= 2.18e-10 epsT= 6.35e-10 eps_a= 6.38e-10 eps_v= 9.47e-15  eps=0.0005579  closed=True
+measured           L=    1e+18  mu= 3.47e-16 muJ= 2.18e-16 epsT= 6.35e-16 eps_a= 6.38e-16 eps_v= 9.47e-21  eps=0.0005578  closed=True
+
+L_star: {
+ "proved_eps<=0.5": 452529898136127.4,
+ "proved_eps<=0.1": 1384632540062619.0,
+ "proved_oddonly_eps<=0.5": 452529898136127.4,
+ "proved_oddonly_eps<=0.1": 1384632540062619.0,
+ "proved_sharpsens_eps<=0.5": 33138.31555052466,
+ "proved_sharpsens_eps<=0.1": 68677.86531697698,
+ "measured_eps<=0.5": 4830.545760036449,
+ "measured_eps<=0.1": 9987.403381050912
+}
+log Lambda_star: {
+ "proved_eps<=0.5": 905059796272258.1,
+ "proved_eps<=0.1": 2769265080125241.5,
+ "proved_oddonly_eps<=0.5": 905059796272258.1,
+ "proved_oddonly_eps<=0.1": 2769265080125241.5,
+ "proved_sharpsens_eps<=0.5": 66279.99544650623,
+ "proved_sharpsens_eps<=0.1": 137359.09497941087,
+ "measured_eps<=0.5": 9664.45586552981,
+ "measured_eps<=0.1": 19978.171107558737
+}

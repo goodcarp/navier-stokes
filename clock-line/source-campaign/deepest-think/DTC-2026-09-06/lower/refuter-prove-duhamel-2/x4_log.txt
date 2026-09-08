@@ -1,0 +1,48 @@
+================================================================================================
+(a) K verified against direct 3D Biot-Savart for a circular vortex filament
+================================================================================================
+    L1 predicts, for a filament of circulation Gamma at (r_s, z_s):
+       a(0,0) = 2 pi r_s Gamma K(r_s,z_s) = -(3/4) Gamma r_s^2 z_s / rho_s^5
+    r_s= 1.0 z_s= 1.0   L1 prediction -0.132582521   Biot-Savart -0.132582521   rel 2.22e-12
+    r_s= 1.0 z_s= 2.0   L1 prediction -0.026832816   Biot-Savart -0.026832816   rel 5.73e-12
+    r_s= 2.0 z_s= 0.7   L1 prediction -0.049159046   Biot-Savart -0.049159046   rel 1.72e-12
+    r_s= 0.5 z_s= 3.0   L1 prediction -0.002161564   Biot-Savart -0.002161564   rel 1.55e-11
+    r_s= 3.0 z_s= 1.3   L1 prediction -0.023485665   Biot-Savart -0.023485665   rel 7.01e-13
+    r_s= 1.0 z_s= 0.3   L1 prediction -0.181391225   Biot-Savart -0.181391225   rel 8.62e-13
+    worst relative disagreement = 1.55e-11   -> K = -(3/8pi) r z/rho^5 CONFIRMED independently
+
+================================================================================================
+(b) the sharp-shell value implied by K
+================================================================================================
+    omega^theta = -M sgn(z) on rho0<|x|<R:
+      a(0) = (3/4) M int_{log rho0}^{log R} dlog rho  int_0^pi sgn(cos phi) sin^2 phi cos phi dphi
+      angular integral = 0.666666666667   (exact 2/3 = 0.666666666667)
+      => a(0) = (3/4)(2/3) M L = 0.500000000000 M L    (i.e. kappa = 1/2 EXACTLY, at the ORIGIN)
+
+    NOTE: this is kappa at the ORIGIN, where omega = 0 and u = 0 and the particle never moves.
+    The frame's a = (M/2)log(R/rho0) + 0.216773 M is the strain on the MATERIAL innermost
+    shell.  The two agree at leading order but the seat's L1/L2/L4 structure is only
+    available at the origin (k^2 = 0), which carries no vorticity.
+
+================================================================================================
+(c) constants used in the seat's Corollary vs the datum it actually ran
+================================================================================================
+    Re_E = E0^{2/5} M0^{1/5}/nu ;  nu = M rho0^2 at the frame's floor Re0 = 1;
+    E0 = cE' M^2 R^5  =>  log Re_E = 2 log(R/rho0) + (2/5) log cE'.
+          sharp shell (frame / seat's c_E):  cE' = 0.1724040   (2/5)log cE' = -0.7031659
+       the seat's OWN mollified datum (d2):  cE' = 0.1418961   (2/5)log cE' = -0.7810641
+    The seat uses c_E = -0.7031660 (the SHARP-shell value) with the mollified datum whose
+    own energy gives c_E = -0.7810641.  Mismatch 0.0779 in log Re_E.
+
+    c2(L) = (theta/(kappa L)) * (2L + c_E) -> 2 theta/kappa.  Sensitivity to kappa:
+          kappa                                       source   c2 = 1/kappa (theta=1/2)
+        0.50000 sharp bang-bang limit (used in the Corollary)                    2.00000
+        0.50091               seat d2, delta=7.5 deg, w=0.08                    1.99637
+        0.49972           elliptic instrument, delta=7.5 deg                    2.00112
+        0.48137 seat d2, delta=7.5 deg, w=0.20 (the RUNS' datum)                    2.07740
+        0.45317                        seat d2, delta=30 deg                    2.20668
+
+    -> 'c2 = 2 ... an honest ceiling for the whole family' holds only in the singular limit
+       delta,w -> 0 where kappa = 1/2 exactly.  Every ADMISSIBLE member the seat actually
+       built has kappa < 1/2, hence c2 = 1/kappa > 2.  For the runs' own datum (w = 0.20)
+       the ceiling is 2.0774, not 2.

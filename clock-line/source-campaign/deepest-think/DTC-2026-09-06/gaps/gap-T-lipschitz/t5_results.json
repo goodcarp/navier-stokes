@@ -1,0 +1,193 @@
+{
+ "witness": [
+  {
+   "lam": 1.0,
+   "s": 0.02,
+   "lam_prime": 1.02,
+   "mu": 0.038831218762014674,
+   "muJ": 0.04039999999999999,
+   "Delta_quadrature": 0.06000000000000005,
+   "Delta_lemma1": 0.06000000000000005,
+   "true_ratio_Delta_over_muML": 0.2575247524752473,
+   "proved_C": 6.496648657159843,
+   "hypotheses_muJ_le_mu": false
+  },
+  {
+   "lam": 1.0,
+   "s": 0.01,
+   "lam_prime": 1.01,
+   "mu": 0.019703950593079167,
+   "muJ": 0.020100000000000007,
+   "Delta_quadrature": 0.029999999999999805,
+   "Delta_lemma1": 0.030000000000000027,
+   "true_ratio_Delta_over_muML": 0.25375621890547023,
+   "proved_C": 5.82008785481554,
+   "hypotheses_muJ_le_mu": false
+  },
+  {
+   "lam": 1.0,
+   "s": 0.005,
+   "lam_prime": 1.005,
+   "mu": 0.009925496893641084,
+   "muJ": 0.010024999999999729,
+   "Delta_quadrature": 0.014999999999999236,
+   "Delta_lemma1": 0.01499999999999968,
+   "true_ratio_Delta_over_muML": 0.25187655860348257,
+   "proved_C": 5.508051321349187,
+   "hypotheses_muJ_le_mu": false
+  },
+  {
+   "lam": 1.25,
+   "s": 0.02,
+   "lam_prime": 1.275,
+   "mu": 0.02499999999999991,
+   "muJ": 0.04039999999999999,
+   "Delta_quadrature": 0.07499999999999973,
+   "Delta_lemma1": 0.07499999999999973,
+   "true_ratio_Delta_over_muML": 0.5,
+   "proved_C": 8.195851764091852,
+   "hypotheses_muJ_le_mu": false
+  },
+  {
+   "lam": 1.25,
+   "s": 0.01,
+   "lam_prime": 1.2625,
+   "mu": 0.012610528379570551,
+   "muJ": 0.020100000000000007,
+   "Delta_quadrature": 0.03750000000000009,
+   "Delta_lemma1": 0.03749999999999987,
+   "true_ratio_Delta_over_muML": 0.49561761504975554,
+   "proved_C": 7.580971195415378,
+   "hypotheses_muJ_le_mu": false
+  },
+  {
+   "lam": 1.25,
+   "s": 0.005,
+   "lam_prime": 1.2562499999999999,
+   "mu": 0.006352318011930258,
+   "muJ": 0.010024999999999729,
+   "Delta_quadrature": 0.01874999999999938,
+   "Delta_lemma1": 0.0187499999999996,
+   "true_ratio_Delta_over_muML": 0.4919464035224384,
+   "proved_C": 7.289791605022313,
+   "hypotheses_muJ_le_mu": false
+  },
+  {
+   "lam": 1.5,
+   "s": 0.02,
+   "lam_prime": 1.53,
+   "mu": 0.030000000000000027,
+   "muJ": 0.04039999999999999,
+   "Delta_quadrature": 0.08999999999999986,
+   "Delta_lemma1": 0.09000000000000008,
+   "true_ratio_Delta_over_muML": 0.4999999999999988,
+   "proved_C": 11.773049441578944,
+   "hypotheses_muJ_le_mu": false
+  },
+  {
+   "lam": 1.5,
+   "s": 0.01,
+   "lam_prime": 1.5150000000000001,
+   "mu": 0.015000000000000124,
+   "muJ": 0.02010000000000023,
+   "Delta_quadrature": 0.04500000000000082,
+   "Delta_lemma1": 0.04500000000000037,
+   "true_ratio_Delta_over_muML": 0.5000000000000049,
+   "proved_C": 10.492427400814684,
+   "hypotheses_muJ_le_mu": false
+  },
+  {
+   "lam": 1.5,
+   "s": 0.005,
+   "lam_prime": 1.5074999999999998,
+   "mu": 0.00749999999999984,
+   "muJ": 0.010024999999999729,
+   "Delta_quadrature": 0.022499999999998188,
+   "Delta_lemma1": 0.02249999999999952,
+   "true_ratio_Delta_over_muML": 0.4999999999999704,
+   "proved_C": 9.921816666575776,
+   "hypotheses_muJ_le_mu": false
+  },
+  {
+   "lam": 2.0,
+   "s": 0.02,
+   "lam_prime": 2.04,
+   "mu": 0.040000000000000036,
+   "muJ": 0.04039999999999999,
+   "Delta_quadrature": 0.11999999999999833,
+   "Delta_lemma1": 0.1200000000000001,
+   "true_ratio_Delta_over_muML": 0.4999999999999926,
+   "proved_C": 30.514323127640846,
+   "hypotheses_muJ_le_mu": false
+  },
+  {
+   "lam": 2.0,
+   "s": 0.01,
+   "lam_prime": 2.02,
+   "mu": 0.020000000000000018,
+   "muJ": 0.020100000000000007,
+   "Delta_quadrature": 0.05999999999999961,
+   "Delta_lemma1": 0.06000000000000005,
+   "true_ratio_Delta_over_muML": 0.4999999999999963,
+   "proved_C": 23.119149023316673,
+   "hypotheses_muJ_le_mu": false
+  },
+  {
+   "lam": 2.0,
+   "s": 0.005,
+   "lam_prime": 2.01,
+   "mu": 0.009999999999999787,
+   "muJ": 0.010024999999999729,
+   "Delta_quadrature": 0.02999999999999936,
+   "Delta_lemma1": 0.02999999999999936,
+   "true_ratio_Delta_over_muML": 0.5,
+   "proved_C": 20.33383711410558,
+   "hypotheses_muJ_le_mu": false
+  },
+  {
+   "lam": 3.0,
+   "s": 0.02,
+   "lam_prime": 3.06,
+   "mu": 0.06000000000000005,
+   "muJ": 0.04039999999999999,
+   "Delta_quadrature": 0.17999999999999616,
+   "Delta_lemma1": 0.18000000000000016,
+   "true_ratio_Delta_over_muML": 0.4999999999999889,
+   "proved_C": 616.6570077052342,
+   "hypotheses_muJ_le_mu": true
+  },
+  {
+   "lam": 3.0,
+   "s": 0.01,
+   "lam_prime": 3.0300000000000002,
+   "mu": 0.03000000000000025,
+   "muJ": 0.02010000000000023,
+   "Delta_quadrature": 0.08999999999999986,
+   "Delta_lemma1": 0.09000000000000075,
+   "true_ratio_Delta_over_muML": 0.49999999999999506,
+   "proved_C": 143.48179188474163,
+   "hypotheses_muJ_le_mu": true
+  },
+  {
+   "lam": 3.0,
+   "s": 0.005,
+   "lam_prime": 3.0149999999999997,
+   "mu": 0.01499999999999968,
+   "muJ": 0.010024999999999729,
+   "Delta_quadrature": 0.0449999999999946,
+   "Delta_lemma1": 0.04499999999999904,
+   "true_ratio_Delta_over_muML": 0.49999999999995065,
+   "proved_C": 85.48151025102376,
+   "hypotheses_muJ_le_mu": true
+  }
+ ],
+ "note": "ratio -> 1/2 exactly once lambda^3 >= 2 (then mu = lambda s); for lambda^3 < 2 the z-component |lambda'^-2-lambda^-2| ~ 2s/lambda^2 sets mu and the ratio -> lambda^3/4.",
+ "best_possible_C_lower_bound": 0.5000000000000049,
+ "proved_C_at_mu0": {
+  "1.0": 5.21238898038469,
+  "1.25": 6.657497095904176,
+  "1.5": 9.142247938917823,
+  "2.0": 17.995251014698567,
+  "3.0": 55.927968361757706
+ }
+}

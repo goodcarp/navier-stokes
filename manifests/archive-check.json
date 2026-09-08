@@ -1,0 +1,664 @@
+{
+  "status": "PASS",
+  "scope": "File integrity, curated local path existence and narrow credential-pattern scan only; no mathematical proof, remote-link health or anchor validation.",
+  "final_pass11": true,
+  "final_pass12": true,
+  "preserved_base_files": 601,
+  "copied_source_files": 2120,
+  "hash_failures": [],
+  "curated_link_failures": [],
+  "credential_pattern_hits": [],
+  "historical_link_warnings": [
+    {
+      "file": "theorems/03_log_clock/u1_REFEREE/NOTE.md",
+      "target": "0",
+      "line": 330
+    },
+    {
+      "file": "strained-core/work/pass4/REPORT.md",
+      "target": "../NEXT_TARGET.md",
+      "line": 41
+    },
+    {
+      "file": "strained-core/work/pass4/full-pressure-feedback-gate.md",
+      "target": "0",
+      "line": 97
+    },
+    {
+      "file": "strained-core/work/pass4/full-pressure-feedback-gate.md",
+      "target": "0",
+      "line": 146
+    },
+    {
+      "file": "strained-core/work/pass4/outer-pressure-reservoir.md",
+      "target": "0",
+      "line": 115
+    },
+    {
+      "file": "strained-core/work/pass3/receiver-flux-budget.md",
+      "target": "u dot Jx",
+      "line": 19
+    },
+    {
+      "file": "strained-core/work/pass2/REPORT.md",
+      "target": "../NEXT_TARGET.md",
+      "line": 73
+    },
+    {
+      "file": "strained-core/work/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 26
+    },
+    {
+      "file": "strained-core/work/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 68
+    },
+    {
+      "file": "strained-core/work/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 77
+    },
+    {
+      "file": "strained-core/work/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 102
+    },
+    {
+      "file": "strained-core/work/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "target": "-y,x,0",
+      "line": 25
+    },
+    {
+      "file": "strained-core/work/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "target": "0",
+      "line": 37
+    },
+    {
+      "file": "strained-core/work/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "target": "k_core+(7/5",
+      "line": 77
+    },
+    {
+      "file": "strained-core/outputs/euler-ns-transfer/pass4/full-pressure-feedback-gate.md",
+      "target": "0",
+      "line": 97
+    },
+    {
+      "file": "strained-core/outputs/euler-ns-transfer/pass4/full-pressure-feedback-gate.md",
+      "target": "0",
+      "line": 146
+    },
+    {
+      "file": "strained-core/outputs/euler-ns-transfer/pass4/outer-pressure-reservoir.md",
+      "target": "0",
+      "line": 115
+    },
+    {
+      "file": "strained-core/outputs/euler-ns-transfer/pass3/receiver-flux-budget.md",
+      "target": "u dot Jx",
+      "line": 19
+    },
+    {
+      "file": "strained-core/outputs/euler-ns-transfer/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 26
+    },
+    {
+      "file": "strained-core/outputs/euler-ns-transfer/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 68
+    },
+    {
+      "file": "strained-core/outputs/euler-ns-transfer/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 77
+    },
+    {
+      "file": "strained-core/outputs/euler-ns-transfer/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 102
+    },
+    {
+      "file": "strained-core/outputs/euler-ns-transfer/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "target": "-y,x,0",
+      "line": 25
+    },
+    {
+      "file": "strained-core/outputs/euler-ns-transfer/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "target": "0",
+      "line": 37
+    },
+    {
+      "file": "strained-core/outputs/euler-ns-transfer/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "target": "k_core+(7/5",
+      "line": 77
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/write/L3v-and-gamma-bound/PROOF.md",
+      "target": "0",
+      "line": 129
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/write/refute-L3v-and-gamma-bound/copy/PROOF.md",
+      "target": "0",
+      "line": 129
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/gaps/gap-T-lipschitz/PREREG.md",
+      "target": "0",
+      "line": 9
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/gaps/gap-T-lipschitz/PREREG.md",
+      "target": "0",
+      "line": 9
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/s3close/round2/refute-u1/NOTE.md",
+      "target": "0",
+      "line": 330
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/rebuild/far-near-kernel-lemma/NOTE.md",
+      "target": "xi",
+      "line": 22
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/rebuild/far-near-kernel-lemma/NOTE.md",
+      "target": "x/rho'",
+      "line": 26
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/rebuild/far-near-kernel-lemma/NOTE.md",
+      "target": "xi",
+      "line": 49
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/rebuild/far-near-kernel-lemma/NOTE.md",
+      "target": "xi",
+      "line": 50
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/rebuild/far-near-kernel-lemma/NOTE.md",
+      "target": "0",
+      "line": 55
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/rebuild/far-near-kernel-lemma/PREREG.md",
+      "target": "xi",
+      "line": 12
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/rebuild/far-near-kernel-lemma/PREREG.md",
+      "target": "x/rho'",
+      "line": 13
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/rebuild/far-near-kernel-lemma/PREREG.md",
+      "target": "xi",
+      "line": 17
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/rebuild/far-near-kernel-lemma/PREREG.md",
+      "target": "0",
+      "line": 19
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/rebuild/far-near-kernel-lemma/PREREG.md",
+      "target": "0",
+      "line": 19
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/rebuild/far-near-kernel-lemma/PREREG.md",
+      "target": "xi",
+      "line": 23
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/lower/SYNTHESIS.md",
+      "target": "0",
+      "line": 67
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/lower/SYNTHESIS.md",
+      "target": "0",
+      "line": 427
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/lower/SYNTHESIS.md",
+      "target": "0",
+      "line": 427
+    },
+    {
+      "file": "clock-line/source-campaign/deepest-think/DTC-2026-09-06/lower/SYNTHESIS.md",
+      "target": "0",
+      "line": 428
+    },
+    {
+      "file": "core-line/work/pass12/VERIFICATION.md",
+      "target": "experiments/",
+      "line": 7
+    },
+    {
+      "file": "core-line/work/pass12/VERIFICATION.md",
+      "target": "data/",
+      "line": 40
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/REPORT.md",
+      "target": "pass11/REPORT.md",
+      "line": 5
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/REPORT.md",
+      "target": "pass2/REPORT.md",
+      "line": 7
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/REPORT.md",
+      "target": "VERIFICATION.md",
+      "line": 183
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/REPORT.md",
+      "target": "SOURCES.json",
+      "line": 183
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass11/REPORT.md",
+      "line": 8
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass9/fixed-amplitude-initialization.md",
+      "line": 18
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass10/initial-periodic-images.md",
+      "line": 55
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass10/sharp-error-hierarchy.md",
+      "line": 63
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass11/validated-error-propagation.md",
+      "line": 64
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass11/poloidal-toroidal-evolution-design.md",
+      "line": 71
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass11/exterior-mac-block-specification.md",
+      "line": 72
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass11/VERIFICATION.md",
+      "line": 83
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass11/REPORT.md",
+      "line": 18
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass11/trajectory-diagnostic-criteria.md",
+      "line": 24
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass11/poloidal-toroidal-evolution-design.md",
+      "line": 33
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass11/exterior-mac-block-specification.md",
+      "line": 34
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass11/validated-error-propagation.md",
+      "line": 42
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass9/evolution-validation-bridge.md",
+      "line": 47
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass6/circulation-return-obstruction.md",
+      "line": 57
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass3/quantitative-core-stage.md",
+      "line": 63
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass3/rotational-receiver.md",
+      "line": 63
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass3/terminal-profile-gap.md",
+      "line": 65
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass3/material-core-transfer.md",
+      "line": 67
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass3/receiver-flux-budget.md",
+      "line": 67
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass2/active-core-pressure.md",
+      "line": 71
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass2/affine-stretch-gate.md",
+      "line": 73
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass2/jeong-yoneda-stage.md",
+      "line": 73
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass2/mean-feedback.md",
+      "line": 75
+    },
+    {
+      "file": "core-line/work/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass2/correction-window.md",
+      "line": 75
+    },
+    {
+      "file": "core-line/work/pass4/REPORT.md",
+      "target": "../NEXT_TARGET.md",
+      "line": 41
+    },
+    {
+      "file": "core-line/work/pass4/full-pressure-feedback-gate.md",
+      "target": "0",
+      "line": 97
+    },
+    {
+      "file": "core-line/work/pass4/full-pressure-feedback-gate.md",
+      "target": "0",
+      "line": 146
+    },
+    {
+      "file": "core-line/work/pass4/outer-pressure-reservoir.md",
+      "target": "0",
+      "line": 115
+    },
+    {
+      "file": "core-line/work/pass3/receiver-flux-budget.md",
+      "target": "u dot Jx",
+      "line": 19
+    },
+    {
+      "file": "core-line/work/pass2/REPORT.md",
+      "target": "../NEXT_TARGET.md",
+      "line": 73
+    },
+    {
+      "file": "core-line/work/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 26
+    },
+    {
+      "file": "core-line/work/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 68
+    },
+    {
+      "file": "core-line/work/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 77
+    },
+    {
+      "file": "core-line/work/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 102
+    },
+    {
+      "file": "core-line/work/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "target": "-y,x,0",
+      "line": 25
+    },
+    {
+      "file": "core-line/work/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "target": "0",
+      "line": 37
+    },
+    {
+      "file": "core-line/work/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "target": "k_core+(7/5",
+      "line": 77
+    },
+    {
+      "file": "core-line/work/pass11/REPORT.md",
+      "target": "experiments/resolved-time-comparison.json",
+      "line": 73
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/REPORT.md",
+      "target": "pass11/REPORT.md",
+      "line": 5
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/REPORT.md",
+      "target": "pass2/REPORT.md",
+      "line": 7
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/REPORT.md",
+      "target": "VERIFICATION.md",
+      "line": 183
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/REPORT.md",
+      "target": "SOURCES.json",
+      "line": 183
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass11/REPORT.md",
+      "line": 8
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass9/fixed-amplitude-initialization.md",
+      "line": 18
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass10/initial-periodic-images.md",
+      "line": 55
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass10/sharp-error-hierarchy.md",
+      "line": 63
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass11/validated-error-propagation.md",
+      "line": 64
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass11/poloidal-toroidal-evolution-design.md",
+      "line": 71
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass11/exterior-mac-block-specification.md",
+      "line": 72
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/STATUS.md",
+      "target": "pass11/VERIFICATION.md",
+      "line": 83
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass11/REPORT.md",
+      "line": 18
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass11/trajectory-diagnostic-criteria.md",
+      "line": 24
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass11/poloidal-toroidal-evolution-design.md",
+      "line": 33
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass11/exterior-mac-block-specification.md",
+      "line": 34
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass11/validated-error-propagation.md",
+      "line": 42
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass9/evolution-validation-bridge.md",
+      "line": 47
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass6/circulation-return-obstruction.md",
+      "line": 57
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass3/quantitative-core-stage.md",
+      "line": 63
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass3/rotational-receiver.md",
+      "line": 63
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass3/terminal-profile-gap.md",
+      "line": 65
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass3/material-core-transfer.md",
+      "line": 67
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass3/receiver-flux-budget.md",
+      "line": 67
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass2/active-core-pressure.md",
+      "line": 71
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass2/affine-stretch-gate.md",
+      "line": 73
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass2/jeong-yoneda-stage.md",
+      "line": 73
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass2/mean-feedback.md",
+      "line": 75
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass12/provenance/top-before-pass12/NEXT_TARGET.md",
+      "target": "pass2/correction-window.md",
+      "line": 75
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass4/full-pressure-feedback-gate.md",
+      "target": "0",
+      "line": 97
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass4/full-pressure-feedback-gate.md",
+      "target": "0",
+      "line": 146
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass4/outer-pressure-reservoir.md",
+      "target": "0",
+      "line": 115
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass3/receiver-flux-budget.md",
+      "target": "u dot Jx",
+      "line": 19
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 26
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 68
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 77
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass2/active-core-pressure.md",
+      "target": "0",
+      "line": 102
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "target": "-y,x,0",
+      "line": 25
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "target": "0",
+      "line": 37
+    },
+    {
+      "file": "core-line/outputs/euler-ns-transfer/pass5/CERTIFIED_INITIAL_FEEDBACK.md",
+      "target": "k_core+(7/5",
+      "line": 77
+    }
+  ],
+  "historical_warning_policy": "Recorded without changing verbatim source files; absolute machine paths, historical copies, and external-fetch omissions may be nonportable."
+}

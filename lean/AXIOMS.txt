@@ -1,0 +1,115 @@
+Axiom audit for forced-route-2026-09/lean
+=========================================
+
+Toolchain : leanprover/lean4:v4.33.1
+Mathlib   : rev 0df444a360eaa60ab8c11dca51a86af692955474 (inputRev v4.33.1)
+Generated : 2026-09-08, by
+
+    cd forced-route-2026-09/lean
+    lake env lean Axioms.lean
+
+Every theorem below depends only on the three standard Lean 4 axioms
+
+    propext, Classical.choice, Quot.sound
+
+which are the axioms of Mathlib itself.  `sorryAx` appears nowhere: there is no `sorry`,
+no `admit`, and no `native_decide` in Cores/.  `lake build` completes with no warnings.
+
+Raw `#print axioms` output
+-------------------------
+
+'ForcedRoute.Criticality.theta_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Criticality.theta_lt_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Criticality.theta_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Criticality.theta_mem_Ico' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Criticality.theta_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Criticality.theta_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Criticality.sobolev_index_interpolation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Criticality.one_sub_theta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Criticality.two_div_one_sub_theta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Criticality.scalingMap_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Criticality.norm_rescale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Criticality.iSup_norm_rescale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Criticality.bddAbove_range_norm_rescale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Criticality.iSup_norm_rescale_of_bddAbove' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Criticality.supNorm_scaling_invariant_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.CircleMeasure.lipschitzWith_coord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.CircleMeasure.hausdorffMeasure_image_coord_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.CircleMeasure.Icc_subset_coord_image_circleAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.CircleMeasure.hausdorffMeasure_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.CircleMeasure.hausdorffMeasure_circleAt_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.CircleMeasure.hausdorffMeasure_circle_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.CircleMeasure.exists_cos_sin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.CircleMeasure.exists_rot_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.CircleMeasure.circleAt_subset_of_rotInvariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.CircleMeasure.hausdorffMeasure_pos_of_rotInvariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ForcedRoute.Ceiling.rpow_lt_rpow_exponent_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Ceiling.damping_below_growth_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Ceiling.mul_lt_half_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Ceiling.isGreatest_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Ceiling.csSup_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Ceiling.ceiling_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Ceiling.lt_half_of_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Ceiling.lt_half_of_damping_below_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.trace_Lmat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Lmat_sq_zz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.trace_Lmat_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.affine_pressure_zz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.affine_ne_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.cont0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.cont1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.int1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.int2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.int3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.int4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.I_def' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.moment_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.moment_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.moment_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.lincomb' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.strain_radial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.swirl_radial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.core_pressure_zz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.core_pressure_transverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.core_pressure_zz_of_pure_rotation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ForcedRoute.StrainedCore.Cutoff.radial_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.angular_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.rotating_core_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.ratio_second_derivative_algebraic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.StrainedCore.ratio_second_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.stageTime_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.gain_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.one_lt_one_add_gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.stageTime_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.gain_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.gain_stageTime_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.contraction_sq_mem_Ioo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.contraction_sq_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.strict_Re_gain_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.Re_ratio_gt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.vel_ratio_gt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.energy_ratio_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.energy_ratio_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.scale_match_Re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.scale_match_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.vel_ratio_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.scale_match_energy'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.quarter_exponents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.quarter_Re_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.quarter_vel_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.quarter_energy_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.bracket_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.bracket_lower_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.advective_exponent_gt_half_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.advective_exponent_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.finite_energy_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.window_quarter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.sphere_average_rotational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.weighted_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.rigid_rotation_saturates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcedRoute.Receiver.cubic_remainder_constant' depends on axioms: [propext, Classical.choice, Quot.sound]

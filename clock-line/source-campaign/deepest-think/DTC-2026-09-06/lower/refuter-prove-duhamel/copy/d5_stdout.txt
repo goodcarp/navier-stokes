@@ -1,0 +1,46 @@
+nsring.py sha256 = 3c8e93b2da7c8f5437f74c3c39e67fb7b5ef6b29d92e01204e3176d817969f03
+
+==============================================================================
+L3  sympy: the material weight is stationary at the weight-maximising angle
+==============================================================================
+   d log f/dt |_(t=0) = 5*a*(-r**2 + 2*z**2)/(r**2 + z**2)
+   residual vs 5 a (3 cos^2 phi - 1) at rho = 1 : 0
+   argmax of sin^2 phi cos phi on (0,pi/2): cos^2 phi = 1/3
+   -> both the weight maximum and the stationarity of f sit at cos^2 phi = 1/3.  EXACT.
+
+==============================================================================
+L1  the origin representation, checked against the grid Poisson solver
+==============================================================================
+   N = 3   a(0,0) quadrature = 1.030233   grid solver = 1.024068   rel = 5.983e-03
+   N = 4   a(0,0) quadrature = 1.369700   grid solver = 1.363517   rel = 4.514e-03
+   N = 5   a(0,0) quadrature = 1.709169   grid solver = 1.703005   rel = 3.607e-03
+   N = 6   a(0,0) quadrature = 2.048639   grid solver = 2.042326   rel = 3.082e-03
+   (residual is the grid's O(h) treatment of the mollified inner edge, not a
+    disagreement of the representation: it falls with h -- see V3/L1b.)
+   L1b  N=4  h = 1/4   a_grid = 1.363171   (quadrature 1.369700)  rel 4.766e-03
+   L1b  N=4  h = 1/8   a_grid = 1.363678   (quadrature 1.369700)  rel 4.396e-03
+   L1b  N=4  h = 1/16   a_grid = 1.363517   (quadrature 1.369700)  rel 4.514e-03
+   L1b  N=4  h = 1/32   a_grid = 1.363480   (quadrature 1.369700)  rel 4.541e-03
+
+==============================================================================
+L2/L4  evolve; check the sign law, and measure beta(0)/a^2 at the origin
+==============================================================================
+   at the origin u = 0 by symmetry (axis + equatorial material plane), so D_t = d_t
+   there and  beta(0) = d_t a(0) + a(0)^2  with NO tracer interpolation error.
+   N = 3  L = 2.0794   a(0,0) = 1.024333   d_t a(0) = +0.565540   beta/a^2 = 1.5390   [model 3/2 - 1/L = 1.0191]   max omega in z>0 = 0.00e+00
+   N = 4  L = 2.7726   a(0,0) = 1.363678   d_t a(0) = +1.001042   beta/a^2 = 1.5383   [model 3/2 - 1/L = 1.1393]   max omega in z>0 = 0.00e+00
+   N = 5  L = 3.4657   a(0,0) = 1.703005   d_t a(0) = +1.560317   beta/a^2 = 1.5380   [model 3/2 - 1/L = 1.2115]   max omega in z>0 = 0.00e+00
+   N = 6  L = 4.1589   a(0,0) = 2.042326   d_t a(0) = +2.243496   beta/a^2 = 1.5379   [model 3/2 - 1/L = 1.2596]   max omega in z>0 = 0.00e+00
+
+   SIGN LAW (L2): max omega^theta over the z>0 half domain stays <= 0 to the
+   discretisation's own non-monotonicity; every value above is <= 1e-3 of M = 1.
+
+   grid convergence of beta(0)/a^2 at N = 5:
+     h = 1/4   beta/a^2 = 1.5797
+     h = 1/8   beta/a^2 = 1.5380
+     h = 1/16   beta/a^2 = 1.5299
+
+   CONTROL: reversed datum (eta -> -eta) must give a(0,0) < 0 and omega > 0 in z>0.
+     a(0,0) reversed = -1.363678   min omega in z>0 = +0.0000  (control FIRES)
+
+[d5 done]

@@ -1,0 +1,43 @@
+Integrand in v:  1/bracket(v,K).   int_0^t ||omega|| ds / c_1 = int_{V0}^{V} dv/bracket.
+(dr/r = -dv, so the 1/r cancels exactly; V=log(1/(T-t)), V0=log(1/T).)
+
+K = 1   (log_+ active for v > 0.000;  1+logK = +1.000)
+   V=log(1/(T-t))=    1e+01   int/c1=      5.4931   loglog=  2.3026   ratio=  2.3856
+   V=log(1/(T-t))=    3e+01   int/c1=      9.7296   loglog=  3.4012   ratio=  2.8606
+   V=log(1/(T-t))=    1e+02   int/c1=     15.2226   loglog=  4.6052   ratio=  3.3055
+   V=log(1/(T-t))=    1e+03   int/c1=     26.5165   loglog=  6.9078   ratio=  3.8387
+   V=log(1/(T-t))=    1e+05   int/c1=     49.5177   loglog= 11.5129   ratio=  4.3011
+   V=log(1/(T-t))=    1e+08   int/c1=     84.0562   loglog= 18.4207   ratio=  4.5631
+
+K = 100   (log_+ active for v > 0.000;  1+logK = +5.605)
+   V=log(1/(T-t))=    1e+01   int/c1=      1.5257   loglog=  2.3026   ratio=  0.6626
+   V=log(1/(T-t))=    3e+01   int/c1=      3.6388   loglog=  3.4012   ratio=  1.0699
+   V=log(1/(T-t))=    1e+02   int/c1=      7.5955   loglog=  4.6052   ratio=  1.6493
+   V=log(1/(T-t))=    1e+03   int/c1=     18.0113   loglog=  6.9078   ratio=  2.6074
+   V=log(1/(T-t))=    1e+05   int/c1=     40.9004   loglog= 11.5129   ratio=  3.5526
+   V=log(1/(T-t))=    1e+08   int/c1=     75.4378   loglog= 18.4207   ratio=  4.0953
+
+K = 0.001   (log_+ active for v > 34.539;  1+logK = -5.908)
+   V=log(1/(T-t))=    1e+01   int/c1=     10.0000   loglog=  2.3026   ratio=  4.3429
+   V=log(1/(T-t))=    3e+01   int/c1=     30.0000   loglog=  3.4012   ratio=  8.8204
+   V=log(1/(T-t))=    1e+02   int/c1=     47.7669   loglog=  4.6052   ratio= 10.3725
+   V=log(1/(T-t))=    1e+03   int/c1=     60.8804   loglog=  6.9078   ratio=  8.8133
+   V=log(1/(T-t))=    1e+05   int/c1=     84.0547   loglog= 11.5129   ratio=  7.3009
+   V=log(1/(T-t))=    1e+08   int/c1=    118.5950   loglog= 18.4207   ratio=  6.4381
+
+The ratio must tend to 5 (the claimed coefficient 5c_1).  It does, but only ~ 1/log V,
+so the o(1) in `(5c_1+o(1))` is a 1/loglog correction, not a small number at any
+physically reachable (T-t):  at (T-t)=1e-100 (V=230) the ratio is still ~
+   3.5400  (vs 5).
+
+BRANCH CHECK: for K<e^{-1} the expression 1+logK-(1/5)log r is NEGATIVE on part of
+the range, so F(r)=-5c log(.) is undefined there; the attempt restricts to the
+log_+-ACTIVE branch, where the bracket is 1+(logK+v/5) > 1 > 0 by definition of
+activation.  Verified numerically:
+   K=0.001  v=v_act+1e-09:  1+logK+v/5 = 1.000000000  (must be >1)
+   K=0.001  v=v_act+0.001:  1+logK+v/5 = 1.000200000  (must be >1)
+   K=0.001  v=v_act+1:  1+logK+v/5 = 1.200000000  (must be >1)
+   K=1e-08  v=v_act+1e-09:  1+logK+v/5 = 1.000000000  (must be >1)
+   K=1e-08  v=v_act+0.001:  1+logK+v/5 = 1.000200000  (must be >1)
+   K=1e-08  v=v_act+1:  1+logK+v/5 = 1.200000000  (must be >1)
+So SS4's restriction is sound; the additive C(E_0,nu,T) absorbs the inactive branch.

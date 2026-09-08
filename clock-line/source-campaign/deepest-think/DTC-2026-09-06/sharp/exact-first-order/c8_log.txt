@@ -1,0 +1,23 @@
+(A) shell:  eta = -M/r (upper half)
+    Delta_5 eta = M/r**3     nu Delta_5 eta / eta = -nu/r**2
+    => EXACT relative viscous rate = -nu/r^2.
+    omega-form cross-check: (Delta - 1/r^2) omega^theta / omega^theta = -1/r**2  (must be -1/r^2)
+
+(B) Gaussian eta-ring: eta = -(M/r_k) exp(-((r-r_k)^2+(z-z_k)^2)/(2 sigma^2))
+    nu Delta_5 eta/eta at the core centre = -2*nu/sigma**2   (must be -2 nu/sigma^2)
+
+NUMBERS (viscous floor: the SMALLEST scale of the datum sits at sqrt(nu/M))
+  (A) shell, rho0 = sqrt(nu/M): penalty at the inner edge = nu/(rho0 sin phi)^2 = M/sin^2 phi;
+      at phi* : M/sin^2 phi* = 1.5000 M   (sin^2 phi* = 2/3)
+      stretching a = (M/2) log(R/rho0).  NET GROWTH iff log(R/rho0) > 3.0000
+      i.e. log Re_E = 2 log(R/rho0) + (2/5)log(E/(M^2R^5)) > 5.2968   => Re_E > 199.7   -- an O(1) threshold.
+  (B) ring stack, sigma_0 = sqrt(nu/M): penalty at the inner core = 2M; needs kappa(s) N > 2:
+      s=0.0400  kappa=2.884710e-03  N >   693.3  => log Re_E >    961.1  (Re_E > 10^417)
+      s=0.0600  kappa=6.441998e-03  N >   310.5  => log Re_E >    430.4  (Re_E > 10^187)
+      s=0.0800  kappa=1.133233e-02  N >   176.5  => log Re_E >    244.7  (Re_E > 10^106)
+      s=0.1000  kappa=1.746766e-02  N >   114.5  => log Re_E >    158.7  (Re_E > 10^69)
+      s=0.1250  kappa=2.671157e-02  N >    74.9  => log Re_E >    103.8  (Re_E > 10^45)
+
+  => the shell is viscously NEUTRAL at O(1) Reynolds number; the discrete ring stack is not.
+     A ring's core has curvature 1/sigma^2 at ITS OWN peak; a plateau has none.
+SHA256 bdafe635a35c52e9e57e4ee422da4f656a7cc7d5ba2a6c549f5a72b7771f3c5e

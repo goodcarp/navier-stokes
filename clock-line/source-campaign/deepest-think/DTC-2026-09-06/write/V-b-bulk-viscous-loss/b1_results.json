@@ -1,0 +1,53 @@
+{
+ "A1_r3_Lap5_inv_r": "-1",
+ "A2_cart_R3_Lap5_inv_r": "-1",
+ "A3_bulk_operator_residual": "0",
+ "B_hessian_eigenvalues_at_r": {
+  "0": 1,
+  "-1/r**3": 3,
+  "2/r**3": 1
+ },
+ "B_hessian_trace_times_r3": "-1",
+ "B_hessian_opnorm_times_r3": "2",
+ "C_legendre_residuals": {
+  "1": "0",
+  "2": "0",
+  "3": "0",
+  "4": "0",
+  "5": "0",
+  "6": "0"
+ },
+ "C_sup_abs_dk": "k! / r^(k+1)   (|P_k| <= 1, attained at mu = -+1)",
+ "D_Delta_y_k_of_inv_r_coefficients": [
+  "-1",
+  "-3",
+  "-45",
+  "-1575"
+ ],
+ "E_propagator_symbolic_note": "Psi_s = diag(e^{-mu(s)} x4, e^{2 mu(s)}), mu(s)=int_{tau-s}^tau a; Psi_tau Psi_p^{-1} = diag(lam(tau-p)^{-1} x4, lam(tau-p)^2)",
+ "E_half_C_contract_Hess": "M*sigma_y/r0**3",
+ "E_identification_residual": "0",
+ "E_sigma_z_absent": "0",
+ "E_sigma_y_is_nu_int_dt_over_r2": "sigma_y/r0^2 = (nu/r0^2) int lam^{-2} du = nu int du / r(u)^2",
+ "F_V_affine": [
+  "0",
+  "0"
+ ],
+ "F_V_nonlinear": [
+  "-2*epsilon*(3*alpha1*alpha2**2*epsilon**3 + alpha1*epsilon + 7*alpha2**2*epsilon**2 + 1)/(alpha1**3*epsilon**3 - 6*alpha1**2*alpha2**2*epsilon**4 + 3*alpha1**2*epsilon**2 + 12*alpha1*alpha2**4*epsilon**5 - 12*alpha1*alpha2**2*epsilon**3 + 3*alpha1*epsilon - 8*alpha2**6*epsilon**6 + 12*alpha2**4*epsilon**4 - 6*alpha2**2*epsilon**2 + 1)",
+  "2*alpha2*epsilon**2*(alpha1*epsilon + alpha2**2*epsilon**2 + 4)/(alpha1**3*epsilon**3 - 6*alpha1**2*alpha2**2*epsilon**4 + 3*alpha1**2*epsilon**2 + 12*alpha1*alpha2**4*epsilon**5 - 12*alpha1*alpha2**2*epsilon**3 + 3*alpha1*epsilon - 8*alpha2**6*epsilon**6 + 12*alpha2**4*epsilon**4 - 6*alpha2**2*epsilon**2 + 1)"
+ ],
+ "F_V_nonlinear_linearised_in_eps": [
+  "-2*epsilon",
+  "0"
+ ],
+ "F_V_affine_n5": [
+  "0",
+  "0",
+  "0",
+  "0",
+  "0"
+ ],
+ "F_V_n1_general": "-Derivative(X(alpha1), (alpha1, 2))/Derivative(X(alpha1), alpha1)**3",
+ "F_V_n1_residual_vs_minus_Xpp_over_Xp3": "0"
+}

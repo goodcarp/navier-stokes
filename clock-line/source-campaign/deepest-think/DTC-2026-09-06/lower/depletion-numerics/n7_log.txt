@@ -1,0 +1,4 @@
+[shell N=7 h=1/8 Re0=100 lam=1.5 sign=+1 main] grid 1536x1536 R=128 ReE=6.585e+05 logReE=13.398
+    T32=0.2272  T2=0.3693  T4=0.8969  T8=2.1469
+    stop=reached_8M peak=8.0018 t_final=2.1475 C(0)=1.9436 C(end)=0.1096 eta_ratio=0.08258 steps=2241 8836.5s
+wrote ~/Desktop/Solve Navier Stokes/campaign/deepest-think/DTC-2026-09-06/lower/depletion-numerics/dep_n7.json

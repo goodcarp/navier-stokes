@@ -1,0 +1,28 @@
+TEST A (n=5).  measured Gamma = 2.12634   tau = 0.400   c = Gamma*tau = 0.85054
+               div_5 b at x0 = 2.00000   (nonzero: the drift is compressible)
+  nu=2.0e-03  sqrt(nu*tau)=2.8284e-02   mean|Z|=8.5892e-02   rms|Z|=9.1632e-02
+     d/sqrt(nu tau)= 4.0  q=  16.0   P_emp=1.812e-01 +-7.7e-04   BOUND=8.642e+00   (sharp-rate ref 2.19e-01)   ok
+     d/sqrt(nu tau)= 6.0  q=  36.0   P_emp=1.533e-02 +-2.5e-04   BOUND=7.200e+00   (sharp-rate ref 3.28e-02)   ok
+     d/sqrt(nu tau)= 8.0  q=  64.0   P_emp=7.120e-04 +-5.3e-05   BOUND=5.577e+00   (sharp-rate ref 2.30e-03)   ok
+     d/sqrt(nu tau)=10.0  q= 100.0   P_emp=8.000e-06 +-5.7e-06   BOUND=4.015e+00   (sharp-rate ref 7.54e-05)   ok
+     d/sqrt(nu tau)=12.0  q= 144.0   P_emp=0.000e+00 +-2.0e-09   BOUND=2.688e+00   (sharp-rate ref 1.16e-06)   ok
+  nu=5.0e-04  sqrt(nu*tau)=1.4142e-02   mean|Z|=4.2932e-02   rms|Z|=4.5785e-02
+     d/sqrt(nu tau)= 4.0  q=  16.0   P_emp=1.805e-01 +-7.7e-04   BOUND=8.642e+00   (sharp-rate ref 2.19e-01)   ok
+     d/sqrt(nu tau)= 6.0  q=  36.0   P_emp=1.522e-02 +-2.4e-04   BOUND=7.200e+00   (sharp-rate ref 3.28e-02)   ok
+     d/sqrt(nu tau)= 8.0  q=  64.0   P_emp=6.920e-04 +-5.3e-05   BOUND=5.577e+00   (sharp-rate ref 2.30e-03)   ok
+     d/sqrt(nu tau)=10.0  q= 100.0   P_emp=1.600e-05 +-8.0e-06   BOUND=4.015e+00   (sharp-rate ref 7.54e-05)   ok
+     d/sqrt(nu tau)=12.0  q= 144.0   P_emp=0.000e+00 +-2.0e-09   BOUND=2.688e+00   (sharp-rate ref 1.16e-06)   ok
+  fitted empirical rate at nu=2.0e-03 :  0.11503   (proved B1 rate 0.00912, B2 rate 0.01732, sharp 0.09493)
+  fitted empirical rate at nu=5.0e-04 :  0.11053   (proved B1 rate 0.00912, B2 rate 0.01732, sharp 0.09493)
+
+TEST B (n=1 PDE).  d_t eta + b(x) d_x eta = nu d_xx eta,  b' != 0.
+  Gamma=1.60 tau=0.50 c=0.80 ;  x0=0.800 -> X(tau)=1.5100  (drift displacement 0.7100)
+   nu=2e-03 d/sqrt(nu tau)= 4.0 q=  16.0 | material dev=8.716e-03  BOUND=8.919e-01  ok | Eulerian dev=1.000e+00 (control FIRES)
+   nu=2e-03 d/sqrt(nu tau)= 6.0 q=  36.0 | material dev=9.577e-05  BOUND=3.250e-01  ok | Eulerian dev=1.000e+00 (control FIRES)
+   nu=2e-03 d/sqrt(nu tau)= 8.0 q=  64.0 | material dev=2.236e-07  BOUND=7.909e-02  ok | Eulerian dev=1.000e+00 (control FIRES)
+   nu=5e-04 d/sqrt(nu tau)= 4.0 q=  16.0 | material dev=7.725e-02  BOUND=8.919e-01  ok | Eulerian dev=1.000e+00 (control FIRES)
+   nu=5e-04 d/sqrt(nu tau)= 6.0 q=  36.0 | material dev=9.374e-03  BOUND=3.250e-01  ok | Eulerian dev=1.000e+00 (control FIRES)
+   nu=5e-04 d/sqrt(nu tau)= 8.0 q=  64.0 | material dev=4.715e-04  BOUND=7.909e-02  ok | Eulerian dev=1.000e+00 (control FIRES)
+
+SUMMARY  R1 violated: False   R2 violated: False   R3 control fires: True
+wrote v4_results.json

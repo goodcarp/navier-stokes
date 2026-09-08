@@ -1,0 +1,16 @@
+{
+ "K_size_constant": "3/(8*pi**2)",
+ "K_size_constant_num": 0.037995443865876666,
+ "gradK_symbolic_residual": "0 (all 5 components)",
+ "grad_dir_norm2": "15*c**2 + 1",
+ "grad_dir_sup": "4",
+ "gradK_constant": "3/(2*pi**2)",
+ "gradK_constant_num": 0.15198177546350666,
+ "radial_log_length": "log(R/rho0), independent of phi and lambda  [residual 0]",
+ "angular_integral_sin2": "pi/2",
+ "shell_integral": "pi**3 * L",
+ "pi_cubed": 31.00627668029982,
+ "antiderivative_residual": "0",
+ "P_of_lambda": "lambda",
+ "lemma1_residual": "0  (P(lambda) = lambda exactly)"
+}

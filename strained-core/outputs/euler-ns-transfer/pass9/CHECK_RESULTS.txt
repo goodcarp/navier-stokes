@@ -1,0 +1,385 @@
+RUN verify_general_envelope_jet.py
+PASS: arbitrary-envelope covariance/viscosity, full modal source and pressure-flux cancellation, maximum-circle shear/source combination, pump and viscous transport corrections, and exact flat-envelope limit.
+PASS verify_general_envelope_jet.py
+RUN certify_general_envelope_initial_jet.py
+{
+  "status": "PASS",
+  "panels": 2048,
+  "NEW_weighted_residual_norm": {
+    "display": "[6.92536599604863464571007788291129529925051192, 8.55611964380512756691433472777732430015972022]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "18852639463433695741074635725203741786295",
+        "exponent": -131
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "5822993288105491458752246749128984714775",
+        "exponent": -129
+      }
+    }
+  },
+  "NEW_full_pressure_radial_error_bound": {
+    "display": "[1.05092416328193162575966590190376349856645622, 1.29839099951705915036296724509464486812233868]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "11443550775551440090019852133403488458649",
+        "exponent": -133
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "56552904000577018511024111212905347801405",
+        "exponent": -135
+      }
+    }
+  },
+  "S_local": {
+    "display": "[-10714.6612580785975473824719777527011521447382, -10714.6612549866755212909790192588313149006955]",
+    "exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "28484455419180198929144973314272795067671",
+        "exponent": -121
+      },
+      "upper": {
+        "sign": 1,
+        "mantissa": "56968910821920920586830620437203443223875",
+        "exponent": -122
+      }
+    }
+  },
+  "S_pressure_trial": {
+    "display": "[9495.05103785471466197478647885974162910474274, 9545.92662481492388474356437880155896121408077]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "12621087660923107745077780705798273446025",
+        "exponent": -120
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "50754851661650431403150391473683148816875",
+        "exponent": -122
+      }
+    }
+  },
+  "S_actual": {
+    "display": "[-1543.28628742283415016662031317125572651089706, -845.058562972800371788479826178976150215724819]",
+    "exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "32822069420054359329223602833582571510591",
+        "exponent": -124
+      },
+      "upper": {
+        "sign": 1,
+        "mantissa": "71889631998797859669650432967634366089509",
+        "exponent": -126
+      }
+    }
+  },
+  "Gtt_actual_full_pressure": {
+    "display": "[-100728.473622958546361693663813502629801855921, -13501.0611417852337835249184286931274717656874]",
+    "exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "66945553556159476174250612912029878792895",
+        "exponent": -119
+      },
+      "upper": {
+        "sign": 1,
+        "mantissa": "71783953769859176855652472594606965761621",
+        "exponent": -122
+      }
+    }
+  },
+  "Gt_actual": {
+    "display": "[11.7669424762528404594722943193003821912949974, 105.597462733085823132789281333415645404698354]",
+    "exact": {
+      "lower": {
+        "sign": 0,
+        "mantissa": "16016332148967381158047866660625522104309",
+        "exponent": -130
+      },
+      "upper": {
+        "sign": 0,
+        "mantissa": "17966477279830017725861044437154766571891",
+        "exponent": -127
+      }
+    }
+  },
+  "moving_radial_value_Gtt_actual": {
+    "display": "[-100622.178791991803947744611372968758279129176, -12125.3276225041837063273480838248802583543373]",
+    "exact": {
+      "lower": {
+        "sign": 1,
+        "mantissa": "66874908523595366458946421786417904876933",
+        "exponent": -119
+      },
+      "upper": {
+        "sign": 1,
+        "mantissa": "8058662466948357551067842299030662900049",
+        "exponent": -119
+      }
+    }
+  },
+  "seconds": 8.627094984054565
+}
+PASS certify_general_envelope_initial_jet.py
+RUN verify_general_envelope_initial_jet_certificate.py
+PASS: new leading data, complete residual/tails and dependencies, Gt>11, actual Gtt<-13000, tracked Gtt<-12000, and new pressure error<1.3.
+PASS verify_general_envelope_initial_jet_certificate.py
+RUN verify_evolution_validation_bridge.py
+PASS: H4/H7 error constants, explicit Riccati supersolution, complete off-neutral quotient curvature and its restricted initial reduction. No evolved-field validation or useful duration is asserted.
+PASS verify_evolution_validation_bridge.py
+RUN verify_affine_envelope_budget.py
+{"status": "PASS", "scope": "exact rotating-affine linear envelope model only", "envelope_second_derivative_moment": {"interval": "[480868.53632052795729, 641080.35446054721251]", "exact_dyadic_bounds": {"lower": {"sign": 0, "mantissa": "8261258548688223", "exponent": -34}, "upper": {"sign": 0, "mantissa": "1376709578258069", "exponent": -31}}, "panels": 314, "strictly_positive": true, "strictly_negative": false, "width_display": 160211.81814001926}, "A2_coarse_upper": 800000, "inviscid_additive_gain_lower": 16, "viscosity_loss_upper": "2062985492/1406514375", "E0_upper": "366140/3969", "net_additive_gain_lower": "27927869/1984500", "relative_gain_lower": "3/20", "evaluation_time": "20/(2*Omega*h)", "time_upper": "7/5000", "dependencies": {"cutoff": "pass6/checks/outer-mean-maximum-certificate.json: -4 < chi derivative <= 0; chi(5/8)=1/2 follows from the cutoff definition.", "radius": "pass8/checks/fixed-circle-acceleration-certificate.json: 1077377876667/5000000000000 < r_star < 269344469167/1250000000000.", "amplitude": "pass8/checks/leading-envelope-certificate.json: 900 < retuned A < 1020.", "derived_bounds": "h=4/r_star lies between 1000/63 and 1600/63; (r_star/(63/200))^2 < 5/8, hence Omega=A*chi((r_star/(63/200))^2) > 450.", "layout": "Certificate paths are relative to the euler-ns-transfer package root; work/ uses the same filenames directly inside each pass directory.", "scope": "These are declared prior certified input bounds. This checker certifies the new envelope moment and rational energy budget; no PDE quadrature is used."}}
+PASS verify_affine_envelope_budget.py
+RUN verify_fixed_amplitude_initialization.py
+{
+  "status": "PASS",
+  "selected_parameters": {
+    "A": "1020",
+    "lam": "1/4",
+    "nu": "1/1000"
+  },
+  "family_lam_interval": [
+    "1/8",
+    "1/4"
+  ],
+  "X_lower": "293913/50000",
+  "beta_prime_lower": "17391/700000",
+  "complete_pressure_T_upper": "-634112687/50000000",
+  "beta_second_lower": "4264878809/700000000",
+  "selected_mean_derivative_lower": "20499/200",
+  "uniform_mean_derivative_lower": "8871/800",
+  "uniform_fractional_fluctuation_energy_derivative_lower": "12853/2205",
+  "scope": "Actual initial identities and inequalities for an explicit amplitude; no full 3D time evolution, duration, inherited return or blowup.",
+  "dependencies": [
+    "pass5 all-amplitude T(H)<102-(23199/1000)H and C_v lower bound",
+    "pass8 leading torque, energy, D_L and E_L bounds",
+    "pass9 full off-neutral core identity and independent-amplitude mean-jet formula"
+  ]
+}
+PASS verify_fixed_amplitude_initialization.py
+RUN check_slice_solver.py
+{
+  "status": "PASS",
+  "scope": "Analytic Gaussian evolution, known Poisson solution, discrete incompressibility and circulation; no PDE certification",
+  "results": [
+    {
+      "nr": 192,
+      "poisson_relative_max_error": 0.0001316768071781115,
+      "discrete_divergence_max": 4.2327252813834093e-16,
+      "Gaussian_relative_max_error": 1.712973729439682e-06,
+      "nonlinear_circulation_error": 3.789561257387201e-15
+    },
+    {
+      "nr": 384,
+      "poisson_relative_max_error": 3.290126056358664e-05,
+      "discrete_divergence_max": 8.500145032286355e-16,
+      "Gaussian_relative_max_error": 4.286273910736327e-07,
+      "nonlinear_circulation_error": 1.1368683772161604e-14
+    },
+    {
+      "nr": 768,
+      "poisson_relative_max_error": 8.225801663105716e-06,
+      "discrete_divergence_max": 1.7104373473131318e-15,
+      "Gaussian_relative_max_error": 1.0718082478433644e-07,
+      "nonlinear_circulation_error": 1.7053025658242404e-14
+    }
+  ]
+}
+PASS check_slice_solver.py
+RUN compare_slice_runs.py
+{
+  "status": "PASS numerical sensitivity checks",
+  "scope": "Tracked radial spline critical branch and finite-radius planar energies; no compact 3D evolution or rigorous continuum error enclosure",
+  "runs": {
+    "slice-768.json": {
+      "parameters": {
+        "nr": 768,
+        "nphi": 48,
+        "R": 0.8,
+        "dt": 1e-06,
+        "nu": 0.001,
+        "c": 1.4,
+        "A": 950.0,
+        "lam": 0.25,
+        "T": 0.004
+      },
+      "at_t_001": {
+        "branch_value_increment": 0.0761215413839551,
+        "branch_value_fractional_gain": 0.0019520576978193649,
+        "branch_radius_displacement": 0.00023660007245759895,
+        "fixed_receiver_increment": 0.07561588221298621,
+        "fluctuation_energy_fractional_gain": 0.13272702760554989,
+        "material_slice_weighted_energy_fractional_gain": 0.1295598280768313,
+        "torque": 71.2964646565797
+      },
+      "sampled_peak_time": 0.0023,
+      "sampled_peak_increment": 0.11365138167315791,
+      "last_fixed_receiver_increment": -0.011593788961953067,
+      "final_torque": -109.97776001625286,
+      "relative_energy_balance_diagnostic": -1.365121524793671e-06
+    },
+    "slice-1536.json": {
+      "parameters": {
+        "nr": 1536,
+        "nphi": 48,
+        "R": 0.8,
+        "dt": 5e-07,
+        "nu": 0.001,
+        "c": 1.4,
+        "A": 950.0,
+        "lam": 0.25,
+        "T": 0.004
+      },
+      "at_t_001": {
+        "branch_value_increment": 0.07625854234652252,
+        "branch_value_fractional_gain": 0.001955523274570048,
+        "branch_radius_displacement": 0.00023550773385411228,
+        "fixed_receiver_increment": 0.07575995027866611,
+        "fluctuation_energy_fractional_gain": 0.13254772293908923,
+        "material_slice_weighted_energy_fractional_gain": 0.12938102476121816,
+        "torque": 71.33272566071
+      },
+      "sampled_peak_time": 0.0023,
+      "sampled_peak_increment": 0.1147290168014905,
+      "last_fixed_receiver_increment": -0.012267184907152284,
+      "final_torque": -109.78283129349072,
+      "relative_energy_balance_diagnostic": -3.5360982383421183e-07
+    },
+    "slice-angular-check.json": {
+      "parameters": {
+        "nr": 768,
+        "nphi": 72,
+        "R": 0.8,
+        "dt": 1e-06,
+        "nu": 0.001,
+        "c": 1.4,
+        "A": 950.0,
+        "lam": 0.25,
+        "T": 0.001
+      },
+      "at_t_001": {
+        "branch_value_increment": 0.0761215413839551,
+        "branch_value_fractional_gain": 0.0019520576978193649,
+        "branch_radius_displacement": 0.00023660007245759895,
+        "fixed_receiver_increment": 0.07561588221298621,
+        "fluctuation_energy_fractional_gain": 0.13272702760554766,
+        "material_slice_weighted_energy_fractional_gain": 0.12955982807682886,
+        "torque": 71.2964646565641
+      },
+      "sampled_peak_time": 0.001,
+      "sampled_peak_increment": 0.0761215413839551,
+      "last_fixed_receiver_increment": 0.07561588221298621,
+      "final_torque": 71.2964646565641,
+      "relative_energy_balance_diagnostic": -1.7362743335425849e-07
+    },
+    "slice-boundary-check.json": {
+      "parameters": {
+        "nr": 1152,
+        "nphi": 48,
+        "R": 1.2,
+        "dt": 1e-06,
+        "nu": 0.001,
+        "c": 1.4,
+        "A": 950.0,
+        "lam": 0.25,
+        "T": 0.001
+      },
+      "at_t_001": {
+        "branch_value_increment": 0.07612154138213612,
+        "branch_value_fractional_gain": 0.0019520576977727355,
+        "branch_radius_displacement": 0.00023660007247738868,
+        "fixed_receiver_increment": 0.07561588221108195,
+        "fluctuation_energy_fractional_gain": 0.13272775137627102,
+        "material_slice_weighted_energy_fractional_gain": 0.1295605498238288,
+        "torque": 71.29646465317772
+      },
+      "sampled_peak_time": 0.001,
+      "sampled_peak_increment": 0.07612154138213612,
+      "last_fixed_receiver_increment": 0.07561588221108195,
+      "final_torque": 71.29646465317772,
+      "relative_energy_balance_diagnostic": -1.724465932830176e-07
+    },
+    "slice-fixed-A1020.json": {
+      "parameters": {
+        "nr": 1536,
+        "nphi": 48,
+        "R": 0.8,
+        "dt": 5e-07,
+        "nu": 0.001,
+        "c": 1.4,
+        "A": 1020.0,
+        "lam": 0.25,
+        "T": 0.001
+      },
+      "at_t_001": {
+        "branch_value_increment": 0.07337725833529873,
+        "branch_value_fractional_gain": 0.0017525055577487514,
+        "branch_radius_displacement": 0.00024447532335969413,
+        "fixed_receiver_increment": 0.07280374242275656,
+        "fluctuation_energy_fractional_gain": 0.14640158125899227,
+        "material_slice_weighted_energy_fractional_gain": 0.14319614653429857,
+        "torque": 68.18693071624061
+      },
+      "sampled_peak_time": 0.001,
+      "sampled_peak_increment": 0.07337725833529873,
+      "last_fixed_receiver_increment": 0.07280374242275656,
+      "final_torque": 68.18693071624061,
+      "relative_energy_balance_diagnostic": -4.216403693384076e-08
+    },
+    "slice-fixed-A1020-coarse.json": {
+      "parameters": {
+        "nr": 768,
+        "nphi": 48,
+        "R": 0.8,
+        "dt": 1e-06,
+        "nu": 0.001,
+        "c": 1.4,
+        "A": 1020.0,
+        "lam": 0.25,
+        "T": 0.001
+      },
+      "at_t_001": {
+        "branch_value_increment": 0.07325337651626995,
+        "branch_value_fractional_gain": 0.0017495894758396968,
+        "branch_radius_displacement": 0.0002454647324453829,
+        "fixed_receiver_increment": 0.0726724862024426,
+        "fluctuation_energy_fractional_gain": 0.14659129715493768,
+        "material_slice_weighted_energy_fractional_gain": 0.14338533196872816,
+        "torque": 68.15503631039073
+      },
+      "sampled_peak_time": 0.001,
+      "sampled_peak_increment": 0.07325337651626995,
+      "last_fixed_receiver_increment": 0.0726724862024426,
+      "final_torque": 68.15503631039073,
+      "relative_energy_balance_diagnostic": -1.6580114653727032e-07
+    }
+  },
+  "radial_and_time_refinement_differences": {
+    "branch_value_increment": 0.0001370009625674129,
+    "branch_value_fractional_gain": 3.4655767506830415e-06,
+    "branch_radius_displacement": 1.0923386034866756e-06,
+    "fixed_receiver_increment": 0.00014406806567990316,
+    "fluctuation_energy_fractional_gain": 0.00017930466646065568,
+    "material_slice_weighted_energy_fractional_gain": 0.00017880331561315188,
+    "torque": 0.03626100413029576
+  },
+  "selected_amplitude_refinement_differences": {
+    "branch_value_increment": 0.0001238818190287816,
+    "branch_value_fractional_gain": 2.9160819090545687e-06,
+    "branch_radius_displacement": 9.89409085688786e-07,
+    "fixed_receiver_increment": 0.00013125622031395778,
+    "fluctuation_energy_fractional_gain": 0.00018971589594540816,
+    "material_slice_weighted_energy_fractional_gain": 0.00018918543442958402,
+    "torque": 0.0318944058498829
+  }
+}
+
+PASS compare_slice_runs.py
+PASS: 8 finite programs; two interval certificates recomputed, exact fixed-amplitude algebra replayed, and stored nonlinear slice sensitivity checked. Full compact 3D time evolution, useful actual stage duration, inherited return and blowup remain unproved.

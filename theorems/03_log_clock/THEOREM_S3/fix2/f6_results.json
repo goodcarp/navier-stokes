@@ -1,0 +1,38 @@
+{
+ "J_instrument_controls": {
+  "DA_rel": 4.4919576420792474e-07,
+  "DA_taper_only_ac_here": 39.16274683036885,
+  "DA_taper_only_ac_hk2": 39.162729238636764,
+  "DB_here": 65.62513479538735,
+  "DB_hk2": 65.62590994919597,
+  "DB_rel": 1.1811703780082264e-05,
+  "bare_plateau_closed_form": 45.31307406545951,
+  "bare_plateau_quadrature": 39.4784176041545,
+  "bare_plateau_rel": 0.12876320094452726
+ },
+ "L_Gamma_exist_at_L_star_window": {
+  "c=1.1000000 c_*": {
+   "L_exist": 19959.906453737654,
+   "L_picard": 19960.390350442685,
+   "c": 0.8959250987973116,
+   "lam_max": 1.958039708622408
+  },
+  "c=1.1360550 c_*": {
+   "L_exist": 22487.19381733091,
+   "L_picard": 22487.768949119058,
+   "c": 0.9252910776206755,
+   "lam_max": 2.001642929746336
+  }
+ },
+ "branch_bounds_sec4c": {
+  "all_below_1_over_sin4_delta": true,
+  "bulk_81P<=8Q_region_max_P+Q": 3445.159435936685,
+  "bulk_81P>8Q_region_max_6.407P+Q": 183.9144790641547,
+  "bulk_crossover_phi_deg": 7.499999999999999,
+  "equator_Fprime_at_pi/2": 11.459155902616464,
+  "equator_max_branch": 135.3531600558992,
+  "one_over_sin4_delta": 3445.1594359366854,
+  "taper_Fprime_at_delta_minus": 0.3346696547477754,
+  "taper_max_branch": 376.18724579868467
+ }
+}

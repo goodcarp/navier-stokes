@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "source": "~/<core-line-working-tree>/2026-09-06/new-chat/outputs/navier-stokes-pass8/transport_time_control.py",
+  "source_sha256": "107ef3864359c51e26ab8806b4d97c4b70940d47aab49622f711ca5534809e16",
+  "sympy_version": "1.14.0",
+  "domain": "nu>0; 0<tau<t; all x,y in physical R^3",
+  "kernel": "G_{nu*tau}(y-x+(t*tau-tau^2/2)e1)",
+  "correct_equation": "p_tau=nu*Delta_y p+(t-tau)*partial_y1 p",
+  "normalized_residuals": {
+    "correct": "0",
+    "wrong_sign": "(t - tau)*(-2*t*tau + tau**2 + 2*x1 - 2*y1)/(2*nu*tau)",
+    "wrong_elapsed_time_argument": "(t - 2*tau)*(-2*t*tau + tau**2 + 2*x1 - 2*y1)/(4*nu*tau)",
+    "wrong_frozen_terminal_time": "-(-2*t*tau + tau**2 + 2*x1 - 2*y1)/(4*nu)"
+  },
+  "exact_interior_witness": {
+    "correct": "0",
+    "wrong_sign": "-7",
+    "wrong_elapsed_time_argument": "-7/4",
+    "wrong_frozen_terminal_time": "7/4"
+  },
+  "scope": "Auxiliary scalar transport kernel with infinite-energy drift; no finite-energy NS or new lifespan claim."
+}

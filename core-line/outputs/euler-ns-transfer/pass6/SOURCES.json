@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-08",
+  "inherited_manifests": [
+    {
+      "path": "../SOURCES.json",
+      "sha256": "f0905ca43918ac4558103c117e060b4ce097b2854afa4bf5c3d37ddf3578e3fe"
+    },
+    {
+      "path": "../pass5/SOURCES.json",
+      "sha256": "a508c73876cf60d5c7ead781c3ff2183b6d292705c53e6939e1af4eb7816fa71"
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "Lei and Zhang, Criticality of the axially symmetric Navier\u2013Stokes equations (PJM 2017)",
+      "url": "https://msp.org/pjm/2017/289-1/pjm-v289-n1-p06-s.pdf",
+      "checked": "Page 171, equations (1-3)\u2013(1-4); scalar circulation maximum principle; also xi equation."
+    },
+    {
+      "title": "Chen, Strain, Tsai and Yau, Lower bounds on the blow-up rate of the axisymmetric Navier\u2013Stokes equations II",
+      "url": "https://arxiv.org/pdf/0709.4230",
+      "checked": "Theorem 1.1, PDF page 2; full Type I velocity bound, initial H1/2 and bounded r utheta, spacetime pressure L5/3."
+    }
+  ],
+  "new_derivations": "Exact normalized circulation obstruction, conditional meridional recurrence, compact Fourier seed and receiver torque budget, quantitative C4-symmetric embedding of the pass5 initial gate.",
+  "verification": {
+    "python": "3.9.6 (default, Jan  9 2026, 11:03:41) \n[Clang 17.0.0 (clang-1700.6.4.2)]",
+    "formal_kernel_replay": false,
+    "NS_time_evolution": false,
+    "same_solution_return_proved": false,
+    "NS_blowup_proved": false,
+    "finite_check_programs_passed": 7,
+    "outer_cutoff_interval_ranges_recomputed": true,
+    "mpmath_version": "1.3.0",
+    "sympy_version": "1.14.0",
+    "earlier_packages_unchanged": true,
+    "finite_outer_seed_full_pressure_gate_certified": false
+  }
+}
