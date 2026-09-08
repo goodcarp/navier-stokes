@@ -650,3 +650,7 @@ Proposition E and Corollary C2 from ENCLOSED to PROVED; then re-derive Propositi
 without reading section 5, since it is the only new mathematics here that nothing else checks; then
 search for a prior statement of Proposition D. Per L-10 the second seat should be a different
 vendor, and per L-14 should write its own instrument rather than run this note's script.
+
+## Second-vendor verdict (2026-09-08, added after the blind check)
+
+A second, independent line re-derived Proposition D from scratch by a nested-ball local energy argument (and obtained the energy equality, so the additive constant in the statement is unnecessary), confirmed the modified transport-flux step of Lemma U at order R⁻¹ with the Grönwall closing on the global L² bound, and confirmed that a Clay-class solution is a suitable weak solution once finite dissipation holds (v ∈ L^{10/3}, p₀ ∈ L^{5/3}, local energy equality), so the ε-regularity escape argument stands. The one residue is the attribution of the forced ε-regularity criterion to the 1982 paper, which neither line read at source. Capture: `02_ADDENDUM_uniqueness_XVENDOR_2026-09-08.md`. Status of Theorem 02′: two-engine confirmed modulo that citation check.
