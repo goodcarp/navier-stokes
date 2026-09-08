@@ -1,0 +1,374 @@
+{
+  "checks": [
+    {
+      "got": "2/3",
+      "name": "holder_ww_to_L32",
+      "note": "1/6+1/2 = 2/3 = 1/(3/2)",
+      "ok": true,
+      "want": "2/3"
+    },
+    {
+      "got": "2/3",
+      "name": "holder_wu_to_L32",
+      "note": "1/2+1/6 = 2/3",
+      "ok": true,
+      "want": "2/3"
+    },
+    {
+      "got": "1",
+      "name": "pair_L32_L3",
+      "note": "L^{3/2} pairs with L^3",
+      "ok": true,
+      "want": "1"
+    },
+    {
+      "got": "1",
+      "name": "pair_L43_L4",
+      "note": "L^{4/3} pairs with L^4",
+      "ok": true,
+      "want": "1"
+    },
+    {
+      "got": "1",
+      "name": "interp_L3_sum",
+      "note": "convex weights",
+      "ok": true,
+      "want": "1"
+    },
+    {
+      "got": "1",
+      "name": "interp_L3_balance",
+      "note": "Holder balance in L^p",
+      "ok": true,
+      "want": "1"
+    },
+    {
+      "got": "1",
+      "name": "interp_L4_sum",
+      "note": "convex weights",
+      "ok": true,
+      "want": "1"
+    },
+    {
+      "got": "1",
+      "name": "interp_L4_balance",
+      "note": "Holder balance in L^p",
+      "ok": true,
+      "want": "1"
+    },
+    {
+      "got": "4",
+      "name": "kernel_L43_power_symbolic",
+      "note": "value: 4/R",
+      "ok": true,
+      "want": "4"
+    },
+    {
+      "got": "0",
+      "name": "kernel_scaling_is_Rinv",
+      "note": "tot * R is independent of R, i.e. ||K_R||_{4/3}^{4/3} ~ R^{-1}",
+      "ok": true,
+      "want": "0"
+    },
+    {
+      "got": "-3/4",
+      "name": "kernel_L43_exponent",
+      "note": "(R^{-1})^{3/4} = R^{-3/4}",
+      "ok": true,
+      "want": "-3/4"
+    },
+    {
+      "got": "True",
+      "name": "kernel_scaling_numeric",
+      "note": "quad over R in {1,4,16,64}: {1.0: 4.0000000000000036, 4.0: 4.000000000000009, 16.0: 4.000000000000007, 64.0: 4.00000000000002}",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "True",
+      "name": "kernel_constant_agreement",
+      "note": "symbolic 4.0 vs numeric 4.0000000000000036",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "True",
+      "name": "absorbable_transport_cubic",
+      "note": "|w|^2 w . grad chi ; <= C R^-1 B^{3/2} N2^{3/2}",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "R^-4",
+      "name": "residual_transport_cubic",
+      "note": "|w|^2 w . grad chi ; <= C R^-1 B^{3/2} N2^{3/2}",
+      "ok": true,
+      "want": "R^-4"
+    },
+    {
+      "got": "True",
+      "name": "absorbable_pressure_main",
+      "note": "(B+1) B^{1/2}, leading power",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "R^-4",
+      "name": "residual_pressure_main",
+      "note": "(B+1) B^{1/2}, leading power",
+      "ok": true,
+      "want": "R^-4"
+    },
+    {
+      "got": "True",
+      "name": "absorbable_pressure_main_lower",
+      "note": "(B+1) B^{1/2}, the '1' branch",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "R^-4/3",
+      "name": "residual_pressure_main_lower",
+      "note": "(B+1) B^{1/2}, the '1' branch",
+      "ok": true,
+      "want": "R^-4/3"
+    },
+    {
+      "got": "True",
+      "name": "absorbable_pressure_commutator",
+      "note": "R^{-1} . R^{-3/4} B^{3/4}",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "R^-14/5",
+      "name": "residual_pressure_commutator",
+      "note": "R^{-1} . R^{-3/4} B^{3/4}",
+      "ok": true,
+      "want": "R^-14/5"
+    },
+    {
+      "got": "True",
+      "name": "absorbable_laplacian",
+      "note": "(1/2) int |w|^2 Delta chi",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "R^-2",
+      "name": "residual_laplacian",
+      "note": "(1/2) int |w|^2 Delta chi",
+      "ok": true,
+      "want": "R^-2"
+    },
+    {
+      "got": "True",
+      "name": "absorbable_transport_reference_ADDENDUM",
+      "note": "(1/2) int |w|^2 u . grad chi <= C R^-1 ||u||_inf ||w||_2^2",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "R^-1",
+      "name": "residual_transport_reference_ADDENDUM",
+      "note": "(1/2) int |w|^2 u . grad chi <= C R^-1 ||u||_inf ||w||_2^2",
+      "ok": true,
+      "want": "R^-1"
+    },
+    {
+      "got": "1",
+      "name": "total_error_order_is_Rinv",
+      "note": "slowest decaying residual sets the Gronwall inhomogeneity: C/R",
+      "ok": true,
+      "want": "1"
+    },
+    {
+      "got": "True",
+      "name": "extension_does_not_degrade_order",
+      "note": "source-only worst = R^-4/3 ; with extension = R^-1",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "6",
+      "name": "sobolev_H1_to_L6",
+      "note": "2* = 2n/(n-2) = 6 in dimension 3",
+      "ok": true,
+      "want": "6"
+    },
+    {
+      "got": "5/2",
+      "name": "sobolev_Hs_to_W1inf",
+      "note": "s > 5/2 gives grad u in L^inf",
+      "ok": true,
+      "want": "5/2"
+    },
+    {
+      "got": "2/3",
+      "name": "holder_vv_to_L32",
+      "note": "||phi^4 v_i v_j||_{3/2} <= B N2",
+      "ok": true,
+      "want": "2/3"
+    },
+    {
+      "got": "True",
+      "name": "absorbable_D_transport",
+      "note": "(1/2) int |v|^2 v . grad chi",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "True",
+      "name": "absorbable_D_pressure",
+      "note": "R^-1 B . B^{1/2}",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "True",
+      "name": "absorbable_D_commutator",
+      "note": "R^-1 . R^{-3/4} B^{3/4}",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "True",
+      "name": "absorbable_D_laplacian",
+      "note": "(nu/2) int |v|^2 Delta chi",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "True",
+      "name": "single_solution_errors_vanish",
+      "note": "every residual decays in R, so the R -> inf limit is legitimate",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "3/5",
+      "name": "GN_theta_for_L103",
+      "note": "1/p = 1/2 - theta/3, p = 10/3",
+      "ok": true,
+      "want": "3/5"
+    },
+    {
+      "got": "4/3",
+      "name": "GN_time_exponent_v",
+      "note": "sup-norm-in-time power",
+      "ok": true,
+      "want": "4/3"
+    },
+    {
+      "got": "2",
+      "name": "GN_dissipation_exponent",
+      "note": "matches int ||grad v||_2^2 dt",
+      "ok": true,
+      "want": "2"
+    },
+    {
+      "got": "3/5",
+      "name": "pressure_L53_from_L103",
+      "note": "1/(5/3) = 2/(10/3)",
+      "ok": true,
+      "want": "3/5"
+    },
+    {
+      "got": "9/10",
+      "name": "ckn_v3_holder",
+      "note": "int_Q |v|^3 <= |Q|^{1/10} (int |v|^{10/3})^{9/10}",
+      "ok": true,
+      "want": "9/10"
+    },
+    {
+      "got": "1/10",
+      "name": "ckn_v3_holder_complement",
+      "note": "leftover measure exponent",
+      "ok": true,
+      "want": "1/10"
+    },
+    {
+      "got": "1",
+      "name": "ckn_vp_pairing",
+      "note": "|v||p| : L^{10/3} against L^{10/7}",
+      "ok": true,
+      "want": "1"
+    },
+    {
+      "got": "True",
+      "name": "ckn_p_L53_contains_L107",
+      "note": "finite measure inclusion",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "1",
+      "name": "ckn_p_L1_on_ball",
+      "note": "int_B |p| <= |B|^{2/5} ||p||_{L^{5/3}(B)}",
+      "ok": true,
+      "want": "1"
+    },
+    {
+      "got": "-2",
+      "name": "ckn_scale_u3",
+      "note": "int|u_rho|^3 = rho^-2 int_{Q_rho}|u|^3",
+      "ok": true,
+      "want": "-2"
+    },
+    {
+      "got": "-2",
+      "name": "ckn_scale_up",
+      "note": "int|u_rho||p_rho| = rho^-2 int_{Q_rho}|u||p|",
+      "ok": true,
+      "want": "-2"
+    },
+    {
+      "got": "-13/4",
+      "name": "ckn_scale_p54",
+      "note": "rho^{-13/4}",
+      "ok": true,
+      "want": "-13/4"
+    },
+    {
+      "got": "True",
+      "name": "ckn_scale_f_positive",
+      "note": "3q - 5 > 5/2 > 0 for q > 5/2, so the force term is small with rho",
+      "ok": true,
+      "want": "True"
+    },
+    {
+      "got": "1",
+      "name": "visc_norm_nonlinear",
+      "note": "lambda mu = sigma : nonlinear term matches the time derivative",
+      "ok": true,
+      "want": "1"
+    },
+    {
+      "got": "1",
+      "name": "visc_norm_laplacian",
+      "note": "mu^2 / sigma = nu : dissipation coefficient becomes one",
+      "ok": true,
+      "want": "1"
+    }
+  ],
+  "failures": [],
+  "flux_residual_exponents": {
+    "laplacian": "2",
+    "pressure_commutator": "14/5",
+    "pressure_main": "4",
+    "pressure_main_lower": "4/3",
+    "transport_cubic": "4",
+    "transport_reference_ADDENDUM": "1"
+  },
+  "flux_residual_exponents_single_solution": {
+    "D_commutator": "14/5",
+    "D_laplacian": "2",
+    "D_pressure": "4",
+    "D_transport": "4"
+  },
+  "kernel_constant_symbolic": "4",
+  "ok": true,
+  "worst_residual_exponent": "1",
+  "worst_residual_exponent_single_solution": "2",
+  "worst_residual_exponent_source_only": "4/3"
+}
