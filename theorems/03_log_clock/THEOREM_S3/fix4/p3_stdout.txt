@@ -1,0 +1,95 @@
+J mollified: {'J_sup_over_rho': 93.66290344814558, 'argmax_u': 9.662, 'J_plateau': 73.36418884437333}
+J kinked   : {'J_sup_over_rho': 96.25648764636536, 'argmax_u': 9.662, 'J_plateau': 75.24945793076078}
+K2hat(mollified, f=4, lam=1.000000) = 18.9649   (d*=0.5843)
+K2hat(mollified, f=4, lam=1.500000) = 25.0428   (d*=0.7933)
+K2hat(mollified, f=4, lam=1.855872) = 33.5336   (d*=1.1339)
+K2hat(mollified, f=4, lam=2.057076) = 40.5556   (d*=0.7977)
+  control kinked f=4 lam=1.000000: K2hat = 19.1685
+  control kinked f=4 lam=1.500000: K2hat = 25.4176
+  control kinked f=4 lam=1.842011: K2hat = 33.7096
+  control kinked f=4 lam=2.074100: K2hat = 42.0083
+{
+ "sigma": 0.02,
+ "A_kernel_constants": {
+  "C_K_3_over_8pi2": 0.037995443865876666,
+  "S4_8pi2_over_3": 26.318945069571622,
+  "C_K_times_S4": 1.0,
+  "riesz_pi4_over_2": 48.70454551700121,
+  "riesz_independent_quadrature": 48.71263608101651,
+  "coef_3pi2_over_16": 1.8505508252042544,
+  "R_A": 1.9996092223226414,
+  "two_R_A": 3.9992184446452828,
+  "note": "kernel and dimension only; no dependence on the angular profile",
+  "riesz_relerr": 0.0001661151732230142
+ },
+ "B_far_near_hypotheses": {
+  "sup_abs_angular_amplitude": 1.0,
+  "z_oddness_max_abs_defect": 5.995204332975845e-15,
+  "int_w2_dt": 1.8239293735121584,
+  "parseval_cap_2M2": 2.0,
+  "kinked_int_w2_dt": 1.8751740891210709,
+  "constants_unchanged": {
+   "C_far": 0.29199853,
+   "C_inner": 0.01475427,
+   "C_collar_over_sin_phi": 3.999218,
+   "C_collar_axis_pi_over_8": 0.39269908169872414
+  }
+ },
+ "C_J": {
+  "mollified": {
+   "J_sup_over_rho": 93.66290344814558,
+   "argmax_u": 9.662,
+   "J_plateau": 73.36418884437333
+  },
+  "kinked": {
+   "J_sup_over_rho": 96.25648764636536,
+   "argmax_u": 9.662,
+   "J_plateau": 75.24945793076078
+  },
+  "fix2_kinked_sup": 96.249844,
+  "fix2_kinked_plateau": 75.251104,
+  "hk2_DA": 78.641147,
+  "hk2_DB": 65.62591
+ },
+ "C_K2_kinked_control": {
+  "rows": [
+   {
+    "lam": 1.0,
+    "K2": 19.168547410292348
+   },
+   {
+    "lam": 1.5,
+    "K2": 25.417610601562146
+   },
+   {
+    "lam": 1.8420112,
+    "K2": 33.70957109738911
+   },
+   {
+    "lam": 2.0741,
+    "K2": 42.00833322259284
+   }
+  ],
+  "fix2_quoted_f4": {
+   "1.0": 19.169,
+   "1.5": 25.418,
+   "1.8420112": 33.71,
+   "2.0741": 42.008
+  }
+ },
+ "C_K2_majorant": {
+  "imported_majorant_161.7735": 161.7735,
+  "max_over_lam_mollified": 40.55563504871121,
+  "slack": 3.9889277977202062
+ },
+ "D_ell_ramp": {
+  "int_Theta_du_L=12": 11.500000000000005,
+  "L_minus_2eps_r_L=12": 11.5,
+  "int_Theta_du_L=40": 39.5,
+  "L_minus_2eps_r_L=40": 39.5,
+  "ramp_cost_e_folds": 0.5,
+  "t3_budget_ELL_RAMP": 0.25,
+  "correction": 0.25,
+  "inner_tail_exact_log1pe2_over_8": 0.015866001380371576
+ }
+}

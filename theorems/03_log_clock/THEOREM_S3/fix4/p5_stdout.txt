@@ -1,0 +1,30 @@
+L=1e+04 measured c/c_*=1.026797 c_G=1.27084 eps=0.0267974 eps_a=9.4266e-04 (3.5177% of eps)
+L=1e+05 measured c/c_*=1.017641 c_G=1.25863 eps=0.0176414 eps_a=9.2288e-05 (0.5231% of eps)
+L=1e+06 measured c/c_*=1.016794 c_G=1.25749 eps=0.016794 eps_a=9.2107e-06 (0.0548% of eps)
+L=1e+07 proved   c/c_*=1.023890 c_G=1.26634 eps=0.0238896 eps_a=9.3574e-07 (0.0039% of eps)
+L=1e+07 measured c/c_*=1.016710 c_G=1.25738 eps=0.0167099 eps_a=9.2089e-07 (0.0055% of eps)
+Psi_2(0) = sup rho |grad^2 eta_0|_F = 306.4888 at u = 0.40000000000000036 ; Psi_sigma(0)/(sqrt5 Psi_2(0)) = 0.7136
+{
+ "sigma": 0.02,
+ "Psi_sigma_0": 489.0279393838589,
+ "C_kink": 9.780558787677178,
+ "kinked_Psi_0": "infinity (Dirac masses on the four kink cones; the a.c. part is 171.4566)",
+ "formula": "eps_a = (3/8)(1 + 1/(4L)) Psi_sigma(0) c e^{c_G}/(s^2 L), s = 1/sin delta",
+ "s_delta": 7.66129757554039,
+ "Psi_2_0_sup_rho_hessF": 306.4888158428773,
+ "Psi_2_0_argmax_u": 0.40000000000000036,
+ "Psi_over_sqrt5_Psi2": 0.7135658195890202,
+ "propagation": {
+  "L=10000": {
+   "tau_K2_sqrt(G_inf N2)": 0.2843828759666185,
+   "Psi_2_0": 306.4888158428773,
+   "relative": 0.0009278735838517792
+  },
+  "L=1e+06": {
+   "tau_K2_sqrt(G_inf N2)": 0.002843828759666185,
+   "Psi_2_0": 306.4888158428773,
+   "relative": 9.278735838517792e-06
+  }
+ },
+ "grad_eta0_inf": 12.60020662383465
+}

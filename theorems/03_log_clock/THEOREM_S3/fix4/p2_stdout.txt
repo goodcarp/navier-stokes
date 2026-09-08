@@ -1,0 +1,50 @@
+control: C_E(bb)=0.172403976  C_E(sharp)=0.17032563295  C_E(tanh,kinked)=0.056574773  shift=2.9234859
+{
+ "sigma": 0.02,
+ "L_used": 40.0,
+ "s_record": 7.66129757554039,
+ "control_kinked": {
+  "C_E_bangbang": 0.1724039760423858,
+  "record_bangbang": 0.172403978,
+  "C_E_sharp_edges": 0.1703256329541033,
+  "assembly_value": 0.17032563295410327,
+  "C_E_tanh_ramp": 0.05657477347005709,
+  "THEOREM_S3_value": 0.05657477,
+  "shift_sharp": 3.364345456912714,
+  "shift_tanh_kinked": 2.923485894768454,
+  "THEOREM_S3_shift": 2.9234859
+ },
+ "bfg_hypothesis": {
+  "omega0_L2sq_over_M2R3_mollified": 1.4381082626821067,
+  "omega0_L2sq_over_M2R3_kinked": 1.4785130339843224,
+  "THEOREM_S3_quoted_kinked": 1.4785137,
+  "omega0_Linf_over_M": 1.0,
+  "note": "omega_0 in L^2 cap L^inf; decay O(rho^-8) at infinity, O(rho^8) at 0"
+ },
+ "gegenbauer_orthogonality_control": {
+  "1": {
+   "int_(1-t^2)C_l^2_dt": 2.399999999925,
+   "N_l": 2.4
+  },
+  "3": {
+   "int_(1-t^2)C_l^2_dt": 4.444444443611113,
+   "N_l": 4.444444444444445
+  },
+  "7": {
+   "int_(1-t^2)C_l^2_dt": 8.470588224494115,
+   "N_l": 8.470588235294118
+  }
+ },
+ "synthesis_control": {
+  "LMAX": 121,
+  "max_abs_defect_on_|t|<0.98": 0.00046902427279249537,
+  "sup_abs_W": 7.55230769409614
+ },
+ "parseval_control": {
+  "int_g_odd^2_dt": 1.8239293729489863,
+  "sum_Hhat_l^2_N_l": 1.8239293641189398,
+  "rel": 4.841221706687795e-09,
+  "LMAX": 121
+ }
+}
+MOLLIFIED sigma=0.02: C_E = 0.055190669   shift = 2.91357818   (kinked shift 2.92348589)

@@ -1,0 +1,101 @@
+{
+ "C_kink": 9.780558787677178,
+ "Psi_2_0_argmax_u": 0.40000000000000036,
+ "Psi_2_0_sup_rho_hessF": 306.4888158428773,
+ "Psi_over_sqrt5_Psi2": 0.7135658195890202,
+ "Psi_sigma_0": 489.0279393838589,
+ "formula": "eps_a = (3/8)(1 + 1/(4L)) Psi_sigma(0) c e^{c_G}/(s^2 L), s = 1/sin delta",
+ "grad_eta0_inf": 12.60020662383465,
+ "kinked_Psi_0": "infinity (Dirac masses on the four kink cones; the a.c. part is 171.4566)",
+ "propagation": {
+  "L=10000": {
+   "Psi_2_0": 306.4888158428773,
+   "relative": 0.0009278735838517792,
+   "tau_K2_sqrt(G_inf N2)": 0.2843828759666185
+  },
+  "L=1e+06": {
+   "Psi_2_0": 306.4888158428773,
+   "relative": 9.278735838517792e-06,
+   "tau_K2_sqrt(G_inf N2)": 0.002843828759666185
+  }
+ },
+ "s_delta": 7.66129757554039,
+ "sigma": 0.02,
+ "table": [
+  {
+   "L": 10000.0,
+   "column": "proved",
+   "eps": Infinity
+  },
+  {
+   "L": 10000.0,
+   "c": 0.8465670155649466,
+   "c_G": 1.2708443930236932,
+   "c_over_c_star": 1.0267974804217004,
+   "column": "measured",
+   "eps_a_kinked_sqrt_route": 0.03678525714374099,
+   "eps_a_mollified": 0.0009426558890670993,
+   "eps_a_over_eps": 0.03517712971623493,
+   "eps_budget": 0.026797407766673054,
+   "eps_with_eps_a_added": 0.027775861694613768
+  },
+  {
+   "L": 100000.0,
+   "column": "proved",
+   "eps": Infinity
+  },
+  {
+   "L": 100000.0,
+   "c": 0.8390180873564516,
+   "c_G": 1.258625631758133,
+   "c_over_c_star": 1.01764141796964,
+   "column": "measured",
+   "eps_a_kinked_sqrt_route": 0.011439643071920521,
+   "eps_a_mollified": 9.228834397775987e-05,
+   "eps_a_over_eps": 0.0052313508421737605,
+   "eps_budget": 0.01764139832369027,
+   "eps_with_eps_a_added": 0.01773541034615045
+  },
+  {
+   "L": 1000000.0,
+   "column": "proved",
+   "eps": Infinity
+  },
+  {
+   "L": 1000000.0,
+   "c": 0.8383195657646779,
+   "c_G": 1.2574891905187189,
+   "c_over_c_star": 1.0167941841449502,
+   "column": "measured",
+   "eps_a_kinked_sqrt_route": 0.0036119113825759676,
+   "eps_a_mollified": 9.21065689587649e-06,
+   "eps_a_over_eps": 0.00054844826780231,
+   "eps_budget": 0.01679403042475558,
+   "eps_with_eps_a_added": 0.016803396712876006
+  },
+  {
+   "L": 10000000.0,
+   "c": 0.8441696350147269,
+   "c_G": 1.2663437090934417,
+   "c_over_c_star": 1.0238897078965272,
+   "column": "proved",
+   "eps_a_kinked_sqrt_route": 0.0011563585591666387,
+   "eps_a_mollified": 9.35741950031848e-07,
+   "eps_a_over_eps": 3.9169485130825015e-05,
+   "eps_budget": 0.023889564718721612,
+   "eps_with_eps_a_added": 0.02389052959066107
+  },
+  {
+   "L": 10000000.0,
+   "c": 0.8382501978719218,
+   "c_G": 1.257376280913615,
+   "c_over_c_star": 1.016710048127134,
+   "column": "measured",
+   "eps_a_kinked_sqrt_route": 0.0011420102025084043,
+   "eps_a_mollified": 9.208852848676746e-07,
+   "eps_a_over_eps": 5.511013679354816e-05,
+   "eps_budget": 0.01670990744075751,
+   "eps_with_eps_a_added": 0.016710843723413582
+  }
+ ]
+}

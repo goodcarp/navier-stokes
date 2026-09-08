@@ -1,0 +1,80 @@
+sigma=None    N=1.0000000 kappa=0.497822438 floor=4.374173e-03 E0=7.66130 G0=58.69548 Psi0=171.46 Ckink=nan cap=0.1927141
+sigma=0.05    N=1.0484593 kappa=0.475353004 floor=5.184988e-02 E0=7.28298 G0=25.61540 Psi0=232.75 Ckink=11.6376 cap=0.0853499
+sigma=0.02    N=1.0124508 kappa=0.491786880 floor=1.670057e-02 E0=7.55231 G0=36.07957 Psi0=489.03 Ckink=9.7806 cap=0.1664585
+sigma=0.01    N=1.0039592 kappa=0.495880967 floor=8.306496e-03 E0=7.62259 G0=43.77439 Psi0=897.83 Ckink=8.9783 cap=0.1845336
+sigma=0.005   N=1.0011592 kappa=0.497251488 floor=5.527407e-03 E0=7.64792 G0=49.49436 Psi0=1707.07 Ckink=8.5353 cap=0.1894779
+sigma=0.002   N=1.0002090 kappa=0.497719270 floor=4.582361e-03 E0=7.65783 G0=54.19849 Psi0=4129.29 Ckink=8.2586 cap=0.1895191
+{
+ "definition": {
+  "delta_deg": 7.5,
+  "delta_m_deg": 5.0,
+  "eps_r": 0.25,
+  "phi0_deg": 30.0,
+  "mollifier": "Gaussian chi_sigma, std sigma; W even-reflected about phi=0 and phi=pi",
+  "normalisation": "omega_0^theta = -M Theta A_sigma/N_sigma, N_sigma = sup|W_sigma sin phi|",
+  "sigmas": [
+   0.05,
+   0.02,
+   0.01,
+   0.005,
+   0.002
+  ],
+  "nphi": 600001
+ },
+ "control_kinked": {
+  "kappa_delta": 0.4978224383257684,
+  "fix2_f4_value": 0.4978224182,
+  "E0": 7.661297522196494,
+  "one_over_sin_delta": 7.66129757554039,
+  "Gfrak0_branch_bound": 58.695479723614206,
+  "one_over_sin2_delta": 58.69548054098106,
+  "N_must_be_1": 1.0000000000000009,
+  "grad_eta0_inf": 20.334466733559996,
+  "fix3_g1_grad_inf": 20.3339,
+  "Psi0_ac_part": 171.45662965772777,
+  "fix3_g1_Psi0_ac": 171.4257,
+  "r_h_at_c_star": 0.9184465974643996,
+  "fix2_r_h_enclosure": [
+   0.9186364112,
+   0.9186365334
+  ],
+  "lam_mono": 2.0770339680276537,
+  "fix2_lam_mono": 2.0769162,
+  "eps_cap_certified": 0.19271409204229717,
+  "fix2_eps_cap": 0.1943662078602755
+ },
+ "unnormalised_control_vs_fix3": {
+  "sigma=0.05": {
+   "kappa_unnormalised": 0.49838827479336245,
+   "N_sigma": 1.0484593317685986,
+   "Gfrak0_unnormalised_scan": null
+  },
+  "sigma=0.02": {
+   "kappa_unnormalised": 0.4979100240741975,
+   "N_sigma": 1.012450848776347,
+   "Gfrak0_unnormalised_scan": null
+  },
+  "sigma=0.01": {
+   "kappa_unnormalised": 0.49784421413880453,
+   "N_sigma": 1.0039591509766446,
+   "Gfrak0_unnormalised_scan": null
+  },
+  "sigma=0.005": {
+   "kappa_unnormalised": 0.497827860585747,
+   "N_sigma": 1.0011591563320463,
+   "Gfrak0_unnormalised_scan": null
+  },
+  "sigma=0.002": {
+   "kappa_unnormalised": 0.49782328869168824,
+   "N_sigma": 1.0002090378731483,
+   "Gfrak0_unnormalised_scan": null
+  },
+  "fix3_g1_quoted_kappa": {
+   "0.05": 0.4983882748,
+   "0.02": 0.4979100241,
+   "0.01": 0.4978442142,
+   "0.005": 0.4978278606,
+   "0.002": 0.4978232887
+  }
+ }
+}
