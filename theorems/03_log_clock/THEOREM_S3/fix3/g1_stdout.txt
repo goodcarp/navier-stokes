@@ -1,0 +1,52 @@
+sigma=None     Psi0=    171.425714  ||grad eta||_inf= 20.333897  Gfrak0=  58.6946316  kappa=0.4978224182
+sigma=0.05     Psi0=    244.066627  ||grad eta||_inf=  9.177923  Gfrak0=  25.2888155  kappa=0.4983882748
+sigma=0.02     Psi0=    495.155848  ||grad eta||_inf= 12.752265  Gfrak0=  36.5307679  kappa=0.4979100241
+sigma=0.01     Psi0=    901.420815  ||grad eta||_inf= 15.271133  Gfrak0=  43.9502417  kappa=0.4978442142
+sigma=0.005    Psi0=   1709.059849  ||grad eta||_inf= 17.184638  Gfrak0=  49.5547340  kappa=0.4978278606
+sigma=0.002    Psi0=   4130.111545  ||grad eta||_inf= 18.789455  Gfrak0=  54.2132183  kappa=0.4978232887
+sigma=0.001    Psi0=   8165.293343  ||grad eta||_inf= 19.470098  Gfrak0=  56.1884912  kappa=0.4978226358
+sigma=0.0005   Psi0=  16235.069472  ||grad eta||_inf= 19.862476  Gfrak0=  57.3269624  kappa=0.4978224726
+C_kink predicted 8.07063  measured 8.11753
+CONTROL (DatumS3): ||grad eta_0||_inf = 20.326114   Gfrak0 = 58.6720619
+L=    1e+04 frozen c=c_*         c=0.814477 c_G=1.22267  eps_a(sig=1e-3)=1.4431e-02  eps_a(kink)=3.4384e-02  eps_budget=0.012686
+L=    1e+04 cap c=1.1943662c_*   c=0.972784 c_G=1.46032  eps_a(sig=1e-3)=2.1859e-02  eps_a(kink)=4.7658e-02  eps_budget=0.0238129
+L=    1e+05 frozen c=c_*         c=0.814477 c_G=1.23424  eps_a(sig=1e-3)=1.4598e-03  eps_a(kink)=1.1000e-02  eps_budget=inf
+L=    1e+05 cap c=1.1943662c_*   c=0.972784 c_G=1.48377  eps_a(sig=1e-3)=2.2377e-03  eps_a(kink)=1.5428e-02  eps_budget=inf
+L=    1e+06 frozen c=c_*         c=0.814477 c_G=1.22291  eps_a(sig=1e-3)=1.4434e-04  eps_a(kink)=3.4392e-03  eps_budget=0.106218
+L=    1e+06 cap c=1.1943662c_*   c=0.972784 c_G=1.46141  eps_a(sig=1e-3)=2.1883e-04  eps_a(kink)=4.7709e-03  eps_budget=0.541568
+
+WROTE g1_results.json
+{
+ "A_envelope": {
+  "budget_ELL_RAMP": 0.25,
+  "formula_L_minus_2eps_r": 11.5,
+  "int_Theta_du_over_R_exact": "L - 2 eps_r",
+  "int_Theta_env_dlogrho": "L + 2/8 = L + 0.25",
+  "numeric_int_Theta_du_L12": 11.499999999999993,
+  "sympy_check_int_u_dTheta": "((1 + exp(-2*(a - u)/e))*(tanh((a - u)/e) - 1) + 2*exp(-2*(a - u)/e))/(2*(1 + exp(-2*(a - u)/e)))",
+  "tail_efolds_each_side_exact": 0.015866001380371576,
+  "tail_efolds_inner_numeric": 0.01586516699232464,
+  "true_ramp_loss_efolds": 0.5
+ },
+ "A_kernel": {
+  "G5": "1/(8 pi^2 rho^3),  -Lap5 G5 = delta_0",
+  "Kcal(x)": "-3 z /(8 pi^2 rho^5)  = d_z G_5",
+  "Lap5(rho^-3) away from origin (sympy)": "0",
+  "abs_Kcal": "3 |cos phi| /(8 pi^2 rho^4)",
+  "int_|cos|sin^2_dphi": "2/3",
+  "int_|cos|sin^3_dphi": "1/2",
+  "plateau_a0_rate_per_efold": 0.5,
+  "weight_formula_1_to_e^10": 3.75,
+  "weight_numeric_1_to_e^10": 3.7499992289371242,
+  "weight_per_efold": 0.375,
+  "weight_per_efold_exact": "3/8"
+ },
+ "B_harmonic_identity": {
+  "consequence": "the instantaneous viscous rate of a[eta](0) is nu d_z eta(0,s) EXACTLY; the V-strain defect is the diffusion-transport commutator, not diffusion",
+  "exact_dz_eta_test_at_0": 1.0,
+  "null_control": 0.0,
+  "numeric_int_Kcal_Lap_eta_test": 0.9999999999998654,
+  "rel": 1.3455903058456897e-13,
+  "statement": "Lap5 Kcal = - d_z delta_0  =>  int Kcal Lap5 eta dx_5 = d_z eta(0)"
+ }
+}

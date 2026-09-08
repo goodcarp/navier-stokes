@@ -1,0 +1,94 @@
+{
+ "P_h_monotone": {
+  "first_decrease_at_lam": 2.09,
+  "lam_max": 1.8420112114469296,
+  "min_increment_on_[1,lam_max]": 0.004087149624675059,
+  "min_increment_step_0.01_on_[1,2.2]": -0.0017594336202370656
+ },
+ "bfg_hypothesis": {
+  "note": "omega_0 in L^2 cap L^inf, decay O(rho^{-8}) at infinity and O(rho^{8}) at 0",
+  "omega0_L2sq_over_M2R3_THEOREM_datum": 1.478513732976039,
+  "omega0_Linf_over_M": 1.0
+ },
+ "clock": {
+  "c2": 1.6289547316705149,
+  "c2_campaign_DC": 1.7081768088027682,
+  "c2_taper_only": 1.6227651872439446,
+  "c_star": 0.8144773658352574,
+  "eps_delta_1m2kappa": 0.004355123626168524,
+  "eps_floor_L_to_inf": 0.004374173693365465,
+  "floor_campaign_DC": 0.0532205944753478,
+  "floor_taper_only": 0.0005578499809197495,
+  "kappa_delta": 0.49782243818691574,
+  "lam_max_apriori": 1.8420112114469296
+ },
+ "control_P1": {
+  "P_1(1.5)/1.5": 1.0,
+  "P_1(lam_max)/lam_max": 1.0
+ },
+ "datum": {
+  "delta_deg": 7.5,
+  "delta_m_deg": 5.0,
+  "eps_r": 0.25,
+  "phi0_deg": 30.0,
+  "radial_ramp": "tanh in log rho, hk2 w0 = 0.25 rho0"
+ },
+ "datum_norms": {
+  "THEOREM_datum": {
+   "E0_sup_rho_eta": 7.6612975721936944,
+   "G0_sup_rho2_grad_eta": 58.695476310955364,
+   "argmax_phi_deg_u": [
+    172.49999942704224,
+    500.0
+   ],
+   "one_over_sin_delta": 7.661297575540389,
+   "sup_abs_Fprime": 58.1933283783087
+  },
+  "campaign_DC": {
+   "E0_sup_rho_eta": 7.660601953131918,
+   "G0_sup_rho2_grad_eta": 20.91971387322964,
+   "argmax_phi_deg_u": [
+    173.3364,
+    500.0
+   ],
+   "sup_abs_Fprime": 20.011517776197252
+  },
+  "u2_quoted_for_DC": {
+   "E0": 7.66060196,
+   "G0": 20.919707
+  }
+ },
+ "energy": {
+  "C_E_THEOREM_datum_tanh_ramp_eps_r0.25": 0.05657477347005709,
+  "C_E_bangbang_control": 0.17240397458598392,
+  "C_E_sharp_edges_delta7.5_dm5": 0.1703256329541033,
+  "C_E_tanh_du_convergence_rel": 4.7541905818952016e-07,
+  "C_E_tanh_lmax_convergence_rel": 9.472584495755696e-06,
+  "D_l_recursion_vs_closed_form_maxrel_sharp_du2e-5": 4.99982885796349e-05,
+  "assembly_shift": 3.364345456912714,
+  "assembly_value": 0.17032563295410327,
+  "note": "log Re_E = 2L + 2 log s + (2/5) log C_E ; kappa_delta does NOT enter the shift",
+  "record_bangbang": 0.172403978,
+  "s_record": 7.66129757554039,
+  "shift_THEOREM_datum": 2.923485894768454,
+  "shift_sharp": 3.364345456912714
+ },
+ "kappa": {
+  "THEOREM_datum": 0.49782243818691574,
+  "bangbang": 0.5,
+  "campaign_DC": 0.47473435538836045,
+  "taper_only": 0.49972123052108863
+ },
+ "kappa_str": {
+  "THEOREM_datum": "0.497822438187",
+  "bangbang": "0.5",
+  "campaign_DC": "0.474734355388",
+  "taper_only": "0.499721230521"
+ },
+ "r_h": {
+  "argmin_lam": 1.8420112114469296,
+  "taper_only_1_to_lam_max": 0.9187342958016492,
+  "theorem_datum_1_to_1.5": 0.9814871633550802,
+  "theorem_datum_1_to_lam_max": 0.9186365332851043
+ }
+}

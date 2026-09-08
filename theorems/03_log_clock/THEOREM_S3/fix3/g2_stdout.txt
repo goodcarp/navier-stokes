@@ -1,0 +1,28 @@
+L=10: sup J = 96.260174 at u = L-0.336 ; J(0)=25.0233 J(L)=31.6880 ; tail sups 25.02 / 31.69
+L=40: sup J = 96.259939 at u = L-0.335 ; J(0)=25.0233 J(L)=31.6880 ; tail sups 25.02 / 31.69
+f=1: inner tail share of hk2's near bound = 9.0687e-02 ; outer tail share of the far bound = 8.3024e-06
+f=4: inner tail share of hk2's near bound = 5.8040e-03 ; outer tail share of the far bound = 2.0756e-05
+lam=1.0000: L4 full 26.574429 vs shell-only 26.570094 (tails 1.631e-04) ; L5 7.192621 vs 7.191770 (tails 1.183e-04)
+lam=1.8420: L4 full 47.470194 vs shell-only 47.470145 (tails 1.038e-06) ; L5 11.875768 vs 11.875764 (tails 3.461e-07)
+
+WROTE g2_results.json
+{
+ "antiderivative_residual (sympy)": "((1 + exp(-2*(a - u)/e))*(tanh((a - u)/e) - 1) + 2*exp(-2*(a - u)/e))/(2*(1 + exp(-2*(a - u)/e)))",
+ "antiderivative_residual_numeric_max": 0.0,
+ "at a = eps_r = e": "e*(-2 + log(1 + exp(2)))/2",
+ "closed_form": "log(1 + e^{-2})/8",
+ "closed_form_value": 0.015866001380371576,
+ "envelope_exact": "Theta = sigma(8u-2) at the inner end and sigma(x) <= e^x, so Theta <= e^{-2} (rho/rho_0)^8 EXACTLY",
+ "envelope_inner_max_ratio": 1.0000004571222547,
+ "envelope_outer_max_ratio": 1.0000004571222618,
+ "int_Theta_du_whole_line": "L - 2 eps_r  (exact)",
+ "int_{-inf}^{0} (1+tanh((u-a)/e))/2 du": "-a + e*log(exp(2*a/e) + 1)/2",
+ "numeric_inner_tail": 0.015865584179493387,
+ "numeric_outer_tail": 0.015865584179493384,
+ "numeric_shell_only": 11.46826698399084,
+ "numeric_whole_line_L12": 11.500000000000005,
+ "ramp_loss_efolds_true": 0.5,
+ "t3_budget_ELL_RAMP": 0.25,
+ "understatement_efolds": 0.25,
+ "value_eps_r_0.25": 0.015866001380371562
+}

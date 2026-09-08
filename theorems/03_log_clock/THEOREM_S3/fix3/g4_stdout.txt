@@ -1,0 +1,14 @@
+lam=1.00 ( 600,160,160): a=    4.651525 |grad a|=  0.516404 ||Hess a||=  1.554687 K2=  2.19034 | axisym 3.33e-16  PDE/scale 9.25e-07
+lam=1.00 ( 900,200,200): a=    4.651525 |grad a|=  0.516404 ||Hess a||=  1.554689 K2=  2.19034 | axisym 9.98e-16  PDE/scale 1.81e-07
+lam=1.00 (1400,260,260): a=    4.651525 |grad a|=  0.516404 ||Hess a||=  1.554688 K2=  2.19034 | axisym 3.33e-16  PDE/scale 5.40e-08
+lam=1.25 ( 600,160,160): a=    5.993196 |grad a|=  0.637229 ||Hess a||=  3.662857 K2=  3.38250 | axisym 1.23e-15  PDE/scale 1.38e-05
+lam=1.25 ( 900,200,200): a=    5.993196 |grad a|=  0.637229 ||Hess a||=  3.662900 K2=  3.38251 | axisym 3.52e-16  PDE/scale 1.19e-06
+lam=1.25 (1400,260,260): a=    5.993196 |grad a|=  0.637229 ||Hess a||=  3.662912 K2=  3.38251 | axisym 1.41e-15  PDE/scale 2.20e-06
+lam=1.50 ( 600,160,160): a=    6.922827 |grad a|=  0.728752 ||Hess a||=  6.247823 K2=  5.38534 | axisym 1.98e-16  PDE/scale 3.77e-05
+lam=1.50 ( 900,200,200): a=    6.922827 |grad a|=  0.728751 ||Hess a||=  6.247676 K2=  5.38528 | axisym 3.96e-16  PDE/scale 1.36e-05
+lam=1.50 (1400,260,260): a=    6.922827 |grad a|=  0.728751 ||Hess a||=  6.247641 K2=  5.38526 | axisym 7.73e-15  PDE/scale 7.64e-06
+lam=1: bound 66.6622 ; transported 2.19034 (slack 30.43 x) ; untransported 2.19034 (slack 30.43 x)
+lam=1.25: bound 107.6738 ; transported 3.38251 (slack 31.83 x) ; untransported 1.54378 (slack 69.75 x)
+lam=1.5: bound 161.7735 ; transported 5.38526 (slack 30.04 x) ; untransported 1.47773 (slack 109.47 x)
+
+WROTE g4_results.json

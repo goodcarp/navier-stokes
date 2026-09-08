@@ -1,0 +1,238 @@
+{
+ "A_J_three_data": {
+  "(D-A) J_ac_plateau": 39.16275855136648,
+  "(D-A) J_jump": 39.47841760435743,
+  "(D-A) J_total": 78.64117615572391,
+  "(D-A) hk2_reported": 78.641147,
+  "(D-A) rel": 3.707438792576048e-07,
+  "(D-B) J_plateau": 65.62590980439644,
+  "(D-B) J_sup_over_rho": 148.82834135017373,
+  "(D-B) argmax_u": 9.995440086981914,
+  "(D-B) hk2_reported": 65.62591,
+  "(D-B) rel": 2.980584372731258e-09,
+  "(S3) J_plateau": 75.2622864031107,
+  "(S3) J_sup_over_rho": 96.25539249706506,
+  "(S3) argmax_u": 9.66,
+  "(S3) fix2_reported_plateau": 75.251104,
+  "(S3) fix2_reported_sup": 96.249844,
+  "(S3) rel_plateau": 0.00014860118345518306,
+  "(S3) rel_sup": 5.764681618667231e-05,
+  "NPHI": 40001,
+  "note_grid": "phi grid 40001 points; the J values are quoted to 5 digits",
+  "ratio_S3_over_DA": 1.2239821071147483,
+  "ratio_S3_over_DB": 1.4667285037870312,
+  "which_datum_each_number_belongs_to": {
+   "65.625910": "(D-B), plateau, real-analytic, no jump; hk2 sec.8(a); the row that carries hk2's own PROVED K2 table",
+   "78.641147": "(D-A), plateau, sharp sgn(z) jump included; hk2 sec.8(a)",
+   "96.25": "THEOREM_S3's datum, SUPREMUM over rho' (what (2.1) asks), attained in the OUTER RAMP at u = L - 0.336; its plateau value is 75.25"
+  }
+ },
+ "B_where_J_is_used": {
+  "conclusion": "J occurs in no script that produces a constant. hk2's PROVED K2 table (sec.8(c)) comes from k3.lambda_bulk, a direct quadrature of int |x-x'|^{-p}|grad eta| dx' on the actual field; C'' comes from t2_gamma_CR's (Gamma-off) fixed point, whose inputs are E_0, Gfrak_0, C_far, C_inner, C_collar. Neither reads J.",
+  "occurrences_of_a_shell_density_symbol": {
+   "hk2/hk2lib.py": 0,
+   "hk2/k3_bound.py": 0,
+   "hk2/k4_direct.py": 0,
+   "hk2/k5_consequence.py": 0,
+   "hk2/k6_confront.py": 0,
+   "round2/THEOREM_S3/fix2/f1_window.py": 0,
+   "round2/THEOREM_S3/t2_gamma_CR.py": 0,
+   "round2/THEOREM_S3/t3_budget.py": 0
+  },
+  "where_J_IS_used": "hk2 Lemma 5.2 (the analytic 'no log' bound) and the reference table of hk2 sec.8(a)."
+ },
+ "C_analytic_route": [
+  {
+   "J": 96.2602,
+   "K2": 66.05577935262485,
+   "L4": 186.72742044060175,
+   "L5": 29.255657958800004,
+   "collar4": 19.87640710726841,
+   "collar5": 8.720148625466674,
+   "d": 0.5842755976288423,
+   "grad_a": 7.253983630514699,
+   "hess_a": 4.938642482773584,
+   "hess_uz": 39.20120588466149,
+   "lam": 1.0,
+   "rho": 5.0
+  },
+  {
+   "J": 96.2602,
+   "K2": 102.66253091017109,
+   "L4": 205.48762238220894,
+   "L5": 32.145480023255985,
+   "collar4": 30.905879509154556,
+   "collar5": 9.66293709371676,
+   "d": 0.9948191995206198,
+   "grad_a": 7.948179645663918,
+   "hess_a": 5.12987460066859,
+   "hess_uz": 63.14295544627558,
+   "lam": 1.8420112,
+   "rho": 4.778592841023978
+  },
+  {
+   "J": 78.641147,
+   "K2": 57.12986282953944,
+   "L4": 156.1877285739351,
+   "L5": 25.49692665213334,
+   "collar4": 19.87640710726841,
+   "collar5": 8.720148625466674,
+   "d": 0.5842755976288423,
+   "grad_a": 6.093614482513596,
+   "hess_a": 4.367383825296119,
+   "hess_uz": 34.024174301271955,
+   "lam": 1.0,
+   "rho": 5.0
+  },
+  {
+   "J": 78.641147,
+   "K2": 89.16575081011447,
+   "L4": 173.53293102988766,
+   "L5": 28.030372061187272,
+   "collar4": 30.905879509154556,
+   "collar5": 9.66293709371676,
+   "d": 0.9948191995206198,
+   "grad_a": 6.734046964135381,
+   "hess_a": 4.504453186369374,
+   "hess_uz": 54.954523833923524,
+   "lam": 1.8420112,
+   "rho": 4.778592841023978
+  },
+  {
+   "J": 65.62591,
+   "K2": 50.536266738411705,
+   "L4": 133.62798444060175,
+   "L5": 22.720342758800008,
+   "collar4": 19.87640710726841,
+   "collar5": 8.720148625466674,
+   "d": 0.5842755976288423,
+   "grad_a": 5.236446990666989,
+   "hess_a": 3.9453936754639427,
+   "hess_uz": 30.19988856841787,
+   "lam": 1.0,
+   "rho": 5.0
+  },
+  {
+   "J": 65.62591,
+   "K2": 79.19564675633129,
+   "L4": 149.92792335936687,
+   "L5": 24.990531871881338,
+   "collar4": 30.905879509154556,
+   "collar5": 9.66293709371676,
+   "d": 0.9948191995206198,
+   "grad_a": 5.837164220236519,
+   "hess_a": 4.042452877273336,
+   "hess_uz": 48.90570962733398,
+   "lam": 1.8420112,
+   "rho": 4.778592841023978
+  },
+  {
+   "J": 192.5204,
+   "K2": 114.82176636086564,
+   "L4": 353.57843377393505,
+   "L5": 49.79116729213334,
+   "collar4": 19.87640710726841,
+   "collar5": 8.720148625466674,
+   "d": 0.5842755976288423,
+   "grad_a": 13.593561941586003,
+   "hess_a": 8.059665651300996,
+   "hess_uz": 67.48547834944115,
+   "lam": 1.0,
+   "rho": 5.0
+  },
+  {
+   "J": 192.5204,
+   "K2": 176.40104295094133,
+   "L4": 380.06936525526334,
+   "L5": 54.628022952795206,
+   "collar4": 30.905879509154556,
+   "collar5": 9.66293709371676,
+   "d": 0.9948191995206198,
+   "grad_a": 14.58149045700397,
+   "hess_a": 8.546811392034467,
+   "hess_uz": 107.87975626589571,
+   "lam": 1.8420112,
+   "rho": 4.778592841023978
+  }
+ ],
+ "C_sensitivity": {
+  "K2hat(J=192.52, lam=lam_max)": 176.40104295094133,
+  "K2hat(J=96.26, lam=lam_max)": 102.66253091017109,
+  "dlogK2_dlogJ_at_J=96.26": 0.7809493582396843,
+  "note": "the analytic route is far weaker than the quadrature one; the quadrature K2 table of fix2 sec.2.3 is unchanged by J because it never reads J.",
+  "quadrature_K2hat_for_comparison_fix2": 33.71
+ },
+ "D_Lstar": {
+  "analytic_route_J=192.52_lam_max_eps<=0.1": {
+   "C_K": 176.40104295094133,
+   "L_star": 1977309.4003782822,
+   "logLambda_star": 3954621.724242464
+  },
+  "analytic_route_J=192.52_lam_max_eps<=0.194366": {
+   "C_K": 176.40104295094133,
+   "L_star": 1887786.7126679737,
+   "logLambda_star": 3775576.3488218472
+  },
+  "analytic_route_J=96.26_lam_max_eps<=0.1": {
+   "C_K": 102.66253091017109,
+   "L_star": 1977309.301165401,
+   "logLambda_star": 3954621.525816702
+  },
+  "analytic_route_J=96.26_lam_max_eps<=0.194366": {
+   "C_K": 102.66253091017109,
+   "L_star": 1887786.7126679737,
+   "logLambda_star": 3775576.3488218472
+  },
+  "fix2_quadrature_S3_datum_lam_max_f4_33.710_eps<=0.1": {
+   "C_K": 33.71,
+   "L_star": 1977309.2019525247,
+   "logLambda_star": 3954621.3273909492
+  },
+  "fix2_quadrature_S3_datum_lam_max_f4_33.710_eps<=0.194366": {
+   "C_K": 33.71,
+   "L_star": 1887786.6179469558,
+   "logLambda_star": 3775576.1593798115
+  },
+  "t3_budget_import_161.7735_eps<=0.1": {
+   "C_K": 161.7735,
+   "L_star": 1977309.301165401,
+   "logLambda_star": 3954621.525816702
+  },
+  "t3_budget_import_161.7735_eps<=0.194366": {
+   "C_K": 161.7735,
+   "L_star": 1887786.7126679737,
+   "logLambda_star": 3775576.3488218472
+  }
+ },
+ "D_eps_vs_CK": {
+  "analytic_route_J=192.52_lam_max": {
+   "C_K": 176.40104295094133,
+   "eps_self_consistent_L=100000": Infinity,
+   "eps_self_consistent_L=1e+06": Infinity,
+   "eps_self_consistent_L=1e+07": 0.014141132567409676
+  },
+  "analytic_route_J=96.26_lam_max": {
+   "C_K": 102.66253091017109,
+   "eps_self_consistent_L=100000": Infinity,
+   "eps_self_consistent_L=1e+06": Infinity,
+   "eps_self_consistent_L=1e+07": 0.014141132567409676
+  },
+  "fix2_quadrature_S3_datum_lam_max_f4_33.710": {
+   "C_K": 33.71,
+   "eps_self_consistent_L=100000": Infinity,
+   "eps_self_consistent_L=1e+06": Infinity,
+   "eps_self_consistent_L=1e+07": 0.014141132567409676
+  },
+  "t3_budget_import_161.7735": {
+   "C_K": 161.7735,
+   "eps_self_consistent_L=100000": Infinity,
+   "eps_self_consistent_L=1e+06": Infinity,
+   "eps_self_consistent_L=1e+07": 0.014141132567409676
+  }
+ },
+ "D_reference": {
+  "fix2_L_star_proved_eps<=0.1943662_f>=4": 1887786.7,
+  "fix2_L_star_proved_eps<=0.1_f>=4": 1977309.3,
+  "record_C_K": 161.7735
+ }
+}

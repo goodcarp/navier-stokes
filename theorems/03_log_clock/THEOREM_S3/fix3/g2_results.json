@@ -1,0 +1,118 @@
+{
+ "A_theta_exact": {
+  "antiderivative_residual (sympy)": "((1 + exp(-2*(a - u)/e))*(tanh((a - u)/e) - 1) + 2*exp(-2*(a - u)/e))/(2*(1 + exp(-2*(a - u)/e)))",
+  "antiderivative_residual_numeric_max": 0.0,
+  "at a = eps_r = e": "e*(-2 + log(1 + exp(2)))/2",
+  "closed_form": "log(1 + e^{-2})/8",
+  "closed_form_value": 0.015866001380371576,
+  "envelope_exact": "Theta = sigma(8u-2) at the inner end and sigma(x) <= e^x, so Theta <= e^{-2} (rho/rho_0)^8 EXACTLY",
+  "envelope_inner_max_ratio": 1.0000004571222547,
+  "envelope_outer_max_ratio": 1.0000004571222618,
+  "int_Theta_du_whole_line": "L - 2 eps_r  (exact)",
+  "int_{-inf}^{0} (1+tanh((u-a)/e))/2 du": "-a + e*log(exp(2*a/e) + 1)/2",
+  "numeric_inner_tail": 0.015865584179493387,
+  "numeric_outer_tail": 0.015865584179493384,
+  "numeric_shell_only": 11.46826698399084,
+  "numeric_whole_line_L12": 11.500000000000005,
+  "ramp_loss_efolds_true": 0.5,
+  "t3_budget_ELL_RAMP": 0.25,
+  "understatement_efolds": 0.25,
+  "value_eps_r_0.25": 0.015866001380371562
+ },
+ "B_J_of_rho_L10": {
+  "J_at_u=-1": 0.010736682070421893,
+  "J_at_u=-2": 3.602073617391524e-06,
+  "J_at_u=0": 25.0232581630616,
+  "J_at_u=L": 31.688027880347157,
+  "J_at_u=L+1": 0.013285762236846512,
+  "J_at_u=L+2": 4.4572348197719855e-06,
+  "J_plateau_Theta_eq_1": 75.25110422588723,
+  "J_sup_over_rho": 96.2601736941795,
+  "Jcoef_inner_tail": 236.51204952037156,
+  "Jcoef_outer_tail": 292.6619084073642,
+  "argmax_u": 9.664,
+  "argmax_u_minus_L": -0.3360000000000003,
+  "envelope_check_inner_u=-1": 0.9999116782990485,
+  "envelope_check_outer_u=L+1": 0.9999196310184071,
+  "sup_J_over_inner_tail_(u<0)": 25.0232581630616,
+  "sup_J_over_outer_tail_(u>L)": 31.688027880347157
+ },
+ "B_J_of_rho_L40": {
+  "J_at_u=-1": 0.010736682070421893,
+  "J_at_u=-2": 3.602073617391524e-06,
+  "J_at_u=0": 25.0232581630616,
+  "J_at_u=L": 31.688027880347157,
+  "J_at_u=L+1": 0.013285762236846512,
+  "J_at_u=L+2": 4.4572348197719855e-06,
+  "J_plateau_Theta_eq_1": 75.25110422588723,
+  "J_sup_over_rho": 96.25993946793324,
+  "Jcoef_inner_tail": 236.51204952037156,
+  "Jcoef_outer_tail": 292.6619084073642,
+  "argmax_u": 39.66466666666666,
+  "argmax_u_minus_L": -0.33533333333333815,
+  "envelope_check_inner_u=-1": 0.9999116782990485,
+  "envelope_check_outer_u=L+1": 0.9999196310184071,
+  "sup_J_over_inner_tail_(u<0)": 25.0232581630616,
+  "sup_J_over_outer_tail_(u>L)": 31.688027880347157
+ },
+ "C_lambda_masked": [
+  {
+   "L4_full": 26.574429132361004,
+   "L4_shell_only": 26.570094201895234,
+   "L4_tail_rel": 0.0001631241237273244,
+   "L5_full": 7.1926206231878504,
+   "L5_shell_only": 7.191769538861965,
+   "L5_tail_rel": 0.00011832743174886856,
+   "d": 0.9567085809127243,
+   "lam": 1.0
+  },
+  {
+   "L4_full": 47.47019431820073,
+   "L4_shell_only": 47.470145030271915,
+   "L4_tail_rel": 1.0382921225692803e-06,
+   "L5_full": 11.875767880061513,
+   "L5_shell_only": 11.875763769350442,
+   "L5_tail_rel": 3.4614275999736176e-07,
+   "d": 0.6058055151495728,
+   "lam": 1.8420112
+  }
+ ],
+ "C_tail_share_f1": {
+  "hk2_uniform_J_far_integral": 24.065043423544875,
+  "hk2_uniform_J_near_integral": 32.0867245647265,
+  "inner_tail_contribution_to_near_integral": 2.9098568373373865,
+  "inner_tail_relative_share": 0.0906872507808492,
+  "outer_share_closed_form": "(2/9) e^{-2} (Jcoef_out/J) (rho_*/R) = O(e^{-L})",
+  "outer_tail_contribution_to_far_integral": 0.00019979743477612625,
+  "outer_tail_relative_share": 8.302392447821119e-06,
+  "rho_star": 2.0
+ },
+ "C_tail_share_f4": {
+  "hk2_uniform_J_far_integral": 9.62601736941795,
+  "hk2_uniform_J_near_integral": 501.3550713238515,
+  "inner_tail_contribution_to_near_integral": 2.9098568373373865,
+  "inner_tail_relative_share": 0.005803984049974349,
+  "outer_share_closed_form": "(2/9) e^{-2} (Jcoef_out/J) (rho_*/R) = O(e^{-L})",
+  "outer_tail_contribution_to_far_integral": 0.00019979743477612625,
+  "outer_tail_relative_share": 2.07559811195528e-05,
+  "rho_star": 5.0
+ },
+ "D_D1prime": {
+  "efold_accounting": {
+   "budget_charges": 0.25,
+   "cost_in_eps_a": {
+    "L=1e4": 2.5e-05,
+    "L=1e5": 2.5e-06,
+    "L=1e6": 2.5e-07
+   },
+   "each_tail": 0.015866001380371576,
+   "extra_efolds_owed": 0.25,
+   "int_Theta_dlogrho_whole_line": "L - 2 eps_r = L - 0.5",
+   "shell_only": "L - 2 eps_r - 2 log(1+e^{-2})/8 = L - 0.5317320"
+  },
+  "far_near_lemma": "far-near-kernel-lemma Propositions 1 and 2 need |omega^theta| <= M on {rho' >= 2 rho} and on {rho' <= rho/2}, which holds everywhere; the shell support enters only the e-fold COUNT a_far(0) = int Phi[w](0) dlog rho', where the tails add exactly log(1+e^{-2})/8 = 0.0158660 e-folds at each end, with the SAME sign as the drive.",
+  "new_(D1')": "|omega^theta(.,t)| <= M_t <= (3/2)M on R^5, and the shell total-variation density (2.1) holds for EVERY rho' in (0, infinity) with one finite J. No support statement is used anywhere in hk2 sections 4-5.",
+  "old_(D1)": "|omega^theta(.,t)| <= M_t <= (3/2)M and eta(.,t) supported in {rho_-(t) <= rho <= rho_+(t)}",
+  "why_it_is_enough": "Lemma 5.2's four integrals already run over (2 rho, infinity) and (0, rho/2); the support hypothesis is never invoked in their proof. The collar rho/2 < rho' < 2 rho is evaluated by quadrature on the actual field (k3.lambda_bulk), which integrates the tails as they are. So (D1') changes no constant."
+ }
+}

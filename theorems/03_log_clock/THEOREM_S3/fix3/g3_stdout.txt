@@ -1,0 +1,23 @@
+J: (D-A) 78.641176 (hk2 78.641147)  (D-B) 65.625910 (hk2 65.625910)  (S3) plateau 75.262286 sup 96.255392
+ANALYTIC route: J=  96.2602 lam=1.0000  L4= 186.7274 (collar  19.8764)  L5= 29.2557  K2hat=  66.0558
+ANALYTIC route: J=  96.2602 lam=1.8420  L4= 205.4876 (collar  30.9059)  L5= 32.1455  K2hat= 102.6625
+ANALYTIC route: J=  78.6411 lam=1.0000  L4= 156.1877 (collar  19.8764)  L5= 25.4969  K2hat=  57.1299
+ANALYTIC route: J=  78.6411 lam=1.8420  L4= 173.5329 (collar  30.9059)  L5= 28.0304  K2hat=  89.1658
+ANALYTIC route: J=  65.6259 lam=1.0000  L4= 133.6280 (collar  19.8764)  L5= 22.7203  K2hat=  50.5363
+ANALYTIC route: J=  65.6259 lam=1.8420  L4= 149.9279 (collar  30.9059)  L5= 24.9905  K2hat=  79.1956
+ANALYTIC route: J= 192.5204 lam=1.0000  L4= 353.5784 (collar  19.8764)  L5= 49.7912  K2hat= 114.8218
+ANALYTIC route: J= 192.5204 lam=1.8420  L4= 380.0694 (collar  30.9059)  L5= 54.6280  K2hat= 176.4010
+eps(1e7, proved) at C_K=  161.7735 : 0.014141132567409676
+eps(1e7, proved) at C_K=   33.7100 : 0.014141132567409676
+eps(1e7, proved) at C_K=  102.6625 : 0.014141132567409676
+eps(1e7, proved) at C_K=  176.4010 : 0.014141132567409676
+L_*(proved, eps<=0.194366) with C_K=  161.7735 : 1887786.7126679737
+L_*(proved, eps<=0.1) with C_K=  161.7735 : 1977309.301165401
+L_*(proved, eps<=0.194366) with C_K=   33.7100 : 1887786.6179469558
+L_*(proved, eps<=0.1) with C_K=   33.7100 : 1977309.2019525247
+L_*(proved, eps<=0.194366) with C_K=  102.6625 : 1887786.7126679737
+L_*(proved, eps<=0.1) with C_K=  102.6625 : 1977309.301165401
+L_*(proved, eps<=0.194366) with C_K=  176.4010 : 1887786.7126679737
+L_*(proved, eps<=0.1) with C_K=  176.4010 : 1977309.4003782822
+
+WROTE g3_results.json

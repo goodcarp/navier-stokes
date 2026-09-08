@@ -1,0 +1,8 @@
+L=   1e+04 frozen c=c_*         c_G=1.22267  tau*K2*sqrt(Ginf N2) = 5.25048   (Psi_2(0) at sigma=0.002 = 1847.0)  ratio 2.843e-03
+L=   1e+04 cap c=1.1943662c_*   c_G=1.46032  tau*K2*sqrt(Ginf N2) = 10.0868   (Psi_2(0) at sigma=0.002 = 1847.0)  ratio 5.461e-03
+L=   1e+05 frozen c=c_*         c_G=1.23424  tau*K2*sqrt(Ginf N2) = 0.537333   (Psi_2(0) at sigma=0.002 = 1847.0)  ratio 2.909e-04
+L=   1e+05 cap c=1.1943662c_*   c_G=1.48377  tau*K2*sqrt(Ginf N2) = 1.05712   (Psi_2(0) at sigma=0.002 = 1847.0)  ratio 5.723e-04
+L=   1e+06 frozen c=c_*         c_G=1.22291  tau*K2*sqrt(Ginf N2) = 0.0525299   (Psi_2(0) at sigma=0.002 = 1847.0)  ratio 2.844e-05
+L=   1e+06 cap c=1.1943662c_*   c_G=1.46141  tau*K2*sqrt(Ginf N2) = 0.101089   (Psi_2(0) at sigma=0.002 = 1847.0)  ratio 5.473e-05
+
+WROTE g5_results.json

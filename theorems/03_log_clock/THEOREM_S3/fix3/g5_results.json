@@ -1,0 +1,102 @@
+{
+ "conclusion": "the propagation term tau K_2 sqrt(G_inf N_2) is at most 10.1 in units M/rho_0^2 at L = 1e4 and falls like 1/L, against a datum value Psi_2(0) of order 1e3 for a sigma = 0.002 mollification: the propagation is not the binding half of (H-Delta-eta); the datum is.",
+ "inputs": {
+  "Gfrak_0": 58.69548054098106,
+  "K2hat": 161.7735,
+  "grad_eta_inf_0": 20.3339,
+  "p_max": 3.0,
+  "sqrt(Ginf*Gfrak0)": 34.54718558395538
+ },
+ "rows": [
+  {
+   "G_inf(s)": 69.0590329725643,
+   "L": 10000.0,
+   "N_2(s)": 2299.3447428718123,
+   "Psi2_0_sigma=0.002": 1847.041342910331,
+   "c": 0.8144773658352574,
+   "c_G": 1.2226722451803766,
+   "column": "measured",
+   "growth_factor_e^{3c_G}": 39.17413609496586,
+   "propagation_over_Psi2_0": 0.0028426413981117132,
+   "source_K2_sqrt(Ginf N2)": 64464.35966942219,
+   "tau": 8.144773658352575e-05,
+   "tau*source": 5.2504761853807596,
+   "window": "frozen c=c_*"
+  },
+  {
+   "G_inf(s)": 87.58483415776823,
+   "L": 10000.0,
+   "N_2(s)": 4690.610249681607,
+   "Psi2_0_sigma=0.002": 1847.041342910331,
+   "c": 0.9727842428206827,
+   "c_G": 1.4603184129320954,
+   "column": "measured",
+   "growth_factor_e^{3c_G}": 79.9143342289639,
+   "propagation_over_Psi2_0": 0.005461053390893174,
+   "source_K2_sqrt(Ginf N2)": 103689.91339305324,
+   "tau": 9.727842428206826e-05,
+   "tau*source": 10.086791388820345,
+   "window": "cap c=1.1943662c_*"
+  },
+  {
+   "G_inf(s)": 69.86232707072958,
+   "L": 100000.0,
+   "N_2(s)": 2380.519564879532,
+   "Psi2_0_sigma=0.002": 1847.041342910331,
+   "c": 0.8144773658352574,
+   "c_G": 1.2342371053431151,
+   "column": "proved",
+   "growth_factor_e^{3c_G}": 40.55711858798836,
+   "propagation_over_Psi2_0": 0.00029091571789598917,
+   "source_K2_sqrt(Ginf N2)": 65972.77969846202,
+   "tau": 8.144773658352574e-06,
+   "tau*source": 0.5373333582563309,
+   "window": "frozen c=c_*"
+  },
+  {
+   "G_inf(s)": 89.66325806107622,
+   "L": 100000.0,
+   "N_2(s)": 5032.527527990105,
+   "Psi2_0_sigma=0.002": 1847.041342910331,
+   "c": 0.9727842428206827,
+   "c_G": 1.4837716320530994,
+   "column": "proved",
+   "growth_factor_e^{3c_G}": 85.73960859689026,
+   "propagation_over_Psi2_0": 0.0005723314743314129,
+   "source_K2_sqrt(Ginf N2)": 108669.5125605366,
+   "tau": 9.727842428206827e-06,
+   "tau*source": 1.0571198949389427,
+   "window": "cap c=1.1943662c_*"
+  },
+  {
+   "G_inf(s)": 69.07556660725479,
+   "L": 1000000.0,
+   "N_2(s)": 2300.99661780035,
+   "Psi2_0_sigma=0.002": 1847.041342910331,
+   "c": 0.8144773658352574,
+   "c_G": 1.2229116295897822,
+   "column": "proved",
+   "growth_factor_e^{3c_G}": 39.20227923159772,
+   "propagation_over_Psi2_0": 2.844002692022727e-05,
+   "source_K2_sqrt(Ginf N2)": 64495.23058418256,
+   "tau": 8.144773658352574e-07,
+   "tau*source": 0.05252990551514254,
+   "window": "frozen c=c_*"
+  },
+  {
+   "G_inf(s)": 87.68067794536664,
+   "L": 1000000.0,
+   "N_2(s)": 4706.0258633998565,
+   "Psi2_0_sigma=0.002": 1847.041342910331,
+   "c": 0.9727842428206827,
+   "c_G": 1.461412111241616,
+   "column": "proved",
+   "growth_factor_e^{3c_G}": 80.17697137881203,
+   "propagation_over_Psi2_0": 5.473011954909885e-05,
+   "source_K2_sqrt(Ginf N2)": 103916.97260277747,
+   "tau": 9.727842428206826e-07,
+   "tau*source": 0.1010887935096105,
+   "window": "cap c=1.1943662c_*"
+  }
+ ]
+}
