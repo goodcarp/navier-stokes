@@ -302,6 +302,16 @@ a secondary source that attributes each of these to [CKN82]. Alternative formula
 (F.-H. Lin, Comm. Pure Appl. Math. **51** (1998), 241-257; O. Ladyzhenskaya and G. Seregin,
 J. Math. Fluid Mech. **1** (1999), 356-387); I did not check their force hypotheses.*
 
+*Second check (2026-09-09): the primary text is still behind the publisher's wall. A second
+secondary source, A. Vasseur, "A new proof of partial regularity of solutions to Navier-Stokes
+equations" (preprint, NoDEA 14 (2007)), states in its introduction that [CKN] "showed ... that
+the set of possible singular points of a suitable weak solution is of measure 0 for the
+1 dimensional Hausdorff measure in position-time space", and repeats after its Theorem 2 that
+the one-dimensional space-time Hausdorff measure of the singular set is zero for any suitable
+solution in `L^inf(0,inf;L^2) x L^2(0,inf;H^1_0)`. That source is force-free, so the force
+hypothesis `f in L^q, q > 5/2` rests on the Ulm notes alone. Two secondary sources agree on
+`P^1(S) = 0`; neither is the paper.*
+
 A smooth force that is compactly supported in space-time, or that satisfies Fefferman's (5)
 below, lies in `L^q(R^3 x [0,T])` for every `q in [1, inf]`: taking `K = 4` in (5) gives
 `|f| <= C(1+|x|)^{-4}`. So `q > 5/2` is satisfied with room to spare. (If the intended force
