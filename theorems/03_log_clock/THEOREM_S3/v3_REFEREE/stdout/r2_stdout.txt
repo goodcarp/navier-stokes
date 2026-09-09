@@ -1,0 +1,79 @@
+  offset 4.0 sigma, f = 4
+    round 0  boxes   4000  bound 0.288821  per k 0.0137 0.0204 0.0541 0.1076 0.2888  argmax phi 29.9687 deg
+    round 1  boxes   5200  bound 0.203226  per k 0.0130 0.0195 0.0541 0.1076 0.2032  argmax phi 12.0837 deg
+    round 2  boxes   6400  bound 0.203113  per k 0.0129 0.0194 0.0541 0.1075 0.2031  argmax phi 12.0837 deg
+    round 3  boxes   7600  bound 0.203056  per k 0.0129 0.0194 0.0541 0.1075 0.2031  argmax phi 12.0837 deg
+    round 4  boxes   8800  bound 0.203028  per k 0.0129 0.0194 0.0541 0.1075 0.2030  argmax phi 12.0837 deg
+    round 5  boxes  10000  bound 0.203013  per k 0.0129 0.0194 0.0541 0.1075 0.2030  argmax phi 12.0837 deg
+    round 6  boxes  11200  bound 0.203006  per k 0.0129 0.0194 0.0541 0.1075 0.2030  argmax phi 12.0837 deg
+    round 7  boxes  12400  bound 0.203003  per k 0.0129 0.0194 0.0541 0.1075 0.2030  argmax phi 12.0837 deg
+    round 8  boxes  13600  bound 0.203001  per k 0.0129 0.0194 0.0541 0.1075 0.2030  argmax phi 12.0837 deg
+    round 9  boxes  14800  bound 0.203000  per k 0.0129 0.0194 0.0541 0.1075 0.2030  argmax phi 12.0837 deg
+  offset 5.0 sigma, f = 4
+    round 0  boxes   4000  bound 0.270420  per k 0.0135 0.0195 0.0448 0.1001 0.2704  argmax phi 29.9707 deg
+    round 1  boxes   5200  bound 0.184066  per k 0.0130 0.0168 0.0448 0.0949 0.1841  argmax phi 13.6089 deg
+    round 2  boxes   6400  bound 0.179544  per k 0.0129 0.0166 0.0447 0.0948 0.1795  argmax phi 13.4199 deg
+    round 3  boxes   7600  bound 0.178789  per k 0.0129 0.0166 0.0447 0.0948 0.1788  argmax phi 13.2626 deg
+    round 4  boxes   8800  bound 0.178506  per k 0.0129 0.0166 0.0447 0.0948 0.1785  argmax phi 13.2383 deg
+    round 5  boxes  10000  bound 0.178398  per k 0.0129 0.0166 0.0447 0.0948 0.1784  argmax phi 13.2488 deg
+    round 6  boxes  11200  bound 0.178294  per k 0.0129 0.0166 0.0447 0.0947 0.1783  argmax phi 13.2649 deg
+    round 7  boxes  12400  bound 0.178285  per k 0.0129 0.0166 0.0447 0.0947 0.1783  argmax phi 13.2524 deg
+    round 8  boxes  13600  bound 0.178265  per k 0.0129 0.0166 0.0447 0.0947 0.1783  argmax phi 13.2932 deg
+    round 9  boxes  14800  bound 0.178242  per k 0.0129 0.0166 0.0447 0.0947 0.1782  argmax phi 13.2322 deg
+  offset 6.0 sigma, f = 4
+    round 0  boxes   4000  bound 0.252591  per k 0.0133 0.0187 0.0379 0.0932 0.2526  argmax phi 29.9727 deg
+    round 1  boxes   5200  bound 0.157246  per k 0.0128 0.0158 0.0361 0.0790 0.1572  argmax phi 14.7754 deg
+    round 2  boxes   6400  bound 0.156004  per k 0.0127 0.0156 0.0361 0.0789 0.1560  argmax phi 14.3755 deg
+    round 3  boxes   7600  bound 0.155915  per k 0.0127 0.0156 0.0361 0.0789 0.1559  argmax phi 14.3755 deg
+    round 4  boxes   8800  bound 0.155870  per k 0.0127 0.0156 0.0361 0.0788 0.1559  argmax phi 14.3755 deg
+    round 5  boxes  10000  bound 0.155847  per k 0.0127 0.0156 0.0361 0.0788 0.1558  argmax phi 14.3755 deg
+    round 6  boxes  11200  bound 0.155836  per k 0.0127 0.0156 0.0361 0.0788 0.1558  argmax phi 14.3755 deg
+    round 7  boxes  12400  bound 0.155830  per k 0.0127 0.0156 0.0361 0.0788 0.1558  argmax phi 14.3755 deg
+    round 8  boxes  13600  bound 0.155828  per k 0.0127 0.0156 0.0361 0.0788 0.1558  argmax phi 14.3755 deg
+    round 9  boxes  14800  bound 0.155826  per k 0.0127 0.0156 0.0361 0.0788 0.1558  argmax phi 14.3755 deg
+  offset 4.0 sigma, f = 8
+    round 0  boxes   4000  bound 0.275571  per k 0.0134 0.0192 0.0537 0.1066 0.2756  argmax phi 29.9687 deg
+    round 1  boxes   5200  bound 0.200814  per k 0.0129 0.0192 0.0537 0.1066 0.2008  argmax phi 12.0837 deg
+    round 2  boxes   6400  bound 0.200700  per k 0.0129 0.0192 0.0537 0.1065 0.2007  argmax phi 12.0837 deg
+    round 3  boxes   7600  bound 0.200644  per k 0.0129 0.0192 0.0537 0.1065 0.2006  argmax phi 12.0837 deg
+    round 4  boxes   8800  bound 0.200615  per k 0.0129 0.0192 0.0537 0.1065 0.2006  argmax phi 12.0837 deg
+    round 5  boxes  10000  bound 0.200601  per k 0.0129 0.0192 0.0537 0.1065 0.2006  argmax phi 12.0837 deg
+    round 6  boxes  11200  bound 0.200594  per k 0.0129 0.0192 0.0537 0.1065 0.2006  argmax phi 12.0837 deg
+    round 7  boxes  12400  bound 0.200590  per k 0.0129 0.0192 0.0537 0.1065 0.2006  argmax phi 12.0837 deg
+    round 8  boxes  13600  bound 0.200589  per k 0.0129 0.0192 0.0537 0.1065 0.2006  argmax phi 12.0837 deg
+    round 9  boxes  14800  bound 0.200588  per k 0.0129 0.0192 0.0537 0.1065 0.2006  argmax phi 12.0837 deg
+  offset 4.0 sigma, f = 16
+    round 0  boxes   4000  bound 0.275450  per k 0.0134 0.0192 0.0537 0.1066 0.2755  argmax phi 29.9687 deg
+    round 1  boxes   5200  bound 0.200792  per k 0.0129 0.0192 0.0537 0.1066 0.2008  argmax phi 12.0837 deg
+    round 2  boxes   6400  bound 0.200678  per k 0.0129 0.0192 0.0536 0.1065 0.2007  argmax phi 12.0837 deg
+    round 3  boxes   7600  bound 0.200622  per k 0.0129 0.0192 0.0536 0.1065 0.2006  argmax phi 12.0837 deg
+    round 4  boxes   8800  bound 0.200593  per k 0.0129 0.0192 0.0536 0.1065 0.2006  argmax phi 12.0837 deg
+    round 5  boxes  10000  bound 0.200579  per k 0.0129 0.0192 0.0536 0.1065 0.2006  argmax phi 12.0837 deg
+    round 6  boxes  11200  bound 0.200572  per k 0.0129 0.0192 0.0536 0.1065 0.2006  argmax phi 12.0837 deg
+    round 7  boxes  12400  bound 0.200569  per k 0.0129 0.0192 0.0536 0.1065 0.2006  argmax phi 12.0837 deg
+    round 8  boxes  13600  bound 0.200567  per k 0.0129 0.0192 0.0536 0.1065 0.2006  argmax phi 12.0837 deg
+    round 9  boxes  14800  bound 0.200566  per k 0.0129 0.0192 0.0536 0.1065 0.2006  argmax phi 12.0837 deg
+  offset 4.0 sigma, f = 32
+    round 0  boxes   4000  bound 0.275450  per k 0.0134 0.0192 0.0537 0.1066 0.2754  argmax phi 29.9687 deg
+    round 1  boxes   5200  bound 0.200792  per k 0.0129 0.0192 0.0537 0.1066 0.2008  argmax phi 12.0837 deg
+    round 2  boxes   6400  bound 0.200678  per k 0.0129 0.0192 0.0536 0.1065 0.2007  argmax phi 12.0837 deg
+    round 3  boxes   7600  bound 0.200622  per k 0.0129 0.0192 0.0536 0.1065 0.2006  argmax phi 12.0837 deg
+    round 4  boxes   8800  bound 0.200593  per k 0.0129 0.0192 0.0536 0.1065 0.2006  argmax phi 12.0837 deg
+    round 5  boxes  10000  bound 0.200579  per k 0.0129 0.0192 0.0536 0.1065 0.2006  argmax phi 12.0837 deg
+    round 6  boxes  11200  bound 0.200572  per k 0.0129 0.0192 0.0536 0.1065 0.2006  argmax phi 12.0837 deg
+    round 7  boxes  12400  bound 0.200568  per k 0.0129 0.0192 0.0536 0.1065 0.2006  argmax phi 12.0837 deg
+    round 8  boxes  13600  bound 0.200567  per k 0.0129 0.0192 0.0536 0.1065 0.2006  argmax phi 12.0837 deg
+    round 9  boxes  14800  bound 0.200566  per k 0.0129 0.0192 0.0536 0.1065 0.2006  argmax phi 12.0837 deg
+{
+ "vartheta_certified_upper_over_f_at_4sigma": 0.20300005433851714,
+ "vartheta_certified_upper_at_5sigma_f4": 0.17824187027403246,
+ "vartheta_certified_upper_at_6sigma_f4": 0.15582624108159338,
+ "vartheta_stated_in_THEOREM_S3_v3": 0.2623138022,
+ "vartheta_grid_lower_bound_x1_max_over_f": 0.13115690109082598,
+ "seconds": 765.4405510425568,
+ "certified_below_one": true,
+ "certified_below_the_stated_value": true,
+ "Q_at_certified": 1.5094104596708195,
+ "vt_at_certified": 0.25470522983540983
+}
+wrote r2_results.json in 765.4 s

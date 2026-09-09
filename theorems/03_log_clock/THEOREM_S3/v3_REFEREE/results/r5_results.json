@@ -1,0 +1,186 @@
+{
+ "c_clock_identities": {
+  "kappa_delta_from_p1": 0.49178688012849425,
+  "c_star_here": 0.824473210839265,
+  "c_star_in_the_theorem": 0.8244732108,
+  "c_2_here": 1.64894642167853,
+  "c_2_in_the_theorem": 1.6489464217,
+  "lam_max_at_c_star_here": 1.8558724484917741,
+  "lam_max_in_the_theorem": 1.8558724485,
+  "lam_max_at_the_certified_cap_here": 2.054873863859616,
+  "lam_max_at_cap_in_the_theorem": 2.0548738638,
+  "clock_floor_here": 0.016700567264746512,
+  "clock_floor_in_the_theorem": 0.016700567265,
+  "c_2_equals_2_c_star": true
+ },
+ "a_energy_Reynolds_dictionary": {
+  "proved": "M T_d <= c_*(1+eps)/L = c_2 (1+eps)/(2L) = c_2 (1+eps)/(log Lambda - 2.9135781820)",
+  "displayed": "T(Lambda) <= c_2 (1+eps)/log Lambda",
+  "displayed_is_stronger_since": "log Lambda > 2 L",
+  "rows": [
+   {
+    "L_star": 1424207.9721,
+    "log_Lambda_star": 2848418.857778182,
+    "factor_by_which_the_display_is_stronger": 1.000001022876658,
+    "eps_displayed": 0.1647266909,
+    "eps_that_the_display_actually_needs": 0.16472788227174506,
+    "increase_in_eps": 1.1913717450628969e-06
+   },
+   {
+    "L_star": 1424207.9721,
+    "log_Lambda_star": 2848418.857778182,
+    "factor_by_which_the_display_is_stronger": 1.000001022876658,
+    "eps_displayed": 0.1,
+    "eps_that_the_display_actually_needs": 0.10000112516432402,
+    "increase_in_eps": 1.1251643240173248e-06
+   },
+   {
+    "L_star": 1554565.5693,
+    "log_Lambda_star": 3109134.052178182,
+    "factor_by_which_the_display_is_stronger": 1.000000937103664,
+    "eps_displayed": 0.1647266909,
+    "eps_that_the_display_actually_needs": 0.16472778236964958,
+    "increase_in_eps": 1.0914696495778475e-06
+   },
+   {
+    "L_star": 1554565.5693,
+    "log_Lambda_star": 3109134.052178182,
+    "factor_by_which_the_display_is_stronger": 1.000000937103664,
+    "eps_displayed": 0.1,
+    "eps_that_the_display_actually_needs": 0.10000103081403044,
+    "increase_in_eps": 1.0308140304393643e-06
+   },
+   {
+    "L_star": 1761.8423,
+    "log_Lambda_star": 3526.598178182,
+    "factor_by_which_the_display_is_stronger": 1.0008268555539845,
+    "eps_displayed": 0.1647266909,
+    "eps_that_the_display_actually_needs": 0.16568975163324473,
+    "increase_in_eps": 0.0009630607332447305
+   },
+   {
+    "L_star": 1761.8423,
+    "log_Lambda_star": 3526.598178182,
+    "factor_by_which_the_display_is_stronger": 1.0008268555539845,
+    "eps_displayed": 0.1,
+    "eps_that_the_display_actually_needs": 0.100909541109383,
+    "increase_in_eps": 0.0009095411093829886
+   },
+   {
+    "L_star": 2050.277,
+    "log_Lambda_star": 4103.467578182,
+    "factor_by_which_the_display_is_stronger": 1.0007105328162973,
+    "eps_displayed": 0.1647266909,
+    "eps_that_the_display_actually_needs": 0.16555426743590185,
+    "increase_in_eps": 0.0008275765359018472
+   },
+   {
+    "L_star": 2050.277,
+    "log_Lambda_star": 4103.467578182,
+    "factor_by_which_the_display_is_stronger": 1.0007105328162973,
+    "eps_displayed": 0.1,
+    "eps_that_the_display_actually_needs": 0.10078158609792709,
+    "increase_in_eps": 0.0007815860979270839
+   }
+  ]
+ },
+ "b_eps_of_L": {
+  "table": [
+   {
+    "L": 2000000.0,
+    "self_consistent": true,
+    "eps": 0.06686303535566163,
+    "best_f": 4.0
+   },
+   {
+    "L": 3000000.0,
+    "self_consistent": true,
+    "eps": 0.044911122596724695,
+    "best_f": 4.0
+   },
+   {
+    "L": 5000000.0,
+    "self_consistent": true,
+    "eps": 0.032009802368473395,
+    "best_f": 4.0
+   },
+   {
+    "L": 10000000.0,
+    "self_consistent": true,
+    "eps": 0.0238848171972057,
+    "best_f": 4.0
+   },
+   {
+    "L": 30000000.0,
+    "self_consistent": true,
+    "eps": 0.01900574160847368,
+    "best_f": 4.0
+   },
+   {
+    "L": 100000000.0,
+    "self_consistent": true,
+    "eps": 0.017383415199663244,
+    "best_f": 4.0
+   },
+   {
+    "L": 1000000000.0,
+    "self_consistent": true,
+    "eps": 0.016768542965317934,
+    "best_f": 4.0
+   },
+   {
+    "L": 10000000000.0,
+    "self_consistent": true,
+    "eps": 0.01670743277135811,
+    "best_f": 4.0
+   },
+   {
+    "L": 1000000000000.0,
+    "self_consistent": true,
+    "eps": 0.01670067765994343,
+    "best_f": 4.0
+   },
+   {
+    "L": 100000000000000.0,
+    "self_consistent": true,
+    "eps": 0.01670067765994343,
+    "best_f": 4.0
+   },
+   {
+    "L": 1e+16,
+    "self_consistent": true,
+    "eps": 0.01670067765994343,
+    "best_f": 4.0
+   },
+   {
+    "L": 1e+18,
+    "self_consistent": true,
+    "eps": 0.01670067765994343,
+    "best_f": 4.0
+   },
+   {
+    "L": 1e+20,
+    "self_consistent": true,
+    "eps": 0.01670067765994343,
+    "best_f": 4.0
+   },
+   {
+    "L": 1e+24,
+    "self_consistent": true,
+    "eps": 0.01670067765994343,
+    "best_f": 4.0
+   },
+   {
+    "L": 1e+30,
+    "self_consistent": true,
+    "eps": 0.01670067765994343,
+    "best_f": 4.0
+   }
+  ],
+  "monotone_decreasing_over_the_tabulated_range": true,
+  "clock_floor": 0.016700567264746512,
+  "last_eps": 0.01670067765994343,
+  "last_eps_over_floor": 1.0000066102662961,
+  "note": "a tabulation, at 15 values of L; still not a proof of monotonicity"
+ }
+}

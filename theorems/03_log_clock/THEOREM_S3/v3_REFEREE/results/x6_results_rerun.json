@@ -1,0 +1,222 @@
+{
+ "sigma": 0.02,
+ "proved_bounds": {
+  "BW": [
+   7.66129757554039,
+   58.19333256822215,
+   2321.5780798925507,
+   140810.82843716175,
+   10984086.087366464
+  ],
+  "BA": [
+   7.66129757554039,
+   65.85463014376253,
+   2445.6260426045355,
+   147957.8039721196,
+   11561499.304222314
+  ],
+  "chi_L1": [
+   1.0,
+   39.894228040143275,
+   2419.7072451914337,
+   188751.6250163096,
+   17503751.880186476
+  ],
+  "Wtil_sup": 7.66129757554039,
+  "Wtil_prime_sup": 58.19333256822215
+ },
+ "sup_tanh_derivatives": {
+  "1": 1.000001,
+  "2": 0.76980435891925,
+  "3": 2.00002,
+  "4": 4.086013502969396,
+  "5": 16.000976
+ },
+ "Theta_bounds": {
+  "0": 1.0,
+  "1": 4.000004,
+  "2": 12.316869742708,
+  "3": 128.00128,
+  "rad": 18.316873742708,
+  "rad_prime": 148.31815774270802
+ },
+ "N_sigma": {
+  "lower": 1.0124508487372592,
+  "upper": 1.012451150150788,
+  "global": {
+   "grid_max": 1.0124508484337686,
+   "pad": 3.0171701941885585e-07,
+   "lower": 1.0124508484337686,
+   "upper": 1.012451150150788,
+   "mode": "d2",
+   "h": 3.141592653589793e-05
+  },
+  "local": {
+   "grid_max": 1.0124508487372592,
+   "pad": 3.0171701924582954e-13,
+   "lower": 1.0124508487372592,
+   "upper": 1.012450848737561,
+   "mode": "d2",
+   "h": 3.141592652688985e-08
+  },
+  "argmax_deg": 9.988541999999999,
+  "fix4_value": 1.0124508488,
+  "fix4_inside": true,
+  "referee_enclosure": [
+   1.0124508487,
+   1.0124508495
+  ]
+ },
+ "sup_abs_W_sigma": {
+  "lower": 7.6463403351553225,
+  "upper": 7.646340621568249,
+  "argmax_deg": 175.57199099999997
+ },
+ "E_0": {
+  "lower": 7.552305446061793,
+  "upper": 7.552307977325374,
+  "fix4_value": 7.5523076942,
+  "fix4_inside": true,
+  "note": "sup Theta <= 1 is used; the true sup Theta is 1 - O(e^{-2L/eps_r})",
+  "referee_enclosure": [
+   7.5523076888,
+   7.5523076951
+  ]
+ },
+ "Gfrak_0": {
+  "lower": 36.07836305572758,
+  "upper": 36.0784195640019,
+  "branch_grid_max": 1301.6490558001606,
+  "pad_interior_d2": 0.00330243599433885,
+  "pad_switch_d1": 4.228102712740662,
+  "bound_from_interior_cells": 1301.652358236155,
+  "bound_from_switch_cells": 860.3189285399029,
+  "n_switch_cells": 2734,
+  "argmax_in_switch_cell": false,
+  "argmax_deg": 170.95319999999998,
+  "Lip_branch": 269169.37865317136,
+  "curv_branch": 26768537.907957844,
+  "Lip_condition": 2179227.0627467623,
+  "margin": 34.23121865414645,
+  "branch_at_argmax": "81P<=8S",
+  "cond_at_argmax": 6844.052942155043,
+  "YMAX": 6.4072265625,
+  "fix4_value": 36.0795702396,
+  "fix4_inside": false
+ },
+ "sup_abs_h_prime": {
+  "grid_max": 11.324885229270155,
+  "pad": 0.03794337679926298,
+  "upper": 11.362828606069417,
+  "fix4_grid_value": 11.3248852
+ },
+ "h_second_bound": {
+  "proved": 2415.550390080417,
+  "fix4_claimed_PROVED": 225.9466903722,
+  "fix4_is_a_grid_scan": true,
+  "referee_rigorous": 2415.5503891825,
+  "ratio_to_fix4": 10.690797843072195
+ },
+ "Psi_sigma_0": {
+  "certified_upper": 495.106410241889,
+  "separated_grid_max": 495.106410241889,
+  "u_cell_width": 1.999999999946489e-06,
+  "tail_bound_u_le_minus1": 0.6476621036682184,
+  "tail_bound_u_ge_8": 0.00016994132570302,
+  "u_grid_max": 495.106410241889,
+  "sup_abs_angL_upper": 1371.7827305119456,
+  "angL_interior": {
+   "grid_max": 1357.4225665997712,
+   "pad": 14.36016391217437,
+   "lower": 1357.4225665997712,
+   "upper": 1371.7827305119456,
+   "mode": "d1",
+   "h": 3.141592653589793e-05
+  },
+  "angL_cap_bound": 10.343524679267095,
+  "sup_w2_on_cap": 2.5858811698167736,
+  "phi_lo": 0.02,
+  "argmax_u": 0.39151199999999986,
+  "fix4_value": 489.0279393839,
+  "fix4_below_certified": true,
+  "note": "separated (hence lossy) certified UPPER bound; fix4's tight scan value is the lower end. Psi enters only eps_a, which is 3.9e-05 of eps."
+ },
+ "fix4_grid_control": {
+  "lipschitz_hpp_scan": 225.94669037221541,
+  "kappa_delta": 0.49178688012849425,
+  "c_star": 0.824473210839265,
+  "N_sigma_fix4_grid": 1.012450848776347,
+  "N_sigma_in_certified_interval": true
+ },
+ "r_h_and_Ph_prime": {
+  "c = c_*": {
+   "c_over_c_star": 1.0,
+   "c": 0.824473210839265,
+   "lam_max": 1.8558724484917741,
+   "r_h_grid_min": 0.9035285738448889,
+   "r_h_certified_scan_pad": 0.9033435308609263,
+   "r_h_certified_PROVED_pad": 0.9033433307477016,
+   "min_Ph_prime_scan_pad": 0.3335513465222135,
+   "min_Ph_prime_PROVED_pad": 0.32948258885247217,
+   "nsub": 20000,
+   "sup_abs_hprime_scan_pad": 11.326068253898955,
+   "sup_abs_hprime_PROVED_pad": 11.337532992053783,
+   "delta_r_h": -2.001132247686499e-07
+  },
+  "c = 1.0669124225 c_* (L=2e6)": {
+   "c_over_c_star": 1.0669124225,
+   "c": 0.8796407106628734,
+   "lam_max": 1.9342710419492646,
+   "r_h_grid_min": 0.8786082927966388,
+   "r_h_certified_scan_pad": 0.878436939847039,
+   "r_h_certified_PROVED_pad": 0.8784367503505869,
+   "min_Ph_prime_scan_pad": 0.20166427463074255,
+   "min_Ph_prime_PROVED_pad": 0.19789116133584017,
+   "nsub": 20000,
+   "sup_abs_hprime_scan_pad": 11.326068253898955,
+   "sup_abs_hprime_PROVED_pad": 11.337532992053783,
+   "delta_r_h": -1.8949645208543586e-07
+  },
+  "c = 1.0238897079 c_* (L=1e7)": {
+   "c_over_c_star": 1.0238897079,
+   "c": 0.8441696350175901,
+   "lam_max": 1.8834914830455325,
+   "r_h_grid_min": 0.8951430378466196,
+   "r_h_certified_scan_pad": 0.8949627710694797,
+   "r_h_certified_PROVED_pad": 0.8949625746657037,
+   "min_Ph_prime_scan_pad": 0.2872563496943351,
+   "min_Ph_prime_PROVED_pad": 0.2833025588097742,
+   "nsub": 20000,
+   "sup_abs_hprime_scan_pad": 11.326068253898955,
+   "sup_abs_hprime_PROVED_pad": 11.337532992053783,
+   "delta_r_h": -1.9640377602048176e-07
+  },
+  "c = cap c_*": {
+   "c_over_c_star": 1.1664585076,
+   "c": 0.9617137910717491,
+   "lam_max": 2.0570755604138222,
+   "r_h_grid_min": 0.8332958218028668,
+   "r_h_certified_scan_pad": 0.833146036779438,
+   "r_h_certified_PROVED_pad": 0.8331458639896689,
+   "min_Ph_prime_scan_pad": 0.000449969732526867,
+   "min_Ph_prime_PROVED_pad": -0.002998570885049956,
+   "nsub": 20000,
+   "sup_abs_hprime_scan_pad": 11.326068253898955,
+   "sup_abs_hprime_PROVED_pad": 11.337532992053783,
+   "delta_r_h": -1.7278976904844257e-07
+  }
+ },
+ "lip_pads": {
+  "grid_h": 5.235987752649655e-06,
+  "pad_scan": 0.0011830541035406435,
+  "pad_proved": 0.012647792258369159,
+  "fix4_quoted_pad": 0.0011831,
+  "referee_quoted_pad": 0.012648
+ },
+ "window_cap_certified_PROVED_pad": {
+  "c_over_c_star": 1.1647266908535738,
+  "eps_cap": 0.16472669085357383,
+  "fix4_cap": 1.1664585076,
+  "lam_max_at_cap": 2.054873863800625
+ }
+}

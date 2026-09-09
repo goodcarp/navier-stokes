@@ -1,0 +1,378 @@
+{
+ "A_the_third_branch_of_d": {
+  "printed_third_branch": "f/rho_*",
+  "correct_third_branch": "f rho_0/rho_*",
+  "printed_value_of_the_third_branch_times_rho_star": "f (dimensionless)",
+  "correct_value": "f rho_0",
+  "note": "identical in the units rho_0 = 1 that fix5/x1 and x2 use, so no number moves",
+  "branches": [
+   {
+    "f": 4.0,
+    "taper": 1.5381397412512134,
+    "equatorial": 3.853474850448117,
+    "inner_f_rho0": 4.0,
+    "binding": "taper",
+    "d": 1.5381397412512134
+   },
+   {
+    "f": 8.0,
+    "taper": 2.7686515342521845,
+    "equatorial": 6.936254730806611,
+    "inner_f_rho0": 8.0,
+    "binding": "taper",
+    "d": 2.7686515342521845
+   },
+   {
+    "f": 16.0,
+    "taper": 5.229675120254126,
+    "equatorial": 13.101814491523598,
+    "inner_f_rho0": 16.0,
+    "binding": "taper",
+    "d": 5.229675120254126
+   },
+   {
+    "f": 32.0,
+    "taper": 10.15172229225801,
+    "equatorial": 25.43293401295757,
+    "inner_f_rho0": 32.0,
+    "binding": "taper",
+    "d": 10.15172229225801
+   },
+   {
+    "f": 0.05,
+    "taper": 0.32300934566275485,
+    "equatorial": 0.8092297185941046,
+    "inner_f_rho0": 0.05,
+    "binding": "inner",
+    "d": 0.05
+   },
+   {
+    "f": 0.5,
+    "taper": 0.4614419223753641,
+    "equatorial": 1.156042455134435,
+    "inner_f_rho0": 0.5,
+    "binding": "taper",
+    "d": 0.4614419223753641
+   },
+   {
+    "f": 1.0,
+    "taper": 0.6152558965004854,
+    "equatorial": 1.5413899401792468,
+    "inner_f_rho0": 1.0,
+    "binding": "taper",
+    "d": 0.6152558965004854
+   },
+   {
+    "f": 2.0,
+    "taper": 0.9228838447507282,
+    "equatorial": 2.31208491026887,
+    "inner_f_rho0": 2.0,
+    "binding": "taper",
+    "d": 0.9228838447507282
+   },
+   {
+    "f": 100.0,
+    "taper": 31.07042277327451,
+    "equatorial": 77.84019197905197,
+    "inner_f_rho0": 100.0,
+    "binding": "taper",
+    "d": 31.07042277327451
+   },
+   {
+    "f": 1000000.0,
+    "taper": 307628.255878191,
+    "equatorial": 770695.7407845935,
+    "inner_f_rho0": 1000000.0,
+    "binding": "taper",
+    "d": 307628.255878191
+   }
+  ],
+  "taper_binds_at_every_f_in_the_budget_set": true,
+  "taper_binds_for_all_f_ge": "f >= 0.4437: f >= (1+f) sin(phi_0-delta-4 sigma) fails, so the ",
+  "taper_binds_iff": "f sin(phi_0-delta-4sigma)/(1-sin(phi_0-delta-4sigma)) <= f, i.e. f >= sin(.)/(1-sin(.)) = 0.4443101761"
+ },
+ "B_geometric_containments": {
+  "per_f": [
+   {
+    "f": 4.0,
+    "rho_star": 5.0,
+    "d": 1.5381397412512134,
+    "r_star": 2.4999999999999996,
+    "z_star": 4.330127018922194,
+    "R_minus_eq_r_star_minus_d": 0.9618602587487861,
+    "d_lt_r_star_required_by_H3prime": true,
+    "phi_min_on_ball_deg": 12.083662361046585,
+    "phi_min_minus_delta_over_sigma": 3.999999999999999,
+    "phi_max_on_ball_deg": 47.916337638953415,
+    "clearance_to_the_equatorial_kink_over_sigma": 32.361600344907856,
+    "z_min_on_ball": 2.79198727767098,
+    "z_min_positive": true,
+    "rho_min_on_ball": 3.4618602587487866,
+    "rho_max_on_ball": 6.538139741251213,
+    "rho_min_over_rho_0": 3.4618602587487866
+   },
+   {
+    "f": 8.0,
+    "rho_star": 9.0,
+    "d": 2.7686515342521845,
+    "r_star": 4.499999999999999,
+    "z_star": 7.794228634059948,
+    "R_minus_eq_r_star_minus_d": 1.7313484657478146,
+    "d_lt_r_star_required_by_H3prime": true,
+    "phi_min_on_ball_deg": 12.083662361046585,
+    "phi_min_minus_delta_over_sigma": 3.999999999999999,
+    "phi_max_on_ball_deg": 47.916337638953415,
+    "clearance_to_the_equatorial_kink_over_sigma": 32.361600344907856,
+    "z_min_on_ball": 5.025577099807764,
+    "z_min_positive": true,
+    "rho_min_on_ball": 6.231348465747816,
+    "rho_max_on_ball": 11.768651534252184,
+    "rho_min_over_rho_0": 6.231348465747816
+   },
+   {
+    "f": 16.0,
+    "rho_star": 17.0,
+    "d": 5.229675120254126,
+    "r_star": 8.499999999999998,
+    "z_star": 14.722431864335459,
+    "R_minus_eq_r_star_minus_d": 3.270324879745872,
+    "d_lt_r_star_required_by_H3prime": true,
+    "phi_min_on_ball_deg": 12.083662361046585,
+    "phi_min_minus_delta_over_sigma": 3.999999999999999,
+    "phi_max_on_ball_deg": 47.916337638953415,
+    "clearance_to_the_equatorial_kink_over_sigma": 32.361600344907856,
+    "z_min_on_ball": 9.492756744081333,
+    "z_min_positive": true,
+    "rho_min_on_ball": 11.770324879745875,
+    "rho_max_on_ball": 22.229675120254125,
+    "rho_min_over_rho_0": 11.770324879745875
+   },
+   {
+    "f": 32.0,
+    "rho_star": 33.0,
+    "d": 10.15172229225801,
+    "r_star": 16.499999999999996,
+    "z_star": 28.578838324886476,
+    "R_minus_eq_r_star_minus_d": 6.348277707741987,
+    "d_lt_r_star_required_by_H3prime": true,
+    "phi_min_on_ball_deg": 12.083662361046585,
+    "phi_min_minus_delta_over_sigma": 3.999999999999999,
+    "phi_max_on_ball_deg": 47.916337638953415,
+    "clearance_to_the_equatorial_kink_over_sigma": 32.361600344907856,
+    "z_min_on_ball": 18.42711603262847,
+    "z_min_positive": true,
+    "rho_min_on_ball": 22.848277707741993,
+    "rho_max_on_ball": 43.15172229225801,
+    "rho_min_over_rho_0": 22.848277707741993
+   }
+  ],
+  "scale_free_identities": {
+   "d/rho_star": 0.3076279482502427,
+   "R_minus/rho_star": 0.19237205174975724,
+   "phi_min = delta + 4 sigma exactly, for every f": true,
+   "phi_max = 2 phi_0 - delta - 4 sigma exactly, for every f": true,
+   "d < r_star  <=>  sin(phi_0-delta-4sigma) < sin(phi_0)": true,
+   "z_min > 0  <=>  cos(phi_0) > sin(phi_0-delta-4sigma)": true
+  },
+  "equatorial_branch_never_binds_because": "sin(pi/2 - delta_m - phi_0 - 4 sigma) = 0.7706949701 > sin(phi_0 - delta - 4 sigma) = 0.3076279483"
+ },
+ "C_the_f_ge_4_quantifier": {
+  "A_sigma(phi_0)/N_sigma": 0.989091121,
+  "vartheta_stated": 0.2623138022,
+  "rows": [
+   {
+    "L": 40.0,
+    "where": "u = log rho_* = L - 1",
+    "f_such_that_log(1+f)=u": 8.659340042399374e+16,
+    "Theta": 0.9975273768433652,
+    "vartheta_0_at_x_star": 0.013354528609806448,
+    "exceeds_the_stated_vartheta": false,
+    "exceeds_1": false
+   },
+   {
+    "L": 40.0,
+    "where": "u = L - 0.5",
+    "f_such_that_log(1+f)=u": 1.4276838118129198e+17,
+    "Theta": 0.8807970779778824,
+    "vartheta_0_at_x_star": 0.12881143076933185,
+    "exceeds_the_stated_vartheta": false,
+    "exceeds_1": false
+   },
+   {
+    "L": 40.0,
+    "where": "u = L",
+    "f_such_that_log(1+f)=u": 2.3538526683702e+17,
+    "Theta": 0.11920292202211756,
+    "vartheta_0_at_x_star": 0.8820974482306682,
+    "exceeds_the_stated_vartheta": true,
+    "exceeds_1": false
+   },
+   {
+    "L": 40.0,
+    "where": "u = L + 1",
+    "f_such_that_log(1+f)=u": 6.398434935300549e+17,
+    "Theta": 4.5397868702434395e-05,
+    "vartheta_0_at_x_star": 0.9999550973711541,
+    "exceeds_the_stated_vartheta": true,
+    "exceeds_1": false
+   },
+   {
+    "L": 100000.0,
+    "where": "u = log rho_* = L - 1",
+    "f_such_that_log(1+f)=u": Infinity,
+    "Theta": 0.9975273768433652,
+    "vartheta_0_at_x_star": 0.013354528609806448,
+    "exceeds_the_stated_vartheta": false,
+    "exceeds_1": false
+   },
+   {
+    "L": 100000.0,
+    "where": "u = L - 0.5",
+    "f_such_that_log(1+f)=u": Infinity,
+    "Theta": 0.8807970779778824,
+    "vartheta_0_at_x_star": 0.12881143076933185,
+    "exceeds_the_stated_vartheta": false,
+    "exceeds_1": false
+   },
+   {
+    "L": 100000.0,
+    "where": "u = L",
+    "f_such_that_log(1+f)=u": Infinity,
+    "Theta": 0.11920292202211756,
+    "vartheta_0_at_x_star": 0.8820974482306682,
+    "exceeds_the_stated_vartheta": true,
+    "exceeds_1": false
+   },
+   {
+    "L": 100000.0,
+    "where": "u = L + 1",
+    "f_such_that_log(1+f)=u": Infinity,
+    "Theta": 4.5397868702434395e-05,
+    "vartheta_0_at_x_star": 0.9999550973711541,
+    "exceeds_the_stated_vartheta": true,
+    "exceeds_1": false
+   },
+   {
+    "L": 1424207.9721,
+    "where": "u = log rho_* = L - 1",
+    "f_such_that_log(1+f)=u": Infinity,
+    "Theta": 0.9975273768433652,
+    "vartheta_0_at_x_star": 0.013354528609806448,
+    "exceeds_the_stated_vartheta": false,
+    "exceeds_1": false
+   },
+   {
+    "L": 1424207.9721,
+    "where": "u = L - 0.5",
+    "f_such_that_log(1+f)=u": Infinity,
+    "Theta": 0.8807970779778824,
+    "vartheta_0_at_x_star": 0.12881143076933185,
+    "exceeds_the_stated_vartheta": false,
+    "exceeds_1": false
+   },
+   {
+    "L": 1424207.9721,
+    "where": "u = L",
+    "f_such_that_log(1+f)=u": Infinity,
+    "Theta": 0.11920292202211756,
+    "vartheta_0_at_x_star": 0.8820974482306682,
+    "exceeds_the_stated_vartheta": true,
+    "exceeds_1": false
+   },
+   {
+    "L": 1424207.9721,
+    "where": "u = L + 1",
+    "f_such_that_log(1+f)=u": Infinity,
+    "Theta": 4.5397868702434395e-05,
+    "vartheta_0_at_x_star": 0.9999550973711541,
+    "exceeds_the_stated_vartheta": true,
+    "exceeds_1": false
+   }
+  ],
+  "threshold_u_at_L_40": 39.61544329389466,
+  "threshold_u_minus_L": -0.38455670610534487,
+  "reading": "the k = 0 clause of (H3'_vartheta) fails at the stated vartheta as soon as log(1+f) > L + -0.384557; the statement quantifies over every f >= 4 with no upper bound, while the budget minimises only over f in [4.0, 8.0, 16.0, 32.0]"
+ },
+ "D_L_independence_of_vartheta": {
+  "rows": [
+   {
+    "f": 4.0,
+    "u_max_on_ball": 1.8776526817736985,
+    "L": 40.0,
+    "bound_on_|Theta_L - Theta_inf| and every derivative/(4/eps_r)^k": 1.0472450954092646e-131
+   },
+   {
+    "f": 4.0,
+    "u_max_on_ball": 1.8776526817736985,
+    "L": 1424207.9721,
+    "bound_on_|Theta_L - Theta_inf| and every derivative/(4/eps_r)^k": 0.0
+   },
+   {
+    "f": 8.0,
+    "u_max_on_ball": 2.4654393466758173,
+    "L": 40.0,
+    "bound_on_|Theta_L - Theta_inf| and every derivative/(4/eps_r)^k": 1.1540599664819418e-129
+   },
+   {
+    "f": 8.0,
+    "u_max_on_ball": 2.4654393466758173,
+    "L": 1424207.9721,
+    "bound_on_|Theta_L - Theta_inf| and every derivative/(4/eps_r)^k": 0.0
+   },
+   {
+    "f": 16.0,
+    "u_max_on_ball": 3.101428113395814,
+    "L": 40.0,
+    "bound_on_|Theta_L - Theta_inf| and every derivative/(4/eps_r)^k": 1.870163908314094e-127
+   },
+   {
+    "f": 16.0,
+    "u_max_on_ball": 3.101428113395814,
+    "L": 1424207.9721,
+    "bound_on_|Theta_L - Theta_inf| and every derivative/(4/eps_r)^k": 0.0
+   },
+   {
+    "f": 32.0,
+    "u_max_on_ball": 3.7647223308060784,
+    "L": 40.0,
+    "bound_on_|Theta_L - Theta_inf| and every derivative/(4/eps_r)^k": 3.770507590641289e-125
+   },
+   {
+    "f": 32.0,
+    "u_max_on_ball": 3.7647223308060784,
+    "L": 1424207.9721,
+    "bound_on_|Theta_L - Theta_inf| and every derivative/(4/eps_r)^k": 0.0
+   }
+  ],
+  "verdict": "vartheta measured at L = 40 (x1's choice) equals vartheta at every L >= 40 to the displayed precision and far beyond, for f in the budget's set: the outer tanh contributes below 1e-100.  PROFILE-INDEPENDENT IN L, proved, for bounded f; the same estimate is what fails in item C when f grows like e^L."
+ },
+ "E_the_N_constant_in_the_budget": {
+  "N_used_by_t3_budget": "r_*/(M sin delta) i.e. ||eta_0||_inf r_*/M with the KINKED sup",
+  "kinked_sup_rho|eta_0|/M": 7.66129757554039,
+  "mollified_certified_E_0_upper": 7.5523079773,
+  "N_is_an_over-estimate": true,
+  "ratio": 1.0144312968390563,
+  "E_hess_and_E_tail_are_increasing_in_N": "E_hess = (r_*/R_-^2)(1/2)K_2 e^c tau V_1 + 4 N (1/2) K_2 e^c tau V_1/d and E_tail = 2 N Pfrak + Pfrak + sum_k r_*^{-k}(E|Z^a|^{2k})^{1/2} Pfrak^{1/2}: both affine increasing in N, so the substitution is conservative",
+  "category": "NOT recomputed for the mollified datum; proved conservative"
+ },
+ "F_window_versus_conclusion": {
+  "estimates_hold_on": "[0, tau], tau = c/(M L)",
+  "conclusion_asserts": "T_d(u_0) <= t_* = c/(M L)",
+  "identical": true,
+  "c_range_in_the_statement": [
+   0.8244732108,
+   0.9602859545507821
+  ],
+  "certified_monotone_cap_eps": 0.1647266909,
+  "cap_consistent": true,
+  "note": "the conclusion is exactly the right endpoint of the window, so the theorem concludes at the last instant its estimates cover; a first-crossing at t = tau itself is inside the closed window, and the dichotomy of section 4 has to be stated on the CLOSED interval, which is what the continuation step must deliver"
+ },
+ "G_the_3.5_sigma_cliff": {
+  "claim_in_THEOREM_S3_v3_sec3_item3": "at an offset of 3.5 sigma instead of 4 sigma, 2 vartheta = 1.76645 and the hypothesis fails",
+  "what_x1_actually_measured": 0.883225,
+  "that_is": "a five-parameter GRID maximum, i.e. a LOWER bound on the supremum",
+  "a_lower_bound_of_0.883225_is_below_1": true,
+  "so_the_hypothesis_is_not_refuted_at_3.5_sigma_by_this_number": true,
+  "reading": "the cliff is asserted with the same SAFETY = 2 convention that is used to assert the hypothesis at 4 sigma; the convention cannot both certify a bound and refute one.  r2_theta_cert.py settles the 3.5 sigma case with a certified upper bound."
+ }
+}

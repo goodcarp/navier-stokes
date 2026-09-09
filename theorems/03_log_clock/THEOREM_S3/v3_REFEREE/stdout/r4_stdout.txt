@@ -1,0 +1,25 @@
+uniform over f in [4, 32] at offset 4.0 sigma: u in [1.241806, 3.764722]
+    round 0  boxes   4000  bound 0.288905  per k 0.0137 0.0204 0.0541 0.1076 0.2889  argmax phi 29.9687 deg
+    round 1  boxes   5200  bound 0.203242  per k 0.0130 0.0195 0.0541 0.1076 0.2032  argmax phi 12.0837 deg
+    round 2  boxes   6400  bound 0.203128  per k 0.0129 0.0195 0.0541 0.1075 0.2031  argmax phi 12.0837 deg
+    round 3  boxes   7600  bound 0.203071  per k 0.0129 0.0194 0.0541 0.1075 0.2031  argmax phi 12.0837 deg
+    round 4  boxes   8800  bound 0.203043  per k 0.0129 0.0194 0.0541 0.1075 0.2030  argmax phi 12.0837 deg
+    round 5  boxes  10000  bound 0.203029  per k 0.0129 0.0194 0.0541 0.1075 0.2030  argmax phi 12.0837 deg
+    round 6  boxes  11200  bound 0.203022  per k 0.0129 0.0194 0.0541 0.1075 0.2030  argmax phi 12.0837 deg
+    round 7  boxes  12400  bound 0.203018  per k 0.0129 0.0194 0.0541 0.1075 0.2030  argmax phi 12.0837 deg
+    round 8  boxes  13600  bound 0.203017  per k 0.0129 0.0194 0.0541 0.1075 0.2030  argmax phi 12.0837 deg
+    round 9  boxes  14800  bound 0.203016  per k 0.0129 0.0194 0.0541 0.1075 0.2030  argmax phi 12.0837 deg
+uniform over f in [4, 32] at offset 3.5 sigma: u in [1.227991, 3.771961]
+    round 0  boxes   4000  bound 1.056444  per k 0.0138 0.0221 0.0564 0.1136 1.0564  argmax phi 11.5107 deg
+    round 1  boxes   5200  bound 1.056156  per k 0.0135 0.0221 0.0564 0.1136 1.0562  argmax phi 11.5107 deg
+    round 2  boxes   6400  bound 1.056013  per k 0.0135 0.0221 0.0564 0.1136 1.0560  argmax phi 11.5107 deg
+    round 3  boxes   7600  bound 1.055941  per k 0.0135 0.0221 0.0564 0.1136 1.0559  argmax phi 11.5107 deg
+    round 4  boxes   8800  bound 1.055905  per k 0.0135 0.0221 0.0564 0.1136 1.0559  argmax phi 11.5107 deg
+    round 5  boxes  10000  bound 1.055887  per k 0.0135 0.0221 0.0564 0.1136 1.0559  argmax phi 11.5107 deg
+    round 6  boxes  11200  bound 1.055878  per k 0.0135 0.0221 0.0564 0.1136 1.0559  argmax phi 11.5107 deg
+    round 7  boxes  12400  bound 1.055873  per k 0.0135 0.0221 0.0564 0.1136 1.0559  argmax phi 11.5107 deg
+    round 8  boxes  13600  bound 1.055871  per k 0.0135 0.0221 0.0564 0.1136 1.0559  argmax phi 11.5107 deg
+    round 9  boxes  14800  bound 1.055870  per k 0.0135 0.0221 0.0564 0.1136 1.0559  argmax phi 11.5107 deg
+  vartheta = 0            L_* proved cap 1424207.9721111932   eps<=0.1 1554565.5693347803   measured 1758.7135233487295
+  vartheta = 0.203        L_* proved cap 1424207.9721111932   eps<=0.1 1554565.5693347803   measured 1760.9683838142626
+  vartheta = 0.262314     L_* proved cap 1424207.9721111932   eps<=0.1 1554565.5693347803   measured 1761.8606703677585
