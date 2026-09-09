@@ -59,7 +59,7 @@ or inconsistent labels in those historical files.
    or Euler conclusions. No new Lean build is implied by this archival
    publication.
 3. **External Euler replay remains separately scoped.** The inherited
-   [replication note](../replication/README.md) records a build in progress
+   [replication note](../replication/README.md) records a first build that reached 9,739 of 9,769 modules before the host rebooted, and the recipe for the rented-host run
    and an unattempted comparator replay. Expected future output is not a
    completed independent kernel replay. The authors' published results,
    our source-scope review, and a locally replayed proof are distinct
