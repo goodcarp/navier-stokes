@@ -1,0 +1,80 @@
+{
+ "instrument": "independent: adaptive quadrature convolution + rigorous derivative bounds; no shared code with fix4/p1_profile.py",
+ "sigma": 0.02,
+ "delta_deg": 7.5,
+ "delta_m_deg": 5.0,
+ "eps_r": 0.25,
+ "sup_abs_Wprime_scan": 58.18399495025718,
+ "sup_abs_Wprime_closed_form_cosdelta_over_sin2delta": 58.19333256822215,
+ "sup_abs_W_scan": 7.661295823556272,
+ "sup_abs_W_closed_form_1_over_sindelta": 7.66129757554039,
+ "rigorous_bounds": {
+  "B_W": 7.66129757554039,
+  "B_W1": 58.19333256822215,
+  "B_W2": 2321.5780798925502,
+  "B_W3": 140810.82843716175,
+  "B_A": 7.66129757554039,
+  "B_A1": 65.85463014376253,
+  "B_A2": 2445.6260426045346,
+  "B_A3": 147957.8039721196,
+  "L1_chi_prime": 39.89422804014327,
+  "L1_chi_second": 2419.7072451914337
+ },
+ "N_sigma": {
+  "lower": 1.0124508487364507,
+  "upper": 1.0124508494907434,
+  "argmax_deg": 170.01143994906312,
+  "fix4_value": 1.0124508488
+ },
+ "kappa_delta": {
+  "lower": 0.4917868796457403,
+  "upper": 0.49178688001212967,
+  "integral_1p5_int_A_sin2_cos": 0.49791004406573175,
+  "fix4_value": 0.4917868801
+ },
+ "c_star": {
+  "value": 0.8244732113414716,
+  "fix4_value": 0.8244732108
+ },
+ "c2": {
+  "value": 1.6489464226829431,
+  "fix4_value": 1.6489464217
+ },
+ "eps_floor": {
+  "value": 0.016700567884043383,
+  "fix4_value": 0.016700567265
+ },
+ "lam_max_at_c_star": {
+  "value": 1.8558724491907976,
+  "fix4_value": 1.8558724485
+ },
+ "kappa_delta_kinked_control": {
+  "value": 0.49782243818691574,
+  "fix2_value": 0.4978224182,
+  "fix4_value": 0.4978224383
+ },
+ "E_0": {
+  "lower": 7.552307688813818,
+  "upper": 7.552307695147641,
+  "sup_abs_W_sigma": [
+   7.646340335155023,
+   7.646340335871057
+  ],
+  "argmax_deg": 4.4280000544768265,
+  "fix4_value": 7.5523076942
+ },
+ "Gfrak_0_branch_bound": {
+  "value": 36.078376683209015,
+  "argmax_deg": 170.9523984640697,
+  "fix4_value": 36.0795702396,
+  "YMAX_used": 6.4072265625
+ },
+ "sup_abs_Wp_sigma_over_N": 35.51903006361562,
+ "sup_abs_h_second": {
+  "scan_value": 225.94670713419083,
+  "argmax_deg": 85.0020031818256,
+  "fix4_claimed_PROVED_bound": 225.9466903722,
+  "rigorous_a_priori_bound_B_A2_over_N": 2415.5503891825324
+ },
+ "sup_abs_h_prime_scan": 11.324885225060605
+}

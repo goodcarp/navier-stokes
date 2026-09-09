@@ -1,0 +1,5 @@
+worst relative against the referee's adaptive quadrature, k = 0..3 : 2.027e-10
+worst relative, W4 direct against a finite difference of W3        : 2.899e-09
+W4(delta) here 2702676.7768, referee's spline 2702676.7665, relative 3.805e-09
+at the Gfrak_0 argmax phi = 0.15790692 : W0 rel 1.67e-10, W1 rel 3.41e-05, fix4 error ratio on a fourfold refinement 4.0041
+wrote fx_controls.json

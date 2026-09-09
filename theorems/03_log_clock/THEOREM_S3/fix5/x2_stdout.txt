@@ -1,0 +1,21 @@
+identity (stock d, vartheta = 0): ['0.00e+00', '0.00e+00', '0.00e+00', '0.00e+00']
+CONTROL reproduce fix4: {'eps<=cap': 1424610.495263788, 'eps<=0.1': 1555469.4003812321, 'fix4_quoted': {'eps<=cap': 1424610.4953, 'eps<=0.1': 1555469.4004}}
+  L=1e+05 frozen c = c_*   f=4  eps_v = 1.400217e-06 (fix4 6.995716e-07, x2.0015)  eps = 5.835314714842837  share = 2.399557405491659e-07
+  L=1e+06 frozen c = c_*   f=4  eps_v = 2.314178e-08 (fix4 8.257398e-09, x2.8026)  eps = 0.084072986903859  share = 2.7525819921167467e-07
+  L=2e+06 frozen c = c_*   f=4  eps_v = 8.386373e-09 (fix4 2.447619e-09, x3.4263)  eps = 0.048759946125092934  share = 1.7199307386436737e-07
+  L=2e+06 self-consistent  f=4  eps_v = 1.003684e-08 (fix4 3.129548e-09, x3.2071)  eps = 0.0669123599451058  share = 1.4999981268531022e-07
+  L_star REPAIRED proved eps<=cap(fix4)              1424610.495263788
+  L_star REPAIRED proved eps<=0.1                    1555469.4003812321
+  L_star REPAIRED proved_Ca_measured eps<=cap(fix4)  1380035.915392108
+  L_star REPAIRED proved_Ca_measured eps<=0.1        1500454.5140187873
+  L_star REPAIRED measured eps<=cap(fix4)            1761.3925524355504
+  L_star REPAIRED measured eps<=0.1                  2051.235222157964
+  L_star 6-sigma ball, proved, eps<=cap(fix4)       1424610.495263788
+  L_star 6-sigma ball, proved, eps<=0.1             1555469.4003812321
+  L_star CERTIFIED proved eps<=certified cap              1424207.9721111932
+  L_star CERTIFIED proved_Ca_measured eps<=certified cap  1379464.353105554
+  L_star CERTIFIED measured eps<=certified cap            1761.8422827244044
+  L_star CERTIFIED proved eps<=0.1                        1554565.5693347803
+  L_star CERTIFIED proved_Ca_measured eps<=0.1            1499581.4463945052
+  L_star CERTIFIED measured eps<=0.1                      2050.2770348380004
+wrote x2_results.json

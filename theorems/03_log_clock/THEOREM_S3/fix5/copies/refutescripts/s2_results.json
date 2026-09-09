@@ -1,0 +1,67 @@
+{
+ "instrument": "independent: adaptive-quadrature profile splined, 300-pt Gauss panels in v; no shared code with fix4/p1_profile.py",
+ "probability_normalisation_check": {
+  "lam=1": 0.9999999999999993,
+  "lam=1.2": 1.0000000000000009,
+  "lam=1.5": 0.9999999999999996,
+  "lam=1.85587": 0.9999999999999976,
+  "lam=2.05708": 0.9999999999999977
+ },
+ "kappa_delta": 0.49178687988699543,
+ "c_star": 0.8244732112441341,
+ "fix4": {
+  "kappa_delta": 0.4917868801,
+  "c_star": 0.8244732108,
+  "r_h": 0.9033435309,
+  "min_Ph_prime": 0.3335513465,
+  "Ph_prime_at_lam_max": 0.3549367307,
+  "lam_mono": 2.0693384635,
+  "cap_monotone": 1.1760705119,
+  "cap_certified": 1.1664585076,
+  "lam_max_at_c_star": 1.8558724485,
+  "lam_max_at_cap": 2.0570755604
+ },
+ "at c_star": {
+  "lam_max": 1.8558724490553131,
+  "r_h_min": 0.9035285734733147,
+  "argmin_lam": 1.8558724490553131,
+  "min_Ph_prime": 0.354909074644135,
+  "argmin_Ph_prime": 1.8558724490553131,
+  "Ph_prime_at_lam_max": 0.354909074644135,
+  "Q_at_1": 0.9835737597739909
+ },
+ "at certified cap 1.1664585076": {
+  "lam_max": 2.0570755611424327,
+  "r_h_min": 0.8332958213288973,
+  "argmin_lam": 2.0570755611424327,
+  "min_Ph_prime": 0.019268500983143366,
+  "argmin_Ph_prime": 2.0570755611424327,
+  "Ph_prime_at_lam_max": 0.019268500983143366,
+  "Q_at_1": 0.9835737597739909
+ },
+ "at monotone cap 1.1760705119": {
+  "lam_max": 2.0693384642185566,
+  "r_h_min": 0.828414589904304,
+  "argmin_lam": 2.0693384642185566,
+  "min_Ph_prime": -3.212228874893697e-05,
+  "argmin_Ph_prime": 2.0693384642185566,
+  "Ph_prime_at_lam_max": -3.212228874893697e-05,
+  "Q_at_1": 0.9835737597739909
+ },
+ "lam_mono": 2.0693179283283545,
+ "cap_monotone_c_over_cstar": 1.1760544629602838,
+ "majorant_monotone_claim": {
+  "n_lambda": 441,
+  "lambda_range": [
+   1.0,
+   2.1
+  ],
+  "majorant_at_1": 0.005791530756983758,
+  "majorant_at_lam_max_cstar": 0.5696462825968939,
+  "majorant_max": 0.8809753178103256,
+  "argmax_lambda": 2.1,
+  "is_increasing_everywhere": true,
+  "n_decreasing_steps": 0,
+  "first_decreasing_lambda": null
+ }
+}

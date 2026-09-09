@@ -1,0 +1,246 @@
+{
+ "A_envelope": {
+  "budget_ELL_RAMP": 0.25,
+  "formula_L_minus_2eps_r": 11.5,
+  "int_Theta_du_over_R_exact": "L - 2 eps_r",
+  "int_Theta_env_dlogrho": "L + 2/8 = L + 0.25",
+  "numeric_int_Theta_du_L12": 11.499999999999993,
+  "sympy_check_int_u_dTheta": "((1 + exp(-2*(a - u)/e))*(tanh((a - u)/e) - 1) + 2*exp(-2*(a - u)/e))/(2*(1 + exp(-2*(a - u)/e)))",
+  "tail_efolds_each_side_exact": 0.015866001380371576,
+  "tail_efolds_inner_numeric": 0.01586516699232464,
+  "true_ramp_loss_efolds": 0.5
+ },
+ "A_kernel": {
+  "G5": "1/(8 pi^2 rho^3),  -Lap5 G5 = delta_0",
+  "Kcal(x)": "-3 z /(8 pi^2 rho^5)  = d_z G_5",
+  "Lap5(rho^-3) away from origin (sympy)": "0",
+  "abs_Kcal": "3 |cos phi| /(8 pi^2 rho^4)",
+  "int_|cos|sin^2_dphi": "2/3",
+  "int_|cos|sin^3_dphi": "1/2",
+  "plateau_a0_rate_per_efold": 0.5,
+  "weight_formula_1_to_e^10": 3.75,
+  "weight_numeric_1_to_e^10": 3.7499992289371242,
+  "weight_per_efold": 0.375,
+  "weight_per_efold_exact": "3/8"
+ },
+ "B_harmonic_identity": {
+  "consequence": "the instantaneous viscous rate of a[eta](0) is nu d_z eta(0,s) EXACTLY; the V-strain defect is the diffusion-transport commutator, not diffusion",
+  "exact_dz_eta_test_at_0": 1.0,
+  "null_control": 0.0,
+  "numeric_int_Kcal_Lap_eta_test": 0.9999999999998654,
+  "rel": 1.3455903058456897e-13,
+  "statement": "Lap5 Kcal = - d_z delta_0  =>  int Kcal Lap5 eta dx_5 = d_z eta(0)"
+ },
+ "C_Psi_closed_form": {
+  "C_kink_measured_sigma_5e-4": 8.117534736036648,
+  "C_kink_predicted": 8.070630695244414,
+  "W_prime_jump_at_equator_kink": 11.50292801654835,
+  "W_prime_jump_at_taper": 58.52800222296992,
+  "argmax_u": 0.3873300000000004,
+  "formula": "Psi_sigma(0) ~ C_kink/sigma ,  C_kink = [W'] max_u(Theta e^{-2u})/sqrt(2 pi)",
+  "max_u_Theta_e^{-2u}": 0.3456477297437123
+ },
+ "C_control_DatumS3": {
+  "Gfrak0_closed_form": 58.69548054098106,
+  "Gfrak0_sup_rho2_grad": 58.67206191510451,
+  "grad_inf": 20.326113934250113,
+  "pmax_h3v_reported_grad_inf": 31.093556949918312
+ },
+ "C_datum": {
+  "A_prime_jumps": {
+   "at_phi=delta": 7.639437268410977,
+   "at_phi=pi/2-delta_m": 11.459155902616464
+  },
+  "E0_closed_form": 7.66129757554039,
+  "Gfrak0_closed_form": 58.69548054098106,
+  "note_kinked": "sigma=None drops the four Dirac masses of A'' : it is the a.c. part only, NOT Psi(0), which is +infinity",
+  "rows": [
+   {
+    "Gfrak0": 58.694631550422635,
+    "Psi0": 171.42571351413798,
+    "argmax_u": 0.39200000000000035,
+    "endcap_angL": 10.185916357881302,
+    "grad_inf": 20.333897250965748,
+    "grad_inf_argu": 0.3680000000000003,
+    "kappa_delta": 0.49782241824851503,
+    "sigma": null,
+    "sup_abs_angL": 434.35130190994124
+   },
+   {
+    "Gfrak0": 25.288815521796053,
+    "Psi0": 244.0666270409485,
+    "argmax_u": 0.39200000000000035,
+    "endcap_angL": 10.185916357881302,
+    "grad_inf": 9.177922718275175,
+    "grad_inf_argu": 0.27200000000000024,
+    "kappa_delta": 0.4983882748255455,
+    "sigma": 0.05,
+    "sup_abs_angL": 650.6841753418538
+   },
+   {
+    "Gfrak0": 36.53076791487508,
+    "Psi0": 495.1558478920533,
+    "argmax_u": 0.39200000000000035,
+    "endcap_angL": 10.185916357881302,
+    "grad_inf": 12.752265377780217,
+    "grad_inf_argu": 0.3440000000000003,
+    "kappa_delta": 0.4979100241049414,
+    "sigma": 0.02,
+    "sup_abs_angL": 1374.4791794786292
+   },
+   {
+    "Gfrak0": 43.950241745135145,
+    "Psi0": 901.4208149357538,
+    "argmax_u": 0.39200000000000035,
+    "endcap_angL": 10.185916357881302,
+    "grad_inf": 15.271133382793355,
+    "grad_inf_argu": 0.3440000000000003,
+    "kappa_delta": 0.4978442141691869,
+    "sigma": 0.01,
+    "sup_abs_angL": 2548.417250316579
+   },
+   {
+    "Gfrak0": 49.55473399070429,
+    "Psi0": 1709.0598489905344,
+    "argmax_u": 0.39200000000000035,
+    "endcap_angL": 10.185916357881302,
+    "grad_inf": 17.184637838045738,
+    "grad_inf_argu": 0.3680000000000003,
+    "kappa_delta": 0.49782786061620643,
+    "sigma": 0.005,
+    "sup_abs_angL": 4884.421092948008
+   },
+   {
+    "Gfrak0": 54.21321833168867,
+    "Psi0": 4130.111544512938,
+    "argmax_u": 0.39200000000000035,
+    "endcap_angL": 10.185916357881302,
+    "grad_inf": 18.789455310868405,
+    "grad_inf_argu": 0.3680000000000003,
+    "kappa_delta": 0.497823288722568,
+    "sigma": 0.002,
+    "sup_abs_angL": 11889.164152433112
+   },
+   {
+    "Gfrak0": 56.18849122747698,
+    "Psi0": 8165.293343322299,
+    "argmax_u": 0.39200000000000035,
+    "endcap_angL": 10.185916357881302,
+    "grad_inf": 19.470098407917604,
+    "grad_inf_argu": 0.3680000000000003,
+    "kappa_delta": 0.49782263584852987,
+    "sigma": 0.001,
+    "sup_abs_angL": 23564.759267624573
+   },
+   {
+    "Gfrak0": 57.32696235551203,
+    "Psi0": 16235.069472073294,
+    "argmax_u": 0.39200000000000035,
+    "endcap_angL": 10.185916357881302,
+    "grad_inf": 19.86247637676431,
+    "grad_inf_argu": 0.3680000000000003,
+    "kappa_delta": 0.49782247263993473,
+    "sigma": 0.0005,
+    "sup_abs_angL": 46914.529568606886
+   }
+  ]
+ },
+ "D_eps_a": [
+  {
+   "L": 10000.0,
+   "c": 0.8144773658352574,
+   "c_G": 1.2226722451803766,
+   "column_for_c_G": "measured",
+   "eps_Tprime": 0.007748846520155605,
+   "eps_a_ac_part_only": 0.0003029648588892173,
+   "eps_a_kinked_sqrt_route": 0.034384422659236594,
+   "eps_a_sigma=0.001": 0.014430722759364127,
+   "eps_a_sigma=0.002": 0.0072992472111069445,
+   "eps_a_sigma=0.01": 0.0015931030672028713,
+   "eps_a_sigma=0.05": 0.00043134492314614076,
+   "eps_budget_at_this_c": 0.012685960894694981,
+   "window": "frozen c=c_*"
+  },
+  {
+   "L": 10000.0,
+   "c": 0.9727842428206827,
+   "c_G": 1.4603184129320954,
+   "column_for_c_G": "measured",
+   "eps_Tprime": 0.018483354819624823,
+   "eps_a_ac_part_only": 0.00045892126709690107,
+   "eps_a_kinked_sqrt_route": 0.04765833982031004,
+   "eps_a_sigma=0.001": 0.02185918722762858,
+   "eps_a_sigma=0.002": 0.011056661129796598,
+   "eps_a_sigma=0.01": 0.0024131804622398137,
+   "eps_a_sigma=0.05": 0.00065338719286393,
+   "eps_budget_at_this_c": 0.023812864247763743,
+   "window": "cap c=1.1943662c_*"
+  },
+  {
+   "L": 100000.0,
+   "c": 0.8144773658352574,
+   "c_G": 1.2342371053431151,
+   "column_for_c_G": "proved",
+   "eps_Tprime": 1.5003934445629996,
+   "eps_a_ac_part_only": 3.064820477835761e-05,
+   "eps_a_kinked_sqrt_route": 0.01099953991619029,
+   "eps_a_sigma=0.001": 0.001459825234683145,
+   "eps_a_sigma=0.002": 0.0007383985854797208,
+   "eps_a_sigma=0.01": 0.00016115977679945025,
+   "eps_a_sigma=0.05": 4.363525058040437e-05,
+   "eps_budget_at_this_c": Infinity,
+   "window": "frozen c=c_*"
+  },
+  {
+   "L": 100000.0,
+   "c": 0.9727842428206827,
+   "c_G": 1.4837716320530994,
+   "column_for_c_G": "proved",
+   "eps_Tprime": 20.779314866055017,
+   "eps_a_ac_part_only": 4.698010857906199e-05,
+   "eps_a_kinked_sqrt_route": 0.015428181586080643,
+   "eps_a_sigma=0.001": 0.00223774111821058,
+   "eps_a_sigma=0.002": 0.0011318785544319916,
+   "eps_a_sigma=0.01": 0.0002470390637027485,
+   "eps_a_sigma=0.05": 6.688772882350307e-05,
+   "eps_budget_at_this_c": Infinity,
+   "window": "cap c=1.1943662c_*"
+  },
+  {
+   "L": 1000000.0,
+   "c": 0.8144773658352574,
+   "c_G": 1.2229116295897822,
+   "column_for_c_G": "proved",
+   "eps_Tprime": 0.09203440062309796,
+   "eps_a_ac_part_only": 3.030298926464427e-06,
+   "eps_a_kinked_sqrt_route": 0.003439180354229925,
+   "eps_a_sigma=0.001": 0.00014433820425951467,
+   "eps_a_sigma=0.002": 7.300814051145077e-05,
+   "eps_a_sigma=0.01": 1.593445039134822e-05,
+   "eps_a_sigma=0.05": 4.314375146800736e-06,
+   "eps_budget_at_this_c": 0.10621818188619403,
+   "window": "frozen c=c_*"
+  },
+  {
+   "L": 1000000.0,
+   "c": 0.9727842428206827,
+   "c_G": 1.461412111241616,
+   "column_for_c_G": "proved",
+   "eps_Tprime": 0.34844146119495467,
+   "eps_a_ac_part_only": 4.5941209263987065e-06,
+   "eps_a_kinked_sqrt_route": 0.00477093113751201,
+   "eps_a_sigma=0.001": 0.00021882566068857153,
+   "eps_a_sigma=0.002": 0.00011068486451679788,
+   "eps_a_sigma=0.01": 2.4157614073726356e-05,
+   "eps_a_sigma=0.05": 6.54086003633227e-06,
+   "eps_budget_at_this_c": 0.541568333678558,
+   "window": "cap c=1.1943662c_*"
+  }
+ ],
+ "D_formula": {
+  "kinked": "eps_a = (3/4)(1 + 1/(4L)) * C_kink * [A'] * e^{c_G} * sqrt(c/L) / s",
+  "s_delta": 7.66129757554039,
+  "s_delta_sq": 58.69548054098105,
+  "smooth": "eps_a = (3/8)(1 + 1/(4L)) * Psi0 * c * e^{c_G} / (s^2 L) ,  s = 1/sin delta"
+ }
+}

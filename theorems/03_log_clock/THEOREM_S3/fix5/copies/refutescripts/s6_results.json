@@ -1,0 +1,73 @@
+{
+ "stale_constant_leak_test": {
+  "t3_LAM_MAX_kinked": 1.8420112114469296,
+  "t3_R_H_kinked": 0.9186365332851043,
+  "identical_under_NaN_poisoning": true,
+  "eps_base": 0.06691234177450323,
+  "eps_poisoned": 0.06691234177450323,
+  "lam_max_used": 1.9342710419492646,
+  "r_h_used": 0.8779222517886041,
+  "theorem_sec_1_2_r_h": 0.9033435309,
+  "note": "lam_max and r_h are taken at the self-consistent c; the r_h in the statement's constant table is the one at c_*, not the one the proof uses"
+ },
+ "C_R_supremum_search": {
+  "c_G": 1.319973575517379,
+  "Ghat": 936.7282786907095,
+  "fast": {
+   "fast n=80": {
+    "C_R": 642.7110954228921,
+    "argmax_deg": 32.92768420070076
+   },
+   "fast n=160": {
+    "C_R": 642.7110662889509,
+    "argmax_deg": 32.91872847758735
+   },
+   "fast n=320": {
+    "C_R": 642.7110956234982,
+    "argmax_deg": 32.92839841260047
+   }
+  },
+  "full": {
+   "T2.C_R_sup n=200": {
+    "C_R": 642.7110956086212,
+    "argmax_deg": 32.92825664692188
+   },
+   "T2.C_R_sup n=400": {
+    "C_R": 642.7110954763391,
+    "argmax_deg": 32.92919738122562
+   },
+   "T2.C_R_sup n=800": {
+    "C_R": 642.7110956260351,
+    "argmax_deg": 32.928539645992394
+   }
+  },
+  "fix4_quoted_C_R_at_L2e6": 642.7111
+ },
+ "grid_maximum_enclosures": {
+  "grid_step_fix4": 5.235987755982989e-06,
+  "N_sigma": {
+   "fix4": 1.0124508488,
+   "rigorous_pad": 8.38102831719044e-09,
+   "my_enclosure": [
+    1.0124508487364507,
+    1.0124508494907434
+   ]
+  },
+  "E_0": {
+   "fix4": 7.5523076942,
+   "rigorous_pad_on_supW": 7.955922650965311e-09,
+   "my_enclosure": [
+    7.552307688813818,
+    7.552307695147641
+   ]
+  },
+  "sup_h_second": {
+   "fix4_called_a_PROVED_Lipschitz_bound": 225.9466903722,
+   "my_scan_of_the_same_quantity": 225.94670713419083,
+   "rigorous_a_priori_bound": 2415.5503891825324,
+   "fix4_pad_on_sup_h_prime": 0.0011830541042937186,
+   "rigorous_pad_on_sup_h_prime": 0.012647792261719682,
+   "sup_h_prime": 11.324885225060605
+  }
+ }
+}

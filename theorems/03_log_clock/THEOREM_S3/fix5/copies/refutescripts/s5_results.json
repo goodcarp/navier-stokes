@@ -1,0 +1,39 @@
+{
+ "N_sigma_used": 1.012450849,
+ "sup_abs_A_over_N": 0.9999999942757412,
+ "max_z_oddness_residual": 1.9738256393375615e-15,
+ "int_w2_dt": 1.8239293727356087,
+ "fix4_int_w2_dt": 1.8239293735,
+ "parseval_hypothesis_satisfied": true,
+ "radial_factor": {
+  "L=10": 0.1254884328521418,
+  "L=20": 0.1254884328522576,
+  "L=40": 0.12548843285225764
+ },
+ "omega0_L2sq_over_M2R3": {
+  "L=10": 1.4381082621192993,
+  "L=20": 1.4381082621206263,
+  "L=40": 1.4381082621206267
+ },
+ "fix4_omega0_L2sq_over_M2R3": 1.4381082627,
+ "int_w2_dt_kinked": 1.8751740891553104,
+ "fix4_int_w2_dt_kinked": 1.8751740891,
+ "omega0_L2sq_over_M2R3_kinked_L40": 1.4785130339143226,
+ "fix4_omega0_L2sq_kinked": 1.478513034,
+ "log_Re_E_dictionary": {
+  "s": 7.66129757554039,
+  "two_log_s": 4.072362731382431,
+  "C_E_quoted": 0.0551906693,
+  "shift_recomputed": 2.913578181619509,
+  "shift_quoted": 2.913578182,
+  "logLambda_star_from_quoted_Lstar": 2849223.9041781817,
+  "logLambda_star_quoted": 2849223.9041
+ },
+ "tail_check": {
+  "Theta_inner_exact_form": "rho^8/(e^2 + rho^8) at eps_r = 1/4, since 2/eps_r = 8",
+  "Theta(u=-3,L=40)": 5.109079825871277e-12,
+  "rho8_over_e2_plus_rho8 at rho=e^{-3}": 5.109089028037223e-12,
+  "Theta(u=L+3,L=40)": 5.109079825871277e-12,
+  "predicted_outer e^{-8(u-L+eps_r)}": 5.109089028063325e-12
+ }
+}

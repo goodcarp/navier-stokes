@@ -1,0 +1,12 @@
+grid built, h = 3.1416e-05
+N_sigma in [1.012450848737, 1.012451150151]
+E_0 in [7.5523054461, 7.5523079773]
+Gfrak_0 in [36.0783630557, 36.0784195640]  (fix4 36.0795702396)
+|h''| proved <= 2415.5503900804  (fix4 quoted 225.9466903722, a scan)
+Psi_sigma(0) certified <= 495.106410  (fix4 scan 489.0279393839)
+  c = c_*                          lam_max=1.8558724485  r_h: scan-pad 0.9033435309 -> proved-pad 0.9033433307   min P_h': 0.3335513465 -> 0.3294825889
+  c = 1.0669124225 c_* (L=2e6)     lam_max=1.9342710419  r_h: scan-pad 0.8784369398 -> proved-pad 0.8784367504   min P_h': 0.2016642746 -> 0.1978911613
+  c = 1.0238897079 c_* (L=1e7)     lam_max=1.8834914830  r_h: scan-pad 0.8949627711 -> proved-pad 0.8949625747   min P_h': 0.2872563497 -> 0.2833025588
+  c = cap c_*                      lam_max=2.0570755604  r_h: scan-pad 0.8331460368 -> proved-pad 0.8331458640   min P_h': 0.0004499697 -> -0.0029985709
+certified window cap with the proved pad: c/c_* = 1.1647266909 (fix4 1.1664585076)
+wrote x6_results.json

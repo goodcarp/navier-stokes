@@ -1,0 +1,7 @@
+inner edge closed form: max rel 1.12e-12
+W'(0) = 2.547e-09, W'''(0) = 3.380e-09, W'(pi) = 2.547e-09
+FT homogeneity -11, constant 5066760.6, critical s = 9.5 (omega_0), 10.5 (u_0)
+d^8(|x|^7 x_1) limits along rays: {'e1': '40320', 'e3': '0', '(1,1,0)/sqrt2': '903105*sqrt(2)/32', '(1,0,1)/sqrt2': '903105*sqrt(2)/32'}
+  distinct values: 3  -> not C^8 at the origin
+Hankel (exact, 60 dps) pairwise exponents: ['-11.04729', '-11.01172', '-11.00292', '-11.00073', '-11.00018']  predicted -11
+wrote x3_results.json

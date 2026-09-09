@@ -1,0 +1,31 @@
+CONTROL kinked f=4 d=1.913417 -> vartheta=0.055269 (pmax-h3v 0.055612, rel 6.17e-03), k=4
+CONTROL mollified f=4 stock d=1.913417 -> vartheta=8.78252 (referee 8.76183), k=4 at phi=9.6147 deg
+REPAIRED f=4    d=1.538140 (taper) -> vartheta=0.130565 (k=4) at phi=12.0892 deg = delta + 4.005 sigma ; 2 vartheta = 0.26113  admissible=True
+REPAIRED f=8    d=2.768652 (taper) -> vartheta=0.131157 (k=4) at phi=12.0883 deg = delta + 4.004 sigma ; 2 vartheta = 0.262314  admissible=True
+REPAIRED f=16   d=5.229675 (taper) -> vartheta=0.131157 (k=4) at phi=12.0883 deg = delta + 4.004 sigma ; 2 vartheta = 0.262314  admissible=True
+REPAIRED f=32   d=10.151722 (taper) -> vartheta=0.131157 (k=4) at phi=12.0883 deg = delta + 4.004 sigma ; 2 vartheta = 0.262314  admissible=True
+  offset 0.0 sigma  d=1.913417  vartheta=8.78252  2v=17.565  admissible=False
+  offset 1.0 sigma  d=1.820653  vartheta=8.78248  2v=17.565  admissible=False
+  offset 2.0 sigma  d=1.727160  vartheta=8.57131  2v=17.1426  admissible=False
+  offset 3.0 sigma  d=1.632976  vartheta=2.80969  2v=5.61937  admissible=False
+  offset 3.5 sigma  d=1.585637  vartheta=0.883225  2v=1.76645  admissible=False
+  offset 4.0 sigma  d=1.538140  vartheta=0.131171  2v=0.262341  admissible=True
+  offset 5.0 sigma  d=1.442688  vartheta=0.102464  2v=0.204928  admissible=True
+  offset 6.0 sigma  d=1.346659  vartheta=0.0884151  2v=0.17683  admissible=True
+  offset 8.0 sigma  d=1.153023  vartheta=0.0602701  2v=0.12054  admissible=True
+
+HEADLINE: {
+ "f": 4.0,
+ "d": 1.5381397412512134,
+ "d_formula": "rho_* sin(phi_0 - delta - 4 sigma)",
+ "vartheta": 0.13056488642110944,
+ "binding_k": 4,
+ "binding_phi_deg": 12.08922491890646,
+ "SAFETY": 2.0,
+ "vartheta_stated": 0.2611297728422189,
+ "Q": 1.7068352824195099,
+ "vt": 0.353417641209755,
+ "admissible": true,
+ "referee_estimate": 0.1006
+}
+wrote x1_results.json

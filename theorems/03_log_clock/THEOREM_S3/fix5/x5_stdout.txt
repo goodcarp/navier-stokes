@@ -1,0 +1,14 @@
+Step 0(a): (2.1) max rel error 7.63e-15 over lambda up to 2.5
+Step 0(b): sup |dlog ghat/dlog lambda| = 2.000000000000 <= 2
+Step 3: J(lambda) = pi/(2 lambda), max rel 1.88e-31 up to lambda = 3
+Corollary 2: lam_max = 1.8558724485 at c_*, 2.0548738638 at the certified cap
+  Q control (my Gauss-Legendre profile vs fix4's FFT grid): max rel 2.37e-10
+  L=100000,c = c_*       c_G=1.24524  |dF/dlog rho| <= 262.9786 M  =>  lambda(.,s) in C^1
+  L=100000,c = cap       c_G=1.45515  |dF/dlog rho| <= 405.3315 M  =>  lambda(.,s) in C^1
+  L=1e+06,c = c_*        c_G=1.23754  |dF/dlog rho| <= 258.8500 M  =>  lambda(.,s) in C^1
+  L=1e+06,c = cap        c_G=1.44183  |dF/dlog rho| <= 394.3262 M  =>  lambda(.,s) in C^1
+  L=2e+06,c = c_*        c_G=1.23712  |dF/dlog rho| <= 258.6292 M  =>  lambda(.,s) in C^1
+  L=2e+06,c = cap        c_G=1.44113  |dF/dlog rho| <= 393.7557 M  =>  lambda(.,s) in C^1
+  L=1e+07,c = c_*        c_G=1.23679  |dF/dlog rho| <= 258.4533 M  =>  lambda(.,s) in C^1
+  L=1e+07,c = cap        c_G=1.44057  |dF/dlog rho| <= 393.3021 M  =>  lambda(.,s) in C^1
+wrote x5_results.json

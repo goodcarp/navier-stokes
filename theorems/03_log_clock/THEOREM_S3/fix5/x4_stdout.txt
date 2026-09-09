@@ -1,0 +1,15 @@
+3/2 - 2 kappa_delta = 0.5164262397
+  L=1e+05 c = c_*                          C''= 1034.493  Gbar/ML=1.510345  Gamma(0)/ML<=0.984865  margin=0.525480  mu=5.9540e-02 (<1/2: True)  mu_J=1.7548e-03 (<1/2: True)
+  L=1e+05 c = 1.0669124 c_* (L=2e6 window) C''= 1210.583  Gbar/ML=1.512106  Gamma(0)/ML<=0.984865  margin=0.527241  mu=8.9615e-02 (<1/2: True)  mu_J=2.0374e-03 (<1/2: True)
+  L=1e+05 c = cap                          C''= 1539.561  Gbar/ML=1.515396  Gamma(0)/ML<=0.984865  margin=0.530531  mu=1.6481e-01 (<1/2: True)  mu_J=2.5288e-03 (<1/2: True)
+  L=1e+06 c = c_*                          C''= 1005.579  Gbar/ML=1.501006  Gamma(0)/ML<=0.983703  margin=0.517303  mu=5.7380e-03 (<1/2: True)  mu_J=1.7399e-04 (<1/2: True)
+  L=1e+06 c = 1.0669124 c_* (L=2e6 window) C''= 1167.516  Gbar/ML=1.501168  Gamma(0)/ML<=0.983703  margin=0.517465  mu=8.5508e-03 (<1/2: True)  mu_J=2.0158e-04 (<1/2: True)
+  L=1e+06 c = cap                          C''= 1461.466  Gbar/ML=1.501461  Gamma(0)/ML<=0.983703  margin=0.517759  mu=1.5416e-02 (<1/2: True)  mu_J=2.4918e-04 (<1/2: True)
+  L=2e+06 c = c_*                          C''= 1004.051  Gbar/ML=1.500502  Gamma(0)/ML<=0.983638  margin=0.516864  mu=2.8633e-03 (<1/2: True)  mu_J=8.6953e-05 (<1/2: True)
+  L=2e+06 c = 1.0669124 c_* (L=2e6 window) C''= 1165.270  Gbar/ML=1.500583  Gamma(0)/ML<=0.983638  margin=0.516944  mu=4.2647e-03 (<1/2: True)  mu_J=1.0073e-04 (<1/2: True)
+  L=2e+06 c = cap                          C''= 1457.502  Gbar/ML=1.500729  Gamma(0)/ML<=0.983638  margin=0.517090  mu=7.6814e-03 (<1/2: True)  mu_J=1.2449e-04 (<1/2: True)
+  L=1e+07 c = c_*                          C''= 1002.834  Gbar/ML=1.500100  Gamma(0)/ML<=0.983587  margin=0.516514  mu=5.7176e-04 (<1/2: True)  mu_J=1.7384e-05 (<1/2: True)
+  L=1e+07 c = 1.0669124 c_* (L=2e6 window) C''= 1163.484  Gbar/ML=1.500116  Gamma(0)/ML<=0.983587  margin=0.516530  mu=8.5125e-04 (<1/2: True)  mu_J=2.0138e-05 (<1/2: True)
+  L=1e+07 c = cap                          C''= 1454.356  Gbar/ML=1.500145  Gamma(0)/ML<=0.983587  margin=0.516559  mu=1.5320e-03 (<1/2: True)  mu_J=2.4883e-05 (<1/2: True)
+all margins strict: True
+wrote x4_results.json

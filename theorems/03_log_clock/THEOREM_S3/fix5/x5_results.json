@@ -1,0 +1,207 @@
+{
+ "claim": "Lemma T'' = Lemma T' with [1,3/2] replaced by [1,lam_max]; the range enters only through Corollary 2's r_h, which is recomputed on the larger interval",
+ "step0a_jacobian_identity_2p1": {
+  "max_rel_error": 7.632491427372957e-15,
+  "n_cases": 125,
+  "lambda_range_tested": [
+   1.0,
+   2.5
+  ],
+  "range_of_1_minus_3cos2": [
+   -2.0,
+   1.0
+  ],
+  "uses_lambda_range": false
+ },
+ "step0b_dlog_ghat_dlog_lambda": {
+  "sup_over_psi_and_lambda_in_1_to_2p5": 2.0,
+  "bound_claimed": 2.0,
+  "holds": true,
+  "uses_lambda_range": false,
+  "note": "a convex combination of -1 and +2 for every lambda > 0"
+ },
+ "step3_identity_2p5": {
+  "rows": {
+   "lam=1.0000000000": {
+    "quadrature": "1.5707963267948966192",
+    "pi_over_2_lambda": "1.5707963267948966192",
+    "rel": 0.0
+   },
+   "lam=1.5000000000": {
+    "quadrature": "1.0471975511965977462",
+    "pi_over_2_lambda": "1.0471975511965977462",
+    "rel": 1.8832666871680676e-31
+   },
+   "lam=1.8558724485": {
+    "quadrature": "0.8463923951586679447",
+    "pi_over_2_lambda": "0.8463923951586679447",
+    "rel": 0.0
+   },
+   "lam=1.9342710419": {
+    "quadrature": "0.81208697890236280913",
+    "pi_over_2_lambda": "0.81208697890236280913",
+    "rel": 1.2142494057213797e-31
+   },
+   "lam=2.0570755611": {
+    "quadrature": "0.76360652787830964976",
+    "pi_over_2_lambda": "0.76360652787830964976",
+    "rel": 0.0
+   },
+   "lam=2.0693384635": {
+    "quadrature": "0.75908139461058094018",
+    "pi_over_2_lambda": "0.75908139461058094018",
+    "rel": 0.0
+   },
+   "lam=3.0000000000": {
+    "quadrature": "0.52359877559829887308",
+    "pi_over_2_lambda": "0.52359877559829887308",
+    "rel": 1.8832666871680676e-31
+   }
+  },
+  "max_rel": 1.8832666871680676e-31,
+  "uses_lambda_range": false,
+  "note": "exact for every lambda > 0; the source states so"
+ },
+ "steps_2_4_5": {
+  "step2": "sup|w|^4|K| = 3/(8 pi^2), sup|w|^5|grad K| = 3/(2 pi^2); properties of the kernel in R^5, no lambda",
+  "step4": "(2.7): |w| >= (1-mu)|Lambda x| on the segment [Lambda x, Phi x], so the (1-mu)^5 is a statement about mu; the |Lambda x|^{-4} it multiplies is then integrated by (2.6), which uses (2.5) at the same lambda",
+  "step5": "|J_Phi - lambda^2| <= mu_J lambda^2 is hypothesis (H3); no lambda range",
+  "uses_lambda_range": false
+ },
+ "step0_condition": {
+  "kappa_s_bound_u1_P2": "kappa_s <= (3/4) c   (from |d frak_a/d log rho| <= M_s/2 and M_s <= (3/2)M on the window)",
+  "kappa_s_at_c_star": 0.6183549081294487,
+  "kappa_s_at_cap": 0.7202144659186784,
+  "L_needed_2kappa_s_over_L_lt_1_at_cap": 1.4404289318373569,
+  "L_star_order": 1400000.0,
+  "holds_by_a_margin_of": 971932.7132746582,
+  "uses_lambda_range": false,
+  "note": "kappa_s is bounded by the contradiction hypothesis, not by the range of lambda"
+ },
+ "corollary2_Q_control": {
+  "lam=1.0000000000": {
+   "Q_here": 0.9835737600235004,
+   "Q_fix4": 0.9835737602569885,
+   "rel": 2.3738750174470576e-10
+  },
+  "lam=1.5000000000": {
+   "Q_here": 0.9713956494624062,
+   "Q_fix4": 0.9713956494488323,
+   "rel": 1.3973626270280666e-11
+  },
+  "lam=1.8558724485": {
+   "Q_here": 0.9035285738743055,
+   "Q_fix4": 0.9035285738448889,
+   "rel": 3.255744326667043e-11
+  },
+  "lam=2.0548738638": {
+   "Q_here": 0.8341661432484362,
+   "Q_fix4": 0.834166143217827,
+   "rel": 3.6694346929194335e-11
+  }
+ },
+ "corollary2_r_h": {
+  "lam_max_at_c_star": 1.8558724484917741,
+  "lam_max_at_certified_cap": 2.054873863800625,
+  "r_h_certified_PROVED_pad": {
+   "c = c_*": 0.9033433307477016,
+   "c = 1.0669124225 c_* (L=2e6)": 0.8784367503505869,
+   "c = 1.0238897079 c_* (L=1e7)": 0.8949625746657037,
+   "c = cap c_*": 0.8331458639896689
+  },
+  "r_h_source_lemma_on_1_to_1p5": 0.981822,
+  "note": "Corollary 2's infimum is the ONLY place the range of lambda enters Lemma T'; the extended-range value is x6's certified r_h on [1, lam_max]"
+ },
+ "lambda_C1": {
+  "identity": "d frak_a/d log rho = -F(2 rho, s)  (u1 (P2), exact)",
+  "F_definition": "F(rho',s) = -(3/4) int_0^pi omega^theta(rho',phi,s) cos phi sin^2 phi dphi",
+  "derivative_bound": "|dF/dlog rho'| <= (1/2)(sup rho|eta| + sup rho^2|grad eta|) <= (1/2)(e^{c_R} E_0 + e^{p c_G} Gfrak_0) M   (u2 P1, P2; e^{c_R} <= e^{c_G} used, conservative)",
+  "consequence": "F(2 . ,s) is Lipschitz in log rho, uniformly on [0,tau]; frak_a(.,s) is C^{1,1}; lambda(rho,s) = exp int_0^s frak_a is C^1 in rho with rho d_rho lambda/lambda = -int_0^s F(2 rho,sigma) dsigma, continuous. This is exactly Lemma T's (H1)/(S), with the kappa_s that (P2) supplies.",
+  "int_0_pi_abs_cos_sin2": 0.6666666666666666,
+  "rows": {
+   "L=100000,c = c_*": {
+    "c_G": 1.24523893381324,
+    "C_pp": 1034.492988032993,
+    "P1_sup_rho_eta_over_M": 26.234939871954488,
+    "P2_sup_rho2_grad_eta_over_M": 499.7223286201509,
+    "dF_dlogrho_bound_over_M": 262.9786342460527,
+    "kappa_s_over_L": 6.183549081294487e-06,
+    "lambda_is_C1": true
+   },
+   "L=100000,c = cap": {
+    "c_G": 1.4551502975304018,
+    "C_pp": 1533.018953694598,
+    "P1_sup_rho_eta_over_M": 32.36260109652009,
+    "P2_sup_rho2_grad_eta_over_M": 778.3003602246106,
+    "dF_dlogrho_bound_over_M": 405.3314806605653,
+    "kappa_s_over_L": 7.202144659186785e-06,
+    "lambda_is_C1": true
+   },
+   "L=1e+06,c = c_*": {
+    "c_G": 1.2375388894009083,
+    "C_pp": 1005.5792366701153,
+    "P1_sup_rho_eta_over_M": 26.03370542116614,
+    "P2_sup_rho2_grad_eta_over_M": 491.6662426317206,
+    "dF_dlogrho_bound_over_M": 258.84997402644336,
+    "kappa_s_over_L": 6.183549081294488e-07,
+    "lambda_is_C1": true
+   },
+   "L=1e+06,c = cap": {
+    "c_G": 1.441826850788152,
+    "C_pp": 1455.7319558404827,
+    "P1_sup_rho_eta_over_M": 31.93427940109969,
+    "P2_sup_rho2_grad_eta_over_M": 756.7180430161127,
+    "dF_dlogrho_bound_over_M": 394.3261612086062,
+    "kappa_s_over_L": 7.202144659186784e-07,
+    "lambda_is_C1": true
+   },
+   "L=2e+06,c = c_*": {
+    "c_G": 1.2371237228949545,
+    "C_pp": 1004.0511459086617,
+    "P1_sup_rho_eta_over_M": 26.022899341965694,
+    "P2_sup_rho2_grad_eta_over_M": 491.23558818117914,
+    "dF_dlogrho_bound_over_M": 258.6292437615724,
+    "kappa_s_over_L": 3.091774540647244e-07,
+    "lambda_is_C1": true
+   },
+   "L=2e+06,c = cap": {
+    "c_G": 1.4411260064975324,
+    "C_pp": 1451.8064267557525,
+    "P1_sup_rho_eta_over_M": 31.911906284657615,
+    "P2_sup_rho2_grad_eta_over_M": 755.5994787041619,
+    "dF_dlogrho_bound_over_M": 393.75569249440974,
+    "kappa_s_over_L": 3.601072329593392e-07,
+    "lambda_is_C1": true
+   },
+   "L=1e+07,c = c_*": {
+    "c_G": 1.2367924972558202,
+    "C_pp": 1002.8342441672987,
+    "P1_sup_rho_eta_over_M": 26.01428131783309,
+    "P2_sup_rho2_grad_eta_over_M": 490.89227658223456,
+    "dF_dlogrho_bound_over_M": 258.45327895003385,
+    "kappa_s_over_L": 6.183549081294488e-08,
+    "lambda_is_C1": true
+   },
+   "L=1e+07,c = cap": {
+    "c_G": 1.4405680475957054,
+    "C_pp": 1448.6909621879806,
+    "P1_sup_rho_eta_over_M": 31.89410571892568,
+    "P2_sup_rho2_grad_eta_over_M": 754.710145177591,
+    "dF_dlogrho_bound_over_M": 393.3021254482583,
+    "kappa_s_over_L": 7.202144659186784e-08,
+    "lambda_is_C1": true
+   }
+  }
+ },
+ "LEMMA_T_double_prime": {
+  "statement": "LEMMA T''. Let lam_max >= 1 and lambda in C^1([rho_0,R];[1,lam_max]) satisfy (S) with 2 kappa_s/L < 1, let eta_0 satisfy (D), and let Phi satisfy (H1),(H2) with mu and (H3) with mu_J. Then a[eta_0 o Phi^{-1}](0) and a_ref[eta_0;lambda] converge absolutely, |a_ref| <= (3 pi/8) M A, |a[eta_0 o Phi^{-1}](0)| <= (3 pi/8)(1+mu_J)(1-mu)^{-4} M A, and |a[eta_0 o Phi^{-1}](0) - a_ref| <= pi M A [3 mu(1+mu_J)/(2(1-mu)^5) + 3 mu_J/8]. COROLLARY 2''. For omega_0^theta = -M sgn(z) h(phi), with r_h := inf_{lambda in [1,lam_max]} P_h(lambda)/lambda, |Delta|/a_ref <= (2 pi/r_h)[3 mu(1+mu_J)/(2(1-mu)^5) + 3 mu_J/8].",
+  "constants": "identical to Lemma T' and Corollary 2 except that the infimum defining r_h is taken over [1, lam_max] instead of [1, 3/2]",
+  "proof": "Lemma T''s proof verbatim. Steps 0(a), 0(b), 2, 3, 4, 5 and 6 are checked above to use no upper bound on lambda; Step 0's standing condition is 2 kappa_s/L < 1, and kappa_s comes from u1 (P2) and the contradiction hypothesis, not from the range of lambda; Corollary 2's r_h is the only range-dependent object and is recomputed.",
+  "lam_max_used_by_the_chain": {
+   "at c_*": 1.8558724484917741,
+   "at the certified cap": 2.054873863800625
+  },
+  "lam_mono_where_P_h_turns_over": 2.0693384635,
+  "margin_to_the_real_obstruction": 1.007039166711976
+ }
+}
